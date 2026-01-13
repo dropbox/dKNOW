@@ -606,7 +606,7 @@ See [N=101 Test Failure Analysis](../reports/feature/phase-e-open-standards/n101
 - **N=101 Report:** [Test Failure Analysis](../reports/feature/phase-e-open-standards/n101_test_failure_analysis_2025-11-08.md)
 - **Format Support:** [FORMATS.md](FORMATS.md)
 - **User Guide:** [USER_GUIDE.md](USER_GUIDE.md)
-- **docling-rs issues:** https://github.com/dropbox/dKNOW/docling_rs/issues
+- **docling-rs issues:** https://github.com/ayates_dbx/docling_rs/issues
 
 ---
 

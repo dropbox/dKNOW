@@ -142,7 +142,7 @@ EOF
 
 If you prefer using GitHub's web interface:
 
-1. Go to: https://github.com/dropbox/dKNOW/docling_rs/compare/main...feature/phase-e-open-standards
+1. Go to: https://github.com/ayates_dbx/docling_rs/compare/main...feature/phase-e-open-standards
 2. Click "Create Pull Request"
 3. Use the title: `Phase E Complete: All Open Standards Formats Operational (N=241)`
 4. Copy the PR body from this file (between the EOF markers above)

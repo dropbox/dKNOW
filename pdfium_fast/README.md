@@ -580,7 +580,7 @@ cat > .gclient << 'EOF'
 solutions = [
   {
     "name": "pdfium_fast",
-    "url": "https://github.com/dropbox/dKNOW/pdfium_fast.git",
+    "url": "https://github.com/ayates_dbx/pdfium_fast.git",
     "managed": False,
     "custom_vars": {
       "checkout_configuration": "minimal",

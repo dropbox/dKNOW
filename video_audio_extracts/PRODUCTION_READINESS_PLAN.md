@@ -1389,7 +1389,7 @@ VIDEO_EXTRACT_THREADS=4 cargo test --release --test smoke_test_comprehensive -- 
 ```
 
 ## Getting Help
-- GitHub Issues: https://github.com/dropbox/dKNOW/video_audio_extracts/issues
+- GitHub Issues: https://github.com/ayates_dbx/video_audio_extracts/issues
 - Documentation: docs/
 ```
 

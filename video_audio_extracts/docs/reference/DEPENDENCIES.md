@@ -414,7 +414,7 @@ sudo apt-get install -y \
 
 ```bash
 # Clone repository
-git clone https://github.com/dropbox/dKNOW/video_audio_extracts
+git clone https://github.com/ayates_dbx/video_audio_extracts
 cd video_audio_extracts
 
 # Build release binary

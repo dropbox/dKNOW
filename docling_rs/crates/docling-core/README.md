@@ -184,9 +184,9 @@ Licensed under the MIT License. See [LICENSE](../../LICENSE) for details.
 
 ## Links
 
-- **Repository**: https://github.com/dropbox/dKNOW/docling_rs
+- **Repository**: https://github.com/ayates_dbx/docling_rs
 - **Documentation**: https://docs.rs/docling-core
-- **Issues**: https://github.com/dropbox/dKNOW/docling_rs/issues
+- **Issues**: https://github.com/ayates_dbx/docling_rs/issues
 - **Python docling**: https://github.com/docling-project/docling
 
 ## Related Crates

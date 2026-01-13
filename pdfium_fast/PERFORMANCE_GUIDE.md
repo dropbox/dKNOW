@@ -512,7 +512,7 @@ A: **Yes, 100% pixel-perfect**. All 452 test PDFs pass byte-for-byte MD5 validat
 - reports/main/N271_FINAL_OPTIMIZATION_ASSESSMENT.md: Optimization stopping criteria
 
 **Support**:
-- GitHub Issues: https://github.com/dropbox/dKNOW/pdfium_fast/issues
+- GitHub Issues: https://github.com/ayates_dbx/pdfium_fast/issues
 - Email: ayates@dropbox.com
 
 ---

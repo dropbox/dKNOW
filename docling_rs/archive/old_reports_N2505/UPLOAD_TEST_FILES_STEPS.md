@@ -7,7 +7,7 @@
 ## Steps (2 minutes):
 
 1. **Open GitHub Releases:**
-   - Go to: https://github.com/dropbox/dKNOW/docling_rs/releases/new
+   - Go to: https://github.com/ayates_dbx/docling_rs/releases/new
    - (Or: Your repo → Releases tab → Draft a new release)
 
 2. **Fill in Release Form:**
@@ -22,7 +22,7 @@
      - Use with: cargo test
 
      Download and extract:
-     curl -L -O https://github.com/dropbox/dKNOW/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
+     curl -L -O https://github.com/ayates_dbx/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
      tar -xzf test-corpus-v1.tar.gz
      ```
 
@@ -39,7 +39,7 @@
 
 **Other system uses:**
 ```
-https://github.com/dropbox/dKNOW/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
+https://github.com/ayates_dbx/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
 ```
 
 That's it! Files stored separately, downloadable by anyone, doesn't affect repo size.

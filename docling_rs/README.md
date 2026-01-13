@@ -372,10 +372,10 @@ See [User Guide](docs/USER_GUIDE.md) and [Benchmarking Guide](BENCHMARKING.md) f
 
 **First, download test corpus (required for integration tests):**
 ```bash
-curl -L -O https://github.com/dropbox/dKNOW/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
+curl -L -O https://github.com/ayates_dbx/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
 tar -xzf test-corpus-v1.tar.gz
 ```
-**Test corpus:** 105MB (2,509 files, 39 formats) - [Release page](https://github.com/dropbox/dKNOW/docling_rs/releases/tag/test-corpus-v1.0)
+**Test corpus:** 105MB (2,509 files, 39 formats) - [Release page](https://github.com/ayates_dbx/docling_rs/releases/tag/test-corpus-v1.0)
 
 ### For Development
 
@@ -440,7 +440,7 @@ See [MASTER_PLAN.md](MASTER_PLAN.md) for complete roadmap.
 
 ```bash
 # Clone pdfium_fast repo
-git clone git@github.com:dropbox/dKNOW/pdfium_fast.git ~/pdfium_fast
+git clone git@github.com:ayates_dbx/pdfium_fast.git ~/pdfium_fast
 
 # Copy pre-built libraries to expected location
 mkdir -p ~/pdfium_fast/out/Release

@@ -10,7 +10,7 @@
 - Versioned (can update later)
 - No Git LFS needed
 
-**URL format:** `https://github.com/dropbox/dKNOW/docling_rs/releases/download/v1.0/test-corpus.tar.gz`
+**URL format:** `https://github.com/ayates_dbx/docling_rs/releases/download/v1.0/test-corpus.tar.gz`
 
 ---
 
@@ -27,7 +27,7 @@ gh release create test-corpus-v1.0 test-corpus-v1.tar.gz \
   --notes "Docling test corpus: 241MB, 2,509 test files for all formats"
 
 # Done! Other systems can download:
-# https://github.com/dropbox/dKNOW/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
+# https://github.com/ayates_dbx/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
 ```
 
 **Pros:**
@@ -49,7 +49,7 @@ tar -czf test-corpus-v1.tar.gz test-corpus/
 # Creates: test-corpus-v1.tar.gz (~80-100MB compressed)
 
 # 2. Go to GitHub:
-open https://github.com/dropbox/dKNOW/docling_rs/releases/new
+open https://github.com/ayates_dbx/docling_rs/releases/new
 
 # 3. Fill in:
 - Tag: test-corpus-v1.0
@@ -76,10 +76,10 @@ open https://github.com/dropbox/dKNOW/docling_rs/releases/new
 **To download and use:**
 ```bash
 # Download from release
-wget https://github.com/dropbox/dKNOW/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
+wget https://github.com/ayates_dbx/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
 
 # Or with curl:
-curl -L -O https://github.com/dropbox/dKNOW/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
+curl -L -O https://github.com/ayates_dbx/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
 
 # Extract
 tar -xzf test-corpus-v1.tar.gz
@@ -92,7 +92,7 @@ tar -xzf test-corpus-v1.tar.gz
 #!/bin/bash
 if [ ! -d "test-corpus" ]; then
   echo "Downloading test corpus..."
-  curl -L -O https://github.com/dropbox/dKNOW/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
+  curl -L -O https://github.com/ayates_dbx/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz
   tar -xzf test-corpus-v1.tar.gz
 fi
 cargo test

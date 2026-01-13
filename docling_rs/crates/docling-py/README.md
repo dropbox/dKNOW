@@ -322,7 +322,7 @@ This crate is part of the docling-rs project. For contribution guidelines, see t
 
 - **PyO3:** https://pyo3.rs/
 - **Python docling:** https://github.com/docling-project/docling
-- **docling-rs repository:** https://github.com/dropbox/dKNOW/docling_rs
+- **docling-rs repository:** https://github.com/ayates_dbx/docling_rs
 
 ## Migration Path: Python → Rust
 

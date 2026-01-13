@@ -137,7 +137,7 @@ $env:PKG_CONFIG_PATH = "C:\vcpkg\installed\x64-windows\lib\pkgconfig"
 
 ```bash
 # Clone repository
-git clone https://github.com/dropbox/dKNOW/video_audio_extracts.git
+git clone https://github.com/ayates_dbx/video_audio_extracts.git
 cd video_audio_extracts
 
 # Build release binary (optimized for performance)

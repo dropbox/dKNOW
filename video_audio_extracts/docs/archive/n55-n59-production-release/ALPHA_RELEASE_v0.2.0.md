@@ -93,7 +93,7 @@ This alpha release represents a major milestone: **AI-verified output correctnes
 ## Installation
 
 ```bash
-git clone https://github.com/dropbox/dKNOW/video_audio_extracts.git
+git clone https://github.com/ayates_dbx/video_audio_extracts.git
 cd video_audio_extracts
 git checkout v0.2.0-alpha
 
@@ -216,8 +216,8 @@ See LICENSE file in repository.
 
 ## Contact
 
-- **Repository**: https://github.com/dropbox/dKNOW/video_audio_extracts/
-- **Issues**: https://github.com/dropbox/dKNOW/video_audio_extracts/issues
+- **Repository**: https://github.com/ayates_dbx/video_audio_extracts/
+- **Issues**: https://github.com/ayates_dbx/video_audio_extracts/issues
 
 ---
 

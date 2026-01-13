@@ -105,7 +105,7 @@ Initial crates.io publication of docling_rs. **28 of 30 crates publishable** (na
 
 **Metadata:**
 - Keywords and categories for discovery
-- Repository: https://github.com/dropbox/dKNOW/docling_rs
+- Repository: https://github.com/ayates_dbx/docling_rs
 - License: MIT
 - Workspace inheritance for version/repository/license
 

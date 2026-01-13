@@ -576,7 +576,7 @@ let converter = DocumentConverter::with_ocr(true)?;
 **Solution:**
 1. The ML layout model generally handles columns well
 2. For problematic PDFs, consider pre-processing (split columns manually)
-3. Report issues at: https://github.com/dropbox/dKNOW/docling_rs/issues
+3. Report issues at: https://github.com/ayates_dbx/docling_rs/issues
 
 **Note:** docling-rs uses ML-based layout analysis (DocLayNet YOLO model) for column detection.
 

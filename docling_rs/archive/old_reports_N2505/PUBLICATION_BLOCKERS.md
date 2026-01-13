@@ -17,10 +17,10 @@ Once published, crates can only be **yanked** (hidden from new projects), not de
 
 ### 1. Repository URL Verification ⚠️
 
-**Current setting:** `https://github.com/dropbox/dKNOW/docling_rs`
+**Current setting:** `https://github.com/ayates_dbx/docling_rs`
 
 **Questions:**
-- Is `dropbox` the correct GitHub username? (vs `ayates` or other)
+- Is `ayates_dbx` the correct GitHub username? (vs `ayates` or other)
 - Is this repository public, or will it be made public before publication?
 - Is this the correct permanent URL for the project?
 

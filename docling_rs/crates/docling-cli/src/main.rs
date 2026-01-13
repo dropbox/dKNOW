@@ -3108,7 +3108,7 @@ fn config_init(global: bool, force: bool, verbosity: Verbosity) -> Result<()> {
     }
 
     let default_config = r#"# Docling Configuration File
-# See: https://github.com/dropbox/dKNOW/docling_rs
+# See: https://github.com/ayates_dbx/docling_rs
 
 # Default settings for the convert command
 [convert]

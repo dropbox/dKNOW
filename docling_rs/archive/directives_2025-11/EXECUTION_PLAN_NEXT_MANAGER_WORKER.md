@@ -632,7 +632,7 @@ cargo test -p docling-backend --test pdf_honest_test test_pure_rust_vs_python_ba
 **Create PR:**
 ```bash
 git checkout feature/manager-pdf-investigation-n2042-2310
-gh pr create --repo dropbox/dKNOW/docling_rs \
+gh pr create --repo ayates_dbx/docling_rs \
   --base main \
   --title "PDF Parsing: Fix DocItems Fragmentation (80→53, 100% Match)" \
   --body "## Summary
