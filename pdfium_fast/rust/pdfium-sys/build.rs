@@ -101,7 +101,7 @@ fn setup_linking(lib_dir: &PathBuf, target: &str) {
 
 fn download_release(platform: &str, dest_dir: &PathBuf) {
     let url = format!(
-        "https://github.com/ayates_dbx/pdfium_fast/releases/download/v{}/pdfium-{}.tar.gz",
+        "https://github.com/dropbox/dKNOW/pdfium_fast/releases/download/v{}/pdfium-{}.tar.gz",
         PDFIUM_VERSION, platform
     );
 

@@ -29,7 +29,7 @@ Thank you for your interest in contributing to docling-rs! This guide will help 
 
 ```bash
 # Clone repository
-git clone https://github.com/ayates_dbx/docling_rs.git
+git clone https://github.com/dropbox/dKNOW/docling_rs.git
 cd docling_rs
 
 # Build project
@@ -620,7 +620,7 @@ If working with an AI:
 
 ## Getting Help
 
-- **GitHub Issues:** https://github.com/ayates_dbx/docling_rs/issues
+- **GitHub Issues:** https://github.com/dropbox/dKNOW/docling_rs/issues
 - **Documentation:** See `docs/` directory
 - **Discord:** (link to project Discord if available)
 

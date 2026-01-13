@@ -259,7 +259,7 @@
 
 ---
 
-**Feature branch:** https://github.com/ayates_dbx/docling_rs/tree/feature/manager-pdf-investigation-n2042-2310
+**Feature branch:** https://github.com/dropbox/dKNOW/docling_rs/tree/feature/manager-pdf-investigation-n2042-2310
 
 **Read:** EXECUTION_PLAN_NEXT_MANAGER_WORKER.md for complete details
 

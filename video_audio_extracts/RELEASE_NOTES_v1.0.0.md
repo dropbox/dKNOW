@@ -195,7 +195,7 @@ This is the first production release. No migration needed from beta.
 
 ```bash
 # Clone repository
-git clone https://github.com/ayates_dbx/video_audio_extracts.git
+git clone https://github.com/dropbox/dKNOW/video_audio_extracts.git
 cd video_audio_extracts
 
 # Build release binary

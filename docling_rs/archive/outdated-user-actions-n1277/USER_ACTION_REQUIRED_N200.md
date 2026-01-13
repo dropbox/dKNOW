@@ -31,8 +31,8 @@ The `feature/phase-e-open-standards` branch is technically ready for publication
 See **PUBLICATION_BLOCKERS.md** for full details. Summary:
 
 ### Question 1: Repository URL ⚠️
-- Current: `https://github.com/ayates_dbx/docling_rs`
-- Is `ayates_dbx` correct? (vs `ayates` or other)
+- Current: `https://github.com/dropbox/dKNOW/docling_rs`
+- Is `dropbox` correct? (vs `ayates` or other)
 - Is this repository public or will it be public before publication?
 - Is this the permanent URL?
 

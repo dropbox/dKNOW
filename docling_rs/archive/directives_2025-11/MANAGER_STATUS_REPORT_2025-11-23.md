@@ -52,7 +52,7 @@
 
 **PR #17:** "PDF ML Infrastructure - Phases 1-7 Foundation"
 - **State:** OPEN
-- **URL:** https://github.com/ayates_dbx/docling_rs/pull/17
+- **URL:** https://github.com/dropbox/dKNOW/docling_rs/pull/17
 - **Changes:** +22,138 additions, -583 deletions
 - **Status:** Ready for review
 

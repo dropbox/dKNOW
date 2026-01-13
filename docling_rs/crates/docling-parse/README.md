@@ -217,7 +217,7 @@ This crate is part of the docling-rs project. For contribution guidelines, see t
 
 - **docling-parse C++ library:** https://github.com/docling-project/docling-parse
 - **Python docling:** https://github.com/docling-project/docling
-- **docling-rs repository:** https://github.com/ayates_dbx/docling_rs
+- **docling-rs repository:** https://github.com/dropbox/dKNOW/docling_rs
 
 ## Note
 

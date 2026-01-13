@@ -172,7 +172,7 @@ git rebase origin/main
 ```bash
 # Download test corpus
 cd ~/docling_rs
-curl -L https://github.com/ayates_dbx/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz -o test-corpus-v1.tar.gz
+curl -L https://github.com/dropbox/dKNOW/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz -o test-corpus-v1.tar.gz
 
 # Extract
 tar -xzf test-corpus-v1.tar.gz
@@ -214,7 +214,7 @@ ls -la test-corpus/
 
 ```bash
 cd ~/docling_rs
-curl -L https://github.com/ayates_dbx/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz -o test-corpus-v1.tar.gz
+curl -L https://github.com/dropbox/dKNOW/docling_rs/releases/download/test-corpus-v1.0/test-corpus-v1.tar.gz -o test-corpus-v1.tar.gz
 tar -xzf test-corpus-v1.tar.gz
 ```
 

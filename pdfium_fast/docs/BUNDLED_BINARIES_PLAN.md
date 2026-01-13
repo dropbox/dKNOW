@@ -39,7 +39,7 @@ fn main() {
     };
 
     let url = format!(
-        "https://github.com/ayates_dbx/pdfium_fast/releases/download/v{}/pdfium-{}.tar.gz",
+        "https://github.com/dropbox/dKNOW/pdfium_fast/releases/download/v{}/pdfium-{}.tar.gz",
         version, platform
     );
 

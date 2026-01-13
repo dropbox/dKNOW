@@ -16,7 +16,7 @@ This script will:
 3. Verify the extraction
 
 **Manual Download:**
-1. Visit: https://github.com/ayates_dbx/pdfium_fast/releases
+1. Visit: https://github.com/dropbox/dKNOW/pdfium_fast/releases
 2. Find the `test-pdfs-v1` release
 3. Download `pdfium_test_pdfs.tar.gz` (1.4GB)
 4. Extract in `integration_tests/`:

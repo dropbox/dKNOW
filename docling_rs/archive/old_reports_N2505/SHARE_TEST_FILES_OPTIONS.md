@@ -15,7 +15,7 @@ cd ~/
 mkdir docling_rs_test_files
 cd docling_rs_test_files
 git init
-git remote add origin git@github.com:ayates_dbx/docling_rs_test_files.git
+git remote add origin git@github.com:dropbox/dKNOW/docling_rs_test_files.git
 
 # Copy test files
 cp -r ~/docling_rs/test-corpus/* .
@@ -51,7 +51,7 @@ tar -czf test-corpus.tar.gz test-corpus/
 ls -lh test-corpus.tar.gz
 
 # Then manually:
-# 1. Go to https://github.com/ayates_dbx/docling_rs/releases/new
+# 1. Go to https://github.com/dropbox/dKNOW/docling_rs/releases/new
 # 2. Create new release (e.g., "test-corpus-v1.0")
 # 3. Upload test-corpus.tar.gz as release asset
 # 4. Other systems download from release page

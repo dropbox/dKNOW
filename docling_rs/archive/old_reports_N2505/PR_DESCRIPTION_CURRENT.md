@@ -144,7 +144,7 @@ Complete Rust implementation of docling v2.58.0 with 55 document format support,
 
 ### Publication Blockers (User Action Required)
 5 questions require user confirmation before publishing to crates.io:
-1. **Repository URL verification** (is `ayates_dbx` correct?)
+1. **Repository URL verification** (is `dropbox` correct?)
 2. **License confirmation** (MIT license, copyright holder)
 3. **Version strategy** (keep 2.58.0 or change?)
 4. **Publication timing** (phased vs full, immediate vs wait)

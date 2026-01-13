@@ -54,7 +54,7 @@
 
 ## PR #17 Status
 
-**URL:** https://github.com/ayates_dbx/docling_rs/pull/17
+**URL:** https://github.com/dropbox/dKNOW/docling_rs/pull/17
 
 **Title:** "PDF ML Integration - 100% COMPLETE (187/187 Tests Passing, Absolute Perfection)"
 

@@ -44,7 +44,7 @@ resolver = "2"
 version = "2.58.0"
 edition = "2021"
 license = "MIT"
-repository = "https://github.com/ayates_dbx/docling_rs"
+repository = "https://github.com/dropbox/dKNOW/docling_rs"
 
 [workspace.dependencies]
 # Core

@@ -737,7 +737,7 @@ cargo test -p docling-notebook -- --nocapture
 
 ## Contributing
 
-Contributions are welcome! Please see the main [docling-rs repository](https://github.com/ayates_dbx/docling_rs) for contribution guidelines.
+Contributions are welcome! Please see the main [docling-rs repository](https://github.com/dropbox/dKNOW/docling_rs) for contribution guidelines.
 
 Areas where contributions would be especially valuable:
 - Rich media extraction (decode base64 PNG/JPEG images)

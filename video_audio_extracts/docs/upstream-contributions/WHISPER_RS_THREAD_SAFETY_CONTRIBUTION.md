@@ -71,7 +71,7 @@ If maintainer doesn't respond or accept:
 3. Update Cargo.toml:
    ```toml
    [dependencies]
-   whisper-rs = { git = "https://github.com/ayates_dbx/whisper-rs", branch = "thread-safe" }
+   whisper-rs = { git = "https://github.com/dropbox/whisper-rs", branch = "thread-safe" }
    ```
 4. Maintain fork with upstream updates
 

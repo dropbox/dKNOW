@@ -292,7 +292,7 @@ cargo build --package docling-core --example basic_conversion
 
 ## Need Help?
 
-- **Issues:** https://github.com/ayates_dbx/docling_rs/issues
+- **Issues:** https://github.com/dropbox/dKNOW/docling_rs/issues
 - **API Docs:** Run `cargo doc --package docling-core --open`
 - **Main README:** See repository root for installation and setup
 - **Python Reference:** https://github.com/docling-project/docling

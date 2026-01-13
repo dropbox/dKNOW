@@ -358,7 +358,7 @@ fn safe_parse(path: &Path) -> Result<String, Error> {
 
 ```bash
 # Clone repository
-git clone https://github.com/ayates_dbx/docling_rs
+git clone https://github.com/dropbox/dKNOW/docling_rs
 cd docling_rs
 
 # Build this crate (builds docling-parse-sys as dependency)
@@ -395,7 +395,7 @@ This crate is part of the docling-rs project. For contribution guidelines, see t
 ## References
 
 - **docling-parse C++ library:** https://github.com/docling-project/docling-parse
-- **docling-rs repository:** https://github.com/ayates_dbx/docling_rs
+- **docling-rs repository:** https://github.com/dropbox/dKNOW/docling_rs
 - **Python docling:** https://github.com/docling-project/docling
 
 ## Comparison to Python docling
