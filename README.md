@@ -18,7 +18,7 @@ Document parsing and knowledge extraction tools.
 | **chunker** | State-of-art text chunking for RAG. Semantic splitting. | Preview |
 | **video_audio_extracts** | Extract knowledge from video/audio. Uses ML models. | Preview |
 | **pdfium_fast** | Multi-process PDFium. Fast PDF text extraction. | Preview |
-| **dashextract** | Orchestration layer for all extraction. Powers Dash2. | Planned |
+| **dashextract** | Orchestration layer for all extraction. | Planned |
 
 ## License
 
