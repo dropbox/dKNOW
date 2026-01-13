@@ -7,7 +7,7 @@ Document parsing and knowledge extraction tools.
 
 ## Thesis
 
-**Knowledge is trapped in documents.** PDFs, Word docs, slides, videos—billions of hours of human effort locked in formats machines can't reason about. These tools crack open that vault: parsing complex layouts, extracting structured data, chunking for retrieval, turning the world's unstructured knowledge into something AI can actually use. The bottleneck isn't intelligence; it's ingestion.
+**Extract structured data from unstructured documents.** Parse PDFs, Word docs, HTML, video, and audio into formats AI can use. Layout analysis, text extraction, semantic chunking for RAG.
 
 ## Projects
 
