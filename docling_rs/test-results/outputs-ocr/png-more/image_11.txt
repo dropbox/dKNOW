@@ -1,0 +1,35 @@
+## Variables
+
+Variable
+
+Steam
+
+$route
+
+Sproduct_growth
+
+Sretain_expand
+
+Stry_commit
+
+$discover_basic
+
+Definition product_growth,retain_expand,try_commit,discover_basic
+
+values_of: Steam account-plan_tab_model,account-should_show_billing_tab,experiments-get_growth_tci_home_plan_description_variant,exp...
+
+teams-admin_console-requests_page-fetch_membership_requests,teams-admin_console-member_actions-ajax_log_invites...
+
+team_payments-ajax_add_billing,ncct_upgrade-ncct_upgrade_send,payments-perform_transition,payments-ajax_transition_..
+
+payments-ajax pro_buy, payments-ajax_pro_try, payments-ajax pro_transition_view_modal, payments-ajax_validate_and_pe...
+
+T
+
+T
+
+T
+
+T
+
+Duplicate

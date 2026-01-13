@@ -1,0 +1,135 @@
+--- pdfium/core/fpdfapi/parser/cpdf_document.cpp	2025-11-20 14:44:25
++++ core/fpdfapi/parser/cpdf_document.cpp	2025-12-03 16:39:54
+@@ -235,6 +235,8 @@
+ }
+ 
+ void CPDF_Document::LoadPages() {
++  std::unique_lock<std::shared_mutex> lock(page_traversal_mutex_);
++
+   const CPDF_LinearizedHeader* linearized_header =
+       parser_->GetLinearizedHeader();
+   if (!linearized_header) {
+@@ -356,18 +358,36 @@
+ }
+ 
+ bool CPDF_Document::IsPageLoaded(int iPage) const {
+-  return !!page_list_[iPage];
++  std::shared_lock<std::shared_mutex> lock(page_traversal_mutex_);
++  return fxcrt::IndexInBounds(page_list_, iPage) && page_list_[iPage];
+ }
+ 
+ RetainPtr<const CPDF_Dictionary> CPDF_Document::GetPageDictionary(int iPage) {
+-  if (!fxcrt::IndexInBounds(page_list_, iPage)) {
+-    return nullptr;
+-  }
++  // FAST PATH: shared_lock for cached pages (allows concurrent reads)
++  {
++    std::shared_lock<std::shared_mutex> lock(page_traversal_mutex_);
++    if (!fxcrt::IndexInBounds(page_list_, iPage)) {
++      return nullptr;
++    }
+ 
+-  const uint32_t objnum = page_list_[iPage];
+-  if (objnum) {
++    const uint32_t objnum = page_list_[iPage];
++    if (objnum) {
++      // Page is cached, no tree traversal needed
++      RetainPtr<CPDF_Dictionary> result =
++          ToDictionary(GetOrParseIndirectObject(objnum));
++      if (result) {
++        return result;
++      }
++    }
++  }
++
++  // SLOW PATH: unique_lock for tree traversal (modifies page_list_)
++  std::unique_lock<std::shared_mutex> write_lock(page_traversal_mutex_);
++
++  // Double-check after upgrading lock (another thread may have loaded it)
++  if (fxcrt::IndexInBounds(page_list_, iPage) && page_list_[iPage]) {
+     RetainPtr<CPDF_Dictionary> result =
+-        ToDictionary(GetOrParseIndirectObject(objnum));
++        ToDictionary(GetOrParseIndirectObject(page_list_[iPage]));
+     if (result) {
+       return result;
+     }
+@@ -394,7 +414,10 @@
+ }
+ 
+ void CPDF_Document::SetPageObjNum(int iPage, uint32_t objNum) {
+-  page_list_[iPage] = objNum;
++  std::unique_lock<std::shared_mutex> lock(page_traversal_mutex_);
++  if (fxcrt::IndexInBounds(page_list_, iPage)) {
++    page_list_[iPage] = objNum;
++  }
+ }
+ 
+ JBig2_DocumentContext* CPDF_Document::GetOrCreateCodecContext() {
+@@ -417,6 +440,8 @@
+ }
+ 
+ int CPDF_Document::GetPageIndex(uint32_t objnum) {
++  std::unique_lock<std::shared_mutex> lock(page_traversal_mutex_);
++
+   uint32_t skip_count = 0;
+   bool bSkipped = false;
+   for (uint32_t i = 0; i < page_list_.size(); ++i) {
+@@ -477,8 +502,8 @@
+ }
+ 
+ void CPDF_Document::MaybePurgeFontFileStreamAcc(
+-    RetainPtr<CPDF_StreamAcc>&& stream_acc) {
+-  doc_page_->MaybePurgeFontFileStreamAcc(std::move(stream_acc));
++    RetainPtr<CPDF_StreamAcc>&& pStreamAcc) {
++  doc_page_->MaybePurgeFontFileStreamAcc(std::move(pStreamAcc));
+ }
+ 
+ void CPDF_Document::MaybePurgeImage(uint32_t objnum) {
+@@ -642,22 +667,33 @@
+     return 0;
+   }
+ 
+-  page_list_.erase(page_list_.begin() + iPage);
++  {
++    std::unique_lock<std::shared_mutex> lock(page_traversal_mutex_);
++    page_list_.erase(page_list_.begin() + iPage);
++  }
+   return page_dict->GetObjNum();
+ }
+ 
+ void CPDF_Document::SetPageToNullObject(uint32_t page_obj_num) {
+-  if (!page_obj_num || page_list_.empty()) {
+-    return;
++  size_t page_count = 0;
++  {
++    std::shared_lock<std::shared_mutex> lock(page_traversal_mutex_);
++    if (!page_obj_num || page_list_.empty()) {
++      return;
++    }
++    page_count = page_list_.size();
+   }
+ 
+   // Load all pages so `page_list_` has all the object numbers.
+-  for (size_t i = 0; i < page_list_.size(); ++i) {
++  for (size_t i = 0; i < page_count; ++i) {
+     GetPageDictionary(i);
+   }
+ 
+-  if (pdfium::Contains(page_list_, page_obj_num)) {
+-    return;
++  {
++    std::shared_lock<std::shared_mutex> lock(page_traversal_mutex_);
++    if (pdfium::Contains(page_list_, page_obj_num)) {
++      return;
++    }
+   }
+ 
+   // If `page_dict` is no longer in the page tree, replace it with an object of
+@@ -756,6 +792,7 @@
+ }
+ 
+ void CPDF_Document::ResizePageListForTesting(size_t size) {
++  std::unique_lock<std::shared_mutex> lock(page_traversal_mutex_);
+   page_list_.resize(size);
+ }
+ 

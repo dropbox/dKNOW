@@ -1,0 +1,16 @@
+name: motion-tracking
+description: Track objects across frames using ByteTrack algorithm
+inputs: [ObjectDetection]
+outputs: [MotionTracking]
+config:
+  max_file_size_mb: 1000
+  requires_gpu: false
+  experimental: false
+performance:
+  avg_processing_time_per_gb: "30s"
+  memory_per_file_mb: 150
+  supports_streaming: false
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 0

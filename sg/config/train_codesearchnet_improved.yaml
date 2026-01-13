@@ -1,0 +1,64 @@
+# 2M CodeSearchNet training config using train_xtr_improved.py
+# This config works on MPS (M2 Max) at ~5 samples/s
+#
+# Dataset: 1.99M train + 20K val pairs (CodeSearchNet + existing 138K)
+# Languages: PHP (509K), Java (469K), Python (401K), Go (342K), JS (128K), Rust (92K), Ruby (51K)
+#
+# Estimated time: ~8-10 hours on M2 Max
+
+data:
+  train: "data/combined_training.jsonl"
+  validation: "data/combined_training.val.jsonl"
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-codesearchnet-v1"
+
+training:
+  method: "lora"
+
+  # LoRA config (same as working 172K training)
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  target_modules:
+    - "q"
+    - "v"
+    - "k"
+    - "o"
+    - "wi_0"
+    - "wi_1"
+    - "wo"
+
+  # Training hyperparameters
+  batch_size: 12
+  gradient_accumulation_steps: 4  # Effective batch = 48 (matches successful 172K training)
+  epochs: 1  # 2M pairs x 1 epoch should be enough
+  learning_rate: 1e-5  # Lower LR for larger dataset
+  warmup_steps: 2000
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+
+  # Contrastive learning
+  temperature: 0.07
+  max_hard_negatives: 3
+
+  # Margin loss
+  use_margin_loss: true
+  margin: 0.2
+  margin_weight: 0.1
+
+  max_length: 384  # Reduced from 512 - most code doesn't use full length, 30% speedup
+
+  # Key settings
+  language_aware_batching: true
+  gradient_checkpointing: true
+  cache_tokenized: true
+
+  # Logging (less frequent for larger dataset)
+  eval_every: 5000
+  early_stopping_patience: 3
+  log_every: 10  # More frequent logging for monitoring
+  save_every: 10000
+
+  seed: 42

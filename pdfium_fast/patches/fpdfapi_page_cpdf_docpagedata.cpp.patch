@@ -1,0 +1,190 @@
+--- pdfium/core/fpdfapi/page/cpdf_docpagedata.cpp	2025-11-20 14:44:25
++++ core/fpdfapi/page/cpdf_docpagedata.cpp	2025-12-03 16:39:54
+@@ -215,6 +215,8 @@
+     return nullptr;
+   }
+ 
++  std::lock_guard<std::recursive_mutex> lock(cache_mutex_);
++
+   auto it = font_map_.find(font_dict);
+   if (it != font_map_.end() && it->second) {
+     return pdfium::WrapRetain(it->second.Get());
+@@ -365,17 +367,22 @@
+                                  pVisited, pVisitedInternal);
+   }
+ 
++  std::lock_guard<std::recursive_mutex> lock(cache_mutex_);
++
++  // Try cache lookup
+   auto it = color_space_map_.find(pArray);
+   if (it != color_space_map_.end() && it->second) {
+     return pdfium::WrapRetain(it->second.Get());
+   }
+ 
++  // Cache miss: load colorspace
+   RetainPtr<CPDF_ColorSpace> pCS =
+       CPDF_ColorSpace::Load(GetDocument(), pArray.Get(), pVisited);
+   if (!pCS) {
+     return nullptr;
+   }
+ 
++  // Insert into cache
+   color_space_map_[std::move(pArray)].Reset(pCS.Get());
+   return pCS;
+ }
+@@ -385,11 +392,15 @@
+     const CFX_Matrix& matrix) {
+   CHECK(pPatternObj->IsDictionary() || pPatternObj->IsStream());
+ 
++  std::lock_guard<std::recursive_mutex> lock(cache_mutex_);
++
++  // Try cache lookup
+   auto it = pattern_map_.find(pPatternObj);
+   if (it != pattern_map_.end() && it->second) {
+     return pdfium::WrapRetain(it->second.Get());
+   }
+ 
++  // Cache miss: create pattern
+   RetainPtr<CPDF_Pattern> pattern;
+   switch (pPatternObj->GetDict()->GetIntegerFor("PatternType")) {
+     case CPDF_Pattern::kTiling:
+@@ -403,6 +414,8 @@
+     default:
+       return nullptr;
+   }
++
++  // Insert into cache
+   pattern_map_[pPatternObj].Reset(pattern.Get());
+   return pattern;
+ }
+@@ -412,31 +425,43 @@
+     const CFX_Matrix& matrix) {
+   CHECK(pPatternObj->IsDictionary() || pPatternObj->IsStream());
+ 
++  // Try cache lookup (no lock needed - pre-loading populates cache)
+   auto it = pattern_map_.find(pPatternObj);
+   if (it != pattern_map_.end() && it->second) {
+     return pdfium::WrapRetain(it->second->AsShadingPattern());
+   }
+ 
++  // Cache miss: create pattern
+   auto pPattern = pdfium::MakeRetain<CPDF_ShadingPattern>(
+       GetDocument(), pPatternObj, true, matrix);
++
++  // Insert into cache (no lock needed - pre-loading populates cache)
+   pattern_map_[pPatternObj].Reset(pPattern.Get());
+   return pPattern;
+ }
+ 
+ RetainPtr<CPDF_Image> CPDF_DocPageData::GetImage(uint32_t dwStreamObjNum) {
+   DCHECK(dwStreamObjNum);
++
++  std::lock_guard<std::recursive_mutex> lock(cache_mutex_);
++
++  // Try cache lookup
+   auto it = image_map_.find(dwStreamObjNum);
+   if (it != image_map_.end()) {
+     return it->second;
+   }
+ 
++  // Cache miss: create image
+   auto pImage = pdfium::MakeRetain<CPDF_Image>(GetDocument(), dwStreamObjNum);
++
++  // Insert into cache
+   image_map_[dwStreamObjNum] = pImage;
+   return pImage;
+ }
+ 
+ void CPDF_DocPageData::MaybePurgeImage(uint32_t dwStreamObjNum) {
+   DCHECK(dwStreamObjNum);
++  // No lock needed - pre-loading populates cache, purge is rare/cleanup-only
+   auto it = image_map_.find(dwStreamObjNum);
+   if (it != image_map_.end() && it->second->HasOneRef()) {
+     image_map_.erase(it);
+@@ -446,12 +471,16 @@
+ RetainPtr<CPDF_IccProfile> CPDF_DocPageData::GetIccProfile(
+     RetainPtr<const CPDF_Stream> pProfileStream) {
+   CHECK(pProfileStream);
++
++  std::lock_guard<std::recursive_mutex> lock(cache_mutex_);
+ 
++  // Try cache lookup
+   auto it = icc_profile_map_.find(pProfileStream);
+   if (it != icc_profile_map_.end()) {
+     return it->second;
+   }
+ 
++  // Cache miss: load ICC profile
+   auto pAccessor = pdfium::MakeRetain<CPDF_StreamAcc>(pProfileStream);
+   pAccessor->LoadAllDataFiltered();
+ 
+@@ -464,6 +493,8 @@
+   // consideration, in addition to the digest value.
+   const HashIccProfileKey hash_profile_key(pAccessor->ComputeDigest(),
+                                            expected_components);
++
++  // Check hash map
+   auto hash_it = hash_icc_profile_map_.find(hash_profile_key);
+   if (hash_it != hash_icc_profile_map_.end()) {
+     auto it_copied_stream = icc_profile_map_.find(hash_it->second);
+@@ -471,8 +502,12 @@
+       return it_copied_stream->second;
+     }
+   }
++
++  // Create profile
+   auto pProfile =
+       pdfium::MakeRetain<CPDF_IccProfile>(pAccessor, expected_components);
++
++  // Insert into both caches
+   icc_profile_map_[pProfileStream] = pProfile;
+   hash_icc_profile_map_[hash_profile_key] = std::move(pProfileStream);
+   return pProfile;
+@@ -481,11 +516,16 @@
+ RetainPtr<CPDF_StreamAcc> CPDF_DocPageData::GetFontFileStreamAcc(
+     RetainPtr<const CPDF_Stream> font_stream) {
+   DCHECK(font_stream);
++
++  std::lock_guard<std::recursive_mutex> lock(cache_mutex_);
++
++  // Try cache lookup
+   auto it = font_file_map_.find(font_stream);
+   if (it != font_file_map_.end()) {
+     return it->second;
+   }
+ 
++  // Cache miss: load font data
+   RetainPtr<const CPDF_Dictionary> font_dict = font_stream->GetDict();
+   int32_t len1 = font_dict->GetIntegerFor("Length1");
+   int32_t len2 = font_dict->GetIntegerFor("Length2");
+@@ -500,22 +540,26 @@
+ 
+   auto font_acc = pdfium::MakeRetain<CPDF_StreamAcc>(font_stream);
+   font_acc->LoadAllDataFilteredWithEstimatedSize(org_size);
++
++  // Insert into cache
+   font_file_map_[std::move(font_stream)] = font_acc;
+   return font_acc;
+ }
+ 
+ void CPDF_DocPageData::MaybePurgeFontFileStreamAcc(
+-    RetainPtr<CPDF_StreamAcc>&& stream_acc) {
+-  if (!stream_acc) {
++    RetainPtr<CPDF_StreamAcc>&& pStreamAcc) {
++  if (!pStreamAcc) {
+     return;
+   }
+ 
+-  RetainPtr<const CPDF_Stream> font_stream = stream_acc->GetStream();
++  RetainPtr<const CPDF_Stream> font_stream = pStreamAcc->GetStream();
+   if (!font_stream) {
+     return;
+   }
+ 
+-  stream_acc.Reset();  // Drop moved caller's reference.
++  pStreamAcc.Reset();  // Drop moved caller's reference.
++
++  // No lock needed - pre-loading populates cache, purge is rare/cleanup-only
+   auto it = font_file_map_.find(font_stream);
+   if (it != font_file_map_.end() && it->second->HasOneRef()) {
+     font_file_map_.erase(it);

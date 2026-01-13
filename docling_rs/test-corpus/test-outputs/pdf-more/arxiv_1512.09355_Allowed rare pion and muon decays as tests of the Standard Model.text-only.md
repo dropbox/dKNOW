@@ -1,0 +1,181 @@
+## Allowed rare pion and muon decays as tests of the Standard Model ∗
+
+Dinko Poˇ cani´ c †
+
+Institute for Nuclear and Particle Physics, University of Virginia, Charlottesville, VA 22904-4714, U.S.A.
+
+(PEN Collaboration)
+
+‡
+
+(Dated: 20 December 2015)
+
+## Abstract
+
+Simple dynamics, few available decay channels, and extremely well controlled radiative and loop corrections, make pion and muon decays a sensitive means for testing the underlying symmetries, the universality of weak fermion couplings, as well as for study of pion structure and chiral dynamics. We review the current state of experimental study of the allowed rare decays of charged pions: (a) electronic, π + → e + ν e , or π e 2 , (b) radiative, π + → e + ν e γ , or π e 2 γ , and (c) semileptonic, π + → π 0 e + ν , or π e 3 , as well as muon radiative decay, µ + → e + ν e ¯ ν µ γ . Taken together, these data present an internally consistent picture that also agrees well with Standard Model (SM) predictions. However, even following the great strides of the recent decades, experimental accuracy is lagging far behind that of the theoretical description for all above processes. We review the implications of the present state of knowledge and prospects for further improvement in the near term.
+
+## MOTIVATION
+
+Pion decay has provided an important testing ground for the weak interaction and radiative corrections from the beginnings of modern subatomic physics. The unexpected suppression of the direct electronic decay of the pion ( π → eν , or π e 2 ) led to an early examination of the nature of the weak interaction and to the prediction of a low branching fraction of ∼ 1 . 3 × 10 -4 [1] as a consequence of the V -A nature of the weak interaction, through helicity suppression of the right-handed state of the electron. In the meantime, the extraordinary success of the Standard Model has opened significant opportunities for precision tests of its underlying symmetries, lepton and quark-lepton coupling universality, and a host of related issues through precision measurements of pion decays. We will address the specific motivation and physics reach for each channel separately below. A recent in-depth review of the subject is given in Ref. [2].
+
+Muon decay, a purely leptonic electroweak process, serves a special role in the Standard Model because it calibrates the strength of the weak coupling. Its precise theoretical description, via the so-called Michel parameters [3], positions it uniquely to provide constraints on possible contributions outside the V -A standard electroweak model. Below we discuss new results on the muon radiative decay µ + → e + ν e ¯ ν µ γ , the only process that gives access to the decay parameter ¯ η .
+
+## PION ELECTRONIC π → e ¯ ν DECAY ( π e 2 )
+
+At the tree level, the ratio of the π → e ¯ ν e to π → µ ¯ ν µ decay widths is given by [1, 4]
+
+<!-- formula-not-decoded -->
+
+where the ratio of squared lepton masses for the two decays, comes from the helicity suppression by the V -A leptonW boson weak couplings. If, instead, the decay could proceed directly through the pseudoscalar current, the ratio R π e/µ would reduce to the second, phasespace factor, or approximately 5.5. More complete treatment of the process includes δR π e/µ , the radiative and loop corrections, and the possibility of lepton universality violation, i.e.,
+
+that g e and g µ , the electron and muon couplings to the W , respectively, may not be equal:
+
+<!-- formula-not-decoded -->
+
+where the '( γ )' indicates that radiative decays are fully included in the branching fractions. Improvements of the theoretical description of the π e 2 decay have culminated in a series of calculations that have refined the SM prediction to a precision of 8 parts in 10 5 :
+
+<!-- formula-not-decoded -->
+
+A comparison with equation (1) reveals that the radiative and loop corrections amount to almost 4% of R π e/µ . However, the current experimental precision [8, 9]
+
+<!-- formula-not-decoded -->
+
+lags behind the theoretical one by more than an order of magnitude.
+
+Because of the large helicity suppression of the π e 2 decay, its branching ratio is highly susceptible to small nonV -A contributions from new physics, making this decay a particularly suitable subject of study, as discussed in, e.g., Refs. [11-16]. This prospect provides the primary motivation for the ongoing PEN [17] and PIENU [18] experiments. Of the possible 'new physics' contributions in the Lagrangian, π e 2 is directly sensitive to the pseudoscalar one. At the precision of 10 -3 , R π e/µ probes the pseudoscalar and axial vector mass scales up to 1,000 TeV and 20 TeV, respectively [15, 16]. For comparison, Cabibbo-Kobayashi-Maskawa (CKM) matrix unitarity and precise measurements of several superallowed nuclear beta decays constrain the non-SM vector contributions to &gt; 20 TeV, and scalar to &gt; 10 TeV [8]. Although scalar interactions do not directly contribute to R π e/µ , they can do so through loop diagrams, resulting in sensitivity to new scalar interactions up to 60 TeV [15, 16]. The subject was recently reviewed at length in Ref. [10]. In addition, ( R π e/µ ) exp provides limits on masses of certain SUSY partners [14], and on neutrino sector anomalies [13].
+
+## The PEN experiment at PSI
+
+Between 2008 and 2010, PEN, a collaboration of 7 institutions from USA and Europe, has carried out measurements of π + and µ + decays at rest at the Paul Scherrer Institute (PSI) with the aim to reach ∆ R π e/µ /R π e/µ glyph[similarequal] 5 × 10 -4 , and is currently analyzing the data [17]. The PEN experiment uses an upgraded version of the PIBETA detector system, described in detail in Ref. [19], and previously used in a series of rare pion and muon decay measurements [2, 20-22]. The main component of the PEN apparatus, shown in Fig. 1, is a spherical largeacceptance ( ∼ 3 π sr) electromagnetic shower calorimeter. The calorimeter comprises 240 truncated pyramids of pure CsI, 12 radiation lengths (r.l.) deep. Beam particles entering the apparatus with p glyph[similarequal] 75 MeV/ c are tagged in a thin upstream beam counter (BC) and, after a ∼ 3 m long flight path in a 5 mm thick active degrader (AD) and a low-mass mini time projection chamber (mTPC), finally to reach a 15 mm thick active target (AT) where the beam pions stop. Decay particles are tracked non-magnetically in a pair of concentric
+
+FIG. 1. Schematic cross section of the PEN apparatus: upstream beam counter (BC), 5 mm thick active degrader (AD), mini time projection chamber (mTPC), active target (AT), cylindrical multiwire proportional chambers (MWPC's), plastic hodoscope (PH) detectors and photomultiplier tubes (PMT's), 240-element pure CsI electromagnetic shower calorimeter and its PMT's. BC, AD, AT and PH detectors are made of plastic scintillator. For details on detector performance see [19].
+
+<!-- image -->
+
+FIG. 2. Full and filtered active target (TGT) waveform in the PEN experiment for two challenging π → µ → e sequential decay events with an early π → µ decay (left) and early µ → e decay (right). The filtering procedure consists of a simple algebraic manipulation of the signal. To the naked eye both raw waveforms appear to have two peaks only. The separation of events with/without a muon signal depends critically on the accuracy of the predicted pion and positron signals.
+
+<!-- image -->
+
+cylindrical multiwire proportional chambers (MWPC1,2) and an array of twenty 4 mm thick plastic hodoscope detectors (PH), all surrounding the active target. The BC, AD, AT and PH detectors are all made of fast plastic scintillator material. Detector waveforms are digitized at 2 GS/s for BC, AD, and AT, and at 250 MS/s for the mTPC.
+
+A key source of systematic uncertainty in π e 2 measurements at rest has been the hard to measure low energy tail of the detector response function, caused by electromagnetic shower leakage from the calorimeter mostly in the form of photons, masked by the overwhelming π → µ → e background events. Other physical processes, if not properly identified and suppressed, also contribute events, mainly to the low energy part of the spectrum. They include: ordinary pion decay into a muon in flight, before the pion is stopped, with the resulting muon decaying within the time gate accepted in the measurement, and radiative decay events. The latter process is well measured, analyzed, and properly accounted for in the PEN apparatus. Shower leakage and pion decays in flight can only be well characterized if the π → µ → e chain can be well separated from the direct π → e decay in the target. Therefore much effort has been devoted to digitization, filtering and analysis of the target waveforms [23], as illustrated in Fig. 2. The decay time histograms of the π → eν decay and π → µ → e sequence, shown in Fig. 3 for a subset of data recorded in 2010, illustrate best
+
+Entries
+
+Entries
+
+Entries
+
+<!-- image -->
+
+Entries
+
+FIG. 3. Decay time histograms for a subset of 2010 PEN data: π → eν and π → µ → e events. The two processes are distinguished primarily by the total e + energy and by the absence or presence, respectively, of an extra 4.1 MeV (muon) in the target due to π → µ decay. The π e 2 data are shown with a pion lifetime τ π = 26 . 03 ns exponential decay function superimposed. The π → µ → e data, prescaled by a factor of ∼ 1/64, are shown with the cut on the probability of &lt; 2 . 5% for a second, pile-up muon to be present in the target at t = 0 = t π stop . The turquoise histogram gives the π → µ → e yield constructed entirely from the measured π → eν data folded with the µ decay rate, and corrected for random muons; it perfectly matches the bold dark blue histogram. The two lower plots show the observed to predicted ratios for π e 2 and π → µ → e events, respectively; the observed scatter is statistical in nature.
+
+the quality of the PEN data. The π → eν data follow the exponential decay law over more than three orders of magnitude, and perfectly predict the measured π → µ → e sequential decay data once the latter are corrected for random (pile-up) events. Both event ensembles were obtained with minimal requirements (cuts) on detector observables, none of which bias the selection in ways that would affect the branching ratio. The probability of random µ → e events originating in the target can be controlled in the data sample by making use of multihit time to digital converter (TDC) data that record early pion stop signals. With this information one can strongly suppress events in which an 'old' muon was present in the target by the time of the pion stop that triggered the readout.
+
+During the 2008-10 production runs the PEN experiment accumulated some 2 . 3 × 10 7 π → eν , and more than 2 . 7 × 10 8 π → µ → e events, as well as significant numbers of pion and muon radiative decays. A comprehensive blinded maximum likelihood analysis is under way to extract a new experimental value of R π e/µ . As of this writing, there appear no obstacles that would prevent the PEN collaboration to reach a precision of ∆ R/R &lt; 10 -3 . The PIENU experiment at TRIUMF, discussed below, has a similar precision goal.
+
+## The PIENU experiment at TRIUMF
+
+The PIENU experiment at TRIUMF builds on the earlier measurements at the same laboratory [24], aiming at a significant improvement in precision through refinements of the technique used. Major improvements in precision in PIENU over the earlier TRIUMF TINA measurement derive from improved geometry and beamline, a superior calorimeter, as well as high-speed digitizing of all detector signals. The apparatus is described in detail in Ref. [9] and shown in Fig. 4. A 75 MeV/ c π + beam from the improved TRIUMF M13 beam line [25] is tracked in wire chambers, identified by plastic scintillators, and stopped in a 0.8 cm thick scintillator target. Fine tracking near the target is provided by two sets of single-sided silicon strip detectors located immediately upstream and downstream of the target assembly. The positrons from π → eν and π → µ → e decays are detected in the positron telescope, which consists of a silicon strip counter, two thin plastic counters, and an acceptance-defining wire chamber that covers the front of the crystal calorimeter. The calorimeter is 19 r.l. deep and consists of a large single crystal of NaI(Tl) surrounded laterally by an array of 97 pure CsI crystals. The solid-angle acceptance of the telescope counters is 20% of 4 π sr. Thus, PIENU achieves better energy resolution than PEN, at the expense of lower solid angle coverage.
+
+FIG. 4. Top half cross-section of the PIENU detector. The cylindrical NaI(Tl) crystal is surrounded by a cylindrical array of CsI crystals. For further details see Ref. [9] and references therein.
+
+<!-- image -->
+
+The PIENU experiment completed data acquisition in 2012, and is in the analysis stage as of this writing. The PIENU collaboration has recently published an analysis of 1/5 of their data [9] with the result
+
+<!-- formula-not-decoded -->
+
+which is consistent with the previous world average [8] as well as with the Standard Model prediction of Eq. 3, and has the effect of reducing the previous world average uncertainty by almost a factor of two, as shown in Eq. 4.
+
+## PION RADIATIVE ELECTRONIC π + → e + νγ DECAY ( π e 2 γ )
+
+The decay π + → e + ν e γ proceeds via a combination of QED (inner bremsstrahlung, IB ) and direct, structure-dependent ( SD ) amplitudes [4, 26]. The strong helicity suppression of the primary non-radiative process, π → eν , discussed above, also suppresses the IB terms, making the structure-dependent amplitudes measurable in certain regions of phase space [26, 27]. To describe the SD amplitude, standard V -A electroweak theory requires only two pion form factors, F A , axial vector, and F V , vector (or polar-vector). The amplitudes F A and F V in principle depend on the 4-momentum transfer q 2 to the e -ν pair (or to the W boson); in π e 2 γ decay q 2 ≈ 0 is a good approximation ('soft pion limit'). For a long time radiative pion decay measurements had access only to one structure dependent amplitude, the SD + ∝ ( F V + F A ) 2 , with weak or no sensitivity to SD -∝ ( F V -F A ) 2 . Therefore most evaluations took the value of F V from the conserved vector current (CVC) hypothesis prediction based on the π 0 → γγ decay width [26]. Recent PIBETA collaboration results [22] led to an order of magnitude improvement in the precision of the π e 2 γ branching ratio
+
+FIG. 5. PIBETA data: contour plot of loci of constant χ 2 for the minimum value χ 2 0 (red dot) plus 1, 2, and 4 units, respectively, in the F A -F V parameter plane. The range of the CVC prediction F V = 0 . 0255 ± 0 . 0003 is indicated by the dashed vertical lines. See Refs. [2, 22] for more details.
+
+<!-- image -->
+
+determination, as well as of F A and F V , and a first evaluation of the q 2 dependence of F V . However, the measurement was most sensitive to the low p ν segment of phase space which is strongly dominated by the SD + amplitude, resulting in a very narrow constraint on F V + F A , as shown in Fig. 5.
+
+The PEN data analysis is expected to add significantly to the more than 60 k PIBETA π e 2 γ event set, but with increased sensitivity to the SD -amplitude due to better controlled backgrounds. Thus, the extremely skewed ellipse of Fig. 5 would give way to a more balanced set of limits, and, thus, an improved independent limit on F V , as well as a further tightening of the limit on F T , the long hinted-at tensor contribution [22]. It is worth noting that the ratio of F A /F V enters directly into the chiral perturbation theory lagrangian at the leading order through the l 9 + l 10 term [26], and is among the basic low energy chiral constants.
+
+## PION SEMILEPTONIC (BETA) π + → π 0 e + ν DECAY ( π e 3 )
+
+Unlike π e 2 , the extremely rare, O (10 -8 ), pion beta decay is not suppressed; its low rate derives from the restricted phase space of final states, entirely due to the small difference between the π ± and π 0 masses. As a pure vector 0 -→ 0 -transition, it is fully analogous to the superallowed Fermi (SAF) nuclear beta decays; indeed it is the simplest realization of the latter, fully free of complications arising from nuclear structure corrections. SAF decays have historically led to the formulation of the CVC hypothesis, and have played a critical role in testing the unitarity of the Cabibbo-Kobayashi-Maskawa quark mixing matrix through evaluations of the V ud element [8].
+
+The ∼ 0.5 % PIBETA π e 3 measurement [20] is the most precise one to date. Because it used π e 2 decay events for normalization, this result will receive a slight improvement in precision once the PEN and PIENU results become available. Although not competitive with the SAF based V ud , there are no plans to improve the PIBETA result precision until the current crop of experiments studying the more easily accessible neutron beta decay are completed (for a more detailed discussion of that topic see Ref. [28]). In the meantime, however, one can use the PIBETA π e 3 branching ratio to evaluate R π e/µ by fixing V ud to its very precise PDG 2014 recommended value of 0 . 97425 (22) [8] and adjusting R π e/µ until the extracted value of V πβ ud agrees. This exercise yields:
+
+<!-- formula-not-decoded -->
+
+in good agreement with direct measurements reviewed in the above section on π e 2 decay.
+
+## MUON RADIATIVE µ + → e + ν ¯ νγ DECAY
+
+A 2004 PIBETA set of ∼ 0.5 M radiative muon events was recently analyzed; the relevant measured and Monte Carlo simulated spectra, including backgrounds, shown in Fig. 6, are in excellent agreement within the design acceptance of the spectrometer. The analysis yields a preliminary branching ratio for E γ &gt; 10 MeV, and θ eγ &gt; 30 ◦ :
+
+<!-- formula-not-decoded -->
+
+which represents a 29-fold improvement in precision over the previous result [8], and is in excellent agreement with the SM value: B SM = 4 . 342 (5) stat-MC × 10 -3 . Minimumχ 2
+
+3
+
+xxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxx
+
+<!-- image -->
+
+xxxxxxxxxxxxxxxxxxxx
+
+FIG. 6. PIBETA data: measured and simulated µ + → e + ν e ¯ ν µ γ distributions of (a) ∆ t eγ , (b) cos θ eγ , (c) E γ , and (d) E e + . Also shown are the misidentified Monte Carlo events (split-off secondary neutral showers), as well as bounds of cuts applied in the branching ratio analysis.
+
+analysis of the most sensitive data subset (with roughly balanced systematic and statistical uncertainties) yields a preliminary value for the ¯ η parameter (¯ η SM ≡ 0):
+
+<!-- formula-not-decoded -->
+
+a 4-fold improvement over previous limits [29]. Details of this analysis, including a discussion of the uncertainties, are given in Refs. [30] and [31].
+
+## CONCLUSIONS
+
+Vigorous efforts are presently under way to measure precisely the branching ratios for allowed rare decays of the charged pion as well as of the muon. The experimental precision still lags by about an order of magnitude behind SM calculations. As that gap is narrowed, this field of research, complementary to collider searches, will realize its full potential for discovery or further improvement of the limits on various possible extensions of the Standard Model beyond the well established V -A form. Specifically, a significant improvement of the precision of the π e 2 branching ratio is expected from the full PEN and PIENU analyses which are forthcoming in the near future, with attendant limits on lepton universality and non-( V -A ) interaction terms.
+
+This work has been supported by grants from the US National Science Foundation, the Paul Scherrer Institute, and the Russian Foundation for Basic Research.
+
+- ∗ Presented at NuFact15, 10-15 Aug 2015, Rio de Janeiro, Brazil [C15-08-10.2]
+
+- † pocanic@virginia.edu; Speaker
+- ‡ L. P. Alonzi, V. A. Baranov, W. Bertl, M. Bychkov, Yu. M. Bystritsky, E. Frleˇ z, C. J. Glaser, V.A. Kalinnikov, N.V. Khomutov, A.S. Korenchenko, S. M. Korenchenko, M. Korolija, T. Kozlowski, N.P. Kravchuk, N.A. Kuchinsky, M.C. Lehman, D. Mekterovi´ c, E. Munyangabe, D. Mzhavia, A. Palladino, P. Robmann, A. M. Rozhdestvensky, I. Supek, P. Tru¨ ol, Z. Tsamalaidze, A. van der Schaaf, B. Vandevender, E. P. Velicheva, M. G. Vitz, V. P. Volnykh.
+- [1] R.P. Feynman and M. Gell-Mann, Phys. Rev. 109 , 193 (1958).
+- [2] D. Poˇ cani´ c, E. Frleˇ z and A. van der Schaaf, J. Phys. G 41 , 114002 (2014), arXiv:1407.2865.
+- [3] L. Michel, Proc. Phys. Soc. London Sect. A 63 , 514 (1950); C. Bouchiat and L. Michel, Phys. Rev. 106 , 170 (1957); T. Kinoshita and A. Sirlin, ibid. 108 , 844 (1957).
+- [4] For a detailed discussion of the fundamentals of the π e 2( γ ) decay see, e.g., D.A. Bryman, P. Depommier and C. Leroy Phys. Rep. 88 , 151 (1982).
+- [5] W.J. Marciano and A. Sirlin, Phys. Rev. Lett. 71 , 3629 (1993).
+- [6] M. Finkemeier, Phys. Lett. B 387 , 391 (1996).
+- [7] V. Cirigliano and I. Rosell, Phys. Rev. Lett. 99 , 231801 (2007).
+- [8] K.A. Olive et al. (Particle Data Group), Chin. Phys. C, 38 , 090001 (2014).
+- [9] A. Aguilar-Arevalo et al. (PIENU Collaboration), Phys. Rev. Lett. 115 , 071801 (2015).
+- [10] D. Bryman, W.J. Marciano, R. Tschirhart and T. Yamanaka, Annu. Rev. Nucl. Part. Sci. 61 , 331 (2011).
+- [11] R.E. Schrock Phys. Rev. D 24 , 5 (1981).
+- [12] O.U. Shanker Nucl. Phys. B204 , 375 (1982).
+- [13] W. Loinaz, N. Okamura, S. Rayyan, T. Takeuchi, L.C.R. Wijewardhana, Phys. Rev. D 70 , 113004 (2004).
+- [14] M.J. Ramsey-Musolf, S. Su and S. Tulin, Phys. Rev. D 76 , 095017 (2007).
+- [15] B. A. Campbell and D. W. Maybury, Nucl. Phys. B709 , 419 (2005).
+- [16] B. A. Campbell and A. Ismail, arXiv 0810.4918 (2008).
+- [17] http://pen.phys.virginia.edu/ and links therein.
+- [18] http://pienu.triumf.ca/ and links therein.
+- [19] E. Frleˇ z, et al. , Nucl. Instrum. Meth. A 526 , 300 (2004).
+- [20] D. Poˇ cani´ c et al. , Phys. Rev. Lett. 93 , 181803 (2004).
+- [21] E. Frleˇ z et al. , Phys. Rev. Lett. 93 , 181804 (2004).
+- [22] M. Bychkov, et al. , Phys. Rev. Lett. 103 , 181803 (2009).
+- [23] A. Palladino, PhD thesis, University of Virginia (2012).
+- [24] D.I. Britton et al. , Phys. Rev. Lett. 68 , 3000 (1992); D. I. Britton et al. , Phys. Rev. D 46 , R885 (1992).
+- [25] A. Aguilar-Arevalo et al. (PIENU Collaboration), Nucl. Instrum. Meth. A 609 , 102 (2009).
+- [26] For a detailed discussion see, e.g., J. F. Donoghue, E. Golowich and B. R. Holstein, Dynamics of the Standard Model (Cambridge, 1992).
+- [27] A.M. Bernstein and B. R. Holstein, Rev. Mod. Phys. 85 , 49 (2013).
+- [28] S. Baessler, J. D. Bowman, S. Penttil¨ a and D. Poˇ cani´ c, J. Phys. G 41 , 114003 (2014).
+- [29] W. Eichenberger, R. Engfer, and A. van der Schaaf, Nucl. Phys. A412 , 523 (1984).
+- [30] E. Munyangabe, Ph.D. thesis, University of Virginia, 2012.
+- [31] B. A. VanDevender, Ph.D. thesis, University of Virginia, 2005.

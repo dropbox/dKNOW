@@ -1,0 +1,30 @@
+--- pdfium/core/fpdfapi/page/cpdf_docpagedata.h	2025-11-20 14:44:25
++++ core/fpdfapi/page/cpdf_docpagedata.h	2025-12-03 16:39:54
+@@ -9,6 +9,7 @@
+ 
+ #include <map>
+ #include <memory>
++#include <mutex>
+ #include <set>
+ 
+ #include "core/fpdfapi/font/cpdf_font.h"
+@@ -43,7 +44,7 @@
+   RetainPtr<CPDF_StreamAcc> GetFontFileStreamAcc(
+       RetainPtr<const CPDF_Stream> font_stream) override;
+   void MaybePurgeFontFileStreamAcc(
+-      RetainPtr<CPDF_StreamAcc>&& stream_acc) override;
++      RetainPtr<CPDF_StreamAcc>&& pStreamAcc) override;
+   void MaybePurgeImage(uint32_t dwStreamObjNum) override;
+ 
+   // CPDF_Font::FormFactoryIFace:
+@@ -119,6 +120,10 @@
+ 
+   bool force_clear_ = false;
+ 
++  // Recursive mutex protecting all cache maps for thread-safe parallel rendering
++  // Must be recursive to allow nested cache access (e.g., GetFont -> GetFontFileStreamAcc)
++  mutable std::recursive_mutex cache_mutex_;
++
+   // Specific destruction order may be required between maps.
+   std::map<HashIccProfileKey, RetainPtr<const CPDF_Stream>>
+       hash_icc_profile_map_;

@@ -1,0 +1,28 @@
+--- pdfium/core/fpdfapi/page/cpdf_dib.cpp	2025-11-20 14:44:25
++++ core/fpdfapi/page/cpdf_dib.cpp	2025-12-03 16:39:54
+@@ -1095,6 +1095,10 @@
+     }
+     pSrcLine = cached_bitmap_->GetScanline(line);
+   } else if (decoder_) {
++    // Thread safety: decoder_ (especially JPEG) is NOT thread-safe.
++    // GetScanline() can call Rewind() which destroys/recreates the decoder,
++    // causing use-after-free if other threads are reading. Must serialize access.
++    std::lock_guard<std::mutex> lock(decoder_mutex_);
+     pSrcLine = decoder_->GetScanline(line);
+   } else if (stream_acc_->GetSize() > line * src_pitch_value) {
+     pdfium::span<const uint8_t> remaining_bytes =
+@@ -1222,7 +1226,13 @@
+ }
+ 
+ bool CPDF_DIB::SkipToScanline(int line, PauseIndicatorIface* pPause) const {
+-  return decoder_ && decoder_->SkipToScanline(line, pPause);
++  if (!decoder_) {
++    return false;
++  }
++
++  // Thread safety: Serialize decoder access (can call Rewind())
++  std::lock_guard<std::mutex> lock(decoder_mutex_);
++  return decoder_->SkipToScanline(line, pPause);
+ }
+ 
+ size_t CPDF_DIB::GetEstimatedImageMemoryBurden() const {

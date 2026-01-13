@@ -1,0 +1,183 @@
+{
+  "filename": "picture_classification.pdf",
+  "pages": [
+    {
+      "page_number": 1,
+      "elements": [
+        {
+          "label": "section_header",
+          "text": "Figures Example",
+          "bbox": {
+            "l": 10.0,
+            "t": 5.0,
+            "r": 40.0,
+            "b": 10.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "bbox": {
+            "l": 10.0,
+            "t": 12.0,
+            "r": 90.0,
+            "b": 25.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "picture",
+          "text": "Bar chart with categories: Institutional, residential, commercial, community park, municipal park, woodlot, roadside, riverside. Legend with numbers 1 to 4.",
+          "bbox": {
+            "l": 10.0,
+            "t": 27.0,
+            "r": 90.0,
+            "b": 60.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "caption",
+          "text": "Figure 1: This is an example image.",
+          "bbox": {
+            "l": 10.0,
+            "t": 62.0,
+            "r": 90.0,
+            "b": 65.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "bbox": {
+            "l": 10.0,
+            "t": 67.0,
+            "r": 90.0,
+            "b": 80.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "page_footer",
+          "text": "1",
+          "bbox": {
+            "l": 50.0,
+            "t": 95.0,
+            "r": 52.0,
+            "b": 98.0
+          },
+          "confidence": 0.94
+        }
+      ],
+      "reading_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "agreement_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sources": [
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble"
+      ]
+    },
+    {
+      "page_number": 2,
+      "elements": [
+        {
+          "label": "paragraph",
+          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "bbox": {
+            "l": 10.0,
+            "t": 5.0,
+            "r": 90.0,
+            "b": 25.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "picture",
+          "text": "Map showing Florida Power Plant Location",
+          "bbox": {
+            "l": 20.0,
+            "t": 30.0,
+            "r": 80.0,
+            "b": 60.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "caption",
+          "text": "Figure 2: This is an example image.",
+          "bbox": {
+            "l": 30.0,
+            "t": 62.0,
+            "r": 70.0,
+            "b": 65.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "bbox": {
+            "l": 10.0,
+            "t": 70.0,
+            "r": 90.0,
+            "b": 90.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "page_footer",
+          "text": "2",
+          "bbox": {
+            "l": 50.0,
+            "t": 95.0,
+            "r": 50.0,
+            "b": 98.0
+          },
+          "confidence": 0.94
+        }
+      ],
+      "reading_order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "agreement_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sources": [
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble"
+      ]
+    }
+  ],
+  "total_elements": 11,
+  "avg_confidence": 1.0
+}

@@ -1,0 +1,29 @@
+# Test output directories (worker count: 1, 2, 4, 8, etc.)
+[0-9]/
+[0-9][0-9]/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Test artifacts
+.pytest_cache/
+*.tmp
+*.temp
+
+# Rendered images (should not be committed)
+*.png
+*.ppm
+*.jpg
+*.jpeg
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Telemetry history (individual JSON files are too large for Git)
+# Keep only the aggregated runs.csv file
+telemetry/history/
+venv/
+venv/

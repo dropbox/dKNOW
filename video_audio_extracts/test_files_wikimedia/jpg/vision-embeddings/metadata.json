@@ -1,0 +1,82 @@
+[
+  {
+    "path": "test_files_wikimedia/jpg/vision-embeddings/01_1522972_555270531229117_1172428150_o.jp.jpg",
+    "size": 321081,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/1522972_555270531229117_1172428150_o.jp.jpg",
+    "title": "File:1522972 555270531229117 1172428150 o.jp.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/vision-embeddings/02_2012-04-07_18-13-14-pomme.jpg",
+    "size": 11034331,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/2012-04-07_18-13-14-pomme.jpg",
+    "title": "File:2012-04-07 18-13-14-pomme.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/vision-embeddings/03_2015-07-03_Grundschule_Goetheplatz,_Hannover,_Schulfest_mit_Kinderliedermacher_Unmada_(52)_Muffins_und_Birne_Helene.jpg",
+    "size": 978436,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/2015-07-03_Grundschule_Goetheplatz%2C_Hannover%2C_Schulfest_mit_Kinderliedermacher_Unmada_%2852%29_Muffins_und_Birne_Helene.JPG",
+    "title": "File:2015-07-03 Grundschule Goetheplatz, Hannover, Schulfest mit Kinderliedermacher Unmada (52) Muffins und Birne Helene.JPG",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/vision-embeddings/04_2015-08-07_10.24.56_unusual_avocado_(the_fertility_testicle_fruit)_variety_from_Cebu_Philippines_1.jpg",
+    "size": 655421,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/2015-08-07_10.24.56_unusual_avocado_%28the_fertility_testicle_fruit%29_variety_from_Cebu_Philippines_1.jpg",
+    "title": "File:2015-08-07 10.24.56 unusual avocado (the fertility testicle fruit) variety from Cebu Philippines 1.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/vision-embeddings/05_2015-08-08_09.11.34_unusual_avocado_(the_fertility_testicle_fruit)_variety_from_Cebu_Philippines_2.jpg",
+    "size": 558001,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/2015-08-08_09.11.34_unusual_avocado_%28the_fertility_testicle_fruit%29_variety_from_Cebu_Philippines_2.jpg",
+    "title": "File:2015-08-08 09.11.34 unusual avocado (the fertility testicle fruit) variety from Cebu Philippines 2.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/vision-embeddings/06_2016_Rangun,_Ulica_Old_Yay_Tar_Shay,_Stoiska_z_jedzeniem_(02).jpg",
+    "size": 8813483,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/2016_Rangun%2C_Ulica_Old_Yay_Tar_Shay%2C_Stoiska_z_jedzeniem_%2802%29.jpg",
+    "title": "File:2016 Rangun, Ulica Old Yay Tar Shay, Stoiska z jedzeniem (02).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/vision-embeddings/07_2016_Rangun,_Ulica_Old_Yay_Tar_Shay,_Stoiska_z_jedzeniem_(04).jpg",
+    "size": 10246070,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/2016_Rangun%2C_Ulica_Old_Yay_Tar_Shay%2C_Stoiska_z_jedzeniem_%2804%29.jpg",
+    "title": "File:2016 Rangun, Ulica Old Yay Tar Shay, Stoiska z jedzeniem (04).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/vision-embeddings/08_2016_Rangun,_Ulica_Old_Yay_Tar_Shay,_Stoiska_z_jedzeniem_(10).jpg",
+    "size": 12481440,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/2016_Rangun%2C_Ulica_Old_Yay_Tar_Shay%2C_Stoiska_z_jedzeniem_%2810%29.jpg",
+    "title": "File:2016 Rangun, Ulica Old Yay Tar Shay, Stoiska z jedzeniem (10).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/vision-embeddings/09_2016-08-03_00-42-29_recup.jpg",
+    "size": 8027049,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/2016-08-03_00-42-29_recup.jpg",
+    "title": "File:2016-08-03 00-42-29 recup.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/vision-embeddings/10_20180526-153042pineapple.jpg",
+    "size": 4737854,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/20180526-153042pineapple.jpg",
+    "title": "File:20180526-153042pineapple.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  }
+]

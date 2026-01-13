@@ -1,0 +1,17 @@
+--- pdfium/core/fxcrt/string_data_template.cpp	2025-11-20 14:44:25
++++ core/fxcrt/string_data_template.cpp	2025-12-03 16:39:54
+@@ -56,7 +56,13 @@
+ 
+ template <typename CharType>
+ void StringDataTemplate<CharType>::Release() {
+-  if (--refs_ <= 0) {
++  // CRITICAL: Use atomic decrement for thread-safe reference counting
++  // Required for parallel page rendering (FPDF_RenderPagesParallelV2)
++  // fetch_sub returns the OLD value before subtraction
++  // MUST check == 1 (not <= 1) because:
++  //   - If old value was 1, new value is 0 → safe to delete
++  //   - If old value was 2+, new value is 1+ → other refs exist, don't delete
++  if (refs_.fetch_sub(1, std::memory_order_acq_rel) == 1) {
+     FX_StringFree(this);
+   }
+ }

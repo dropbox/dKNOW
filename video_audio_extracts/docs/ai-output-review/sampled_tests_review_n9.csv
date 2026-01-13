@@ -1,0 +1,19 @@
+test_name,operation,file_path,status,quality_score,findings
+smoke_format_audio,audio,test_files_local/sample_10s_audio-aac.aac,SUSPICIOUS,5,Unexpected output_type: audio_extraction
+smoke_format_transcription,transcription,test_files_wikimedia/amr/audio-enhancement-metadata/01_sample.amr,CORRECT,9,No metadata expected for this operation
+smoke_plugin_audio;audio-enhancement-metadata,audio;audio-enhancement-metadata,test_edge_cases/audio_mono_single_channel__channel_test.wav,SUSPICIOUS,5,Unexpected output_type: audio_extraction
+smoke_plugin_metadata,metadata,test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4,CORRECT,9,No metadata expected for this operation
+smoke_plugin_audio;transcription;text-embeddings,audio;transcription;text-embeddings,test_edge_cases/audio_mono_single_channel__channel_test.wav,CORRECT,9,No metadata expected for this operation
+smoke_plugin_audio;voice-activity-detection,audio;voice-activity-detection,test_edge_cases/audio_mono_single_channel__channel_test.wav,CORRECT,10,VAD output present
+smoke_plugin_audio-embeddings,audio-embeddings,test_files_wikimedia/wav/audio-embeddings/01_(oc)_Premsa─Version_de_23-08-2023.wav,CORRECT,9,No metadata expected for this operation
+smoke_format_audio,audio,test_media_generated/test_audio_1min_noise.flac,SUSPICIOUS,5,Unexpected output_type: audio_extraction
+smoke_format_transcription,transcription,test_files_wikimedia/ape/audio-enhancement-metadata/01_concret_vbAccelerator.ape,CORRECT,9,No metadata expected for this operation
+smoke_format_audio,audio,test_edge_cases/audio_very_short_1sec__duration_min.wav,SUSPICIOUS,5,Unexpected output_type: audio_extraction
+smoke_format_transcription,transcription,test_files_wikimedia/tta/audio-enhancement-metadata/03_generated_sygnalow.tta,CORRECT,9,No metadata expected for this operation
+smoke_format_audio,audio,test_edge_cases/audio_lowquality_16kbps__compression_test.mp3,SUSPICIOUS,5,Unexpected output_type: audio_extraction
+smoke_format_transcription,transcription,test_files_wikimedia/wma/audio-enhancement-metadata/02_merci.wma,CORRECT,9,No metadata expected for this operation
+smoke_format_audio,audio,test_edge_cases/format_test_ogg.ogg,SUSPICIOUS,5,Unexpected output_type: audio_extraction
+smoke_plugin_transcription,transcription,test_files_wikimedia/wav/transcription/01_(oc)_Premsa─Version_de_23-08-2023.wav,CORRECT,9,No metadata expected for this operation
+smoke_format_audio,audio,test_edge_cases/format_test_opus.opus,SUSPICIOUS,5,Unexpected output_type: audio_extraction
+smoke_format_audio,audio,test_edge_cases/audio_mono_single_channel__channel_test.wav,SUSPICIOUS,5,Unexpected output_type: audio_extraction
+smoke_plugin_audio,audio,test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4,SUSPICIOUS,5,Unexpected output_type: audio_extraction

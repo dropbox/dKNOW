@@ -1,0 +1,21 @@
+[package]
+name = "video-audio-acoustic-scene-classification"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+video-audio-common = { path = "../common" }
+video-audio-classification = { path = "../audio-classification" }
+video-audio-decoder = { path = "../video-decoder" }
+video-extract-core = { path = "../video-extract-core" }
+async-trait = "0.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+thiserror = "2.0"
+tracing = "0.1"
+
+[dev-dependencies]
+anyhow = "1.0"

@@ -1,0 +1,47 @@
+From: Bob Wilson <bob@company.com>
+To: alice@company.com
+Subject: Fwd: Original Discussion
+Date: Mon, 20 May 2024 11:15:00 -0700
+Message-ID: <fwd-2024-05@company.com>
+In-Reply-To: <original-2024-05@company.com>
+References: <original-2024-05@company.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="boundary-fwd-xyz"
+
+--boundary-fwd-xyz
+Content-Type: text/plain; charset="UTF-8"
+
+Alice,
+
+FYI - see below for the original discussion.
+
+We should follow up on this topic.
+
+- Bob
+
+--boundary-fwd-xyz
+Content-Type: message/rfc822
+
+From: Charlie Brown <charlie@partner.com>
+To: Bob Wilson <bob@company.com>
+Subject: Original Discussion
+Date: Fri, 17 May 2024 09:30:00 -0700
+Message-ID: <original-2024-05@company.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Bob,
+
+I wanted to discuss the partnership proposal we reviewed last week.
+
+Key points:
+- Timeline: 6-month pilot program
+- Budget: $50K initial investment
+- Expected ROI: 200% in first year
+
+Let's schedule a call to discuss next steps.
+
+Best,
+Charlie
+
+--boundary-fwd-xyz--

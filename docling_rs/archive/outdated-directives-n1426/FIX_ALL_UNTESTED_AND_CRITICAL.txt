@@ -1,0 +1,117 @@
+🚨 FIX ALL UNTESTED AND CRITICAL FORMATS NOW
+
+USER: "Except for PDF, get those fixed"
+
+CURRENT STATE:
+- 7 UNTESTED formats ❌
+- 12 CRITICAL (0%) formats ❌
+- 19 formats need immediate work
+
+---
+
+## UNTESTED FORMATS (7) - ADD TESTS NOW
+
+**Must add DocItem tests for:**
+1. MSG (email)
+2. MDB (Access database)
+3. NUMBERS (Apple)
+4. KEY (Apple)
+5. XPS (deferred but should test)
+6. IDML (deferred but should test)
+7. Plus any others found
+
+**Action:** Add test for each (7 commits)
+
+---
+
+## CRITICAL (0%) FORMATS (12) - FIX NOW
+
+**These are COMPLETELY BROKEN:**
+
+### Architectural (Fixed but still 0%)
+1. **VCF** - 0% (you're fixing at N=1363-1388)
+2. **GPX** - 0% (tracks only, missing waypoints)
+3. **KML** - 0% (missing elements)
+4. **KMZ** - 0% (incomplete)
+5. **SVG** - 0% (fixed arch but still fails)
+
+### Parser Bugs
+6. **7Z** - 0% (missing metadata)
+7. **RAR** - 0% (only 1 file)
+8. **FB2** - 0% (1MB JSON but not extracting)
+9. **MOBI** - 0% (truncated/encoding)
+10. **ICS** - 0% (missing VEVENT)
+11. **TEX** - 0% (LaTeX broken)
+12. **GIF** - 5% (no OCR)
+
+---
+
+## MANDATE
+
+**EVERY format (except PDF) must be:**
+- ✅ Tested (have DocItem validation test)
+- ✅ Passing (≥95% DocItem completeness)
+- ✅ Working (extracting all information)
+
+**NO EXCEPTIONS.**
+
+---
+
+## EXECUTION PLAN
+
+**Week 1 (10 commits):**
+1. Add tests for 7 untested formats
+2. Fix top 3 critical bugs (VCF, GPX, ICS)
+
+**Week 2 (15 commits):**
+3. Fix archives (7Z, RAR)
+4. Fix ebooks (FB2, MOBI)
+5. Fix GPS (KML, KMZ)
+
+**Week 3 (10 commits):**
+6. Fix TEX, SVG, GIF
+7. Re-test all
+8. Verify all ≥95%
+
+**Target: 35 commits to fix all 19 formats**
+
+---
+
+## PRIORITY ORDER
+
+**CRITICAL (Fix first):**
+1. VCF (continue current work)
+2. GPX (add waypoints/routes)
+3. ICS (add VEVENT properties)
+4. FB2 (1MB JSON but 0% - bad parser)
+5. MOBI (encoding/truncation)
+
+**HIGH (Fix next):**
+6. KML/KMZ (missing elements)
+7. 7Z (missing metadata)
+8. RAR (only 1 file)
+9. TEX (LaTeX broken)
+10. SVG (elements missing)
+
+**MEDIUM (Then fix):**
+11. GIF (add OCR)
+12. Add tests for 7 untested
+
+---
+
+## THIS IS NOT OPTIONAL
+
+NO untested formats (except PDF).
+NO critical (0%) formats.
+ALL must be ≥95%.
+
+USER WANTS EVERYTHING FIXED.
+START WITH CRITICAL.
+ADD TESTS FOR UNTESTED.
+ACHIEVE 95%+ ON ALL.
+
+This file is WRITE-PROTECTED.
+Remove only after:
+- All 7 untested have tests
+- All 12 critical fixed to ≥95%
+- Proven with test results

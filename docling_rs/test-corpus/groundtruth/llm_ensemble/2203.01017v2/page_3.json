@@ -1,0 +1,193 @@
+{
+  "page_number": 3,
+  "elements": [
+    {
+      "label": "paragraph",
+      "text": "tag-decoder which is constrained to the table-tags.",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In practice, both network architectures (IETD and IEDD) require an implicit, custom trained object-character-recognition (OCR) to obtain the content of the table-cells. In the case of IETD, this OCR engine is implicit in the decoder similar to [24]. For the IEDD, the OCR is solely embedded in the content-decoder. This reliance on a custom, implicit OCR decoder is of course problematic. OCR is a well known and extremely tough problem, that often needs custom training for each individual language. However, the limited availability for non-english content in the current datasets, makes it impractical to apply the IETD and IEDD methods on tables with other languages. Additionally, OCR can be completely omitted if the tables originate from programmatic PDF documents with known positions of each cell. The latter was the inspiration for the work of this paper.",
+      "bbox": {
+        "l": 0.0,
+        "t": 5.0,
+        "r": 100.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Graph Neural networks:",
+      "bbox": {
+        "l": 0.0,
+        "t": 20.0,
+        "r": 100.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Graph Neural networks (GNN’s) take a radically different approach to table-structure extraction. Note that one table cell can constitute out of multiple text-cells. To obtain the table-structure, one creates an initial graph, where each of the text-cells becomes a node in the graph similar to [33, 34, 2]. Each node is then encoded with an embedding vector coming from the encoded image, its coordinates and the encoded appearance of the text. Moreover adjacent text-cells are linked. Graph Convolutional Networks (GCN’s) based methods take the image as an input, but also the position of the text-cells and their content [18]. The purpose of a GCN is to transform the input graph into a new graph, which replaces the old links with new ones. The new links then represent the table-structure. With this approach, one can avoid the need to build custom OCR decoders. However, the quality of the reconstructed structure is not comparable to the current state-of-the-art [18].",
+      "bbox": {
+        "l": 0.0,
+        "t": 25.0,
+        "r": 100.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Hybrid Deep Learning-Rule-Based approach:",
+      "bbox": {
+        "l": 0.0,
+        "t": 45.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "A popular current model for table-structure identification is the use of a hybrid Deep Learning-Rule-Based approach similar to [27, 29]. In this approach, one first detects the position of the table-cells with object detection (e.g. YoloVx or Mask-RCNN), then classifies the table into different types (from its images) and finally uses different rule-sets to obtain its table-structure. Currently, this approach achieves state-of-the-art results, but is not an end-to-end deep-learning method. As such, new rules need to be written if different types of tables are encountered.",
+      "bbox": {
+        "l": 0.0,
+        "t": 50.0,
+        "r": 100.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "3. Datasets",
+      "bbox": {
+        "l": 0.0,
+        "t": 65.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "We rely on large-scale datasets such as PubTabNet [37], FinTabNet [36], and TableBank [17] datasets to train and evaluate our models. These datasets span over various appearance styles and content. We also introduce our own synthetically generated SynthTabNet dataset to fix an im-",
+      "bbox": {
+        "l": 0.0,
+        "t": 70.0,
+        "r": 100.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Heatmap showing distribution of tables across different dimensions in PubTabNet + FinTabNet datasets",
+      "bbox": {
+        "l": 50.0,
+        "t": 20.0,
+        "r": 100.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 2: Distribution of the tables across different table dimensions in PubTabNet + FinTabNet datasets",
+      "bbox": {
+        "l": 50.0,
+        "t": 60.0,
+        "r": 100.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "balance in the previous datasets.",
+      "bbox": {
+        "l": 0.0,
+        "t": 80.0,
+        "r": 100.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The PubTabNet dataset contains 509k tables delivered as annotated PNG images. The annotations consist of the table structure represented in HTML format, the tokenized text and its bounding boxes per table cell. Fig. 1 shows the appearance style of PubTabNet. Depending on its complexity, a table is characterized as “simple” when it does not contain row spans or column spans, otherwise it is “complex”. The dataset is divided into Train and Val splits (roughly 98% and 2%). The Train split consists of 54% simple and 46% complex tables and the Val split of 51% and 49% respectively. The FinTabNet dataset contains 112k tables delivered as single-page PDF documents with mixed table structures and text content. Similarly to the PubTabNet, the annotations of FinTabNet include the table structure in HTML, the tokenized text and the bounding boxes on a table cell basis. The dataset is divided into Train, Test and Val splits (81%, 9.5%, 9.5%), and each one is almost equally divided into simple and complex tables (Train: 48% simple, 52% complex, Test: 48% simple, 52% complex, Val: 53% simple, 47% complex). Finally the TableBank dataset consists of 145k tables provided as JPEG images. The latter has annotations for the table structure, but only few with bounding boxes of the table cells. The entire dataset consists of simple tables and it is divided into 90% Train, 3% Test and 7% Val splits.",
+      "bbox": {
+        "l": 0.0,
+        "t": 85.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Due to the heterogeneity across the dataset formats, it was necessary to combine all available data into one homogenized dataset before we could train our models for practical purposes. Given the size of PubTabNet, we adopted its annotation format and we extracted and converted all tables as PNG images with a resolution of 72 dpi. Additionally, we have filtered out tables with extreme sizes due to small",
+      "bbox": {
+        "l": 0.0,
+        "t": 100.0,
+        "r": 100.0,
+        "b": 115.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

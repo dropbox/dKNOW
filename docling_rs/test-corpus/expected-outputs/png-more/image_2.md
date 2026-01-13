@@ -1,0 +1,77 @@
+## Release v1.3.0
+
+<!-- image -->
+
+github-actions released this last week
+
+## 1.3.0
+
+- Minimum Grafana version increased to 10.4.1
+- Switch to @grafana/sql as query editor
+- Adds Visual Query Builder
+- Moves to default Grafana SQL Auto Completion
+- Adds additional macros
+
+## What's Changed
+
+- ++ Feat: switch to @grafana/sql query editor by @mullerpeter in #86
+
+Full Changelog:
+
+v1.2.9...V1.3.0
+
+## Contributors
+
+<!-- image -->
+
+mullerpeter
+
+• Assets
+
+<!-- image -->
+
+mullerpeter-databricks-datasource.z
+
+@mullerpeter-databricks-datasource.zij lal Source code (zip)
+
+l Source code (tar.gz)
+
+<!-- image -->
+
+V1.3.0
+
+0- b9f6381
+
+Open Link in New Tab
+
+Open Link in New Window
+
+Open Link in Incognito Window
+
+- 0V0 Open Link as Scarlet
+
+Save Link As...
+
+Copy Link Address
+
+Copy
+
+Copy Link to Highlight
+
+Go to mullerpeter-databricks-datasource.zip
+
+Print...
+
+Translate Selection to English
+
+<!-- image -->
+
+<!-- image -->
+
+58 MB
+
+72 Bytes last week
+
+last week last week
+
+last week

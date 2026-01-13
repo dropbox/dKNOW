@@ -1,0 +1,207 @@
+{
+  "page_number": 1,
+  "elements": [
+    {
+      "label": "title",
+      "text": "The Evolution of the Word Processor",
+      "bbox": {
+        "l": 5.0,
+        "t": 5.0,
+        "r": 95.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The concept of the word processor predates modern computers and has evolved through several technological milestones.",
+      "bbox": {
+        "l": 5.0,
+        "t": 12.0,
+        "r": 95.0,
+        "b": 16.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Pre-Digital Era (19th - Early 20th Century)",
+      "bbox": {
+        "l": 5.0,
+        "t": 18.0,
+        "r": 95.0,
+        "b": 22.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The origins of word processing can be traced back to the invention of the typewriter in the mid-19th century. Patented in 1868 by Christopher Latham Sholes, the typewriter revolutionized written communication by enabling people to produce legible, professional documents more efficiently than handwriting.",
+      "bbox": {
+        "l": 5.0,
+        "t": 24.0,
+        "r": 95.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "During this period, the term \"word processing\" didn't exist, but the typewriter laid the groundwork for future developments. Over time, advancements such as carbon paper (for copies) and the electric typewriter (introduced by IBM in 1935) improved the speed and convenience of document creation.",
+      "bbox": {
+        "l": 5.0,
+        "t": 32.0,
+        "r": 95.0,
+        "b": 38.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "The Birth of Word Processing (1960s - 1970s)",
+      "bbox": {
+        "l": 5.0,
+        "t": 40.0,
+        "r": 95.0,
+        "b": 44.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The term \"word processor\" first emerged in the 1960s and referred to any system designed to streamline written communication and document production. Early word processors were not software programs but rather standalone machines.",
+      "bbox": {
+        "l": 5.0,
+        "t": 46.0,
+        "r": 95.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "IBM MT/ST (Magnetic Tape/Selectric Typewriter): Introduced in 1964, this machine combined IBM's Selectric typewriter with magnetic tape storage. It allowed users to record, edit, and replay typed content—an early example of digital text storage.",
+      "bbox": {
+        "l": 5.0,
+        "t": 52.0,
+        "r": 95.0,
+        "b": 56.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "Wang Laboratories: In the 1970s, Wang introduced dedicated word processing machines. These devices, like the Wang 1200, featured small screens and floppy disks, making them revolutionary for their time.",
+      "bbox": {
+        "l": 5.0,
+        "t": 58.0,
+        "r": 95.0,
+        "b": 62.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "These machines were primarily used in offices, where secretarial pools benefited from their ability to make revisions without retyping entire documents.",
+      "bbox": {
+        "l": 5.0,
+        "t": 64.0,
+        "r": 95.0,
+        "b": 68.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "The Rise of Personal Computers (1980s)",
+      "bbox": {
+        "l": 5.0,
+        "t": 70.0,
+        "r": 95.0,
+        "b": 74.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The advent of personal computers in the late 1970s and early 1980s transformed word processing from a niche tool to an essential technology for businesses and individuals alike.",
+      "bbox": {
+        "l": 5.0,
+        "t": 76.0,
+        "r": 95.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "WordStar (1978): Developed for the CP/M operating system, WordStar was one of the first widely used word processing programs. It featured early examples of modern features like cut, copy, and paste.",
+      "bbox": {
+        "l": 5.0,
+        "t": 82.0,
+        "r": 95.0,
+        "b": 86.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "Microsoft Word (1983): Microsoft launched Word for MS-DOS in 1983, introducing a graphical user interface (GUI) and mouse support. Over the years, Microsoft Word became the industry standard for word processing.",
+      "bbox": {
+        "l": 5.0,
+        "t": 88.0,
+        "r": 95.0,
+        "b": 92.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

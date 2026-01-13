@@ -1,0 +1,207 @@
+{
+  "timestamp": "2025-11-02T09:20:36.370561",
+  "pdfium_test": "/Users/ayates/pdfium/out/Optimized-Shared/pdfium_test",
+  "render_pages": "/Users/ayates/pdfium/rust/target/release/examples/render_pages",
+  "results": [
+    {
+      "pdf": "arxiv_001.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "arxiv_004.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "arxiv_007.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "arxiv_010.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "arxiv_012.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "arxiv_014.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "arxiv_015.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "arxiv_016.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "arxiv_017.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "arxiv_018.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "cc_007_101p.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "cc_015_101p.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "cc_008_116p.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "cc_013_122p.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "cc_009_188p.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "cc_010_206p.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "cc_003_162p.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "cc_004_291p.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "cc_002_522p.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "cc_001_931p.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "edinet_2025-06-24_1318_E01920_Makita Corporation.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "edinet_2025-06-25_1608_E02628_KIMURATAN CORPORATION.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "edinet_2025-06-24_0930_E03557_The Chiba Kogyo Bank Ltd.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "edinet_2025-06-25_1027_E01750_DAIHEN CORPORATION.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "edinet_2025-06-25_1357_E01684_SEIKO CORPORATION.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "edinet_2025-06-25_1433_E01754_KAWADEN CORPORATION.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "edinet_2025-06-25_1507_E01402_SUNCALL CORPORATION.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "edinet_2025-06-25_1557_E05670_HIKARI HEIGHTS-VARUS COLTD.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "edinet_2025-06-25_1634_E03116_AOKI Holdings Inc.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "edinet_2025-06-24_1124_E05556_Saint Marc Holdings CoLtd.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "web_001.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "web_003.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "web_005.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "web_007.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "web_009.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "web_011.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "web_012.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "web_013.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "web_014.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "web_015.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "0100pages_7FKQLKX273JBHXAAW5XDRT27JGMIZMCI.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "0214pages_BZK65P6W74FNMD4O3A24LH3F2XLFH7V2.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "0215pages_UAU4SPHOQHADJRFKILFDYETBGB6HXYU2.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "0255pages_OKRV2XLZ2UGGRCBKHS3I5DA5TNLNVHWC.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "0277pages_YCOBKTA46F7XEOWT4LS3BCPGDOMQSBWF.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "0291pages_RGLWPWLY4JE6RPNCCHQ3LQWDFLPBGHXQ.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "0309pages_7LD3RVJDZGTXF53CDLCI67YPWZQ5POOA.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "0313pages_7DLRSEXVIADBZZUN4IJIACW5T23YBH7H.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "0496pages_E3474JUEVRWQ3P2J2I3XBFKMMVZLLKWZ.pdf",
+      "status": "no_ppm_files"
+    },
+    {
+      "pdf": "0821pages_LUNFJFH4KWZ3ZFNRO43WSMZPLM4OLB7C.pdf",
+      "status": "no_ppm_files"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.2, pluggy-1.6.0 -- /Applications/Xcode.app/Contents/Developer/usr/bin/python3
+cachedir: .pytest_cache
+metadata: {'Python': '3.9.6', 'Platform': 'macOS-15.7.2-arm64-arm-64bit', 'Packages': {'pytest': '8.4.2', 'pluggy': '1.6.0'}, 'Plugins': {'anyio': '4.11.0', 'html': '4.1.1', 'langsmith': '0.4.37', 'timeout': '2.4.0', 'metadata': '3.1.1'}, 'AWS_REGION': 'us-east-1'}
+rootdir: /Users/ayates/pdfium_fast/integration_tests
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.11.0, html-4.1.1, langsmith-0.4.37, timeout-2.4.0, metadata-3.1.1
+timeout: 300.0s
+timeout method: signal
+timeout func_only: False
+collecting ... collected 2881 items / 2814 deselected / 67 selected
+
+tests/test_000_infrastructure.py::test_000_1_main_manifest_exists PASSED [  1%]
+tests/test_000_infrastructure.py::test_000_2_main_manifest_has_required_columns PASSED [  2%]
+tests/test_000_infrastructure.py::test_000_10_manifest_summary PASSED    [  4%]
+tests/test_001_smoke.py::TestSmokeText::test_text_1worker_doesnt_crash[pdf_100p_text] PASSED [  5%]
+tests/test_001_smoke.py::TestSmokeText::test_text_1worker_doesnt_crash[pdf_arxiv] PASSED [  7%]
+tests/test_001_smoke.py::TestSmokeText::test_text_1worker_doesnt_crash[pdf_edinet] PASSED [  8%]
+tests/test_001_smoke.py::TestSmokeText::test_text_1worker_doesnt_crash[pdf_cc] PASSED [ 10%]
+tests/test_001_smoke.py::TestSmokeText::test_text_1worker_doesnt_crash[pdf_web] PASSED [ 11%]
+tests/test_001_smoke.py::TestSmokeText::test_text_1worker_doesnt_crash[pdf_web_tricky] PASSED [ 13%]
+tests/test_001_smoke.py::TestSmokeText::test_text_4workers_matches_1worker[pdf_100p_text] PASSED [ 14%]
+tests/test_001_smoke.py::TestSmokeText::test_text_4workers_matches_1worker[pdf_arxiv] PASSED [ 16%]
+tests/test_001_smoke.py::TestSmokeText::test_text_4workers_matches_1worker[pdf_edinet] PASSED [ 17%]
+tests/test_001_smoke.py::TestSmokeText::test_text_4workers_matches_1worker[pdf_cc] PASSED [ 19%]
+tests/test_001_smoke.py::TestSmokeText::test_text_4workers_matches_1worker[pdf_web] PASSED [ 20%]
+tests/test_001_smoke.py::TestSmokeText::test_text_4workers_matches_1worker[pdf_web_tricky] PASSED [ 22%]
+tests/test_001_smoke.py::TestSmokeImage::test_image_4workers_completes[pdf_100p_text] PASSED [ 23%]
+tests/test_001_smoke.py::TestSmokeImage::test_image_4workers_completes[pdf_arxiv] PASSED [ 25%]
+tests/test_001_smoke.py::TestSmokeImage::test_image_4workers_completes[pdf_edinet] PASSED [ 26%]
+tests/test_001_smoke.py::TestSmokeImage::test_image_4workers_completes[pdf_cc] PASSED [ 28%]
+tests/test_001_smoke.py::TestSmokeImage::test_image_4workers_completes[pdf_web] PASSED [ 29%]
+tests/test_001_smoke.py::TestSmokeImage::test_image_4workers_completes[pdf_web_tricky] PASSED [ 31%]
+tests/test_001_smoke.py::TestSmokeImage::test_thumbnail_mode_works[pdf_100p_text] PASSED [ 32%]
+tests/test_001_smoke.py::TestSmokeImage::test_thumbnail_mode_works[pdf_arxiv] PASSED [ 34%]
+tests/test_001_smoke.py::TestSmokeImage::test_thumbnail_mode_works[pdf_edinet] PASSED [ 35%]
+tests/test_001_smoke.py::TestSmokeImage::test_thumbnail_mode_works[pdf_cc] PASSED [ 37%]
+tests/test_001_smoke.py::TestSmokeImage::test_thumbnail_mode_works[pdf_web] PASSED [ 38%]
+tests/test_001_smoke.py::TestSmokeImage::test_thumbnail_mode_works[pdf_web_tricky] PASSED [ 40%]
+tests/test_001_smoke.py::test_prerequisites PASSED                       [ 41%]
+tests/test_001_smoke.py::test_workers_1_explicit PASSED                  [ 43%]
+tests/test_001_smoke.py::test_workers_4_explicit PASSED                  [ 44%]
+tests/test_001_smoke.py::test_smart_mode_on_text_pdf PASSED              [ 46%]
+tests/test_001_smoke.py::test_smart_mode_basic_functionality PASSED      [ 47%]
+tests/test_001_smoke.py::test_smart_mode_with_workers PASSED             [ 49%]
+tests/test_001_smoke.py::test_jsonl_small_pdf PASSED                     [ 50%]
+tests/test_001_smoke.py::test_jsonl_text_match PASSED                    [ 52%]
+tests/test_001_smoke.py::test_jsonl_multiprocess PASSED                  [ 53%]
+tests/test_001_smoke.py::test_cpp_cli_text_extraction PASSED             [ 55%]
+tests/test_001_smoke.py::test_cpp_cli_image_rendering PASSED             [ 56%]
+tests/test_001_smoke.py::test_jsonl_correctness_smoke[arxiv_001] PASSED  [ 58%]
+tests/test_001_smoke.py::test_jsonl_correctness_smoke[cc_008_116p] PASSED [ 59%]
+tests/test_001_smoke.py::test_jsonl_correctness_smoke[edinet_2025-06-26_0914_E01057_SOFT99corporation] PASSED [ 61%]
+tests/test_001_smoke.py::test_jsonl_correctness_smoke[web_007] PASSED    [ 62%]
+tests/test_001_smoke.py::test_jsonl_correctness_smoke[web_038] PASSED    [ 64%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_text_extraction[arabic_rtl] PASSED [ 65%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_text_extraction[emoji_unicode] PASSED [ 67%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_text_extraction[large_images] PASSED [ 68%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_text_extraction[cjk_mixed] PASSED [ 70%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_text_extraction[scanned_fax] PASSED [ 71%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_text_extraction[tiny_pdf] PASSED [ 73%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_text_extraction[math_notation] PASSED [ 74%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_text_extraction[forms_annotations] PASSED [ 76%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_text_extraction[transparency] PASSED [ 77%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_text_extraction[rotated_pages] PASSED [ 79%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_image_rendering[arabic_rtl] PASSED [ 80%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_image_rendering[emoji_unicode] PASSED [ 82%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_image_rendering[large_images] PASSED [ 83%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_image_rendering[cjk_mixed] PASSED [ 85%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_image_rendering[scanned_fax] PASSED [ 86%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_image_rendering[tiny_pdf] PASSED [ 88%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_image_rendering[math_notation] PASSED [ 89%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_image_rendering[forms_annotations] PASSED [ 91%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_image_rendering[transparency] PASSED [ 92%]
+tests/test_001_smoke_edge_cases.py::test_edge_case_image_rendering[rotated_pages] PASSED [ 94%]
+tests/test_011_threading_regression.py::TestThreadingSafety::test_threading_smoke_init_is_thread_safe PASSED [ 95%]
+tests/test_011_threading_regression.py::TestThreadingSafety::test_threading_smoke_no_crashes_with_workers[small_pdf] PASSED [ 97%]
+tests/test_011_threading_regression.py::TestThreadingSafety::test_threading_smoke_no_crashes_with_workers[medium_pdf] PASSED [ 98%]
+tests/test_011_threading_regression.py::TestThreadingSafety::test_threading_smoke_no_crashes_with_workers[large_pdf] PASSED [100%]
+======================================================================
+📊 Telemetry logged to: /Users/ayates/pdfium_fast/integration_tests/telemetry/runs.csv
+📊 Total runs logged: 6081
+📊 Session ID: sess_20251111_165729_a5c4c9bf
+======================================================================
+
+
+
+=============== 67 passed, 2814 deselected in 483.94s (0:08:03) ================

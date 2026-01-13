@@ -1,0 +1,14 @@
+[package]
+name = "video-audio-ingestion"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+video-audio-common = { path = "../common" }
+ffmpeg-next.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["test-util"] }

@@ -1,0 +1,193 @@
+{
+  "page_number": 7,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "Optimized Table Tokenization for Table Structure Recognition",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Diagram illustrating OTSL description of table structure with labels A to E.",
+      "bbox": {
+        "l": 10.0,
+        "t": 10.0,
+        "r": 90.0,
+        "b": 40.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Fig. 3. OTSL description of table structure: A - table example; B - graphical representation of table structure; C - mapping structure on a grid; D - OTSL structure encoding; E - explanation on cell encoding",
+      "bbox": {
+        "l": 10.0,
+        "t": 41.0,
+        "r": 90.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "4.2 Language Syntax",
+      "bbox": {
+        "l": 0.0,
+        "t": 46.0,
+        "r": 50.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The OTSL representation follows these syntax rules:",
+      "bbox": {
+        "l": 0.0,
+        "t": 51.0,
+        "r": 100.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "1. Left-looking cell rule: The left neighbour of an \"L\" cell must be either another \"L\" cell or a \"C\" cell.",
+      "bbox": {
+        "l": 5.0,
+        "t": 56.0,
+        "r": 95.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "2. Up-looking cell rule: The upper neighbour of a \"U\" cell must be either another \"U\" cell or a \"C\" cell.",
+      "bbox": {
+        "l": 5.0,
+        "t": 61.0,
+        "r": 95.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "3. Cross cell rule: The left neighbour of an \"X\" cell must be either another \"X\" cell or a \"U\" cell, and the upper neighbour of an \"X\" cell must be either another \"X\" cell or an \"L\" cell.",
+      "bbox": {
+        "l": 5.0,
+        "t": 66.0,
+        "r": 95.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "4. First row rule: Only \"L\" cells and \"C\" cells are allowed in the first row.",
+      "bbox": {
+        "l": 5.0,
+        "t": 71.0,
+        "r": 95.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "5. First column rule: Only \"U\" cells and \"C\" cells are allowed in the first column.",
+      "bbox": {
+        "l": 5.0,
+        "t": 76.0,
+        "r": 95.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "6. Rectangular rule: The table representation is always rectangular - all rows must have an equal number of tokens, terminated with \"NL\" token.",
+      "bbox": {
+        "l": 5.0,
+        "t": 81.0,
+        "r": 95.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The application of these rules gives OTSL a set of unique properties. First of all, the OTSL enforces a strictly rectangular structure representation, where every new-line token starts a new row. As a consequence, all rows and all columns have exactly the same number of tokens, irrespective of cell spans. Secondly, the OTSL representation is unambiguous: Every table structure is represented in one way. In this representation every table cell corresponds to a \"C\"-cell token, which in case of spans is always located in the top-left corner of the table cell definition. Third, OTSL syntax rules are only backward-looking. As a consequence, every predicted token can be validated straight during sequence generation by looking at the previously predicted sequence. As such, OTSL can guarantee that every predicted sequence is syntactically valid.",
+      "bbox": {
+        "l": 0.0,
+        "t": 86.0,
+        "r": 100.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "These characteristics can be easily learned by sequence generator networks, as we demonstrate further below. We find strong indications that this pattern",
+      "bbox": {
+        "l": 0.0,
+        "t": 96.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

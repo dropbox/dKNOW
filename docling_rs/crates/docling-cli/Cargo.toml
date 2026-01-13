@@ -1,0 +1,55 @@
+[package]
+name = "docling-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Command-line document converter for docling-rs"
+repository.workspace = true
+keywords = ["document", "converter", "cli", "pdf", "markdown"]
+categories = ["command-line-utilities", "text-processing"]
+
+[[bin]]
+name = "docling"
+path = "src/main.rs"
+
+[dependencies]
+clap.workspace = true
+clap_complete = "4.5"
+anyhow.workspace = true
+glob = "0.3"
+toml = "0.8"
+serde.workspace = true
+dirs = "5.0"
+docling-core = { version = "2.58.0", path = "../docling-core" }
+docling-backend = { version = "2.58.0", path = "../docling-backend", default-features = false }
+# Visual improvements
+colored = "2.1"
+indicatif = "0.17"
+miette = { version = "7.0", features = ["fancy"] }
+# For stdin support (temp files)
+tempfile = "3.8"
+# For JSON output in formats command
+serde_json = "1.0"
+# For date/time formatting in info command
+chrono = "0.4"
+# For PDF page count (info command)
+lopdf = "0.32"
+# For parallel batch processing
+rayon = "1.8"
+# For file watching (--watch mode)
+notify = "6.1"
+notify-debouncer-mini = "0.4"
+
+[features]
+# Default: Full ML pipeline with pdfium_fast (72x faster)
+# Requires ~/pdfium_fast to be built and PyTorch libraries
+default = ["pdf"]
+# PDF: Full ML pipeline with pdfium_fast + PyTorch
+pdf = ["docling-backend/pdf"]
+
+[dev-dependencies]
+assert_cmd = "2.0"
+predicates = "3.0"
+tempfile = "3.8"
+serde_json = "1.0"
+serde_yaml = "0.9"

@@ -1,0 +1,9 @@
+/-- Create a new join point for `c`, and jump to it with the variables `rs` -/
+def mkSimpleJmp (ref : Syntax) (rs : VarSet) (c : Code) : StateRefT (Array JPDecl) TermElabM Code := do
+  let xs := varSetToArray rs
+  let jp ← addFreshJP (xs.map fun x => (x, true)) c
+  if xs.isEmpty then
+    let unit ← ``(Unit.unit)
+    return Code.jmp ref jp #[unit]
+  else
+    return Code.jmp ref jp xs

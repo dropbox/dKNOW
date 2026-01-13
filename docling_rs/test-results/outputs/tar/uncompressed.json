@@ -1,0 +1,162 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Archive Contents: uncompressed.tar",
+    "text": "Archive Contents: uncompressed.tar",
+    "level": 1
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Format Information",
+    "text": "Format Information",
+    "level": 2
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Format: TAR, Archive size: 7.17 KB",
+    "text": "Format: TAR, Archive size: 7.17 KB"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/3",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Archive Summary",
+    "text": "Archive Summary",
+    "level": 2
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/4",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "2 files (1 MD file, 1 TXT file), 7168 bytes total (66 bytes content + 7102 bytes TAR overhead)",
+    "text": "2 files (1 MD file, 1 TXT file), 7168 bytes total (66 bytes content + 7102 bytes TAR overhead)"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/5",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Contents",
+    "text": "Contents",
+    "level": 2
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/6",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "file1.txt (30 bytes)",
+    "text": "file1.txt (30 bytes)",
+    "enumerated": false,
+    "marker": "- "
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/7",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "file2.md (36 bytes)",
+    "text": "file2.md (36 bytes)",
+    "enumerated": false,
+    "marker": "- "
+  }
+]

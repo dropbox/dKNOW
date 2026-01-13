@@ -1,0 +1,106 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Something",
+    "text": "Something",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Please follow the link to:",
+    "text": "Please follow the link to:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/3",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This page",
+    "text": "This page",
+    "hyperlink": "#"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/4",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ".",
+    "text": "."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/1",
+    "children": [
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  }
+]

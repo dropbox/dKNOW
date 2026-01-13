@@ -1,0 +1,78 @@
+# Improved training config v2 with advanced optimizations
+# - All v1 improvements PLUS:
+# - GradCache for larger effective batches
+# - Layer-wise Learning Rate Decay (LLRD)
+# - Matryoshka Representation Learning
+
+data:
+  train: "data/training_improved.jsonl"
+  validation: "data/training_improved.val.jsonl"
+  # languages: ["rust", "python", "lean"]  # Optional filter
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-improved-v2"
+
+training:
+  method: "lora"
+
+  # LoRA config (targeting all attention + FFN)
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  target_modules:
+    - "q"
+    - "v"
+    - "k"
+    - "o"
+    - "wi_0"
+    - "wi_1"
+    - "wo"
+
+  # Training hyperparameters
+  batch_size: 16            # Larger batch since GradCache handles memory
+  gradient_accumulation_steps: 4  # Effective batch = 64
+  epochs: 3
+  learning_rate: 3.0e-5     # Slightly higher LR since LLRD decays lower layers
+  warmup_steps: 500
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+
+  # Contrastive learning
+  temperature: 0.07
+  max_hard_negatives: 3
+
+  # Margin loss (helps separation)
+  use_margin_loss: true
+  margin: 0.2
+  margin_weight: 0.1
+
+  # Sequence length
+  max_length: 384           # Reduced from 512 for speed
+
+  # Key improvements
+  language_aware_batching: true
+  gradient_checkpointing: true
+  cache_tokenized: true
+
+  # === NEW v2 IMPROVEMENTS ===
+
+  # GradCache - memory-efficient large batches
+  use_gradcache: false       # Disable for now - needs testing
+  gradcache_chunk_size: 4   # Process 4 examples at a time
+
+  # LLRD - layer-wise learning rate decay
+  use_llrd: true            # Enable LLRD
+  llrd_decay_rate: 0.9      # Lower layers get 0.9^depth * base_lr
+
+  # Matryoshka - multi-dimensional embeddings
+  use_matryoshka: true      # Enable Matryoshka
+  matryoshka_dims: [64, 128, 256, 768]  # Train at multiple dimensions
+
+  # Validation and early stopping
+  eval_every: 300
+  early_stopping_patience: 5
+  log_every: 10
+  save_every: 1000
+
+  seed: 42

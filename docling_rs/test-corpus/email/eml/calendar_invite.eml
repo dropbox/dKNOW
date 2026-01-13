@@ -1,0 +1,43 @@
+From: conference-system@acmeconf.com
+To: attendees@acmeconf.com
+Subject: Invitation: Tech Summit 2025 Keynote
+Date: Fri, 10 Nov 2025 08:00:00 -0800
+Message-ID: <calendar-invite-2025@acmeconf.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="cal-boundary"
+
+--cal-boundary
+Content-Type: text/plain; charset="UTF-8"
+
+You're invited to attend the Tech Summit 2025 Keynote!
+
+Event: Tech Summit 2025 Keynote
+Date: Monday, December 4, 2025
+Time: 9:00 AM - 10:30 AM PST
+Location: Convention Center, Main Hall
+Speaker: Dr. Jane Anderson, CTO of FutureTech
+
+Please accept or decline this invitation.
+
+--cal-boundary
+Content-Type: text/calendar; charset="UTF-8"; method=REQUEST
+Content-Disposition: inline; filename="invite.ics"
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Acme Conference System//EN
+BEGIN:VEVENT
+UID:techsummit2025-keynote@acmeconf.com
+DTSTAMP:20251110T160000Z
+DTSTART:20251204T170000Z
+DTEND:20251204T183000Z
+SUMMARY:Tech Summit 2025 Keynote
+LOCATION:Convention Center, Main Hall
+DESCRIPTION:Join us for an inspiring keynote by Dr. Jane Anderson, CTO of FutureTech. Topics include: AI trends, cloud architecture, and the future of software development.
+ORGANIZER;CN=Conference System:mailto:conference-system@acmeconf.com
+ATTENDEE;CN=Attendees;RSVP=TRUE:mailto:attendees@acmeconf.com
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
+
+--cal-boundary--

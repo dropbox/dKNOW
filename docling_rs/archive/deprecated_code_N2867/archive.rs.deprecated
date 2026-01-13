@@ -1,0 +1,1008 @@
+//! Archive format processing
+//!
+//! This module handles extraction and processing of archive formats (ZIP, TAR, 7Z, RAR).
+//! Archives are extracted recursively and each contained file is processed based on its format.
+
+use crate::converter::DocumentConverter;
+use crate::error::DoclingError;
+use crate::format::InputFormat;
+use crate::Result;
+use docling_archive::tar::extract_tar_from_path;
+use docling_archive::zip::extract_zip_from_path;
+use docling_archive::MAX_NESTING_DEPTH;
+use std::fs;
+use std::path::{Path, PathBuf};
+use tempfile::NamedTempFile;
+
+/// Process ZIP archive by extracting and processing all contained files
+///
+/// This function extracts all files from a ZIP archive and processes each file
+/// based on its detected format. The results are aggregated into a single
+/// markdown document with sections for each file.
+///
+/// # Arguments
+///
+/// * `path` - Path to the ZIP archive
+/// * `converter` - Document converter instance for processing extracted files
+///
+/// # Returns
+///
+/// Aggregated markdown content from all processed files
+///
+/// # Errors
+///
+/// Returns error if:
+/// - Archive cannot be opened or extracted
+/// - Archive is password-protected
+/// - Archive exceeds size limits
+///
+/// # Example
+///
+/// ```no_run
+/// use docling_core::archive::process_zip;
+/// use docling_core::converter::DocumentConverter;
+/// use std::path::Path;
+///
+/// let converter = DocumentConverter::new()?;
+/// let result = process_zip(Path::new("archive.zip"), &converter)?;
+/// println!("{}", result);
+/// # Ok::<(), docling_core::DoclingError>(())
+/// ```
+pub fn process_zip(path: &Path, converter: &DocumentConverter) -> Result<String> {
+    process_zip_recursive(path, converter, 0)
+        .map_err(|e| DoclingError::ConversionError(format!("Failed to process ZIP archive: {e}")))
+}
+
+/// Process ZIP archive recursively with depth tracking
+///
+/// This internal function handles nested archives by tracking recursion depth
+/// and processing each file appropriately.
+///
+/// # Arguments
+///
+/// * `path` - Path to the ZIP archive
+/// * `converter` - Document converter instance
+/// * `depth` - Current nesting depth (0 for top-level archive)
+///
+/// # Returns
+///
+/// Aggregated markdown content from all processed files
+fn process_zip_recursive(
+    path: &Path,
+    converter: &DocumentConverter,
+    depth: usize,
+) -> Result<String> {
+    // Prevent infinite recursion
+    if depth > MAX_NESTING_DEPTH {
+        return Err(DoclingError::ConversionError(format!(
+            "Archive nesting too deep (max depth {MAX_NESTING_DEPTH})"
+        )));
+    }
+
+    // Extract all files from ZIP
+    let files = extract_zip_from_path(path)
+        .map_err(|e| DoclingError::ConversionError(format!("Failed to extract ZIP: {e}")))?;
+
+    if files.is_empty() {
+        return Ok(format!("# Archive: {}\n\n(Empty archive)", path.display()));
+    }
+
+    let mut results = Vec::new();
+
+    // Add title for top-level archives
+    if depth == 0 {
+        let filename = path
+            .file_name()
+            .and_then(|n| n.to_str())
+            .unwrap_or("archive");
+        results.push(format!("# ZIP Archive: {filename}\n\n"));
+    }
+
+    // Add header for nested archives
+    if depth > 0 {
+        results.push(format!("### Nested Archive: {}\n", path.display()));
+    }
+
+    // Add summary section with file type information (top-level archives only)
+    if depth == 0 {
+        let mut file_types = std::collections::HashMap::new();
+        let mut total_bytes: u64 = 0;
+        for file in &files {
+            let ext = file
+                .path
+                .extension()
+                .and_then(|s| s.to_str())
+                .unwrap_or("unknown");
+            *file_types.entry(ext.to_lowercase()).or_insert(0) += 1;
+            total_bytes += file.size as u64;
+        }
+
+        results.push("## Archive Summary\n".to_string());
+        results.push(format!("Total Files: {}\n", files.len()));
+        results.push(format!("Total Bytes: {total_bytes}\n"));
+
+        let mut types_sorted: Vec<_> = file_types.iter().collect();
+        types_sorted.sort_by_key(|(_, count)| std::cmp::Reverse(**count));
+
+        results.push("File Types:\n".to_string());
+        for (ext, count) in types_sorted {
+            let plural = if *count == 1 { "file" } else { "files" };
+            results.push(format!("- .{ext}: {count} {plural}\n"));
+        }
+    }
+
+    // Process each extracted file
+    for file in files {
+        let ext = file.path.extension().and_then(|s| s.to_str()).unwrap_or("");
+
+        // Detect format from extension
+        let format = InputFormat::from_extension(ext);
+
+        match format {
+            Some(InputFormat::Zip) => {
+                // Nested ZIP archive - process recursively
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match process_zip_recursive(&temp_path, converter, depth + 1) {
+                    Ok(content) => {
+                        results.push(format!("## Archive: {}\n\n{}", file.name, content));
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process nested archive {}: {}", file.name, e);
+                        results.push(format!(
+                            "## Archive: {} (processing failed: {})\n",
+                            file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            Some(_fmt) => {
+                // Regular file - process based on format
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match converter.convert(&temp_path) {
+                    Ok(result) => {
+                        // Add file header based on depth
+                        let header = if depth > 0 {
+                            format!("#### File: {}\n\n{}", file.name, result.document.markdown)
+                        } else {
+                            format!("## File: {}\n\n{}", file.name, result.document.markdown)
+                        };
+                        results.push(header);
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process {}: {}", file.name, e);
+                        results.push(format!(
+                            "## File: {} (processing failed: {})\n",
+                            file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            None => {
+                // Unsupported format - list the file
+                let header = if depth > 0 {
+                    format!("#### File: {} (unsupported format: .{})\n", file.name, ext)
+                } else {
+                    format!("## File: {} (unsupported format: .{})\n", file.name, ext)
+                };
+                results.push(header);
+            }
+        }
+    }
+
+    Ok(results.join("\n\n---\n\n"))
+}
+
+/// Process TAR archive by extracting and processing all contained files
+///
+/// This function extracts all files from a TAR archive (supports .tar, .tar.gz,
+/// .tgz, .tar.bz2) and processes each file based on its detected format.
+/// The results are aggregated into a single markdown document with sections for each file.
+///
+/// # Arguments
+///
+/// * `path` - Path to the TAR archive
+/// * `converter` - Document converter instance for processing extracted files
+///
+/// # Returns
+///
+/// Aggregated markdown content from all processed files
+///
+/// # Errors
+///
+/// Returns error if:
+/// - Archive cannot be opened or extracted
+/// - Archive is corrupted
+/// - Archive exceeds size limits
+///
+/// # Example
+///
+/// ```no_run
+/// use docling_core::archive::process_tar;
+/// use docling_core::converter::DocumentConverter;
+/// use std::path::Path;
+///
+/// let converter = DocumentConverter::new()?;
+/// let result = process_tar(Path::new("archive.tar.gz"), &converter)?;
+/// println!("{}", result);
+/// # Ok::<(), docling_core::DoclingError>(())
+/// ```
+pub fn process_tar(path: &Path, converter: &DocumentConverter) -> Result<String> {
+    process_tar_recursive(path, converter, 0)
+        .map_err(|e| DoclingError::ConversionError(format!("Failed to process TAR archive: {e}")))
+}
+
+/// Process TAR archive recursively with depth tracking
+///
+/// This internal function handles nested archives by tracking recursion depth
+/// and processing each file appropriately.
+///
+/// # Arguments
+///
+/// * `path` - Path to the TAR archive
+/// * `converter` - Document converter instance
+/// * `depth` - Current nesting depth (0 for top-level archive)
+///
+/// # Returns
+///
+/// Aggregated markdown content from all processed files
+fn process_tar_recursive(
+    path: &Path,
+    converter: &DocumentConverter,
+    depth: usize,
+) -> Result<String> {
+    // Prevent infinite recursion
+    if depth > MAX_NESTING_DEPTH {
+        return Err(DoclingError::ConversionError(format!(
+            "Archive nesting too deep (max depth {MAX_NESTING_DEPTH})"
+        )));
+    }
+
+    // Extract all files from TAR
+    let files = extract_tar_from_path(path)
+        .map_err(|e| DoclingError::ConversionError(format!("Failed to extract TAR: {e}")))?;
+
+    if files.is_empty() {
+        return Ok(format!("# Archive: {}\n\n(Empty archive)", path.display()));
+    }
+
+    let mut results = Vec::new();
+
+    // Add title for top-level archives
+    if depth == 0 {
+        let filename = path
+            .file_name()
+            .and_then(|n| n.to_str())
+            .unwrap_or("archive");
+        results.push(format!("# TAR Archive: {filename}\n\n"));
+    }
+
+    // Add header for nested archives
+    if depth > 0 {
+        results.push(format!("### Nested Archive: {}\n", path.display()));
+    }
+
+    // Add summary section with file type information (top-level archives only)
+    if depth == 0 {
+        let mut file_types = std::collections::HashMap::new();
+        let mut total_bytes: u64 = 0;
+        for file in &files {
+            let ext = file
+                .path
+                .extension()
+                .and_then(|s| s.to_str())
+                .unwrap_or("unknown");
+            *file_types.entry(ext.to_lowercase()).or_insert(0) += 1;
+            total_bytes += file.size as u64;
+        }
+
+        results.push("## Archive Summary\n".to_string());
+        results.push(format!("Total Files: {}\n", files.len()));
+        results.push(format!("Total Bytes: {total_bytes}\n"));
+
+        let mut types_sorted: Vec<_> = file_types.iter().collect();
+        types_sorted.sort_by_key(|(_, count)| std::cmp::Reverse(**count));
+
+        results.push("File Types:\n".to_string());
+        for (ext, count) in types_sorted {
+            let plural = if *count == 1 { "file" } else { "files" };
+            results.push(format!("- .{ext}: {count} {plural}\n"));
+        }
+    }
+
+    // Process each extracted file
+    for file in files {
+        let ext = file.path.extension().and_then(|s| s.to_str()).unwrap_or("");
+
+        // Detect format from extension
+        let format = InputFormat::from_extension(ext);
+
+        match format {
+            Some(InputFormat::Tar) => {
+                // Nested TAR archive - process recursively
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match process_tar_recursive(&temp_path, converter, depth + 1) {
+                    Ok(content) => {
+                        results.push(format!("## Archive: {}\n\n{}", file.name, content));
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process nested archive {}: {}", file.name, e);
+                        results.push(format!(
+                            "## Archive: {} (processing failed: {})\n",
+                            file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            Some(InputFormat::Zip) => {
+                // Nested ZIP archive - process with ZIP handler
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match process_zip_recursive(&temp_path, converter, depth + 1) {
+                    Ok(content) => {
+                        results.push(format!("## Archive: {}\n\n{}", file.name, content));
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process nested archive {}: {}", file.name, e);
+                        results.push(format!(
+                            "## Archive: {} (processing failed: {})\n",
+                            file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            Some(_fmt) => {
+                // Regular file - process based on format
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match converter.convert(&temp_path) {
+                    Ok(result) => {
+                        // Add file header based on depth
+                        let header = if depth > 0 {
+                            format!("#### File: {}\n\n{}", file.name, result.document.markdown)
+                        } else {
+                            format!("## File: {}\n\n{}", file.name, result.document.markdown)
+                        };
+                        results.push(header);
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process {}: {}", file.name, e);
+                        results.push(format!(
+                            "## File: {} (processing failed: {})\n",
+                            file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            None => {
+                // Unsupported format - list the file
+                let header = if depth > 0 {
+                    format!("#### File: {} (unsupported format: .{})\n", file.name, ext)
+                } else {
+                    format!("## File: {} (unsupported format: .{})\n", file.name, ext)
+                };
+                results.push(header);
+            }
+        }
+    }
+
+    Ok(results.join("\n\n---\n\n"))
+}
+
+/// Process 7Z archive and extract all documents
+///
+/// This function extracts all files from a 7Z archive and processes each file
+/// based on its detected format. Nested archives (7Z within 7Z, ZIP within 7Z, etc.)
+/// are processed recursively up to a maximum depth.
+///
+/// # Arguments
+///
+/// * `path` - Path to the 7Z archive file
+/// * `converter` - Document converter instance to use for processing files
+///
+/// # Returns
+///
+/// Aggregated markdown content from all processed files
+///
+/// # Example
+///
+/// ```no_run
+/// use docling_core::archive::process_7z;
+/// use docling_core::converter::DocumentConverter;
+/// use std::path::Path;
+///
+/// let converter = DocumentConverter::new()?;
+/// let result = process_7z(Path::new("archive.7z"), &converter)?;
+/// println!("{}", result);
+/// # Ok::<(), docling_core::DoclingError>(())
+/// ```
+pub fn process_7z(path: &Path, converter: &DocumentConverter) -> Result<String> {
+    process_7z_recursive(path, converter, 0)
+        .map_err(|e| DoclingError::ConversionError(format!("Failed to process 7Z archive: {e}")))
+}
+
+/// Process 7Z archive recursively with depth tracking
+///
+/// This internal function handles nested archives by tracking recursion depth
+/// and processing each file appropriately.
+///
+/// # Arguments
+///
+/// * `path` - Path to the 7Z archive
+/// * `converter` - Document converter instance
+/// * `depth` - Current nesting depth (0 for top-level archive)
+///
+/// # Returns
+///
+/// Aggregated markdown content from all processed files
+fn process_7z_recursive(
+    path: &Path,
+    converter: &DocumentConverter,
+    depth: usize,
+) -> Result<String> {
+    // Prevent infinite recursion
+    if depth > MAX_NESTING_DEPTH {
+        return Err(DoclingError::ConversionError(format!(
+            "Archive nesting too deep (max depth {MAX_NESTING_DEPTH})"
+        )));
+    }
+
+    // Extract all files from 7Z
+    let files = docling_archive::extract_7z_from_path(path)
+        .map_err(|e| DoclingError::ConversionError(format!("Failed to extract 7Z: {e}")))?;
+
+    if files.is_empty() {
+        return Ok(format!("# Archive: {}\n\n(Empty archive)", path.display()));
+    }
+
+    let mut results = Vec::new();
+
+    // Add header for nested archives
+    if depth > 0 {
+        results.push(format!("### Nested Archive: {}\n", path.display()));
+    }
+
+    // Process each extracted file
+    for file in files {
+        let ext = file.path.extension().and_then(|s| s.to_str()).unwrap_or("");
+
+        // Detect format from extension
+        let format = InputFormat::from_extension(ext);
+
+        match format {
+            Some(InputFormat::SevenZ) => {
+                // Nested 7Z archive - process recursively
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match process_7z_recursive(&temp_path, converter, depth + 1) {
+                    Ok(content) => {
+                        results.push(format!("## Archive: {}\n\n{}", file.name, content));
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process nested archive {}: {}", file.name, e);
+                        results.push(format!(
+                            "## Archive: {} (processing failed: {})\n",
+                            file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            Some(InputFormat::Zip) => {
+                // Nested ZIP archive - process with ZIP handler
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match process_zip_recursive(&temp_path, converter, depth + 1) {
+                    Ok(content) => {
+                        results.push(format!("## Archive: {}\n\n{}", file.name, content));
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process nested archive {}: {}", file.name, e);
+                        results.push(format!(
+                            "## Archive: {} (processing failed: {})\n",
+                            file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            Some(InputFormat::Tar) => {
+                // Nested TAR archive - process with TAR handler
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match process_tar_recursive(&temp_path, converter, depth + 1) {
+                    Ok(content) => {
+                        results.push(format!("## Archive: {}\n\n{}", file.name, content));
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process nested archive {}: {}", file.name, e);
+                        results.push(format!(
+                            "## Archive: {} (processing failed: {})\n",
+                            file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            Some(_fmt) => {
+                // Regular document file - write to temp and process
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+
+                match converter.convert(&temp_path) {
+                    Ok(result) => {
+                        // Add file header based on depth
+                        let header = if depth > 0 {
+                            format!("#### File: {}\n\n", file.name)
+                        } else {
+                            format!("## File: {}\n\n", file.name)
+                        };
+                        results.push(format!("{}{}", header, result.document.markdown));
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process file {}: {}", file.name, e);
+                        let header = if depth > 0 {
+                            format!("#### File: {} (processing failed: {})\n", file.name, e)
+                        } else {
+                            format!("## File: {} (processing failed: {})\n", file.name, e)
+                        };
+                        results.push(header);
+                    }
+                }
+
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            None => {
+                // Unsupported format
+                let header_level = if depth > 0 { "####" } else { "##" };
+                results.push(format!(
+                    "{} File: {} (unsupported format: .{})\n",
+                    header_level, file.name, ext
+                ));
+            }
+        }
+    }
+
+    Ok(results.join("\n"))
+}
+
+/// Process RAR archive by extracting and processing all contained files
+///
+/// This function extracts all files from a RAR archive and processes each file
+/// based on its detected format. The results are aggregated into a single
+/// markdown document with sections for each file.
+///
+/// Supports:
+/// - RAR4 (legacy format, pre-2013)
+/// - RAR5 (modern format, 2013+)
+/// - Multi-volume archives (.part1.rar, .part2.rar, etc.)
+/// - Nested archives (RAR within RAR, ZIP within RAR, etc.)
+///
+/// # Arguments
+///
+/// * `path` - Path to the RAR archive (or first part of multi-volume archive)
+/// * `converter` - Document converter instance for processing extracted files
+///
+/// # Returns
+///
+/// Aggregated markdown content from all processed files
+///
+/// # Errors
+///
+/// Returns error if:
+/// - Archive cannot be opened or extracted
+/// - Archive is password-protected
+/// - Archive exceeds size limits
+/// - Multi-volume archive parts are missing
+///
+/// # Example
+///
+/// ```no_run
+/// use docling_core::archive::process_rar;
+/// use docling_core::converter::DocumentConverter;
+/// use std::path::Path;
+///
+/// let converter = DocumentConverter::new()?;
+/// let result = process_rar(Path::new("archive.rar"), &converter)?;
+/// println!("{}", result);
+/// # Ok::<(), docling_core::DoclingError>(())
+/// ```
+pub fn process_rar(path: &Path, converter: &DocumentConverter) -> Result<String> {
+    process_rar_recursive(path, converter, 0)
+        .map_err(|e| DoclingError::ConversionError(format!("Failed to process RAR archive: {e}")))
+}
+
+/// Process RAR archive recursively with depth tracking
+///
+/// This internal function handles nested archives by tracking recursion depth
+/// and processing each file appropriately.
+///
+/// # Arguments
+///
+/// * `path` - Path to the RAR archive
+/// * `converter` - Document converter instance
+/// * `depth` - Current nesting depth (0 for top-level archive)
+///
+/// # Returns
+///
+/// Aggregated markdown content from all processed files
+fn process_rar_recursive(
+    path: &Path,
+    converter: &DocumentConverter,
+    depth: usize,
+) -> Result<String> {
+    // Prevent infinite recursion
+    if depth > MAX_NESTING_DEPTH {
+        return Err(DoclingError::ConversionError(format!(
+            "Archive nesting too deep (max depth {MAX_NESTING_DEPTH})"
+        )));
+    }
+
+    // Extract all files from RAR
+    let files = docling_archive::extract_rar_from_path(path)
+        .map_err(|e| DoclingError::ConversionError(format!("Failed to extract RAR: {e}")))?;
+
+    if files.is_empty() {
+        return Ok(format!("# Archive: {}\n\n(Empty archive)", path.display()));
+    }
+
+    let mut results = Vec::new();
+
+    // Add header for nested archives
+    if depth > 0 {
+        results.push(format!("### Nested Archive: {}\n", path.display()));
+    }
+
+    // Process each extracted file
+    for file in files {
+        let ext = file.path.extension().and_then(|s| s.to_str()).unwrap_or("");
+
+        // Detect format from extension
+        let format = InputFormat::from_extension(ext);
+
+        match format {
+            Some(InputFormat::Rar) => {
+                // Nested RAR archive - process recursively
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match process_rar_recursive(&temp_path, converter, depth + 1) {
+                    Ok(content) => {
+                        results.push(format!("## Archive: {}\n\n{}", file.name, content));
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process nested archive {}: {}", file.name, e);
+                        results.push(format!(
+                            "## Archive: {} (processing failed: {})\n",
+                            file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            Some(InputFormat::Zip) => {
+                // Nested ZIP archive - process with ZIP handler
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match process_zip_recursive(&temp_path, converter, depth + 1) {
+                    Ok(content) => {
+                        results.push(format!("## Archive: {}\n\n{}", file.name, content));
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process nested archive {}: {}", file.name, e);
+                        results.push(format!(
+                            "## Archive: {} (processing failed: {})\n",
+                            file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            Some(InputFormat::Tar) => {
+                // Nested TAR archive - process with TAR handler
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match process_tar_recursive(&temp_path, converter, depth + 1) {
+                    Ok(content) => {
+                        results.push(format!("## Archive: {}\n\n{}", file.name, content));
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process nested archive {}: {}", file.name, e);
+                        results.push(format!(
+                            "## Archive: {} (processing failed: {})\n",
+                            file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            Some(InputFormat::SevenZ) => {
+                // Nested 7Z archive - process with 7Z handler
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match process_7z_recursive(&temp_path, converter, depth + 1) {
+                    Ok(content) => {
+                        results.push(format!("## Archive: {}\n\n{}", file.name, content));
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process nested archive {}: {}", file.name, e);
+                        results.push(format!(
+                            "## Archive: {} (processing failed: {})\n",
+                            file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            Some(_format) => {
+                // Supported document format - process with converter
+                let temp_path = write_temp_file(&file.name, &file.contents).map_err(|e| {
+                    DoclingError::ConversionError(format!("Failed to create temp file: {e}"))
+                })?;
+                match converter.convert(&temp_path) {
+                    Ok(result) => {
+                        let header_level = if depth > 0 { "####" } else { "##" };
+                        results.push(format!(
+                            "{} File: {}\n\n{}",
+                            header_level, file.name, result.document.markdown
+                        ));
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to process file {}: {}", file.name, e);
+                        let header_level = if depth > 0 { "####" } else { "##" };
+                        results.push(format!(
+                            "{} File: {} (processing failed: {})\n",
+                            header_level, file.name, e
+                        ));
+                    }
+                }
+                // Clean up temp file
+                let _ = fs::remove_file(&temp_path);
+            }
+            None => {
+                // Unsupported format
+                let header_level = if depth > 0 { "####" } else { "##" };
+                results.push(format!(
+                    "{} File: {} (unsupported format: .{})\n",
+                    header_level, file.name, ext
+                ));
+            }
+        }
+    }
+
+    Ok(results.join("\n"))
+}
+
+/// Write file contents to a temporary file
+///
+/// Creates a temporary file with the appropriate extension for format detection.
+///
+/// # Arguments
+///
+/// * `name` - Original filename (used to extract extension)
+/// * `contents` - File contents as bytes
+///
+/// # Returns
+///
+/// Path to the temporary file
+///
+/// # Errors
+///
+/// Returns error if temporary file creation or writing fails
+fn write_temp_file(name: &str, contents: &[u8]) -> std::result::Result<PathBuf, std::io::Error> {
+    // Extract extension from original filename
+    let ext = Path::new(name)
+        .extension()
+        .and_then(|s| s.to_str())
+        .unwrap_or("");
+
+    // Create temp file with proper extension
+    let suffix = if ext.is_empty() {
+        String::new()
+    } else {
+        format!(".{ext}")
+    };
+
+    let mut temp_file = NamedTempFile::with_suffix(&suffix)?;
+
+    // Write contents
+    use std::io::Write;
+    temp_file.write_all(contents)?;
+    temp_file.flush()?;
+
+    // Persist the temp file (prevents auto-deletion)
+    let (_, path) = temp_file.keep()?;
+    Ok(path)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_write_temp_file() {
+        let contents = b"Hello, world!";
+        let path = write_temp_file("test.txt", contents).expect("Failed to create temp file");
+
+        assert!(path.exists());
+        assert_eq!(path.extension().and_then(|s| s.to_str()), Some("txt"));
+
+        let read_contents = fs::read(&path).expect("Failed to read temp file");
+        assert_eq!(read_contents, contents);
+
+        // Cleanup
+        let _ = fs::remove_file(&path);
+    }
+
+    #[test]
+    fn test_write_temp_file_no_extension() {
+        let contents = b"No extension";
+        let path = write_temp_file("README", contents).expect("Failed to create temp file");
+
+        assert!(path.exists());
+
+        // Cleanup
+        let _ = fs::remove_file(&path);
+    }
+
+    #[test]
+    fn test_write_temp_file_various_extensions() {
+        // Test various file extensions are preserved
+        let extensions = vec!["pdf", "docx", "xlsx", "txt", "md", "json"];
+
+        for ext in extensions {
+            let filename = format!("test.{}", ext);
+            let contents = b"Test content";
+            let path = write_temp_file(&filename, contents).expect("Failed to create temp file");
+
+            assert!(path.exists());
+            assert_eq!(
+                path.extension().and_then(|s| s.to_str()),
+                Some(ext),
+                "Extension {} not preserved",
+                ext
+            );
+
+            // Cleanup
+            let _ = fs::remove_file(&path);
+        }
+    }
+
+    #[test]
+    fn test_write_temp_file_large_content() {
+        // Test writing large content (1 MB)
+        let contents = vec![0u8; 1024 * 1024];
+        let path = write_temp_file("large.bin", &contents).expect("Failed to create temp file");
+
+        assert!(path.exists());
+
+        let read_contents = fs::read(&path).expect("Failed to read temp file");
+        assert_eq!(read_contents.len(), contents.len());
+
+        // Cleanup
+        let _ = fs::remove_file(&path);
+    }
+
+    #[test]
+    fn test_process_zip_nonexistent_file() {
+        // Test error handling for missing ZIP file
+        let converter = DocumentConverter::new().expect("Failed to create converter");
+        let result = process_zip(Path::new("/nonexistent/path/to/archive.zip"), &converter);
+        assert!(result.is_err());
+    }
+
+    #[test]
+    fn test_process_tar_nonexistent_file() {
+        // Test error handling for missing TAR file
+        let converter = DocumentConverter::new().expect("Failed to create converter");
+        let result = process_tar(Path::new("/nonexistent/path/to/archive.tar"), &converter);
+        assert!(result.is_err());
+    }
+
+    #[test]
+    fn test_process_7z_nonexistent_file() {
+        // Test error handling for missing 7Z file
+        let converter = DocumentConverter::new().expect("Failed to create converter");
+        let result = process_7z(Path::new("/nonexistent/path/to/archive.7z"), &converter);
+        assert!(result.is_err());
+    }
+
+    #[test]
+    fn test_process_rar_nonexistent_file() {
+        // Test error handling for missing RAR file
+        let converter = DocumentConverter::new().expect("Failed to create converter");
+        let result = process_rar(Path::new("/nonexistent/path/to/archive.rar"), &converter);
+        assert!(result.is_err());
+    }
+
+    #[test]
+    fn test_write_temp_file_empty_content() {
+        // Test writing empty file
+        let contents = b"";
+        let path = write_temp_file("empty.txt", contents).expect("Failed to create temp file");
+
+        assert!(path.exists());
+
+        let read_contents = fs::read(&path).expect("Failed to read temp file");
+        assert_eq!(read_contents.len(), 0);
+
+        // Cleanup
+        let _ = fs::remove_file(&path);
+    }
+
+    #[test]
+    fn test_write_temp_file_special_characters() {
+        // Test filename with special characters
+        let contents = b"Special chars test";
+        let path =
+            write_temp_file("test-file_v1.2.txt", contents).expect("Failed to create temp file");
+
+        assert!(path.exists());
+        assert_eq!(path.extension().and_then(|s| s.to_str()), Some("txt"));
+
+        // Cleanup
+        let _ = fs::remove_file(&path);
+    }
+
+    #[test]
+    fn test_write_temp_file_binary_content() {
+        // Test writing binary content (not UTF-8 text)
+        let contents = vec![0u8, 1, 2, 255, 254, 128, 127];
+        let path = write_temp_file("binary.bin", &contents).expect("Failed to create temp file");
+
+        assert!(path.exists());
+
+        let read_contents = fs::read(&path).expect("Failed to read temp file");
+        assert_eq!(read_contents, contents);
+
+        // Cleanup
+        let _ = fs::remove_file(&path);
+    }
+
+    #[test]
+    #[allow(clippy::assertions_on_constants)]
+    fn test_max_nesting_depth_constant() {
+        // Verify that MAX_NESTING_DEPTH is reasonable (not too deep, not too shallow)
+        // Note: These are constant assertions kept as documentation of expected range
+        assert!(
+            MAX_NESTING_DEPTH >= 3,
+            "MAX_NESTING_DEPTH should be at least 3"
+        );
+        assert!(
+            MAX_NESTING_DEPTH <= 20,
+            "MAX_NESTING_DEPTH should not exceed 20 to prevent stack overflow"
+        );
+    }
+}

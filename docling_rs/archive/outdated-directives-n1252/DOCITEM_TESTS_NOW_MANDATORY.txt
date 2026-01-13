@@ -1,0 +1,44 @@
+🚨 DOCITEM VALIDATION TESTS ARE NOW MANDATORY 🚨
+
+MANAGER HAS DIRECTLY MODIFIED THE TEST SUITE.
+
+CHANGED:
+- llm_docitem_validation_tests.rs
+- test_llm_docitem_docx is NO LONGER #[ignore]
+- Runs in normal test suite
+- FORCES you to validate DocItem completeness
+
+WHAT THIS MEANS:
+
+When you run:
+  cargo test
+
+It will run:
+  test_llm_docitem_docx (validates JSON completeness)
+
+If OPENAI_API_KEY not set:
+  Test warns but skips
+  But you SHOULD run it!
+
+If DocItem JSON incomplete:
+  Test FAILS
+  Shows what's missing
+  Forces you to fix parser
+
+THIS TESTS THE RIGHT THING:
+- Not: Does markdown look nice?
+- But: Does JSON have all DOCX data?
+
+YOU MUST:
+1. Run: source .env
+2. Run: cargo test test_llm_docitem_docx
+3. See DocItem completeness score
+4. Fix parser if score < 95%
+5. Validate JSON is complete
+
+DOCITEM (JSON) IS THE REAL FORMAT.
+MARKDOWN IS JUST ONE SERIALIZATION.
+TEST THE RIGHT LAYER!
+
+This file is WRITE-PROTECTED.
+Remove after running DocItem validation tests.

@@ -1,0 +1,10 @@
+{
+  "pdf_name": "web_001.pdf",
+  "format": "ppm",
+  "dpi": 300,
+  "source": "upstream pdfium_test 7f43fd79",
+  "pages": {
+    "0": "d75d1a3a99cc69fb7ae485572202b881",
+    "1": "2eb0c682b2ebfa4a0552b28e3d7fb94e"
+  }
+}

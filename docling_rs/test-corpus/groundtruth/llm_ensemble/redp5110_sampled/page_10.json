@@ -1,0 +1,95 @@
+{
+  "page_number": 10,
+  "elements": [
+    {
+      "label": "paragraph",
+      "text": "The SQL CREATE PERMISSION statement that is shown in Figure 3-1 is used to define and initially enable or disable the row access rules.",
+      "bbox": {
+        "l": 5.0,
+        "t": 5.0,
+        "r": 95.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Diagram of SQL CREATE PERMISSION statement with annotations.",
+      "bbox": {
+        "l": 5.0,
+        "t": 12.0,
+        "r": 95.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 3-1 CREATE PERMISSION SQL statement",
+      "bbox": {
+        "l": 5.0,
+        "t": 61.0,
+        "r": 95.0,
+        "b": 63.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Column mask",
+      "bbox": {
+        "l": 5.0,
+        "t": 65.0,
+        "r": 95.0,
+        "b": 68.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "A column mask is a database object that manifests a column value access control rule for a specific column in a specific table. It uses a CASE expression that describes what you see when you access the column. For example, a teller can see only the last four digits of a tax identification number.",
+      "bbox": {
+        "l": 5.0,
+        "t": 69.0,
+        "r": 95.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "Chapter 3. Row and Column Access Control 15",
+      "bbox": {
+        "l": 5.0,
+        "t": 95.0,
+        "r": 95.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

@@ -1,0 +1,881 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Nesting",
+    "text": "Nesting",
+    "level": 0
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "A list featuring nesting:",
+    "text": "A list featuring nesting:"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/0",
+    "children": [
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/17"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/2",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/1"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "abc",
+    "text": "abc",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/1",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/3"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/3",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/2"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "abc123",
+    "text": "abc123",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/2",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/8"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/4",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/3"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "abc1234",
+    "text": "abc1234",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/3",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/5"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/5",
+    "parent": {
+      "$ref": "#/groups/3"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/4"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "abc12345",
+    "text": "abc12345",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/4",
+    "parent": {
+      "$ref": "#/groups/3"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/6",
+    "parent": {
+      "$ref": "#/groups/4"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "a.",
+    "text": "a.",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/7",
+    "parent": {
+      "$ref": "#/groups/4"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "b.",
+    "text": "b.",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/8",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/5"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "abcd1234：",
+    "text": "abcd1234：",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/5",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/9"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/9",
+    "parent": {
+      "$ref": "#/groups/5"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/6"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "abcd12345：",
+    "text": "abcd12345：",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/6",
+    "parent": {
+      "$ref": "#/groups/5"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/10",
+    "parent": {
+      "$ref": "#/groups/6"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "a.",
+    "text": "a.",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/11",
+    "parent": {
+      "$ref": "#/groups/6"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "b.",
+    "text": "b.",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/12",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/7"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "def：",
+    "text": "def：",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/7",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/13"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/13",
+    "parent": {
+      "$ref": "#/groups/7"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/8"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "def1234：",
+    "text": "def1234：",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/8",
+    "parent": {
+      "$ref": "#/groups/7"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/14"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/14",
+    "parent": {
+      "$ref": "#/groups/8"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "def12345。",
+    "text": "def12345。",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/15",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/9"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "after one empty line",
+    "text": "after one empty line",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/9",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/16"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/16",
+    "parent": {
+      "$ref": "#/groups/9"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "foo",
+    "text": "foo",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/17",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/10"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "afer two empty lines",
+    "text": "afer two empty lines",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/10",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/18"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/18",
+    "parent": {
+      "$ref": "#/groups/10"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "bar",
+    "text": "bar",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/11",
+    "children": [
+      {
+        "$ref": "#/texts/19"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/19",
+    "parent": {
+      "$ref": "#/groups/11"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "changing symbol",
+    "text": "changing symbol",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/20",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "A nested HTML list:",
+    "text": "A nested HTML list:"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/21",
+    "parent": {
+      "$ref": "#/groups/27"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "First item",
+    "text": "First item",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/22",
+    "parent": {
+      "$ref": "#/groups/27"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/25"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Second item with subitems:",
+    "text": "Second item with subitems:",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/23",
+    "parent": {
+      "$ref": "#/groups/25"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Subitem 1",
+    "text": "Subitem 1",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/24",
+    "parent": {
+      "$ref": "#/groups/25"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Subitem 2",
+    "text": "Subitem 2",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/25",
+    "parent": {
+      "$ref": "#/texts/22"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/26",
+    "parent": {
+      "$ref": "#/groups/27"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Last list item",
+    "text": "Last list item",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/27",
+    "children": [
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/26"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  }
+]

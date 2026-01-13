@@ -1,0 +1,20 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Dr. Sarah Elizabeth Thompson-Anderson
+N:Thompson-Anderson;Sarah;Elizabeth;Dr.;PhD
+EMAIL;TYPE=work,internet,pref:sarah.anderson@university.edu
+EMAIL;TYPE=home:s.thompson@personal.com
+EMAIL;TYPE=work:sarah@research-lab.org
+TEL;TYPE=work,voice:+1-617-555-0200
+TEL;TYPE=cell,voice,pref:+1-617-555-0201
+TEL;TYPE=home:+1-617-555-0202
+TEL;TYPE=fax:+1-617-555-0203
+ADR;TYPE=work:Suite 400;Building A;100 Research Drive;Cambridge;MA;02139;USA
+ADR;TYPE=home:;;45 Elm Street;Boston;MA;02115;USA
+ORG:Massachusetts Institute of Research;Computer Science Department
+TITLE:Professor of Computer Science and Artificial Intelligence
+URL:https://www.mit-research.edu/~sanderson
+NOTE:Research interests: Machine Learning, Natural Language Processing, and Computer Vision. Available for consulting on AI projects. Office hours: Tuesdays and Thursdays 2-4pm.
+BDAY:1978-11-23
+REV:2025-01-15T10:30:00Z
+END:VCARD

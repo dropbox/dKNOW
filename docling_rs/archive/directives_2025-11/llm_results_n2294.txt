@@ -1,0 +1,963 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.16s
+     Running tests/llm_verification_tests.rs (target/debug/deps/llm_verification_tests-38f25d0874eb9430)
+
+running 39 tests
+
+=== 7Z Mode 3 Quality Verification ===
+Overall Score: 87.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 100/100
+  Formatting: 100/100
+  Metadata: 100/100
+
+LLM Reasoning: The parser output accurately represents the input document with all important content present and semantically correct. The structure is preserved, formatting is correct, and metadata is intact. No issues were identified.
+===================================
+
+
+thread 'test_llm_mode3_7z' (9015690) panicked at crates/docling-core/tests/llm_verification_tests.rs:590:5:
+7Z quality: 87.0% (threshold: 95%)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test test_llm_mode3_7z ... FAILED
+
+=== AVIF Mode 3 Quality Verification ===
+Overall Score: 85.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 100/100
+  Formatting: 100/100
+  Metadata: 100/100
+
+LLM Reasoning: The parser output accurately represents the input document with minor issues in completeness and accuracy. All important content is present, but the dimensions could be more explicitly stated as width and height. Overall, the structure and formatting are well-preserved.
+===================================
+
+
+thread 'test_llm_mode3_avif' (9015691) panicked at crates/docling-core/tests/llm_verification_tests.rs:1310:5:
+AVIF quality: 85.0% (threshold: 95%)
+test test_llm_mode3_avif ... FAILED
+
+=== DICOM Mode 3 Quality Verification ===
+Overall Score: 92.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 100/100
+  Formatting: 95/100
+  Metadata: 100/100
+
+LLM Reasoning: The parser output accurately represents the input document with minor issues in completeness and formatting, but overall maintains a high standard of quality.
+===================================
+
+
+thread 'test_llm_mode3_dicom' (9015693) panicked at crates/docling-core/tests/llm_verification_tests.rs:1600:5:
+DICOM quality: 92.0% (threshold: 95%)
+test test_llm_mode3_dicom ... FAILED
+
+=== ICS Mode 3 Quality Verification ===
+Overall Score: 93.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 90/100
+  Formatting: 95/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Structure: The event details are not clearly separated from the metadata section, which could lead to confusion.
+      Location: Events section
+
+LLM Reasoning: The parser output accurately represents the input document with minor issues in structure. All important content is present and semantically correct, but the organization could be improved for clarity.
+===================================
+
+
+thread 'test_llm_mode3_ics' (9015703) panicked at crates/docling-core/tests/llm_verification_tests.rs:1026:5:
+ICS quality: 93.0% (threshold: 95%)
+test test_llm_mode3_ics ... FAILED
+
+=== BMP Mode 3 Quality Verification ===
+Overall Score: 92.0%
+Passed: false
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 95/100
+  Structure: 100/100
+  Formatting: 100/100
+  Metadata: 100/100
+
+Findings:
+  [Major] Accuracy: The file size is likely incorrect; typical BMP files of this dimension and color depth are usually larger.
+      Location: File Size
+
+LLM Reasoning: The parser output is mostly accurate and well-structured, but the reported file size raises concerns regarding its accuracy. Completeness and structure are fully maintained, while formatting and metadata are correct.
+===================================
+
+
+thread 'test_llm_mode3_bmp' (9015692) panicked at crates/docling-core/tests/llm_verification_tests.rs:1208:5:
+BMP quality: 92.0% (threshold: 95%)
+test test_llm_mode3_bmp ... FAILED
+
+=== GLB Mode 3 Quality Verification ===
+Overall Score: 95.0%
+Passed: true
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 100/100
+  Structure: 100/100
+  Formatting: 95/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Formatting: The formatting of the list under 'Node Names' could be improved for consistency.
+      Location: Scene Graph
+
+LLM Reasoning: The parser output is mostly complete and accurate, with a well-preserved structure and metadata. The only minor issue is with the formatting of the list under 'Node Names', which could be more consistent with other lists in the document.
+===================================
+
+test test_llm_mode3_glb ... ok
+
+=== GIF Mode 3 Quality Verification ===
+Overall Score: 87.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 90/100
+  Formatting: 95/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Structure: The section headers could be more consistent in formatting (e.g., use of bold or different font sizes).
+      Location: Properties
+
+LLM Reasoning: The parser output is mostly accurate and complete, but there is a minor issue with the structure regarding header formatting consistency.
+===================================
+
+
+thread 'test_llm_mode3_gif' (9015698) panicked at crates/docling-core/tests/llm_verification_tests.rs:1242:5:
+GIF quality: 87.0% (threshold: 95%)
+test test_llm_mode3_gif ... FAILED
+
+=== GLTF Mode 3 Quality Verification ===
+Overall Score: 85.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 90/100
+  Structure: 95/100
+  Formatting: 100/100
+  Metadata: 100/100
+
+Findings:
+  [Major] Accuracy: The output states there is 1 triangle, but the input indicates there are 3 vertices forming a single triangle. The terminology could be misleading.
+      Location: Geometry Statistics
+
+LLM Reasoning: The parser output is mostly accurate and well-structured, but there is a minor issue with the accuracy of the triangle count description. Overall, it captures the essential elements of the input document effectively.
+===================================
+
+
+thread 'test_llm_mode3_gltf' (9015700) panicked at crates/docling-core/tests/llm_verification_tests.rs:1418:5:
+GLTF quality: 85.0% (threshold: 95%)
+test test_llm_mode3_gltf ... FAILED
+
+thread 'test_llm_mode3_rar' (9015831) panicked at crates/docling-core/tests/llm_verification_tests.rs:609:10:
+Failed to parse RAR: BackendError("Failed to extract archive: Archive error: unar command not found. Install with: brew install unar")
+test test_llm_mode3_rar ... FAILED
+
+=== EML Mode 3 Quality Verification ===
+Overall Score: 95.0%
+Passed: true
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 100/100
+  Structure: 100/100
+  Formatting: 100/100
+  Metadata: 95/100
+
+Findings:
+  [Minor] Metadata: The 'Content-Type' header is missing from the output.
+      Location: Header Section
+
+LLM Reasoning: The parser output is mostly accurate and complete, but it lacks the 'Content-Type' header, which is a minor metadata issue. All other content is preserved correctly.
+===================================
+
+test test_llm_mode3_eml ... ok
+
+=== GPX Mode 3 Quality Verification ===
+Overall Score: 93.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 90/100
+  Formatting: 95/100
+  Metadata: 100/100
+
+Findings:
+  [Major] Structure: The output does not clearly separate the metadata section from the main content, leading to potential confusion about the organization.
+      Location: Metadata Section
+
+LLM Reasoning: The parser output is mostly accurate and complete, capturing all essential information from the input document. However, the structure could be improved for clarity, particularly in how the metadata is presented. The formatting is generally correct, and all metadata is preserved.
+===================================
+
+
+thread 'test_llm_mode3_gpx' (9015701) panicked at crates/docling-core/tests/llm_verification_tests.rs:1100:5:
+GPX quality: 93.0% (threshold: 95%)
+test test_llm_mode3_gpx ... FAILED
+
+=== FB2 Mode 3 Quality Verification ===
+Overall Score: 88.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 90/100
+  Formatting: 90/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Structure: The title of the book is repeated in the body, which is unnecessary.
+      Location: Title section
+  [Minor] Formatting: The table of contents section is not clearly delineated from the rest of the text.
+      Location: Table of Contents
+
+LLM Reasoning: The parser output captures most of the important content from the input document, but there are minor issues with structure and formatting that prevent a perfect score.
+===================================
+
+
+thread 'test_llm_mode3_fb2' (9015697) panicked at crates/docling-core/tests/llm_verification_tests.rs:844:5:
+FB2 quality: 88.0% (threshold: 95%)
+test test_llm_mode3_fb2 ... FAILED
+
+=== HEIF Mode 3 Quality Verification ===
+Overall Score: 83.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 90/100
+  Structure: 100/100
+  Formatting: 100/100
+  Metadata: 100/100
+
+Findings:
+  [Major] Accuracy: The brand 'heic' is not fully accurate as it should be 'heif' for HEIF format.
+      Location: Brand
+
+LLM Reasoning: The parser output is mostly accurate and well-structured, but there is a critical issue with the brand name that affects accuracy. Completeness and formatting are satisfactory, while metadata is preserved correctly.
+===================================
+
+
+thread 'test_llm_mode3_heif' (9015702) panicked at crates/docling-core/tests/llm_verification_tests.rs:1276:5:
+HEIF quality: 83.0% (threshold: 95%)
+test test_llm_mode3_heif ... FAILED
+
+=== MBOX Mode 3 Quality Verification ===
+Overall Score: 100.0%
+Passed: true
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 100/100
+  Structure: 100/100
+  Formatting: 100/100
+  Metadata: 100/100
+
+LLM Reasoning: The parser output accurately represents the input document in terms of completeness, accuracy, structure, formatting, and metadata. All messages are correctly parsed and presented without any issues.
+===================================
+
+test test_llm_mode3_mbox ... ok
+
+=== IPYNB Mode 3 Quality Verification ===
+Overall Score: 92.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 90/100
+  Formatting: 90/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Structure: The output does not clearly indicate the separation between code cells and their outputs, making it slightly less organized.
+      Location: Cell 4 and Cell 5
+  [Minor] Formatting: The output formatting for the code blocks could be improved to enhance readability.
+      Location: Code cells
+
+LLM Reasoning: The parser output captures the essential content of the input document accurately, but there are minor issues in structure and formatting that affect overall clarity.
+===================================
+
+
+thread 'test_llm_mode3_ipynb' (9015704) panicked at crates/docling-core/tests/llm_verification_tests.rs:1060:5:
+IPYNB quality: 92.0% (threshold: 95%)
+test test_llm_mode3_ipynb ... FAILED
+
+=== KML Mode 3 Quality Verification ===
+Overall Score: 93.0%
+Passed: false
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 100/100
+  Structure: 95/100
+  Formatting: 95/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Structure: The output does not maintain the original KML document's XML structure, which is important for KML files.
+      Location: Overall Document Structure
+  [Minor] Formatting: The output uses markdown formatting instead of preserving the original XML format.
+      Location: Overall Document Formatting
+
+LLM Reasoning: The parser output captures all the essential content and information from the input document accurately. However, it fails to preserve the original XML structure and formatting, which is critical for KML documents.
+===================================
+
+
+thread 'test_llm_mode3_kml' (9015705) panicked at crates/docling-core/tests/llm_verification_tests.rs:1134:5:
+KML quality: 93.0% (threshold: 95%)
+test test_llm_mode3_kml ... FAILED
+
+=== DXF Mode 3 Quality Verification ===
+Overall Score: 82.0%
+Passed: false
+
+Category Scores:
+  Completeness: 90/100
+  Accuracy: 95/100
+  Structure: 85/100
+  Formatting: 90/100
+  Metadata: 100/100
+
+Findings:
+  [Major] Completeness: Missing some header variables such as $DIMLTYPE, $DIMLTEX1, and $DIMLTEX2.
+      Location: Header Variables
+  [Major] Structure: The organization of dimension style variables is not fully aligned with the original input document.
+      Location: Dimension Style Variables
+
+LLM Reasoning: The parser output is mostly accurate but lacks some important header variables and does not fully preserve the structure of dimension style variables. The formatting is generally correct, and metadata is well-preserved.
+===================================
+
+
+thread 'test_llm_mode3_dxf' (9015694) panicked at crates/docling-core/tests/llm_verification_tests.rs:1486:5:
+DXF quality: 82.0% (threshold: 95%)
+test test_llm_mode3_dxf ... FAILED
+
+=== KMZ Mode 3 Quality Verification ===
+Overall Score: 86.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 100/100
+  Formatting: 90/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Formatting: Inconsistent use of bullet points or numbering for placemarks.
+      Location: Placemarks section
+
+LLM Reasoning: The parser output is mostly accurate and complete, with all major content represented. However, there is a minor formatting issue regarding the presentation of placemarks, which could be improved for consistency.
+===================================
+
+
+thread 'test_llm_mode3_kmz' (9015788) panicked at crates/docling-core/tests/llm_verification_tests.rs:1168:5:
+KMZ quality: 86.0% (threshold: 95%)
+test test_llm_mode3_kmz ... FAILED
+DEBUG: ListItem #/texts/7, parent: Some("#/groups/6"), depth: 0
+DEBUG: ListItem #/texts/8, parent: Some("#/groups/6"), depth: 0
+DEBUG: ListItem #/texts/10, parent: Some("#/groups/9"), depth: 0
+DEBUG: ListItem #/texts/11, parent: Some("#/groups/9"), depth: 0
+DEBUG: ListItem #/texts/13, parent: Some("#/groups/12"), depth: 0
+DEBUG: ListItem #/texts/14, parent: Some("#/groups/12"), depth: 0
+
+=== TAR Mode 3 Quality Verification ===
+Overall Score: 86.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 90/100
+  Structure: 95/100
+  Formatting: 95/100
+  Metadata: 100/100
+
+Findings:
+  [Major] Accuracy: The total size of the archive is incorrectly stated as 7168 bytes; it should reflect the actual size of the files plus overhead.
+      Location: Archive Summary
+
+LLM Reasoning: The parser output is mostly accurate and well-structured, but there is a significant issue with the total size representation in the archive summary, which affects the accuracy score.
+===================================
+
+
+thread 'test_llm_mode3_tar' (9015854) panicked at crates/docling-core/tests/llm_verification_tests.rs:556:5:
+TAR quality: 86.0% (threshold: 95%)
+test test_llm_mode3_tar ... FAILED
+DEBUG: ListItem #/texts/6, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/7, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/8, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/9, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/10, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/11, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/12, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/13, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/14, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/15, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/16, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/17, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/18, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/19, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/20, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/21, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/22, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/23, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/24, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/25, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/26, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/27, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/28, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/29, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/30, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/31, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/32, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/33, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/34, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/35, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/36, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/37, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/38, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/39, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/40, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/41, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/42, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/43, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/44, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/45, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/46, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/47, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/48, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/49, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/50, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/51, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/52, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/53, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/54, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/55, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/56, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/57, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/58, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/59, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/60, parent: Some("#/texts/5"), depth: 0
+DEBUG: ListItem #/texts/61, parent: Some("#/texts/5"), depth: 0
+
+=== CSV Quality Verification ===
+Overall Score: 100.0%
+Passed: true
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 100/100
+  Structure: 100/100
+  Formatting: 100/100
+  Metadata: 100/100
+
+LLM Reasoning: Both the expected output and the actual output are identical in content, structure, and formatting. All elements are present, and there are no discrepancies in the data provided.
+===================================
+
+test test_llm_verification_csv ... ok
+
+=== OBJ Mode 3 Quality Verification ===
+Overall Score: 88.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 90/100
+  Formatting: 90/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Structure: The organization of the output could better reflect the original document's sections, particularly the separation of vertex and face definitions.
+      Location: Geometry Statistics
+  [Minor] Formatting: The summary section could be formatted more clearly to distinguish it from the preceding sections.
+      Location: Summary
+
+LLM Reasoning: The parser output effectively captures the essential information from the input document, but there are minor issues in structure and formatting that prevent a perfect score.
+===================================
+
+
+thread 'test_llm_mode3_obj' (9015797) panicked at crates/docling-core/tests/llm_verification_tests.rs:1384:5:
+OBJ quality: 88.0% (threshold: 95%)
+test test_llm_mode3_obj ... FAILED
+DEBUG: ListItem #/texts/8, parent: None, depth: 0
+DEBUG: ListItem #/texts/9, parent: None, depth: 0
+DEBUG: ListItem #/texts/10, parent: None, depth: 0
+DEBUG: ListItem #/texts/11, parent: None, depth: 0
+DEBUG: ListItem #/texts/12, parent: None, depth: 0
+DEBUG: ListItem #/texts/13, parent: None, depth: 0
+DEBUG: ListItem #/texts/14, parent: None, depth: 0
+DEBUG: ListItem #/texts/16, parent: None, depth: 0
+DEBUG: ListItem #/texts/17, parent: None, depth: 0
+DEBUG: ListItem #/texts/19, parent: None, depth: 0
+DEBUG: ListItem #/texts/20, parent: None, depth: 0
+DEBUG: ListItem #/texts/21, parent: None, depth: 0
+DEBUG: ListItem #/texts/22, parent: None, depth: 0
+DEBUG: ListItem #/texts/23, parent: None, depth: 0
+DEBUG: ListItem #/texts/24, parent: None, depth: 0
+
+=== STL Mode 3 Quality Verification ===
+Overall Score: 85.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 90/100
+  Structure: 100/100
+  Formatting: 95/100
+  Metadata: 100/100
+
+Findings:
+  [Major] Accuracy: The output states the format as ASCII STL, but the input is a binary format.
+      Location: File Information
+
+LLM Reasoning: The parser output is mostly complete and well-structured, but it inaccurately describes the file format as ASCII instead of binary, which is a significant error. Other categories scored well, with minor formatting issues not affecting overall readability.
+===================================
+
+
+thread 'test_llm_mode3_stl' (9015847) panicked at crates/docling-core/tests/llm_verification_tests.rs:1350:5:
+STL quality: 85.0% (threshold: 95%)
+test test_llm_mode3_stl ... FAILED
+
+=== AsciiDoc Quality Verification ===
+Overall Score: 100.0%
+Passed: true
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 100/100
+  Structure: 100/100
+  Formatting: 100/100
+  Metadata: 100/100
+
+LLM Reasoning: The outputs from both parsers are semantically equivalent, with all sections, content, and formatting preserved accurately. There are no discrepancies found in the document structure or metadata.
+===================================
+
+test test_llm_verification_asciidoc ... ok
+
+=== EPUB Mode 3 Quality Verification ===
+Overall Score: 88.0%
+Passed: false
+
+Category Scores:
+  Completeness: 90/100
+  Accuracy: 95/100
+  Structure: 90/100
+  Formatting: 85/100
+  Metadata: 100/100
+
+Findings:
+  [Major] Completeness: Missing some introductory content or preface that may be present in the original EPUB.
+      Location: Before Table of Contents
+  [Minor] Formatting: The section 'PRIDE. and PREJUDICE' is not formatted correctly and appears disjointed.
+      Location: End of document
+  [Minor] Structure: The Table of Contents and List of Pages are not clearly delineated or formatted as lists.
+      Location: Table of Contents and List of Pages sections
+
+LLM Reasoning: The parser output captures most of the essential content and metadata from the original EPUB document, but there are issues with completeness and formatting that affect the overall quality. The structure is mostly preserved, but some sections lack clarity.
+===================================
+
+
+thread 'test_llm_mode3_epub' (9015696) panicked at crates/docling-core/tests/llm_verification_tests.rs:810:5:
+EPUB quality: 88.0% (threshold: 95%)
+test test_llm_mode3_epub ... FAILED
+
+=== ODT Mode 3 Quality Verification ===
+Overall Score: 84.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 90/100
+  Formatting: 85/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Structure: The document does not clearly separate sections with headings or subheadings, which may affect readability.
+      Location: Document body
+  [Minor] Formatting: Paragraph spacing is not preserved, leading to a less visually appealing output.
+      Location: Document body
+
+LLM Reasoning: The parser output captures the essential content and metadata accurately, but there are minor issues with document structure and formatting that affect overall presentation.
+===================================
+
+
+thread 'test_llm_mode3_odt' (9015804) panicked at crates/docling-core/tests/llm_verification_tests.rs:918:5:
+ODT quality: 84.0% (threshold: 95%)
+test test_llm_mode3_odt ... FAILED
+
+=== ODP Mode 3 Quality Verification ===
+Overall Score: 85.0%
+Passed: false
+
+Category Scores:
+  Completeness: 90/100
+  Accuracy: 95/100
+  Structure: 90/100
+  Formatting: 85/100
+  Metadata: 100/100
+
+Findings:
+  [Major] Completeness: Missing slide content details, such as bullet points or images that may have been present.
+      Location: Slides 1-3
+  [Minor] Structure: Slide numbering is not explicitly stated in the output.
+      Location: Overall document structure
+  [Minor] Formatting: No indication of any lists or bullet points that may have been present in the original document.
+      Location: Slide 2
+
+LLM Reasoning: The parser output captures the main titles and slides but lacks detail in content and formatting, affecting completeness and structure.
+===================================
+
+
+thread 'test_llm_mode3_odp' (9015799) panicked at crates/docling-core/tests/llm_verification_tests.rs:986:5:
+ODP quality: 85.0% (threshold: 95%)
+test test_llm_mode3_odp ... FAILED
+
+=== ODS Mode 3 Quality Verification ===
+Overall Score: 85.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 100/100
+  Formatting: 90/100
+  Metadata: 90/100
+
+Findings:
+  [Minor] Formatting: Table formatting is not visually aligned as it would be in a typical spreadsheet.
+      Location: Table in Sheet1
+  [Minor] Metadata: Spreadsheet title is present but lacks additional metadata such as author or creation date.
+      Location: Spreadsheet header
+
+LLM Reasoning: The parser output captures the essential content and structure of the input document well. However, there are minor issues with table formatting and missing metadata that slightly affect the overall quality.
+===================================
+
+
+thread 'test_llm_mode3_ods' (9015801) panicked at crates/docling-core/tests/llm_verification_tests.rs:952:5:
+ODS quality: 85.0% (threshold: 95%)
+test test_llm_mode3_ods ... FAILED
+
+=== MOBI Mode 3 Quality Verification ===
+Overall Score: 85.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 90/100
+  Structure: 90/100
+  Formatting: 85/100
+  Metadata: 100/100
+
+Findings:
+  [Major] Accuracy: The publication date is inconsistent with the Project Gutenberg release date.
+      Location: Metadata section
+  [Minor] Formatting: The list of chapters is not formatted as a proper list in the output.
+      Location: Table of Contents
+
+LLM Reasoning: The parser output captures most of the document's content accurately but has issues with the publication date and the formatting of the chapter list. Overall, it provides a good representation of the input document.
+===================================
+
+
+thread 'test_llm_mode3_mobi' (9015794) panicked at crates/docling-core/tests/llm_verification_tests.rs:878:5:
+MOBI quality: 85.0% (threshold: 95%)
+test test_llm_mode3_mobi ... FAILED
+
+=== VCF Mode 3 Quality Verification ===
+Overall Score: 90.0%
+Passed: false
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 100/100
+  Structure: 100/100
+  Formatting: 95/100
+  Metadata: 95/100
+
+Findings:
+  [Minor] Formatting: The output does not preserve the original formatting of the vCard, specifically the 'BEGIN:VCARD' and 'END:VCARD' tags.
+      Location: Overall output
+  [Minor] Metadata: The header format is not preserved as it is presented as a comment instead of a title.
+      Location: Header
+
+LLM Reasoning: The parser output is mostly accurate and complete, but it loses some formatting and metadata elements from the original input document.
+===================================
+
+
+thread 'test_llm_mode3_vcf' (9015940) panicked at crates/docling-core/tests/llm_verification_tests.rs:732:5:
+VCF quality: 90.0% (threshold: 95%)
+test test_llm_mode3_vcf ... FAILED
+
+=== DOCX Quality Verification ===
+Overall Score: 100.0%
+Passed: true
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 100/100
+  Structure: 100/100
+  Formatting: 100/100
+  Metadata: 100/100
+
+LLM Reasoning: Both the expected output and the actual output are semantically equivalent, with all sections present and correctly structured. There are no discrepancies in formatting or metadata, indicating a high-quality document parsing.
+===================================
+
+test test_llm_verification_docx ... ok
+
+=== ZIP Mode 3 Quality Verification ===
+Overall Score: 85.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 90/100
+  Formatting: 90/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Structure: The section headers are not consistently formatted (e.g., '## Archive Summary' vs. '## Contents').
+      Location: Section Headers
+  [Minor] Formatting: The list of contents could be formatted with bullet points for better clarity.
+      Location: Contents Section
+
+LLM Reasoning: The parser output is mostly accurate and complete, but there are minor issues with the structure and formatting that could improve readability.
+===================================
+
+
+thread 'test_llm_mode3_zip' (9015948) panicked at crates/docling-core/tests/llm_verification_tests.rs:522:5:
+ZIP quality: 85.0% (threshold: 95%)
+test test_llm_mode3_zip ... FAILED
+
+=== HTML Quality Verification ===
+Overall Score: 100.0%
+Passed: true
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 100/100
+  Structure: 100/100
+  Formatting: 100/100
+  Metadata: 100/100
+
+LLM Reasoning: The actual output matches the expected output in all dimensions, with no missing content or discrepancies in structure, accuracy, formatting, or metadata.
+===================================
+
+test test_llm_verification_html ... ok
+
+=== XLSX Quality Verification ===
+Overall Score: 100.0%
+Passed: true
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 100/100
+  Structure: 100/100
+  Formatting: 100/100
+  Metadata: 100/100
+
+LLM Reasoning: The outputs from both parsers are semantically equivalent, with all sections present and correctly formatted. There are no discrepancies in content, structure, or metadata.
+===================================
+
+test test_llm_verification_xlsx ... ok
+
+=== TEX Mode 3 Quality Verification ===
+Overall Score: 76.0%
+Passed: false
+
+Category Scores:
+  Completeness: 85/100
+  Accuracy: 90/100
+  Structure: 80/100
+  Formatting: 70/100
+  Metadata: 95/100
+
+Findings:
+  [Major] Completeness: Some sections of the experience and projects are incomplete or missing.
+      Location: Experience Section
+  [Major] Structure: The overall organization of sections is not preserved as the output lacks clear section breaks.
+      Location: Overall Document
+  [Major] Formatting: Lists and tables are not formatted correctly, leading to loss of readability.
+      Location: Education and Experience Sections
+
+LLM Reasoning: The parser output captures much of the content from the original document but lacks completeness in certain sections, particularly in the experience and projects areas. The structure is not well-preserved, and formatting issues hinder readability, affecting the overall quality of the output.
+===================================
+
+test test_llm_mode3_tex ... ok
+
+=== PPTX Quality Verification ===
+Overall Score: 98.0%
+Passed: true
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 98/100
+  Structure: 100/100
+  Formatting: 100/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Accuracy: Minor whitespace difference in the table cells for R2 in the actual output.
+      Location: Table 1
+
+LLM Reasoning: The documents are nearly identical in content and structure, with all sections and formatting preserved. The only minor issue is a whitespace difference in the table, which does not affect the overall meaning or structure of the document.
+===================================
+
+test test_llm_verification_pptx ... ok
+
+=== SVG Mode 3 Quality Verification ===
+Overall Score: 87.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 95/100
+  Structure: 90/100
+  Formatting: 90/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Structure: The output does not maintain the original XML structure, such as the indentation and line breaks.
+      Location: Overall document structure
+  [Minor] Formatting: The output uses Markdown formatting which differs from the original XML format.
+      Location: Overall document formatting
+
+LLM Reasoning: The parser output captures all essential information from the input document, but it lacks the original XML structure and uses a different formatting style, which affects the overall structure and formatting scores.
+===================================
+
+
+thread 'test_llm_mode3_svg' (9015849) panicked at crates/docling-core/tests/llm_verification_tests.rs:1566:5:
+SVG quality: 87.0% (threshold: 95%)
+test test_llm_mode3_svg ... FAILED
+
+=== Markdown Quality Verification ===
+Overall Score: 97.0%
+Passed: true
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 98/100
+  Structure: 100/100
+  Formatting: 95/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Accuracy: The table header for 'Calories per portion' is missing the word 'the', which is a minor semantic difference.
+      Location: Table
+  [Minor] Formatting: The code block lacks proper formatting indicators (e.g., triple backticks), which could affect readability.
+      Location: Code Block
+
+LLM Reasoning: The documents are largely equivalent, with minor discrepancies in wording and formatting that do not significantly impact the overall content. The completeness and structure are fully intact, ensuring the document's integrity is maintained.
+===================================
+
+test test_llm_verification_markdown ... ok
+
+=== JATS Quality Verification ===
+Overall Score: 93.0%
+Passed: false
+
+Category Scores:
+  Completeness: 95/100
+  Accuracy: 90/100
+  Structure: 95/100
+  Formatting: 90/100
+  Metadata: 100/100
+
+Findings:
+  [Major] Accuracy: The term 'Zfp809' is formatted differently in the actual output (italicized) compared to the expected output (not italicized).
+      Location: Introduction section
+  [Minor] Formatting: The adjusted p-value notation is presented differently in the actual output (italicized) compared to the expected output (plain text).
+      Location: Results section
+
+LLM Reasoning: The documents are largely equivalent in content and structure, with minor formatting and accuracy discrepancies. The majority of sections are present and correctly structured, but there are notable differences in the presentation of specific terms and values.
+===================================
+
+
+thread 'test_llm_verification_jats' (9015971) panicked at crates/docling-core/tests/llm_verification_tests.rs:475:5:
+JATS quality too low: 93.0%
+test test_llm_verification_jats ... FAILED
+
+=== WebVTT Quality Verification ===
+Overall Score: 95.0%
+Passed: true
+
+Category Scores:
+  Completeness: 100/100
+  Accuracy: 95/100
+  Structure: 100/100
+  Formatting: 90/100
+  Metadata: 100/100
+
+Findings:
+  [Minor] Accuracy: The actual output includes alignment and size attributes that are not present in the expected output, which could imply a difference in intended presentation.
+      Location: Timestamp 00:30.500, 00:32.500
+  [Minor] Formatting: The actual output has additional formatting attributes (align and size) that are not present in the expected output.
+      Location: Timestamps 00:30.500, 00:32.500
+
+LLM Reasoning: The documents are largely equivalent in content and structure, with minor discrepancies in formatting and accuracy due to additional attributes in the actual output. Overall, the semantic meaning remains intact.
+===================================
+
+test test_llm_verification_webvtt ... ok
+
+failures:
+
+failures:
+    test_llm_mode3_7z
+    test_llm_mode3_avif
+    test_llm_mode3_bmp
+    test_llm_mode3_dicom
+    test_llm_mode3_dxf
+    test_llm_mode3_epub
+    test_llm_mode3_fb2
+    test_llm_mode3_gif
+    test_llm_mode3_gltf
+    test_llm_mode3_gpx
+    test_llm_mode3_heif
+    test_llm_mode3_ics
+    test_llm_mode3_ipynb
+    test_llm_mode3_kml
+    test_llm_mode3_kmz
+    test_llm_mode3_mobi
+    test_llm_mode3_obj
+    test_llm_mode3_odp
+    test_llm_mode3_ods
+    test_llm_mode3_odt
+    test_llm_mode3_rar
+    test_llm_mode3_stl
+    test_llm_mode3_svg
+    test_llm_mode3_tar
+    test_llm_mode3_vcf
+    test_llm_mode3_zip
+    test_llm_verification_jats
+
+test result: FAILED. 12 passed; 27 failed; 0 ignored; 0 measured; 0 filtered out; finished in 13.72s
+
+error: test failed, to rerun pass `-p docling-core --test llm_verification_tests`

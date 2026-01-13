@@ -1,0 +1,179 @@
+{
+  "page_number": 18,
+  "elements": [
+    {
+      "label": "title",
+      "text": "Row and Column Access Control Support in IBM DB2 for i",
+      "bbox": {
+        "l": 5.0,
+        "t": 5.0,
+        "r": 60.0,
+        "b": 15.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "This IBM Redpaper publication provides information about the IBM i 7.2 feature of IBM DB2 for i Row and Column Access Control (RCAC). It offers a broad description of the function and advantages of controlling access to data in a comprehensive and transparent way. This publication helps you understand the capabilities of RCAC and provides examples of defining, creating, and implementing the row permissions and column masks in a relational database environment.",
+      "bbox": {
+        "l": 5.0,
+        "t": 20.0,
+        "r": 60.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "This paper is intended for database engineers, data-centric application developers, and security officers who want to design and implement RCAC as a part of their data control and governance policy. A solid background in IBM i object level security, DB2 for i relational database concepts, and SQL is assumed.",
+      "bbox": {
+        "l": 5.0,
+        "t": 36.0,
+        "r": 60.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "Implement roles and separation of duties",
+      "bbox": {
+        "l": 5.0,
+        "t": 16.0,
+        "r": 30.0,
+        "b": 18.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "Leverage row permissions on the database",
+      "bbox": {
+        "l": 5.0,
+        "t": 19.0,
+        "r": 30.0,
+        "b": 21.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "Protect columns by defining column masks",
+      "bbox": {
+        "l": 5.0,
+        "t": 22.0,
+        "r": 30.0,
+        "b": 24.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "INTERNATIONAL TECHNICAL SUPPORT ORGANIZATION",
+      "bbox": {
+        "l": 65.0,
+        "t": 5.0,
+        "r": 95.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "BUILDING TECHNICAL INFORMATION BASED ON PRACTICAL EXPERIENCE",
+      "bbox": {
+        "l": 65.0,
+        "t": 11.0,
+        "r": 95.0,
+        "b": 13.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "IBM Redbooks are developed by the IBM International Technical Support Organization. Experts from IBM, Customers and Partners from around the world create timely technical information based on realistic scenarios. Specific recommendations are provided to help you implement IT solutions more effectively in your environment.",
+      "bbox": {
+        "l": 65.0,
+        "t": 14.0,
+        "r": 95.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "For more information: ibm.com/redbooks",
+      "bbox": {
+        "l": 65.0,
+        "t": 26.0,
+        "r": 95.0,
+        "b": 28.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "REDP-5110-00",
+      "bbox": {
+        "l": 45.0,
+        "t": 95.0,
+        "r": 55.0,
+        "b": 98.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "IBM logo and Redpaper logo",
+      "bbox": {
+        "l": 80.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

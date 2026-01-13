@@ -1,0 +1,22 @@
+/// An iterator for all elements stored in a B-tree, in ascending key order.
+public struct BTreeIterator<Key: Comparable, Value>: IteratorProtocol {
+    public typealias Element = (Key, Value)
+    typealias Node = BTreeNode<Key, Value>
+    typealias State = BTreeStrongPath<Key, Value>
+
+    var state: State
+
+    internal init(_ state: State) {
+        self.state = state
+    }
+
+    /// Advance to the next element and return it, or return `nil` if no next element exists.
+    ///
+    /// - Complexity: Amortized O(1)
+    public mutating func next() -> Element? {
+        if state.isAtEnd { return nil }
+        let result = state.element
+        state.moveForward()
+        return result
+    }
+}

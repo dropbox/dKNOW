@@ -1,0 +1,168 @@
+═══════════════════════════════════════════════════════════════
+🏆 MAKE THE WORLD'S BEST DOCUMENT PARSER 🏆
+═══════════════════════════════════════════════════════════════
+
+**User's Direction (2025-11-24):**
+
+"the past doesn't matter. only the current state matters. I don't care
+about goals and metrics. I care about the absolute best highest quality
+world's best document parser!"
+
+═══════════════════════════════════════════════════════════════
+
+## What This Means
+
+**FORGET:**
+- ❌ Percentage targets (95%, 100%, doesn't matter)
+- ❌ Format counts (12/39, 34/38, doesn't matter)
+- ❌ Historical progress tracking
+- ❌ Declaring "complete" at any point
+- ❌ Accepting "good enough"
+
+**FOCUS ON:**
+- ✅ Is there a bug? Fix it.
+- ✅ Is something missing? Add it.
+- ✅ Can output be better? Improve it.
+- ✅ Does LLM identify an issue? Verify and fix if real.
+- ✅ Keep improving until PERFECT.
+
+═══════════════════════════════════════════════════════════════
+
+## Your Job
+
+**Make every format extraction PERFECT:**
+
+1. **Read LLM feedback for EVERY format**
+2. **For each complaint:**
+   - Verify: Is it real?
+   - If real: Fix it
+   - If false: Dismiss it
+3. **Improve until LLM says "no issues"**
+4. **Never stop improving**
+
+**Don't ask "are we done?" - You're never done.**
+**Ask "what can I improve next?"**
+
+═══════════════════════════════════════════════════════════════
+
+## Current State (N=2161)
+
+**Formats at 95%+:** 12 formats
+**Formats at 90-94%:** 11 formats (close!)
+**Formats at 85-89%:** 11 formats
+**Formats below 85%:** 4 formats
+
+**Your task:** Get ALL 39 to extract perfectly.
+
+═══════════════════════════════════════════════════════════════
+
+## Work Process
+
+**For each format below 95%:**
+
+1. **Run LLM test:**
+   ```bash
+   source .env
+   cargo test -p docling-core --test llm_verification_tests \
+     test_llm_mode3_{format} -- --exact --ignored --nocapture
+   ```
+
+2. **Read the "Findings" section carefully**
+   - What specifically does LLM say is wrong/missing?
+
+3. **Verify the complaint:**
+   - Search code for that feature
+   - Is it actually missing?
+   - Or is LLM wrong?
+
+4. **If real issue - FIX IT:**
+   - Add the missing feature
+   - Fix the bug
+   - Improve the extraction
+   - Test: cargo test --lib
+
+5. **Re-test with LLM:**
+   - Verify improvement
+   - If still has issues: Read new complaints
+   - Repeat until perfect
+
+6. **Move to next format**
+
+═══════════════════════════════════════════════════════════════
+
+## Current Bugs to Fix (N=2158 Test Results)
+
+**Start with 90-94% (closest to perfect):**
+
+1. **GLB (94%)** - LLM says "lacks bullet point format"
+   - Verify: Is bullet formatting missing?
+   - If yes: Add it
+
+2. **OBJ (93%)** - LLM says "title slightly different"
+   - Verify: Check title generation
+   - If issue: Fix it
+
+3. **IPYNB (93%)** - LLM says "cell separation inconsistent"
+   - Verify: Check cell formatting
+   - If real: Fix it
+
+4. **ICS (93%)** - LLM says "event details not separated"
+   - Verify: Check structure
+   - If needed: Improve it
+
+5. **GPX (93%)** - Check what LLM says
+6. **AsciiDoc (93%)** - Check what LLM says
+7. **VCF (92%)** - Check what LLM says
+8. **KML (92%)** - Check what LLM says
+9. **JATS (92%)** - Check what LLM says
+10. **TAR (90%)** - Check what LLM says
+11. **ODS (90%)** - Check what LLM says
+
+**Then 85-89% formats, then below 85%.**
+
+**Work through EVERY format until all are perfect.**
+
+═══════════════════════════════════════════════════════════════
+
+## No Excuses
+
+**Don't say:**
+- "This is variance" (maybe, maybe not - fix it anyway)
+- "This is subjective" (if LLM sees it, improve it)
+- "Good enough" (no, make it perfect)
+- "Diminishing returns" (user doesn't care about ROI)
+- "Would take 100 hours" (so what? Do it)
+
+**Just say:**
+- "Found issue in {format}"
+- "Fixed {issue}"
+- "Improved from X% to Y%"
+- "Moving to next format"
+
+═══════════════════════════════════════════════════════════════
+
+## Philosophy
+
+**World's Best means:**
+- Extract EVERY piece of information
+- Format output PERFECTLY
+- Handle EVERY edge case
+- Fix EVERY bug, no matter how small
+- Never settle for "good enough"
+
+**This is craftsmanship. This is excellence.**
+
+**Keep improving until every format is flawless.**
+
+═══════════════════════════════════════════════════════════════
+
+START with GLB (94% - closest to perfect).
+Read what LLM says.
+Verify if real.
+Fix it.
+Move to next.
+Repeat forever.
+
+NEVER STOP IMPROVING.
+
+═══════════════════════════════════════════════════════════════

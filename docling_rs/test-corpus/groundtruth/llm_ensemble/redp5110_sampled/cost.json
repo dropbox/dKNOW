@@ -1,0 +1,12 @@
+{
+  "pdf_name": "redp5110_sampled.pdf",
+  "num_pages": 18,
+  "model_costs": {
+    "gpt-4o": {
+      "input_tokens": 22590,
+      "output_tokens": 22033,
+      "cost_usd": 0.276805
+    }
+  },
+  "total_cost_usd": 0.276805
+}

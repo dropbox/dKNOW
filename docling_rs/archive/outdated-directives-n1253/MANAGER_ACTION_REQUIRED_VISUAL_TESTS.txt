@@ -1,0 +1,39 @@
+🚨 MANAGER ACTION REQUIRED 🚨
+
+Visual tests have been FIXED (N=1116) but need verification.
+
+WHAT WAS FIXED:
+1. Path bug: ../../test-corpus/ → test-corpus/
+2. Command bug: "docling" → "cargo run --release --bin docling-cli"
+
+CODE COMPILES: ✅ (cargo check passed 21.30s)
+
+MANAGER MUST RUN TESTS:
+=========================
+
+1. Set API key:
+   export OPENAI_API_KEY="sk-..."
+
+2. Run tests:
+   cargo test --test visual_quality_tests -- --nocapture --ignored
+
+3. Expected output:
+   ✅ Converting DOCX to PDF... (works)
+   ✅ Parsing DOCX to markdown... (works)
+   ✅ Converting markdown to PDF... (works)
+   ✅ Comparing PDFs visually... (works)
+   ✅ Visual Quality Score: XX.X%
+
+4. If tests pass with scores:
+   - Document scores in git commit
+   - Remove VISUAL_TESTS_ACTUALLY_BROKEN.txt
+   - Remove this file (MANAGER_ACTION_REQUIRED_VISUAL_TESTS.txt)
+
+5. If tests still fail:
+   - Document exact error message
+   - AI will investigate further
+
+COST: ~$0.04-0.08 (4 tests × $0.01-0.02 each)
+TIME: ~5-8 minutes total (1-2 min per test)
+
+AI CANNOT RUN THESE TESTS (no OPENAI_API_KEY access)

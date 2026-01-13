@@ -1,0 +1,5 @@
+/// A textual representation of the Unicode scalar.
+  @inlinable
+  public var description: String {
+    return String(self)
+  }

@@ -1,0 +1,221 @@
+[
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is a div with text.",
+    "text": "This is a div with text."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is another div with text.",
+    "text": "This is another div with text."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is a regular paragraph.",
+    "text": "This is a regular paragraph."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/3",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is a third div",
+    "text": "This is a third div"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/4",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "with a new line.",
+    "text": "with a new line."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/5",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Heading for the details element",
+    "text": "Heading for the details element"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/6",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Description of the details element.",
+    "text": "Description of the details element."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/8",
+    "parent": {
+      "$ref": "#/groups/7"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is a fourth div with a",
+    "text": "This is a fourth div with a"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/9",
+    "parent": {
+      "$ref": "#/groups/7"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "bold",
+    "text": "bold",
+    "formatting": {
+      "bold": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/10",
+    "parent": {
+      "$ref": "#/groups/7"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "paragraph.",
+    "text": "paragraph."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/7",
+    "children": [
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  }
+]

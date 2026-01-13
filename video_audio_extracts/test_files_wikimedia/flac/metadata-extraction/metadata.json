@@ -1,0 +1,34 @@
+[
+  {
+    "path": "test_files_wikimedia/flac/metadata-extraction/01_01_-_Gute_Nacht_(CK_2946-2,_ES_383).flac.flac",
+    "size": 24745153,
+    "url": null,
+    "title": "01_01_-_Gute_Nacht_(CK_2946-2,_ES_383).flac.flac",
+    "mime": "audio/flac",
+    "format": "flac"
+  },
+  {
+    "path": "test_files_wikimedia/flac/metadata-extraction/01_Aina_zilizo_hatarini.flac.flac",
+    "size": 271885,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Aina_zilizo_hatarini.flac",
+    "title": "File:Aina zilizo hatarini.flac",
+    "mime": "audio/flac",
+    "format": "flac"
+  },
+  {
+    "path": "test_files_wikimedia/flac/metadata-extraction/02_02_-_Die_Wetterfahne_(CK_2947-2,_ES_383).flac.flac",
+    "size": 14519864,
+    "url": null,
+    "title": "02_02_-_Die_Wetterfahne_(CK_2947-2,_ES_383).flac.flac",
+    "mime": "audio/flac",
+    "format": "flac"
+  },
+  {
+    "path": "test_files_wikimedia/flac/metadata-extraction/03_03_-_Gefrorene_Tr\u00e4nen_(CK_2948-1,_ER_270).flac.flac",
+    "size": 14015418,
+    "url": null,
+    "title": "03_03_-_Gefrorene_Tr\u00e4nen_(CK_2948-1,_ER_270).flac.flac",
+    "mime": "audio/flac",
+    "format": "flac"
+  }
+]

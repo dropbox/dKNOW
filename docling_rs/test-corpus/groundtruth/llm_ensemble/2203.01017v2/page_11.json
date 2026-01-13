@@ -1,0 +1,263 @@
+{
+  "page_number": 11,
+  "elements": [
+    {
+      "label": "title",
+      "text": "TableFormer: Table Structure Understanding with Transformers",
+      "bbox": {
+        "l": 20.0,
+        "t": 5.0,
+        "r": 80.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Supplementary Material",
+      "bbox": {
+        "l": 40.0,
+        "t": 12.0,
+        "r": 60.0,
+        "b": 14.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "1. Details on the datasets",
+      "bbox": {
+        "l": 10.0,
+        "t": 16.0,
+        "r": 50.0,
+        "b": 18.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "1.1. Data preparation",
+      "bbox": {
+        "l": 10.0,
+        "t": 20.0,
+        "r": 50.0,
+        "b": 22.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "As a first step of our data preparation process, we have calculated statistics over the datasets across the following dimensions: (1) table size measured in the number of rows and columns, (2) complexity of the table, (3) strictness of the provided HTML structure and (4) completeness (i.e. no omitted bounding boxes). A table is considered to be simple if it does not contain row spans or column spans. Additionally, a table has a strict HTML structure if every row has the same number of columns after taking into account any row or column spans. Therefore a strict HTML structure looks always rectangular. However, HTML is a lenient encoding format, i.e. tables with rows of different sizes might still be regarded as correct due to implicit display rules. These implicit rules leave room for ambiguity, which we want to avoid. As such, we prefer to have \"stricter\" tables, i.e. tables where every row has exactly the same length.",
+      "bbox": {
+        "l": 10.0,
+        "t": 24.0,
+        "r": 90.0,
+        "b": 36.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "We have developed a technique that tries to derive a missing bounding box out of its neighbors. As a first step, we use the annotation data to generate the most fine-grained grid that covers the table structure. In case of strict HTML tables, all grid squares are associated with some table cell and in the presence of table spans a cell extends across multiple grid squares. When enough bounding boxes are known for a rectangular table, it is possible to compute the geometrical border lines between the grid rows and columns. Eventually this information is used to generate the missing bounding boxes. Additionally, the existence of unused grid squares indicates that the table rows have unequal number of columns and the overall structure is non-strict. The generation of missing bounding boxes for non-strict HTML tables is ambiguous and therefore quite challenging. Thus, we have decided to simply discard those tables. In case of PubTabNet we have computed missing bounding boxes for 48% of the simple and 69% of the complex tables. Regarding FinTabNet, 68% of the simple and 98% of the complex tables require the generation of bounding boxes.",
+      "bbox": {
+        "l": 10.0,
+        "t": 38.0,
+        "r": 90.0,
+        "b": 54.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Figure 7 illustrates the distribution of the tables across different dimensions per dataset.",
+      "bbox": {
+        "l": 10.0,
+        "t": 56.0,
+        "r": 90.0,
+        "b": 58.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "1.2. Synthetic datasets",
+      "bbox": {
+        "l": 10.0,
+        "t": 60.0,
+        "r": 50.0,
+        "b": 62.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Aiming to train and evaluate our models in a broader spectrum of table data we have synthesized four types of datasets. Each one contains tables with different appearances in regard to their size, structure, style and content. Every synthetic dataset contains 150k examples, summing up to 600k synthetic examples. All datasets are divided into Train, Test and Val splits (80%, 10%, 10%).",
+      "bbox": {
+        "l": 10.0,
+        "t": 64.0,
+        "r": 90.0,
+        "b": 72.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The process of generating a synthetic dataset can be decomposed into the following steps:",
+      "bbox": {
+        "l": 10.0,
+        "t": 74.0,
+        "r": 90.0,
+        "b": 76.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "1. Prepare styling and content templates: The styling templates have been manually designed and organized into groups of scope specific appearances (e.g. financial data, marketing data, etc.) Additionally, we have prepared curated collections of content templates by extracting the most frequently used terms out of non-synthetic datasets (e.g. PubTabNet, FinTabNet, etc.).",
+      "bbox": {
+        "l": 12.0,
+        "t": 78.0,
+        "r": 90.0,
+        "b": 84.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "2. Generate table structures: The structure of each synthetic dataset assumes a horizontal table header which potentially spans over multiple rows and a table body that may contain a combination of row spans and column spans. However, spans are not allowed to cross the header - body boundary. The table structure is described by the parameters: Total number of table rows and columns, number of header rows, type of spans (header only spans, row only spans, column only spans, both row and column spans), maximum span size and the ratio of the table area covered by spans.",
+      "bbox": {
+        "l": 12.0,
+        "t": 86.0,
+        "r": 90.0,
+        "b": 96.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "3. Generate content: Based on the dataset theme, a set of suitable content templates is chosen first. Then, this content can be combined with purely random text to produce the synthetic content.",
+      "bbox": {
+        "l": 12.0,
+        "t": 98.0,
+        "r": 90.0,
+        "b": 102.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "4. Apply styling templates: Depending on the domain of the synthetic dataset, a set of styling templates is first manually selected. Then, a style is randomly selected to format the appearance of the synthesized table.",
+      "bbox": {
+        "l": 12.0,
+        "t": 104.0,
+        "r": 90.0,
+        "b": 108.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "5. Render the complete tables: The synthetic table is finally rendered by a web browser engine to generate the bounding boxes for each table cell. A batching technique is utilized to optimize the runtime overhead of the rendering process.",
+      "bbox": {
+        "l": 12.0,
+        "t": 110.0,
+        "r": 90.0,
+        "b": 114.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "2. Prediction post-processing for PDF documents",
+      "bbox": {
+        "l": 10.0,
+        "t": 116.0,
+        "r": 90.0,
+        "b": 118.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Although TableFormer can predict the table structure and the bounding boxes for tables recognized inside PDF documents, this is not enough when a full reconstruction of the original table is required. This happens mainly due the following reasons:",
+      "bbox": {
+        "l": 10.0,
+        "t": 120.0,
+        "r": 90.0,
+        "b": 126.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "11",
+      "bbox": {
+        "l": 50.0,
+        "t": 128.0,
+        "r": 52.0,
+        "b": 130.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

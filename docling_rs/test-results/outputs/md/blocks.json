@@ -1,0 +1,411 @@
+[
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Unordered list:",
+    "text": "Unordered list:"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/0",
+    "children": [
+      {
+        "$ref": "#/texts/1"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/1",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "foo",
+    "text": "foo",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Empty unordered list:",
+    "text": "Empty unordered list:"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/1",
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/3",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Ordered list:",
+    "text": "Ordered list:"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/2",
+    "children": [
+      {
+        "$ref": "#/texts/4"
+      }
+    ],
+    "content_layer": "body",
+    "name": "ordered list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/4",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "bar",
+    "text": "bar",
+    "enumerated": true,
+    "marker": "1."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/5",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Empty ordered list:",
+    "text": "Empty ordered list:"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/3",
+    "content_layer": "body",
+    "name": "ordered list"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/6",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Heading:",
+    "text": "Heading:"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/7",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "my heading",
+    "text": "my heading",
+    "level": 0
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/8",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Empty heading:",
+    "text": "Empty heading:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/9",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Setext heading level 1:",
+    "text": "Setext heading level 1:"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/10",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "my setext heading level 1",
+    "text": "my setext heading level 1",
+    "level": 0
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/11",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Setext heading level 2:",
+    "text": "Setext heading level 2:"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/12",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "my setext heading level 2",
+    "text": "my setext heading level 2",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/13",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Indented code block:",
+    "text": "Indented code block:"
+  },
+  {
+    "label": "code",
+    "self_ref": "#/texts/14",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "print(\"Hi!\")",
+    "text": "print(\"Hi!\")"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/15",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Empty indented code block:",
+    "text": "Empty indented code block:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/16",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Fenced code block:",
+    "text": "Fenced code block:"
+  },
+  {
+    "label": "code",
+    "self_ref": "#/texts/17",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "print(\"Hello world!\")",
+    "text": "print(\"Hello world!\")",
+    "language": "python"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/18",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Empty fenced code block:",
+    "text": "Empty fenced code block:"
+  }
+]

@@ -1,0 +1,237 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main", "build-*" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+  RUST_BACKTRACE: 1
+
+jobs:
+  test:
+    name: Test Suite
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        rust: [stable]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install Rust toolchain
+      uses: dtolnay/rust-toolchain@stable
+      with:
+        toolchain: ${{ matrix.rust }}
+        components: clippy, rustfmt
+
+    - name: Cache cargo registry
+      uses: actions/cache@v4
+      with:
+        path: ~/.cargo/registry
+        key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-cargo-registry-
+
+    - name: Cache cargo index
+      uses: actions/cache@v4
+      with:
+        path: ~/.cargo/git
+        key: ${{ runner.os }}-cargo-git-${{ hashFiles('**/Cargo.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-cargo-git-
+
+    - name: Cache cargo build
+      uses: actions/cache@v4
+      with:
+        path: target
+        key: ${{ runner.os }}-cargo-build-${{ matrix.rust }}-${{ hashFiles('**/Cargo.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-cargo-build-${{ matrix.rust }}-
+          ${{ runner.os }}-cargo-build-
+
+    - name: Install system dependencies (Ubuntu)
+      if: runner.os == 'Linux'
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          ffmpeg \
+          libavcodec-dev \
+          libavformat-dev \
+          libavutil-dev \
+          libavfilter-dev \
+          libavdevice-dev \
+          libswscale-dev \
+          libswresample-dev \
+          libfftw3-dev \
+          pkg-config \
+          clang \
+          llvm
+
+    - name: Install system dependencies (macOS)
+      if: runner.os == 'macOS'
+      run: |
+        brew install ffmpeg fftw pkg-config
+
+    - name: Download ML models
+      run: |
+        # Create models directory structure
+        mkdir -p models/{whisper,object-detection,face-detection,ocr,diarization,embeddings}
+
+        # Whisper models (ggml format)
+        echo "Downloading Whisper base model..."
+        curl -L -o models/whisper/ggml-base.bin \
+          https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin
+
+        # YOLOv8 model (12MB)
+        echo "Downloading YOLOv8n model..."
+        curl -L -o models/object-detection/yolov8n.onnx \
+          https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.onnx
+
+        # RetinaFace model
+        echo "Downloading RetinaFace model..."
+        curl -L -o models/face-detection/retinaface_mnet025_v2.onnx \
+          https://github.com/onnx/models/raw/main/validated/vision/body_analysis/retinaface/retinaface_mnet025_v2.onnx
+
+        # PaddleOCR models (DBNet + CRNN)
+        echo "Downloading PaddleOCR models..."
+        curl -L -o models/ocr/ch_PP-OCRv4_det_infer.onnx \
+          https://huggingface.co/paddlepaddle/PaddleOCR/resolve/main/models/ch_PP-OCRv4_det_infer.onnx || \
+          echo "Warning: OCR detection model download failed (optional)"
+        curl -L -o models/ocr/ch_PP-OCRv4_rec_infer.onnx \
+          https://huggingface.co/paddlepaddle/PaddleOCR/resolve/main/models/ch_PP-OCRv4_rec_infer.onnx || \
+          echo "Warning: OCR recognition model download failed (optional)"
+
+        # WeSpeaker diarization model
+        echo "Downloading WeSpeaker model..."
+        curl -L -o models/diarization/wespeaker_en_voxceleb_CAM++.onnx \
+          https://huggingface.co/mechanicalsea/wespeaker/resolve/main/wespeaker_en_voxceleb_CAM++.onnx || \
+          echo "Warning: Diarization model download failed (optional)"
+
+        # CLIP vision model (577MB - large!)
+        echo "Downloading CLIP vision model (this may take a while)..."
+        curl -L -o models/embeddings/clip_vit_base_patch32.onnx \
+          https://huggingface.co/sentence-transformers/clip-ViT-B-32/resolve/main/onnx/model.onnx || \
+          echo "Warning: CLIP model download failed (optional)"
+
+        # Sentence-Transformers text model
+        echo "Downloading sentence-transformers model..."
+        curl -L -o models/embeddings/all_minilm_l6_v2.onnx \
+          https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/onnx/model.onnx || \
+          echo "Warning: Text embedding model download failed (optional)"
+
+        # CLAP audio model
+        echo "Downloading CLAP audio model..."
+        curl -L -o models/embeddings/clap_audio.onnx \
+          https://huggingface.co/laion/clap-htsat-unfused/resolve/main/onnx/clap_audio.onnx || \
+          echo "Warning: CLAP model download failed (optional)"
+
+        echo "Model download complete"
+        ls -lh models/*/
+
+    - name: Setup test data
+      run: |
+        # Test edge cases directory exists in repo
+        if [ ! -d "test_edge_cases" ]; then
+          echo "Warning: test_edge_cases directory not found"
+        fi
+
+        # Create test_files directory if it doesn't exist
+        mkdir -p test_files
+
+        # Note: Large test files (1.3GB, 980MB) are not downloaded in CI
+        # Only edge case files (~4MB total) are used for basic validation
+        echo "Test data setup complete"
+
+    - name: Check formatting
+      run: cargo fmt --all -- --check
+
+    - name: Run clippy
+      run: cargo clippy --all-features --all-targets -- -D warnings
+
+    - name: Build workspace
+      run: cargo build --release --all-features
+
+    - name: Run unit tests
+      run: cargo test --release --all-features --lib
+
+    - name: Run smoke tests
+      run: |
+        # Run comprehensive smoke test suite (647 tests)
+        # Sequential mode required due to ML model loading contention
+        VIDEO_EXTRACT_THREADS=4 cargo test --release --test smoke_test_comprehensive -- \
+          --ignored \
+          --test-threads=1 \
+          --quiet
+      env:
+        VIDEO_EXTRACT_THREADS: 4
+
+    - name: Run integration tests (edge cases only)
+      run: |
+        # Run only edge case tests (fast, small files)
+        # Skip format tests that require large files not in CI environment
+        # Skip stress tests (1.3GB, 980MB files)
+        cargo test --release --test standard_test_suite -- \
+          --ignored \
+          --test-threads=1 \
+          edge_case
+
+    - name: Build CLI binary
+      run: |
+        cargo build --release -p video-extract-cli
+        ls -lh target/release/video-extract-cli || \
+        ls -lh target/release/video-extract-cli.exe
+
+    - name: Test CLI help
+      run: |
+        ./target/release/video-extract-cli --help || \
+        ./target/release/video-extract-cli.exe --help
+
+  security:
+    name: Security Audit
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install Rust toolchain
+      uses: dtolnay/rust-toolchain@stable
+
+    - name: Install cargo-audit
+      run: cargo install cargo-audit
+
+    - name: Run security audit
+      run: cargo audit
+
+  coverage:
+    name: Code Coverage
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install Rust toolchain
+      uses: dtolnay/rust-toolchain@stable
+
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y ffmpeg libavcodec-dev libavformat-dev \
+          libavutil-dev libavfilter-dev libfftw3-dev pkg-config clang llvm
+
+    - name: Install cargo-tarpaulin
+      run: cargo install cargo-tarpaulin
+
+    - name: Run coverage
+      run: cargo tarpaulin --release --all-features --lib --out Xml --output-dir ./coverage
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v4
+      with:
+        files: ./coverage/cobertura.xml
+        fail_ci_if_error: false

@@ -1,0 +1,98 @@
+🚨 CRITICAL BUGS - Fix These NOW
+
+FROM: DocItem validation tests (LLM on JSON)
+STATUS: Real parser bugs found, must fix
+
+---
+
+## BUG #1: PPTX Only Extracts First Slide (CRITICAL)
+
+**Severity:** CRITICAL 🔴
+**Impact:** Multi-slide presentations broken
+**DocItem Score:** 76% (fails <95% threshold)
+
+**Problem:**
+- PPTX backend only processes first slide
+- 10-slide deck → extracts 1 slide
+- JSON only 2,526 chars (way too small)
+
+**Root Cause:**
+- Parser not iterating through all slides
+- Or stopping after first slide
+- Missing loop over ppt/slides/*.xml
+
+**Fix:**
+1. Iterate all slides in ZIP
+2. Parse each slide1.xml, slide2.xml, etc.
+3. Create DocItem for each slide
+4. Combine in JSON
+
+**Estimated:** 5-10 commits
+**Priority:** FIX FIRST - Major use case broken
+
+---
+
+## BUG #2: XLSX Missing Multi-Sheet Support (HIGH)
+
+**Severity:** HIGH 🟡
+**Impact:** Multi-sheet workbooks incomplete
+**DocItem Score:** 88% (fails <95% threshold)
+
+**Problem:**
+- "Not all sheets extracted"
+- "Sheet names not captured"
+- "Merged cells not represented"
+
+**Root Cause:**
+- Parser not iterating all sheets
+- Missing sheet metadata
+- Merged cell handling incomplete
+
+**Fix:**
+1. Iterate all sheets in workbook
+2. Extract sheet names
+3. Handle merged cells properly
+4. Store all in DocItems
+
+**Estimated:** 5-10 commits
+**Priority:** FIX SECOND - Common use case
+
+---
+
+## BUG #3: DOCX Structure Not Fully Differentiated (MEDIUM)
+
+**Severity:** MEDIUM 🟡
+**Impact:** Some structure lost
+**DocItem Score:** 92% (close to 95%)
+
+**Problem:**
+- Headings not clearly differentiated
+- List nesting unclear
+- Table headers not marked
+
+**Gaps:**
+- Structure: 90/100 (need 95+)
+- Metadata: 85/100 (need 95+)
+
+**Fix:**
+1. Extract heading levels properly
+2. Mark table header rows
+3. Preserve list nesting
+4. Capture more metadata
+
+**Estimated:** 3-5 commits
+**Priority:** FIX THIRD - Polish work
+
+---
+
+## WORKER MUST
+
+1. Fix PPTX multi-slide extraction (CRITICAL)
+2. Fix XLSX multi-sheet extraction (HIGH)
+3. Polish DOCX structure (MEDIUM)
+4. Re-run DocItem tests
+5. Achieve 95%+ on all three formats
+
+THESE ARE REAL BUGS.
+DOCITEM TESTS FOUND THEM.
+FIX THEM NOW.

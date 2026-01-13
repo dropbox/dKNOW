@@ -1,0 +1,58 @@
+{
+  "corpus": "crates",
+  "description": "Semantic queries where keywords won't help - tests true understanding",
+  "include_extensions": ["rs"],
+  "include_globs": ["sg-*/src/*.rs"],
+  "queries": [
+    {
+      "query": "code that groups similar vectors together",
+      "relevant": ["crates/sg-core/src/index.rs"],
+      "description": "k-means without using the word"
+    },
+    {
+      "query": "where embeddings are persisted to disk",
+      "relevant": ["crates/sg-core/src/storage.rs"],
+      "description": "storage without SQLite keyword"
+    },
+    {
+      "query": "breaking documents into smaller pieces",
+      "relevant": ["crates/sg-core/src/chunker.rs"],
+      "description": "chunking without chunk keyword"
+    },
+    {
+      "query": "converting text into numerical vectors",
+      "relevant": ["crates/sg-core/src/embedder.rs"],
+      "description": "embedding without embed keyword"
+    },
+    {
+      "query": "finding the most relevant results for a query",
+      "relevant": ["crates/sg-core/src/search.rs"],
+      "description": "search conceptually"
+    },
+    {
+      "query": "detecting when files change on disk",
+      "relevant": ["crates/sg-core/src/watcher.rs"],
+      "description": "file watching conceptually"
+    },
+    {
+      "query": "communication between separate programs",
+      "relevant": ["crates/sg-core/src/server.rs"],
+      "description": "IPC without technical terms"
+    },
+    {
+      "query": "finding the root directory of a codebase",
+      "relevant": ["crates/sg-core/src/project.rs"],
+      "description": "project detection conceptually"
+    },
+    {
+      "query": "combining keyword and meaning-based retrieval",
+      "relevant": ["crates/sg-core/src/search.rs"],
+      "description": "hybrid search conceptually"
+    },
+    {
+      "query": "remembering previous computations to avoid redoing work",
+      "relevant": ["crates/sg-core/src/dedup.rs"],
+      "description": "caching/memoization conceptually"
+    }
+  ]
+}

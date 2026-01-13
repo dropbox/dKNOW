@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="OpenStreetMap" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>San Francisco Tourist Points of Interest</name>
+    <desc>Collection of notable landmarks and attractions in San Francisco</desc>
+    <time>2024-09-01T12:00:00Z</time>
+  </metadata>
+  <wpt lat="37.8199" lon="-122.4783">
+    <ele>5.0</ele>
+    <time>2024-09-01T12:00:00Z</time>
+    <name>Golden Gate Bridge</name>
+    <desc>Iconic suspension bridge spanning the Golden Gate strait</desc>
+  </wpt>
+  <wpt lat="37.8080" lon="-122.4177">
+    <ele>85.0</ele>
+    <time>2024-09-01T12:30:00Z</time>
+    <name>Alcatraz Island</name>
+    <desc>Historic former federal prison on island in San Francisco Bay</desc>
+  </wpt>
+  <wpt lat="37.7749" lon="-122.4194">
+    <ele>15.0</ele>
+    <time>2024-09-01T13:00:00Z</time>
+    <name>San Francisco City Hall</name>
+    <desc>Beaux-Arts style government building with distinctive dome</desc>
+  </wpt>
+  <wpt lat="37.8024" lon="-122.4058">
+    <ele>75.0</ele>
+    <time>2024-09-01T13:30:00Z</time>
+    <name>Coit Tower</name>
+    <desc>Art Deco tower on Telegraph Hill with panoramic city views</desc>
+  </wpt>
+  <wpt lat="37.7955" lon="-122.3937">
+    <ele>4.0</ele>
+    <time>2024-09-01T14:00:00Z</time>
+    <name>Ferry Building</name>
+    <desc>Historic ferry terminal and marketplace on the Embarcadero</desc>
+  </wpt>
+  <wpt lat="37.8020" lon="-122.4058">
+    <ele>45.0</ele>
+    <time>2024-09-01T14:30:00Z</time>
+    <name>Lombard Street</name>
+    <desc>Famous one-block section with eight hairpin turns</desc>
+  </wpt>
+  <wpt lat="37.7957" lon="-122.3980">
+    <ele>12.0</ele>
+    <time>2024-09-01T15:00:00Z</time>
+    <name>Fisherman's Wharf</name>
+    <desc>Waterfront neighborhood with seafood restaurants and sea lions</desc>
+  </wpt>
+</gpx>

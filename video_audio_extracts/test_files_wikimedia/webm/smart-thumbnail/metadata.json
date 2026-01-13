@@ -1,0 +1,42 @@
+[
+  {
+    "path": "test_files_wikimedia/webm/smart-thumbnail/01_\"Rodrigo_Pederneiras_e_o_Grupo_Corpo\"_na_Cole\u00e7\u00e3o_Aplauso.webm",
+    "size": 118985121,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/%22Rodrigo_Pederneiras_e_o_Grupo_Corpo%22_na_Cole%C3%A7%C3%A3o_Aplauso.webm",
+    "title": "File:\"Rodrigo Pederneiras e o Grupo Corpo\" na Cole\u00e7\u00e3o Aplauso.webm",
+    "mime": "video/webm",
+    "format": "webm"
+  },
+  {
+    "path": "test_files_wikimedia/webm/smart-thumbnail/02_-Avan\u00e7amos!_Depoimento_do_ministro_da_Fazenda.webm",
+    "size": 10566222,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/-Avan%C3%A7amos%21_Depoimento_do_ministro_da_Fazenda.webm",
+    "title": "File:-Avan\u00e7amos! Depoimento do ministro da Fazenda.webm",
+    "mime": "video/webm",
+    "format": "webm"
+  },
+  {
+    "path": "test_files_wikimedia/webm/smart-thumbnail/03_-Avan\u00e7amos!_Depoimento_do_ministro_da_Sa\u00fade.webm",
+    "size": 14158751,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/-Avan%C3%A7amos%21_Depoimento_do_ministro_da_Sa%C3%BAde.webm",
+    "title": "File:-Avan\u00e7amos! Depoimento do ministro da Sa\u00fade.webm",
+    "mime": "video/webm",
+    "format": "webm"
+  },
+  {
+    "path": "test_files_wikimedia/webm/smart-thumbnail/04_-CPBR11_-_Palco_Makers_-_01-02-2018_01-00_-_01-45_-_O_movimento_maker_no_interior_de_SP_\u2013.webm",
+    "size": 238565646,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/-CPBR11_-_Palco_Makers_-_01-02-2018_01-00_-_01-45_-_O_movimento_maker_no_interior_de_SP_%E2%80%93.webm",
+    "title": "File:-CPBR11 - Palco Makers - 01-02-2018 01-00 - 01-45 - O movimento maker no interior de SP \u2013.webm",
+    "mime": "video/webm",
+    "format": "webm"
+  },
+  {
+    "path": "test_files_wikimedia/webm/smart-thumbnail/05_-MaisM\u00e9dicos_-_Depoimento_de_enfermeira_sobre_o_Programa_Mais_M\u00e9dicos.webm",
+    "size": 5454125,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/-MaisM%C3%A9dicos_-_Depoimento_de_enfermeira_sobre_o_Programa_Mais_M%C3%A9dicos.webm",
+    "title": "File:-MaisM\u00e9dicos - Depoimento de enfermeira sobre o Programa Mais M\u00e9dicos.webm",
+    "mime": "video/webm",
+    "format": "webm"
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "page_number": 13,
+  "elements": [
+    {
+      "label": "code",
+      "text": "RETURN\nCASE\n  WHEN VERIFY_GROUP_FOR_USER ( SESSION_USER , 'HR', 'EMP' ) = 1\n    THEN EMPLOYEES . DATE_OF_BIRTH\n\n  WHEN VERIFY_GROUP_FOR_USER ( SESSION_USER , 'MGR' ) = 1\n    AND SESSION_USER = EMPLOYEES . USER_ID\n    THEN EMPLOYEES . DATE_OF_BIRTH\n\n  WHEN VERIFY_GROUP_FOR_USER ( SESSION_USER , 'MGR' ) = 1\n    AND SESSION_USER <> EMPLOYEES . USER_ID\n    THEN ( 9999 || '-' || MONTH ( EMPLOYEES . DATE_OF_BIRTH ) || '-' ||\n      DAY (EMPLOYEES.DATE_OF_BIRTH ))\n  ELSE NULL\nEND\nENABLE ;",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "2. The other column to mask in this example is the TAX_ID information. In this example, the rules to enforce include the following ones:\n- Human Resources can see the unmasked TAX_ID of the employees.\n- Employees can see only their own unmasked TAX_ID.\n- Managers see a masked version of TAX_ID with the first five characters replaced with the X character (for example, XXX-XX-1234).\n- Any other person sees the entire TAX_ID as masked, for example, XXX-XX-XXXX.\nTo implement this column mask, run the SQL statement that is shown in Example 3-9.",
+      "bbox": {
+        "l": 0.0,
+        "t": 31.0,
+        "r": 100.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Example 3-9 Creating a mask on the TAX_ID column",
+      "bbox": {
+        "l": 0.0,
+        "t": 61.0,
+        "r": 100.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "code",
+      "text": "CREATE MASK HR_SCHEMA.MASK_TAX_ID_ON_EMPLOYEES\n  ON HR_SCHEMA.EMPLOYEES AS EMPLOYEES\n  FOR COLUMN TAX_ID\nRETURN\nCASE\n  WHEN VERIFY_GROUP_FOR_USER ( SESSION_USER , 'HR' ) = 1\n    THEN EMPLOYEES . TAX_ID\n\n  WHEN VERIFY_GROUP_FOR_USER ( SESSION_USER , 'MGR' ) = 1\n    AND SESSION_USER = EMPLOYEES . USER_ID\n    THEN EMPLOYEES . TAX_ID\n\n  WHEN VERIFY_GROUP_FOR_USER ( SESSION_USER , 'MGR' ) = 1\n    AND SESSION_USER <> EMPLOYEES . USER_ID\n    THEN ( 'XXX-XX-' CONCAT QSYS2 . SUBSTR ( EMPLOYEES . TAX_ID , 8 , 4 ) )\n\n  WHEN VERIFY_GROUP_FOR_USER ( SESSION_USER , 'EMP' ) = 1\n    THEN EMPLOYEES . TAX_ID\n  ELSE 'XXX-XX-XXXX'\nEND\nENABLE ;",
+      "bbox": {
+        "l": 0.0,
+        "t": 66.0,
+        "r": 100.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "Chapter 3. Row and Column Access Control 27",
+      "bbox": {
+        "l": 0.0,
+        "t": 91.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

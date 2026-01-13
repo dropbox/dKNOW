@@ -1,0 +1,470 @@
+[
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/1",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/2"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Asia",
+    "text": "Asia",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/3",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "China",
+    "text": "China",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/4",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Japan",
+    "text": "Japan",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/5",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Thailand",
+    "text": "Thailand",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/2",
+    "parent": {
+      "$ref": "#/texts/1"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/6",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/7"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Europe",
+    "text": "Europe",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/8",
+    "parent": {
+      "$ref": "#/groups/7"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "UK",
+    "text": "UK",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/9",
+    "parent": {
+      "$ref": "#/groups/7"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Germany",
+    "text": "Germany",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/10",
+    "parent": {
+      "$ref": "#/groups/7"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/11"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Switzerland",
+    "text": "Switzerland",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/13",
+    "parent": {
+      "$ref": "#/groups/12"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Bern",
+    "text": "Bern",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/14",
+    "parent": {
+      "$ref": "#/groups/12"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Aargau",
+    "text": "Aargau",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/12",
+    "parent": {
+      "$ref": "#/groups/11"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/11",
+    "parent": {
+      "$ref": "#/texts/10"
+    },
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/15",
+    "parent": {
+      "$ref": "#/groups/7"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/16"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Italy",
+    "text": "Italy",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/18",
+    "parent": {
+      "$ref": "#/groups/17"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Piedmont",
+    "text": "Piedmont",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/19",
+    "parent": {
+      "$ref": "#/groups/17"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Liguria",
+    "text": "Liguria",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/17",
+    "parent": {
+      "$ref": "#/groups/16"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/16",
+    "parent": {
+      "$ref": "#/texts/15"
+    },
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/7",
+    "parent": {
+      "$ref": "#/texts/6"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/15"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/20",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Africa",
+    "text": "Africa",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/0",
+    "children": [
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/20"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  }
+]

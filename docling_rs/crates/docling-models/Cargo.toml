@@ -1,0 +1,11 @@
+[package]
+name = "docling-models"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Machine learning model types for docling-rs document processing"
+keywords = ["machine-learning", "models", "ml", "document"]
+categories = ["data-structures"]
+
+[dependencies]

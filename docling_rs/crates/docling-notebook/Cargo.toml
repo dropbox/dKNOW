@@ -1,0 +1,21 @@
+[package]
+name = "docling-notebook"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Jupyter notebook and computational notebook format support for docling-rs"
+keywords = ["jupyter", "notebook", "ipynb", "data-science"]
+categories = ["parsing", "science"]
+[dependencies]
+# Core dependencies
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+
+# Jupyter Notebook parsing
+nbformat = "0.13"
+jupyter-protocol = "0.9"
+
+[dev-dependencies]

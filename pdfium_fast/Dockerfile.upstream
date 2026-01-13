@@ -1,0 +1,139 @@
+# Dockerfile.upstream - Build PDFium for Linux from upstream + our patches
+#
+# This Dockerfile builds PDFium from upstream source with our modifications.
+# It fetches fresh upstream, then applies our patch files.
+#
+# Build time: ~60-90 minutes (most is gclient sync)
+# Usage (x86_64 - recommended for compatibility):
+#   docker build --platform linux/amd64 -f Dockerfile.upstream -t pdfium-fast-linux .
+#   docker run -v $(pwd)/binaries:/output pdfium-fast-linux
+#
+# Usage (ARM64 - requires skipping some deps):
+#   docker build -f Dockerfile.upstream -t pdfium-fast-linux-arm64 .
+#
+# Note: ARM64 Linux builds may fail due to missing CIPD packages (RBE client)
+# Use x86_64 for reliable builds (runs via emulation on Apple Silicon)
+
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install build dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    clang \
+    lld \
+    git \
+    python3 \
+    python3-pip \
+    curl \
+    wget \
+    pkg-config \
+    libglib2.0-dev \
+    patch \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /build
+
+# Install depot_tools and bootstrap it
+RUN git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git /depot_tools
+ENV PATH="/depot_tools:${PATH}"
+
+# Bootstrap depot_tools (creates python3_bin_reldir.txt and other needed files)
+RUN cd /depot_tools && ./update_depot_tools
+
+# Create gclient config for upstream PDFium
+RUN cat > .gclient << 'EOF'
+solutions = [
+  {
+    "name": "pdfium",
+    "url": "https://pdfium.googlesource.com/pdfium.git",
+    "managed": False,
+    "custom_deps": {},
+    "custom_vars": {
+      "checkout_configuration": "minimal",
+    },
+  },
+]
+EOF
+
+# Skip RBE (Remote Build Execution) client - not needed for local builds
+# Also suppress git version warning
+ENV DEPOT_TOOLS_UPDATE=0
+ENV GCLIENT_SUPPRESS_GIT_VERSION_WARNING=1
+
+# Sync upstream PDFium (this takes 30-60 minutes)
+# Note: --no-history reduces download size, --nohooks delays hook execution
+RUN gclient sync --shallow --no-history --nohooks || \
+    echo "gclient sync partial - continuing with available deps"
+
+WORKDIR /build/pdfium
+
+# CRITICAL: Checkout the exact upstream commit that matches our patches
+# Our patches were generated against pdfium/ at commit bced990
+# Using latest upstream causes ABI compatibility issues
+RUN git checkout bced990 || echo "Commit checkout failed - continuing with HEAD"
+
+# Run hooks after checkout (some may fail on ARM64, that's OK for builds without RBE)
+RUN cd /build && gclient runhooks || echo "Some hooks failed - continuing"
+
+# Copy our patch files
+COPY patches/ /build/patches/
+
+# Apply core patches
+RUN for patch in /build/patches/fpdfapi_*.patch /build/patches/fxcodec_*.patch \
+                 /build/patches/fxcrt_*.patch /build/patches/fxge_*.patch; do \
+        if [ -f "$patch" ]; then \
+            target_dir=$(basename "$patch" .patch | sed 's/_/\//g' | xargs dirname); \
+            echo "Applying: $patch"; \
+            patch -p0 < "$patch" || echo "Warning: patch may have failed: $patch"; \
+        fi \
+    done
+
+# Apply fpdfsdk patches
+RUN for patch in /build/patches/fpdfsdk_*.patch; do \
+        if [ -f "$patch" ]; then \
+            echo "Applying: $patch"; \
+            patch -p0 < "$patch" || echo "Warning: patch may have failed: $patch"; \
+        fi \
+    done
+
+# Apply agg23 patches
+RUN for patch in /build/patches/agg23_*.patch; do \
+        if [ -f "$patch" ]; then \
+            echo "Applying: $patch"; \
+            patch -p0 < "$patch" || echo "Warning: patch may have failed: $patch"; \
+        fi \
+    done
+
+# Copy our custom examples (these are new files, not patches)
+COPY examples/ /build/pdfium/examples/
+
+# Copy our new fpdfsdk file (fpdf_parallel.cpp)
+# This is a new file, not in upstream, required for threaded rendering
+COPY fpdfsdk/fpdf_parallel.cpp /build/pdfium/fpdfsdk/
+
+# Update BUILD.gn to include our targets
+# Note: examples targets are marked testonly=true, so our group must be too
+RUN echo '' >> BUILD.gn && \
+    echo '# pdfium_fast additions' >> BUILD.gn && \
+    echo 'group("pdfium_cli") {' >> BUILD.gn && \
+    echo '  testonly = true' >> BUILD.gn && \
+    echo '  deps = [ "//examples:pdfium_cli" ]' >> BUILD.gn && \
+    echo '}' >> BUILD.gn
+
+# Configure Release build
+RUN gn gen out/Release --args='is_debug=false pdf_enable_v8=false pdf_enable_xfa=false is_component_build=true use_clang_modules=false'
+
+# Build pdfium_cli
+RUN ninja -C out/Release pdfium_cli
+
+# Verify build
+RUN ./out/Release/pdfium_cli --help
+
+# Copy binaries on run
+RUN mkdir -p /output
+CMD cp out/Release/pdfium_cli /output/ && \
+    cp out/Release/libpdfium.so /output/ && \
+    echo "Binaries copied to /output/" && \
+    ls -lh /output/

@@ -1,0 +1,73 @@
+# Comparative Market Analysis (CMA) – Residential Property
+
+## 1. Subject Property Summary
+
+| Property Address   | [Insert Address]   | Property Type   | [Single-Family / Duplex / Townhome / Condo]   |
+|--------------------|--------------------|-----------------|-----------------------------------------------|
+| Bedrooms           | [Insert]           | Bathrooms       | [Insert]                                      |
+
+## 2. Comparable Sales (Sold Properties)
+
+| Address + LISTING No.   | Property Type                               | List Price/Sale price   | Lot Size   | Year Built   | Bedrooms   | Bathrooms   | Public Remark                 |
+|-------------------------|---------------------------------------------|-------------------------|------------|--------------|------------|-------------|-------------------------------|
+| [Listing 1]             | [Single-Family / Duplex / Townhome / Condo] | $[_] / $[_]             | [Insert]   | [Insert]     | [Insert]   | [Insert]    | [Public remarks from LISTING] |
+| [Listing 2]             | [Single-Family / Duplex / Townhome / Condo] | $[_] / $[_]             | [Insert]   | [Insert]     | [Insert]   | [Insert]    | [Public remarks from LISTING] |
+
+## 3. Active &amp; Pending Listings
+
+| Address + LISTING No.   | Property Type                               | Asking Price   | Lot Size   | Year Built   | Bedrooms   | Bathrooms   | Public Remark                 |
+|-------------------------|---------------------------------------------|----------------|------------|--------------|------------|-------------|-------------------------------|
+| [Listing 1]             | [Single-Family / Duplex / Townhome / Condo] | $[_]           | [Insert]   | [Insert]     | [Insert]   | [Insert]    | [Public remarks from LISTING] |
+| [Listing 2]             | [Single-Family / Duplex / Townhome / Condo] | $[_]           | [Insert]   | [Insert]     | [Insert]   | [Insert]    | [Public remarks from LISTING] |
+
+## 
+
+## 4. List Price vs Sales Price
+
+This graph illustrates the list price, along with sale price for the properties discussed in *2. Comparable Sales (Sold Properties)* and *3. Active &amp; Pending Listings*
+
+*[Insert Graph]*
+
+## 5. Number of Days On Market
+
+This graph illustrates the number of days on market for the listings in this analysis.
+
+*[Insert Graph]*
+
+## 
+
+## 6. Overview of Active Properties
+
+| Total # of Listings   | [Insert]   | [Insert Graph]   |
+|-----------------------|------------|------------------|
+| Lowest Price          | [Insert]   | [Insert Graph]   |
+| Highest Price         | [Insert]   | [Insert Graph]   |
+| Average Price         | [Insert]   | [Insert Graph]   |
+| Avg TDOM              | [Insert]   | [Insert Graph]   |
+
+## 7. Overview of Closed Properties
+
+| Total # of Listings   | [Insert]   | [Insert Graph]   |
+|-----------------------|------------|------------------|
+| Lowest Price          | [Insert]   | [Insert Graph]   |
+| Highest Price         | [Insert]   | [Insert Graph]   |
+| Average Price         | [Insert]   | [Insert Graph]   |
+| Avg TDOM              | [Insert]   | [Insert Graph]   |
+
+## 8. Pricing Recommendations
+
+There are certain factors that are within our control and some factors beyond our control when it comes to setting the price. Those factors within our control are: the appearance of the property, how aggressively we market the property and the price. Factors outside our control are: location of property, size and local amenities. It's important to accept those factors that are beyond our control and focus on the pricing and preparation.
+
+A property priced at market value will attract more buyers than a home priced above market value. Consider that a competitively priced property will also attract a greater number of potential buyers and increase your opportunity for a quick sale.
+
+**Price Statistics (active + sold)**
+
+Average Price:		$[_]
+
+High Price:		$[_]
+
+Median Price:		$[_]
+
+Low Price:		$[_]
+
+Based on active and sold comps suggested list price range would be between $[_] to $[_].

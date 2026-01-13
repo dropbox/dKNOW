@@ -1,0 +1,21 @@
+[package]
+name = "docling-archive"
+version.workspace = true
+edition.workspace = true
+authors = ["Andrew Yates <ayates@dropbox.com>"]
+description = "Archive format support for docling (ZIP, TAR, 7Z)"
+keywords = ["archive", "zip", "tar", "7z", "compression"]
+categories = ["parsing", "compression"]
+license.workspace = true
+repository.workspace = true
+[dependencies]
+zip.workspace = true
+tar = "0.4"
+flate2 = "1.0"
+bzip2 = "0.5"
+sevenz-rust = { workspace = true }
+thiserror = { workspace = true }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tempfile = "3.10"
+log = "0.4"

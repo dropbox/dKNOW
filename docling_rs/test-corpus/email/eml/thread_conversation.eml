@@ -1,0 +1,48 @@
+From: sarah.williams@startup.io
+To: team@startup.io
+Subject: Re: Re: Feature Discussion - User Authentication
+Date: Thu, 9 Nov 2025 11:20:00 -0800
+Message-ID: <thread-003@startup.io>
+In-Reply-To: <thread-002@startup.io>
+References: <thread-001@startup.io> <thread-002@startup.io>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Great feedback everyone!
+
+Based on the discussion, I think we should proceed with:
+
+1. OAuth 2.0 for social login (Google, GitHub, Microsoft)
+2. TOTP for 2FA
+3. WebAuthn/FIDO2 for passwordless (phase 2)
+
+Mike - can you create tickets for these features?
+Alex - please start the OAuth integration research.
+Lisa - let's schedule a security review meeting for next week.
+
+Thanks,
+Sarah
+
+---
+Previous message from: Mike Chen <mike.chen@startup.io>
+Date: Wed, 8 Nov 2025 15:30:00 -0800
+
+I agree with Alex's points. OAuth 2.0 is definitely the way to go for social login.
+For 2FA, I'd recommend TOTP over SMS-based verification for better security.
+
+---
+Previous message from: Alex Rodriguez <alex.r@startup.io>
+Date: Wed, 8 Nov 2025 10:15:00 -0800
+
+Hi team,
+
+Regarding user authentication, I propose we implement the following:
+
+- Social login via OAuth 2.0 (Google, GitHub, Microsoft)
+- Traditional email/password with bcrypt hashing
+- Two-factor authentication (2FA) option
+- Password reset via email token
+
+Thoughts?
+
+Alex

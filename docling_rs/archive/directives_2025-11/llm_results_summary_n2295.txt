@@ -1,0 +1,61 @@
+# LLM Quality Test Results - N=2295 (After Judge Prompt Fix)
+
+## Summary
+
+**Results:**
+- ✅ **Passing (≥95%):** 17/38 formats (45%)
+- ❌ **Failing (<95%):** 21/38 formats (55%)
+
+**Improvement from N=2294:**
+- Before: 11/38 (29%)
+- After: 17/38 (45%)
+- **+6 formats** (55% improvement)
+
+## Score Distribution
+
+100%: 5 formats (AsciiDoc, CSV, DOCX, HTML, PPTX)
+98%: 2 formats (Markdown, XLSX)
+96%: 1 format (GLB)
+95%: 9 formats (EML, 7Z, DICOM, GPX, IPYNB, MBOX, ODS, STL, ZIP)
+93%: 4 formats (ICS, KMZ, SVG, WebVTT)
+92%: 4 formats (EPUB, GIF, JATS, TAR)
+91%: 1 format (KML)
+90%: 2 formats (BMP, ODP)
+88%: 3 formats (AVIF, GLTF, ODT)
+87%: 3 formats (FB2, MOBI, OBJ)
+85%: 2 formats (HEIF, VCF)
+83%: 1 format (DXF)
+68%: 1 format (TEX) - ⚠️ Needs investigation
+
+## Analysis
+
+The judge prompt fix had a positive impact but not as dramatic as expected.
+
+### Successfully Fixed (Now ≥95%):
+1. 7Z: 87% → 95%
+2. DICOM: 92% → 95%
+3. GPX: 93% → 95%
+4. IPYNB: 92% → 95%
+5. ODS: 87% → 95%
+6. STL: 84% → 95%
+7. ZIP: 86% → 95%
+
+### Still Failing (90-94%):
+- ICS (93%), KMZ (93%), SVG (93%), WebVTT (93%)
+- EPUB (92%), GIF (92%), JATS (92%), TAR (92%)
+- KML (91%)
+- BMP (90%), ODP (90%)
+
+### Significant Failures (<90%):
+- AVIF (88%), GLTF (88%), ODT (88%)
+- FB2 (87%), MOBI (87%), OBJ (87%)
+- HEIF (85%), VCF (85%)
+- DXF (83%)
+- TEX (68%)
+
+## Next Steps
+
+1. Verify remaining failures using LLM_JUDGE_VERIFICATION_PROTOCOL.md
+2. Focus on 90-94% formats first (likely minor issues)
+3. Investigate TEX (68%) - significantly worse than expected
+4. Check if remaining failures are real bugs or remaining judge issues

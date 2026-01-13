@@ -1,0 +1,600 @@
+//! Performance profiling and benchmarking framework
+//!
+//! This module provides tools for measuring and analyzing document conversion performance.
+//! It tracks parsing time, serialization time, memory usage, and other metrics.
+//!
+//! # Example
+//!
+//! ```no_run
+//! use docling_core::performance::{PerformanceMetrics, BenchmarkRunner, BenchmarkConfig};
+//! use std::path::Path;
+//!
+//! let config = BenchmarkConfig::default();
+//! let runner = BenchmarkRunner::new(config);
+//! let results = runner.run_benchmark(Path::new("test.pdf")).unwrap();
+//!
+//! println!("Parse time: {:?}", results.parse_time);
+//! println!("Total time: {:?}", results.total_time);
+//! ```
+
+use anyhow::{Context, Result};
+use serde::{Deserialize, Serialize};
+use std::path::{Path, PathBuf};
+use std::time::{Duration, Instant};
+
+#[cfg(test)]
+mod tests;
+
+/// Performance metrics for a document conversion operation
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct PerformanceMetrics {
+    /// Time spent parsing the document
+    pub parse_time: Duration,
+
+    /// Time spent serializing to markdown
+    pub serialize_time: Duration,
+
+    /// Total time (includes overhead)
+    pub total_time: Duration,
+
+    /// Memory used during conversion (if available)
+    pub memory_used_bytes: Option<u64>,
+
+    /// Peak memory usage (if available)
+    pub peak_memory_bytes: Option<u64>,
+
+    /// Input file size in bytes
+    pub input_size_bytes: u64,
+
+    /// Output size in bytes
+    pub output_size_bytes: u64,
+
+    /// Output size in characters
+    pub output_size_chars: usize,
+
+    /// Throughput in bytes per second
+    pub throughput_bps: f64,
+
+    /// File path that was converted
+    pub file_path: PathBuf,
+
+    /// File format
+    pub file_format: String,
+
+    /// Backend used (rust, python, hybrid)
+    pub backend: String,
+
+    /// Timestamp when measurement was taken
+    pub timestamp: chrono::DateTime<chrono::Utc>,
+}
+
+impl PerformanceMetrics {
+    /// Calculate throughput (bytes per second)
+    pub fn calculate_throughput(&mut self) {
+        if self.total_time.as_secs_f64() > 0.0 {
+            self.throughput_bps = self.input_size_bytes as f64 / self.total_time.as_secs_f64();
+        } else {
+            self.throughput_bps = 0.0;
+        }
+    }
+
+    /// Format throughput as human-readable string
+    pub fn format_throughput(&self) -> String {
+        if self.throughput_bps > 1_000_000.0 {
+            format!("{:.2} MB/s", self.throughput_bps / 1_000_000.0)
+        } else if self.throughput_bps > 1_000.0 {
+            format!("{:.2} KB/s", self.throughput_bps / 1_000.0)
+        } else {
+            format!("{:.2} B/s", self.throughput_bps)
+        }
+    }
+}
+
+/// Configuration for benchmark runs
+#[derive(Debug, Clone)]
+pub struct BenchmarkConfig {
+    /// Number of iterations to run for each file
+    pub iterations: usize,
+
+    /// Warmup iterations (results discarded)
+    pub warmup_iterations: usize,
+
+    /// Enable OCR for PDF files
+    pub enable_ocr: bool,
+
+    /// Output format for results
+    pub output_format: BenchmarkOutputFormat,
+
+    /// Output file path (None for stdout)
+    pub output_path: Option<PathBuf>,
+}
+
+impl Default for BenchmarkConfig {
+    fn default() -> Self {
+        Self {
+            iterations: 3,
+            warmup_iterations: 1,
+            enable_ocr: false,
+            output_format: BenchmarkOutputFormat::Text,
+            output_path: None,
+        }
+    }
+}
+
+/// Output format for benchmark results
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum BenchmarkOutputFormat {
+    /// Human-readable text
+    Text,
+    /// JSON format
+    Json,
+    /// CSV format
+    Csv,
+    /// Markdown table
+    Markdown,
+}
+
+/// Benchmark results for a single file
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct BenchmarkResult {
+    /// File that was benchmarked
+    pub file_path: PathBuf,
+
+    /// File format
+    pub file_format: String,
+
+    /// All measurement iterations
+    pub iterations: Vec<PerformanceMetrics>,
+
+    /// Average metrics across all iterations
+    pub average: PerformanceMetricsSummary,
+
+    /// Standard deviation of metrics
+    pub std_dev: PerformanceMetricsSummary,
+
+    /// Minimum metrics
+    pub min: PerformanceMetricsSummary,
+
+    /// Maximum metrics
+    pub max: PerformanceMetricsSummary,
+}
+
+/// Summary statistics for performance metrics
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct PerformanceMetricsSummary {
+    pub parse_time_ms: f64,
+    pub serialize_time_ms: f64,
+    pub total_time_ms: f64,
+    pub throughput_bps: f64,
+}
+
+/// Benchmark runner for measuring document conversion performance
+pub struct BenchmarkRunner {
+    config: BenchmarkConfig,
+}
+
+impl BenchmarkRunner {
+    /// Create a new benchmark runner with the given configuration
+    pub fn new(config: BenchmarkConfig) -> Self {
+        Self { config }
+    }
+
+    /// Create a benchmark runner with default configuration
+    pub fn default_config() -> Self {
+        Self::new(BenchmarkConfig::default())
+    }
+
+    /// Run benchmark on a single file
+    pub fn run_benchmark(&self, path: &Path) -> Result<BenchmarkResult> {
+        use crate::python_bridge;
+
+        // Get file metadata
+        let metadata = std::fs::metadata(path)
+            .with_context(|| format!("Failed to read file metadata: {}", path.display()))?;
+        let input_size_bytes = metadata.len();
+
+        // Detect file format
+        let file_format = detect_format_from_path(path)?;
+
+        let mut all_metrics = Vec::new();
+
+        // Warmup iterations
+        for _ in 0..self.config.warmup_iterations {
+            let _ = python_bridge::convert_to_markdown(path, false)?;
+        }
+
+        // Benchmark iterations
+        for _ in 0..self.config.iterations {
+            let metrics = self.measure_single_conversion(path, &file_format, input_size_bytes)?;
+            all_metrics.push(metrics);
+        }
+
+        // Calculate statistics
+        let average = Self::calculate_average(&all_metrics);
+        let std_dev = Self::calculate_std_dev(&all_metrics, &average);
+        let min = Self::calculate_min(&all_metrics);
+        let max = Self::calculate_max(&all_metrics);
+
+        Ok(BenchmarkResult {
+            file_path: path.to_path_buf(),
+            file_format,
+            iterations: all_metrics,
+            average,
+            std_dev,
+            min,
+            max,
+        })
+    }
+
+    /// Measure a single conversion operation
+    fn measure_single_conversion(
+        &self,
+        path: &Path,
+        file_format: &str,
+        input_size_bytes: u64,
+    ) -> Result<PerformanceMetrics> {
+        use crate::python_bridge;
+
+        // Initialize system info for memory tracking
+        let mut sys = sysinfo::System::new_all();
+        let pid = sysinfo::get_current_pid().ok();
+
+        // Capture initial memory
+        sys.refresh_all();
+        let memory_start = pid.and_then(|p| sys.process(p).map(sysinfo::Process::memory));
+
+        let total_start = Instant::now();
+
+        // For now, we measure total time
+        // TODO: Break down into parse vs serialize when using Rust backend
+        // In hybrid mode (current): Python does both parse and serialize atomically
+        // In pure Rust mode (future): Would split into separate parse/serialize timings
+        let parse_start = Instant::now();
+        let markdown = python_bridge::convert_to_markdown(path, false)?;
+        let parse_time = parse_start.elapsed();
+
+        // Serialization is instant since Python already did it
+        let serialize_time = Duration::from_nanos(0);
+
+        let total_time = total_start.elapsed();
+
+        // Capture final memory
+        sys.refresh_all();
+        let memory_end = pid.and_then(|p| sys.process(p).map(sysinfo::Process::memory));
+
+        // Calculate memory usage (difference from start to end)
+        let memory_used_bytes = match (memory_start, memory_end) {
+            (Some(start), Some(end)) => {
+                if end > start {
+                    Some(end - start)
+                } else {
+                    Some(0) // Memory may have been freed during conversion
+                }
+            }
+            _ => None,
+        };
+
+        // Peak memory is the final memory usage (approximation)
+        let peak_memory_bytes = memory_end;
+
+        let output_size_bytes = markdown.len() as u64;
+        let output_size_chars = markdown.chars().count();
+
+        let mut metrics = PerformanceMetrics {
+            parse_time,
+            serialize_time,
+            total_time,
+            memory_used_bytes,
+            peak_memory_bytes,
+            input_size_bytes,
+            output_size_bytes,
+            output_size_chars,
+            throughput_bps: 0.0,
+            file_path: path.to_path_buf(),
+            file_format: file_format.to_string(),
+            backend: "python".to_string(),
+            timestamp: chrono::Utc::now(),
+        };
+
+        metrics.calculate_throughput();
+
+        Ok(metrics)
+    }
+
+    /// Run benchmarks on multiple files
+    pub fn run_benchmarks(&self, paths: &[PathBuf]) -> Result<Vec<BenchmarkResult>> {
+        let mut results = Vec::new();
+
+        for path in paths {
+            match self.run_benchmark(path) {
+                Ok(result) => results.push(result),
+                Err(e) => {
+                    eprintln!("Warning: Failed to benchmark {}: {}", path.display(), e);
+                }
+            }
+        }
+
+        Ok(results)
+    }
+
+    /// Calculate average metrics across iterations
+    fn calculate_average(iterations: &[PerformanceMetrics]) -> PerformanceMetricsSummary {
+        let n = iterations.len() as f64;
+        let sum_parse = iterations
+            .iter()
+            .map(|m| m.parse_time.as_secs_f64())
+            .sum::<f64>();
+        let sum_serialize = iterations
+            .iter()
+            .map(|m| m.serialize_time.as_secs_f64())
+            .sum::<f64>();
+        let sum_total = iterations
+            .iter()
+            .map(|m| m.total_time.as_secs_f64())
+            .sum::<f64>();
+        let sum_throughput = iterations.iter().map(|m| m.throughput_bps).sum::<f64>();
+
+        PerformanceMetricsSummary {
+            parse_time_ms: (sum_parse / n) * 1000.0,
+            serialize_time_ms: (sum_serialize / n) * 1000.0,
+            total_time_ms: (sum_total / n) * 1000.0,
+            throughput_bps: sum_throughput / n,
+        }
+    }
+
+    /// Calculate standard deviation
+    fn calculate_std_dev(
+        iterations: &[PerformanceMetrics],
+        average: &PerformanceMetricsSummary,
+    ) -> PerformanceMetricsSummary {
+        let n = iterations.len() as f64;
+
+        let var_parse = iterations
+            .iter()
+            .map(|m| {
+                let diff = (m.parse_time.as_secs_f64() * 1000.0) - average.parse_time_ms;
+                diff * diff
+            })
+            .sum::<f64>()
+            / n;
+
+        let var_serialize = iterations
+            .iter()
+            .map(|m| {
+                let diff = (m.serialize_time.as_secs_f64() * 1000.0) - average.serialize_time_ms;
+                diff * diff
+            })
+            .sum::<f64>()
+            / n;
+
+        let var_total = iterations
+            .iter()
+            .map(|m| {
+                let diff = (m.total_time.as_secs_f64() * 1000.0) - average.total_time_ms;
+                diff * diff
+            })
+            .sum::<f64>()
+            / n;
+
+        let var_throughput = iterations
+            .iter()
+            .map(|m| {
+                let diff = m.throughput_bps - average.throughput_bps;
+                diff * diff
+            })
+            .sum::<f64>()
+            / n;
+
+        PerformanceMetricsSummary {
+            parse_time_ms: var_parse.sqrt(),
+            serialize_time_ms: var_serialize.sqrt(),
+            total_time_ms: var_total.sqrt(),
+            throughput_bps: var_throughput.sqrt(),
+        }
+    }
+
+    /// Calculate minimum metrics
+    fn calculate_min(iterations: &[PerformanceMetrics]) -> PerformanceMetricsSummary {
+        let min_parse = iterations
+            .iter()
+            .map(|m| m.parse_time.as_secs_f64() * 1000.0)
+            .min_by(|a, b| a.partial_cmp(b).unwrap())
+            .unwrap_or(0.0);
+
+        let min_serialize = iterations
+            .iter()
+            .map(|m| m.serialize_time.as_secs_f64() * 1000.0)
+            .min_by(|a, b| a.partial_cmp(b).unwrap())
+            .unwrap_or(0.0);
+
+        let min_total = iterations
+            .iter()
+            .map(|m| m.total_time.as_secs_f64() * 1000.0)
+            .min_by(|a, b| a.partial_cmp(b).unwrap())
+            .unwrap_or(0.0);
+
+        let min_throughput = iterations
+            .iter()
+            .map(|m| m.throughput_bps)
+            .min_by(|a, b| a.partial_cmp(b).unwrap())
+            .unwrap_or(0.0);
+
+        PerformanceMetricsSummary {
+            parse_time_ms: min_parse,
+            serialize_time_ms: min_serialize,
+            total_time_ms: min_total,
+            throughput_bps: min_throughput,
+        }
+    }
+
+    /// Calculate maximum metrics
+    fn calculate_max(iterations: &[PerformanceMetrics]) -> PerformanceMetricsSummary {
+        let max_parse = iterations
+            .iter()
+            .map(|m| m.parse_time.as_secs_f64() * 1000.0)
+            .max_by(|a, b| a.partial_cmp(b).unwrap())
+            .unwrap_or(0.0);
+
+        let max_serialize = iterations
+            .iter()
+            .map(|m| m.serialize_time.as_secs_f64() * 1000.0)
+            .max_by(|a, b| a.partial_cmp(b).unwrap())
+            .unwrap_or(0.0);
+
+        let max_total = iterations
+            .iter()
+            .map(|m| m.total_time.as_secs_f64() * 1000.0)
+            .max_by(|a, b| a.partial_cmp(b).unwrap())
+            .unwrap_or(0.0);
+
+        let max_throughput = iterations
+            .iter()
+            .map(|m| m.throughput_bps)
+            .max_by(|a, b| a.partial_cmp(b).unwrap())
+            .unwrap_or(0.0);
+
+        PerformanceMetricsSummary {
+            parse_time_ms: max_parse,
+            serialize_time_ms: max_serialize,
+            total_time_ms: max_total,
+            throughput_bps: max_throughput,
+        }
+    }
+
+    /// Format benchmark results as text
+    pub fn format_as_text(results: &[BenchmarkResult]) -> String {
+        let mut output = String::new();
+
+        output.push_str("Performance Benchmark Results\n");
+        output.push_str("=============================\n\n");
+
+        for result in results {
+            output.push_str(&format!("File: {}\n", result.file_path.display()));
+            output.push_str(&format!("Format: {}\n", result.file_format));
+            output.push_str(&format!("Iterations: {}\n", result.iterations.len()));
+            output.push('\n');
+
+            output.push_str("Average:\n");
+            output.push_str(&format!(
+                "  Parse time:     {:>8.2} ms\n",
+                result.average.parse_time_ms
+            ));
+            output.push_str(&format!(
+                "  Serialize time: {:>8.2} ms\n",
+                result.average.serialize_time_ms
+            ));
+            output.push_str(&format!(
+                "  Total time:     {:>8.2} ms\n",
+                result.average.total_time_ms
+            ));
+            output.push_str(&format!(
+                "  Throughput:     {:>12.2} bytes/s\n",
+                result.average.throughput_bps
+            ));
+            output.push('\n');
+
+            output.push_str("Std Dev:\n");
+            output.push_str(&format!(
+                "  Parse time:     {:>8.2} ms\n",
+                result.std_dev.parse_time_ms
+            ));
+            output.push_str(&format!(
+                "  Total time:     {:>8.2} ms\n",
+                result.std_dev.total_time_ms
+            ));
+            output.push('\n');
+
+            output.push_str("Min/Max:\n");
+            output.push_str(&format!(
+                "  Parse time:     {:>8.2} / {:>8.2} ms\n",
+                result.min.parse_time_ms, result.max.parse_time_ms
+            ));
+            output.push_str(&format!(
+                "  Total time:     {:>8.2} / {:>8.2} ms\n",
+                result.min.total_time_ms, result.max.total_time_ms
+            ));
+            output.push('\n');
+            output.push_str("---\n\n");
+        }
+
+        output
+    }
+
+    /// Format benchmark results as JSON
+    pub fn format_as_json(results: &[BenchmarkResult]) -> Result<String> {
+        serde_json::to_string_pretty(results)
+            .context("Failed to serialize benchmark results to JSON")
+    }
+
+    /// Format benchmark results as CSV
+    pub fn format_as_csv(results: &[BenchmarkResult]) -> String {
+        let mut output = String::new();
+
+        // Header
+        output.push_str(
+            "file,format,iterations,avg_parse_ms,avg_serialize_ms,avg_total_ms,avg_throughput_bps,",
+        );
+        output.push_str("std_parse_ms,std_total_ms,min_total_ms,max_total_ms\n");
+
+        // Data rows
+        for result in results {
+            output.push_str(&format!(
+                "{},{},{},{:.2},{:.2},{:.2},{:.2},{:.2},{:.2},{:.2},{:.2}\n",
+                result.file_path.display(),
+                result.file_format,
+                result.iterations.len(),
+                result.average.parse_time_ms,
+                result.average.serialize_time_ms,
+                result.average.total_time_ms,
+                result.average.throughput_bps,
+                result.std_dev.parse_time_ms,
+                result.std_dev.total_time_ms,
+                result.min.total_time_ms,
+                result.max.total_time_ms,
+            ));
+        }
+
+        output
+    }
+
+    /// Format benchmark results as Markdown table
+    pub fn format_as_markdown(results: &[BenchmarkResult]) -> String {
+        let mut output = String::new();
+
+        output.push_str("# Performance Benchmark Results\n\n");
+        output.push_str("| File | Format | Avg Parse (ms) | Avg Total (ms) | Throughput (B/s) | Std Dev (ms) |\n");
+        output.push_str("|------|--------|----------------|----------------|------------------|---------------|\n");
+
+        for result in results {
+            let filename = result
+                .file_path
+                .file_name()
+                .and_then(|n| n.to_str())
+                .unwrap_or("unknown");
+
+            output.push_str(&format!(
+                "| {} | {} | {:.2} | {:.2} | {:.2} | {:.2} |\n",
+                filename,
+                result.file_format,
+                result.average.parse_time_ms,
+                result.average.total_time_ms,
+                result.average.throughput_bps,
+                result.std_dev.total_time_ms,
+            ));
+        }
+
+        output.push('\n');
+        output
+    }
+}
+
+/// Detect file format from path extension
+fn detect_format_from_path(path: &Path) -> Result<String> {
+    let extension = path
+        .extension()
+        .and_then(|s| s.to_str())
+        .ok_or_else(|| anyhow::anyhow!("File has no extension"))?
+        .to_lowercase();
+
+    Ok(extension)
+}

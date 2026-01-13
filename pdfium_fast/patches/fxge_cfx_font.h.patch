@@ -1,0 +1,32 @@
+--- pdfium/core/fxge/cfx_font.h	2025-11-20 14:44:25
++++ core/fxge/cfx_font.h	2025-12-03 16:39:54
+@@ -22,6 +22,7 @@
+ #include "core/fxcrt/span.h"
+ #include "core/fxcrt/unowned_ptr_exclusion.h"
+ #include "core/fxge/cfx_face.h"
++#include "core/fxge/freetype/fx_freetype.h"
+ 
+ #if defined(PDF_USE_SKIA)
+ #include "core/fxge/fx_font.h"
+@@ -72,7 +73,7 @@
+                     bool force_vertical,
+                     uint64_t object_tag);
+   RetainPtr<CFX_Face> GetFace() const { return face_; }
+-  bool HasFaceRec() const { return face_ && face_->HasFaceRec(); }
++  bool HasFaceRec() const { return face_ && face_->GetRec(); }
+   CFX_SubstFont* GetSubstFont() const { return subst_font_.get(); }
+   int GetSubstFontItalicAngle() const;
+ 
+@@ -140,6 +141,12 @@
+ #endif
+   ByteString GetFamilyNameOrUntitled() const;
+ 
++#if defined(PDF_ENABLE_XFA)
++  // |owned_file_| must outlive |owned_stream_rec_|.
++  RetainPtr<IFX_SeekableReadStream> owned_file_;
++  std::unique_ptr<FXFT_StreamRec> owned_stream_rec_;  // Must outlive |face_|.
++#endif
++
+   mutable RetainPtr<CFX_Face> face_;
+   mutable RetainPtr<CFX_GlyphCache> glyph_cache_;
+   std::unique_ptr<CFX_SubstFont> subst_font_;

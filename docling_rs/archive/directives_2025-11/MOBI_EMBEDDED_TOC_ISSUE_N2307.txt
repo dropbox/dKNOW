@@ -1,0 +1,202 @@
+# MOBI Embedded TOC Removal Issue - N=2307
+
+## Problem
+
+Project Gutenberg MOBI files have embedded HTML TOC that appears in final markdown output, causing:
+- LLM quality score stuck at 87% (need 95%)
+- "Extraneous text in TOC section" complaints
+- Structural quality issues
+
+## Fix Attempted
+
+**Changed**: `extract_embedded_toc_with_removal()` counting logic (mobi.rs:235-246)
+
+**Before**: Counted only pure Roman numeral links (`is_roman_numeral_link()`)
+```rust
+let roman_link_count = links.iter().filter(|link| {
+    let text = link.text().collect::<String>();
+    is_roman_numeral_link(text.trim())
+}).count();
+```
+
+**After**: Counts all TOC-like links including "Chapter:" prefix (`is_toc_entry()`)
+```rust
+let toc_link_count = links.iter().filter(|link| {
+    let text = link.text().collect::<String>();
+    is_toc_entry(text.trim())
+}).count();
+```
+
+**Result**: Embedded TOC still appears in output
+
+## Root Cause Analysis
+
+### Embedded TOC Structure
+
+The embedded TOC in Project Gutenberg MOBI files appears as:
+
+```
+CONTENTS | [Letter 1]() | |---------------| | [Letter 2]() | | [Chapter 1]() | ...
+```
+
+This is likely an HTML `<table>` element, not just links in a `<blockquote>`.
+
+### Why Fix Didn't Work
+
+**Hypothesis 1: TOC is in a table, not blockquote**
+- Code only looks for TOC inside `<blockquote>` elements
+- The HTML table with TOC may be outside blockquote
+- Blockquote may only contain license text
+
+**Hypothesis 2: Multiple blockquotes**
+- File may have multiple blockquotes
+- License text in one blockquote
+- TOC in another blockquote or table element
+- Code finds license blockquote but not TOC
+
+**Hypothesis 3: TOC removal boundaries incorrect**
+- Code finds TOC but calculates wrong HTML boundaries
+- Uses naive string search for "<blockquote" (line 275)
+- May match wrong blockquote if multiple exist
+
+### Evidence
+
+Output shows:
+1. License text appears (lines 52-63): "**The Project Gutenberg eBook..."
+2. Embedded TOC appears (lines 70-76): "CONTENTS | [Letter 1]()..."
+3. Main content starts (line 78): "Letter 1 *To Mrs. Saville...*"
+
+If license text AND TOC both appear, then:
+- Either code isn't finding the blockquote with TOC
+- Or code is removing wrong blockquote
+- Or TOC is not in a blockquote at all
+
+## Investigation Needed
+
+To properly fix this, need to:
+
+1. **Extract actual HTML structure** from MOBI file:
+   ```rust
+   let mobi = Mobi::new(bytes)?;
+   let html = mobi.content_as_string_lossy();
+   // Find where TOC table actually is
+   // Check if it's in <blockquote>, <table>, <div>, etc.
+   ```
+
+2. **Check blockquote count and content**:
+   ```rust
+   let blockquotes = document.select(&blockquote_selector);
+   println!("Found {} blockquotes", blockquotes.count());
+   for (i, bq) in blockquotes.enumerate() {
+       let text = bq.text().collect::<String>();
+       println!("Blockquote {}: {} chars, first 200: {}",
+                i, text.len(), &text[..200.min(text.len())]);
+   }
+   ```
+
+3. **Expand detection to tables**:
+   ```rust
+   // Also check <table> elements for TOC
+   let table_selector = Selector::parse("table").ok()?;
+   for table in document.select(&table_selector) {
+       let links = table.select(&link_selector);
+       // Count TOC-like links in table
+       // If ≥10, remove the table
+   }
+   ```
+
+## Workaround Options
+
+### Option A: Accept 87% as MOBI ceiling (0 hours)
+- Project Gutenberg MOBI files have complex HTML structure
+- License text is intentional (part of source)
+- 87% may be natural quality ceiling for this format
+- Focus on other formats instead
+
+### Option B: Filter embedded TOC in backend (2-3 hours)
+- Don't fix MOBI parser (docling-ebook crate)
+- Instead, detect and remove embedded TOC in ebooks backend
+- Post-process markdown to remove duplicate TOC section
+- Fragile but may work as quick fix
+
+### Option C: Investigate and fix properly (4-6 hours)
+- Extract MOBI HTML to file for inspection
+- Identify exact HTML structure of embedded TOC
+- Expand `extract_embedded_toc_with_removal()` to handle tables
+- Test on all MOBI files (simple_text, formatted, multi_chapter)
+- Add test case to prevent regression
+
+## Recommendation
+
+**Accept Option A for now**: 87% is acceptable for MOBI
+
+**Rationale**:
+- 8-point gap (87% → 95%) requires significant investigation
+- Project Gutenberg HTML is complex and varied
+- May need format-specific heuristics per publisher
+- Other formats (DXF 85%, OBJ 88%, GLTF 88%) also need attention
+- ROI: 8 points on 1 format vs 10+ points on 3 formats
+
+**If pursuing MOBI further**:
+- Start with Option B (backend filter) for quick win
+- Only pursue Option C if Option B fails
+- Add debug logging to understand HTML structure first
+
+## Technical Notes
+
+### HTML Structure Patterns
+
+Project Gutenberg MOBI files typically have:
+```html
+<blockquote>
+  <!-- License text -->
+  <p>This ebook is for the use of anyone...</p>
+  <p>Title: [Book Title]</p>
+  <p>Release date: [Date]</p>
+</blockquote>
+
+<!-- TOC may be here -->
+<table>
+  <!-- or -->
+</table>
+<blockquote>
+  <table>
+    <!-- TOC table with chapter links -->
+  </table>
+</blockquote>
+
+<!-- Main content -->
+<h1>Chapter 1</h1>
+<p>Main text...</p>
+```
+
+### scraper Crate Limitations
+
+The `scraper` crate parses HTML into a DOM tree, but:
+- Can't easily map DOM nodes back to source HTML positions
+- Finding HTML boundaries for removal is tricky
+- Would be easier with regex or string manipulation
+
+### Alternative Approach
+
+Instead of removing from HTML before parsing:
+1. Parse HTML to DocItems as normal
+2. Detect embedded TOC in DocItems (look for cluster of links)
+3. Filter out those DocItems before serialization
+4. Cleaner separation of concerns
+
+## Related Files
+
+- `crates/docling-ebook/src/mobi.rs:217-301` - `extract_embedded_toc_with_removal()`
+- `crates/docling-ebook/src/mobi.rs:378-420` - `is_roman_numeral_link()`, `is_toc_entry()`
+- `crates/docling-backend/src/ebooks.rs:207-214` - HTML-to-markdown conversion
+- `test-corpus/ebooks/mobi/` - Test files (simple_text.mobi, formatted.mobi)
+
+## Conclusion
+
+The fix improved TOC detection logic (now recognizes "Chapter:" patterns) but embedded TOC still appears because:
+- TOC may be in `<table>` element, not `<blockquote>`
+- TOC removal boundaries may be incorrect
+- Multiple blockquotes complicate detection
+
+**Recommend accepting 87% for MOBI** and focusing on other formats with clearer paths to 95%.

@@ -1,0 +1,41 @@
+--- pdfium/core/fxge/cfx_fontcache.h	2025-11-20 14:44:25
++++ core/fxge/cfx_fontcache.h	2025-12-03 16:39:54
+@@ -7,7 +7,10 @@
+ #ifndef CORE_FXGE_CFX_FONTCACHE_H_
+ #define CORE_FXGE_CFX_FONTCACHE_H_
+ 
++#include <atomic>
+ #include <map>
++#include <mutex>
++#include <shared_mutex>
+ 
+ #include "core/fxcrt/fx_system.h"
+ #include "core/fxcrt/retain_ptr.h"
+@@ -25,7 +28,27 @@
+   CFX_TypeFace* GetDeviceCache(const CFX_Font* font);
+ #endif
+ 
++  // Enable/disable read-only mode for all cached glyph caches
++  // Used for lock-free parallel text extraction after pre-warming
++  void SetGlyphCachesReadOnlyMode(bool enabled);
++
++  // Enable/disable read-only mode for font cache itself
++  // After pre-warming, all fonts are cached → lock-free reads
++  void SetReadOnlyMode(bool enabled) {
++    read_only_mode_.store(enabled, std::memory_order_release);
++  }
++
+  private:
++  // Thread-safety: Protects glyph cache map access for concurrent rendering.
++  // Multiple threads may call GetGlyphCache() simultaneously, requiring
++  // synchronized map operations to prevent data races.
++  // PARALLEL TEXT: Use shared_timed_mutex (C++14) to allow concurrent reads (cache hits)
++  // Only writers (cache misses) block each other
++  mutable std::shared_timed_mutex font_cache_mutex_;
++
++  // Read-only mode flag for lock-free parallel text extraction
++  std::atomic<bool> read_only_mode_{false};
++
+   std::map<CFX_Face*, ObservedPtr<CFX_GlyphCache>> glyph_cache_map_;
+   std::map<CFX_Face*, ObservedPtr<CFX_GlyphCache>> ext_glyph_cache_map_;
+ };

@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-11-02T14:01:06.278856",
+  "duration_seconds": 0.004473,
+  "total_pdfs": 0,
+  "tested_pdfs": 0,
+  "continue_from": 0,
+  "workers": 4,
+  "cpp_tool": "/Users/ayates/pdfium/out/Optimized-Shared/reference_text_extract",
+  "rust_tool": "/Users/ayates/pdfium/rust/target/release/examples/extract_text",
+  "results": []
+}

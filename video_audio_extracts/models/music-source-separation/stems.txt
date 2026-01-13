@@ -1,0 +1,6 @@
+drums
+bass
+other
+vocals
+guitar
+piano

@@ -1,0 +1,127 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release (e.g., 2.1.0)'
+        required: true
+        type: string
+
+jobs:
+  build-macos-arm64:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install depot_tools
+        run: |
+          git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+          echo "$PWD/depot_tools" >> $GITHUB_PATH
+      - name: Sync dependencies
+        run: |
+          cd ..
+          cat > .gclient << 'EOF'
+          solutions = [{"name": "pdfium_fast", "url": "https://github.com/${{ github.repository }}.git", "managed": False}]
+          EOF
+          gclient sync --no-history
+      - name: Build PDFium (static)
+        run: |
+          cd pdfium
+          gn gen ../out/Release --args='pdf_is_standalone=true use_clang_modules=false is_debug=false pdf_enable_v8=false pdf_enable_xfa=false is_component_build=false pdf_is_complete_lib=true'
+          ninja -C ../out/Release pdfium
+          ninja -C ../out/Release obj/buildtools/third_party/libc++/libc++.a obj/buildtools/third_party/libc++abi/libc++abi.a
+      - name: Link monolithic shared library
+        run: |
+          cd pdfium
+          # Use chromium's clang++ and lld to link thin archives into monolithic shared lib
+          third_party/llvm-build/Release+Asserts/bin/clang++ -shared -Wl,-all_load -fuse-ld=lld \
+            ../out/Release/obj/libpdfium.a \
+            ../out/Release/obj/buildtools/third_party/libc++/libc++.a \
+            ../out/Release/obj/buildtools/third_party/libc++abi/libc++abi.a \
+            -framework AppKit -framework CoreGraphics -framework CoreServices \
+            -framework CoreFoundation -framework Foundation -framework Security \
+            -target arm64-apple-macos -isysroot $(xcrun --show-sdk-path) \
+            -o ../out/Release/libpdfium.dylib
+          # Fix install name for proper @rpath resolution
+          install_name_tool -id "@rpath/libpdfium.dylib" ../out/Release/libpdfium.dylib
+          # Verify no external @rpath dependencies
+          otool -L ../out/Release/libpdfium.dylib | grep -v "^/System\|^/usr/lib\|@rpath/libpdfium.dylib" | grep "@rpath" && exit 1 || true
+      - name: Package binaries
+        run: |
+          mkdir -p release/macos-arm64/include
+          cp out/Release/libpdfium.dylib release/macos-arm64/
+          cp pdfium/public/*.h release/macos-arm64/include/
+          cd release && tar -czf ../pdfium-macos-arm64.tar.gz macos-arm64
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pdfium-macos-arm64
+          path: pdfium-macos-arm64.tar.gz
+
+  build-linux-x86_64:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y build-essential clang lld patchelf
+      - name: Install depot_tools
+        run: |
+          git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+          echo "$PWD/depot_tools" >> $GITHUB_PATH
+      - name: Sync dependencies
+        run: |
+          cd ..
+          cat > .gclient << 'EOF'
+          solutions = [{"name": "pdfium_fast", "url": "https://github.com/${{ github.repository }}.git", "managed": False}]
+          EOF
+          gclient sync --no-history
+      - name: Build PDFium (static)
+        run: |
+          cd pdfium
+          gn gen ../out/Release --args='pdf_is_standalone=true use_clang_modules=false is_debug=false pdf_enable_v8=false pdf_enable_xfa=false is_component_build=false pdf_is_complete_lib=true use_sysroot=false'
+          ninja -C ../out/Release pdfium
+          ninja -C ../out/Release obj/buildtools/third_party/libc++/libc++.a obj/buildtools/third_party/libc++abi/libc++abi.a
+      - name: Link monolithic shared library
+        run: |
+          cd pdfium
+          # Use chromium's clang++ and lld to link thin archives into monolithic shared lib
+          third_party/llvm-build/Release+Asserts/bin/clang++ -shared -Wl,--whole-archive \
+            ../out/Release/obj/libpdfium.a \
+            ../out/Release/obj/buildtools/third_party/libc++/libc++.a \
+            ../out/Release/obj/buildtools/third_party/libc++abi/libc++abi.a \
+            -Wl,--no-whole-archive \
+            -fuse-ld=lld -lpthread -ldl -lm \
+            -o ../out/Release/libpdfium.so
+          # Set soname
+          patchelf --set-soname libpdfium.so ../out/Release/libpdfium.so || true
+          # Verify no external dependencies beyond libc/libm/libpthread/libdl
+          ldd ../out/Release/libpdfium.so
+      - name: Package binaries
+        run: |
+          mkdir -p release/linux-x86_64/include
+          cp out/Release/libpdfium.so release/linux-x86_64/
+          cp pdfium/public/*.h release/linux-x86_64/include/
+          cd release && tar -czf ../pdfium-linux-x86_64.tar.gz linux-x86_64
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pdfium-linux-x86_64
+          path: pdfium-linux-x86_64.tar.gz
+
+  create-release:
+    needs: [build-macos-arm64, build-linux-x86_64]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+      - uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: pdfium_fast ${{ github.ref_name }}
+          files: |
+            artifacts/pdfium-macos-arm64/pdfium-macos-arm64.tar.gz
+            artifacts/pdfium-linux-x86_64/pdfium-linux-x86_64.tar.gz

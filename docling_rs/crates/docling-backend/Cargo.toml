@@ -1,0 +1,90 @@
+[package]
+name = "docling-backend"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Document parsing backends for docling-rs (PDF, DOCX, HTML, etc.)"
+repository.workspace = true
+keywords = ["document", "parsing", "backend", "pdf", "docx"]
+categories = ["parsing", "parser-implementations"]
+
+[dependencies]
+docling-core = { version = "2.58.0", path = "../docling-core" }
+docling-ocr = { version = "2.58.0", path = "../docling-ocr" }
+# Temporarily disabled - requires external C++ library
+# docling-parse-rs = { version = "2.58.0", path = "../docling-parse-rs", optional = true }
+docling-adobe = { version = "2.58.0", path = "../docling-adobe" }
+docling-apple = { version = "2.58.0", path = "../docling-apple" }
+docling-archive = { version = "2.58.0", path = "../docling-archive" }
+docling-cad = { version = "2.58.0", path = "../docling-cad" }
+docling-calendar = { version = "2.58.0", path = "../docling-calendar" }
+docling-ebook = { version = "2.58.0", path = "../docling-ebook" }
+docling-email = { version = "2.58.0", path = "../docling-email" }
+docling-genomics = { version = "2.58.0", path = "../docling-genomics" }
+docling-gps = { version = "2.58.0", path = "../docling-gps" }
+docling-latex = { version = "2.58.0", path = "../docling-latex" }
+docling-legacy = { version = "2.58.0", path = "../docling-legacy" }
+docling-medical = { version = "2.58.0", path = "../docling-medical" }
+docling-microsoft-extended = { version = "2.58.0", path = "../docling-microsoft-extended" }
+docling-notebook = { version = "2.58.0", path = "../docling-notebook" }
+docling-opendocument = { version = "2.58.0", path = "../docling-opendocument" }
+docling-svg = { version = "2.58.0", path = "../docling-svg" }
+docling-video = { version = "2.58.0", path = "../docling-video" }
+docling-xps = { version = "2.58.0", path = "../docling-xps" }
+docling-pdf-ml = { version = "2.58.0", path = "../docling-pdf-ml", optional = true }
+thiserror.workspace = true
+anyhow.workspace = true
+chrono.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+srtparse = "0.2"
+tempfile = "3.8"
+log = "0.4"
+
+# PDF processing
+pdfium-sys = { path = "../../../pdfium_fast/rust/pdfium-sys", optional = true }
+lopdf = "0.32"
+
+# Microsoft Office processing
+calamine = "0.31"
+csv.workspace = true
+
+# HTML processing
+scraper = "0.17"
+html5ever = "0.26"
+reqwest = { version = "0.12", features = ["blocking"], default-features = false }
+base64 = "0.22"
+
+# Markdown processing
+pulldown-cmark = "0.12"
+
+# AsciiDoc processing
+regex = "1.10"
+
+# DOCX processing
+zip.workspace = true
+quick-xml.workspace = true
+roxmltree.workspace = true
+
+# Image processing
+image = "0.25"
+tiff = "0.9"
+kamadak-exif = "0.5"
+ndarray = "0.16"
+
+# Async support
+tokio = { workspace = true, optional = true }
+async-trait = "0.1.89"
+
+[features]
+# Default: pdf - Full ML pipeline with pdfium_fast (72x faster)
+# Requires ~/pdfium_fast to be built and PyTorch libraries
+default = ["pdf"]
+async = ["tokio"]
+# Temporarily disabled - requires external C++ library
+# docling-parse = ["docling-parse-rs"]
+# PDF: Full ML pipeline with pdfium_fast + PyTorch
+# - pdfium_fast: 72x faster PDF rendering
+# - docling-pdf-ml: Layout detection, TableFormer, CodeFormula
+# - PyTorch: Required for correct Code/Formula/Caption/PageFooter detection
+pdf = ["dep:pdfium-sys", "docling-pdf-ml", "docling-pdf-ml/pytorch"]

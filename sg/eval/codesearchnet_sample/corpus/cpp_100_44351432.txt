@@ -1,0 +1,71 @@
+/**
+           \brief Return true if c1 subsumes c2
+
+           c1 subsumes c2 If
+           1) All literals of c1 are literals of c2
+           2) polynomial of c1 == polynomial of c2
+           3) c1.m_c <= c2.m_c
+        */
+        bool subsumes(constraint const & c1, constraint const & c2) {
+            if (&c1 == &c2)
+                return false;
+            // quick checks first
+            if (c1.m_num_lits > c2.m_num_lits)
+                return false;
+            if (c1.m_num_vars != c2.m_num_vars)
+                return false;
+            if (c1.m_c > c2.m_c)
+                return false;
+            if (!c1.m_strict && c2.m_strict && c1.m_c == c2.m_c)
+                return false;
+
+            m_counter += c1.m_num_lits + c2.m_num_lits;
+
+            for (unsigned i = 0; i < c1.m_num_vars; i++) {
+                m_var2pos[c1.m_xs[i]] = i;
+            }
+
+            bool failed = false;
+            for (unsigned i = 0; i < c2.m_num_vars; i++) {
+                unsigned pos1 = m_var2pos[c2.m_xs[i]];
+                if (pos1 == UINT_MAX || c1.m_as[pos1] != c2.m_as[i]) {
+                    failed = true;
+                    break;
+                }
+            }
+
+            for (unsigned i = 0; i < c1.m_num_vars; i++) {
+                m_var2pos[c1.m_xs[i]] = UINT_MAX;
+            }
+
+            if (failed)
+                return false;
+
+            for (unsigned i = 0; i < c2.m_num_lits; i++) {
+                literal l = c2.m_lits[i];
+                bvar b    = lit2bvar(l);
+                SASSERT(m_bvar2sign[b] == 0);
+                m_bvar2sign[b] = sign(l) ? -1 : 1;
+            }
+
+            for (unsigned i = 0; i < c1.m_num_lits; i++) {
+                literal l = c1.m_lits[i];
+                bvar b    = lit2bvar(l);
+                char s    = sign(l) ? -1 : 1;
+                if (m_bvar2sign[b] != s) {
+                    failed = true;
+                    break;
+                }
+            }
+
+            for (unsigned i = 0; i < c2.m_num_lits; i++) {
+                literal l = c2.m_lits[i];
+                bvar b    = lit2bvar(l);
+                m_bvar2sign[b] = 0;
+            }
+
+            if (failed)
+                return false;
+
+            return true;
+        }

@@ -1,0 +1,11 @@
+{
+  "pdf_name": "cropped_text.pdf",
+  "format": "ppm",
+  "dpi": 300,
+  "pages": {
+    "0": "edb0fa80fb84d69a134325615761a98f",
+    "1": "edb0fa80fb84d69a134325615761a98f",
+    "2": "cf2a3ed1f0e8a73d9d157734e0c9edc7",
+    "3": "cf2a3ed1f0e8a73d9d157734e0c9edc7"
+  }
+}

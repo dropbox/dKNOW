@@ -1,0 +1,10 @@
+--- pdfium/fpdfsdk/BUILD.gn	2025-11-20 14:44:25
++++ fpdfsdk/BUILD.gn	2025-12-03 16:39:54
+@@ -48,6 +48,7 @@
+     "fpdf_flatten.cpp",
+     "fpdf_formfill.cpp",
+     "fpdf_javascript.cpp",
++    "fpdf_parallel.cpp",
+     "fpdf_ppo.cpp",
+     "fpdf_progressive.cpp",
+     "fpdf_save.cpp",

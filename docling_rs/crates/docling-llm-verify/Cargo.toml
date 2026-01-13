@@ -1,0 +1,30 @@
+[package]
+name = "docling-llm-verify"
+version = "0.1.0"
+edition.workspace = true
+description = "LLM ensemble verification for PDF extraction quality"
+license = "MIT"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+base64 = "0.22"
+image = "0.25"
+pdfium-render = "0.8"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+futures = "0.3"
+thiserror = "1"
+chrono = "0.4"
+
+# AWS Bedrock for Claude
+aws-config = { version = "1.5", features = ["behavior-version-latest"] }
+aws-sdk-bedrockruntime = "1.65"
+
+[[bin]]
+name = "docling-llm-verify"
+path = "src/main.rs"

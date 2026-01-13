@@ -1,0 +1,82 @@
+[
+  {
+    "path": "test_files_wikimedia/jpg/caption-generation/01_\"\u041c\u0443\u043a\u0430\u043c\".jpg",
+    "size": 130427,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/%22%D0%9C%D1%83%D0%BA%D0%B0%D0%BC%22.jpg",
+    "title": "File:\"\u041c\u0443\u043a\u0430\u043c\".jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/caption-generation/02_'This_isnt_solo'_by_Rafaele_Andrade_-_Gaudeamus_2021.jpg",
+    "size": 491530,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/%27This_isnt_solo%27_by_Rafaele_Andrade_-_Gaudeamus_2021.jpg",
+    "title": "File:'This isnt solo' by Rafaele Andrade - Gaudeamus 2021.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/caption-generation/03_(Female_musicians,_India.)_(4055708017).jpg",
+    "size": 108266,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/%28Female_musicians%2C_India.%29_%284055708017%29.jpg",
+    "title": "File:(Female musicians, India.) (4055708017).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/caption-generation/04_02-09JUL2019_CNGB_USO_Tour_2019_190705-Z-DZ751-0155_(48481912877).jpg",
+    "size": 5055318,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/02-09JUL2019_CNGB_USO_Tour_2019_190705-Z-DZ751-0155_%2848481912877%29.jpg",
+    "title": "File:02-09JUL2019 CNGB USO Tour 2019 190705-Z-DZ751-0155 (48481912877).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/caption-generation/05_16\u00aa_Mostra_de_Cinema_de_Tiradentes_(8395190216).jpg",
+    "size": 217157,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/16%C2%AA_Mostra_de_Cinema_de_Tiradentes_%288395190216%29.jpg",
+    "title": "File:16\u00aa Mostra de Cinema de Tiradentes (8395190216).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/caption-generation/06_16\u00aa_Mostra_de_Cinema_de_Tiradentes_(8395200725).jpg",
+    "size": 629092,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/16%C2%AA_Mostra_de_Cinema_de_Tiradentes_%288395200725%29.jpg",
+    "title": "File:16\u00aa Mostra de Cinema de Tiradentes (8395200725).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/caption-generation/07_1868-1875_Fraser_Gregor_Pipe_Major_92nd_Regiment_Some_Reminiscences_and_the_Bagpipe_1919.jpg",
+    "size": 24968,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/1868-1875_Fraser_Gregor_Pipe_Major_92nd_Regiment_Some_Reminiscences_and_the_Bagpipe_1919.jpg",
+    "title": "File:1868-1875 Fraser Gregor Pipe Major 92nd Regiment Some Reminiscences and the Bagpipe 1919.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/caption-generation/08_1928IntlMusicianDeaganVibeAd.jpg",
+    "size": 255025,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/1928IntlMusicianDeaganVibeAd.jpg",
+    "title": "File:1928IntlMusicianDeaganVibeAd.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/caption-generation/09_2016-01-07_11-34-06_ILCE-6000_DSC02027_(32642838908).jpg",
+    "size": 7547774,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/2016-01-07_11-34-06_ILCE-6000_DSC02027_%2832642838908%29.jpg",
+    "title": "File:2016-01-07 11-34-06 ILCE-6000 DSC02027 (32642838908).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/caption-generation/10_2019_Feb_04_-_Kumbh_Mela_-_Portrait_20_-_Manjeera_Seller.jpg",
+    "size": 94904,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/2019_Feb_04_-_Kumbh_Mela_-_Portrait_20_-_Manjeera_Seller.jpg",
+    "title": "File:2019 Feb 04 - Kumbh Mela - Portrait 20 - Manjeera Seller.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  }
+]

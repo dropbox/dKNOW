@@ -1,0 +1,293 @@
+[
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/1",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/2"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "My Section",
+    "text": "My Section",
+    "enumerated": false,
+    "marker": "-",
+    "hyperlink": "#"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/3",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/groups/6"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Some page",
+    "text": "Some page",
+    "enumerated": false,
+    "marker": "-",
+    "hyperlink": "/start.html"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/5",
+    "parent": {
+      "$ref": "#/groups/4"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "A sub page",
+    "text": "A sub page",
+    "enumerated": false,
+    "marker": "-",
+    "hyperlink": "/home2.html"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/4",
+    "parent": {
+      "$ref": "#/texts/3"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/5"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/7",
+    "parent": {
+      "$ref": "#/groups/6"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/8"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is my [Homepage](/home.html)",
+    "text": "This is my [Homepage](/home.html)",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/9",
+    "parent": {
+      "$ref": "#/groups/8"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "List item inner",
+    "text": "List item inner",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/10",
+    "parent": {
+      "$ref": "#/groups/8"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "More text [with some links](/some_links.html) and more text.",
+    "text": "More text [with some links](/some_links.html) and more text.",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/8",
+    "parent": {
+      "$ref": "#/texts/7"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/11",
+    "parent": {
+      "$ref": "#/groups/6"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Main navigation",
+    "text": "Main navigation",
+    "enumerated": false,
+    "marker": "-",
+    "hyperlink": "#main-navigation"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/6",
+    "parent": {
+      "$ref": "#/texts/3"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/11"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/2",
+    "parent": {
+      "$ref": "#/texts/1"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/3"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/12",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "My organisation",
+    "text": "My organisation",
+    "enumerated": false,
+    "marker": "-",
+    "hyperlink": "#"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/0",
+    "children": [
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/12"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  }
+]

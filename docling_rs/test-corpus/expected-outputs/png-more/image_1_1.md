@@ -1,0 +1,45 @@
+## * paid-user-predictor-v1-2024-03-26-03-37-23
+
+Experiment: ml\_codelab / paid\_user\_predictor\_rfrost
+
+Start at: 3 days ago
+
+Platform: AWS\_MLP
+
+Notes
+
+Click to edit notes in Markdown
+
+Details
+
+Logs Metrics Configs
+
+Tensorboard Model artifacts
+
+## Execution (Reproducible)
+
+dbxlearn train --fbzl-uri "258825769377. dkr. ecr.us-west-
+
+2.amazonaws.com/u/rfrost/dropbox/ml\_platform/training/codelabs/train\_paid\_user\_predictor\_rfrost@sha256:9d8f1e4e6b4e33895cb31c3f7b2e66ba139688a57efb4090ded4ca0c8f077bc7" --train-uri "asset:///ml/ml\_codelab/paid\_user\_predictor\_rfrost/dag/\_/paid-user-predictor-v1/train?rev=966eca90b83d4ebe9c69a57883666a83&amp;namespace=user:rfrost" --validation-uri "asset:///ml/ml\_codelab/paid\_user\_predictor\_rfrost/dag/\_/paid-user-predictor-v1/validation?rev=08d5300ef73149f48f9590dc4165911e&amp;namespace=user:rfrost"
+
+## Input Datasets
+
+training asset:///ml/ml\_codelab/paid\_user\_predictor\_rfrost/dag/\_/paid-user-predictor-v1/train? rev=966eca90b83d4ebe9c69a57883666a83&amp;namespace=user:rfrost
+
+validation asset:///ml/ml\_codelab/paid\_user\_predictor\_rfrost/dag/\_/paid-user-predictor-v1/validation? rev=08d5300ef73149f48f9590dc4165911e&amp;namespace=user:rfrost
+
+## Hyperparameters
+
+## Model Artifact
+
+asset:///ml/ml\_codelab/paid\_user\_predictor\_rfrost/dag/\_/paid-user-predictor-v1-2024-03-26-03-3723/model?rev=bf28ea22869d4dd3b2df8ddfcbb53ae6&amp;namespace=user:rfrost
+
+## Metrics
+
+lamntur
+
+Created by: frost
+
+Duration: 1 min
+
+ML Project: GENERAL

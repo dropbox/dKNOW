@@ -1,0 +1,111 @@
+# Fast training config v4 - Maximum speed without sacrificing quality
+#
+# Analysis of loss components (compute cost → quality impact):
+#
+# KEEP (proven, efficient):
+# - MNR Loss: Core retrieval loss, ~0.1ms, HIGH impact
+# - Margin Loss: Simple constraint, ~0.01ms, MEDIUM impact
+# - In-batch negatives: Free with MNR, HIGH impact
+# - ANCE hard negatives: Mine from model, HIGH impact
+# - LLRD: Better fine-tuning, ~0ms overhead
+#
+# REMOVE (expensive, marginal gains):
+# - Matryoshka: 4x forward passes for multi-dim, REMOVE (saves ~75% loss compute)
+# - Token Contrastive: O(B²QK) matrix, REMOVE (saves ~40% loss compute)
+# - Focal Loss: Instability risk, REMOVE
+# - EMA Teacher: 2x memory, minor gains, REMOVE
+# - Memory Bank: Diminishing returns >4K, REDUCE to 8K
+# - Dynamic Temperature: Minor effect, REMOVE
+# - Progressive Length: May limit learning, REMOVE
+#
+# Expected: ~5-10x faster than v3, similar quality
+
+data:
+  train: "data/final_training_v2.jsonl"
+  validation: "data/final_training_v2.val.jsonl"
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-code-v3"
+
+training:
+  method: "lora"
+
+  # LoRA config (full attention + FFN)
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  target_modules: ["q", "v", "k", "o", "wi_0", "wi_1", "wo"]
+
+  # Training hyperparameters - larger batch for more negatives
+  batch_size: 24              # Increased from 16
+  gradient_accumulation_steps: 4  # Effective batch = 96
+  epochs: 2                   # Reduced from 3 (9M dataset is enough)
+  learning_rate: 2.0e-5       # Slightly lower for stability
+  warmup_steps: 1000
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+
+  # Contrastive learning - CORE
+  temperature: 0.05           # Lower temp = sharper distribution
+  max_hard_negatives: 7       # More hard negatives per query
+
+  # Margin loss - cheap and effective
+  use_margin_loss: true
+  margin: 0.3                 # Slightly larger margin
+  margin_weight: 0.15
+
+  # Sequence length - fixed, no progressive
+  max_length: 384
+
+  # Essential improvements only
+  language_aware_batching: true
+  gradient_checkpointing: true
+  cache_tokenized: false  # Disabled - cache keeps getting corrupted
+
+  # LLRD - proven effective, no overhead
+  use_llrd: true
+  llrd_decay_rate: 0.9
+
+  # === DISABLED FOR SPEED ===
+  use_matryoshka: false        # Saves 4x forward passes
+  use_token_contrastive: false # Saves O(B²QK) compute
+  use_focal_loss: false        # Removes instability risk
+  use_ema: false               # Saves 2x memory
+  use_dynamic_temperature: false
+  use_progressive_length: false
+  use_curriculum: false
+  use_gradcache: false
+
+  # MNR Loss - THE core retrieval loss
+  use_mnr_loss: true
+  mnr_scale: 20.0
+
+  # ANCE - hard negative mining (runs once per epoch, worth it)
+  use_ance: true
+  ance_mine_every: 1
+
+  # Memory bank - reduced size (diminishing returns >4K)
+  use_memory_bank: true
+  memory_bank_size: 8192      # Reduced from 32K
+
+  # Priority sampling - boost user code
+  use_priority_sampling: true
+  priority_weight: 2.0
+  priority_file_patterns: ["ayates", "sg/"]
+
+  # === EFFICIENCY ===
+  use_amp: false              # MPS still unstable
+  use_compile: false          # Disabled - Python 3.14 doesn't support it
+  use_fused_optimizer: true
+  matmul_precision: "medium"
+
+  num_workers: 4              # More workers for faster loading
+
+  # Validation and checkpoints
+  eval_every: 500
+  early_stopping_patience: 3
+  log_every: 10
+  save_every: 2000
+
+  seed: 42

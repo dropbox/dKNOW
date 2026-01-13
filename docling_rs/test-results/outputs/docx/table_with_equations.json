@@ -1,0 +1,71 @@
+[
+  {
+    "label": "table",
+    "self_ref": "#/tables/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "data": {
+      "num_rows": 2,
+      "num_cols": 2,
+      "grid": [
+        [
+          {
+            "text": "The next cell has an equation"
+          },
+          {
+            "text": "$A= \\pi r^{2}$"
+          }
+        ],
+        [
+          {
+            "text": "The next cell has another equation"
+          },
+          {
+            "text": "$x=\\frac{-b \\pm \\sqrt{b^{2}-4ac}}{2a}$"
+          }
+        ]
+      ],
+      "table_cells": [
+        {
+          "text": "The next cell has an equation",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "$A= \\pi r^{2}$",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "The next cell has another equation",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "$x=\\frac{-b \\pm \\sqrt{b^{2}-4ac}}{2a}$",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 1
+        }
+      ]
+    }
+  }
+]

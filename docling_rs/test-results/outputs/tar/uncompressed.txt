@@ -1,0 +1,15 @@
+# Archive Contents: uncompressed.tar
+
+## Format Information
+
+Format: TAR, Archive size: 7.17 KB
+
+## Archive Summary
+
+2 files (1 MD file, 1 TXT file), 7168 bytes total (66 bytes content + 7102 bytes TAR overhead)
+
+## Contents
+
+- file1.txt (30 bytes)
+- file2.md (36 bytes)
+

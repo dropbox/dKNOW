@@ -1,0 +1,30 @@
+--- pdfium/core/fpdfapi/render/cpdf_renderstatus.h	2025-11-20 14:44:25
++++ core/fpdfapi/render/cpdf_renderstatus.h	2025-12-03 16:39:54
+@@ -101,6 +101,9 @@
+   }
+   CFX_RenderDevice* GetRenderDevice() const { return device_; }
+   const CPDF_RenderOptions& GetRenderOptions() const { return options_; }
++  std::vector<UnownedPtr<const CPDF_TilingPattern>>& GetTilingPatternCache() {
++    return tiling_pattern_cache_;
++  }
+ 
+   RetainPtr<CPDF_TransferFunc> GetTransferFunc(
+       RetainPtr<const CPDF_Object> pObject) const;
+@@ -129,6 +132,9 @@
+       const CPDF_GraphicStates* pSrcStates,
+       bool stroke);
+ 
++  // Allow CPDF_RenderTiling to access tiling_pattern_cache_ for circular reference detection
++  friend class CPDF_RenderTiling;
++
+  private:
+   bool ProcessTransparency(CPDF_PageObject* PageObj,
+                            const CFX_Matrix& mtObj2Device);
+@@ -195,6 +201,7 @@
+   RetainPtr<const CPDF_Dictionary> form_resource_;
+   RetainPtr<const CPDF_Dictionary> page_resource_;
+   std::vector<UnownedPtr<const CPDF_Type3Font>> type3_font_cache_;
++  std::vector<UnownedPtr<const CPDF_TilingPattern>> tiling_pattern_cache_;
+   UnownedPtr<CPDF_RenderContext> const context_;
+   UnownedPtr<CFX_RenderDevice> const device_;
+   CFX_Matrix device_matrix_;

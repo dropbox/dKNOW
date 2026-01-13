@@ -1,0 +1,14 @@
+# Archive Contents: large_file.tar
+
+## Format Information
+
+Format: TAR, Archive size: 527.87 KB
+
+## Archive Summary
+
+1 DAT file, 527872 bytes total (524288 bytes content + 3584 bytes TAR overhead)
+
+## Contents
+
+- sparse_file.dat (524288 bytes)
+

@@ -1,0 +1,12 @@
+{
+  "pdf_name": "picture_classification.pdf",
+  "num_pages": 2,
+  "model_costs": {
+    "gpt-4o": {
+      "input_tokens": 2510,
+      "output_tokens": 1437,
+      "cost_usd": 0.020645
+    }
+  },
+  "total_cost_usd": 0.020645
+}

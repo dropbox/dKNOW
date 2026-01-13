@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Jane Smith
+N:Smith;Jane;;;
+ORG:Acme Corporation
+TITLE:Software Engineer
+EMAIL;TYPE=work:jane.smith@acme.com
+EMAIL;TYPE=home:jane@personal.com
+TEL;TYPE=work:+1-555-9876
+TEL;TYPE=cell:+1-555-5555
+ADR;TYPE=work:;;123 Main St;Springfield;IL;62701;USA
+URL:https://janesmithdev.com
+NOTE:Lead developer on Project X
+END:VCARD

@@ -1,0 +1,37 @@
+/// For alloc_box only, find escapes (captures) of the box prior to each access.
+  /// As a result, AccessInfo.hasEscaped will be non-nil for every access.
+  ///
+  /// This is an optimistic forward dataflow that propagates the escape bit to accesses.
+  /// A block can be scanned at most twice. Once after it is marked visited to find any escapes within the block. The
+  /// second time after it is marked escaped to propagate the hasEscaped bit to accesses within the block.
+  private func findAllEscapesPriorToAccess() {
+    var visitedBlocks = BasicBlockSet(context)
+    var escapedBlocks = BasicBlockSet(context)
+    var blockList = Stack<BasicBlock>(context)
+    defer {
+      visitedBlocks.deinitialize()
+      escapedBlocks.deinitialize()
+      blockList.deinitialize()
+    }
+    let forwardPropagate = { (from: BasicBlock, hasEscaped: Bool) in
+      if let blockInfo = blockMap[from], blockInfo.hasDealloc {
+        return
+      }
+      for successor in from.successors {
+        if hasEscaped {
+          if escapedBlocks.insert(successor) {
+            blockList.push(successor)
+          }
+        } else if visitedBlocks.insert(successor) {
+          blockList.push(successor)
+        }
+      }
+    }
+    var hasEscaped = propagateEscapeInBlock(after: accessMap.allocation.nextInstruction, hasEscaped: false)
+    forwardPropagate(accessMap.allocation.parentBlock, hasEscaped)
+    while let block = blockList.pop() {
+      hasEscaped = escapedBlocks.contains(block)
+      hasEscaped = propagateEscapeInBlock(after: block.instructions.first!, hasEscaped: hasEscaped)
+      forwardPropagate(block, hasEscaped)
+    }
+  }

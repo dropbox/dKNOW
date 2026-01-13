@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Example Corp//Example Calendar//EN
+X-WR-CALNAME:Team Meeting
+X-WR-CALDESC:Regular team sync-up meeting
+
+BEGIN:VEVENT
+UID:meeting-001@example.com
+DTSTART:20250115T100000Z
+DTEND:20250115T110000Z
+SUMMARY:Weekly Team Standup
+DESCRIPTION:Weekly standup meeting to discuss project progress and blockers.
+LOCATION:Conference Room A
+ORGANIZER;CN="John Doe":mailto:john.doe@example.com
+ATTENDEE;CN="Alice Smith":mailto:alice@example.com
+ATTENDEE;CN="Bob Johnson":mailto:bob@example.com
+STATUS:CONFIRMED
+END:VEVENT
+
+END:VCALENDAR

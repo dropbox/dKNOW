@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>University Campus Tour</name>
+    <description>Self-guided walking tour of the university campus</description>
+
+    <Placemark>
+      <name>Main Entrance</name>
+      <description>Start your tour at the historic main gates</description>
+      <Point>
+        <coordinates>-122.400,37.800,10</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Campus Walking Route</name>
+      <description>Complete walking tour route (2.5km, 45 minutes)</description>
+      <LineString>
+        <coordinates>
+          -122.400,37.800,10
+          -122.402,37.802,12
+          -122.405,37.803,15
+          -122.408,37.805,18
+          -122.410,37.807,20
+          -122.412,37.810,22
+          -122.410,37.813,20
+          -122.408,37.815,18
+          -122.405,37.817,15
+          -122.402,37.818,12
+          -122.400,37.820,10
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>Historic Quad</name>
+      <description>Central quadrangle surrounded by original buildings</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -122.403,37.804,15
+              -122.407,37.804,15
+              -122.407,37.808,15
+              -122.403,37.808,15
+              -122.403,37.804,15
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Library</name>
+      <description>Main university library with 5 floors</description>
+      <Point>
+        <coordinates>-122.405,37.806,30</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Student Union</name>
+      <description>Student services, dining, and recreation</description>
+      <Point>
+        <coordinates>-122.410,37.810,20</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Science Building</name>
+      <description>Physics, chemistry, and biology labs</description>
+      <Point>
+        <coordinates>-122.408,37.812,25</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Athletic Fields</name>
+      <description>Soccer, track, and tennis facilities</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -122.408,37.814,15
+              -122.413,37.814,15
+              -122.413,37.818,15
+              -122.408,37.818,15
+              -122.408,37.814,15
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

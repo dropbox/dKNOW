@@ -1,0 +1,10 @@
+# Archive Contents: compressed_large_file.zip
+
+## Archive Summary
+
+1 BIN file, 1048576 bytes total
+
+## Contents
+
+- large_file.bin (1048576 bytes)
+

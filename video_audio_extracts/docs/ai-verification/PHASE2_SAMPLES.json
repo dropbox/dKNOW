@@ -1,0 +1,402 @@
+[
+  {
+    "format": "heic",
+    "operation": "face-detection",
+    "file": "test_files_wikimedia/heic/face-detection/06_iphone_photo.heic"
+  },
+  {
+    "format": "heic",
+    "operation": "face-detection",
+    "file": "test_files_wikimedia/heic/face-detection/03_iphone_photo.heic"
+  },
+  {
+    "format": "heic",
+    "operation": "object-detection",
+    "file": "test_files_wikimedia/heic/object-detection/03_iphone_photo.heic"
+  },
+  {
+    "format": "heic",
+    "operation": "object-detection",
+    "file": "test_files_wikimedia/heic/object-detection/02_iphone_photo.heic"
+  },
+  {
+    "format": "heic",
+    "operation": "ocr",
+    "file": "test_files_wikimedia/heic/ocr/03_iphone_photo.heic"
+  },
+  {
+    "format": "heic",
+    "operation": "ocr",
+    "file": "test_files_wikimedia/heic/ocr/01_iphone_photo.heic"
+  },
+  {
+    "format": "heic",
+    "operation": "vision-embeddings",
+    "file": "test_files_wikimedia/heic/vision-embeddings/03_iphone_photo.heic"
+  },
+  {
+    "format": "heic",
+    "operation": "vision-embeddings",
+    "file": "test_files_wikimedia/heic/vision-embeddings/02_iphone_photo.heic"
+  },
+  {
+    "format": "jpg",
+    "operation": "action-recognition",
+    "file": "test_files_wikimedia/jpg/action-recognition/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "action-recognition",
+    "file": "test_files_wikimedia/jpg/action-recognition/04_\u0414\u0435\u0440\u0435\u0432\u043e_\u0432_\u0433\u043e\u0440\u043e\u0434\u0435_\u0412\u0430\u043b\u0443\u0439\u043a\u0438.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "caption-generation",
+    "file": "test_files_wikimedia/jpg/caption-generation/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "caption-generation",
+    "file": "test_files_wikimedia/jpg/caption-generation/04_\u0414\u0435\u0440\u0435\u0432\u043e_\u0432_\u0433\u043e\u0440\u043e\u0434\u0435_\u0412\u0430\u043b\u0443\u0439\u043a\u0438.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "content-moderation",
+    "file": "test_files_wikimedia/jpg/content-moderation/07_Amplificador_Fisher.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "content-moderation",
+    "file": "test_files_wikimedia/jpg/content-moderation/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "depth-estimation",
+    "file": "test_files_wikimedia/jpg/depth-estimation/09_Diagenetic_Cave_Formation.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "depth-estimation",
+    "file": "test_files_wikimedia/jpg/depth-estimation/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "emotion-detection",
+    "file": "test_files_wikimedia/jpg/emotion-detection/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "emotion-detection",
+    "file": "test_files_wikimedia/jpg/emotion-detection/04_\u0414\u0435\u0440\u0435\u0432\u043e_\u0432_\u0433\u043e\u0440\u043e\u0434\u0435_\u0412\u0430\u043b\u0443\u0439\u043a\u0438.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "face-detection",
+    "file": "test_files_wikimedia/jpg/face-detection/06_2023-06-20_Vills_Foscari_16.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "face-detection",
+    "file": "test_files_wikimedia/jpg/face-detection/09_Alexey_Akindinov._Boy_and_Crystal._1997.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "image-quality-assessment",
+    "file": "test_files_wikimedia/jpg/image-quality-assessment/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "image-quality-assessment",
+    "file": "test_files_wikimedia/jpg/image-quality-assessment/09_2021_Exposici\u00f3n_Arquitectura_Atemporal_CentroCentro_Herramientas_(Fibras_vegetales).jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "logo-detection",
+    "file": "test_files_wikimedia/jpg/logo-detection/01_1915402-Sewrrekunda_billboard-The_Gambia.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "logo-detection",
+    "file": "test_files_wikimedia/jpg/logo-detection/02_A6_Lemmon_ottobre.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "object-detection",
+    "file": "test_files_wikimedia/jpg/object-detection/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "object-detection",
+    "file": "test_files_wikimedia/jpg/object-detection/04_150229-ColourwithStorage-Scene1_output.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "ocr",
+    "file": "test_files_wikimedia/jpg/ocr/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "ocr",
+    "file": "test_files_wikimedia/jpg/ocr/09_Israeli_postal_card_50s.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "pose-estimation",
+    "file": "test_files_wikimedia/jpg/pose-estimation/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "pose-estimation",
+    "file": "test_files_wikimedia/jpg/pose-estimation/10_Australian_Shepherd_red_merle_portrait_Canon_EOS_700D_Pentacon_200mm_f4.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "shot-classification",
+    "file": "test_files_wikimedia/jpg/shot-classification/02_**This_picture_is_the_2024_tournament_bracket.**.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "shot-classification",
+    "file": "test_files_wikimedia/jpg/shot-classification/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "vision-embeddings",
+    "file": "test_files_wikimedia/jpg/vision-embeddings/10_2004_Cobalt_200_Hard_Cornering.jpg"
+  },
+  {
+    "format": "jpg",
+    "operation": "vision-embeddings",
+    "file": "test_files_wikimedia/jpg/vision-embeddings/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"
+  },
+  {
+    "format": "mp3",
+    "operation": "audio-embeddings",
+    "file": "test_files_wikimedia/mp3/audio-embeddings/02_Carla_Scaletti_on_natural_sounds_and_physical_modeling_(1999).mp3"
+  },
+  {
+    "format": "mp3",
+    "operation": "audio-embeddings",
+    "file": "test_files_wikimedia/mp3/audio-embeddings/file_example_MP3_2MG.mp3"
+  },
+  {
+    "format": "mp3",
+    "operation": "transcription",
+    "file": "test_files_wikimedia/mp3/transcription/02_Carla_Scaletti_on_natural_sounds_and_physical_modeling_(1999).mp3"
+  },
+  {
+    "format": "mp3",
+    "operation": "transcription",
+    "file": "test_files_wikimedia/mp3/transcription/file_example_MP3_1MG.mp3"
+  },
+  {
+    "format": "png",
+    "operation": "action-recognition",
+    "file": "test_files_wikimedia/png/action-recognition/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "action-recognition",
+    "file": "test_files_wikimedia/png/action-recognition/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "png",
+    "operation": "caption-generation",
+    "file": "test_files_wikimedia/png/caption-generation/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "caption-generation",
+    "file": "test_files_wikimedia/png/caption-generation/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "png",
+    "operation": "content-moderation",
+    "file": "test_files_wikimedia/png/content-moderation/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "content-moderation",
+    "file": "test_files_wikimedia/png/content-moderation/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "png",
+    "operation": "depth-estimation",
+    "file": "test_files_wikimedia/png/depth-estimation/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "depth-estimation",
+    "file": "test_files_wikimedia/png/depth-estimation/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "png",
+    "operation": "emotion-detection",
+    "file": "test_files_wikimedia/png/emotion-detection/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "emotion-detection",
+    "file": "test_files_wikimedia/png/emotion-detection/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "png",
+    "operation": "face-detection",
+    "file": "test_files_wikimedia/png/face-detection/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "face-detection",
+    "file": "test_files_wikimedia/png/face-detection/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "png",
+    "operation": "image-quality-assessment",
+    "file": "test_files_wikimedia/png/image-quality-assessment/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "image-quality-assessment",
+    "file": "test_files_wikimedia/png/image-quality-assessment/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "png",
+    "operation": "logo-detection",
+    "file": "test_files_wikimedia/png/logo-detection/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "logo-detection",
+    "file": "test_files_wikimedia/png/logo-detection/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "png",
+    "operation": "object-detection",
+    "file": "test_files_wikimedia/png/object-detection/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "object-detection",
+    "file": "test_files_wikimedia/png/object-detection/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "png",
+    "operation": "ocr",
+    "file": "test_files_wikimedia/png/ocr/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "ocr",
+    "file": "test_files_wikimedia/png/ocr/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "png",
+    "operation": "pose-estimation",
+    "file": "test_files_wikimedia/png/pose-estimation/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "pose-estimation",
+    "file": "test_files_wikimedia/png/pose-estimation/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "png",
+    "operation": "shot-classification",
+    "file": "test_files_wikimedia/png/shot-classification/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "shot-classification",
+    "file": "test_files_wikimedia/png/shot-classification/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "png",
+    "operation": "vision-embeddings",
+    "file": "test_files_wikimedia/png/vision-embeddings/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"
+  },
+  {
+    "format": "png",
+    "operation": "vision-embeddings",
+    "file": "test_files_wikimedia/png/vision-embeddings/05_A_setiset_with_duplicated_piece.png"
+  },
+  {
+    "format": "wav",
+    "operation": "audio-classification",
+    "file": "test_files_wikimedia/wav/audio-classification/03_LL-Q150_(fra)-WikiLucas00-audio.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "audio-classification",
+    "file": "test_files_wikimedia/wav/audio-classification/01_01a_rodzaje_sygnalow_alarmowych.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "audio-embeddings",
+    "file": "test_files_wikimedia/wav/audio-embeddings/03_LL-Q150_(fra)-WikiLucas00-audio.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "audio-embeddings",
+    "file": "test_files_wikimedia/wav/audio-embeddings/01_01a_rodzaje_sygnalow_alarmowych.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "audio-enhancement-metadata",
+    "file": "test_files_wikimedia/wav/audio-enhancement-metadata/03_LL-Q150_(fra)-WikiLucas00-audio.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "audio-enhancement-metadata",
+    "file": "test_files_wikimedia/wav/audio-enhancement-metadata/01_01a_rodzaje_sygnalow_alarmowych.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "audio-extraction",
+    "file": "test_files_wikimedia/wav/audio-extraction/03_LL-Q150_(fra)-WikiLucas00-audio.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "audio-extraction",
+    "file": "test_files_wikimedia/wav/audio-extraction/01_01a_rodzaje_sygnalow_alarmowych.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "diarization",
+    "file": "test_files_wikimedia/wav/diarization/03_LL-Q150_(fra)-WikiLucas00-audio.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "diarization",
+    "file": "test_files_wikimedia/wav/diarization/01_01a_rodzaje_sygnalow_alarmowych.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "metadata-extraction",
+    "file": "test_files_wikimedia/wav/metadata-extraction/03_LL-Q150_(fra)-WikiLucas00-audio.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "metadata-extraction",
+    "file": "test_files_wikimedia/wav/metadata-extraction/01_01a_rodzaje_sygnalow_alarmowych.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "transcription",
+    "file": "test_files_wikimedia/wav/transcription/03_LL-Q150_(fra)-WikiLucas00-audio.wav"
+  },
+  {
+    "format": "wav",
+    "operation": "transcription",
+    "file": "test_files_wikimedia/wav/transcription/01_01a_rodzaje_sygnalow_alarmowych.wav"
+  },
+  {
+    "format": "webp",
+    "operation": "object-detection",
+    "file": "test_files_wikimedia/webp/object-detection/02_webp_lossy.webp"
+  },
+  {
+    "format": "webp",
+    "operation": "object-detection",
+    "file": "test_files_wikimedia/webp/object-detection/05_webp_lossy.webp"
+  }
+]

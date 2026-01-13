@@ -1,0 +1,42 @@
+name: pose_estimation
+description: "Estimate human pose (17 COCO keypoints) using YOLOv8-Pose ONNX models"
+
+inputs:
+  - jpg
+  - jpeg
+  - png
+  - bmp
+  - webp
+  - ico
+  - avif
+  - heic
+  - arw
+  - cr2
+  - dng
+  - nef
+  - raf
+  - dpx
+  - Keyframes
+
+outputs:
+  - PoseEstimation
+
+config:
+  max_file_size_mb: 100
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "30s"
+  memory_per_file_mb: 256
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1730419200  # 2024-10-31 00:00:00 UTC
+
+# Implementation location
+implementation:
+  crate: "video-audio-pose-estimation"
+  function: "estimate"

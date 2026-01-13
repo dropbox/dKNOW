@@ -1,0 +1,27 @@
+[package]
+name = "docling-cad"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "CAD and engineering format support for docling (STL, DXF, etc.)"
+keywords = ["cad", "stl", "dxf", "engineering", "3d"]
+categories = ["parsing", "graphics"]
+[dependencies]
+# STL parser
+stl_io = "0.8.5"
+
+# OBJ parser
+tobj = "4.0"
+
+# GLTF/GLB parser
+gltf = "1.4"
+
+# DXF parser
+dxf = "0.6"
+
+# Error handling
+anyhow = "1.0"
+
+[dev-dependencies]
+# No additional dev dependencies needed yet

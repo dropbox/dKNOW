@@ -1,0 +1,42 @@
+name: vision_embeddings
+description: "Extract semantic embeddings from images using CLIP vision models"
+
+inputs:
+  - Keyframes  # Can take output of keyframe extraction plugin
+  - jpg
+  - jpeg
+  - png
+  - bmp
+  - webp
+  - ico
+  - avif
+  - arw
+  - cr2
+  - dng
+  - nef
+  - raf
+  - dpx
+outputs:
+  - VisionEmbeddings
+
+config:
+  max_file_size_mb: 50
+  requires_gpu: false  # CPU inference works well for batch processing
+  experimental: false
+  models:
+    - clip_vit_b32  # 512-dim embeddings, 149M params (default)
+    - clip_vit_l14  # 768-dim embeddings, 428M params
+
+performance:
+  avg_processing_time_per_gb: "30s"
+  memory_per_file_mb: 500
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1727740800  # 2024-10-01 00:00:00 UTC
+
+implementation:
+  crate: "embeddings"
+  function: "extract_vision_embeddings"

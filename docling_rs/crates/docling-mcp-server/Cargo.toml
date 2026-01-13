@@ -1,0 +1,30 @@
+[package]
+name = "docling-mcp-server"
+version = "0.1.0"
+edition = "2021"
+description = "MCP server for AI-assisted PDF extraction correction"
+license = "MIT"
+repository = "https://github.com/ayates_dbx/docling_rs"
+keywords = ["mcp", "pdf", "ai", "correction", "docling"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "docling-mcp"
+path = "src/main.rs"
+
+[dependencies]
+# Docling libraries
+docling-viz-bridge = { path = "../docling-viz-bridge" }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# Utilities
+base64 = "0.22"
+uuid = { version = "1", features = ["v4"] }
+log = "0.4"
+env_logger = "0.11"
+
+[dev-dependencies]
+tempfile = "3"

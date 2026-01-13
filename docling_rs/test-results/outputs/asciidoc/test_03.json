@@ -1,0 +1,283 @@
+[
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ":_mod-docs-content-type: PROCEDURE :experimental:",
+    "text": ":_mod-docs-content-type: PROCEDURE :experimental:"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Renaming a bookmark",
+    "text": "Renaming a bookmark",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "[id=\"renaming-a-bookmark_{context}\"]",
+    "text": "[id=\"renaming-a-bookmark_{context}\"]"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/3",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "You can rename a bookmark to distinguish it from other bookmarks. If you have bookmarks to several folders that all share the same name, you can tell the bookmarks apart if you rename them.",
+    "text": "You can rename a bookmark to distinguish it from other bookmarks. If you have bookmarks to several folders that all share the same name, you can tell the bookmarks apart if you rename them."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/4",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Renaming the bookmark does not rename the folder.",
+    "text": "Renaming the bookmark does not rename the folder."
+  },
+  {
+    "label": "caption",
+    "self_ref": "#/captions/5",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Procedure . Right-click the bookmark in the side bar. . Select *Rename…*. +",
+    "text": "Procedure . Right-click the bookmark in the side bar. . Select *Rename…*. +"
+  },
+  {
+    "label": "picture",
+    "self_ref": "#/pictures/6",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "captions": [
+      {
+        "$ref": "#/captions/5"
+      }
+    ],
+    "image": {
+      "mimetype": "image/png",
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "dpi": 70,
+      "uri": "file://rename-bookmark-menu.png"
+    }
+  },
+  {
+    "label": "caption",
+    "self_ref": "#/captions/7",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": " In the *Name* field, enter the new name for the bookmark. +",
+    "text": " In the *Name* field, enter the new name for the bookmark. +"
+  },
+  {
+    "label": "picture",
+    "self_ref": "#/pictures/8",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "captions": [
+      {
+        "$ref": "#/captions/7"
+      }
+    ],
+    "image": {
+      "mimetype": "image/png",
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "dpi": 70,
+      "uri": "file://rename-bookmark-text.png"
+    }
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/0",
+    "children": [
+      {
+        "$ref": "#/texts/9"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list_0"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/9",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Check that the side bar lists the bookmark under the new name.",
+    "text": "Check that the side bar lists the bookmark under the new name.",
+    "enumerated": false,
+    "marker": ""
+  },
+  {
+    "label": "caption",
+    "self_ref": "#/captions/10",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": " Click btn:[Rename]. .Verification",
+    "text": " Click btn:[Rename]. .Verification"
+  },
+  {
+    "label": "picture",
+    "self_ref": "#/pictures/11",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "captions": [
+      {
+        "$ref": "#/captions/10"
+      }
+    ],
+    "image": {
+      "mimetype": "image/png",
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "dpi": 70,
+      "uri": "file://renamed-bookmark.png"
+    }
+  }
+]

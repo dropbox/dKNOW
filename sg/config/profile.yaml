@@ -1,0 +1,55 @@
+# Profiling config - uses small subset to avoid OOM
+# Created for Phase 1 profiling of Metal acceleration work
+
+data:
+  train: "data/profiling_subset.jsonl"
+  validation: "data/profiling_subset.jsonl"  # Not used for profiling
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/profiling-temp"
+
+training:
+  method: "lora"
+
+  # LoRA config (same as production training)
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  target_modules:
+    - "q"
+    - "v"
+    - "k"
+    - "o"
+    - "wi_0"
+    - "wi_1"
+    - "wo"
+
+  # Training hyperparameters (same as production)
+  batch_size: 12
+  gradient_accumulation_steps: 4
+  epochs: 1
+  learning_rate: 2.0e-5
+  warmup_steps: 100
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+
+  # Contrastive learning
+  temperature: 0.07
+  max_hard_negatives: 3
+
+  # Margin loss
+  use_margin_loss: true
+  margin: 0.2
+  margin_weight: 0.1
+
+  # Sequence length
+  max_length: 512
+
+  # Same settings as production for accurate profiling
+  language_aware_batching: true
+  gradient_checkpointing: true
+  cache_tokenized: false  # Disable cache to avoid memory issues
+
+  log_every: 10
+  seed: 42

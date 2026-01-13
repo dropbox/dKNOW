@@ -1,0 +1,10 @@
+# Build: Optimized-Shared (baseline + bridge)
+# Purpose: Production baseline library + C++ bridge for 100% correctness
+# Bridge: examples/pdfium_render_bridge.cpp for Rust FFI
+
+is_debug = false
+symbol_level = 0
+optimize_for_size = false
+is_component_build = true  # Shared library
+pdf_enable_xfa = false
+pdf_enable_v8 = false

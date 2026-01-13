@@ -1,0 +1,142 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Title",
+    "text": "Title",
+    "level": 1
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "section-1",
+    "text": "section-1",
+    "level": 2
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/2",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "section-1.1",
+    "text": "section-1.1",
+    "level": 3
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/3",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "section-2",
+    "text": "section-2",
+    "level": 2
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/4",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "section-2.0.1",
+    "text": "section-2.0.1",
+    "level": 4
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/5",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "section-2.2",
+    "text": "section-2.2",
+    "level": 3
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/6",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "section-2.3",
+    "text": "section-2.3",
+    "level": 3
+  }
+]

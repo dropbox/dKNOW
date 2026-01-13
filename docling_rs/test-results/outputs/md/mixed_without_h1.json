@@ -1,0 +1,173 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Some heading",
+    "text": "Some heading",
+    "level": 1
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/0",
+    "children": [
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/1",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/1"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "A. first",
+    "text": "A. first",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/1",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/2"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/2",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "subitem",
+    "text": "subitem",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/3",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "B. second",
+    "text": "B. second",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/4",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "2. strange",
+    "text": "2. strange",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/5",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "The end!",
+    "text": "The end!"
+  }
+]

@@ -1,0 +1,7 @@
+is_debug = false
+symbol_level = 0
+optimize_for_size = false
+is_component_build = true
+pdf_enable_xfa = false
+pdf_enable_v8 = false
+pdf_use_skia = false

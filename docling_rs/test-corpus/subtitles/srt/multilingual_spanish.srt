@@ -1,0 +1,33 @@
+1
+00:00:00,000 --> 00:00:02,800
+¡Hola! Bienvenidos a nuestra presentación.
+
+2
+00:00:03,500 --> 00:00:06,200
+Hoy vamos a hablar sobre la tecnología
+y su impacto en la sociedad moderna.
+
+3
+00:00:07,000 --> 00:00:10,500
+La inteligencia artificial está transformando
+la manera en que vivimos y trabajamos.
+
+4
+00:00:11,300 --> 00:00:14,800
+Desde asistentes virtuales hasta
+vehículos autónomos, la IA está en todas partes.
+
+5
+00:00:15,600 --> 00:00:19,000
+Sin embargo, también plantea desafíos éticos
+y preguntas sobre el futuro del empleo.
+
+6
+00:00:20,000 --> 00:00:23,500
+Es fundamental que desarrollemos esta tecnología
+de manera responsable y equitativa.
+
+7
+00:00:24,300 --> 00:00:27,800
+Gracias por su atención.
+¿Hay alguna pregunta?

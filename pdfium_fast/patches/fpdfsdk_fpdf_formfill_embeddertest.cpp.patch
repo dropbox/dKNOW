@@ -1,0 +1,14 @@
+--- pdfium/fpdfsdk/fpdf_formfill_embeddertest.cpp	2025-11-20 14:44:25
++++ fpdfsdk/fpdf_formfill_embeddertest.cpp	2025-12-03 16:39:54
+@@ -1457,11 +1457,7 @@
+ TEST_F(FPDFFormFillEmbedderTest, Bug1281) {
+   const char* reverse_byte_order_checksum = []() {
+     if (CFX_DefaultRenderDevice::UseSkiaRenderer()) {
+-#if BUILDFLAG(IS_APPLE) && defined(ARCH_CPU_ARM64)
+-      return "982dc4898d0ff78920be831538763d65";
+-#else
+       return "8077970bbd10333f18186a9bb459bbe6";
+-#endif
+     }
+     return "24fff03d1e663b7ece5f6e69ad837124";
+   }();

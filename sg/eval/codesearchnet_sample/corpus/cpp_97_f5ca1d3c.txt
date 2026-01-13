@@ -1,0 +1,10 @@
+/**
+           \brief Undo the effects of save_pos.
+        */
+        template<typename Poly>
+        void reset(Poly const * p) {
+            unsigned sz = p->size();
+            for (unsigned i = 0; i < sz; i++) {
+                reset(p->m(i));
+            }
+        }

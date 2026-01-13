@@ -1,0 +1,27 @@
+# Fix 7 Ignored Tests + 1 Warning
+
+**User:** "fix these: 2840/2847 tests passing (7 ignored), 1 dead code warning (visio.rs:59)"
+
+## Issues to Fix
+
+### 1. Find and Un-Ignore 7 Tests
+```bash
+# Find ignored tests
+grep -r "#\[ignore\]" crates/docling-backend/src/ crates/*/src/
+
+# Un-ignore them or fix why they're ignored
+# All tests should run, no skips
+```
+
+### 2. Fix Dead Code Warning in visio.rs:59
+```bash
+# Check what's unused
+# Either use it or remove it
+# Zero warnings required
+```
+
+## Target
+- 2847/2847 tests passing (0 ignored)
+- 0 warnings
+
+**Worker: Fix these 8 issues (7 tests + 1 warning) in next commit.**

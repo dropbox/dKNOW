@@ -1,0 +1,438 @@
+{
+  "synthetic": [
+    {
+      "brand": "Apple",
+      "category": "tech",
+      "filename": "Apple.png",
+      "size": 3579
+    },
+    {
+      "brand": "Google",
+      "category": "tech",
+      "filename": "Google.png",
+      "size": 4681
+    },
+    {
+      "brand": "Microsoft",
+      "category": "tech",
+      "filename": "Microsoft.png",
+      "size": 4615
+    },
+    {
+      "brand": "Amazon",
+      "category": "tech",
+      "filename": "Amazon.png",
+      "size": 4252
+    },
+    {
+      "brand": "Meta",
+      "category": "tech",
+      "filename": "Meta.png",
+      "size": 3765
+    },
+    {
+      "brand": "Netflix",
+      "category": "tech",
+      "filename": "Netflix.png",
+      "size": 3724
+    },
+    {
+      "brand": "Tesla",
+      "category": "tech",
+      "filename": "Tesla.png",
+      "size": 3796
+    },
+    {
+      "brand": "Nvidia",
+      "category": "tech",
+      "filename": "Nvidia.png",
+      "size": 3948
+    },
+    {
+      "brand": "Intel",
+      "category": "tech",
+      "filename": "Intel.png",
+      "size": 2748
+    },
+    {
+      "brand": "AMD",
+      "category": "tech",
+      "filename": "AMD.png",
+      "size": 3303
+    },
+    {
+      "brand": "Samsung",
+      "category": "tech",
+      "filename": "Samsung.png",
+      "size": 5830
+    },
+    {
+      "brand": "Sony",
+      "category": "tech",
+      "filename": "Sony.png",
+      "size": 4241
+    },
+    {
+      "brand": "IBM",
+      "category": "tech",
+      "filename": "IBM.png",
+      "size": 2682
+    },
+    {
+      "brand": "Oracle",
+      "category": "tech",
+      "filename": "Oracle.png",
+      "size": 4730
+    },
+    {
+      "brand": "Adobe",
+      "category": "tech",
+      "filename": "Adobe.png",
+      "size": 4638
+    },
+    {
+      "brand": "Spotify",
+      "category": "tech",
+      "filename": "Spotify.png",
+      "size": 4752
+    },
+    {
+      "brand": "Twitter",
+      "category": "tech",
+      "filename": "Twitter.png",
+      "size": 3330
+    },
+    {
+      "brand": "LinkedIn",
+      "category": "tech",
+      "filename": "LinkedIn.png",
+      "size": 3696
+    },
+    {
+      "brand": "Nike",
+      "category": "sportswear",
+      "filename": "Nike.png",
+      "size": 3123
+    },
+    {
+      "brand": "Adidas",
+      "category": "sportswear",
+      "filename": "Adidas.png",
+      "size": 4193
+    },
+    {
+      "brand": "Puma",
+      "category": "sportswear",
+      "filename": "Puma.png",
+      "size": 3376
+    },
+    {
+      "brand": "Under Armour",
+      "category": "sportswear",
+      "filename": "Under_Armour.png",
+      "size": 5619
+    },
+    {
+      "brand": "Reebok",
+      "category": "sportswear",
+      "filename": "Reebok.png",
+      "size": 4496
+    },
+    {
+      "brand": "New Balance",
+      "category": "sportswear",
+      "filename": "New_Balance.png",
+      "size": 5757
+    },
+    {
+      "brand": "Converse",
+      "category": "sportswear",
+      "filename": "Converse.png",
+      "size": 5397
+    },
+    {
+      "brand": "Vans",
+      "category": "sportswear",
+      "filename": "Vans.png",
+      "size": 4043
+    },
+    {
+      "brand": "Asics",
+      "category": "sportswear",
+      "filename": "Asics.png",
+      "size": 3728
+    },
+    {
+      "brand": "Fila",
+      "category": "sportswear",
+      "filename": "Fila.png",
+      "size": 2415
+    },
+    {
+      "brand": "Coca-Cola",
+      "category": "food",
+      "filename": "Coca-Cola.png",
+      "size": 4563
+    },
+    {
+      "brand": "Pepsi",
+      "category": "food",
+      "filename": "Pepsi.png",
+      "size": 4174
+    },
+    {
+      "brand": "McDonalds",
+      "category": "food",
+      "filename": "McDonalds.png",
+      "size": 5421
+    },
+    {
+      "brand": "Starbucks",
+      "category": "food",
+      "filename": "Starbucks.png",
+      "size": 6408
+    },
+    {
+      "brand": "Burger King",
+      "category": "food",
+      "filename": "Burger_King.png",
+      "size": 5195
+    },
+    {
+      "brand": "KFC",
+      "category": "food",
+      "filename": "KFC.png",
+      "size": 3226
+    },
+    {
+      "brand": "Subway",
+      "category": "food",
+      "filename": "Subway.png",
+      "size": 5463
+    },
+    {
+      "brand": "Pizza Hut",
+      "category": "food",
+      "filename": "Pizza_Hut.png",
+      "size": 3535
+    },
+    {
+      "brand": "Taco Bell",
+      "category": "food",
+      "filename": "Taco_Bell.png",
+      "size": 4846
+    },
+    {
+      "brand": "Red Bull",
+      "category": "food",
+      "filename": "Red_Bull.png",
+      "size": 4196
+    },
+    {
+      "brand": "Tesla",
+      "category": "automotive",
+      "filename": "Tesla.png",
+      "size": 3796
+    },
+    {
+      "brand": "BMW",
+      "category": "automotive",
+      "filename": "BMW.png",
+      "size": 3797
+    },
+    {
+      "brand": "Mercedes",
+      "category": "automotive",
+      "filename": "Mercedes.png",
+      "size": 4875
+    },
+    {
+      "brand": "Audi",
+      "category": "automotive",
+      "filename": "Audi.png",
+      "size": 3178
+    },
+    {
+      "brand": "Toyota",
+      "category": "automotive",
+      "filename": "Toyota.png",
+      "size": 3864
+    },
+    {
+      "brand": "Honda",
+      "category": "automotive",
+      "filename": "Honda.png",
+      "size": 3953
+    },
+    {
+      "brand": "Ford",
+      "category": "automotive",
+      "filename": "Ford.png",
+      "size": 3078
+    },
+    {
+      "brand": "Chevrolet",
+      "category": "automotive",
+      "filename": "Chevrolet.png",
+      "size": 4885
+    },
+    {
+      "brand": "Volkswagen",
+      "category": "automotive",
+      "filename": "Volkswagen.png",
+      "size": 6999
+    },
+    {
+      "brand": "Ferrari",
+      "category": "automotive",
+      "filename": "Ferrari.png",
+      "size": 3228
+    },
+    {
+      "brand": "Walmart",
+      "category": "retail",
+      "filename": "Walmart.png",
+      "size": 4352
+    },
+    {
+      "brand": "Target",
+      "category": "retail",
+      "filename": "Target.png",
+      "size": 4203
+    },
+    {
+      "brand": "Amazon",
+      "category": "retail",
+      "filename": "Amazon.png",
+      "size": 4252
+    },
+    {
+      "brand": "Costco",
+      "category": "retail",
+      "filename": "Costco.png",
+      "size": 4587
+    },
+    {
+      "brand": "IKEA",
+      "category": "retail",
+      "filename": "IKEA.png",
+      "size": 3002
+    },
+    {
+      "brand": "Home Depot",
+      "category": "retail",
+      "filename": "Home_Depot.png",
+      "size": 4703
+    },
+    {
+      "brand": "Best Buy",
+      "category": "retail",
+      "filename": "Best_Buy.png",
+      "size": 4664
+    },
+    {
+      "brand": "Walgreens",
+      "category": "retail",
+      "filename": "Walgreens.png",
+      "size": 6000
+    },
+    {
+      "brand": "CVS",
+      "category": "retail",
+      "filename": "CVS.png",
+      "size": 4124
+    },
+    {
+      "brand": "Gucci",
+      "category": "fashion",
+      "filename": "Gucci.png",
+      "size": 3462
+    },
+    {
+      "brand": "Chanel",
+      "category": "fashion",
+      "filename": "Chanel.png",
+      "size": 4491
+    },
+    {
+      "brand": "Louis Vuitton",
+      "category": "fashion",
+      "filename": "Louis_Vuitton.png",
+      "size": 4537
+    },
+    {
+      "brand": "Prada",
+      "category": "fashion",
+      "filename": "Prada.png",
+      "size": 3450
+    },
+    {
+      "brand": "Versace",
+      "category": "fashion",
+      "filename": "Versace.png",
+      "size": 5078
+    },
+    {
+      "brand": "Burberry",
+      "category": "fashion",
+      "filename": "Burberry.png",
+      "size": 4484
+    },
+    {
+      "brand": "Ralph Lauren",
+      "category": "fashion",
+      "filename": "Ralph_Lauren.png",
+      "size": 5142
+    },
+    {
+      "brand": "Calvin Klein",
+      "category": "fashion",
+      "filename": "Calvin_Klein.png",
+      "size": 5364
+    },
+    {
+      "brand": "United",
+      "category": "airlines",
+      "filename": "United.png",
+      "size": 3638
+    },
+    {
+      "brand": "Delta",
+      "category": "airlines",
+      "filename": "Delta.png",
+      "size": 3654
+    },
+    {
+      "brand": "American",
+      "category": "airlines",
+      "filename": "American.png",
+      "size": 5098
+    },
+    {
+      "brand": "Southwest",
+      "category": "airlines",
+      "filename": "Southwest.png",
+      "size": 5884
+    },
+    {
+      "brand": "British Airways",
+      "category": "airlines",
+      "filename": "British_Airways.png",
+      "size": 6268
+    },
+    {
+      "brand": "Lufthansa",
+      "category": "airlines",
+      "filename": "Lufthansa.png",
+      "size": 4199
+    },
+    {
+      "brand": "Emirates",
+      "category": "airlines",
+      "filename": "Emirates.png",
+      "size": 4503
+    }
+  ],
+  "clearbit": [],
+  "failed": []
+}

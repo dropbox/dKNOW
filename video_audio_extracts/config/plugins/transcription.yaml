@@ -1,0 +1,43 @@
+name: transcription
+description: "Transcribe speech to text using Whisper (whisper.cpp via whisper-rs)"
+
+inputs:
+  - Audio  # Can take output of audio extraction plugin
+  # Audio formats
+  - wav
+  - mp3
+  - flac
+  - m4a
+  - aac
+  - ogg
+  - opus
+  - wma      # Windows Media Audio
+  - amr      # Adaptive Multi-Rate (mobile)
+  - ape      # Monkey's Audio (lossless)
+  - tta      # True Audio (lossless)
+
+outputs:
+  - Transcription
+
+config:
+  max_file_size_mb: 512
+  requires_gpu: false  # CPU inference is fast enough (2.9x faster than Python baseline)
+  experimental: false
+  models:
+    - tiny    # 39M params, 1GB VRAM, 5x real-time
+    - base    # 74M params, 1.5GB VRAM, 3x real-time (default)
+    - small   # 244M params, 2.5GB VRAM, 1.5x real-time
+
+performance:
+  avg_processing_time_per_gb: "120s"
+  memory_per_file_mb: 1024
+  supports_streaming: true  # Can stream transcript segments as they complete
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1727740800  # 2024-10-01 00:00:00 UTC
+
+implementation:
+  crate: "transcription"
+  function: "transcribe_audio"

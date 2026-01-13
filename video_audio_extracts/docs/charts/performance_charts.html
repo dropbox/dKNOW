@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Benchmarks - video-audio-extracts</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .chart-container {
+            background: white;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #007AFF;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 0;
+        }
+        .metadata {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        svg {
+            display: block;
+            margin: 0 auto;
+        }
+        .bar { transition: opacity 0.2s; }
+        .bar:hover { opacity: 0.8; cursor: pointer; }
+        .axis-label { font-size: 14px; fill: #333; }
+        .axis-line { stroke: #ccc; stroke-width: 1; }
+        .grid-line { stroke: #eee; stroke-width: 1; }
+        text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
+        .legend { font-size: 12px; }
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            pointer-events: none;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Performance Benchmarks - video-audio-extracts</h1>
+    <div class="metadata">
+        <strong>Date:</strong> 2025-11-09 (N=148) |
+        <strong>Hardware:</strong> Apple M2 Max, 64 GB RAM, macOS Darwin 24.6.0 |
+        <strong>Binary:</strong> video-extract v1.0.0 (release build) |
+        <strong>Operations:</strong> 22/33 benchmarked
+    </div>
+    <div class="chart-container">
+        <h2>1. Throughput Comparison</h2>
+        <p>Operations sorted by throughput (MB/s). Higher is better. Only operations with meaningful throughput metrics shown.</p>
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <text x="600.0" y="20" text-anchor="middle" font-size="18" font-weight="bold">Throughput Comparison (MB/s)</text>
+  <line x1="150.0" y1="40" x2="150.0" y2="480" class="grid-line"/>
+  <text x="150.0" y="500" text-anchor="middle" font-size="12" fill="#666">0</text>
+  <line x1="402.5" y1="40" x2="402.5" y2="480" class="grid-line"/>
+  <text x="402.5" y="500" text-anchor="middle" font-size="12" fill="#666">2</text>
+  <line x1="655.0" y1="40" x2="655.0" y2="480" class="grid-line"/>
+  <text x="655.0" y="500" text-anchor="middle" font-size="12" fill="#666">4</text>
+  <line x1="907.5" y1="40" x2="907.5" y2="480" class="grid-line"/>
+  <text x="907.5" y="500" text-anchor="middle" font-size="12" fill="#666">6</text>
+  <line x1="1160.0" y1="40" x2="1160.0" y2="480" class="grid-line"/>
+  <text x="1160.0" y="500" text-anchor="middle" font-size="12" fill="#666">8</text>
+  <rect x="150" y="44.4" width="1010.0" height="20.53333333333333" fill="#FF2D55" class="bar" opacity="0.85">
+    <title>audio_embeddings: 8.00 MB/s</title>
+  </rect>
+  <text x="140" y="58.666666666666664" text-anchor="end" font-size="12" fill="#333">audio embeddings</text>
+  <text x="1165.0" y="58.666666666666664" font-size="11" fill="#666">8.00</text>
+  <rect x="150" y="73.73333333333333" width="991.0625" height="20.53333333333333" fill="#34C759" class="bar" opacity="0.85">
+    <title>audio_classification: 7.85 MB/s</title>
+  </rect>
+  <text x="140" y="88.0" text-anchor="end" font-size="12" fill="#333">audio classification</text>
+  <text x="1146.0625" y="88.0" font-size="11" fill="#666">7.85</text>
+  <rect x="150" y="103.06666666666666" width="962.025" height="20.53333333333333" fill="#34C759" class="bar" opacity="0.85">
+    <title>voice_activity_detection: 7.62 MB/s</title>
+  </rect>
+  <text x="140" y="117.33333333333333" text-anchor="end" font-size="12" fill="#333">voice activity detection</text>
+  <text x="1117.025" y="117.33333333333333" font-size="11" fill="#666">7.62</text>
+  <rect x="150" y="132.4" width="422.9375" height="20.53333333333333" fill="#34C759" class="bar" opacity="0.85">
+    <title>audio_enhancement_metadata: 3.35 MB/s</title>
+  </rect>
+  <text x="140" y="146.66666666666669" text-anchor="end" font-size="12" fill="#333">audio enhancement metadata</text>
+  <text x="577.9375" y="146.66666666666669" font-size="11" fill="#666">3.35</text>
+  <rect x="150" y="161.73333333333332" width="353.5" height="20.53333333333333" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>scene_detection: 2.80 MB/s</title>
+  </rect>
+  <text x="140" y="176.0" text-anchor="end" font-size="12" fill="#333">scene detection</text>
+  <text x="508.5" y="176.0" font-size="11" fill="#666">2.80</text>
+  <rect x="150" y="191.06666666666666" width="339.6125" height="20.53333333333333" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>smart_thumbnail: 2.69 MB/s</title>
+  </rect>
+  <text x="140" y="205.33333333333331" text-anchor="end" font-size="12" fill="#333">smart thumbnail</text>
+  <text x="494.6125" y="205.33333333333331" font-size="11" fill="#666">2.69</text>
+  <rect x="150" y="220.4" width="329.5125" height="20.53333333333333" fill="#007AFF" class="bar" opacity="0.85">
+    <title>audio_extraction: 2.61 MB/s</title>
+  </rect>
+  <text x="140" y="234.66666666666669" text-anchor="end" font-size="12" fill="#333">audio extraction</text>
+  <text x="484.5125" y="234.66666666666669" font-size="11" fill="#666">2.61</text>
+  <rect x="150" y="249.73333333333332" width="321.9375" height="20.53333333333333" fill="#007AFF" class="bar" opacity="0.85">
+    <title>keyframes: 2.55 MB/s</title>
+  </rect>
+  <text x="140" y="264.0" text-anchor="end" font-size="12" fill="#333">keyframes</text>
+  <text x="476.9375" y="264.0" font-size="11" fill="#666">2.55</text>
+  <rect x="150" y="279.0666666666666" width="311.83750000000003" height="20.53333333333333" fill="#34C759" class="bar" opacity="0.85">
+    <title>acoustic_scene_classification: 2.47 MB/s</title>
+  </rect>
+  <text x="140" y="293.33333333333326" text-anchor="end" font-size="12" fill="#333">acoustic scene classification</text>
+  <text x="466.83750000000003" y="293.33333333333326" font-size="11" fill="#666">2.47</text>
+  <rect x="150" y="308.4" width="219.675" height="20.53333333333333" fill="#007AFF" class="bar" opacity="0.85">
+    <title>metadata_extraction: 1.74 MB/s</title>
+  </rect>
+  <text x="140" y="322.66666666666663" text-anchor="end" font-size="12" fill="#333">metadata extraction</text>
+  <text x="374.675" y="322.66666666666663" font-size="11" fill="#666">1.74</text>
+  <rect x="150" y="337.7333333333333" width="199.47500000000002" height="20.53333333333333" fill="#34C759" class="bar" opacity="0.85">
+    <title>transcription: 1.58 MB/s</title>
+  </rect>
+  <text x="140" y="351.99999999999994" text-anchor="end" font-size="12" fill="#333">transcription</text>
+  <text x="354.475" y="351.99999999999994" font-size="11" fill="#666">1.58</text>
+  <rect x="150" y="367.0666666666666" width="169.175" height="20.53333333333333" fill="#34C759" class="bar" opacity="0.85">
+    <title>diarization: 1.34 MB/s</title>
+  </rect>
+  <text x="140" y="381.33333333333326" text-anchor="end" font-size="12" fill="#333">diarization</text>
+  <text x="324.175" y="381.33333333333326" font-size="11" fill="#666">1.34</text>
+  <rect x="150" y="396.4" width="69.4375" height="20.53333333333333" fill="#5AC8FA" class="bar" opacity="0.85">
+    <title>format_conversion: 0.55 MB/s</title>
+  </rect>
+  <text x="140" y="410.66666666666663" text-anchor="end" font-size="12" fill="#333">format conversion</text>
+  <text x="224.4375" y="410.66666666666663" font-size="11" fill="#666">0.55</text>
+  <rect x="150" y="425.7333333333333" width="64.3875" height="20.53333333333333" fill="#5AC8FA" class="bar" opacity="0.85">
+    <title>duplicate_detection: 0.51 MB/s</title>
+  </rect>
+  <text x="140" y="439.99999999999994" text-anchor="end" font-size="12" fill="#333">duplicate detection</text>
+  <text x="219.3875" y="439.99999999999994" font-size="11" fill="#666">0.51</text>
+  <rect x="150" y="455.0666666666666" width="42.925000000000004" height="20.53333333333333" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>subtitle_extraction: 0.34 MB/s</title>
+  </rect>
+  <text x="140" y="469.33333333333326" text-anchor="end" font-size="12" fill="#333">subtitle extraction</text>
+  <text x="197.925" y="469.33333333333326" font-size="11" fill="#666">0.34</text>
+  <text x="980" y="40" font-size="12" font-weight="bold" fill="#333">Categories:</text>
+  <rect x="980" y="50" width="12" height="12" fill="#007AFF" opacity="0.85"/>
+  <text x="998" y="60" font-size="11" fill="#333">Core</text>
+  <rect x="980" y="70" width="12" height="12" fill="#34C759" opacity="0.85"/>
+  <text x="998" y="80" font-size="11" fill="#333">Audio</text>
+  <rect x="980" y="90" width="12" height="12" fill="#FF9500" opacity="0.85"/>
+  <text x="998" y="100" font-size="11" fill="#333">Vision</text>
+  <rect x="980" y="110" width="12" height="12" fill="#AF52DE" opacity="0.85"/>
+  <text x="998" y="120" font-size="11" fill="#333">Intelligence</text>
+  <rect x="980" y="130" width="12" height="12" fill="#FF2D55" opacity="0.85"/>
+  <text x="998" y="140" font-size="11" fill="#333">Embeddings</text>
+  <rect x="980" y="150" width="12" height="12" fill="#5AC8FA" opacity="0.85"/>
+  <text x="998" y="160" font-size="11" fill="#333">Utility</text>
+</svg>
+    </div>
+    <div class="chart-container">
+        <h2>2. Latency Distribution</h2>
+        <p>Operations sorted by latency (milliseconds). Lower is better. All 22 benchmarked operations shown.</p>
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <text x="600.0" y="20" text-anchor="middle" font-size="18" font-weight="bold">Latency Distribution (milliseconds)</text>
+  <line x1="150.0" y1="40" x2="150.0" y2="480" class="grid-line"/>
+  <text x="150.0" y="500" text-anchor="middle" font-size="12" fill="#666">0</text>
+  <line x1="194.88888888888889" y1="40" x2="194.88888888888889" y2="480" class="grid-line"/>
+  <text x="194.88888888888889" y="500" text-anchor="middle" font-size="12" fill="#666">20</text>
+  <line x1="239.77777777777777" y1="40" x2="239.77777777777777" y2="480" class="grid-line"/>
+  <text x="239.77777777777777" y="500" text-anchor="middle" font-size="12" fill="#666">40</text>
+  <line x1="284.66666666666663" y1="40" x2="284.66666666666663" y2="480" class="grid-line"/>
+  <text x="284.66666666666663" y="500" text-anchor="middle" font-size="12" fill="#666">60</text>
+  <line x1="329.55555555555554" y1="40" x2="329.55555555555554" y2="480" class="grid-line"/>
+  <text x="329.55555555555554" y="500" text-anchor="middle" font-size="12" fill="#666">80</text>
+  <line x1="374.44444444444446" y1="40" x2="374.44444444444446" y2="480" class="grid-line"/>
+  <text x="374.44444444444446" y="500" text-anchor="middle" font-size="12" fill="#666">100</text>
+  <line x1="419.3333333333333" y1="40" x2="419.3333333333333" y2="480" class="grid-line"/>
+  <text x="419.3333333333333" y="500" text-anchor="middle" font-size="12" fill="#666">120</text>
+  <line x1="464.22222222222223" y1="40" x2="464.22222222222223" y2="480" class="grid-line"/>
+  <text x="464.22222222222223" y="500" text-anchor="middle" font-size="12" fill="#666">140</text>
+  <line x1="509.1111111111111" y1="40" x2="509.1111111111111" y2="480" class="grid-line"/>
+  <text x="509.1111111111111" y="500" text-anchor="middle" font-size="12" fill="#666">160</text>
+  <line x1="554.0" y1="40" x2="554.0" y2="480" class="grid-line"/>
+  <text x="554.0" y="500" text-anchor="middle" font-size="12" fill="#666">180</text>
+  <line x1="598.8888888888889" y1="40" x2="598.8888888888889" y2="480" class="grid-line"/>
+  <text x="598.8888888888889" y="500" text-anchor="middle" font-size="12" fill="#666">200</text>
+  <line x1="643.7777777777778" y1="40" x2="643.7777777777778" y2="480" class="grid-line"/>
+  <text x="643.7777777777778" y="500" text-anchor="middle" font-size="12" fill="#666">220</text>
+  <line x1="688.6666666666666" y1="40" x2="688.6666666666666" y2="480" class="grid-line"/>
+  <text x="688.6666666666666" y="500" text-anchor="middle" font-size="12" fill="#666">240</text>
+  <line x1="733.5555555555555" y1="40" x2="733.5555555555555" y2="480" class="grid-line"/>
+  <text x="733.5555555555555" y="500" text-anchor="middle" font-size="12" fill="#666">260</text>
+  <line x1="778.4444444444445" y1="40" x2="778.4444444444445" y2="480" class="grid-line"/>
+  <text x="778.4444444444445" y="500" text-anchor="middle" font-size="12" fill="#666">280</text>
+  <line x1="823.3333333333334" y1="40" x2="823.3333333333334" y2="480" class="grid-line"/>
+  <text x="823.3333333333334" y="500" text-anchor="middle" font-size="12" fill="#666">300</text>
+  <line x1="868.2222222222222" y1="40" x2="868.2222222222222" y2="480" class="grid-line"/>
+  <text x="868.2222222222222" y="500" text-anchor="middle" font-size="12" fill="#666">320</text>
+  <line x1="913.1111111111111" y1="40" x2="913.1111111111111" y2="480" class="grid-line"/>
+  <text x="913.1111111111111" y="500" text-anchor="middle" font-size="12" fill="#666">340</text>
+  <line x1="958.0" y1="40" x2="958.0" y2="480" class="grid-line"/>
+  <text x="958.0" y="500" text-anchor="middle" font-size="12" fill="#666">360</text>
+  <line x1="1002.8888888888889" y1="40" x2="1002.8888888888889" y2="480" class="grid-line"/>
+  <text x="1002.8888888888889" y="500" text-anchor="middle" font-size="12" fill="#666">380</text>
+  <line x1="1047.7777777777778" y1="40" x2="1047.7777777777778" y2="480" class="grid-line"/>
+  <text x="1047.7777777777778" y="500" text-anchor="middle" font-size="12" fill="#666">400</text>
+  <line x1="1092.6666666666665" y1="40" x2="1092.6666666666665" y2="480" class="grid-line"/>
+  <text x="1092.6666666666665" y="500" text-anchor="middle" font-size="12" fill="#666">420</text>
+  <line x1="1137.5555555555557" y1="40" x2="1137.5555555555557" y2="480" class="grid-line"/>
+  <text x="1137.5555555555557" y="500" text-anchor="middle" font-size="12" fill="#666">440</text>
+  <line x1="1182.4444444444443" y1="40" x2="1182.4444444444443" y2="480" class="grid-line"/>
+  <text x="1182.4444444444443" y="500" text-anchor="middle" font-size="12" fill="#666">460</text>
+  <rect x="150" y="42.869565217391305" width="112.22222222222223" height="13.391304347826086" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>subtitle_extraction: 50ms</title>
+  </rect>
+  <text x="140" y="53.565217391304344" text-anchor="end" font-size="12" fill="#333">subtitle extraction</text>
+  <text x="267.22222222222223" y="53.565217391304344" font-size="11" fill="#666">50ms</text>
+  <rect x="150" y="62.0" width="118.95555555555556" height="13.391304347826086" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>scene_detection: 53ms</title>
+  </rect>
+  <text x="140" y="72.69565217391305" text-anchor="end" font-size="12" fill="#333">scene detection</text>
+  <text x="273.9555555555556" y="72.69565217391305" font-size="11" fill="#666">53ms</text>
+  <rect x="150" y="81.13043478260869" width="121.2" height="13.391304347826086" fill="#5AC8FA" class="bar" opacity="0.85">
+    <title>format_conversion: 54ms</title>
+  </rect>
+  <text x="140" y="91.82608695652173" text-anchor="end" font-size="12" fill="#333">format conversion</text>
+  <text x="276.2" y="91.82608695652173" font-size="11" fill="#666">54ms</text>
+  <rect x="150" y="100.2608695652174" width="123.44444444444444" height="13.391304347826086" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>image_quality_assessment: 55ms</title>
+  </rect>
+  <text x="140" y="110.95652173913045" text-anchor="end" font-size="12" fill="#333">image quality assessment</text>
+  <text x="278.44444444444446" y="110.95652173913045" font-size="11" fill="#666">55ms</text>
+  <rect x="150" y="119.3913043478261" width="125.6888888888889" height="13.391304347826086" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>smart_thumbnail: 56ms</title>
+  </rect>
+  <text x="140" y="130.08695652173913" text-anchor="end" font-size="12" fill="#333">smart thumbnail</text>
+  <text x="280.68888888888887" y="130.08695652173913" font-size="11" fill="#666">56ms</text>
+  <rect x="150" y="138.52173913043478" width="125.6888888888889" height="13.391304347826086" fill="#FF9500" class="bar" opacity="0.85">
+    <title>object_detection: 56ms</title>
+  </rect>
+  <text x="140" y="149.2173913043478" text-anchor="end" font-size="12" fill="#333">object detection</text>
+  <text x="280.68888888888887" y="149.2173913043478" font-size="11" fill="#666">56ms</text>
+  <rect x="150" y="157.6521739130435" width="125.6888888888889" height="13.391304347826086" fill="#FF2D55" class="bar" opacity="0.85">
+    <title>audio_embeddings: 56ms</title>
+  </rect>
+  <text x="140" y="168.34782608695653" text-anchor="end" font-size="12" fill="#333">audio embeddings</text>
+  <text x="280.68888888888887" y="168.34782608695653" font-size="11" fill="#666">56ms</text>
+  <rect x="150" y="176.7826086956522" width="127.93333333333334" height="13.391304347826086" fill="#007AFF" class="bar" opacity="0.85">
+    <title>audio_extraction: 57ms</title>
+  </rect>
+  <text x="140" y="187.47826086956522" text-anchor="end" font-size="12" fill="#333">audio extraction</text>
+  <text x="282.93333333333334" y="187.47826086956522" font-size="11" fill="#666">57ms</text>
+  <rect x="150" y="195.91304347826087" width="127.93333333333334" height="13.391304347826086" fill="#34C759" class="bar" opacity="0.85">
+    <title>audio_classification: 57ms</title>
+  </rect>
+  <text x="140" y="206.6086956521739" text-anchor="end" font-size="12" fill="#333">audio classification</text>
+  <text x="282.93333333333334" y="206.6086956521739" font-size="11" fill="#666">57ms</text>
+  <rect x="150" y="215.04347826086956" width="127.93333333333334" height="13.391304347826086" fill="#34C759" class="bar" opacity="0.85">
+    <title>transcription: 57ms</title>
+  </rect>
+  <text x="140" y="225.7391304347826" text-anchor="end" font-size="12" fill="#333">transcription</text>
+  <text x="282.93333333333334" y="225.7391304347826" font-size="11" fill="#666">57ms</text>
+  <rect x="150" y="234.17391304347825" width="130.17777777777778" height="13.391304347826086" fill="#5AC8FA" class="bar" opacity="0.85">
+    <title>duplicate_detection: 58ms</title>
+  </rect>
+  <text x="140" y="244.86956521739128" text-anchor="end" font-size="12" fill="#333">duplicate detection</text>
+  <text x="285.1777777777778" y="244.86956521739128" font-size="11" fill="#666">58ms</text>
+  <rect x="150" y="253.30434782608697" width="132.42222222222222" height="13.391304347826086" fill="#007AFF" class="bar" opacity="0.85">
+    <title>keyframes: 59ms</title>
+  </rect>
+  <text x="140" y="264.0" text-anchor="end" font-size="12" fill="#333">keyframes</text>
+  <text x="287.4222222222222" y="264.0" font-size="11" fill="#666">59ms</text>
+  <rect x="150" y="272.4347826086957" width="132.42222222222222" height="13.391304347826086" fill="#34C759" class="bar" opacity="0.85">
+    <title>voice_activity_detection: 59ms</title>
+  </rect>
+  <text x="140" y="283.13043478260875" text-anchor="end" font-size="12" fill="#333">voice activity detection</text>
+  <text x="287.4222222222222" y="283.13043478260875" font-size="11" fill="#666">59ms</text>
+  <rect x="150" y="291.5652173913043" width="141.4" height="13.391304347826086" fill="#FF9500" class="bar" opacity="0.85">
+    <title>ocr: 63ms</title>
+  </rect>
+  <text x="140" y="302.2608695652174" text-anchor="end" font-size="12" fill="#333">ocr</text>
+  <text x="296.4" y="302.2608695652174" font-size="11" fill="#666">63ms</text>
+  <rect x="150" y="310.69565217391306" width="145.88888888888889" height="13.391304347826086" fill="#FF9500" class="bar" opacity="0.85">
+    <title>face_detection: 65ms</title>
+  </rect>
+  <text x="140" y="321.3913043478261" text-anchor="end" font-size="12" fill="#333">face detection</text>
+  <text x="300.8888888888889" y="321.3913043478261" font-size="11" fill="#666">65ms</text>
+  <rect x="150" y="329.82608695652175" width="148.13333333333333" height="13.391304347826086" fill="#FF2D55" class="bar" opacity="0.85">
+    <title>vision_embeddings: 66ms</title>
+  </rect>
+  <text x="140" y="340.5217391304348" text-anchor="end" font-size="12" fill="#333">vision embeddings</text>
+  <text x="303.1333333333333" y="340.5217391304348" font-size="11" fill="#666">66ms</text>
+  <rect x="150" y="348.95652173913044" width="193.0222222222222" height="13.391304347826086" fill="#007AFF" class="bar" opacity="0.85">
+    <title>metadata_extraction: 86ms</title>
+  </rect>
+  <text x="140" y="359.6521739130435" text-anchor="end" font-size="12" fill="#333">metadata extraction</text>
+  <text x="348.02222222222224" y="359.6521739130435" font-size="11" fill="#666">86ms</text>
+  <rect x="150" y="368.0869565217391" width="291.77777777777777" height="13.391304347826086" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>shot_classification: 130ms</title>
+  </rect>
+  <text x="140" y="378.7826086956522" text-anchor="end" font-size="12" fill="#333">shot classification</text>
+  <text x="446.77777777777777" y="378.7826086956522" font-size="11" fill="#666">130ms</text>
+  <rect x="150" y="387.2173913043478" width="314.22222222222223" height="13.391304347826086" fill="#34C759" class="bar" opacity="0.85">
+    <title>audio_enhancement_metadata: 140ms</title>
+  </rect>
+  <text x="140" y="397.9130434782609" text-anchor="end" font-size="12" fill="#333">audio enhancement metadata</text>
+  <text x="469.22222222222223" y="397.9130434782609" font-size="11" fill="#666">140ms</text>
+  <rect x="150" y="406.3478260869565" width="426.44444444444446" height="13.391304347826086" fill="#34C759" class="bar" opacity="0.85">
+    <title>acoustic_scene_classification: 190ms</title>
+  </rect>
+  <text x="140" y="417.04347826086956" text-anchor="end" font-size="12" fill="#333">acoustic scene classification</text>
+  <text x="581.4444444444445" y="417.04347826086956" font-size="11" fill="#666">190ms</text>
+  <rect x="150" y="425.4782608695652" width="583.5555555555555" height="13.391304347826086" fill="#FF9500" class="bar" opacity="0.85">
+    <title>pose_estimation: 260ms</title>
+  </rect>
+  <text x="140" y="436.17391304347825" text-anchor="end" font-size="12" fill="#333">pose estimation</text>
+  <text x="738.5555555555555" y="436.17391304347825" font-size="11" fill="#666">260ms</text>
+  <rect x="150" y="444.60869565217394" width="785.5555555555555" height="13.391304347826086" fill="#34C759" class="bar" opacity="0.85">
+    <title>diarization: 350ms</title>
+  </rect>
+  <text x="140" y="455.304347826087" text-anchor="end" font-size="12" fill="#333">diarization</text>
+  <text x="940.5555555555555" y="455.304347826087" font-size="11" fill="#666">350ms</text>
+  <rect x="150" y="463.7391304347826" width="1010.0" height="13.391304347826086" fill="#34C759" class="bar" opacity="0.85">
+    <title>profanity_detection: 450ms</title>
+  </rect>
+  <text x="140" y="474.4347826086957" text-anchor="end" font-size="12" fill="#333">profanity detection</text>
+  <text x="1165.0" y="474.4347826086957" font-size="11" fill="#666">450ms</text>
+</svg>
+    </div>
+    <div class="chart-container">
+        <h2>3. Memory Usage by Category</h2>
+        <p>Average memory usage per operation category with min/max ranges. Most operations use ~14-18 MB, with heavier ML operations (diarization, pose estimation, profanity detection) requiring 70-309 MB.</p>
+<svg width="1000" height="500" xmlns="http://www.w3.org/2000/svg">
+  <text x="500.0" y="20" text-anchor="middle" font-size="18" font-weight="bold">Memory Usage by Category (MB)</text>
+  <line x1="100" y1="420.0" x2="960" y2="420.0" class="grid-line"/>
+  <text x="90" y="424.0" text-anchor="end" font-size="12" fill="#666">0</text>
+  <line x1="100" y1="364.10120623712857" x2="960" y2="364.10120623712857" class="grid-line"/>
+  <text x="90" y="368.10120623712857" text-anchor="end" font-size="12" fill="#666">50</text>
+  <line x1="100" y1="308.20241247425713" x2="960" y2="308.20241247425713" class="grid-line"/>
+  <text x="90" y="312.20241247425713" text-anchor="end" font-size="12" fill="#666">100</text>
+  <line x1="100" y1="252.30361871138572" x2="960" y2="252.30361871138572" class="grid-line"/>
+  <text x="90" y="256.30361871138575" text-anchor="end" font-size="12" fill="#666">150</text>
+  <line x1="100" y1="196.40482494851432" x2="960" y2="196.40482494851432" class="grid-line"/>
+  <text x="90" y="200.40482494851432" text-anchor="end" font-size="12" fill="#666">200</text>
+  <line x1="100" y1="140.50603118564288" x2="960" y2="140.50603118564288" class="grid-line"/>
+  <text x="90" y="144.50603118564288" text-anchor="end" font-size="12" fill="#666">250</text>
+  <line x1="100" y1="84.60723742277145" x2="960" y2="84.60723742277145" class="grid-line"/>
+  <text x="90" y="88.60723742277145" text-anchor="end" font-size="12" fill="#666">300</text>
+  <line x1="100" y1="28.708443659900013" x2="960" y2="28.708443659900013" class="grid-line"/>
+  <text x="90" y="32.70844365990001" text-anchor="end" font-size="12" fill="#666">350</text>
+  <rect x="121.5" y="332.0935569285084" width="100.33333333333333" height="87.9064430714916" fill="#34C759" class="bar" opacity="0.85">
+    <title>Audio: 78.63 MB (range: 14.57-309.00 MB)</title>
+  </rect>
+  <line x1="171.66666666666666" y1="403.7110914974993" x2="171.66666666666666" y2="74.54545454545462" stroke="#333" stroke-width="2"/>
+  <line x1="166.66666666666666" y1="403.7110914974993" x2="176.66666666666666" y2="403.7110914974993" stroke="#333" stroke-width="2"/>
+  <line x1="166.66666666666666" y1="74.54545454545462" x2="176.66666666666666" y2="74.54545454545462" stroke="#333" stroke-width="2"/>
+  <text x="171.66666666666666" y="440" text-anchor="middle" font-size="12" fill="#333">Audio</text>
+  <text x="171.66666666666666" y="327.0935569285084" text-anchor="middle" font-size="11" fill="#666">78.63</text>
+  <rect x="264.83333333333337" y="382.74624889673436" width="100.33333333333333" height="37.25375110326566" fill="#FF9500" class="bar" opacity="0.85">
+    <title>Vision: 33.32 MB (range: 14.56-89.50 MB)</title>
+  </rect>
+  <line x1="315.00000000000006" y1="403.7222712562518" x2="315.00000000000006" y2="319.94115916446015" stroke="#333" stroke-width="2"/>
+  <line x1="310.00000000000006" y1="403.7222712562518" x2="320.00000000000006" y2="403.7222712562518" stroke="#333" stroke-width="2"/>
+  <line x1="310.00000000000006" y1="319.94115916446015" x2="320.00000000000006" y2="319.94115916446015" stroke="#333" stroke-width="2"/>
+  <text x="315.00000000000006" y="440" text-anchor="middle" font-size="12" fill="#333">Vision</text>
+  <text x="315.00000000000006" y="377.74624889673436" text-anchor="middle" font-size="11" fill="#666">33.32</text>
+  <rect x="408.1666666666667" y="400.7484554280671" width="100.33333333333333" height="19.25154457193292" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>Intelligence: 17.22 MB (range: 14.64-24.80 MB)</title>
+  </rect>
+  <line x1="458.33333333333337" y1="403.63283318623127" x2="458.33333333333337" y2="392.27419829361577" stroke="#333" stroke-width="2"/>
+  <line x1="453.33333333333337" y1="403.63283318623127" x2="463.33333333333337" y2="403.63283318623127" stroke="#333" stroke-width="2"/>
+  <line x1="453.33333333333337" y1="392.27419829361577" x2="463.33333333333337" y2="392.27419829361577" stroke="#333" stroke-width="2"/>
+  <text x="458.33333333333337" y="440" text-anchor="middle" font-size="12" fill="#333">Intelligence</text>
+  <text x="458.33333333333337" y="395.7484554280671" text-anchor="middle" font-size="11" fill="#666">17.22</text>
+  <rect x="551.5" y="403.40923801117975" width="100.33333333333333" height="16.590761988820237" fill="#FF2D55" class="bar" opacity="0.85">
+    <title>Embeddings: 14.84 MB (range: 14.53-15.15 MB)</title>
+  </rect>
+  <line x1="601.6666666666666" y1="403.75581053250954" x2="601.6666666666666" y2="403.06266548984996" stroke="#333" stroke-width="2"/>
+  <line x1="596.6666666666666" y1="403.75581053250954" x2="606.6666666666666" y2="403.75581053250954" stroke="#333" stroke-width="2"/>
+  <line x1="596.6666666666666" y1="403.06266548984996" x2="606.6666666666666" y2="403.06266548984996" stroke="#333" stroke-width="2"/>
+  <text x="601.6666666666666" y="440" text-anchor="middle" font-size="12" fill="#333">Embeddings</text>
+  <text x="601.6666666666666" y="398.40923801117975" text-anchor="middle" font-size="11" fill="#666">14.84</text>
+  <rect x="694.8333333333334" y="403.5937040305972" width="100.33333333333333" height="16.406295969402763" fill="#5AC8FA" class="bar" opacity="0.85">
+    <title>Utility: 14.68 MB (range: 14.51-14.84 MB)</title>
+  </rect>
+  <line x1="745.0" y1="403.7781700500147" x2="745.0" y2="403.40923801117975" stroke="#333" stroke-width="2"/>
+  <line x1="740.0" y1="403.7781700500147" x2="750.0" y2="403.7781700500147" stroke="#333" stroke-width="2"/>
+  <line x1="740.0" y1="403.40923801117975" x2="750.0" y2="403.40923801117975" stroke="#333" stroke-width="2"/>
+  <text x="745.0" y="440" text-anchor="middle" font-size="12" fill="#333">Utility</text>
+  <text x="745.0" y="398.5937040305972" text-anchor="middle" font-size="11" fill="#666">14.68</text>
+  <rect x="838.1666666666667" y="403.666372462489" width="100.33333333333333" height="16.33362753751103" fill="#007AFF" class="bar" opacity="0.85">
+    <title>Core: 14.61 MB (range: 14.57-14.67 MB)</title>
+  </rect>
+  <line x1="888.3333333333334" y1="403.7110914974993" x2="888.3333333333334" y2="403.59929390997354" stroke="#333" stroke-width="2"/>
+  <line x1="883.3333333333334" y1="403.7110914974993" x2="893.3333333333334" y2="403.7110914974993" stroke="#333" stroke-width="2"/>
+  <line x1="883.3333333333334" y1="403.59929390997354" x2="893.3333333333334" y2="403.59929390997354" stroke="#333" stroke-width="2"/>
+  <text x="888.3333333333334" y="440" text-anchor="middle" font-size="12" fill="#333">Core</text>
+  <text x="888.3333333333334" y="398.666372462489" text-anchor="middle" font-size="11" fill="#666">14.61</text>
+  <text x="810" y="40" font-size="11" fill="#666">Bars show average, error bars show min/max range</text>
+</svg>
+    </div>
+    <div class="chart-container">
+        <h2>4. Concurrency Scaling Efficiency</h2>
+        <p>Speedup and parallel efficiency vs number of workers. Best efficiency at 2 workers (86%), best absolute speedup at 8 workers (2.1x).</p>
+<svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+  <text x="500.0" y="25" text-anchor="middle" font-size="18" font-weight="bold">Concurrency Scaling Efficiency</text>
+  <text x="500.0" y="45" text-anchor="middle" font-size="12" fill="#666">Keyframes extraction with 8 test files</text>
+  <line x1="80" y1="520.0" x2="900" y2="520.0" class="grid-line"/>
+  <text x="70" y="524.0" text-anchor="end" font-size="12" fill="#007AFF">0x</text>
+  <line x1="80" y1="343.0769230769231" x2="900" y2="343.0769230769231" class="grid-line"/>
+  <text x="70" y="347.0769230769231" text-anchor="end" font-size="12" fill="#007AFF">1x</text>
+  <line x1="80" y1="166.1538461538462" x2="900" y2="166.1538461538462" class="grid-line"/>
+  <text x="70" y="170.1538461538462" text-anchor="end" font-size="12" fill="#007AFF">2x</text>
+  <line x1="80" y1="-10.769230769230717" x2="900" y2="-10.769230769230717" class="grid-line"/>
+  <text x="70" y="-6.769230769230717" text-anchor="end" font-size="12" fill="#007AFF">3x</text>
+  <text x="131.25" y="545" text-anchor="middle" font-size="12" fill="#333">1</text>
+  <text x="182.5" y="545" text-anchor="middle" font-size="12" fill="#333">2</text>
+  <text x="285.0" y="545" text-anchor="middle" font-size="12" fill="#333">4</text>
+  <text x="490.0" y="545" text-anchor="middle" font-size="12" fill="#333">8</text>
+  <text x="900.0" y="545" text-anchor="middle" font-size="12" fill="#333">16</text>
+  <text x="500.0" y="575" text-anchor="middle" font-size="14" fill="#333">Number of Workers</text>
+  <text x="20" y="300.0" text-anchor="middle" font-size="14" fill="#007AFF" transform="rotate(-90, 20, 300.0)">Speedup (x baseline)</text>
+  <text x="960" y="300.0" text-anchor="middle" font-size="14" fill="#34C759" transform="rotate(90, 960, 300.0)">Parallel Efficiency (%)</text>
+  <polyline points="131.25,343.0769230769231 182.5,215.69230769230774 285.0,178.5384615384616 490.0,148.4615384615385 900.0,166.1538461538462 " fill="none" stroke="#007AFF" stroke-width="3"/>
+  <circle cx="131.25" cy="343.0769230769231" r="6" fill="#007AFF">
+    <title>1 workers: 1.00x speedup</title>
+  </circle>
+  <text x="131.25" y="328.0769230769231" text-anchor="middle" font-size="11" fill="#007AFF" font-weight="bold">1.00x</text>
+  <circle cx="182.5" cy="215.69230769230774" r="6" fill="#007AFF">
+    <title>2 workers: 1.72x speedup</title>
+  </circle>
+  <text x="182.5" y="200.69230769230774" text-anchor="middle" font-size="11" fill="#007AFF" font-weight="bold">1.72x</text>
+  <circle cx="285.0" cy="178.5384615384616" r="6" fill="#007AFF">
+    <title>4 workers: 1.93x speedup</title>
+  </circle>
+  <text x="285.0" y="163.5384615384616" text-anchor="middle" font-size="11" fill="#007AFF" font-weight="bold">1.93x</text>
+  <circle cx="490.0" cy="148.4615384615385" r="6" fill="#007AFF">
+    <title>8 workers: 2.10x speedup</title>
+  </circle>
+  <text x="490.0" y="133.4615384615385" text-anchor="middle" font-size="11" fill="#007AFF" font-weight="bold">2.10x</text>
+  <circle cx="900.0" cy="166.1538461538462" r="6" fill="#007AFF">
+    <title>16 workers: 2.00x speedup</title>
+  </circle>
+  <text x="900.0" y="151.1538461538462" text-anchor="middle" font-size="11" fill="#007AFF" font-weight="bold">2.00x</text>
+  <polyline points="131.25,60.00000000000006 182.5,124.40000000000003 285.0,298.28 490.0,399.48 900.0,462.5 " fill="none" stroke="#34C759" stroke-width="3" stroke-dasharray="5,5"/>
+  <circle cx="131.25" cy="60.00000000000006" r="6" fill="#34C759">
+    <title>1 workers: 100.0% efficiency</title>
+  </circle>
+  <text x="131.25" y="80.00000000000006" text-anchor="middle" font-size="11" fill="#34C759" font-weight="bold">100.0%</text>
+  <circle cx="182.5" cy="124.40000000000003" r="6" fill="#34C759">
+    <title>2 workers: 86.0% efficiency</title>
+  </circle>
+  <text x="182.5" y="144.40000000000003" text-anchor="middle" font-size="11" fill="#34C759" font-weight="bold">86.0%</text>
+  <circle cx="285.0" cy="298.28" r="6" fill="#34C759">
+    <title>4 workers: 48.2% efficiency</title>
+  </circle>
+  <text x="285.0" y="318.28" text-anchor="middle" font-size="11" fill="#34C759" font-weight="bold">48.2%</text>
+  <circle cx="490.0" cy="399.48" r="6" fill="#34C759">
+    <title>8 workers: 26.2% efficiency</title>
+  </circle>
+  <text x="490.0" y="419.48" text-anchor="middle" font-size="11" fill="#34C759" font-weight="bold">26.2%</text>
+  <circle cx="900.0" cy="462.5" r="6" fill="#34C759">
+    <title>16 workers: 12.5% efficiency</title>
+  </circle>
+  <text x="900.0" y="482.5" text-anchor="middle" font-size="11" fill="#34C759" font-weight="bold">12.5%</text>
+  <line x1="730" y1="80" x2="760" y2="80" stroke="#007AFF" stroke-width="3"/>
+  <text x="770" y="84" font-size="12" fill="#333">Speedup (vs 1 worker)</text>
+  <line x1="730" y1="100" x2="760" y2="100" stroke="#34C759" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="770" y="104" font-size="12" fill="#333">Parallel Efficiency</text>
+</svg>
+    </div>
+
+    <div class="chart-container">
+        <h2>About These Benchmarks</h2>
+        <p><strong>Test Configuration:</strong></p>
+        <ul>
+            <li>Environment: VIDEO_EXTRACT_THREADS=4 (limits thread pool sizes)</li>
+            <li>Execution mode: performance mode (optimized for speed, no debug overhead)</li>
+            <li>Measurement tools: /usr/bin/time -l (macOS) for memory and wall-clock time</li>
+            <li>Test files: Small (30-450 KB) test files from test_edge_cases/ directory</li>
+        </ul>
+        <p><strong>Important Notes:</strong></p>
+        <ul>
+            <li>Latency measurements (53-86ms) are dominated by binary startup overhead (~50ms)</li>
+            <li>For production workloads with larger files (1-100 MB), processing time will dominate</li>
+            <li>Throughput metrics (MB/s) become more representative on files >1 MB</li>
+            <li>Memory usage scales with file size for production workloads (256-1024 MB for heavy operations)</li>
+        </ul>
+        <p><strong>Source:</strong> <code>docs/PERFORMANCE_BENCHMARKS.md</code></p>
+    </div>
+</body>
+</html>

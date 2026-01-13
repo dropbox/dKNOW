@@ -1,0 +1,27 @@
+[package]
+name = "video-audio-orchestrator"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+video-audio-common = { path = "../common" }
+video-audio-ingestion = { path = "../ingestion" }
+video-audio-extractor = { path = "../audio-extractor" }
+video-audio-keyframe = { path = "../keyframe-extractor" }
+video-audio-diarization = { path = "../diarization" }
+video-audio-object-detection = { path = "../object-detection" }
+video-audio-face-detection = { path = "../face-detection" }
+video-audio-ocr = { path = "../ocr" }
+video-audio-scene = { path = "../scene-detector" }
+video-audio-embeddings = { path = "../embeddings" }
+video-audio-fusion = { path = "../fusion" }
+video-audio-storage = { path = "../storage" }
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+uuid = { version = "1.6", features = ["v4"] }
+image.workspace = true
+chrono = "0.4"
+hound = "3.5"

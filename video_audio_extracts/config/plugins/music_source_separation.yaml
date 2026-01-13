@@ -1,0 +1,16 @@
+name: music_source_separation
+description: Separate music into stems (vocals, drums, bass, other) using Demucs/Spleeter
+inputs: [Audio, mp3, m4a, wav, flac, alac, mp4, mov, avi, mkv, webm]
+outputs: [MusicSourceSeparation]
+config:
+  max_file_size_mb: 1000
+  requires_gpu: true
+  experimental: true
+performance:
+  avg_processing_time_per_gb: "120s"
+  memory_per_file_mb: 500
+  supports_streaming: false
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 0

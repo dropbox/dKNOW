@@ -1,0 +1,40 @@
+From: Marketing Team <marketing@company.com>
+To: all-employees@company.com
+Subject: =?UTF-8?Q?Q1_Newsletter_=E2=9C=A8?=
+Date: Wed, 20 Mar 2024 09:00:00 -0700
+Message-ID: <newsletter-2024-q1@company.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="boundary-alt-123"
+
+--boundary-alt-123
+Content-Type: text/plain; charset="UTF-8"
+
+Q1 Newsletter ✨
+
+Welcome to our Q1 company newsletter!
+
+Highlights:
+- New product launch
+- Team expansion
+- Customer success stories
+
+Visit our website for more details.
+
+--boundary-alt-123
+Content-Type: text/html; charset="UTF-8"
+
+<html>
+<head><title>Q1 Newsletter</title></head>
+<body>
+<h1>Q1 Newsletter ✨</h1>
+<p><strong>Welcome</strong> to our Q1 company newsletter!</p>
+<h2>Highlights:</h2>
+<ul>
+<li>New product launch</li>
+<li>Team expansion</li>
+<li>Customer success stories</li>
+</ul>
+<p>Visit our <a href="https://company.com">website</a> for more details.</p>
+</body>
+</html>
+--boundary-alt-123--

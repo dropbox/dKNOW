@@ -1,0 +1,38 @@
+name: voice_activity_detection
+description: "Voice Activity Detection using WebRTC VAD (detect speech segments)"
+
+inputs:
+  - Audio
+  - wav
+  - mp3
+  - flac
+  - m4a
+  - aac
+  - ogg
+  - opus
+  - wma
+  - amr
+  - ape
+  - tta
+
+outputs:
+  - VoiceActivityDetection
+
+config:
+  max_file_size_mb: 512
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "10s"
+  memory_per_file_mb: 64
+  supports_streaming: true
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1730415600  # 2024-11-01 00:00:00 UTC
+
+implementation:
+  crate: "video-audio-voice-activity-detection"
+  function: "detect_voice_activity"

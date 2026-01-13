@@ -1,0 +1,24 @@
+--- pdfium/core/fpdfapi/parser/cpdf_indirect_object_holder.h	2025-11-20 14:44:25
++++ core/fpdfapi/parser/cpdf_indirect_object_holder.h	2025-12-03 16:39:54
+@@ -10,6 +10,8 @@
+ #include <stdint.h>
+ 
+ #include <map>
++#include <mutex>
++#include <shared_mutex>
+ #include <type_traits>
+ #include <utility>
+ 
+@@ -84,6 +86,12 @@
+   uint32_t last_obj_num_ = 0;
+   std::map<uint32_t, RetainPtr<CPDF_Object>> indirect_objs_;
+   WeakPtr<ByteStringPool> byte_string_pool_;
++
++  // Shared mutex to protect indirect_objs_ map from concurrent access during
++  // object parsing. Using shared_mutex allows concurrent reads with minimal
++  // contention, while exclusive writes are still protected. Mutable because
++  // GetIndirectObject() is logically const but must lock for thread safety.
++  mutable std::shared_mutex indirect_objs_mutex_;
+ };
+ 
+ #endif  // CORE_FPDFAPI_PARSER_CPDF_INDIRECT_OBJECT_HOLDER_H_

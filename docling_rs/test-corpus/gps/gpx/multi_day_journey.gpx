@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPS Device" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Pacific Coast Highway Road Trip</name>
+    <desc>Three-day scenic drive from San Francisco to Los Angeles along Highway 1</desc>
+    <time>2024-10-10T08:00:00Z</time>
+  </metadata>
+  <trk>
+    <name>Day 1: SF to Monterey</name>
+    <type>driving</type>
+    <trkseg>
+      <trkpt lat="37.7749" lon="-122.4194">
+        <ele>15.0</ele>
+        <time>2024-10-10T08:00:00Z</time>
+      </trkpt>
+      <trkpt lat="37.6879" lon="-122.4702">
+        <ele>85.5</ele>
+        <time>2024-10-10T09:00:00Z</time>
+      </trkpt>
+      <trkpt lat="37.5627" lon="-122.3255">
+        <ele>125.8</ele>
+        <time>2024-10-10T10:00:00Z</time>
+      </trkpt>
+      <trkpt lat="37.3688" lon="-122.0363">
+        <ele>45.2</ele>
+        <time>2024-10-10T11:30:00Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>Day 2: Monterey to Big Sur</name>
+    <type>driving</type>
+    <trkseg>
+      <trkpt lat="36.6002" lon="-121.8947">
+        <ele>12.0</ele>
+        <time>2024-10-11T09:00:00Z</time>
+      </trkpt>
+      <trkpt lat="36.4527" lon="-121.9018">
+        <ele>155.3</ele>
+        <time>2024-10-11T10:30:00Z</time>
+      </trkpt>
+      <trkpt lat="36.2704" lon="-121.8081">
+        <ele>245.8</ele>
+        <time>2024-10-11T12:00:00Z</time>
+      </trkpt>
+      <trkpt lat="36.0144" lon="-121.5694">
+        <ele>305.2</ele>
+        <time>2024-10-11T14:00:00Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>Day 3: Big Sur to LA</name>
+    <type>driving</type>
+    <trkseg>
+      <trkpt lat="35.6078" lon="-121.1800">
+        <ele>85.0</ele>
+        <time>2024-10-12T08:30:00Z</time>
+      </trkpt>
+      <trkpt lat="35.1428" lon="-120.6596">
+        <ele>55.5</ele>
+        <time>2024-10-12T10:00:00Z</time>
+      </trkpt>
+      <trkpt lat="34.6867" lon="-120.4357">
+        <ele>32.8</ele>
+        <time>2024-10-12T11:30:00Z</time>
+      </trkpt>
+      <trkpt lat="34.4208" lon="-119.6982">
+        <ele>18.2</ele>
+        <time>2024-10-12T13:00:00Z</time>
+      </trkpt>
+      <trkpt lat="34.0522" lon="-118.2437">
+        <ele>95.3</ele>
+        <time>2024-10-12T15:00:00Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

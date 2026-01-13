@@ -1,0 +1,9 @@
+{
+  "pdf_name": "hello_world.pdf",
+  "format": "ppm",
+  "dpi": 300,
+  "source": "upstream pdfium_test 7f43fd79",
+  "pages": {
+    "0": "f09aa45bbe70022928c377dc8c276407"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "page_number": 9,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis    KDD '22, August 14–18, 2022, Washington, DC, USA",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "A: Example layout with favorable results on colored backgrounds.",
+      "bbox": {
+        "l": 0.0,
+        "t": 10.0,
+        "r": 32.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "B: Accurate list-item and paragraph differentiation despite densely-spaced lines.",
+      "bbox": {
+        "l": 34.0,
+        "t": 10.0,
+        "r": 66.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "C: Good table and figure distinction.",
+      "bbox": {
+        "l": 68.0,
+        "t": 10.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "D: Predictions on a Chinese patent with multiple overlaps, label confusion and missing boxes.",
+      "bbox": {
+        "l": 0.0,
+        "t": 52.0,
+        "r": 32.0,
+        "b": 92.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "E: Demonstrates good table and figure distinction.",
+      "bbox": {
+        "l": 34.0,
+        "t": 52.0,
+        "r": 66.0,
+        "b": 92.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "F: Shows predictions on a Chinese patent with multiple overlaps, label confusion and missing boxes.",
+      "bbox": {
+        "l": 68.0,
+        "t": 52.0,
+        "r": 100.0,
+        "b": 92.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 6: Example layout predictions on selected pages from the DocLayNet test-set. (A, D) exhibit favourable results on colored backgrounds. (B, C) show accurate list-item and paragraph differentiation despite densely-spaced lines. (E) demonstrates good table and figure distinction. (F) shows predictions on a Chinese patent with multiple overlaps, label confusion and missing boxes.",
+      "bbox": {
+        "l": 0.0,
+        "t": 93.0,
+        "r": 100.0,
+        "b": 97.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "footnote",
+      "text": "[19] Diaconu, Mai Thanh Minh, Marc, aimaxvai, faith, deg, and wanghao yang. ultralytics/yolov5: v6.0 - yolov5n nano models, roboflow integration, tensorrt export, opencv dnn support, October 2021.\n[20] Nikolas Carion, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov, and Sergey Zagoruyko. End-to-end object detection with transformers. CoRR abs/2005.12872, 2020.\n[21] Minghang Ting, Ruozeng Pan, and Quoc V. Le. Efficientdet: Scalable and efficient object detection. CoRR abs/1911.09070, 2019.\n[22] Tsung-Yi Lin, Michael Maire, Serge J. Belongie, Lubomir D. Bourdev, Ross B. Girshick, James Hays, Pietro Perona, Deva Ramanan, Piotr Dollár, and C. Lawrence Zitnick. Microsoft COCO: common objects in context, 2014.\n[23] Liyun Wu, Alexander Kirillov, Francois Massa, Wan-Yen Lo, and Ross Girshick. Detectron2, 2019.\n[24] Nikos Nikolaou, Cesar Bormann, Maksym Lysak, Viktor Kuroiptsov, Ahmed Nassar, Andre Carvalho, Michele Dolfi, Christoph Auer, Kasper Dallmeier, and Peter W. J. Staar. Robust pdf document conversion using recurrent neural networks. In Proceedings of the 26th Conference on Artificial Intelligence, AAAI, pages 15137–15145, 2022.\n[25] Yichen Xu, Minghao Li, Lei Cui, Shaohan Huang, Furu Wei, and Ming Zhou. Layoutlm: Pre-training of text and layout for document image understanding. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD, pages 1192–1200, New York, USA, 2020. Association for Computing Machinery.\n[26] Shoubin Li, Xuyan Ma, Shuaiqin Pan, Jun Hu, Lin Shi, and Qing Wang. Vlayou: Fusion of visual and text features for document layout analysis, 2021.\n[27] Peng Zhang, Can Li, Liang Qiao, Zhanxian Cheng, Shihang Fu, Yi Niu, and Fei Wu. Vsr: A unified framework for document layout analysis combining vision, semantics and relations, 2021.\n[28] Peter W J Staar, Michele Dolfi, Christoph Auer, and Costas Bekas. Corpus conversion service: A machine learning platform to ingest documents at scale. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD, pages 774–782, ACM, 2018.\n[29] Connor Shorten and Taghi M. Khoshgoftaar. A survey on image data augmentation for deep learning. Journal of Big Data, 6(1):60, 2019.",
+      "bbox": {
+        "l": 0.0,
+        "t": 98.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

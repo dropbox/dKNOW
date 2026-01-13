@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0">
+<description>
+<title-info>
+<genre>prose</genre>
+<author><first-name>Иван</first-name><last-name>Петров</last-name></author>
+<book-title>Тестовая книга</book-title>
+<annotation><p>Тестовая книга на русском языке для проверки поддержки кириллицы.</p></annotation>
+<lang>ru</lang>
+</title-info>
+<document-info>
+<author><nickname>Тестировщик</nickname></author>
+<date>2025-11-07</date>
+</document-info>
+</description>
+<body>
+<section>
+<title><p>Глава 1: Введение</p></title>
+<p>Это тестовый абзац на русском языке.</p>
+<p>FictionBook 2.0 формат широко используется для электронных книг в России и странах СНГ.</p>
+<empty-line/>
+<p>Формат поддерживает:</p>
+<ul>
+<li>Кириллицу и Unicode</li>
+<li>Форматирование текста (<strong>жирный</strong>, <emphasis>курсив</emphasis>)</li>
+<li>Структурированный контент</li>
+</ul>
+</section>
+<section>
+<title><p>Глава 2: Пример текста</p></title>
+<p>Второй раздел с дополнительным содержимым.</p>
+<cite>
+<p>Цитата из другого источника на русском языке.</p>
+<text-author>Автор цитаты</text-author>
+</cite>
+<p>Продолжение основного текста после цитаты.</p>
+</section>
+</body>
+</FictionBook>

@@ -1,0 +1,29 @@
+[package]
+name = "docling-adobe"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Adobe format parsers for docling-rs (InDesign, Illustrator, XMP)"
+keywords = ["adobe", "indesign", "illustrator", "xmp"]
+categories = ["parsing", "parser-implementations"]
+[dependencies]
+# Logging
+log = "0.4"
+
+# Error handling
+thiserror.workspace = true
+anyhow.workspace = true
+
+# XML parsing
+quick-xml.workspace = true
+
+# ZIP handling
+zip.workspace = true
+
+# Serialization
+serde = { workspace = true, features = ["derive"] }
+serde_json.workspace = true
+
+[dev-dependencies]
+# Testing

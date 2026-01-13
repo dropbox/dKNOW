@@ -1,0 +1,112 @@
+name: duplicate_detection
+description: "Perceptual hashing for duplicate/near-duplicate media detection"
+
+inputs:
+  # Image formats
+  - jpg
+  - jpeg
+  - png
+  - gif
+  - webp
+  - ico
+  - bmp
+  - heic
+  - heif
+  - avif
+  - arw
+  - cr2
+  - dng
+  - nef
+  - raf
+  - dpx
+  # Can also accept keyframes from video/RAW extraction
+  - Keyframes
+  # Video containers
+  - mp4
+  - mov
+  - mkv
+  - webm
+  - avi
+  - flv
+  - m4v
+  - 3gp
+  - wmv
+  - ogv
+  - mts      # AVCHD camcorder
+  - m2ts     # Blu-ray AVCHD
+  - mxf      # Broadcast media exchange
+  - ts       # MPEG transport stream
+  - vob      # DVD video
+  - mpg      # MPEG-1/2
+  - mpeg     # MPEG-1/2
+  - rm       # RealMedia
+  - rmvb     # RealMedia Variable Bitrate
+  - asf      # Advanced Systems Format
+  - dv       # Digital Video
+  - gxf      # General eXchange Format (broadcast)
+  - f4v      # Flash Video MP4
+  # Audio formats
+  - wav
+  - mp3
+  - flac
+  - m4a
+  - ogg
+  - aac
+  - wma      # Windows Media Audio
+  - amr      # Adaptive Multi-Rate (mobile)
+  - ape      # Monkey's Audio (lossless)
+  - tta      # True Audio (lossless)
+
+outputs:
+  - DuplicateDetection
+
+config:
+  max_file_size_mb: 1024
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "5s"
+  memory_per_file_mb: 128
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1730415600  # 2024-11-01 00:00:00 UTC
+
+implementation:
+  crate: "video-audio-duplicate-detection"
+  function: "compute_perceptual_hash"
+
+# Algorithm-specific configuration
+duplicate_detection:
+  # Hash algorithm to use
+  # Options: Mean, Gradient, DCT, Block, VertGradient, DoubleGradient
+  # - Mean: Average Hash (aHash) - fast, simple
+  # - Gradient: Gradient Hash - robust to color/brightness changes (recommended)
+  # - DCT: DCT Hash (pHash) - most accurate but slower
+  # - Block: Block Hash - good for varied content
+  # - VertGradient: Vertical Gradient Hash (dHash) - fast
+  # - DoubleGradient: Double Gradient Hash - balanced
+  hash_algorithm: Gradient
+
+  # Hash size (NxN grid, e.g. 8 = 8x8 = 64-bit hash)
+  # Larger = more accurate but slower comparison
+  # Recommended: 8 (good balance), 16 (high accuracy), 4 (fast)
+  hash_size: 8
+
+  # Similarity threshold (0.0-1.0, where 1.0 = identical)
+  # Files with similarity >= threshold are considered duplicates
+  # Recommended: 0.90 (90% similar), 0.95 (95% similar), 0.85 (more lenient)
+  similarity_threshold: 0.90
+
+  # For video: number of keyframes to sample for hashing
+  # More keyframes = more accurate but slower
+  # Recommended: 10-20 frames
+  video_keyframes: 10
+
+  # For audio: spectrogram resolution (frequency bands)
+  # Higher = more accurate but slower
+  # Recommended: 32 (fast), 64 (balanced), 128 (accurate)
+  audio_resolution: 32

@@ -1,0 +1,55 @@
+From: Alice Johnson <alice@company.com>
+To: Bob Wilson <bob@company.com>
+Cc: team@company.com
+Subject: Project Documents
+Date: Fri, 5 Apr 2024 14:22:00 -0700
+Message-ID: <proj-docs-001@company.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="boundary-mixed-456"
+
+--boundary-mixed-456
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Bob,
+
+Please find attached the project documents for review:
+- Project plan PDF
+- Budget spreadsheet
+
+Let me know if you need any clarifications.
+
+Thanks,
+Alice
+
+--boundary-mixed-456
+Content-Type: application/pdf; name="project_plan.pdf"
+Content-Disposition: attachment; filename="project_plan.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQKJcfsj6IKNSAwIG9iago8PAovTGVuZ3RoIDYgMCBSCi9GaWx0ZXIgL0ZsYXRl
+RGVjb2RlCj4+CnN0cmVhbQp4nDPQM1Qo5ypUMFAw0DMwslAw1zNUMDQAYgNdBXO4CEiBKL8Y
+KABlAqZACgplCgA4agxPCmVuZHN0cmVhbQplbmRvYmoKNiAwIG9iagoxMDIKZW5kb2JqCjQg
+MCBvYmoKPDwKL1R5cGUgL1BhZ2UKL01lZGlhQm94IFswIDAgNjEyIDc5Ml0KL1BhcmVudCAz
+IDAgUgovQ29udGVudHMgNSAwIFIKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL1BhZ2Vz
+Ci9LaWRzIFsgNCAwIFIgXQovQ291bnQgMQo+PgplbmRvYmoKMSAwIG9iago8PAovVHlwZSAv
+Q2F0YWxvZwovUGFnZXMgMyAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL1Byb2R1Y2VyIChU
+ZXN0IFBERikKPj4KZW5kb2JqCnhyZWYKMCA3CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAw
+MDM0MyAwMCAwMDAwIG4gCjAwMDAwMDAzOTIgMDAwMDAgbiAKMDAwMDAwMDI4NyAwMDAwMCBu
+IAowMDAwMDAwMTg2IDAwMDAwIG4gCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDE2NiAw
+MDAwMCBuIAp0cmFpbGVyCjw8Ci9TaXplIDcKL1Jvb3QgMSAwIFIKL0luZm8gMiAwIFIKPj4K
+c3RhcnR4cmVmCjQzMAolJUVPRgo=
+
+--boundary-mixed-456
+Content-Type: application/vnd.ms-excel; name="budget.xls"
+Content-Disposition: attachment; filename="budget.xls"
+Content-Transfer-Encoding: base64
+
+0M8R4KGxGuEAAAAAAAAAAAAAAAAAAAAAPgADAP7/CQAGAAAAAAAAAAAAAAABAAAAIAAAAAAA
+AAAAAAEAAAEAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////
+////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////
+AAAAAAAA
+
+--boundary-mixed-456--

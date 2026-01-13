@@ -1,0 +1,17 @@
+BEGIN:VCARD
+VERSION:4.0
+FN:Dr. Michael Brown
+N:Brown;Michael;Dr.;;PhD
+ORG:Research Institute
+TITLE:Senior Researcher
+EMAIL;TYPE=work:m.brown@research.edu
+EMAIL;TYPE=home:michael.brown@gmail.com
+TEL;TYPE=work,voice:+1-555-7890
+TEL;TYPE=home,voice:+1-555-7891
+TEL;TYPE=cell:+1-555-7892
+ADR;TYPE=work:;;456 Science Blvd;Research Park;CA;94025;USA
+URL:https://michaelbrown-research.edu
+PHOTO;ENCODING=b;TYPE=JPEG:BASE64encodedphotodata
+BDAY:1975-03-15
+NOTE:Specializes in quantum computing research
+END:VCARD

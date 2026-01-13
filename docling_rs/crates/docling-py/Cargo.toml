@@ -1,0 +1,11 @@
+[package]
+name = "docling-py"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Python bridge for docling-rs, enabling hybrid Rust/Python document processing"
+keywords = ["python", "pyo3", "bindings", "bridge"]
+categories = ["api-bindings"]
+
+[dependencies]

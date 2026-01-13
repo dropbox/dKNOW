@@ -1,0 +1,727 @@
+{
+  "corpus": "eval/codesearchnet_sample/corpus",
+  "description": "CodeSearchNet validation (103 queries across 11 languages)",
+  "queries": [
+    {
+      "query": "/*\n(non-Javadoc)\n\n@see com.ibm.ws.logging.hpel.MainLogRepositoryBrowser#getSubProcesses(com.ibm.ws.logging.hpel.LogFileBrowser)",
+      "relevant": [
+        "corpus/java_0_aff29752.java"
+      ],
+      "description": "java: LogRepositoryBrowserImpl.getSubProcesses"
+    },
+    {
+      "query": "Returns a {@link Class} constant for a primitive type.\n\n@param typeDescription The primitive type to represent.\n@return A dynamically resolved primitive type constant.",
+      "relevant": [
+        "corpus/java_1_3850b92e.java"
+      ],
+      "description": "java: Dynamic.ofPrimitiveType"
+    },
+    {
+      "query": "Returns a new instance for the value (i.e., the class name) of this class\nparameter. The instance has the type of the restriction class of this class\nparameter.\n<p>\nIf the Class for the class name is ",
+      "relevant": [
+        "corpus/java_2_17b2b482.java"
+      ],
+      "description": "java: ObjectParameter.instantiateClass"
+    },
+    {
+      "query": "verify that the variable has data in the data array",
+      "relevant": [
+        "corpus/java_3_395bb4a8.java"
+      ],
+      "description": "java: StructureDS.varHasData"
+    },
+    {
+      "query": "Tries to rewrite a given path, and either returns the rewrite result or null if no\nrewrite alias matched the path.<p>\n\n@param path the path to match\n@return the rewrite result or null if no rewrite al",
+      "relevant": [
+        "corpus/java_4_d1de2050.java"
+      ],
+      "description": "java: CmsRewriteAliasMatcher.match"
+    },
+    {
+      "query": "In addition to the permission check, this will also check if the current user has at least the ELEMENT_AUTHOR role.<p>\n\n@see org.opencms.workplace.CmsDialog#checkResourcePermissions(org.opencms.securi",
+      "relevant": [
+        "corpus/java_5_e0ba662e.java"
+      ],
+      "description": "java: CmsEditorBase.checkResourcePermissions"
+    },
+    {
+      "query": "Function : diff_y -To compute differntiation along y axis.",
+      "relevant": [
+        "corpus/java_6_1ec3f183.java"
+      ],
+      "description": "java: NoiseReduction.diff_y"
+    },
+    {
+      "query": "Run one-class SVM.\n\n@param relation Data relation\n@return Outlier result.",
+      "relevant": [
+        "corpus/java_7_1cd43f2d.java"
+      ],
+      "description": "java: LibSVMOneClassOutlierDetection.run"
+    },
+    {
+      "query": "register all apsect components in aspect.xml",
+      "relevant": [
+        "corpus/java_8_6a58b822.java"
+      ],
+      "description": "java: DefaultContainerBuilder.registerAspectComponents"
+    },
+    {
+      "query": "Estimates the orientation of a region by using a sliding window across the different potential\nangles.\n\n@see OrientationSlidingWindow\n\n@param config Configuration for algorithm.  If null defaults will",
+      "relevant": [
+        "corpus/java_9_f19502d9.java"
+      ],
+      "description": "java: FactoryOrientationAlgs.sliding_ii"
+    },
+    {
+      "query": "Validates the given parameters.\n\n@author Gyula Szucs, <gyula@taotesting.com>\n@param array $params\n@throws common_exception_MissingParameter\n@throws common_exception_ValidationFailed",
+      "relevant": [
+        "corpus/php_10_864b755e.php"
+      ],
+      "description": "php: taoResultServer_actions_QtiRestResults.validateParams"
+    },
+    {
+      "query": "Checks if a given file exists.\n\n@param string $pathAndFileName\n@param Node $node\n@param CMS $application\n@param Deployment $deployment\n@param array $options\n@return bool",
+      "relevant": [
+        "corpus/php_11_b3166014.php"
+      ],
+      "description": "php: AbstractCliTask.fileExists"
+    },
+    {
+      "query": "Create SiteInfo\n\n@param   array       $data\n@return  SiteInfo",
+      "relevant": [
+        "corpus/php_12_cb19482b.php"
+      ],
+      "description": "php: MimicSiteInfosIterator.createSiteInfo"
+    },
+    {
+      "query": "(PHP 5 &gt;= 5.0.0)<br/>\nOffset to retrieve\n@link http://php.net/manual/en/arrayaccess.offsetget.php\n\n@param mixed $offset The offset to retrieve.\n@return mixed Can return all value types.\n@throws \\im",
+      "relevant": [
+        "corpus/php_13_09227c30.php"
+      ],
+      "description": "php: ComplexType.offsetGet"
+    },
+    {
+      "query": "Find source code references.\n\nMust find\n\nat Object..test (resources/assets/js/tests/example.spec.js:4:23\n\n(resources/assets/js/tests/example.spec.js:4\n\n/resources/assets/js/tests/example.php:449\n\n@par",
+      "relevant": [
+        "corpus/php_14_a2994797.php"
+      ],
+      "description": "php: Helpers.findSourceCodeReferences"
+    },
+    {
+      "query": "Format a response from available state data.\n\n@return array Formatted response.",
+      "relevant": [
+        "corpus/php_15_73f4e1d1.php"
+      ],
+      "description": "php: Requestor.formatResponse"
+    },
+    {
+      "query": "Closes the most recently opened label.",
+      "relevant": [
+        "corpus/php_16_384105e2.php"
+      ],
+      "description": "php: SimplePhpPageBuilder.acceptLabelEnd"
+    },
+    {
+      "query": "/* Checks whether the stored string ends with given string.\n\nIf given argument is not a string or a String instance, an\nInvalidArgumentException is thrown.\n\nReturns boolean.\n\nTODO: Examples",
+      "relevant": [
+        "corpus/php_17_8c85f3cd.php"
+      ],
+      "description": "php: SString.ends_with"
+    },
+    {
+      "query": "Determine if the given user can delete the given contact.\n\n@param User $user\n@param Contact $contact\n\n@return bool",
+      "relevant": [
+        "corpus/php_18_9a2cc09e.php"
+      ],
+      "description": "php: ContactPolicy.destroy"
+    },
+    {
+      "query": "Returns clean writable php array content.\n\n@return string",
+      "relevant": [
+        "corpus/php_19_0e463556.php"
+      ],
+      "description": "php: CmsModelWriter.getCleanContent"
+    },
+    {
+      "query": "// NewClient returns a client object which allows public access to\n// a Docker registry. enableV2 allows a client to prefer V1 registry\n// API connections.\n// TODO: accept a docker auth config",
+      "relevant": [
+        "corpus/go_20_f60d9d08.go"
+      ],
+      "description": "go: NewClient"
+    },
+    {
+      "query": "// GetAWSEventsRuleWithName retrieves all AWSEventsRule items from an AWS CloudFormation template\n// whose logical ID matches the provided name. Returns an error if not found.",
+      "relevant": [
+        "corpus/go_21_b5d0254e.go"
+      ],
+      "description": "go: GetAWSEventsRuleWithName"
+    },
+    {
+      "query": "// NewPaperContentPermanentlyDeleteType returns a new PaperContentPermanentlyDeleteType instance",
+      "relevant": [
+        "corpus/go_22_559fd147.go"
+      ],
+      "description": "go: NewPaperContentPermanentlyDeleteType"
+    },
+    {
+      "query": "// SetTextTransformation sets the TextTransformation field's value.",
+      "relevant": [
+        "corpus/go_23_07cb7b52.go"
+      ],
+      "description": "go: SetTextTransformation"
+    },
+    {
+      "query": "// GetGithubConnectors returns all configured Github connectors",
+      "relevant": [
+        "corpus/go_24_add0fb8b.go"
+      ],
+      "description": "go: GetGithubConnectors"
+    },
+    {
+      "query": "// SetVolumeAttachmentInfo sets the VolumeAttachmentInfo for the specified\n// volume attachment.",
+      "relevant": [
+        "corpus/go_25_380ed0db.go"
+      ],
+      "description": "go: SetVolumeAttachmentInfo"
+    },
+    {
+      "query": "// Extract bzip2",
+      "relevant": [
+        "corpus/go_26_87ac38ee.go"
+      ],
+      "description": "go: Extract"
+    },
+    {
+      "query": "// HasFrom returns a boolean if a field has been set.",
+      "relevant": [
+        "corpus/go_27_235357c8.go"
+      ],
+      "description": "go: HasFrom"
+    },
+    {
+      "query": "// Flush doesn't need to do anything, so we emit metrics\n// instead.",
+      "relevant": [
+        "corpus/go_28_84e143ad.go"
+      ],
+      "description": "go: Flush"
+    },
+    {
+      "query": "// ServerSSLProfiles returns a list of server-ssl profiles.",
+      "relevant": [
+        "corpus/go_29_85565a7c.go"
+      ],
+      "description": "go: ServerSSLProfiles"
+    },
+    {
+      "query": "Given an array of two numbers, return the second number as a percentage of the first number.",
+      "relevant": [
+        "corpus/ruby_30_289f271b.rb"
+      ],
+      "description": "ruby: QuickBase.Client.percent"
+    },
+    {
+      "query": "Rolling fillna\n replace all Float::NAN and NIL values with the preceeding or following value\n\n @param direction [Symbol] (:forward, :backward) whether replacement value is preceeding or following\n\n @e",
+      "relevant": [
+        "corpus/ruby_31_72039db5.rb"
+      ],
+      "description": "ruby: Daru.Vector.rolling_fillna!"
+    },
+    {
+      "query": "Performs the query against the database connection.\n\n This can be changed by subclasses to implement other types\n of queries, such as AQL queries.\n\n @param [Lambda] iterator To be called on each docum",
+      "relevant": [
+        "corpus/ruby_32_9dfb4581.rb"
+      ],
+      "description": "ruby: Guacamole.Query.perfom_query"
+    },
+    {
+      "query": "sets the File Transfer Protocol (FTP) service",
+      "relevant": [
+        "corpus/ruby_33_3444fd3b.rb"
+      ],
+      "description": "ruby: Nexpose.CredentialHelper.set_ftp_service"
+    },
+    {
+      "query": "If the column type is nominal return true.",
+      "relevant": [
+        "corpus/ruby_34_588add9a.rb"
+      ],
+      "description": "ruby: ToARFF.SQLiteDB.is_numeric"
+    },
+    {
+      "query": "Prints a warning if any hook has a number of processors larger than the\n global `concurrency` setting.",
+      "relevant": [
+        "corpus/ruby_35_4d61f704.rb"
+      ],
+      "description": "ruby: Overcommit.ConfigurationValidator.check_for_too_many_processors"
+    },
+    {
+      "query": "<tt>method_missing</tt> allows the class to accept dynamically named methods\n such as: SomeClass.to_xls_export(), SomeClass.create_csv_report()",
+      "relevant": [
+        "corpus/ruby_36_9814c1ed.rb"
+      ],
+      "description": "ruby: MakeExportable.ClassMethods.method_missing"
+    },
+    {
+      "query": "Given beginning and end dates it will return an array of Fiscal Month's Start date\n\n @param start_date [Date] the starting date\n @param end_date [Date] the ending date\n @return [Array] Array of start ",
+      "relevant": [
+        "corpus/ruby_37_0208ac50.rb"
+      ],
+      "description": "ruby: MerchCalendar.StitchFixFiscalYearCalendar.merch_months_in"
+    },
+    {
+      "query": "FIXME: Eventually split into day_match?, hour_match? and monthdays_match?o",
+      "relevant": [
+        "corpus/ruby_38_c59b111d.rb"
+      ],
+      "description": "ruby: RocketJob::Plugins::Rufus.CronLine.sub_match?"
+    },
+    {
+      "query": "Create or replace an existing Lab Account.\n\n @param resource_group_name [String] The name of the resource group.\n @param lab_account_name [String] The name of the lab Account.\n @param lab_account [Lab",
+      "relevant": [
+        "corpus/ruby_39_9b3f1a22.rb"
+      ],
+      "description": "ruby: Azure::Labservices::Mgmt::V2018_10_15.LabAccounts.create_or_update"
+    },
+    {
+      "query": "Check for presence of mutually exclusive keys in a dict.\n\n    Call: mutex_opts(dict,[[op1a,op1b],[op2a,op2b]...]",
+      "relevant": [
+        "corpus/python_40_61061876.py"
+      ],
+      "description": "python function"
+    },
+    {
+      "query": ":param use_empty_init: If set to True, object constructed without\n            arguments will be a global default object of the class.\n    :param global_default_factory: Function that constructs a glob",
+      "relevant": [
+        "corpus/python_41_13a1b17d.py"
+      ],
+      "description": "python function"
+    },
+    {
+      "query": "Persist the blog post data. If ``post_id`` is ``None`` or ``post_id``\n        is invalid, the post must be inserted into the storage. If ``post_id``\n        is a valid id, then the data must be update",
+      "relevant": [
+        "corpus/python_42_52aafab3.py"
+      ],
+      "description": "python function"
+    },
+    {
+      "query": "Groups by _oid, then applies the function to each group\n        and finally concatenates the results.\n\n        :param function: func that takes a DataFrame and returns a DataFrame",
+      "relevant": [
+        "corpus/python_43_2aad9734.py"
+      ],
+      "description": "python function"
+    },
+    {
+      "query": ":param scope: 'FRAME' or 'GLOBAL'",
+      "relevant": [
+        "corpus/python_44_11f80cdd.py"
+      ],
+      "description": "python function"
+    },
+    {
+      "query": "Run one item (a callback or an RPC wait_any).\n\n    Returns:\n      A time to sleep if something happened (may be 0);\n      None if all queues are empty.",
+      "relevant": [
+        "corpus/python_45_32264d13.py"
+      ],
+      "description": "python function"
+    },
+    {
+      "query": "Turn the switch on.",
+      "relevant": [
+        "corpus/python_46_1ff42338.py"
+      ],
+      "description": "python function"
+    },
+    {
+      "query": "Get the name of all zones",
+      "relevant": [
+        "corpus/python_47_087ffb47.py"
+      ],
+      "description": "python function"
+    },
+    {
+      "query": "Version of add_edge that only writes to the database once.",
+      "relevant": [
+        "corpus/python_48_88b00330.py"
+      ],
+      "description": "python function"
+    },
+    {
+      "query": "Called when one of the Move/Draw/Edit radio buttons is selected.",
+      "relevant": [
+        "corpus/python_49_ec29a9d9.py"
+      ],
+      "description": "python function"
+    },
+    {
+      "query": "Enforce constraints for Kerberos.\n@param {Object} attrs - Incoming attributes.",
+      "relevant": [
+        "corpus/javascript_50_5a1121aa.js"
+      ],
+      "description": "javascript function"
+    },
+    {
+      "query": "loads all undispatched events\n@param {Object || String} query    the query object [optional]\n@param {Function}         callback the function that will be called when this action has finished\n`function",
+      "relevant": [
+        "corpus/javascript_51_9a11c572.js"
+      ],
+      "description": "javascript function"
+    },
+    {
+      "query": "This is just an orion/widgets/input/Select with a label.",
+      "relevant": [
+        "corpus/javascript_52_d79bd9ed.js"
+      ],
+      "description": "javascript: SettingsSelect"
+    },
+    {
+      "query": "Creates LMD config: applies depends and extends\n\n@param {Object}   configFile\n@param {String[]} [flagsNames]\n@param {Object}   [extraOptions]\n@param {Object}   [usedConfigs]\n\n@return {Object}",
+      "relevant": [
+        "corpus/javascript_53_c613c896.js"
+      ],
+      "description": "javascript function"
+    },
+    {
+      "query": "Return unique array.\n\n@param {Array} arr\n@return {Array}\n@api private",
+      "relevant": [
+        "corpus/javascript_54_5e0517f4.js"
+      ],
+      "description": "javascript: unique"
+    },
+    {
+      "query": "Ladies and gents, a prime example of async callback hell The algorithm below, more sanely defined: /*\nfunction getRandWithin(max) {\nconst rawmax = 65536 - (65536 % max)\nvar v\nwhile ((v = getRand()) >=",
+      "relevant": [
+        "corpus/javascript_55_281d55e4.js"
+      ],
+      "description": "javascript: getRand"
+    },
+    {
+      "query": "Observer is a subscribable which watches a function and each time some variable in it changes, it is called again and its return value is passed to subscribers.",
+      "relevant": [
+        "corpus/javascript_56_4375d4f2.js"
+      ],
+      "description": "javascript: Observer"
+    },
+    {
+      "query": "Sets an index in an array-like object.<br/>\nIf provided with an updater function it will use it to update the current value,\notherwise sets the index to the specified value.\n@private\n@param {ArrayLike",
+      "relevant": [
+        "corpus/javascript_57_8ef18f5e.js"
+      ],
+      "description": "javascript: _setIndex"
+    },
+    {
+      "query": "binary search cumulative areas array",
+      "relevant": [
+        "corpus/javascript_58_8dec3126.js"
+      ],
+      "description": "javascript: binarySearchIndices"
+    },
+    {
+      "query": "Whenever a file is closed call this function.\nThe function will send the analytics Data.\nWe only log the standard filetypes and fileSize\n@param {String} filePath The path of the file to be registered",
+      "relevant": [
+        "corpus/javascript_59_d4d07402.js"
+      ],
+      "description": "javascript: fileClosed"
+    },
+    {
+      "query": "Helper to set the speed from start of playback.",
+      "relevant": [
+        "corpus/rust_60_1db037e8.rs"
+      ],
+      "description": "rust: with_speed"
+    },
+    {
+      "query": "Span marked with the correct expansion and transparency.",
+      "relevant": [
+        "corpus/rust_61_4bacae40.rs"
+      ],
+      "description": "rust: visited_dspan"
+    },
+    {
+      "query": "Returns true if and only if the given directory entry is believed to be equivalent to the given handle. If there was a problem querying the path for information to determine equality, then that error ",
+      "relevant": [
+        "corpus/rust_62_665c3d29.rs"
+      ],
+      "description": "rust: path_equals"
+    },
+    {
+      "query": "Borrows exclusive access to an element of the key storage area.  # Safety `index` is in bounds of 0..CAPACITY",
+      "relevant": [
+        "corpus/rust_63_bd825953.rs"
+      ],
+      "description": "rust: key_area_mut"
+    },
+    {
+      "query": "Rotates the vertex positions, normals, and tangents of the mesh by the given [`Quat`].  `Aabb` of entities with modified mesh are not updated automatically.",
+      "relevant": [
+        "corpus/rust_64_7e22d592.rs"
+      ],
+      "description": "rust: try_rotated_by"
+    },
+    {
+      "query": "Set the visibility state of the cursor.",
+      "relevant": [
+        "corpus/rust_65_994fbd75.rs"
+      ],
+      "description": "rust: set_cursor_visible"
+    },
+    {
+      "query": "Create a new slot by calculating it from the given timestamp and slot duration.",
+      "relevant": [
+        "corpus/rust_66_bb51b49b.rs"
+      ],
+      "description": "rust: from_timestamp"
+    },
+    {
+      "query": "Returns a [`Filesize`] representing the sign of `self`. - 0 if the file size is zero - 1 if the file size is positive - -1 if the file size is negative",
+      "relevant": [
+        "corpus/rust_67_765521cf.rs"
+      ],
+      "description": "rust: signum"
+    },
+    {
+      "query": "Returns whether the config contains the given dotted key name.  The key can have dotted indices to access nested items (e.g. `preprocessor.foo.bar` will check if that key is set in the config).  This ",
+      "relevant": [
+        "corpus/rust_68_7d3914cc.rs"
+      ],
+      "description": "rust: contains_key"
+    },
+    {
+      "query": "<https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw>",
+      "relevant": [
+        "corpus/rust_69_69aa8496.rs"
+      ],
+      "description": "rust: Draw"
+    },
+    {
+      "query": "An iterator for all elements stored in a B-tree, in ascending key order.",
+      "relevant": [
+        "corpus/swift_70_16d8b242.txt"
+      ],
+      "description": "swift: BTreeIterator"
+    },
+    {
+      "query": "Test that chrome.runtime.id is different for multiple extensions",
+      "relevant": [
+        "corpus/swift_71_f574177f.txt"
+      ],
+      "description": "swift: testChromeRuntimeIdMultipleExtensions"
+    },
+    {
+      "query": "A protocol for legitimate arguments to `Mirror`'s `descendant`\nmethod.\nDo not declare new conformances to this protocol; they will not\nwork as expected.",
+      "relevant": [
+        "corpus/swift_72_7ebc541c.txt"
+      ],
+      "description": "swift: MirrorPath"
+    },
+    {
+      "query": "An optional function that if non-null is run before benchmark samples\nare timed.",
+      "relevant": [
+        "corpus/swift_73_5fadcbb9.txt"
+      ],
+      "description": "swift: setUpFunction"
+    },
+    {
+      "query": "The least scalar in the vector.",
+      "relevant": [
+        "corpus/swift_74_45ec2b97.txt"
+      ],
+      "description": "swift: min"
+    },
+    {
+      "query": "Disable an extension (makes storage APIs non-functional)",
+      "relevant": [
+        "corpus/swift_75_4808f8a9.txt"
+      ],
+      "description": "swift: disableExtension"
+    },
+    {
+      "query": "A textual representation of the Unicode scalar.",
+      "relevant": [
+        "corpus/swift_76_d704bc4b.txt"
+      ],
+      "description": "swift: description"
+    },
+    {
+      "query": "A partially type-erased key path, from a concrete root type to any\nresulting value type.",
+      "relevant": [
+        "corpus/swift_77_38e99994.txt"
+      ],
+      "description": "swift: PartialKeyPath"
+    },
+    {
+      "query": "For alloc_box only, find escapes (captures) of the box prior to each access.\nAs a result, AccessInfo.hasEscaped will be non-nil for every access.\nThis is an optimistic forward dataflow that propagates",
+      "relevant": [
+        "corpus/swift_78_2b00feaf.txt"
+      ],
+      "description": "swift: findAllEscapesPriorToAccess"
+    },
+    {
+      "query": "Analyses the global initializer function and returns the `alloc_global` and `store`\ninstructions which initialize the global.\nReturns nil if `function` has any side-effects beside initializing the glo",
+      "relevant": [
+        "corpus/swift_79_8f9a9a74.txt"
+      ],
+      "description": "swift: getGlobalInitialization"
+    },
+    {
+      "query": "Converts an Ordinal into a 1-based hour representation within the range of 1 to 24.",
+      "relevant": [
+        "corpus/lean_80_602420b6.txt"
+      ],
+      "description": "lean: shiftTo1BasedHour"
+    },
+    {
+      "query": "Hour and minute without colon (e.g., \"+0130\") -/\n  | hourMinute\n  /-- Localized offset text in full form (e.g., \"GMT+08:00\") -/\n  | full\n  /-- Hour, minute, and second with colon (e.g., \"+01:30:15\") -",
+      "relevant": [
+        "corpus/lean_81_b8fe5de5.txt"
+      ],
+      "description": "lean: classify"
+    },
+    {
+      "query": "Create a new join point for `c`, and jump to it with the variables `rs`",
+      "relevant": [
+        "corpus/lean_82_7ffa78b4.txt"
+      ],
+      "description": "lean: mkSimpleJmp"
+    },
+    {
+      "query": "The size information stored in the tree.",
+      "relevant": [
+        "corpus/lean_83_a426389a.txt"
+      ],
+      "description": "lean: size"
+    },
+    {
+      "query": "The least upper bound of chains exists.\n  -/\n  has_csup {c : \u03b1 \u2192 Prop} (hc : chain c) : Exists (is_sup c)\n\nopen  CCPO\n\nvariable {\u03b1  : Sort u} [CCPO \u03b1]\n\nnoncomputable def CCPO.csup {c : \u03b1 \u2192 Prop} (hc :",
+      "relevant": [
+        "corpus/lean_84_238d8b3f.txt"
+      ],
+      "description": "lean: CompleteLattice"
+    },
+    {
+      "query": "Use the command state in the given snapshot to run a `CommandElabM`.",
+      "relevant": [
+        "corpus/lean_85_d4620240.txt"
+      ],
+      "description": "lean: runCommandElabM"
+    },
+    {
+      "query": "Applies syntactic alternative to alternative goal. -/\n  applyAltStx tacSnaps altStxs altStxIdx altStx alt := withRef altStx do\n    let { name := altName, info, mvarId := altMVarId } := alt\n    -- also",
+      "relevant": [
+        "corpus/lean_86_df799de2.txt"
+      ],
+      "description": "lean: getUserGeneralizingFVarIds"
+    },
+    {
+      "query": "Create a not gate in the input AIG. This uses the builtin cache to enable automated subterm sharing.",
+      "relevant": [
+        "corpus/lean_87_65e8ebe7.txt"
+      ],
+      "description": "lean: mkNotCached"
+    },
+    {
+      "query": "Pretty prints `f` and creates a new `Format` of its first line. Preserves tags.",
+      "relevant": [
+        "corpus/lean_88_e549aafe.txt"
+      ],
+      "description": "lean: pretty"
+    },
+    {
+      "query": "Computes the difference of the given tree maps.\nThis function always iterates through the smaller map.",
+      "relevant": [
+        "corpus/lean_89_7d0c23f3.txt"
+      ],
+      "description": "lean: diff"
+    },
+    {
+      "query": "Tool result content block (in user messages)\nSource: lines 179508-179509",
+      "relevant": [
+        "corpus/typescript_90_1776ad99.ts"
+      ],
+      "description": "typescript: ToolResultBlock"
+    },
+    {
+      "query": "Emits an event to all {@link EventTarget|targets} matching the given target.",
+      "relevant": [
+        "corpus/typescript_91_ffb0d74f.ts"
+      ],
+      "description": "typescript: emitTo"
+    },
+    {
+      "query": "Birdbox modes defined in CLI.",
+      "relevant": [
+        "corpus/typescript_92_394b7bec.ts"
+      ],
+      "description": "typescript: Mode"
+    },
+    {
+      "query": "Birdbox environments for cube.js passed for testcase.",
+      "relevant": [
+        "corpus/typescript_93_a26202e0.ts"
+      ],
+      "description": "typescript: Env"
+    },
+    {
+      "query": "Returns the path to the user's local data directory.\n#### Platform-specific\n- **Linux:** Resolves to `$XDG_DATA_HOME` or `$HOME/.local/share`.\n- **macOS:** Resolves to `$HOME/Library/Application Suppo",
+      "relevant": [
+        "corpus/typescript_94_3f37ce74.ts"
+      ],
+      "description": "typescript: localDataDir"
+    },
+    {
+      "query": "Function that should provides a logic for the response result\nprocessing. Used as a part of a main configuration object of the\nserver-core to provide extendability for this logic.",
+      "relevant": [
+        "corpus/typescript_95_8bd6a5cb.ts"
+      ],
+      "description": "typescript: ResponseResultFn"
+    },
+    {
+      "query": "The new window scale factor. */\n  scaleFactor: number\n  /** The new window size */\n  size: PhysicalSize\n}\n\n/**\nAttention type to request on a window.",
+      "relevant": [
+        "corpus/typescript_96_6c24fa15.ts"
+      ],
+      "description": "typescript: UserAttentionType"
+    },
+    {
+      "query": "Undo the effects of save_pos.",
+      "relevant": [
+        "corpus/cpp_97_f5ca1d3c.txt"
+      ],
+      "description": "cpp: reset"
+    },
+    {
+      "query": "Prove <tt>x = y implies g(x) = g(y)</tt>, and\n   disprove <tt>x = y implies g(g(x)) = g(y)</tt>.\n\n   This function demonstrates how to create uninterpreted types and\n   functions.",
+      "relevant": [
+        "corpus/cpp_98_b5fdd852.txt"
+      ],
+      "description": "cpp: prove_example1"
+    },
+    {
+      "query": "Give preference to cores that have large minimal values.\n/\n            sort_assumptions(asms);\n            unsigned last_index = 0;\n            unsigned index = 0;\n            SASSERT(index < asms.siz",
+      "relevant": [
+        "corpus/cpp_99_c6c33517.txt"
+      ],
+      "description": "cpp: max_resolve_rc2bin"
+    },
+    {
+      "query": "Return true if c1 subsumes c2\n\n           c1 subsumes c2 If\n           1) All literals of c1 are literals of c2\n           2) polynomial of c1 == polynomial of c2\n           3) c1.m_c <= c2.m_c",
+      "relevant": [
+        "corpus/cpp_100_44351432.txt"
+      ],
+      "description": "cpp: subsumes"
+    },
+    {
+      "query": "Segment based encoding.\n           The PB terms are partitoned into segments, such that each segment contains arguments with the same cofficient.\n           The segments are sorted, such that the segm",
+      "relevant": [
+        "corpus/cpp_101_f90ba4c3.txt"
+      ],
+      "description": "cpp: mk_seg_ge"
+    },
+    {
+      "query": "Immediately switch to a different input stream.",
+      "relevant": [
+        "corpus/cpp_102_178824eb.txt"
+      ],
+      "description": "cpp: yyrestart"
+    }
+  ]
+}

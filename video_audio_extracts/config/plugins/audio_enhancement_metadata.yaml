@@ -1,0 +1,39 @@
+name: audio_enhancement_metadata
+description: "Analyze audio for enhancement recommendations (SNR, dynamic range, spectral analysis)"
+
+inputs:
+  - wav
+  - Audio
+  - mp3
+  - flac
+  - m4a
+  - aac
+  - ogg
+  - opus
+  - wma
+  - amr
+  - ape
+  - tta
+
+outputs:
+  - AudioEnhancementMetadata
+
+config:
+  max_file_size_mb: 500
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "5s"
+  memory_per_file_mb: 50
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1730419200  # 2024-10-31 00:00:00 UTC
+
+# Implementation location
+implementation:
+  crate: "audio-enhancement-metadata"
+  function: "analyze"

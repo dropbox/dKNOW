@@ -1,0 +1,137 @@
+{
+  "page_number": 1,
+  "elements": [
+    {
+      "label": "title",
+      "text": "Optimized Table Tokenization for Table Structure Recognition",
+      "bbox": {
+        "l": 15.0,
+        "t": 10.0,
+        "r": 85.0,
+        "b": 15.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Maksym Lysak[0000−0002−3723−6960], Ahmed Nassar[0000−0002−9468−0822], Nikolaos Livathinos[0000−0001−8513−3491], Christoph Auer[0000−0001−5761−0422], and Peter Staar[0000−0002−8058−0823]",
+      "bbox": {
+        "l": 15.0,
+        "t": 17.0,
+        "r": 85.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "IBM Research {mly,ahn,nli,cau,taa}@zurich.ibm.com",
+      "bbox": {
+        "l": 15.0,
+        "t": 21.0,
+        "r": 85.0,
+        "b": 23.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Abstract. Extracting tables from documents is a crucial task in any document conversion pipeline. Recently, transformer-based models have demonstrated that table-structure can be recognized with impressive accuracy using Image-to-Markup-Sequence (Im2Seq) approaches. Taking only the image of a table, such models predict a sequence of tokens (e.g. in HTML, LaTeX) which represent the structure of the table. Since the token representation of the table structure has a significant impact on the accuracy and run-time performance of any Im2Seq model, we investigate in this paper how table-structure representation can be optimised. We propose a new, optimised table-structure language (OTSL) with a minimized vocabulary and specific rules. The benefits of OTSL are that it reduces the number of tokens to 5 (HTML needs 28+) and shortens the sequence length to half of HTML on average. Consequently, model accuracy improves significantly, inference time is halved compared to HTML-based models, and the predicted table structures are always syntactically correct. This in turn eliminates most post-processing needs. Popular table structure data-sets will be published in OTSL format to the community.",
+      "bbox": {
+        "l": 15.0,
+        "t": 25.0,
+        "r": 85.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Keywords: Table Structure Recognition · Data Representation · Transformers · Optimization.",
+      "bbox": {
+        "l": 15.0,
+        "t": 46.0,
+        "r": 85.0,
+        "b": 48.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "1 Introduction",
+      "bbox": {
+        "l": 15.0,
+        "t": 50.0,
+        "r": 85.0,
+        "b": 52.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Tables are ubiquitous in documents such as scientific papers, patents, reports, manuals, specification sheets or marketing material. They often encode highly valuable information and therefore need to be extracted with high accuracy. Unfortunately, tables appear in documents in various sizes, styling and structure, making it difficult to recover their correct structure with simple analytical methods. Therefore, accurate table extraction is achieved these days with machine-learning based methods.",
+      "bbox": {
+        "l": 15.0,
+        "t": 54.0,
+        "r": 85.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In modern document understanding systems [1,15], table extraction is typically a two-step process. Firstly, every table on a page is located with a bounding box, and secondly, their logical row and column structure is recognized. As of",
+      "bbox": {
+        "l": 15.0,
+        "t": 66.0,
+        "r": 85.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_header",
+      "text": "arXiv:2305.03393v1 [cs.CV] 5 May 2023",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 10.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

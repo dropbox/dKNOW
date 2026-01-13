@@ -1,0 +1,81 @@
+[package]
+name = "video-extract-cli"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "video_extract_cli"
+path = "src/lib.rs"
+
+[[bin]]
+name = "video-extract"
+path = "src/main.rs"
+
+[dependencies]
+# Core library
+video-extract-core = { path = "../video-extract-core" }
+video-audio-decoder = { path = "../video-decoder" }
+
+# Plugins
+transcription = { path = "../transcription" }
+video-audio-extractor = { path = "../audio-extractor" }
+video-audio-keyframe = { path = "../keyframe-extractor" }
+
+# ONNX Plugins
+video-audio-object-detection = { path = "../object-detection" }
+video-audio-face-detection = { path = "../face-detection" }
+video-audio-ocr = { path = "../ocr" }
+video-audio-embeddings = { path = "../embeddings" }
+video-audio-diarization = { path = "../diarization" }
+video-audio-voice-activity-detection = { path = "../voice-activity-detection" }
+video-audio-acoustic-scene-classification = { path = "../acoustic-scene-classification" }
+video-audio-profanity-detection = { path = "../profanity-detection" }
+video-audio-duplicate-detection = { path = "../duplicate-detection" }
+video-audio-scene = { path = "../scene-detector" }
+
+# Tier 1 Plugins (N=72-77, integrated N=80)
+video-audio-subtitle = { path = "../subtitle-extraction" }
+video-audio-classification = { path = "../audio-classification" }
+video-audio-smart-thumbnail = { path = "../smart-thumbnail" }
+video-audio-action-recognition = { path = "../action-recognition" }
+video-audio-motion-tracking = { path = "../motion-tracking" }
+
+# Tier 2 Plugins (N=92-96)
+video-audio-pose-estimation = { path = "../pose-estimation" }
+video-audio-image-quality = { path = "../image-quality-assessment" }
+video-audio-emotion-detection = { path = "../emotion-detection" }
+audio-enhancement-metadata = { path = "../audio-enhancement-metadata" }
+shot-classification = { path = "../shot-classification" }
+
+# Tier 3 Plugins (N=170-173, N=175)
+video-audio-content-moderation = { path = "../content-moderation" }
+video-audio-logo-detection = { path = "../logo-detection" }
+video-audio-music-source-separation = { path = "../music-source-separation" }
+video-audio-depth-estimation = { path = "../depth-estimation" }
+video-audio-caption-generation = { path = "../caption-generation" }
+
+# Tier 4 Plugins (N=168, N=179)
+video-audio-metadata = { path = "../metadata-extraction" }
+format-conversion = { path = "../format-conversion" }
+
+# CLI framework
+clap = { version = "4.5", features = ["derive", "cargo"] }
+
+# Async runtime
+tokio = { version = "1.42", features = ["full"] }
+
+# Serialization
+serde_json = "1.0"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+
+# Error handling
+anyhow = "1.0"
+thiserror = "2.0"
+
+# Image processing
+
+# Parallelism
+rayon = "1.10"

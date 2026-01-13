@@ -1,0 +1,10 @@
+/--
+Pretty prints `f` and creates a new `Format` of its first line. Preserves tags.
+-/
+def pretty (f : Format) (width : Nat) : Format :=
+  let m : M Unit := Std.Format.prettyM f width
+  match m.run {} with
+  | .ok _ s | .error _ s =>
+    s.tags.foldl (init := s.line) fun acc (t, line') => line'.append (acc.tag t)
+
+end OneLine

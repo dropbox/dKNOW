@@ -1,0 +1,83 @@
+{
+  "corpus": "crates",
+  "description": "Code corpus evaluation: 15 queries against sg's own codebase",
+  "include_extensions": ["rs"],
+  "include_globs": ["sg-*/src/*.rs", "sg-*/tests/*.rs", "sg/src/*.rs"],
+  "queries": [
+    {
+      "query": "k-means clustering buckets centroids",
+      "relevant": ["crates/sg-core/src/index.rs"],
+      "description": "Should find the k-means clustering implementation"
+    },
+    {
+      "query": "SQLite database documents embeddings store",
+      "relevant": ["crates/sg-core/src/storage.rs"],
+      "description": "Should find the SQLite storage module"
+    },
+    {
+      "query": "text chunking overlap paragraphs split",
+      "relevant": ["crates/sg-core/src/chunker.rs"],
+      "description": "Should find the text chunker"
+    },
+    {
+      "query": "XTR transformer BERT tokenizer embed",
+      "relevant": ["crates/sg-core/src/embedder.rs"],
+      "description": "Should find the embedder"
+    },
+    {
+      "query": "MaxSim similarity scoring dot product",
+      "relevant": ["crates/sg-core/src/embedder.rs"],
+      "description": "Should find MaxSim implementation"
+    },
+    {
+      "query": "file watcher notify debounce events",
+      "relevant": ["crates/sg-daemon/src/watcher.rs"],
+      "description": "Should find file watching code"
+    },
+    {
+      "query": "Unix socket IPC server accept connections",
+      "relevant": ["crates/sg-daemon/src/server.rs"],
+      "description": "Should find the daemon server"
+    },
+    {
+      "query": "project root detection git Cargo.toml",
+      "relevant": ["crates/sg-daemon/src/project.rs"],
+      "description": "Should find project detection"
+    },
+    {
+      "query": "JSON RPC protocol request response serialize",
+      "relevant": ["crates/sg-daemon/src/protocol.rs"],
+      "description": "Should find the IPC protocol"
+    },
+    {
+      "query": "hybrid search keyword regex BM25 fusion",
+      "relevant": ["crates/sg-core/src/search.rs"],
+      "description": "Should find hybrid search implementation"
+    },
+    {
+      "query": "Bloom filter hash deduplication content",
+      "relevant": ["crates/sg-core/src/dedup.rs"],
+      "description": "Should find the deduplication module"
+    },
+    {
+      "query": "ProductQuantizer codebook encode decode subquantizers",
+      "relevant": ["crates/sg-core/src/quantizer.rs"],
+      "description": "Should find the PQ quantizer struct"
+    },
+    {
+      "query": "HNSW graph nearest neighbor search layer",
+      "relevant": ["crates/sg-core/src/hnsw.rs"],
+      "description": "Should find the HNSW index"
+    },
+    {
+      "query": "UTF-8 encoding detection chardet transcode",
+      "relevant": ["crates/sg-core/src/encoding.rs"],
+      "description": "Should find encoding detection"
+    },
+    {
+      "query": "LRU cache query embedding memoization",
+      "relevant": ["crates/sg-core/src/query_cache.rs"],
+      "description": "Should find query cache"
+    }
+  ]
+}

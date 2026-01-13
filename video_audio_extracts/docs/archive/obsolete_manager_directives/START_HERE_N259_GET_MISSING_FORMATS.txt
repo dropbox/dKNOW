@@ -1,0 +1,84 @@
+========================================
+🔴 URGENT: N=259
+GET MISSING FORMATS NOW
+========================================
+
+USER DIRECTIVE (emphatic):
+"get those missing formats. Find them! We need them!"
+
+CRITICAL GAP:
+========================================
+
+You have:
+✅ 209 WEBM files
+✅ 2,510 JPG files
+✅ 60 PNG files
+✅ 56 WAV files
+✅ 20 FLAC files
+
+You DON'T have (0 files):
+❌ MP4 - MOST COMMON video format
+❌ MP3 - MOST COMMON audio format
+❌ MOV - Apple/professional video
+❌ MKV - Popular container
+❌ M4A - Apple audio
+❌ HEIC - iPhone photos (billions exist!)
+
+This is backwards. You have niche formats but not mainstream!
+
+========================================
+N=259-265: DOWNLOAD MISSING FORMATS
+========================================
+
+N=259: MP4 (25 files, 5 features × 5 files)
+- transcription, keyframes, object-detection, face-detection, scene-detection
+- Size filter: 10MB-95MB
+- Categories: "Short films", "Video clips", "Interviews"
+
+N=260: MP3 (20 files, 4 features × 5 files)
+- transcription, audio-classification, audio-embeddings, diarization
+- Size filter: 5MB-95MB
+- Categories: "Speeches", "Music", "Audio files in MP3 format"
+
+N=261: MOV (15 files, 3 features × 5 files)
+- keyframes, transcription, face-detection
+- Size filter: 10MB-95MB
+- Categories: "QuickTime videos", "Screen recordings"
+
+N=262: MKV (10 files, 2 features × 5 files)
+- keyframes, transcription
+- Size filter: 10MB-95MB
+- Categories: "Matroska videos"
+
+N=263: M4A (10 files, 2 features × 5 files)
+- transcription, audio-classification
+- Size filter: 5MB-95MB
+- Categories: "Audio files in M4A format"
+
+N=264: HEIC (10-20 files)
+- face-detection, object-detection, vision-embeddings
+- Use iPhone photos if Wikimedia sparse
+- Acceptable to use local iPhone photos (mark source)
+
+N=265: Cleanup cycle + verify
+
+COMMANDS:
+========================================
+
+python3 tools/download_wikimedia_tests.py transcription mp4 5 "Short films" 10000000 95000000
+python3 tools/download_wikimedia_tests.py keyframes mp4 5 "Video clips" 10000000 95000000
+python3 tools/download_wikimedia_tests.py transcription mp3 5 "Speeches" 5000000 95000000
+python3 tools/download_wikimedia_tests.py keyframes mov 5 "QuickTime videos" 10000000 95000000
+python3 tools/download_wikimedia_tests.py transcription mkv 5 "Matroska videos" 10000000 95000000
+
+PRIORITY:
+- MP4 first (most critical)
+- MP3 second
+- MOV, MKV, M4A, HEIC next
+
+DO NOT expand JPG/WEBM until missing formats covered.
+
+USER WANTS THESE FORMATS.
+GET THEM NOW.
+
+========================================

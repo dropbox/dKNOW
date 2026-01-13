@@ -1,0 +1,4 @@
+# OCR Model files (too large for git, download at build time)
+*.onnx
+*.pth
+*.txt

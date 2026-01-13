@@ -1,0 +1,425 @@
+[
+  {
+    "label": "page_footer",
+    "self_ref": "#/texts/0",
+    "parent": {
+      "$ref": "#/furniture"
+    },
+    "content_layer": "furniture",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 304.0196533203125,
+          "t": 96.00018310546875,
+          "r": 307.30731201171875,
+          "b": 89.3651123046875,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          1
+        ]
+      }
+    ],
+    "orig": "1",
+    "text": "1"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/1",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 134.21273803710938,
+          "t": 667.2486572265625,
+          "r": 315.33349609375,
+          "b": 654.4661865234375,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          23
+        ]
+      }
+    ],
+    "orig": "JavaScript Code Example",
+    "text": "JavaScript Code Example",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 133.95729064941406,
+          "t": 642.3280639648438,
+          "r": 477.1190490722656,
+          "b": 501.98406982421875,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          893
+        ]
+      }
+    ],
+    "orig": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir- mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam volup- tua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ip- sum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/3",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 134.0469512939453,
+          "t": 498.86590576171875,
+          "r": 476.94970703125,
+          "b": 454.0445861816406,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          298
+        ]
+      }
+    ],
+    "orig": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,",
+    "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,"
+  },
+  {
+    "label": "code",
+    "self_ref": "#/texts/4",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "children": [
+      {
+        "$ref": "#/texts/5"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 134.73214721679688,
+          "t": 426.3446960449219,
+          "r": 261.4844665527344,
+          "b": 385.2096252441406,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          68
+        ]
+      }
+    ],
+    "orig": "function add(a , b) { return a + b; } console . log (add (3 , 5) ) ;",
+    "text": "function add(a, b) { return a + b; } console.log(add(3, 5));"
+  },
+  {
+    "label": "caption",
+    "self_ref": "#/texts/5",
+    "parent": {
+      "$ref": "#/texts/4"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 223.4837646484375,
+          "t": 442.18853759765625,
+          "r": 387.73712158203125,
+          "b": 433.1225891113281,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          36
+        ]
+      }
+    ],
+    "orig": "Listing 1: Simple JavaScript Program",
+    "text": "Listing 1: Simple JavaScript Program"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/6",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 133.95729064941406,
+          "t": 372.93902587890625,
+          "r": 477.1190490722656,
+          "b": 232.5953369140625,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          887
+        ]
+      }
+    ],
+    "orig": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/7",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 134.0469512939453,
+          "t": 229.4771728515625,
+          "r": 476.94970703125,
+          "b": 184.65478515625,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          298
+        ]
+      }
+    ],
+    "orig": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,",
+    "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,"
+  },
+  {
+    "label": "page_footer",
+    "self_ref": "#/texts/8",
+    "parent": {
+      "$ref": "#/furniture"
+    },
+    "content_layer": "furniture",
+    "prov": [
+      {
+        "page_no": 2,
+        "bbox": {
+          "l": 304.0196533203125,
+          "t": 145.88909912109375,
+          "r": 307.30731201171875,
+          "b": 139.2540283203125,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          1
+        ]
+      }
+    ],
+    "orig": "1",
+    "text": "1"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/9",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 2,
+        "bbox": {
+          "l": 134.3131561279297,
+          "t": 717.0812377929688,
+          "r": 191.48277282714844,
+          "b": 707.0532836914062,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          7
+        ]
+      }
+    ],
+    "orig": "Formula",
+    "text": "Formula",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/10",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 2,
+        "bbox": {
+          "l": 133.95729064941406,
+          "t": 692.2180786132812,
+          "r": 477.1190490722656,
+          "b": 551.8740844726562,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          893
+        ]
+      }
+    ],
+    "orig": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir- mod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam volup- tua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ip- sum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/11",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 2,
+        "bbox": {
+          "l": 133.95729064941406,
+          "t": 548.7559204101562,
+          "r": 476.8102722167969,
+          "b": 491.98846435546875,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          369
+        ]
+      }
+    ],
+    "orig": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.",
+    "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt."
+  },
+  {
+    "label": "formula",
+    "self_ref": "#/texts/12",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 2,
+        "bbox": {
+          "l": 280.9525146484375,
+          "t": 478.85546875,
+          "r": 330.172607421875,
+          "b": 469.2939147949219,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          12
+        ]
+      }
+    ],
+    "orig": "a 2 + 8 = 12",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/13",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 2,
+        "bbox": {
+          "l": 133.957275390625,
+          "t": 459.09185791015625,
+          "r": 477.1190185546875,
+          "b": 318.7481689453125,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          887
+        ]
+      }
+    ],
+    "orig": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/14",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 2,
+        "bbox": {
+          "l": 133.957275390625,
+          "t": 315.6300048828125,
+          "r": 476.81024169921875,
+          "b": 247.01727294921875,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          415
+        ]
+      }
+    ],
+    "orig": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+    "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/15",
+    "parent": {
+      "$ref": "#/body"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 2,
+        "bbox": {
+          "l": 133.957275390625,
+          "t": 243.8990478515625,
+          "r": 476.81024169921875,
+          "b": 175.2862548828125,
+          "coord_origin": "BOTTOMLEFT"
+        },
+        "charspan": [
+          0,
+          415
+        ]
+      }
+    ],
+    "orig": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+    "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+  }
+]

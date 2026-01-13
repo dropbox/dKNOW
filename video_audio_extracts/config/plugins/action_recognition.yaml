@@ -1,0 +1,16 @@
+name: action_recognition
+description: Classify video activity level using motion analysis
+inputs: [Keyframes]
+outputs: [ActionRecognition]
+config:
+  max_file_size_mb: 1000
+  requires_gpu: false
+  experimental: false
+performance:
+  avg_processing_time_per_gb: "20s"
+  memory_per_file_mb: 100
+  supports_streaming: false
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 0

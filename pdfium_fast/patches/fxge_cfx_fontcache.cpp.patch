@@ -1,0 +1,57 @@
+--- pdfium/core/fxge/cfx_fontcache.cpp	2025-11-20 14:44:25
++++ core/fxge/cfx_fontcache.cpp	2025-12-03 16:39:54
+@@ -17,6 +17,32 @@
+ RetainPtr<CFX_GlyphCache> CFX_FontCache::GetGlyphCache(const CFX_Font* font) {
+   RetainPtr<CFX_Face> face = font->GetFace();
+   const bool bExternal = !face;
++
++  // LOCK-FREE FAST PATH: After pre-warming, all fonts are cached
++  // C++ §26.2.5.1 guarantees map::find() is thread-safe for concurrent reads
++  if (read_only_mode_.load(std::memory_order_acquire)) {
++    auto& map = bExternal ? ext_glyph_cache_map_ : glyph_cache_map_;
++    auto it = map.find(face.Get());
++    if (it != map.end() && it->second) {
++      return pdfium::WrapRetain(it->second.Get());
++    }
++    return nullptr;  // Cache miss in read-only mode
++  }
++
++  // PARALLEL RENDERING: Check cache with shared lock (concurrent reads)
++  {
++    std::shared_lock<std::shared_timed_mutex> read_lock(font_cache_mutex_);
++    auto& map = bExternal ? ext_glyph_cache_map_ : glyph_cache_map_;
++    auto it = map.find(face.Get());
++    if (it != map.end() && it->second) {
++      return pdfium::WrapRetain(it->second.Get());
++    }
++  }  // Release shared lock
++
++  // Cache miss: Upgrade to unique lock for modification
++  std::unique_lock<std::shared_timed_mutex> write_lock(font_cache_mutex_);
++
++  // Double-check: Another thread may have added it while we were waiting
+   auto& map = bExternal ? ext_glyph_cache_map_ : glyph_cache_map_;
+   auto it = map.find(face.Get());
+   if (it != map.end() && it->second) {
+@@ -33,3 +59,21 @@
+   return GetGlyphCache(font)->GetDeviceCache(font);
+ }
+ #endif
++
++void CFX_FontCache::SetGlyphCachesReadOnlyMode(bool enabled) {
++  // PARALLEL TEXT EXTRACTION: Enable read-only mode for all glyph caches
++  // After pre-warming, all glyphs are cached → lock-free reads
++  std::unique_lock<std::shared_timed_mutex> lock(font_cache_mutex_);
++
++  for (const auto& entry : glyph_cache_map_) {
++    if (entry.second) {
++      entry.second->SetReadOnlyMode(enabled);
++    }
++  }
++
++  for (const auto& entry : ext_glyph_cache_map_) {
++    if (entry.second) {
++      entry.second->SetReadOnlyMode(enabled);
++    }
++  }
++}

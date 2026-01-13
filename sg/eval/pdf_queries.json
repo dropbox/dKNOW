@@ -1,0 +1,47 @@
+{
+  "corpus": "/Users/ayates/video_audio_extracts/test_pdf_corpus/all/",
+  "description": "PDF evaluation corpus using docling extraction",
+  "include_extensions": [".pdf"],
+  "queries": [
+    {
+      "query": "multi-head attention mechanism scaled dot-product",
+      "relevant": ["attention_is_all_you_need.pdf"],
+      "description": "Transformer architecture paper"
+    },
+    {
+      "query": "bidirectional encoder representations pre-training",
+      "relevant": ["bert.pdf"],
+      "description": "BERT pre-training paper"
+    },
+    {
+      "query": "few-shot learning language model prompting",
+      "relevant": ["gpt3.pdf"],
+      "description": "GPT-3 in-context learning paper"
+    },
+    {
+      "query": "residual learning deep network skip connections",
+      "relevant": ["resnet.pdf"],
+      "description": "ResNet deep residual networks paper"
+    },
+    {
+      "query": "real-time object detection bounding box regression",
+      "relevant": ["yolo.pdf"],
+      "description": "YOLO object detection paper"
+    },
+    {
+      "query": "positional encoding sinusoidal encoder decoder",
+      "relevant": ["attention_is_all_you_need.pdf"],
+      "description": "Transformer positional encoding"
+    },
+    {
+      "query": "masked language model next sentence prediction",
+      "relevant": ["bert.pdf"],
+      "description": "BERT training objectives"
+    },
+    {
+      "query": "identity mapping shortcut degradation problem",
+      "relevant": ["resnet.pdf"],
+      "description": "ResNet identity shortcuts"
+    }
+  ]
+}

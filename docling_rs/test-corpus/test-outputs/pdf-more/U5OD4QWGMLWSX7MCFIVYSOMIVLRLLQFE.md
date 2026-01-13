@@ -1,0 +1,27 @@
+<!-- image -->
+
+March 2, 2018
+
+Dr. Adena Williams Loston President Saint Philip's College 1801 Martin Luther King Drive San Antonio, TX 78203
+
+Dear Dr. Loston:
+
+Please accept my heartfelt appreciation for your willingness to host one of the Principles "Roadshows" for SACSCOC. All 26 of them were grand successes. The attendance ranged from 16 to about 85 and were representative of almost 550 of our member institutions.
+
+We recognize that change can be challenging and felt that it would be best to go to the members and answer the questions they had about the transition from the 2012 Principles to the 2018 Principles. Your kind hospitality made that possible.
+
+I look forward to continuing to work with you and hope to see you at the SACSCOC Annual Meeting in New Orleans in December.
+
+<!-- image -->
+
+Sincerely,
+
+Belles Whelon
+
+Belle S. Wheelan, Ph.D. President
+
+BSW:Ip
+
+Cc:
+
+Dr. Maria Hinojosa Dr. Patricia L. Donat Dr. Charles A. Taylor

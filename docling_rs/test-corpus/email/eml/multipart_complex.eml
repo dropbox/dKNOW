@@ -1,0 +1,77 @@
+From: "Project Manager" <pm@company.com>
+To: team-a@company.com, team-b@company.com
+Cc: stakeholders@company.com
+Bcc: management@company.com
+Subject: =?UTF-8?B?UHJvamVjdCBVcGRhdGUg8J+agA==?=
+Date: Tue, 10 May 2024 16:45:00 -0700
+Message-ID: <update-2024-05@company.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="boundary-outer-789"
+
+--boundary-outer-789
+Content-Type: multipart/alternative; boundary="boundary-inner-abc"
+
+--boundary-inner-abc
+Content-Type: text/plain; charset="UTF-8"
+
+Project Update 🚀
+
+Status: ON TRACK
+
+Key Milestones:
+- Phase 1: Complete ✓
+- Phase 2: In Progress (75%)
+- Phase 3: Starting next week
+
+Action Items:
+1. Review Phase 2 deliverables
+2. Prepare Phase 3 kickoff
+3. Update stakeholder presentation
+
+Questions? Reply to this email.
+
+--boundary-inner-abc
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Project Update</title></head>
+<body style="font-family: Arial, sans-serif;">
+<h1>Project Update 🚀</h1>
+<p><strong>Status:</strong> <span style="color: green;">ON TRACK</span></p>
+<h2>Key Milestones:</h2>
+<table border="1" cellpadding="5">
+<tr><th>Phase</th><th>Status</th></tr>
+<tr><td>Phase 1</td><td>✓ Complete</td></tr>
+<tr><td>Phase 2</td><td>In Progress (75%)</td></tr>
+<tr><td>Phase 3</td><td>Starting next week</td></tr>
+</table>
+<h2>Action Items:</h2>
+<ol>
+<li>Review Phase 2 deliverables</li>
+<li>Prepare Phase 3 kickoff</li>
+<li>Update stakeholder presentation</li>
+</ol>
+<p>Questions? Reply to this email.</p>
+</body>
+</html>
+--boundary-inner-abc--
+
+--boundary-outer-789
+Content-Type: image/png; name="chart.png"
+Content-Disposition: attachment; filename="progress_chart.png"
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==
+
+--boundary-outer-789
+Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document; name="report.docx"
+Content-Disposition: attachment; filename="monthly_report.docx"
+Content-Transfer-Encoding: base64
+
+UEsDBBQABgAIAAAAIQBi7p1oXgEAAJAEAAATAAgCW0NvbnRlbnRfVHlwZXNdLnhtbCCiBAIo
+oAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+//8=
+
+--boundary-outer-789--

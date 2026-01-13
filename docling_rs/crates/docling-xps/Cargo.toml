@@ -1,0 +1,26 @@
+[package]
+name = "docling-xps"
+version.workspace = true
+edition.workspace = true
+authors = ["Docling Team"]
+description = "XPS (XML Paper Specification) parser for docling"
+keywords = ["xps", "xml-paper", "document", "microsoft"]
+categories = ["parsing", "parser-implementations"]
+license.workspace = true
+repository.workspace = true
+[dependencies]
+# Core dependencies
+anyhow = "1.0"
+thiserror = { workspace = true }
+
+# ZIP handling
+zip.workspace = true
+
+# XML parsing
+quick-xml = "0.31"
+
+# Logging
+log = "0.4"
+
+[dev-dependencies]
+env_logger = "0.11"

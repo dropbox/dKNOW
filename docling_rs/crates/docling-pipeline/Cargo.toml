@@ -1,0 +1,11 @@
+[package]
+name = "docling-pipeline"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Document processing pipeline orchestration for docling-rs"
+keywords = ["pipeline", "orchestration", "workflow"]
+categories = ["data-structures"]
+
+[dependencies]

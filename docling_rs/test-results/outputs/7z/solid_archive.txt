@@ -1,0 +1,19 @@
+# Archive Contents: solid_archive.7z
+
+## Format Information
+
+Format: 7Z, Archive size: 262.55 KB
+
+## Archive Summary
+
+6 files (2 DAT files, 1 BIN file, 1 HTML file, 1 MD file, 1 TXT file), 262283 bytes total [Compression ratio: 1.0x]
+
+## Contents
+
+- binary.bin (262144 bytes)
+- data/file1.dat (12 bytes)
+- data/file2.dat (12 bytes)
+- notes.md (42 bytes)
+- page.html (45 bytes)
+- test.txt (28 bytes)
+

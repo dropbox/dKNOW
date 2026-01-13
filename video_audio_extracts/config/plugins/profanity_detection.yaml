@@ -1,0 +1,27 @@
+name: profanity_detection
+description: "Detects profane language in transcribed text with configurable severity levels"
+
+inputs:
+  - Transcription
+
+outputs:
+  - ProfanityDetection
+
+config:
+  max_file_size_mb: 512
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "1s"
+  memory_per_file_mb: 10
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1730498400  # 2024-11-02 00:00:00 UTC
+
+implementation:
+  crate: "video-audio-profanity-detection"
+  function: "detect_profanity"

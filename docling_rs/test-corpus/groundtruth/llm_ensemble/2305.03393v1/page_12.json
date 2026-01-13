@@ -1,0 +1,151 @@
+{
+  "page_number": 12,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "12 M. Lysak, et al.",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "6 Conclusion",
+      "bbox": {
+        "l": 0.0,
+        "t": 10.0,
+        "r": 100.0,
+        "b": 15.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "We demonstrated that representing tables in HTML for the task of table structure recognition with Im2Seq models is ill-suited and has serious limitations. Furthermore, we presented in this paper an Optimized Table Structure Language (OTSL) which, when compared to commonly used general purpose languages, has several key benefits.",
+      "bbox": {
+        "l": 0.0,
+        "t": 16.0,
+        "r": 100.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "First and foremost, given the same network configuration, inference time for a table-structure prediction is about 2 times faster compared to the conventional HTML approach. This is primarily owed to the shorter sequence length of the OTSL representation. Additional performance benefits can be obtained with HPO (hyper parameter optimization). As we demonstrate in our experiments, models trained on OTSL can be significantly smaller, e.g. by reducing the number of encoder and decoder layers, while preserving comparatively good prediction quality. This can further improve inference performance, yielding 5-6 times faster inference speed in OTSL with prediction quality comparable to models trained on HTML (see Table 1).",
+      "bbox": {
+        "l": 0.0,
+        "t": 26.0,
+        "r": 100.0,
+        "b": 40.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Secondly, OTSL has more inherent structure and a significantly restricted vocabulary size. This allows autoregressive models to perform better in the TED metric, but especially with regards to prediction accuracy of the table-cell bounding boxes (see Table 2). As shown in Figure 5, we observe that the OTSL drastically reduces the drift for table cell bounding boxes at high row count and in sparse tables. This leads to more accurate predictions and a significant reduction in post-processing complexity, which is an undesired necessity in HTML-based Im2Seq models. Significant novelty lies in OTSL syntactical rules, which are few, simple and always backwards looking. Each new token can be validated only by analyzing the sequence of previous tokens, without requiring the entire sequence to detect mistakes. This in return allows to perform structural error detection and correction on-the-fly during sequence generation.",
+      "bbox": {
+        "l": 0.0,
+        "t": 41.0,
+        "r": 100.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "References",
+      "bbox": {
+        "l": 0.0,
+        "t": 61.0,
+        "r": 100.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "1. Auer, C., Dolfi, M., Carvalho, A., Ramis, C.B., Staar, P.W.J.: Delivering document conversion as a cloud service with high throughput and responsiveness. CoRR abs/2206.00785 (2022). https://doi.org/10.48550/arXiv.2206.00785, https://doi.org/10.48550/arXiv.2206.00785",
+      "bbox": {
+        "l": 0.0,
+        "t": 66.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "2. Chen, B., Peng, D., Zhang, J., Ren, Y., Jin, L.: Complex table structure recognition in the wild using transformer and identity matrix-based augmentation. In: Porwal, U., Fornés, A., Shafait, F. (eds.) Frontiers in Handwriting Recognition. pp. 545–561. Springer International Publishing, Cham (2022)",
+      "bbox": {
+        "l": 0.0,
+        "t": 71.0,
+        "r": 100.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "3. Chi, Z., Huang, H., Xu, H.D., Yu, H., Yin, W., Mao, X.L.: Complicated table structure recognition. arXiv preprint arXiv:1908.04729 (2019)",
+      "bbox": {
+        "l": 0.0,
+        "t": 76.0,
+        "r": 100.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "4. Deng, Y., Rosenberg, D., Mann, G.: Challenges in end-to-end neural scientific table recognition. In: 2019 International Conference on Document Analysis and Recognition (ICDAR). pp. 894–901. IEEE (2019)",
+      "bbox": {
+        "l": 0.0,
+        "t": 81.0,
+        "r": 100.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "page_number": 17,
+  "elements": [
+    {
+      "label": "section_header",
+      "text": "3.2 Data Analysis",
+      "bbox": {
+        "l": 10.0,
+        "t": 5.0,
+        "r": 90.0,
+        "b": 10.0
+      },
+      "confidence": 0.9299999999999999
+    },
+    {
+      "label": "paragraph",
+      "text": "The data analysis process involves several steps. Initially, data is cleaned and preprocessed to remove any inconsistencies or errors. This is followed by exploratory data analysis (EDA) to understand the underlying patterns and relationships within the data.",
+      "bbox": {
+        "l": 10.0,
+        "t": 12.0,
+        "r": 90.0,
+        "b": 20.0
+      },
+      "confidence": 0.915
+    },
+    {
+      "label": "paragraph",
+      "text": "Advanced statistical techniques and machine learning algorithms are then applied to build predictive models. These models are evaluated using various metrics to ensure their accuracy and reliability.",
+      "bbox": {
+        "l": 10.0,
+        "t": 22.0,
+        "r": 90.0,
+        "b": 30.0
+      },
+      "confidence": 0.915
+    },
+    {
+      "label": "section_header",
+      "text": "3.3 Results",
+      "bbox": {
+        "l": 10.0,
+        "t": 32.0,
+        "r": 90.0,
+        "b": 37.0
+      },
+      "confidence": 0.9299999999999999
+    },
+    {
+      "label": "paragraph",
+      "text": "The results of the analysis indicate a strong correlation between the variables studied. The predictive models developed were able to achieve high accuracy, demonstrating the effectiveness of the chosen methodologies.",
+      "bbox": {
+        "l": 10.0,
+        "t": 39.0,
+        "r": 90.0,
+        "b": 47.0
+      },
+      "confidence": 0.915
+    },
+    {
+      "label": "paragraph",
+      "text": "Further research is recommended to explore additional variables and refine the models for even better performance.",
+      "bbox": {
+        "l": 10.0,
+        "t": 49.0,
+        "r": 90.0,
+        "b": 55.0
+      },
+      "confidence": 0.915
+    },
+    {
+      "label": "page_footer",
+      "text": "Page 17",
+      "bbox": {
+        "l": 45.0,
+        "t": 95.0,
+        "r": 55.0,
+        "b": 100.0
+      },
+      "confidence": 0.935
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

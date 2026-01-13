@@ -1,0 +1,533 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Headers:",
+    "text": "Headers:",
+    "level": 0
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "& < > \" '",
+    "text": "& < > \" '",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Text: 00:16.000 ----> 00:18.000 & < > \" '",
+    "text": "Text: 00:16.000 ----> 00:18.000 & < > \" '"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/3",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Lists",
+    "text": "Lists",
+    "level": 0
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/0",
+    "children": [
+      {
+        "$ref": "#/texts/4"
+      }
+    ],
+    "content_layer": "body",
+    "name": "ordered list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/4",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "& < > \" '",
+    "text": "& < > \" '",
+    "enumerated": true,
+    "marker": "1."
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/1",
+    "children": [
+      {
+        "$ref": "#/texts/5"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/5",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "& < > \" '",
+    "text": "& < > \" '",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/6",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Inline code",
+    "text": "Inline code",
+    "level": 0
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/7",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "`& < > \" ' `",
+    "text": "`& < > \" ' `"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/8",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Code block",
+    "text": "Code block",
+    "level": 0
+  },
+  {
+    "label": "code",
+    "self_ref": "#/texts/9",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "& < > \" '",
+    "text": "& < > \" '"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/10",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Table",
+    "text": "Table",
+    "level": 0
+  },
+  {
+    "label": "table",
+    "self_ref": "#/tables/11",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 2.0,
+          "b": 6.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "data": {
+      "num_rows": 6,
+      "num_cols": 2,
+      "grid": [
+        [
+          {
+            "text": "Key",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "Example",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "start_col_offset_idx": 1
+          }
+        ],
+        [
+          {
+            "text": "Ampersand",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "&",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "start_col_offset_idx": 1
+          }
+        ],
+        [
+          {
+            "text": "Less-than",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "<",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "start_col_offset_idx": 1
+          }
+        ],
+        [
+          {
+            "text": "Greater-than",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": ">",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "start_col_offset_idx": 1
+          }
+        ],
+        [
+          {
+            "text": "Quotes",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "\"",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "start_col_offset_idx": 1
+          }
+        ],
+        [
+          {
+            "text": "Apostrophes",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "'",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "start_col_offset_idx": 1
+          }
+        ]
+      ],
+      "table_cells": [
+        {
+          "text": "Key",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Example",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Ampersand",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "&",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Less-than",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "<",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Greater-than",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": ">",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Quotes",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "\"",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Apostrophes",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "'",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 5,
+          "start_col_offset_idx": 1
+        }
+      ]
+    }
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/12",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Raw HTML",
+    "text": "Raw HTML",
+    "level": 0
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/13",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "& < > \" '/div>",
+    "text": "& < > \" '/div>"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/14",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Link",
+    "text": "Link",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/15",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "& < > \" '",
+    "text": "& < > \" '",
+    "hyperlink": "https://en.wikipedia.org/wiki/Albert_Einstein"
+  }
+]

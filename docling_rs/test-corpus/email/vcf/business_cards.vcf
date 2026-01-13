@@ -1,0 +1,62 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Michael Chen
+N:Chen;Michael;;;
+EMAIL;TYPE=work:michael.chen@enterprise.com
+TEL;TYPE=work,voice:+1-408-555-3001
+TEL;TYPE=cell:+1-408-555-3002
+ORG:Enterprise Software Solutions
+TITLE:Chief Executive Officer
+ADR;TYPE=work:Suite 1000;;555 Technology Drive;San Jose;CA;95110;USA
+URL:https://www.enterprise-solutions.com
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Jennifer Lopez
+N:Lopez;Jennifer;Maria;;
+EMAIL;TYPE=work:j.lopez@legal-firm.com
+TEL;TYPE=work:+1-212-555-4001
+TEL;TYPE=cell:+1-212-555-4002
+ORG:Lopez & Partners LLP
+TITLE:Senior Partner, Corporate Law
+ADR;TYPE=work:Floor 42;;100 Wall Street;New York;NY;10005;USA
+URL:https://www.lopezpartners.com
+NOTE:Specializes in mergers and acquisitions
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Robert Kim
+N:Kim;Robert;James;;
+EMAIL;TYPE=work:robert.kim@investment.com
+TEL;TYPE=work,voice:+1-415-555-5001
+TEL;TYPE=cell:+1-415-555-5002
+ORG:Global Investment Partners
+TITLE:Portfolio Manager
+ADR;TYPE=work:Suite 3000;;1 Market Street;San Francisco;CA;94105;USA
+URL:https://www.global-investment.com
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Dr. Lisa Patel
+N:Patel;Lisa;;Dr.;MD
+EMAIL;TYPE=work:dr.patel@medical-center.org
+TEL;TYPE=work:+1-310-555-6001
+TEL;TYPE=cell:+1-310-555-6002
+ORG:Medical Center of Excellence
+TITLE:Chief of Surgery
+ADR;TYPE=work:Building 2;;500 Medical Plaza;Los Angeles;CA;90024;USA
+NOTE:Board certified in general surgery. Appointments: Monday-Friday 9am-5pm
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Thomas Wright
+N:Wright;Thomas;Alexander;;
+EMAIL;TYPE=work:thomas.wright@architecture.com
+TEL;TYPE=work:+1-206-555-7001
+TEL;TYPE=cell:+1-206-555-7002
+ORG:Wright & Associates Architecture
+TITLE:Principal Architect
+ADR;TYPE=work:Suite 500;;200 Design Avenue;Seattle;WA;98101;USA
+URL:https://www.wright-architecture.com
+NOTE:LEED certified. Specializes in sustainable commercial buildings
+END:VCARD

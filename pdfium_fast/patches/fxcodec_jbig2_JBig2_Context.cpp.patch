@@ -1,0 +1,20 @@
+--- pdfium/core/fxcodec/jbig2/JBig2_Context.cpp	2025-11-20 14:44:25
++++ core/fxcodec/jbig2/JBig2_Context.cpp	2025-12-03 21:15:42
+@@ -1113,7 +1113,6 @@
+     return JBig2_Result::kFailure;
+   }
+ 
+-  std::unique_ptr<CJBig2_Image> page_subimage;
+   auto pGRRD = std::make_unique<CJBig2_GRRDProc>();
+   pGRRD->GRW = ri.width;
+   pGRRD->GRH = ri.height;
+@@ -1146,8 +1145,7 @@
+ 
+     pGRRD->GRREFERENCE = pSeg->image_.get();
+   } else {
+-    page_subimage = page_->SubImage(ri.x, ri.y, ri.width, ri.height);
+-    pGRRD->GRREFERENCE = page_subimage.get();
++    pGRRD->GRREFERENCE = page_.get();
+   }
+   pGRRD->GRREFERENCEDX = 0;
+   pGRRD->GRREFERENCEDY = 0;

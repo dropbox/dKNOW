@@ -1,0 +1,242 @@
+[
+  {
+    "label": "list",
+    "self_ref": "#/groups/0",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      }
+    ],
+    "content_layer": "body",
+    "name": ""
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/0",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Hello world1",
+    "text": "Hello world1",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/1",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Hello2",
+    "text": "Hello2",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Some text before",
+    "text": "Some text before"
+  },
+  {
+    "label": "table",
+    "self_ref": "#/tables/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "data": {
+      "num_rows": 3,
+      "num_cols": 3,
+      "grid": [
+        [
+          {
+            "text": "Tab1"
+          },
+          {
+            "text": "Tab2"
+          },
+          {
+            "text": "Tab3"
+          }
+        ],
+        [
+          {
+            "text": "A"
+          },
+          {
+            "text": "B"
+          },
+          {
+            "text": "C"
+          }
+        ],
+        [
+          {
+            "text": "D"
+          },
+          {
+            "text": "E"
+          },
+          {
+            "text": "F"
+          }
+        ]
+      ],
+      "table_cells": [
+        {
+          "text": "Tab1",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Tab2",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Tab3",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "A",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "B",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "C",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "D",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "E",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "F",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 2
+        }
+      ]
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/10",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Some text after",
+    "text": "Some text after"
+  }
+]

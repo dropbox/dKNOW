@@ -1,0 +1,193 @@
+{
+  "page_number": 11,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "Optimized Table Tokenization for Table Structure Recognition",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "11",
+      "bbox": {
+        "l": 95.0,
+        "t": 95.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Fig. 6.",
+      "bbox": {
+        "l": 0.0,
+        "t": 10.0,
+        "r": 10.0,
+        "b": 15.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Visualization of predicted structure and detected bounding boxes on a complex table with many rows. The OTSL model (B) captured repeating pattern of horizontally merged cells from the GT (A), unlike the HTML model (C). The HTML model also didn't complete the HTML sequence correctly and displayed a lot more of drift and overlap of bounding boxes. \"PMC5046406_003_01.png\" PubTabNet.",
+      "bbox": {
+        "l": 10.0,
+        "t": 10.0,
+        "r": 100.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Diagram showing predicted structure and bounding boxes for GT, OTSL, and HTML models.",
+      "bbox": {
+        "l": 0.0,
+        "t": 20.0,
+        "r": 100.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "A",
+      "bbox": {
+        "l": 10.0,
+        "t": 25.0,
+        "r": 15.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "B",
+      "bbox": {
+        "l": 10.0,
+        "t": 50.0,
+        "r": 15.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "C",
+      "bbox": {
+        "l": 10.0,
+        "t": 75.0,
+        "r": 15.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Repeating pattern of horizontally merged cells",
+      "bbox": {
+        "l": 20.0,
+        "t": 45.0,
+        "r": 50.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Repeating pattern is well represented in predictions",
+      "bbox": {
+        "l": 20.0,
+        "t": 70.0,
+        "r": 60.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Bounding box drifting at the end",
+      "bbox": {
+        "l": 20.0,
+        "t": 85.0,
+        "r": 50.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Horizontally merged cells are not present",
+      "bbox": {
+        "l": 20.0,
+        "t": 90.0,
+        "r": 60.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Incorrect end of HTML sequence",
+      "bbox": {
+        "l": 20.0,
+        "t": 95.0,
+        "r": 60.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

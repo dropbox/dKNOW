@@ -1,0 +1,12 @@
+{
+  "pdf_name": "multi_page.pdf",
+  "num_pages": 5,
+  "model_costs": {
+    "gpt-4o": {
+      "input_tokens": 7975,
+      "output_tokens": 5215,
+      "cost_usd": 0.0720875
+    }
+  },
+  "total_cost_usd": 0.0720875
+}

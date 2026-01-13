@@ -1,0 +1,25 @@
+From: Marketing <marketing@example.com>
+To: customer@example.com
+Subject: Test Email - HTML Content
+Date: Wed, 9 Nov 2025 09:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="html-boundary"
+
+--html-boundary
+Content-Type: text/plain; charset=utf-8
+
+Welcome to our service!
+
+Visit our website for more information.
+
+--html-boundary
+Content-Type: text/html; charset=utf-8
+
+<html>
+<body>
+<h1>Welcome to our service!</h1>
+<p>Visit our <a href="https://example.com">website</a> for more information.</p>
+</body>
+</html>
+
+--html-boundary--

@@ -1,0 +1,41 @@
+name: audio_embeddings
+description: "Extract semantic embeddings from audio using CLAP (Contrastive Language-Audio Pretraining)"
+
+inputs:
+  - Audio  # Can take output of audio extraction plugin
+  # Audio formats
+  - wav
+  - mp3
+  - flac
+  - m4a
+  - aac
+  - ogg
+  - opus
+  - wma      # Windows Media Audio
+  - amr      # Adaptive Multi-Rate (mobile)
+  - ape      # Monkey's Audio (lossless)
+  - tta      # True Audio (lossless)
+
+outputs:
+  - AudioEmbeddings
+
+config:
+  max_file_size_mb: 100
+  requires_gpu: false  # CPU inference works for audio processing
+  experimental: false
+  models:
+    - clap_htsat_fused  # 512-dim embeddings (default)
+
+performance:
+  avg_processing_time_per_gb: "60s"
+  memory_per_file_mb: 400
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1727740800  # 2024-10-01 00:00:00 UTC
+
+implementation:
+  crate: "embeddings"
+  function: "extract_audio_embeddings"

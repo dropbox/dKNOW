@@ -1,0 +1,82 @@
+[
+  {
+    "path": "test_files_wikimedia/jpg/ocr/01_1885,_Charles_Ruelens_aan_Pieter_G\u00e9nard,_Tg_lhbr_291670_07_01.jpg",
+    "size": 714031,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/1885%2C_Charles_Ruelens_aan_Pieter_G%C3%A9nard%2C_Tg_lhbr_291670_07_01.jpg",
+    "title": "File:1885, Charles Ruelens aan Pieter G\u00e9nard, Tg lhbr 291670 07 01.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/ocr/02_1937-07-08-Arrigo-Mosca-da-Milano-a.jpg",
+    "size": 739923,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/1937-07-08-Arrigo-Mosca-da-Milano-a.jpg",
+    "title": "File:1937-07-08-Arrigo-Mosca-da-Milano-a.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/ocr/03_1937-07-08-Arrigo-Mosca-da-Milano-b.jpg",
+    "size": 753506,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/1937-07-08-Arrigo-Mosca-da-Milano-b.jpg",
+    "title": "File:1937-07-08-Arrigo-Mosca-da-Milano-b.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/ocr/04_1A1182101XXX063_(15287437932).jpg",
+    "size": 359243,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/1A1182101XXX063_%2815287437932%29.jpg",
+    "title": "File:1A1182101XXX063 (15287437932).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/ocr/05_Akahi_on_a_Hawaii_postal_stationery_1881.jpg",
+    "size": 266498,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Akahi_on_a_Hawaii_postal_stationery_1881.jpg",
+    "title": "File:Akahi on a Hawaii postal stationery 1881.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/ocr/06_Dopisnica_Trgocentra.jpg",
+    "size": 436165,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Dopisnica_Trgocentra.jpg",
+    "title": "File:Dopisnica Trgocentra.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/ocr/07_Feldpost_von_Hans_1937-10-17_Karl1.jpg",
+    "size": 9533792,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Feldpost_von_Hans_1937-10-17_Karl1.jpg",
+    "title": "File:Feldpost von Hans 1937-10-17 Karl1.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/ocr/08_Israel_Post_16-12-1963.jpg",
+    "size": 103837,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Israel_Post_16-12-1963.jpg",
+    "title": "File:Israel Post 16-12-1963.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/ocr/09_Israeli_postal_card_50s.jpg",
+    "size": 208215,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Israeli_postal_card_50s.jpg",
+    "title": "File:Israeli postal card 50s.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/ocr/10_Karta-42-12-28.jpg",
+    "size": 702603,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Karta-42-12-28.jpg",
+    "title": "File:Karta-42-12-28.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  }
+]

@@ -1,0 +1,38 @@
+========================================
+WORKER N=341: NICHE FORMATS
+QUICK WINS - WE ALREADY HAVE SOME!
+========================================
+
+USER: "We want all of them. do it"
+
+MANAGER FOUND: We ALREADY have some niche formats!
+
+ALREADY IN test_media_generated/:
+- ✅ test_transport_stream_10s.ts (TS format)
+- ✅ test_avchd_10s.mts (MTS format)
+- ✅ test_bluray_10s.m2ts (M2TS format)
+- ✅ test_mpeg2_10s.mpg (MPG format)
+
+QUICK WIN (N=341):
+Just copy these to test_files_wikimedia!
+
+```bash
+cp test_media_generated/test_transport_stream_10s.ts test_files_wikimedia/ts/keyframes/
+cp test_media_generated/test_avchd_10s.mts test_files_wikimedia/mts/keyframes/
+cp test_media_generated/test_bluray_10s.m2ts test_files_wikimedia/m2ts/keyframes/
+cp test_media_generated/test_mpeg2_10s.mpg test_files_wikimedia/mpg/keyframes/
+```
+
+That's 4 formats IMMEDIATELY!
+
+THEN (N=342+):
+Follow ACQUIRE_ALL_NICHE_FORMATS_PLAN.md for remaining 16 formats:
+- MXF, VOB, ASF, RM, DV
+- WMA, AMR, APE, ALAC, TTA
+- HEIF, AVIF, SVG
+- ProRes, AC3, Camera RAW
+
+USER WANTS ALL 20 NICHE FORMATS.
+Start with quick wins at N=341.
+
+========================================

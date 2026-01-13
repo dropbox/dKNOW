@@ -1,0 +1,43 @@
+name: object_detection
+description: "Detect objects in images using YOLOv8 ONNX models"
+
+inputs:
+  - jpg
+  - jpeg
+  - png
+  - bmp
+  - webp
+  - heic
+  - heif
+  - ico
+  - avif
+  - arw
+  - cr2
+  - dng
+  - nef
+  - raf
+  - dpx
+  - Keyframes
+
+outputs:
+  - ObjectDetection
+
+config:
+  max_file_size_mb: 100
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "60s"
+  memory_per_file_mb: 512
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1730107800  # 2024-10-28 00:00:00 UTC
+
+# Implementation location
+implementation:
+  crate: "video-audio-object-detection"
+  function: "detect"

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Unit Eval Template - Master for M0</title>
+<meta name="generator" content="Docling HTML Serializer"/>
+<style>
+    html {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #333;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2em;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.3em;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 1em 0;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    figure {
+        margin: 1.5em 0;
+        text-align: center;
+    }
+    figcaption {
+        color: #666;
+        font-style: italic;
+        margin-top: 0.5em;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    pre {
+        background-color: #f6f8fa;
+        border-radius: 3px;
+        padding: 1em;
+        overflow: auto;
+    }
+    code {
+        font-family: monospace;
+        background-color: #f6f8fa;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+    }
+    pre code {
+        background-color: transparent;
+        padding: 0;
+    }
+    .formula {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background-color: #f9f9f9;
+    }
+    .formula-not-decoded {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background: repeating-linear-gradient(
+            45deg,
+            #f0f0f0,
+            #f0f0f0 10px,
+            #f9f9f9 10px,
+            #f9f9f9 20px
+        );
+    }
+    .page-break {
+        page-break-after: always;
+        border-top: 1px dashed #ccc;
+        margin: 2em 0;
+    }
+    .key-value-region {
+        background-color: #f9f9f9;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .key-value-region dt {
+        font-weight: bold;
+    }
+    .key-value-region dd {
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+    }
+    .form-container {
+        border: 1px solid #ddd;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .form-item {
+        margin-bottom: 0.5em;
+    }
+    .image-classification {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 0.5em;
+    }
+</style>
+</head>
+<body>
+<div class='page'>
+<table><tbody><tr><th>Tag</th><th>Live Pass Rate</th><th>Live Volume</th><th>Unit Test Pass</th></tr><tr><td>intent.find_and_retrieve</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>intent.summarize</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>intent.q_and_a</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>behavior.topic_subject</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>behavior.timeframe</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>behavior.modification_or_activity</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>behavior.file_type_or_format</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>behavior.mentions</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>behavior.collaboration</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>behavior.complex_or_compound_queries</td><td>xx%</td><td>yyy</td><td>zz%</td></tr></tbody></table>
+<table><tbody><tr><th>find_and_retrieve</th><th>behavior.topic_subject</th><th>xx%</th><th>yyy</th><th>zz%</th></tr><tr><td>find_and_retrieve</td><td>behavior.timeframe</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>find_and_retrieve</td><td>behavior.modification_or_activity</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>find_and_retrieve</td><td>behavior.file_type_or_format</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>find_and_retrieve</td><td>behavior.mentions</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>find_and_retrieve</td><td>behavior.collaboration</td><td>xx%</td><td>yyy</td><td>zz%</td></tr><tr><td>find_and_retrieve</td><td>behavior.complex_or_compound_queries</td><td>xx%</td><td>yyy</td><td>zz%</td></tr></tbody></table>
+<table><tbody><tr><th>Metric</th><th>Description</th></tr><tr><td>Live Pass Rate</td><td>What fraction of triggers on live user traffic for this tag result in a successful Output for this tag. numerator: triggers with &gt;=2 &quot;pass with warnings.&quot; denominator: total triggers for this tag</td></tr><tr><td>Live Volume</td><td>Total number of triggers in a time period for this tag on live user traffic</td></tr><tr><td>Unit Test Pass</td><td>Total units tests targeting this tag that pass (to Output validation)</td></tr></tbody></table>
+<table><tbody><tr><th colspan="9">Triggering</th><th colspan="5">Input Validation</th><th colspan="5">Plan Validation</th></tr><tr><td>Triggering: Target Tag Detected</td><td>Target Tag Version</td><td>Triggering: Human Explanation</td><td>Triggering: LLMJ: Explanation</td><td>Triggering: Expected: Tags</td><td>Triggering: Actual: Tags</td><td>Triggering: Actual Tags, Versions</td><td>Triggering: Human: Explanation</td><td>Triggering: LLMJ: Explanation</td><td>Input: Expected Rating</td><td>Input: LLMJ Rating</td><td>Input: Human Rating</td><td>Input: LLMJ Explanation</td><td>Input: Human Explanation</td><td>Plan: Expected Rating</td><td>Plan: LLMJ Rating</td><td>Plan: Human Rating</td><td>Plan: LLMJ Explanation</td><td>Plan: Human Explanation</td></tr></tbody></table>
+<table><tbody><tr><th colspan="6">Follow-Up Validation</th></tr><tr><td>FollowUp: Expected Rating</td><td>Success/Failure</td><td>FollowUp: LLMJ Rating</td><td>FollowUp: Human Rating</td><td>FollowUp: LLMJ Explanation</td><td>FollowUp: Human Explanation</td></tr></tbody></table>
+<table><tbody><tr><th>Eval ID</th><th>Target Tag</th><th>Query</th><th>Input Files (Dropbox or S3)</th><th>Input Method (Stack, Search, Attachment)</th><th>Context</th><th>Author</th><th>Notes</th><th>Timestamp Run</th><th>Run ID</th><th>Model Tag</th><th>Execution Details</th><th>Input JSON</th><th>Actual Output JSON</th><th>Triggering: Target Tag Detected</th><th>Target Tag Version</th><th>Triggering: Human Explanation</th><th>Triggering: LLMJ: Explanation</th><th>Triggering: Expected: Tags</th><th>Triggering: Actual: Tags</th><th>Triggering: Actual Tags, Versions</th><th>Triggering: Human: Explanation</th><th>Triggering: LLMJ: Explanation</th><th>Input: Expected Rating</th><th>Input: LLMJ Rating</th><th>Input: Human Rating</th><th>Input: LLMJ Explanation</th><th>Input: Human Explanation</th><th>Plan: Expected Rating</th><th>Plan: LLMJ Rating</th><th>Plan: Human Rating</th><th>Plan: LLMJ Explanation</th><th>Plan: Human Explanation</th><th>Output: LLMJ Rating</th><th>Output: Human Rating</th><th>Output: LLMJ Explanation</th><th>Output: Human Explanation</th><th>FollowUp: Expected Rating</th><th>Success/Failure</th><th>FollowUp: LLMJ Rating</th><th>FollowUp: Human Rating</th><th>FollowUp: LLMJ Explanation</th><th>FollowUp: Human Explanation</th></tr></tbody></table>
+<table><tbody><tr><th>Field Name</th><th>Description</th></tr><tr><td>Eval ID</td><td>unique name of the eval. Pattern: target_tag.ID</td></tr><tr><td>Target Tag</td><td>the tag function targeted for testing. overall success is based on this tag</td></tr><tr><td>Query</td><td>the user input query</td></tr><tr><td>Input Files (Dropbox or S3)</td><td>Any files provided as input</td></tr><tr><td>Input Method (Stack, Search, Attachment)</td><td>How to present the files or data to the AI</td></tr><tr><td>Context</td><td>the representation of memory</td></tr><tr><td>Author</td><td>where this eval came from or who wrote it</td></tr><tr><td>Notes</td><td>Any free-form notes about this eval</td></tr><tr><td>Input JSON</td><td>the representation of the inputs as generated by Braintrust via Context Engine</td></tr><tr><td>Actual Output JSON</td><td>The representation of the complete output and all available information and context as generated by Braintrust via Context as actually generated by running the eval. This output is sufficient to generate all metrics for this eval.</td></tr><tr><td>Timestamp Run</td><td>The timestamp of when the eval was run</td></tr><tr><td>Run ID</td><td>The unique Run ID</td></tr><tr><td>Model Tag</td><td>A string name of the model used to run the eval, e.g., gpt-o3</td></tr><tr><td>Execution Details</td><td>any additional information necessary to know how the execution happened</td></tr><tr><td>Triggering: Target Tag Detected</td><td>Was the target tag triggered? (Pass)</td></tr><tr><td>Triggering: Human Explanation</td><td>Human reviewer explanation of why this should trigger target tag</td></tr><tr><td>Triggering: LLMJ: Explanation</td><td>LLM generated explanation of why this should trigger for the target tag using the Tag rubric</td></tr><tr><td>Triggering: Expected: Tags</td><td>list of other expected tags to be triggered</td></tr><tr><td>Triggering: Actual: Tags</td><td>list of tags actually triggered</td></tr><tr><td>Triggering: Actual: Tags, Versions</td><td>list of tags with their versions that were triggered</td></tr><tr><td>Triggering: Human: Explanation</td><td>None</td></tr><tr><td>Triggering: LLMJ: Explanation</td><td>None</td></tr><tr><td>Input: Expected Rating</td><td>None</td></tr><tr><td>Input: LLMJ Rating</td><td>None</td></tr><tr><td>Input: Human Rating</td><td>None</td></tr><tr><td>Input: LLMJ Explanation</td><td>None</td></tr><tr><td>Input: Human Explanation</td><td>None</td></tr><tr><td>Workflow: Expected Rating</td><td>None</td></tr><tr><td>Workflow: LLMJ Rating</td><td>None</td></tr><tr><td>Workflow: Human Rating</td><td>None</td></tr><tr><td>Workflow: LLMJ Explanation</td><td>None</td></tr><tr><td>Workflow: Human Explanation</td><td>None</td></tr><tr><td>Expected Rating</td><td>None</td></tr><tr><td>LLMJ Rating</td><td>None</td></tr><tr><td>Human Rating</td><td>None</td></tr><tr><td>LLMJ Explanation</td><td>None</td></tr><tr><td>Human Explanation</td><td>None</td></tr><tr><td>Expected Rating</td><td>None</td></tr><tr><td>LLMJ Rating</td><td>None</td></tr><tr><td>Human Rating</td><td>None</td></tr><tr><td>LLMJ Explanation</td><td>None</td></tr><tr><td>Human Explanation</td><td>None</td></tr></tbody></table>
+<table><tbody><tr><th>Tag ID</th><th>Trigger Volume</th><th>Trigger Accuracy %</th><th>Pass Input %</th><th>Pass Plan %</th><th>Pass Output %</th><th>Pass Follow Up %</th><th>LLM Summarized Trends</th></tr></tbody></table>
+</div>
+</body>
+</html>

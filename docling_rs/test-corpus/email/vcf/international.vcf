@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Sch\u00F6n M\u00FCller
+N:M\u00FCller;Sch\u00F6n;;;
+EMAIL:schoen.mueller@example.de
+TEL:+49-30-12345678
+ADR;TYPE=home:;;Hauptstra\u00DFe 123;Berlin;;10115;Germany
+ORG:Deutsche Firma GmbH
+END:VCARD

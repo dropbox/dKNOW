@@ -1,0 +1,109 @@
+{
+  "page_number": 14,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "M. Lysak et al.",
+      "bbox": {
+        "l": 5.0,
+        "t": 5.0,
+        "r": 20.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "18. Xue, W., Yu, B., Wang, W., Tao, D., Li, Q.: Tgrnet: A table graph reconstruc-\ntion network for table structure recognition. In: Proceedings of the IEEE/CVF\nInternational Conference on Computer Vision. pp. 1295–1304 (2021)",
+      "bbox": {
+        "l": 10.0,
+        "t": 15.0,
+        "r": 95.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "19. Ye, J., Qi, X., He, Y., Chen, Y., Gu, D., Gao, P., Xiao, R.: Pingan-vcgroups’\nsolution for icdar 2021 competition on scientific literature parsing task b: Ta-\nble recognition to html (2021). https://doi.org/10.48550/ARXIV.2105.01488,\nhttps://arxiv.org/abs/2105.01488",
+      "bbox": {
+        "l": 10.0,
+        "t": 26.0,
+        "r": 95.0,
+        "b": 36.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "20. Zhang, Z., Zhang, J., Du, J., Wang, F.: Split, embed and merge: An accurate table\nstructure recognizer. Pattern Recognition 126, 108656 (2022)",
+      "bbox": {
+        "l": 10.0,
+        "t": 37.0,
+        "r": 95.0,
+        "b": 47.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "21. Zheng, X., Burdick, D., Popa, L., Zhong, X., Wang, N.X.R.: Global table extractor\n(gte): A framework for joint table identification and cell structure recognition using\nvisual context. In: 2021 IEEE Winter Conference on Applications of Computer Vi-\nsion (WACV). pp. 697–706 (2021). https://doi.org/10.1109/WACV48630.2021.\n00074",
+      "bbox": {
+        "l": 10.0,
+        "t": 48.0,
+        "r": 95.0,
+        "b": 58.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "22. Zhong, X., ShafieiBavani, E., Jimeno Yepes, A.: Image-based table recognition:\nData, model, and evaluation. In: Vedaldi, A., Bischof, H., Brox, T., Frahm, J.M.\n(eds.) Computer Vision – ECCV 2020. pp. 564–580. Springer International Pub-\nlishing, Cham (2020)",
+      "bbox": {
+        "l": 10.0,
+        "t": 59.0,
+        "r": 95.0,
+        "b": 69.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "23. Zhong, X., Tang, J., Yepes, A.J.: Publaynet: largest dataset ever for document lay-\nout analysis. In: 2019 International Conference on Document Analysis and Recog-\nnition (ICDAR). pp. 1015–1022. IEEE (2019)",
+      "bbox": {
+        "l": 10.0,
+        "t": 70.0,
+        "r": 95.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

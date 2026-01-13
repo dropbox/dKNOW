@@ -1,0 +1,42 @@
+[
+  {
+    "path": "test_files_wikimedia/png/content-moderation/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png",
+    "size": 6699475,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/%27Aside_4.%27_-_small_abstract_painting_sketch_on_paper%2C_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png",
+    "title": "File:'Aside 4.' - small abstract painting sketch on paper, made in 2016 in watercolor by Dutch artist Fons Heijnsbroek.png",
+    "mime": "image/png",
+    "format": "png"
+  },
+  {
+    "path": "test_files_wikimedia/png/content-moderation/02_123inkt_logo_transparent_bg_small.png",
+    "size": 14698,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/123inkt_logo_transparent_bg_small.png",
+    "title": "File:123inkt logo transparent bg small.png",
+    "mime": "image/png",
+    "format": "png"
+  },
+  {
+    "path": "test_files_wikimedia/png/content-moderation/03_A_rep-tile-based_setiset_of_order_4.png",
+    "size": 28254,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/A_rep-tile-based_setiset_of_order_4.png",
+    "title": "File:A rep-tile-based setiset of order 4.png",
+    "mime": "image/png",
+    "format": "png"
+  },
+  {
+    "path": "test_files_wikimedia/png/content-moderation/04_A_setiset_showing_weakly-connected_pieces.png",
+    "size": 26075,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/A_setiset_showing_weakly-connected_pieces.png",
+    "title": "File:A setiset showing weakly-connected pieces.png",
+    "mime": "image/png",
+    "format": "png"
+  },
+  {
+    "path": "test_files_wikimedia/png/content-moderation/05_A_setiset_with_duplicated_piece.png",
+    "size": 25712,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/A_setiset_with_duplicated_piece.png",
+    "title": "File:A setiset with duplicated piece.png",
+    "mime": "image/png",
+    "format": "png"
+  }
+]

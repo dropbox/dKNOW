@@ -1,0 +1,53 @@
+{
+  "page_number": 16,
+  "elements": [
+    {
+      "label": "picture",
+      "text": "Image showing a long table with multiple columns labeled 'PDF Cells', 'TableFormer predicted bounding boxes', 'Post-processed bounding boxes', and 'TableFormer predicted structure'.",
+      "bbox": {
+        "l": 5.0,
+        "t": 10.0,
+        "r": 95.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 17: Example of long table. End-to-end example from initial PDF cells to prediction of bounding boxes, post processing and prediction of structure.",
+      "bbox": {
+        "l": 20.0,
+        "t": 82.0,
+        "r": 80.0,
+        "b": 88.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "16",
+      "bbox": {
+        "l": 50.0,
+        "t": 95.0,
+        "r": 55.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

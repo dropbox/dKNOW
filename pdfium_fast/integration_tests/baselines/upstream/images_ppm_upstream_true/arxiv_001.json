@@ -1,0 +1,33 @@
+{
+  "pdf_name": "arxiv_001.pdf",
+  "format": "ppm",
+  "dpi": 300,
+  "source": "upstream pdfium_test 7f43fd79",
+  "pages": {
+    "0": "ce17d691924ef3ec91e9772a7b6d90c0",
+    "1": "a23b47b6f3e2eed1da581876da4709d9",
+    "10": "35b86b0196af2ec3e9e235ddeecfc039",
+    "11": "e9c9d217dc2518383bad0297537120bb",
+    "12": "9b1a4e3f4926a77303d1371f5df64d20",
+    "13": "c9b9acfefcb94a68df46910c238375ac",
+    "14": "d1cb877bb3aba339cfbec2d914864751",
+    "15": "2a8e647f2663a1a58d8aed6e4647428d",
+    "16": "e25e95913509f4665d3bbe8347295c15",
+    "17": "e6ea620a8eb81413928986e1879d43eb",
+    "18": "61ec4f7ed0c69709b99d87280b0a3eb5",
+    "19": "062164f041fccd132aedc506d43d4195",
+    "2": "4129b5dbd3fad513e84edb02252823d3",
+    "20": "92c45290d88d42aa6184039b386d54c6",
+    "21": "5b804d2804358330e10926bee9b2d66b",
+    "22": "d80912c18379f99fbd9ebe4e8bf38dcb",
+    "23": "b666095662408093dd97f96b53cb990b",
+    "24": "94d18bd216679884594ba1f223baf6a6",
+    "3": "f69bfde5a741f7bf049f0603fb6c2ea5",
+    "4": "d029243d63357a47e3be11b272abe6e5",
+    "5": "31fcacbcb32e0b527e1c1e2bdaf96f26",
+    "6": "3c2bbf114f2bb09e3919dd4eebcc7f0d",
+    "7": "7cc1f1fb1d788f36171eed0a854a8266",
+    "8": "9390ac85c40db43e6f81472b6f9369bc",
+    "9": "10c52f0fa0da933d31924535ddc03371"
+  }
+}

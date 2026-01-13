@@ -1,0 +1,20 @@
+[package]
+name = "docling-parse-rs"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors = ["ayates_dbx <ayates@dropbox.com>"]
+description = "Safe Rust wrapper for docling-parse C API (workspace-only, not published)"
+keywords = ["parsing", "ffi", "bindings", "wrapper"]
+categories = ["api-bindings"]
+publish = false
+[dependencies]
+docling-core = { version = "2.58.0", path = "../docling-core" }
+docling-parse-sys = { version = "2.58.0", path = "../docling-parse-sys" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+anyhow = { workspace = true }

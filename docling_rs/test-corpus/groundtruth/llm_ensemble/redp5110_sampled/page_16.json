@@ -1,0 +1,109 @@
+{
+  "page_number": 16,
+  "elements": [
+    {
+      "label": "code",
+      "text": "THEN C . CUSTOMER_TAX_ID\nWHEN QSYS2 . VERIFY_GROUP_FOR_USER ( SESSION_USER , 'TELLER' ) = 1\nTHEN ( 'XXX-XX-' CONCAT QSYS2 . SUBSTR ( C . CUSTOMER_TAX_ID , 8 , 4 ) )\nWHEN QSYS2 . VERIFY_GROUP_FOR_USER ( SESSION_USER , 'CUSTOMER' ) = 1\nTHEN C . CUSTOMER_TAX_ID\nELSE 'XXX-XX-XXXX'\nEND\nENABLE ;",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 15.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "code",
+      "text": "CREATE MASK BANK_SCHEMA.MASK_DRIVERS_LICENSE_ON_CUSTOMERS ON BANK_SCHEMA.CUSTOMERS AS C\nFOR COLUMN CUSTOMER_DRIVERS_LICENSE_NUMBER\nRETURN CASE\nWHEN QSYS2 . VERIFY_GROUP_FOR_USER ( SESSION_USER , 'ADMIN' ) = 1\nTHEN C . CUSTOMER_DRIVERS_LICENSE_NUMBER\nWHEN QSYS2 . VERIFY_GROUP_FOR_USER ( SESSION_USER , 'TELLER' ) = 1\nTHEN C . CUSTOMER_DRIVERS_LICENSE_NUMBER\nWHEN QSYS2 . VERIFY_GROUP_FOR_USER ( SESSION_USER , 'CUSTOMER' ) = 1\nTHEN C . CUSTOMER_DRIVERS_LICENSE_NUMBER\nELSE '**********'\nEND\nENABLE ;",
+      "bbox": {
+        "l": 0.0,
+        "t": 15.0,
+        "r": 100.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "code",
+      "text": "CREATE MASK BANK_SCHEMA.MASK_LOGIN_ID_ON_CUSTOMERS ON BANK_SCHEMA.CUSTOMERS AS C\nFOR COLUMN CUSTOMER_LOGIN_ID\nRETURN CASE\nWHEN QSYS2 . VERIFY_GROUP_FOR_USER ( SESSION_USER , 'ADMIN' ) = 1\nTHEN C . CUSTOMER_LOGIN_ID\nWHEN QSYS2 . VERIFY_GROUP_FOR_USER ( SESSION_USER , 'CUSTOMER' ) = 1\nTHEN C . CUSTOMER_LOGIN_ID\nELSE '******'\nEND\nENABLE ;",
+      "bbox": {
+        "l": 0.0,
+        "t": 35.0,
+        "r": 100.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "code",
+      "text": "CREATE MASK BANK_SCHEMA.MASK_SECURITY_QUESTION_ON_CUSTOMERS ON BANK_SCHEMA.CUSTOMERS AS C\nFOR COLUMN CUSTOMER_SECURITY_QUESTION\nRETURN CASE\nWHEN QSYS2 . VERIFY_GROUP_FOR_USER ( SESSION_USER , 'ADMIN' ) = 1\nTHEN C . CUSTOMER_SECURITY_QUESTION\nWHEN QSYS2 . VERIFY_GROUP_FOR_USER ( SESSION_USER , 'CUSTOMER' ) = 1\nTHEN C . CUSTOMER_SECURITY_QUESTION\nELSE '******'\nEND\nENABLE ;",
+      "bbox": {
+        "l": 0.0,
+        "t": 55.0,
+        "r": 100.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "code",
+      "text": "CREATE MASK BANK_SCHEMA.MASK_SECURITY_QUESTION_ANSWER_ON_CUSTOMERS ON BANK_SCHEMA.CUSTOMERS AS C\nFOR COLUMN CUSTOMER_SECURITY_QUESTION_ANSWER\nRETURN CASE\nWHEN QSYS2 . VERIFY_GROUP_FOR_USER ( SESSION_USER , 'ADMIN' ) = 1\nTHEN C . CUSTOMER_SECURITY_QUESTION_ANSWER\nWHEN QSYS2 . VERIFY_GROUP_FOR_USER ( SESSION_USER , 'CUSTOMER' ) = 1\nTHEN C . CUSTOMER_SECURITY_QUESTION_ANSWER\nELSE '********'\nEND\nENABLE ;",
+      "bbox": {
+        "l": 0.0,
+        "t": 75.0,
+        "r": 100.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "code",
+      "text": "ALTER TABLE BANK_SCHEMA.CUSTOMERS\nACTIVATE ROW ACCESS CONTROL\nACTIVATE COLUMN ACCESS CONTROL ;",
+      "bbox": {
+        "l": 0.0,
+        "t": 95.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "124 Row and Column Access Control Support in IBM DB2 for i",
+      "bbox": {
+        "l": 0.0,
+        "t": 98.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

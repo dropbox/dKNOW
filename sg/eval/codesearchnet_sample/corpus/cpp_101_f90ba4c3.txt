@@ -1,0 +1,15 @@
+/**
+           \brief Segment based encoding.
+           The PB terms are partitoned into segments, such that each segment contains arguments with the same cofficient.
+           The segments are sorted, such that the segment with highest coefficient is first.
+           Then for each segment create circuits based on sorting networks the arguments of the segment.           
+        */
+
+        expr_ref mk_seg_ge(rational const& k) {
+            rational bound(-k);
+            for (unsigned i = 0; i < m_args.size(); ++i) {
+                m_args[i] = mk_not(m_args[i].get());
+                bound += m_coeffs[i];
+            }
+            return mk_seg_le(bound);
+        }

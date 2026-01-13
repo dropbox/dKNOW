@@ -1,0 +1,151 @@
+{
+  "page_number": 8,
+  "elements": [
+    {
+      "label": "picture",
+      "text": "Diagram showing PDF cells in red, predicted bounding boxes in green, and post-processed predictions in blue. Includes Japanese language example and FinTabNet example table.",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 40.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 5: One of the benefits of TableFormer is that it is language agnostic, as an example, the left part of the illustration demonstrates TableFormer predictions on previously unseen language (Japanese). Additionally, we see that TableFormer is robust to variability in style and content, right side of the illustration shows the example of the TableFormer prediction from the FinTabNet dataset.",
+      "bbox": {
+        "l": 0.0,
+        "t": 40.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Diagram showing structure predicted by TableFormer with superimposed matched PDF cell text.",
+      "bbox": {
+        "l": 0.0,
+        "t": 50.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 6: An example of TableFormer predictions (bounding boxes and structure) from generated SynthTabNet table.",
+      "bbox": {
+        "l": 0.0,
+        "t": 70.0,
+        "r": 100.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "5.5. Qualitative Analysis",
+      "bbox": {
+        "l": 0.0,
+        "t": 75.0,
+        "r": 50.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "We showcase several visualizations for the different components of our network on various “complex” tables within datasets presented in this work in Fig. 5 and Fig. 6. As it is shown, our model is able to predict bounding boxes for all table cells, even for the empty ones. Additionally, our post-processing techniques can extract the cell content by matching the predicted bounding boxes to the PDF cells based on their overlap and spatial proximity. The left part of Fig. 5 demonstrates also the adaptability of our method to any language, as it can successfully extract Japanese text, although the training set contains only English content. We provide more visualizations including the intermediate steps in the supplementary material. Overall these illustrations justify the versatility of our method across a diverse range of table appearances and content type.",
+      "bbox": {
+        "l": 0.0,
+        "t": 80.0,
+        "r": 100.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "6. Future Work & Conclusion",
+      "bbox": {
+        "l": 0.0,
+        "t": 90.0,
+        "r": 50.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In this paper, we presented TableFormer an end-to-end transformer based approach to predict table structures and bounding boxes of cells from an image. This approach enables us to recreate the table structure, and extract the cell content from PDF or OCR by using bounding boxes. Additionally, it provides the versatility required in real-world scenarios when dealing with various types of PDF documents, and languages. Furthermore, our method outperforms all state-of-the-arts with a wide margin. Finally, we introduce “SynthTabNet” a challenging synthetically generated dataset that reinforces missing characteristics from other datasets.",
+      "bbox": {
+        "l": 0.0,
+        "t": 95.0,
+        "r": 100.0,
+        "b": 105.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "References",
+      "bbox": {
+        "l": 0.0,
+        "t": 105.0,
+        "r": 50.0,
+        "b": 110.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "[1] Nicolas Carion, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov, and Sergey Zagoruyko. End-to-",
+      "bbox": {
+        "l": 0.0,
+        "t": 110.0,
+        "r": 100.0,
+        "b": 115.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

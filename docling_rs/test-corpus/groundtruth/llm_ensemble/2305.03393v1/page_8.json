@@ -1,0 +1,137 @@
+{
+  "page_number": 8,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "8    M. Lysak, et al.",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "reduces significantly the column drift seen in the HTML based models (see Figure 5).",
+      "bbox": {
+        "l": 0.0,
+        "t": 6.0,
+        "r": 100.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "4.3 Error-detection and -mitigation",
+      "bbox": {
+        "l": 0.0,
+        "t": 11.0,
+        "r": 100.0,
+        "b": 15.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The design of OTSL allows to validate a table structure easily on an unfinished sequence. The detection of an invalid sequence token is a clear indication of a prediction mistake, however a valid sequence by itself does not guarantee prediction correctness. Different heuristics can be used to correct token errors in an invalid sequence and thus increase the chances for accurate predictions. Such heuristics can be applied either after the prediction of each token, or at the end on the entire predicted sequence. For example a simple heuristic which can correct the predicted OTSL sequence on-the-fly is to verify if the token with the highest prediction confidence invalidates the predicted sequence, and replace it by the token with the next highest confidence until OTSL rules are satisfied.",
+      "bbox": {
+        "l": 0.0,
+        "t": 16.0,
+        "r": 100.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "5 Experiments",
+      "bbox": {
+        "l": 0.0,
+        "t": 31.0,
+        "r": 100.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "To evaluate the impact of OTSL on prediction accuracy and inference times, we conducted a series of experiments based on the TableFormer model (Figure 4) with the following objectives: Firstly we evaluate the prediction quality and performance of OTSL vs. HTML after performing Hyper Parameter Optimization (HPO) on the canonical PubTabNet data set. Secondly we pick the best hyper-parameters found in the first step and evaluate how OTSL impacts the performance of TableFormer after training on other publicly available data sets (FinTabNet, PubTables-1M [14]). The ground truth (GT) from all data sets has been converted into OTSL format for this purpose, and will be made publicly available.",
+      "bbox": {
+        "l": 0.0,
+        "t": 36.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Architecture sketch of the TableFormer model, which is a representative for the Im2Seq approach.",
+      "bbox": {
+        "l": 0.0,
+        "t": 51.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Fig. 4. Architecture sketch of the TableFormer model, which is a representative for the Im2Seq approach.",
+      "bbox": {
+        "l": 0.0,
+        "t": 71.0,
+        "r": 100.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "We rely on standard metrics such as Tree Edit Distance score (TEDs) for table structure prediction, and Mean Average Precision (mAP) with 0.75 Intersection Over Union (IOU) threshold for the bounding-box predictions of table cells. The predicted OTSL structures were converted back to HTML format in",
+      "bbox": {
+        "l": 0.0,
+        "t": 76.0,
+        "r": 100.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

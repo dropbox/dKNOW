@@ -1,0 +1,384 @@
+{
+  "page_number": 8,
+  "elements": [
+    {
+      "label": "table",
+      "text": "Table 5: Prediction Performance (mAP@0.5:0.95) of a Mask R-CNN R50 network across the PubLayNet, DocBank & DocLayNet data-sets. By evaluating on common label classes of each dataset, we observe that the DocLayNet-trained model has much less pronounced variations in performance across all datasets.",
+      "bbox": {
+        "l": 0.0,
+        "t": 5.0,
+        "r": 100.0,
+        "b": 30.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "Training on",
+            "Testing on"
+          ],
+          [
+            "labels",
+            "PLN",
+            "DB",
+            "DLN"
+          ],
+          [
+            "PubLayNet (PLN)",
+            "Figure",
+            "96",
+            "43",
+            "23"
+          ],
+          [
+            "",
+            "Sec-header",
+            "87",
+            "32",
+            "32"
+          ],
+          [
+            "",
+            "Table",
+            "95",
+            "24",
+            "49"
+          ],
+          [
+            "",
+            "Text",
+            "96",
+            "42",
+            "42"
+          ],
+          [
+            "",
+            "total",
+            "93",
+            "34",
+            "30"
+          ],
+          [
+            "DocBank (DB)",
+            "Figure",
+            "77",
+            "71",
+            "31"
+          ],
+          [
+            "",
+            "Sec-header",
+            "19",
+            "65",
+            "22"
+          ],
+          [
+            "",
+            "total",
+            "48",
+            "68",
+            "27"
+          ],
+          [
+            "DocLayNet (DLN)",
+            "Figure",
+            "67",
+            "51",
+            "72"
+          ],
+          [
+            "",
+            "Sec-header",
+            "53",
+            "65",
+            "61"
+          ],
+          [
+            "",
+            "Table",
+            "87",
+            "43",
+            "82"
+          ],
+          [
+            "",
+            "Text",
+            "77",
+            "83",
+            "84"
+          ],
+          [
+            "",
+            "total",
+            "59",
+            "47",
+            "78"
+          ]
+        ],
+        "num_rows": 15,
+        "num_cols": 5
+      }
+    },
+    {
+      "label": "section_header",
+      "text": "6 CONCLUSION",
+      "bbox": {
+        "l": 0.0,
+        "t": 31.0,
+        "r": 100.0,
+        "b": 34.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In this paper, we presented the DocLayNet dataset. It provides the document conversion and layout analysis research community a new and challenging dataset to improve and fine-tune novel ML methods on. In contrast to many other datasets, DocLayNet was created by human annotation in order to obtain reliable layout ground-truth on a wide variety of publication- and typesetting- styles. Including a large proportion of documents outside the scien- tific publishing domain adds significant value in this respect.",
+      "bbox": {
+        "l": 0.0,
+        "t": 35.0,
+        "r": 100.0,
+        "b": 42.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "From the dataset, we have derived on the one hand reference metrics for human performance on document-layout annotation (through double and triple annotations) and on the other hand eval- uated the baseline performance of commonly used object detection methods. We also illustrated the impact of various dataset-related aspects on model performance through data-ablation experiments, both from a size and class-label perspective. Last but not least, we compared the accuracy of models trained on other public datasets and showed that DocLayNet trained models are more robust.",
+      "bbox": {
+        "l": 0.0,
+        "t": 43.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "To date, there is still a significant gap between human and ML accuracy on the layout interpretation task, and we hope that this work will inspire the research community to close that gap.",
+      "bbox": {
+        "l": 0.0,
+        "t": 51.0,
+        "r": 100.0,
+        "b": 54.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "REFERENCES",
+      "bbox": {
+        "l": 0.0,
+        "t": 55.0,
+        "r": 100.0,
+        "b": 58.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[1] Max Göbel, Tamir Hassan, Ermelinda Oro, and Giorgio Orsi. Icdar 2013 table competition. In 2013 12th International Conference on Document Analysis and Recognition, pages 1449–1453, 2013.",
+      "bbox": {
+        "l": 0.0,
+        "t": 59.0,
+        "r": 100.0,
+        "b": 62.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[2] Christian Clausner, Apostolos Antonacopoulos, and Stefan Pletschacher. Icdar2017 competition on recognition of documents with complex layouts. In ICDAR2017: In 2017 14th IAPR International Conference on Document Analysis and Recognition (ICDAR), pages 1404–1409. IEEE, 2017.",
+      "bbox": {
+        "l": 0.0,
+        "t": 63.0,
+        "r": 100.0,
+        "b": 66.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[3] Hervé Déjean, Jean-Luc Meunier, László Varga, Sian Yuta, Yu Feng, Florian Kleber, and Eva-Maria Lang. ICDAR 2019 Competition on Table Detection and Recognition (cTDaR), 2019. arXiv preprint arXiv:1907.03383.",
+      "bbox": {
+        "l": 0.0,
+        "t": 67.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[4] Antonio Jimeno Yepes, Robert M. Haralick, and Lambert Schomaker. Competition on scientific literature parsing. In Proceedings of the International Conference on Document Analysis and Recognition, ICDAR, pages 605–611. IEEE, 2013/ICDAR, Singapore, 2013.",
+      "bbox": {
+        "l": 0.0,
+        "t": 71.0,
+        "r": 100.0,
+        "b": 74.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[5] Logan Meyer, Xiaodong Zhu, Xing Nian, Vladimir Stankevicius, Jiang Zheng, Roy Lee, Zhi Liu, and Seok-Bum Ko. Segmentation for document layout analysis based on text enhancement. In Document Analysis and Recognition (ICDAR), pages 1–10, 2017.",
+      "bbox": {
+        "l": 0.0,
+        "t": 75.0,
+        "r": 100.0,
+        "b": 78.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[6] Xu Zhong, Jianbin Tang, and Antonio Jimeno-Yepes. PubLayNet: largest dataset ever for document layout analysis. In Proceedings of the International Conference on Document Analysis and Recognition, ICDAR, pages 1015–1022, 2019.",
+      "bbox": {
+        "l": 0.0,
+        "t": 79.0,
+        "r": 100.0,
+        "b": 82.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[7] Minghao Li, Yiheng Xu, Lei Cui, Shaohan Huang, Furu Wei, Zhoujun Li, and Ming Zhou. DocBank: A benchmark dataset for document layout analysis. In Proceedings of the 28th International Conference on Computational Linguistics, COLING, pages 949–960. International Committee on Computational Linguistics, 2020.",
+      "bbox": {
+        "l": 0.0,
+        "t": 83.0,
+        "r": 100.0,
+        "b": 86.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[8] Riaz Ahmad, Muhammad Tanveer Aftab, and M. Qadir. Information extraction from pdf sources based on rule-based system using integrated formats. In SemWebEval@ISWC, 2016.",
+      "bbox": {
+        "l": 0.0,
+        "t": 87.0,
+        "r": 100.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[9] Ross B. Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik. Rich feature hierarchies for accurate object detection and semantic segmentation. In IEEE Conference on Computer Vision and Pattern Recognition, CVPR, pages 580–587. IEEE Computer Society, jun 2014.",
+      "bbox": {
+        "l": 0.0,
+        "t": 91.0,
+        "r": 100.0,
+        "b": 94.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[10] Ross B. Girshick. Fast R-CNN. In 2015 IEEE International Conference on Computer Vision, ICCV, pages 1440–1448. IEEE Computer Society, dec 2015.",
+      "bbox": {
+        "l": 0.0,
+        "t": 95.0,
+        "r": 100.0,
+        "b": 98.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[11] Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun. Faster rcnn: Towards real-time object detection with region proposal networks. IEEE Transactions on Pattern Analysis and Machine Intelligence, 39(6):1137–1149, 2017.",
+      "bbox": {
+        "l": 0.0,
+        "t": 99.0,
+        "r": 100.0,
+        "b": 102.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[12] Kaiming He, Georgia Gkioxari, Piotr Dollár, and Ross B. Girshick. Mask R-CNN. In IEEE International Conference on Computer Vision, ICCV, pages 2980–2988. IEEE Computer Society, Oct 2017.",
+      "bbox": {
+        "l": 0.0,
+        "t": 103.0,
+        "r": 100.0,
+        "b": 106.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "[13] Glenn Jocher, Alex Stoken, Ayush Chaurasia, Jirka Borovec, NanoCode012, TaoXie, Yonghye Kwon, Michael Allan, Francisco Ingham, SkalskiP, Adam Hogan, Lijun Yu, Wang Choi, Xinyu Chen, Jebastin Nadar, imyhxy, Lorenzo Mammana, Alex Wang, Cristi Fati, Diego Montes, Jan Hajek, Laurentiu",
+      "bbox": {
+        "l": 0.0,
+        "t": 107.0,
+        "r": 100.0,
+        "b": 110.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

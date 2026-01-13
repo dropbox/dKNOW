@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0">
+  <description>
+    <title-info>
+      <genre>prose_contemporary</genre>
+      <author>
+        <first-name>Александр</first-name>
+        <middle-name>Сергеевич</middle-name>
+        <last-name>Петров</last-name>
+      </author>
+      <book-title>Многоязычная история</book-title>
+      <annotation>
+        <p>Книга, демонстрирующая поддержку различных языков и кодировок в формате FB2.</p>
+        <p>A book demonstrating support for multiple languages and encodings in FB2 format.</p>
+      </annotation>
+      <keywords>multilingual, unicode, русский, español, 中文, العربية</keywords>
+      <lang>ru</lang>
+      <src-lang>ru</src-lang>
+    </title-info>
+    <document-info>
+      <author>
+        <nickname>apetrov-writer</nickname>
+      </author>
+      <date>2025-11-07</date>
+      <id>multilingual-test-book-001</id>
+      <version>1.0</version>
+    </document-info>
+  </description>
+  <body>
+    <title>
+      <p>Многоязычная история</p>
+      <p>Multilingual Story</p>
+    </title>
+    <section>
+      <title>
+        <p>Глава 1: Русский текст</p>
+      </title>
+      <p>Это пример текста на русском языке. Формат FB2 отлично поддерживает Unicode и кириллицу.</p>
+      <p>В этой главе мы демонстрируем, как FB2 работает с различными алфавитами и символами.</p>
+      <p>Особые символы: №, ™, ©, ®, €, £, ¥, ₽</p>
+    </section>
+    <section>
+      <title>
+        <p>Chapter 2: English Text</p>
+      </title>
+      <p>This is an example of English text. FB2 format seamlessly supports multiple languages within the same document.</p>
+      <p>Common English punctuation: "quotes", 'apostrophes', dashes—like this—and ellipses...</p>
+      <p>Mathematical symbols: ∑, ∫, √, ≈, ≠, ±, ∞</p>
+    </section>
+    <section>
+      <title>
+        <p>Capítulo 3: Texto en español</p>
+      </title>
+      <p>Este es un ejemplo de texto en español. El formato FB2 admite caracteres acentuados y la letra ñ.</p>
+      <p>Ejemplos de acentos: á, é, í, ó, ú, ü</p>
+      <p>¿Preguntas? ¡Exclamaciones! Caracteres especiales del español.</p>
+      <p>Frases comunes: "Buenos días", "¿Cómo estás?", "Hasta luego"</p>
+    </section>
+    <section>
+      <title>
+        <p>第4章：中文文本</p>
+      </title>
+      <p>这是中文文本的示例。FB2格式完全支持中日韩（CJK）统一表意文字。</p>
+      <p>简体中文：你好，世界！欢迎使用FB2格式。</p>
+      <p>常用词汇：计算机、程序、文档、测试、格式</p>
+      <p>数字：一、二、三、四、五、六、七、八、九、十</p>
+    </section>
+    <section>
+      <title>
+        <p>Chapitre 5: Texte français</p>
+      </title>
+      <p>Ceci est un exemple de texte en français. Les accents et les caractères spéciaux sont bien supportés.</p>
+      <p>Accents français: à, â, é, è, ê, ë, î, ï, ô, ù, û, ü, ÿ, ç</p>
+      <p>Guillemets français: « comme ceci »</p>
+      <p>Phrases courantes: "Bonjour", "Merci", "Au revoir", "S'il vous plaît"</p>
+    </section>
+    <section>
+      <title>
+        <p>الفصل 6: النص العربي</p>
+      </title>
+      <p>هذا مثال على النص العربي. يدعم تنسيق FB2 الكتابة من اليمين إلى اليسار بشكل كامل.</p>
+      <p>الأحرف العربية: أ، ب، ت، ث، ج، ح، خ، د، ذ، ر، ز، س، ش، ص، ض، ط، ظ، ع، غ، ف، ق، ك، ل، م، ن، ه، و، ي</p>
+      <p>عبارات شائعة: مرحبا، شكرا، وداعا</p>
+    </section>
+    <section>
+      <title>
+        <p>Κεφάλαιο 7: Ελληνικό κείμενο</p>
+      </title>
+      <p>Αυτό είναι ένα παράδειγμα ελληνικού κειμένου. Το FB2 υποστηρίζει το ελληνικό αλφάβητο.</p>
+      <p>Ελληνικά γράμματα: Α, Β, Γ, Δ, Ε, Ζ, Η, Θ, Ι, Κ, Λ, Μ, Ν, Ξ, Ο, Π, Ρ, Σ, Τ, Υ, Φ, Χ, Ψ, Ω</p>
+      <p>Κοινές φράσεις: Γεια σου, Ευχαριστώ, Αντίο</p>
+    </section>
+    <section>
+      <title>
+        <p>Kapitel 8: Deutscher Text</p>
+      </title>
+      <p>Dies ist ein Beispiel für deutschen Text. FB2 unterstützt die deutschen Umlaute vollständig.</p>
+      <p>Deutsche Umlaute: ä, ö, ü, Ä, Ö, Ü, ß</p>
+      <p>Häufige Ausdrücke: "Guten Tag", "Danke schön", "Auf Wiedersehen", "Bitte"</p>
+    </section>
+    <section>
+      <title>
+        <p>Conclusion / Заключение</p>
+      </title>
+      <p>This multilingual test file demonstrates that FB2 format can handle:</p>
+      <p>• Cyrillic (Russian): Русский</p>
+      <p>• Latin (English, Spanish, French, German): English, Español, Français, Deutsch</p>
+      <p>• CJK (Chinese): 中文</p>
+      <p>• Arabic: العربية</p>
+      <p>• Greek: Ελληνικά</p>
+      <empty-line/>
+      <p>All within a single document, demonstrating full Unicode support! 🌍✨🎉</p>
+      <p>Все в одном документе, демонстрируя полную поддержку Unicode! 🌍✨🎉</p>
+    </section>
+  </body>
+</FictionBook>

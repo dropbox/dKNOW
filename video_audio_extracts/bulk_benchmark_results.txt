@@ -1,0 +1,91 @@
+Bulk Mode Benchmark Results - Thu Oct 30 17:36:47 PDT 2025
+=====================================
+
+Test 1: Throughput Scaling (Keyframes)
+Operation: keyframes (I-frame extraction)
+Max concurrent: 8 (system default)
+
+  Files: 1
+  Time: .118173000s
+  Throughput: 8.46 files/sec
+
+  Files: 5
+  Time: .747953000s
+  Throughput: 6.68 files/sec
+
+  Files: 8
+  Time: .937389000s
+  Throughput: 8.53 files/sec
+
+Test 2: Concurrency Scaling
+Operation: keyframes
+Files: 8 (all available)
+
+  Concurrency: 1
+  Time: 1.933099000s
+  Throughput: 4.13 files/sec
+
+  Concurrency: 2
+  Time: 1.122388000s
+  Throughput: 7.12 files/sec
+  Speedup: 1.72x vs sequential
+  Parallel efficiency: 86.0%
+
+  Concurrency: 4
+  Time: .999085000s
+  Throughput: 8.00 files/sec
+  Speedup: 1.93x vs sequential
+  Parallel efficiency: 48.2%
+
+  Concurrency: 8
+  Time: .918272000s
+  Throughput: 8.71 files/sec
+  Speedup: 2.10x vs sequential
+  Parallel efficiency: 26.2%
+
+  Concurrency: 16
+  Time: .966280000s
+  Throughput: 8.27 files/sec
+  Speedup: 2.00x vs sequential
+  Parallel efficiency: 12.5%
+
+Test 3: Operation Complexity
+Files: 5 videos
+Concurrency: 4
+
+  Operation: keyframes
+  Time: .863139000s
+  Throughput: 5.79 files/sec
+  Per-file avg: .17s
+
+  Operation: audio
+  Time: .271443000s
+  Throughput: 18.42 files/sec
+  Per-file avg: .05s
+
+  Operation: keyframes;object-detection
+  Time: 2.133674000s
+  Throughput: 2.34 files/sec
+  Per-file avg: .42s
+
+Test 4: Audio File Processing
+Operation: transcription (Whisper base)
+Files: 6 audio files
+Concurrency: 4
+
+  Files: 6
+  Time: 2.535531000s
+  Throughput: 2.36 files/sec
+
+Test 5: Fast Path Performance
+Operation: keyframes + object detection (bulk fast path)
+Files: 5 videos
+Concurrency: 8
+
+  Regular pipeline: 3.147492000s
+  Throughput: 1.58 files/sec
+
+Summary:
+--------
+Total video files tested: 8
+Total audio files tested: 6

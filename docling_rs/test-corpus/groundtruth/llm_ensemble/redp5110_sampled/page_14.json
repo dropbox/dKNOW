@@ -1,0 +1,179 @@
+{
+  "page_number": 14,
+  "elements": [
+    {
+      "label": "list_item",
+      "text": "3. Figure 3-10 shows the masks that are created in the HR_SCHEMA.",
+      "bbox": {
+        "l": 5.0,
+        "t": 5.0,
+        "r": 95.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Image showing column masks in System i Navigator",
+      "bbox": {
+        "l": 5.0,
+        "t": 12.0,
+        "r": 95.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 3-10 Column masks shown in System i Navigator",
+      "bbox": {
+        "l": 5.0,
+        "t": 26.0,
+        "r": 95.0,
+        "b": 28.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "3.6.6 Activating RCAC",
+      "bbox": {
+        "l": 5.0,
+        "t": 30.0,
+        "r": 95.0,
+        "b": 34.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Now that you have created the row permission and the two column masks, RCAC must be activated. The row permission and the two column masks are enabled (last clause in the scripts), but now you must activate RCAC on the table. To do so, complete the following steps:",
+      "bbox": {
+        "l": 5.0,
+        "t": 35.0,
+        "r": 95.0,
+        "b": 42.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "1. Run the SQL statements that are shown in Example 3-10.",
+      "bbox": {
+        "l": 5.0,
+        "t": 43.0,
+        "r": 95.0,
+        "b": 46.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Example 3-10 Activating RCAC on the EMPLOYEES table",
+      "bbox": {
+        "l": 5.0,
+        "t": 47.0,
+        "r": 95.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "code",
+      "text": "/* Active Row Access Control (permissions) */\n/* Active Column Access Control (masks) */\nALTER TABLE HR_SCHEMA.EMPLOYEES\nACTIVATE ROW ACCESS CONTROL\nACTIVATE COLUMN ACCESS CONTROL;",
+      "bbox": {
+        "l": 5.0,
+        "t": 51.0,
+        "r": 95.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "2. Look at the definition of the EMPLOYEE table, as shown in Figure 3-11. To do this, from the main navigation pane of System i Navigator, click Schemas → HR_SCHEMA → Tables, right-click the EMPLOYEES table, and click Definition.",
+      "bbox": {
+        "l": 5.0,
+        "t": 61.0,
+        "r": 95.0,
+        "b": 68.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Image showing selection of the EMPLOYEES table from System i Navigator",
+      "bbox": {
+        "l": 5.0,
+        "t": 70.0,
+        "r": 95.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 3-11 Selecting the EMPLOYEES table from System i Navigator",
+      "bbox": {
+        "l": 5.0,
+        "t": 86.0,
+        "r": 95.0,
+        "b": 88.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "28 Row and Column Access Control Support in IBM DB2 for i",
+      "bbox": {
+        "l": 5.0,
+        "t": 95.0,
+        "r": 95.0,
+        "b": 98.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

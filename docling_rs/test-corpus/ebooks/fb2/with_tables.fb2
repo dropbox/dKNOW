@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0">
+<description>
+<title-info>
+<genre>comp_ref</genre>
+<author><first-name>Tech</first-name><last-name>Writer</last-name></author>
+<book-title>Tables and Data Test</book-title>
+<lang>en</lang>
+</title-info>
+<document-info>
+<author><nickname>Test</nickname></author>
+<date>2025-11-07</date>
+</document-info>
+</description>
+<body>
+<section>
+<title><p>Chapter with Tables</p></title>
+<p>FB2 format supports tables for structured data:</p>
+<table>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+<th>Header 3</th>
+</tr>
+<tr>
+<td>Row 1 Col 1</td>
+<td>Row 1 Col 2</td>
+<td>Row 1 Col 3</td>
+</tr>
+<tr>
+<td>Row 2 Col 1</td>
+<td>Row 2 Col 2</td>
+<td>Row 2 Col 3</td>
+</tr>
+</table>
+<p>Tables are useful for presenting data in ebook format.</p>
+</section>
+</body>
+</FictionBook>

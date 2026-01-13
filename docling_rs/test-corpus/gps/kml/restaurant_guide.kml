@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Restaurant Guide</name>
+    <description>City restaurant guide organized by cuisine type</description>
+
+    <Folder>
+      <name>Italian Restaurants</name>
+      <description>Authentic Italian cuisine</description>
+      <Placemark>
+        <name>Bella Napoli</name>
+        <description>Traditional Neapolitan pizza and pasta</description>
+        <Point>
+          <coordinates>-122.405,37.788,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Trattoria Romano</name>
+        <description>Family-style Roman cuisine</description>
+        <Point>
+          <coordinates>-122.410,37.790,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <Folder>
+      <name>Asian Restaurants</name>
+      <description>Pan-Asian dining options</description>
+      <Placemark>
+        <name>Sakura Sushi</name>
+        <description>Fresh sushi and sashimi</description>
+        <Point>
+          <coordinates>-122.415,37.792,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Golden Dragon</name>
+        <description>Authentic Cantonese dim sum</description>
+        <Point>
+          <coordinates>-122.420,37.794,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thai Spice</name>
+        <description>Traditional Thai street food</description>
+        <Point>
+          <coordinates>-122.425,37.796,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <Folder>
+      <name>American Restaurants</name>
+      <description>Classic American dining</description>
+      <Placemark>
+        <name>The Grill House</name>
+        <description>Premium steaks and BBQ</description>
+        <Point>
+          <coordinates>-122.430,37.798,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

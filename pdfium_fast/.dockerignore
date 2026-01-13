@@ -1,0 +1,67 @@
+# .dockerignore - Exclude unnecessary files from Docker build context
+#
+# This reduces the size of the build context sent to Docker daemon
+# and speeds up the build process.
+
+# Build outputs
+out/
+*.o
+*.a
+*.so
+*.dylib
+
+# Third-party dependencies (re-synced by gclient)
+pdfium/
+third_party/
+# Exception: include our custom third_party additions
+!third_party/concurrentqueue/
+buildtools/
+skia/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Rust
+rust/target/
+Cargo.lock
+
+# Test data (entire directory not needed for build)
+integration_tests/
+*.pdf
+*.png
+*.jpg
+*.ppm
+
+# Git
+.git/
+.gitignore
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+worker_logs/
+
+# Documentation (not needed for build)
+docs/
+archive/
+reports/
+
+# Temporary files
+tmp/
+temp/
+*.tmp

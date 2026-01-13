@@ -1,0 +1,137 @@
+{
+  "page_number": 1,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "IBM",
+      "bbox": {
+        "l": 90.0,
+        "t": 5.0,
+        "r": 100.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "title",
+      "text": "Row and Column Access Control Support in IBM DB2 for i",
+      "bbox": {
+        "l": 10.0,
+        "t": 15.0,
+        "r": 90.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "Implement roles and separation of duties",
+      "bbox": {
+        "l": 5.0,
+        "t": 40.0,
+        "r": 40.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "Leverage row permissions on the database",
+      "bbox": {
+        "l": 5.0,
+        "t": 47.0,
+        "r": 40.0,
+        "b": 52.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "Protect columns by defining column masks",
+      "bbox": {
+        "l": 5.0,
+        "t": 54.0,
+        "r": 40.0,
+        "b": 59.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Illustration of two overlapping globes with a red and black color scheme.",
+      "bbox": {
+        "l": 40.0,
+        "t": 40.0,
+        "r": 90.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Jim Bainbridge\nHernando Bedoya\nRob Bestgen\nMike Cain\nDan Cruikshank\nJim Denton\nDoug Mack\nTom McKinley\nKent Milligan",
+      "bbox": {
+        "l": 70.0,
+        "t": 60.0,
+        "r": 90.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "ibm.com/redbooks",
+      "bbox": {
+        "l": 5.0,
+        "t": 90.0,
+        "r": 30.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Redpaper",
+      "bbox": {
+        "l": 70.0,
+        "t": 90.0,
+        "r": 90.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

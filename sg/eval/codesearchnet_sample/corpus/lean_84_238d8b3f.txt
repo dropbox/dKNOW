@@ -1,0 +1,59 @@
+/--
+  The least upper bound of chains exists.
+  -/
+  has_csup {c : α → Prop} (hc : chain c) : Exists (is_sup c)
+
+open  CCPO
+
+variable {α  : Sort u} [CCPO α]
+
+noncomputable def CCPO.csup {c : α → Prop} (hc : chain c) : α :=
+  Classical.choose (CCPO.has_csup hc)
+
+theorem CCPO.csup_spec {c : α → Prop} (hc : chain c) : is_sup c (csup hc) :=
+  @fun x => Classical.choose_spec (CCPO.has_csup hc) x
+
+theorem csup_le {c : α → Prop} (hc : chain c) : (∀ y, c y → y ⊑ x) → csup hc ⊑ x :=
+  (csup_spec hc x).mpr
+
+theorem le_csup {c : α → Prop} (hc : chain c) {y : α} (hy : c y) : y ⊑ csup hc :=
+  (csup_spec hc (csup hc)).mp rel_refl y hy
+
+def empty_chain (α) : α → Prop := fun _ => False
+
+def chain_empty (α : Sort u) [PartialOrder α] : chain (empty_chain α) := by
+  intro x y hx hy; contradiction
+
+/--
+The bottom element is the least upper bound of the empty chain.
+
+This is intended to be used in the construction of `partial_fixpoint`, and not meant to be used otherwise.
+-/
+noncomputable def bot : α := csup (chain_empty α)
+
+scoped notation "⊥" => bot
+
+theorem bot_le (x : α) : ⊥ ⊑ x := by
+  apply csup_le
+  intro x y; contradiction
+
+end CCPO
+
+
+section CompleteLattice
+
+/--
+A complete lattice is a partial order where every subset has a least upper bound.
+-/
+class CompleteLattice (α : Sort u) extends PartialOrder α where
+  /--
+  The least upper bound of an arbitrary subset exists.
+  -/
+  has_sup (c : α → Prop) : Exists (is_sup c)
+
+open PartialOrder CompleteLattice
+
+variable {α  : Sort u} [CompleteLattice α]
+
+noncomputable def CompleteLattice.sup (c : α → Prop) : α :=
+  Classical.choose (CompleteLattice.has_sup c)

@@ -1,0 +1,193 @@
+{
+  "page_number": 5,
+  "elements": [
+    {
+      "label": "section_header",
+      "text": "Securing and protecting IBM DB2 data",
+      "bbox": {
+        "l": 10.0,
+        "t": 40.0,
+        "r": 90.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Recent news headlines are filled with reports of data breaches and cyber-attacks impacting global businesses of all sizes. The Identity Theft Resource Center1 reports that almost 5000 data breaches have occurred since 2005, exposing over 600 million records of data. The financial cost of these data breaches is skyrocketing. Studies from the Ponemon Institute2 revealed that the average cost of a data breach increased in 2013 by 15% globally and resulted in a brand equity loss of $9.4 million per attack. The average cost that is incurred for each lost record containing sensitive information increased more than 9% to $145 per record.",
+      "bbox": {
+        "l": 10.0,
+        "t": 52.0,
+        "r": 90.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Businesses must make a serious effort to secure their data and recognize that securing information assets is a cost of doing business. In many parts of the world and in many industries, securing the data is required by law and subject to audits. Data security is no longer an option; it is a requirement.",
+      "bbox": {
+        "l": 10.0,
+        "t": 72.0,
+        "r": 90.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "This chapter describes how you can secure and protect data in DB2 for i. The following topics are covered in this chapter:",
+      "bbox": {
+        "l": 10.0,
+        "t": 82.0,
+        "r": 90.0,
+        "b": 86.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "► Security fundamentals",
+      "bbox": {
+        "l": 12.0,
+        "t": 87.0,
+        "r": 90.0,
+        "b": 88.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "► Current state of IBM i security",
+      "bbox": {
+        "l": 12.0,
+        "t": 89.0,
+        "r": 90.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "► DB2 for i security controls",
+      "bbox": {
+        "l": 12.0,
+        "t": 91.0,
+        "r": 90.0,
+        "b": 92.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "footnote",
+      "text": "1 http://www.idtheftcenter.org",
+      "bbox": {
+        "l": 10.0,
+        "t": 94.0,
+        "r": 50.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "footnote",
+      "text": "2 http://www.ponemon.org/",
+      "bbox": {
+        "l": 10.0,
+        "t": 96.0,
+        "r": 50.0,
+        "b": 97.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "© Copyright IBM Corp. 2014. All rights reserved.",
+      "bbox": {
+        "l": 10.0,
+        "t": 98.0,
+        "r": 50.0,
+        "b": 99.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "1",
+      "bbox": {
+        "l": 95.0,
+        "t": 98.0,
+        "r": 100.0,
+        "b": 99.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Image of two overlapping globes",
+      "bbox": {
+        "l": 5.0,
+        "t": 10.0,
+        "r": 30.0,
+        "b": 30.0
+      },
+      "confidence": 0.8400000000000001
+    },
+    {
+      "label": "picture",
+      "text": "Number 1 in a gray box",
+      "bbox": {
+        "l": 85.0,
+        "t": 10.0,
+        "r": 95.0,
+        "b": 30.0
+      },
+      "confidence": 0.8400000000000001
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

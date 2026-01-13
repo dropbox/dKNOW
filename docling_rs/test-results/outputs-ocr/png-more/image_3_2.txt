@@ -1,0 +1,12 @@
+## Sign in - Google Accounts
+
+- accounts.google.com/o/oauth2/auth/oauthchooseaccount?access_type=offline&amp;...
+- G Sign in with Google
+
+## Choose an account
+
+to continue to dropbox.com
+
+- Use another account
+
+To continue, Google will share your name, email address, language preference, and profile picture with dropbox.com. Before using this app, you can review dropbox.com's privacy policy and terms of service.

@@ -1,0 +1,1 @@
+Unicode Test: abgd qfyw Special: © ® ™ € £ ¥ Math: GLYPH&lt;229&gt; GLYPH&lt;242&gt; GLYPH&lt;214&gt; £ ‡ '

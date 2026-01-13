@@ -1,0 +1,92 @@
+🐛 SPECIFIC BUGS TO FIX NOW
+
+FROM: Manager's DocItem test run (Nov 17, 2025)
+
+---
+
+## BUG #1: CSV Test Skipped ⚠️
+
+**Status:** Test ignored/skipped
+**Impact:** Can't validate CSV quality
+**Root Cause:** Unknown - investigate why test doesn't run
+
+**Fix:**
+1. Check why test is ignored
+2. Remove #[ignore] if present
+3. Fix file paths if needed
+4. Make test run
+5. Must pass at 95%+
+
+---
+
+## BUG #2: DOCX at 92% (Need 95%)
+
+**Current:** 92.0% DocItem completeness
+**Gap:** 3 percentage points
+
+**Specific Issues:**
+1. Duplicate self_ref values (N=1246 analysis)
+2. Structure: 90/100 (need 95+)
+3. Metadata: 85/100 (need 95+)
+
+**Fix:**
+1. Fix self_ref generation (unique IDs)
+2. Improve heading/list differentiation
+3. Extract more document properties
+4. Re-test until ≥95%
+
+---
+
+## BUG #3: XLSX at 87% (Need 95%)
+
+**Current:** 87.0% DocItem completeness  
+**Gap:** 8 percentage points (LARGE GAP)
+
+**Likely Issues:**
+- Missing metadata (sheet properties?)
+- Cell formatting not captured?
+- Formulas not stored?
+- Comments missing?
+
+**Fix:**
+1. Identify what's in original XLSX but not in JSON
+2. Extract missing features
+3. Store in DocItems
+4. Re-test until ≥95%
+
+---
+
+## BUG #4: PPTX at 92% (Need 95%)
+
+**Current:** 92.0% DocItem completeness
+**Gap:** 3 percentage points
+
+**Possible Issues:**
+- Slide notes missing?
+- Master slide content?
+- Transitions/animations?
+- Some text boxes?
+
+**Fix:**
+1. Compare slide XML to DocItems
+2. Extract missing elements
+3. Re-test until ≥95%
+
+---
+
+## PRIORITY ORDER
+
+**Fix in this order:**
+1. CSV skip → Make run (BLOCKER)
+2. XLSX 87% → 95% (BIGGEST GAP)
+3. DOCX 92% → 95% (CLOSE)
+4. PPTX 92% → 95% (CLOSE)
+
+**Target: ALL ≥95% within 10 commits**
+
+---
+
+**FIX THESE SPECIFIC BUGS.
+DOCUMENT IMPROVEMENTS.
+PROVE WITH TEST OUTPUT.
+NO EXCUSES.**

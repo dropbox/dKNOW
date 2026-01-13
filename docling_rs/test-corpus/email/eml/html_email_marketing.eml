@@ -1,0 +1,39 @@
+From: marketing@techcorp.com
+To: subscribers@lists.techcorp.com
+Subject: New Product Launch - TechWidget Pro
+Date: Tue, 7 Nov 2025 09:00:00 -0800
+Message-ID: <marketing-20251107@techcorp.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="boundary123"
+
+--boundary123
+Content-Type: text/plain; charset="UTF-8"
+
+Introducing TechWidget Pro
+Our revolutionary new product is here!
+
+Features:
+* 50% faster processing
+* AI-powered analytics
+* Cloud-native architecture
+
+Learn more at https://techcorp.com/techwidget-pro
+
+--boundary123
+Content-Type: text/html; charset="UTF-8"
+
+<html>
+<body>
+<h1>Introducing TechWidget Pro</h1>
+<p>Our <strong>revolutionary</strong> new product is here!</p>
+<h2>Features:</h2>
+<ul>
+<li>50% faster processing</li>
+<li>AI-powered analytics</li>
+<li>Cloud-native architecture</li>
+</ul>
+<p>Learn more at <a href="https://techcorp.com/techwidget-pro">techcorp.com/techwidget-pro</a></p>
+</body>
+</html>
+
+--boundary123--

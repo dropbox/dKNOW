@@ -1,0 +1,403 @@
+N=54 2025-12-04T08:47:23Z
+N=55 2025-12-04T08:50:56Z CLEANUP
+[N=56] 2025-12-04 00:54:06 - Regular iteration - 89/89 smoke tests pass
+[N=57] 2025-12-04 00:57 - Regular Iteration - 89/89 smoke tests pass
+N=58: Regular Iteration - 2025-12-04 01:00 - 89/89 smoke pass
+[WORKER0] # 59: Regular Iteration - 2025-12-04 01:03:21
+[WORKER0] # 60: Cleanup Iteration - 2025-12-04T09:06:51Z
+N=61: Regular iteration - 89/89 smoke tests pass, system healthy (2025-12-04 01:10)
+N=62: 2025-12-04T09:14:35Z - Regular iteration - 89/89 smoke tests pass
+N=63: 2025-12-04T09:19:04Z - Regular iteration - 89/89 smoke tests pass
+N=64: 2025-12-04 01:23 - Regular iteration - 89/89 smoke tests pass
+N=65: 2025-12-04T09:27:13Z - CLEANUP iteration - 89/89 smoke tests pass, system healthy
+N=66: 2025-12-04T09:30:37Z - Regular iteration - 89/89 smoke tests pass
+N=67: 2025-12-04T09:33:49Z - Regular iteration - 89/89 smoke tests pass
+N=68: Regular iteration - 89/89 smoke tests pass - 2025-12-04 01:37
+# 69: Regular Iteration - 2025-12-04 01:40 - 89/89 smoke tests pass
+N=70: 2025-12-04T09:43:44Z - CLEANUP iteration - 89/89 smoke tests pass, system healthy
+[N=71] 2025-12-04 01:46:53 - Regular Iteration - 89/89 smoke tests pass
+[2025-12-04 01:49:59] N=72: Regular Iteration - 89/89 smoke tests pass
+N=73: Regular iteration - 89/89 smoke tests pass - 2025-12-04 01:53:03
+[WORKER0] # 74: 2025-12-04T09:56:04Z - Regular Iteration - 89/89 smoke tests pass
+[WORKER0] # 75: 2025-12-04T10:00:03Z - CLEANUP Iteration - 89/89 smoke tests pass, system healthy
+N=76: 2025-12-04T10:03:26Z - Regular iteration - 89/89 smoke tests pass
+[2025-12-04 02:10:57] WORKER0 # 78: Regular Iteration - System Health Verified
+N=79: Regular iteration - 89/89 smoke tests pass - 2025-12-04 02:15
+[N=80] 2025-12-04 02:18:41 CLEANUP - 89/89 smoke tests pass, system healthy
+[N=81] 2025-12-04 02:21:47 - Regular iteration - 89/89 smoke tests pass - Session: sess_20251204_101922_805d6e5e
+[WORKER0] # 82: 2025-12-04 02:24:51 - Regular iteration - 89/89 smoke tests pass
+# 83: 2025-12-04 02:27:58 - Regular Iteration - 89/89 smoke pass
+N=84: 2025-12-04 09:36:11 - Regular Iteration - 89/89 smoke tests pass
+[WORKER0] # 82: 2025-12-05T01:57:59Z - Regular iteration - 99/99 smoke tests pass - Session: sess_20251205_015531_382bbb7b
+[WORKER0] # 85: 2025-12-04T17:40:03Z - CLEANUP Iteration - 89/89 smoke tests pass, system healthy
+[N=86] 2025-12-04 09:43:30 - Regular iteration, smoke tests: 89/89 pass
+N=87: Regular Iteration - 2025-12-04 09:46 - 89/89 smoke tests pass
+[WORKER0] # 91: 2025-12-04T18:04:06Z - BENCHMARK Iteration - 89/89 smoke, 7/7 perf, 6/6 scaling pass
+N=92: Docker Linux Build Analysis - Patches Generated, Dockerfile.upstream Ready
+[WORKER0] # 28: 2025-12-04T22:02:47Z - Regular Iteration - 89/89 smoke tests pass
+
+N=29 (2025-12-04): Regular Iteration - 89/89 smoke tests pass. System healthy (load 3.75, disk 3%).
+[WORKER0] # 30: 2025-12-04T22:12:10Z - CLEANUP Iteration - 89/89 smoke tests pass, system healthy (load 5.65, disk 3%)
+[WORKER0] # 33: 2025-12-04T22:23:11Z - Regular Iteration - 89/89 smoke tests pass (sess_20251204_222029_34dd1acd)
+[WORKER0] # 35: 2025-12-04T22:30:40Z - CLEANUP Iteration - 89/89 smoke tests pass (sess_20251204_222736_de9a3636), system healthy (load 5.66, disk 3%)
+[N=36] 2025-12-04 14:34:01 - Regular Iteration - 89/89 smoke tests pass
+N=37: 2025-12-04T22:37:24Z - Regular iteration - 89/89 smoke tests pass
+[2025-12-04 14:40:58] N=38: Regular iteration - 89/89 smoke tests pass - Session: sess_20251204_223825_190514e3
+N=39 [2025-12-04 14:47 PST] BENCHMARK: 89/89 smoke, 7/7 performance, 6/6 scaling - no regressions
+[WORKER0] # 40: 2025-12-04T22:51:23Z - CLEANUP Iteration - 89/89 smoke tests pass (sess_20251204_224829_a8472257), system healthy (load 6.76, disk 56%)
+[WORKER0] # 41: 2025-12-04T22:54:51Z - Regular Iteration - 89/89 smoke tests pass (sess_20251204_225219_64a834a4), system healthy (load 3.91, disk 3%)
+N=42 2025-12-04 22:58:09 UTC - Regular iteration - 89/89 smoke tests pass - Session: sess_20251204_225540_fef07719
+N=43: Regular Iteration (2025-12-04 15:02)
+  - Smoke tests: 89/89 pass
+  - Session: sess_20251204_230013_2b9522a1
+  - System: load=3.21, disk=3%, hung=0
+
+[WORKER0] # 44: 2025-12-04T15:03:29Z - Regular Iteration
+  - Smoke tests: 89/89 pass
+  - Session: sess_20251204_230329_41097dfc
+  - System: load=9.25, disk=3%, hung=0
+
+[WORKER0] # 45: 2025-12-04T23:09:47Z - CLEANUP Iteration
+  - Smoke tests: 89/89 pass (100%)
+  - Session: sess_20251204_230656_0547a28b
+  - System: load=4.20, disk=3%, hung=0
+  - Cleanup: No temp files to clean, system healthy
+
+[WORKER0] # 46: 2025-12-04T23:16:32Z - Bug Fixes + Edge Case Tests - 99/99 smoke tests pass (MANAGER directive complete)
+
+[WORKER0] # 47: 2025-12-04T23:20:31Z - Regular Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251204_231755_39f4e38b
+  - System: load=3.21, disk=3%, hung=0
+  - Status: System healthy, all MANAGER directives complete
+[WORKER0] # 48: 2025-12-04T23:24:05Z - Regular Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251204_232134_bfcc10e4
+  - System: load=3.07, disk=3%, hung=0
+  - Status: System healthy
+[WORKER0] # 49: 2025-12-04T23:27:25Z - Regular Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251204_232453_aca28860
+  - System: load=4.05, disk=3%, hung=0
+  - Status: System healthy
+[WORKER0] # 50: 2025-12-04T23:31:41Z - CLEANUP Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251204_232816_eb6e9473
+  - System: load=3.38, disk=3%, hung=0
+  - Cleanup: No temp files, no stale processes, system healthy
+[WORKER0] # 51: 2025-12-04T23:35:12Z - Regular Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251204_233238_945b4233
+  - System: load=3.42, disk=3%, hung=0
+  - Status: System healthy
+[WORKER0] # 52: 2025-12-04T23:41:35Z - BENCHMARK Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251204_233603_23075f10
+  - Performance tests: 8/8 pass (100%)
+  - System: load=3.57, disk=3%, hung=0
+  - Benchmark: All performance metrics stable vs N=51
+[WORKER0] # 53: 2025-12-04T23:42:31Z - Regular Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251204_234231_9f339d69
+  - System: load=4.17, disk=3%, hung=0
+  - Status: System healthy
+[WORKER0] # 54: 2025-12-04T23:48:24Z - Regular Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251204_234557_6a7aa05a
+  - System: load=3.02, disk=3%, hung=0
+  - Status: System healthy
+[WORKER0] # 55: 2025-12-04T23:52:36Z - CLEANUP Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251204_234929_d84fe653
+  - System: load=4.29, disk=3%, hung=0
+  - Cleanup: No temp files, no stale processes, system healthy
+[WORKER0] # 56: 2025-12-04T23:56:14Z - Regular Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251204_235339_0f0e3006
+  - System: load=3.36, disk=3%, hung=0
+  - Status: System healthy
+[WORKER0] # 57: 2025-12-04T23:57:07Z - Regular Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251204_235707_e70be6fd
+  - System: load=3.76, disk=3%, hung=0
+  - Status: System healthy
+
+[WORKER0] # 58: 2025-12-05T00:02:55Z - Regular Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_000022_5a36b256
+  - System: load=4.09, disk=3%, hung=0
+  - Status: System healthy
+[WORKER0] # 59: 2025-12-05T00:06:17Z - Regular Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_000343_fabf075d
+  - System: load=3.79, disk=3%, hung=0
+  - Status: System healthy
+[WORKER0] # 60: 2025-12-05T00:10:00Z - CLEANUP Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_000731_5a39bfb1
+  - System: load=3.90, disk=3%, hung=0
+  - Cleanup: No temp files, no stale processes, system healthy
+[WORKER0] # 61: 2025-12-05T00:14:04Z - Regular Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_001132_202b7188
+  - System: load=4.49, disk=3%, hung=0
+  - Status: System healthy, production-ready
+[WORKER0] # 62: 2025-12-05T00:17:21Z - Regular Iteration - 99/99 smoke tests pass
+N=63: 2025-12-05T00:20:39Z - Regular iteration - 99/99 smoke tests pass
+N=64: 2025-12-05T00:23:58Z - Regular iteration - 99/99 smoke tests pass
+[WORKER0] # 65: 2025-12-05T00:52:50Z - CLEANUP + BENCHMARK Iteration (dual: 65 mod 5 = 0, 65 mod 13 = 0)
+  - Smoke tests: 99/99 pass (100%)
+  - Corpus tests: 964/964 pass (100%)
+  - Performance tests: 7/7 pass (100%)
+  - Scaling tests: 6/6 pass (100%)
+  - Sessions: smoke=sess_20251205_002446_637acebe, corpus=sess_20251205_002713_c870f1e9, perf=sess_20251205_004954_1cc357f5, scaling=sess_20251205_005111_2fe43d73
+  - System: load=6.98, disk=3%, hung=0, temp_files=0
+  - Cleanup: System healthy, no temp files, no stale processes
+N=66 - Regular Iteration - 2025-12-04 16:56:33
+N=68: 2025-12-04T17:03:10Z - Regular Iteration - 99/99 smoke tests pass - Session: sess_20251205_010048_c39af493
+N=69: Regular iteration - 99/99 smoke tests pass (sess_20251205_010535_8ea7ea6c) - 2025-12-04 17:07
+[WORKER0] # 70: 2025-12-05T01:11:32Z - CLEANUP Iteration (70 mod 5 = 0)
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_010839_9bec3db5
+  - Duration: 133.10s
+  - System: load=3.34, disk=3%, hung=0
+  - Cleanup: No temp files, system healthy
+[WORKER0] # 71: 2025-12-05T01:14:39Z - Regular Iteration - 99/99 smoke tests pass - Session: sess_20251205_011212_c526a014
+[WORKER0] # 72: 2025-12-05T01:17:53Z - Regular Iteration - 99/99 smoke tests pass
+[WORKER0] # 73: 2025-12-05T01:21:01Z - Regular Iteration - 99/99 smoke tests pass
+[WORKER0] # 74: 2025-12-05T01:24:26Z - Regular Iteration - 99/99 smoke tests pass - Session: sess_20251205_012149_40e51435
+[WORKER0] # 75: 2025-12-05T01:29:14Z - CLEANUP Iteration (75 mod 5 = 0)
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_012514_ba730e26
+  - Duration: 134.15s
+  - System: load=3.27, disk=3%, hung=0
+  - Cleanup: System healthy, no temp files, working tree clean
+
+[WORKER0] # 76: 2025-12-05T01:32:30Z - Regular Iteration - 99/99 smoke tests pass
+  - Session: sess_20251205_012959_f9e1cc22
+  - Duration: 132.73s
+  - System: load=2.55, disk=3%, hung=0, temp=0
+[WORKER0] # 77: 2025-12-05T01:36:01Z - Regular Iteration - 99/99 smoke tests pass
+  - Session: sess_20251205_013321_ac02f9f6
+  - Duration: 133.54s
+  - System: load=3.88, disk=3%, hung=0, temp=0
+N=78 (BENCHMARK): Smoke 99/99, Performance 7/7, Scaling 6/6 - No regressions - 2025-12-04 17:42
+N=79 (2025-12-05): Regular iteration - 99/99 smoke tests pass - System healthy
+[WORKER0] # 80: 2025-12-05T01:51:10Z - CLEANUP Iteration (80 mod 5 = 0)
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_014819_ae83f306
+  - Duration: 132.89s
+  - System: load=3.89, disk=3%, hung=0, temp=0
+  - Cleanup: System healthy, no stale files, OPTIMIZATION_ROADMAP.md verified
+[N=81] 2025-12-04 17:54:49 - Regular iteration - 99/99 smoke tests pass
+[WORKER0] # 83: 2025-12-05T03:02:32Z - Regular Iteration - 99/99 smoke tests pass - Session: sess_20251205_015907_fffa04ef
+[WORKER0] # 29 (main): 2025-12-05T03:43:27Z - PR #45 Merged - 99/99 smoke tests pass
+  - PR #45 merged to main (v2.0.0 Post-Merge Validation Complete)
+  - Branches cleaned up: merge/v2.0.0-validation, worker/post-merge-validation
+  - Session: sess_20251205_034011_78ea9cc3
+  - Duration: 133.01s
+  - System: load=3.66, disk healthy, hung=0
+
+[WORKER0] # 108: 2025-12-05T16:49:29Z - Regular Iteration
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_164651_a1b10745
+  - Duration: 128.70s
+  - System: load=3.68, disk=3%, hung=0
+  - Binary MD5: 0d367f82bd1ef7053e42af46e1e77e52
+  - Status: System healthy, production-ready
+
+N=109: 2025-12-05T16:53:08Z - Regular Iteration - System Health Verified
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_165025_9d890367
+  - Duration: 129.54s
+  - System: load=2.97, disk=3%, hung=0
+  - CLI version: v2.0.0
+  - Status: System healthy, production-ready
+
+[WORKER0] # 110: 2025-12-05 CLEANUP Iteration (110 mod 5 = 0)
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_165353_4d746e85
+  - Duration: 129.83s
+  - System: load=5.25, disk=3%, hung=0
+  - CLI version: v2.0.0
+  - OPTIMIZATION_ROADMAP.md verified: Stop Condition #2 confirmed
+  - Status: System healthy, production-ready
+
+N=111: 2025-12-05T17:00:27Z - Regular Iteration - System Health Verified
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_165748_7064a486
+  - Duration: 130.72s
+  - System: load=3.09, disk=3%, hung=0
+  - CLI version: v2.0.0
+  - Status: System healthy, production-ready
+
+N=112: 2025-12-05T17:04:25Z - Regular Iteration - System Health Verified
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_170157_fd918a2b
+  - Duration: 128.89s
+  - System: load=3.14, disk=3%, hung=0
+  - CLI version: v2.0.0
+  - Status: System healthy, production-ready
+
+N=113: 2025-12-05T17:08:20Z - Regular Iteration - System Health Verified
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_170556_156d965b
+  - Duration: 128.88s
+  - System: load=3.84, disk=3%, hung=0
+  - CLI version: v2.0.0
+  - Status: System healthy, production-ready
+
+N=114: 2025-12-05T17:12:37Z - Regular Iteration - System Health Verified
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_171005_cce2a116
+  - Duration: 128.98s
+  - System: load=3.86, disk=3%, hung=0
+  - CLI version: v2.0.0
+  - Status: System healthy, production-ready
+
+N=115: 2025-12-05T17:17:01Z - CLEANUP Iteration (115 mod 5 = 0)
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_171404_ec26e6bf
+  - Duration: 129.12s
+  - System: load=2.95, disk=57%, hung=0
+  - CLI version: v2.0.0
+  - Cleanup: No temp files, no stale processes, system healthy
+  - Code review status: 13/20 issues fixed, 7 deferred (optimization/architectural)
+  - Status: System healthy, production-ready
+
+N=116: 2025-12-05T17:24:13Z - Regular Iteration - System Health Verified
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_172117_e70551a6
+  - Duration: 131.86s
+  - System: load=4.66, disk=3%, hung=0
+  - CLI version: v2.0.0
+  - Status: System healthy, production-ready
+
+N=159: 2025-12-05T23:45:45Z - Regular Iteration - System Health Verified
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_231555_1e62d12c
+  - Duration: 132.91s
+  - System: load=1.98, disk=3%, hung=0
+  - CLI version: v2.0.0
+  - Binary MD5: 120900e62dad
+  - Status: System healthy, production-ready
+
+N=160: 2025-12-06T07:47:00Z - CLEANUP Iteration - Removed 7724 Legacy Log Files
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_234700_c0f94621
+  - Duration: 131.15s
+  - System: load=4.86, disk=3%, hung=0
+  - Cleanup: Removed 7724 worker_iter_*.jsonl files (197MB freed)
+  - worker_logs reduced: 212MB → 15MB
+  - Status: System healthy, production-ready
+
+N=161: 2025-12-05T23:54:08Z - Regular Iteration - System Health Verified
+  - Smoke tests: 99/99 pass (100%)
+  - Session: sess_20251205_235138_ad6078fe
+  - Duration: 131.48s
+  - System: load=2.00, disk=3%, hung=0
+  - CLI version: v2.0.0
+  - Binary MD5: 120900e62dad
+  - Status: System healthy, production-ready
+
+[WORKER0] # 162: Regular Iteration - 2025-12-05T23:57:51Z
+  - Smoke: 99/99 pass (100%)
+  - Session: sess_20251205_235514_07b29fec
+  - Duration: 131.98s
+  - System: load=1.35, disk=3%, hung=0
+  - CLI version: v2.0.0
+  - Status: System healthy, production-ready
+N=163: 2025-12-06T00:01:08Z - Regular iteration - 99/99 smoke tests pass - Session: sess_20251205_235839_40271518
+N=164: 2025-12-05 16:04 - Regular iteration - 99/99 smoke tests pass
+N=166 | 2025-12-06 00:12 UTC | Regular iteration - 99/99 smoke pass | sess_20251206_001021_047e5a59
+N=167: Regular iteration - 99/99 smoke pass, load 2.45, disk 3%
+N=168: Regular Iteration - 99/99 smoke tests pass (sess_20251206_001626_2e9a3326) - 2025-12-05 16:18
+N=169 [BENCHMARK]: Smoke 99/99 (100%), Perf 7/7 (100%), Load 2.13, Disk 3% - sess_20251206_001931_8ed6792d
+N=170 [CLEANUP]: Smoke 99/99 (100%), Load 2.53, Disk 3%, No cleanup needed (system clean) - sess_20251206_002358_603f2cb2
+N=171: Regular Iteration - 99/99 smoke pass (100%) - sess_20251206_002812_60695e99 - System healthy
+N=172: Regular Iteration - 99/99 smoke pass (100%) - sess_20251206_003110_f851e0d4 - System healthy
+[2025-12-05 16:37:02] N=173: Regular Iteration - Smoke 99/99 pass (100%) - sess_20251206_003437_7ceeda68
+N=174: 2025-12-05T16:40:18Z - Regular iteration - 99/99 smoke tests pass
+N=175 [CLEANUP]: 2025-12-06T00:44:53Z - Smoke 99/99 pass (100%) - sess_20251206_004126_a4b0d91d - Disk 3%, No cache files, System clean
+N=176: 2025-12-06T00:48:14Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_004536_65ec770b
+N=179: 2025-12-06T00:58:54Z - Regular iteration - 99/99 smoke tests pass
+N=180 [CLEANUP]: 2025-12-06T01:02:36Z - Smoke 99/99 pass (100%) - sess_20251206_005953_83b08f58 - Load 1.87, Disk 3%, System clean
+N=181: 2025-12-06T01:06:41Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_010402_b363ed83
+N=182: 2025-12-05 17:10 - Regular iteration - 99/99 smoke tests pass
+N=183: 2025-12-06T01:13:31Z - Regular iteration - 99/99 smoke tests pass
+N=184: 2025-12-06T01:18:26Z - Regular iteration - 99/99 smoke tests pass
+N=185 [CLEANUP]: 2025-12-06T01:22:36Z - Smoke 99/99 pass (100%) - sess_20251206_011920_1fb959cd - Load 1.66, Disk 3%, System clean
+N=186: 2025-12-06T01:26:28Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_012344_5e3dd82e
+N=187: 2025-12-05T17:29:54Z - Regular iteration - 99/99 smoke tests pass
+N=188: 2025-12-06T01:33:51Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_013101_b8bf5fb1
+N=189: 2025-12-06T01:38:26Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_013525_c15ae709
+N=190 [CLEANUP]: 2025-12-06T01:43:43Z - Smoke 99/99 pass (100%) - sess_20251206_013917_80db082e - Load 2.19, Disk 3%, System clean
+N=191: 2025-12-06T01:47:39Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_014458_d3affed2
+N=192: 2025-12-06T01:51:18Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_014838_706ea6c7
+N=193: 2025-12-06T01:54:54Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_015217_0506d872
+N=194: 2025-12-05T17:58:39Z - Regular iteration - 99/99 smoke tests pass
+N=195 [CLEANUP]: 2025-12-06T02:03:19Z - Smoke 99/99 pass (100%) - sess_20251206_020007_add32117 - Load 1.32, Disk 3%, System clean
+N=196: Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_020505_30846f1f - 132.57s - Load 1.65
+N=197: Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_020838_3e289551 - 132.97s - Load 1.74
+N=198: Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_021213_8df2d043 - 132.21s - Load 2.46
+N=199: 2025-12-06T02:18:16Z - Regular iteration - 99/99 smoke tests pass
+N=200 [CLEANUP]: 2025-12-06T02:27:38Z - Smoke 99/99 pass (100%) - sess_20251206_022428_486d9703 - Load 1.99, Disk 3%, System clean
+N=201: Regular iteration. Smoke: 99/99 pass. Session: sess_20251206_022901_8dfdd5ea. Duration: 132.14s
+N=202: Regular iteration - 99/99 smoke pass (sess_20251206_023229_0d7cbfec) - 2025-12-05 18:34
+N=203: Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_023555_1c9eeb51 - 2025-12-06
+N=206: Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_024756_fba37d5d - 2025-12-06T02:50:32Z
+[WORKER0] # 207: 2025-12-06T02:55:43Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_025301_06f9fbc7
+N=208 (2025-12-06): BENCHMARK - 99/99 smoke pass, 7/7 performance pass - sess_20251206_025821_98f5b3f9
+N=209: Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_030236_8378dbf7 - 2025-12-06T03:05:18Z
+N=210 (2025-12-05): CLEANUP - 99/99 smoke pass, OPTIMIZATION_ROADMAP.md updated - sess_20251206_030649_79124b2f
+N=211: Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_031259_90947e38 - 2025-12-06T03:16:08Z
+N=212: Regular iteration - 99/99 smoke tests pass (sess_20251206_031723_269e3ca7)
+N=213: Regular iteration - 99/99 smoke tests pass, system healthy (2025-12-06T03:24:18Z)
+N=215: CLEANUP - 99/99 smoke tests pass (100%) - sess_20251206_033004_02921a11 - 2025-12-06T03:33:55Z
+N=217: 2025-12-05 19:42 - Regular iteration - 99/99 smoke pass - sess_20251206_033921_a77e0238
+N=220: CLEANUP - 99/99 smoke tests pass (100%) - sess_20251206_035049_381f0a1a - 2025-12-06T03:53:42Z
+N=221: BENCHMARK - 99/99 smoke, 6/6 perf, 6/6 scaling (100%) - sess_20251206_035511_d1f9d119 - 2025-12-05T20:09:00Z
+N=222: Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_041046_8e8ceb4f - 2025-12-06T04:13:31Z
+N=223: Regular iteration. Smoke 99/99 pass. Session sess_20251206_041509_22b38be3. Load 2.20, Disk 3%.
+N=224: 2025-12-06T04:22:39Z - Regular iteration - 99/99 smoke tests pass
+N=225: 2025-12-06T04:27:17Z - CLEANUP - 99/99 smoke tests pass (100%) - sess_20251206_042339_c4513517
+N=228: 2025-12-06T04:38:33Z - Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_043556_59d35885
+N=229: 2025-12-06T04:42:42Z - Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_044006_ee3e3242
+N=232: 2025-12-06T04:54:08Z - Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_045139_47abf6c6
+N=233 (2025-12-05 20:57): Regular iteration - 99/99 smoke pass - sess_20251206_045608_11c6dd51
+N=235: 2025-12-06T05:12:00Z - CLEANUP - 99/99 smoke tests pass (100%) - sess_20251206_050907_e578bac6
+N=236: 2025-12-06T05:15:38Z - Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_051257_f1f1ec0b
+N=237: 2025-12-06T05:19:09Z - Regular iteration - 99/99 smoke tests pass (100%) - sess_20251206_051640_73842683
+N=240: 2025-12-06T05:31:06Z - CLEANUP - 99/99 smoke tests pass (100%) - sess_20251206_052750_22ab189b - Load 1.79, Disk 3%, System clean
+[WORKER0] # 241: 2025-12-06T05:34:52Z - Regular Iteration - 99/99 smoke tests pass - sess_20251206_053220_3629da0a
+[WORKER0] # 242: 2025-12-06T05:39:09Z - Regular Iteration - 99/99 smoke tests pass - sess_20251206_053627_f7fdbccd
+N=243: 2025-12-06T05:42:35Z - Regular iteration - 99/99 smoke pass - sess_20251206_054004_1423fa7f
+N=244: 2025-12-06T05:46:14Z - Regular iteration - 99/99 smoke pass - sess_20251206_054344_6a053879
+N=245: 2025-12-06T05:50:11Z - CLEANUP - 99/99 smoke tests pass (100%) - sess_20251206_054723_1fb0234c - Load 3.73, Disk 3%, System healthy
+N=249: 2025-12-06T06:04:59Z - Regular iteration - 99/99 smoke pass - sess_20251206_060226_630f3052
+N=250: 2025-12-06T06:09:03Z - CLEANUP - 99/99 smoke tests pass (100%) - sess_20251206_060609_8ea0f6d2 - Load 1.75, Disk 3%, System healthy
+N=251: Regular Iteration - 99/99 smoke tests pass - sess_20251206_061020_8a13444e - 2025-12-05 22:12:47
+[WORKER0] # 253: 2025-12-06T06:21:23Z - Regular Iteration - 99/99 smoke tests pass - sess_20251206_061845_f0ad71bf
+N=254: 2025-12-05T22:25:03Z - Regular iteration - 99/99 smoke tests pass
+N=256: 2025-12-06T06:32:39Z - Regular Iteration - 99/99 smoke tests pass - sess_20251206_063004_d0ae8a7e - Load 1.89, Disk 3%, System healthy
+N=257: 2025-12-06T06:36:38Z - Regular iteration - 99/99 smoke tests pass
+N=258: 2025-12-06T06:40:34Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_063751_fae19d8e
+N=263: 2025-12-06T07:00:54Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_065822_3b2e2d24
+N=264: Regular Iteration - 99/99 smoke (100%) - sess_20251206_070512_3e2d65e3 - 2025-12-05 23:07
+N=265: 2025-12-06T07:12:51Z - CLEANUP - 99/99 smoke tests pass (100%) - sess_20251206_070949_753f8d34 - Load 1.62, Disk 3%, System healthy
+[N=266] 2025-12-05 23:16:25 - Regular Iteration - Smoke: 99/99 pass - Session: sess_20251206_071356_dd4511a7
+[N=268] 2025-12-05 23:25:07 - Regular iteration - 99/99 smoke tests pass - sess_20251206_072124_505b8139
+[N=269] 2025-12-06 07:28:28 UTC - Regular iteration - 99/99 smoke tests pass - sess_20251206_072602_f2c9927c
+N=270: 2025-12-06T07:33:05Z - CLEANUP - 99/99 smoke tests pass (100%) - sess_20251206_072928_09fdfb56 - Load 2.30, Disk 3%, System healthy
+N=271: Regular Iteration - 99/99 smoke pass, load 1.75, disk 3%
+N=272: 2025-12-06T07:40:41Z - Regular Iteration - 99/99 smoke tests pass - sess_20251206_073817_bf2464fd - Load 1.66, Disk 3%, System healthy
+N=273: 2025-12-06T07:42:32Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_074222_a85f4349 - Load 1.62, Disk 3%
+N=274: 2025-12-06T07:48:20Z - Regular iteration - 99/99 smoke tests pass - sess_20251206_074555_e1b2314d - Load 1.90, Disk 3%
+N=275: 2025-12-06T07:52:13Z - CLEANUP - 99/99 smoke tests pass (100%) - sess_20251206_074935_378840ac - Load 1.82, Disk 3%, System healthy
+N=276: Regular iteration - 99/99 smoke pass - sess_20251206_075320_38bb709b
+N=171 | 2025-12-07 09:55:21 | Regular | 99/99 passed | sess_20251207_175247_26d31441
+N=172: Regular iteration - 99/99 smoke tests pass - 2025-12-07 09:58
+N=175 | 2025-12-07 18:10:10 | CLEANUP | 99/99 passed | sess_20251207_180655_b24fc05b
+176: 2025-12-07 10:13 - Regular Iteration - System Health Verified
+2025-12-07 10:16:49 - N=177: Regular Iteration - System Health Verified
+2025-12-07T18:30:41Z N=181 Regular iteration - 99/99 smoke tests pass

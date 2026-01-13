@@ -1,0 +1,602 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Code snippets",
+    "text": "Code snippets",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "The Pythagorean theorem can be written as an equation relating the lengths of the sides",
+    "text": "The Pythagorean theorem can be written as an equation relating the lengths of the sides"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/3",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "a",
+    "text": "a",
+    "formatting": {
+      "italic": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/4",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ",",
+    "text": ","
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/5",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "b",
+    "text": "b",
+    "formatting": {
+      "italic": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/6",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "and the hypotenuse",
+    "text": "and the hypotenuse"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/7",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "c",
+    "text": "c",
+    "formatting": {
+      "italic": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/8",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ".",
+    "text": "."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/1",
+    "children": [
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/10",
+    "parent": {
+      "$ref": "#/groups/9"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "To use Docling, simply install",
+    "text": "To use Docling, simply install"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/11",
+    "parent": {
+      "$ref": "#/groups/9"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "docling",
+    "text": "docling",
+    "formatting": {
+      "code": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/12",
+    "parent": {
+      "$ref": "#/groups/9"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "from your package manager, e.g. pip:",
+    "text": "from your package manager, e.g. pip:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/13",
+    "parent": {
+      "$ref": "#/groups/9"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "pip install docling",
+    "text": "pip install docling",
+    "formatting": {
+      "code": true
+    }
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/9",
+    "children": [
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/15",
+    "parent": {
+      "$ref": "#/groups/14"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "To convert individual documents with python, use",
+    "text": "To convert individual documents with python, use"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/16",
+    "parent": {
+      "$ref": "#/groups/14"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "convert()",
+    "text": "convert()",
+    "formatting": {
+      "code": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/17",
+    "parent": {
+      "$ref": "#/groups/14"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ", for example:",
+    "text": ", for example:"
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/14",
+    "children": [
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "code",
+    "self_ref": "#/texts/18",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "from docling.document_converter import DocumentConverter\n\nsource = \"https://arxiv.org/pdf/2408.09869\"\nconverter = DocumentConverter()\nresult = converter.convert(source)\nprint(result.document.export_to_markdown())",
+    "text": "from docling.document_converter import DocumentConverter\n\nsource = \"https://arxiv.org/pdf/2408.09869\"\nconverter = DocumentConverter()\nresult = converter.convert(source)\nprint(result.document.export_to_markdown())"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/20",
+    "parent": {
+      "$ref": "#/groups/19"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "The program will output:",
+    "text": "The program will output:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/21",
+    "parent": {
+      "$ref": "#/groups/19"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "## Docling Technical Report[...]",
+    "text": "## Docling Technical Report[...]",
+    "formatting": {
+      "code": true
+    }
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/19",
+    "children": [
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/22",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Prefetch the models:",
+    "text": "Prefetch the models:"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/24",
+    "parent": {
+      "$ref": "#/groups/23"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Use the `docling-tools models download` utility:",
+    "text": "Use the `docling-tools models download` utility:",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/25",
+    "parent": {
+      "$ref": "#/groups/23"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Alternatively, models can be programmatically downloaded using `docling.utils.model_downloader.download_models()` .",
+    "text": "Alternatively, models can be programmatically downloaded using `docling.utils.model_downloader.download_models()` .",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/26",
+    "parent": {
+      "$ref": "#/groups/23"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Also, you can use download-hf-repo parameter to download arbitrary models from HuggingFace by specifying repo id: `$ docling-tools models download-hf-repo ds4sd/SmolDocling-256M-preview Downloading ds4sd/SmolDocling-256M-preview model from HuggingFace...`",
+    "text": "Also, you can use download-hf-repo parameter to download arbitrary models from HuggingFace by specifying repo id: `$ docling-tools models download-hf-repo ds4sd/SmolDocling-256M-preview Downloading ds4sd/SmolDocling-256M-preview model from HuggingFace...`",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/23",
+    "children": [
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  }
+]

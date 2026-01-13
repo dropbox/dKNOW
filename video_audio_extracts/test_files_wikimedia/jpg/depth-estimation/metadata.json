@@ -1,0 +1,82 @@
+[
+  {
+    "path": "test_files_wikimedia/jpg/depth-estimation/01_\"\u4f60\u5df2\u7ecf\u8fdc\u8fdc\u79bb\u5f00_\u6211\u4e5f\u4f1a\u6162\u6162\u8d70\u5f00\"_-_Flickr_-_cyntheticflava.jpg",
+    "size": 2282995,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/%22%E4%BD%A0%E5%B7%B2%E7%BB%8F%E8%BF%9C%E8%BF%9C%E7%A6%BB%E5%BC%80_%E6%88%91%E4%B9%9F%E4%BC%9A%E6%85%A2%E6%85%A2%E8%B5%B0%E5%BC%80%22_-_Flickr_-_cyntheticflava.jpg",
+    "title": "File:\"\u4f60\u5df2\u7ecf\u8fdc\u8fdc\u79bb\u5f00 \u6211\u4e5f\u4f1a\u6162\u6162\u8d70\u5f00\" - Flickr - cyntheticflava.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/depth-estimation/02_05_Station_31_BGKlinikLudwigshafen.jpg",
+    "size": 70791,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/05_Station_31_BGKlinikLudwigshafen.jpg",
+    "title": "File:05 Station 31 BGKlinikLudwigshafen.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/depth-estimation/03_09_Point_De_Fuite_-_Vanishing_Point_01.jpg",
+    "size": 3897714,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/09_Point_De_Fuite_-_Vanishing_Point_01.jpg",
+    "title": "File:09 Point De Fuite - Vanishing Point 01.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/depth-estimation/04_0908\u56de\u5eca\u3092\u6b69\u304f2.jpg",
+    "size": 739676,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/0908%E5%9B%9E%E5%BB%8A%E3%82%92%E6%AD%A9%E3%81%8F2.jpg",
+    "title": "File:0908\u56de\u5eca\u3092\u6b69\u304f2.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/depth-estimation/05_20141220\uc11c\uc6b8\uc18c\ubc29\ud559\uad50_\ubcf8\uad00_\ub0b4\ubd8078.jpg",
+    "size": 4986350,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/20141220%EC%84%9C%EC%9A%B8%EC%86%8C%EB%B0%A9%ED%95%99%EA%B5%90_%EB%B3%B8%EA%B4%80_%EB%82%B4%EB%B6%8078.jpg",
+    "title": "File:20141220\uc11c\uc6b8\uc18c\ubc29\ud559\uad50 \ubcf8\uad00 \ub0b4\ubd8078.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/depth-estimation/06_2025TPVLS1WarmUp_2F_Corridor.jpg",
+    "size": 2474693,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/2025TPVLS1WarmUp_2F_Corridor.jpg",
+    "title": "File:2025TPVLS1WarmUp 2F Corridor.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/depth-estimation/07_25hours,_Berlin_(LRM_20210702_082109-RR-HDR).jpg",
+    "size": 4518561,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/25hours%2C_Berlin_%28LRM_20210702_082109-RR-HDR%29.jpg",
+    "title": "File:25hours, Berlin (LRM 20210702 082109-RR-HDR).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/depth-estimation/08_500px_photo_(176018363).jpeg.jpg",
+    "size": 435429,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/500px_photo_%28176018363%29.jpeg",
+    "title": "File:500px photo (176018363).jpeg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/depth-estimation/09_500px_photo_(26110551).jpeg.jpg",
+    "size": 192881,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/500px_photo_%2826110551%29.jpeg",
+    "title": "File:500px photo (26110551).jpeg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/depth-estimation/10_6_Kryvonosa_Street,_Lviv_(2).jpg",
+    "size": 213830,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/6_Kryvonosa_Street%2C_Lviv_%282%29.jpg",
+    "title": "File:6 Kryvonosa Street, Lviv (2).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  }
+]

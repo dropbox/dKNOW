@@ -1,0 +1,31 @@
+## Application Form
+
+Applicant Name: _________________
+
+Email: _________________
+
+Phone: _________________
+
+## Areas of Interest
+
+Software Development
+
+Data Science
+
+Design
+
+Marketing
+
+## Education Level
+
+High School
+
+Bachelor's Degree
+
+Master's Degree
+
+PhD
+
+Signature: ___________________
+
+Date: ___________________

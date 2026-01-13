@@ -1,0 +1,3 @@
+# ONNX models are too large for git - generate them locally
+*.onnx
+*.onnx.data

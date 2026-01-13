@@ -1,0 +1,32 @@
+name: text_embeddings
+description: "Extract semantic embeddings from text using Sentence-Transformers models"
+
+inputs:
+  - Transcription  # Can take output of transcription plugin
+  - txt
+  - json
+
+outputs:
+  - TextEmbeddings
+
+config:
+  max_file_size_mb: 10
+  requires_gpu: false  # CPU inference is fast for text
+  experimental: false
+  models:
+    - all_minilm_l6_v2  # 384-dim, fast (default)
+    - all_mpnet_base_v2  # 768-dim, accurate
+
+performance:
+  avg_processing_time_per_gb: "20s"
+  memory_per_file_mb: 300
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1727740800  # 2024-10-01 00:00:00 UTC
+
+implementation:
+  crate: "embeddings"
+  function: "extract_text_embeddings"

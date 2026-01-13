@@ -1,0 +1,263 @@
+{
+  "page_number": 6,
+  "elements": [
+    {
+      "label": "paragraph",
+      "text": "tention encoding is then multiplied to the encoded image to produce a feature for each table cell. Notice that this is different than the typical object detection problem where imbalances between the number of detections and the amount of objects may exist. In our case, we know up front that the produced detections always match with the table cells in number and correspondence.",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The output features for each table cell are then fed into the feed-forward network (FFN). The FFN consists of a Multi-Layer Perceptron (3 layers with ReLU activation function) that predicts the normalized coordinates for the bounding box of each table cell. Finally, the predicted bounding boxes are classified based on whether they are empty or not using a linear layer.",
+      "bbox": {
+        "l": 0.0,
+        "t": 10.0,
+        "r": 100.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Loss Functions.",
+      "bbox": {
+        "l": 0.0,
+        "t": 20.0,
+        "r": 20.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "We formulate a multi-task loss Eq. 2 to train our network. The Cross-Entropy loss (denoted as l_s) is used to train the Structure Decoder which predicts the structure tokens. As for the Cell BBox Decoder it is trained with a combination of losses denoted as l_box. l_box consists of the generally used l_1 loss for object detection and the IoU loss (l_iou) to be scale invariant as explained in [25]. In comparison to DETR, we do not use the Hungarian algorithm [15] to match the predicted bounding boxes with the ground-truth boxes, as we have already achieved a one-to-one match through two steps: 1) Our token input sequence data cells are also in order when they are provided as input to the Cell BBox Decoder, and 2) Our bounding boxes generation mechanism (see Sec. 3) ensures a one-to-one mapping between the content cell and its bounding box for all post-processed datasets.",
+      "bbox": {
+        "l": 0.0,
+        "t": 25.0,
+        "r": 100.0,
+        "b": 40.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The loss used to train the TableFormer can be defined as following:",
+      "bbox": {
+        "l": 0.0,
+        "t": 40.0,
+        "r": 100.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "formula",
+      "text": "l_box = λ_iou l_iou + λ_1 l_1 l = λ_s + (1 − λ) l_box where λ ∈ [0, 1], and λ_iou, λ_1 ∈ ℝ are hyper-parameters.",
+      "bbox": {
+        "l": 0.0,
+        "t": 45.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "5. Experimental Results",
+      "bbox": {
+        "l": 0.0,
+        "t": 50.0,
+        "r": 40.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "5.1. Implementation Details",
+      "bbox": {
+        "l": 0.0,
+        "t": 55.0,
+        "r": 40.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "TableFormer uses ResNet-18 as the CNN Backbone Network. The input images are resized to 448*448 pixels and the feature map has a dimension of 28*28. Additionally, we enforce the following input constraints:",
+      "bbox": {
+        "l": 0.0,
+        "t": 60.0,
+        "r": 100.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "formula",
+      "text": "Image width and height ≤ 1024 pixels Structural tags length ≤ 512 tokens.",
+      "bbox": {
+        "l": 0.0,
+        "t": 65.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Although input constraints are used also by other methods, such as EDD, ours are less restrictive due to the improved runtime performance and lower memory footprint of TableFormer. This allows to utilize input samples with longer sequences and images with larger dimensions.",
+      "bbox": {
+        "l": 0.0,
+        "t": 70.0,
+        "r": 100.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The Transformer Encoder consists of two “Transformer Encoder Layers”, with an input feature size of 512, feed forward network of 1024, and 4 attention heads. As for the Transformer Decoder it is composed of four “Transformer Decoder Layers” with similar input and output dimensions as the “Transformer Encoder Layers”. Even though our model uses fewer layers and heads than the default implementation parameters, our extensive experimentation has proved this setup to be more suitable for table images. We attribute this finding to the inherent design of table images, which contain mostly lines and text, unlike the more elaborate content present in other scopes (e.g. the COCO dataset). Moreover, we have added ResNet blocks to the inputs of the Structure Decoder and Cell BBox Decoder. This prevents a decoder having a stronger influence over the learned weights which would damage the other prediction task (structure vs bounding boxes), but learn task specific weights instead. Lastly our dropout layers are set to 0.5.",
+      "bbox": {
+        "l": 0.0,
+        "t": 75.0,
+        "r": 100.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "For training, TableFormer is trained with 3 Adam optimizers, each one for the CNN Backbone Network, Structure Decoder, and Cell BBox Decoder. Taking the PubTabNet as an example for our parameter set up, the initialization learning rate is 0.001 for 12 epochs with a batch size of 24, and λ set to 0.5. Afterwards, we reduce the learning rate to 0.0001, the batch size to 18 and train for 12 more epochs or convergence.",
+      "bbox": {
+        "l": 0.0,
+        "t": 90.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "TableFormer is implemented with PyTorch and Torchvision libraries [22]. To speed up the inference, the image undergoes a single forward pass through the CNN Backbone Network and transformer encoder. This eliminates the overhead of generating the same features for each decoding step. Similarly, we employ a ‘caching’ technique to perform faster autoregressive decoding. This is achieved by storing the features of decoded tokens so we can reuse them for each time step. Therefore, we only compute the attention for each new tag.",
+      "bbox": {
+        "l": 0.0,
+        "t": 100.0,
+        "r": 100.0,
+        "b": 110.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "5.2. Generalization",
+      "bbox": {
+        "l": 0.0,
+        "t": 110.0,
+        "r": 40.0,
+        "b": 115.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "TableFormer is evaluated on three major publicly available datasets of different nature to prove the generalization and effectiveness of our model. The datasets used for evaluation are the PubTabNet, FinTabNet and TableBank which stem from the scientific, financial and general domains respectively.",
+      "bbox": {
+        "l": 0.0,
+        "t": 115.0,
+        "r": 100.0,
+        "b": 120.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "We also share our baseline results on the challenging SynthTabNet dataset. Throughout our experiments, the same parameters stated in Sec. 5.1 are utilized.",
+      "bbox": {
+        "l": 0.0,
+        "t": 120.0,
+        "r": 100.0,
+        "b": 125.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "6",
+      "bbox": {
+        "l": 50.0,
+        "t": 125.0,
+        "r": 55.0,
+        "b": 130.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

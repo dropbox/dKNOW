@@ -1,0 +1,16 @@
+[package]
+name = "shead"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Show one-line file summaries (like head -n 1 but for any file type)"
+
+[[bin]]
+name = "shead"
+path = "src/main.rs"
+
+[dependencies]
+# Extended attributes (macOS/Linux)
+xattr = "1.3"
+# MIME type detection by magic bytes
+infer.workspace = true

@@ -1,0 +1,109 @@
+{
+  "page_number": 5,
+  "elements": [
+    {
+      "label": "picture",
+      "text": "Diagram showing the process of TableFormer with components: Extracted Table Images, Standardized Images, Encoder, BBox Decoder, Structure Decoder, and BBoxes.",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 3: TableFormer takes in an image of the PDF and creates bounding box and HTML structure predictions that are synchronized. The bounding boxes grabs the content from the PDF and inserts it in the structure.",
+      "bbox": {
+        "l": 0.0,
+        "t": 51.0,
+        "r": 100.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Diagram showing the Encoder process with components: CNN Backbone Encoder, Multi-Head Attention, Add & Normalisation, Feed Forward Network, Linear, Attention Network, Sigmoid, and Output.",
+      "bbox": {
+        "l": 0.0,
+        "t": 56.0,
+        "r": 100.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 4: Given an input image of a table, the Encoder produces fixed-length features that represent the input image. The features are then passed to both the Structure Decoder and Cell BBox Decoder. During training, the Structure Decoder receives ‘tokenized tags’ of the HTML code that represent the table structure. Afterwards, a transformer encoder and decoder architecture is employed to produce features that are received by a linear layer, and the Cell BBox Decoder. The linear layer is applied to the features to predict the tags. Simultaneously, the Cell BBox Decoder selects features referring to the data cells (‘<td>’, ‘<’) and passes them through an attention network, an MLP, and a linear layer to predict the bounding boxes.",
+      "bbox": {
+        "l": 0.0,
+        "t": 76.0,
+        "r": 100.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "forming classification, and adding an adaptive pooling layer of size 28*28. ResNet by default downsamples the image resolution by 32 and then the encoded image is provided to both the Structure Decoder, and Cell BBox Decoder.",
+      "bbox": {
+        "l": 0.0,
+        "t": 86.0,
+        "r": 100.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Structure Decoder.",
+      "bbox": {
+        "l": 0.0,
+        "t": 91.0,
+        "r": 100.0,
+        "b": 92.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The transformer architecture of this component is based on the work proposed in [31]. After extensive experimentation, the Structure Decoder is modeled as a transformer encoder with two encoder layers and a transformer decoder made from a stack of 4 decoder layers that comprise mainly of multi-head attention and feed forward layers. This configuration uses fewer layers and heads in comparison to networks applied to other problems (e.g. “Scene Understanding”, “Image Captioning”), something which we relate to the simplicity of table images.",
+      "bbox": {
+        "l": 0.0,
+        "t": 93.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

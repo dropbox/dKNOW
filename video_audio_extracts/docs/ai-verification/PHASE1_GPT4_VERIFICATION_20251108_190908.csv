@@ -1,0 +1,52 @@
+test_name,operation,input_file,status,confidence,findings
+"smoke_format_arw_face_detection","keyframes;face-detection","test_files_camera_raw/sony_a55.arw","ERROR","0.0","AI verification script failed: Traceback (most recent call last):
+  File ""/Users/ayates/video_audio_extracts/scripts/ai_verify_outputs_openai.py"", line 176, in <module>
+    main()
+  File ""/Users/ayates/video_audio_extracts/scripts/ai_verify_outputs_openai.py"", line 168, in main
+    result = verify_vision_output(input_file, output_file, operation)
+  File ""/Users/ayates/video_audio_extracts/scripts/ai_verify_outputs_openai.py"", line 81, in verify_vision_output
+    response = client.chat.completions.create(
+  File ""/Users/ayates/Library/Python/3.9/lib/python/site-packages/openai/_utils/_utils.py"", line 286, in wrapper
+    return func(*args, **kwargs)
+  File ""/Users/ayates/Library/Python/3.9/lib/python/site-packages/openai/resources/chat/completions/completions.py"", line 1156, in create
+    return self._post(
+  File ""/Users/ayates/Library/Python/3.9/lib/python/site-packages/openai/_base_client.py"", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File ""/Users/ayates/Library/Python/3.9/lib/python/site-packages/openai/_base_client.py"", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': ""You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp']."", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}"
+"smoke_format_arw_object_detection","keyframes;object-detection","test_files_camera_raw/sony_a55.arw","ERROR","0.0","Output file not found: debug_output/stage_00_object_detection.json"
+"smoke_format_cr2_face_detection","keyframes;face-detection","test_files_camera_raw/canon_eos_m.cr2","ERROR","0.0","AI verification script failed: Traceback (most recent call last):
+  File ""/Users/ayates/video_audio_extracts/scripts/ai_verify_outputs_openai.py"", line 176, in <module>
+    main()
+  File ""/Users/ayates/video_audio_extracts/scripts/ai_verify_outputs_openai.py"", line 168, in main
+    result = verify_vision_output(input_file, output_file, operation)
+  File ""/Users/ayates/video_audio_extracts/scripts/ai_verify_outputs_openai.py"", line 81, in verify_vision_output
+    response = client.chat.completions.create(
+  File ""/Users/ayates/Library/Python/3.9/lib/python/site-packages/openai/_utils/_utils.py"", line 286, in wrapper
+    return func(*args, **kwargs)
+  File ""/Users/ayates/Library/Python/3.9/lib/python/site-packages/openai/resources/chat/completions/completions.py"", line 1156, in create
+    return self._post(
+  File ""/Users/ayates/Library/Python/3.9/lib/python/site-packages/openai/_base_client.py"", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File ""/Users/ayates/Library/Python/3.9/lib/python/site-packages/openai/_base_client.py"", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': ""You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp']."", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}"
+"smoke_format_cr2_object_detection","keyframes;object-detection","test_files_camera_raw/canon_eos_m.cr2","ERROR","0.0","Output file not found: debug_output/stage_00_object_detection.json"
+"smoke_format_dng_face_detection","keyframes;face-detection","test_files_camera_raw/iphone7_plus.dng","ERROR","0.0","AI verification script failed: Traceback (most recent call last):
+  File ""/Users/ayates/video_audio_extracts/scripts/ai_verify_outputs_openai.py"", line 176, in <module>
+    main()
+  File ""/Users/ayates/video_audio_extracts/scripts/ai_verify_outputs_openai.py"", line 168, in main
+    result = verify_vision_output(input_file, output_file, operation)
+  File ""/Users/ayates/video_audio_extracts/scripts/ai_verify_outputs_openai.py"", line 81, in verify_vision_output
+    response = client.chat.completions.create(
+  File ""/Users/ayates/Library/Python/3.9/lib/python/site-packages/openai/_utils/_utils.py"", line 286, in wrapper
+    return func(*args, **kwargs)
+  File ""/Users/ayates/Library/Python/3.9/lib/python/site-packages/openai/resources/chat/completions/completions.py"", line 1156, in create
+    return self._post(
+  File ""/Users/ayates/Library/Python/3.9/lib/python/site-packages/openai/_base_client.py"", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File ""/Users/ayates/Library/Python/3.9/lib/python/site-packages/openai/_base_client.py"", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': ""You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp']."", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}"
+"smoke_format_dng_ocr","keyframes;ocr","test_files_camera_raw/iphone7_plus.dng","ERROR","0.0","Output file not found: debug_output/stage_00_ocr.json"

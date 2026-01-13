@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0">
+<description>
+<title-info>
+<genre>fantasy</genre>
+<author><first-name>Jane</first-name><last-name>Smith</last-name></author>
+<book-title>Complex Structure Test</book-title>
+<annotation><p>A test book with multiple sections and nested structure.</p></annotation>
+<lang>en</lang>
+</title-info>
+<document-info>
+<author><nickname>Docling Test Suite</nickname></author>
+<date>2025-11-07</date>
+<version>1.0</version>
+</document-info>
+</description>
+<body>
+<title><p>Main Body</p></title>
+<epigraph>
+<p>This is an epigraph quote at the beginning.</p>
+<text-author>Famous Person</text-author>
+</epigraph>
+<section>
+<title><p>Part I: The Beginning</p></title>
+<section>
+<title><p>Chapter 1</p></title>
+<p>First chapter content.</p>
+<poem>
+<title><p>A Short Poem</p></title>
+<stanza>
+<v>Line one of verse</v>
+<v>Line two of verse</v>
+</stanza>
+</poem>
+</section>
+<section>
+<title><p>Chapter 2</p></title>
+<p>Second chapter with a quote:</p>
+<cite>
+<p>This is a quoted passage from another source.</p>
+<text-author>Someone Else</text-author>
+</cite>
+</section>
+</section>
+<section>
+<title><p>Part II: The Middle</p></title>
+<section>
+<title><p>Chapter 3</p></title>
+<p>Third chapter content here.</p>
+<subtitle>A Subsection</subtitle>
+<p>Content under the subsection.</p>
+</section>
+</section>
+</body>
+</FictionBook>

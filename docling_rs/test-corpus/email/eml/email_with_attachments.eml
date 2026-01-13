@@ -1,0 +1,40 @@
+From: john.doe@consulting.com
+To: jane.smith@client.com
+Cc: pm@consulting.com
+Subject: Project Deliverables - Phase 1
+Date: Wed, 8 Nov 2025 16:45:00 -0500
+Message-ID: <proj-deliverables-001@consulting.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="attach-boundary"
+
+--attach-boundary
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Jane,
+
+Please find attached the Phase 1 project deliverables as discussed in our meeting yesterday.
+
+Included files:
+1. Technical_Specification.pdf (2.4 MB)
+2. Architecture_Diagram.png (856 KB)
+3. Project_Timeline.xlsx (124 KB)
+
+Please review and provide your feedback by end of week.
+
+Best regards,
+John Doe
+Senior Consultant
+Consulting Corp
+
+--attach-boundary
+Content-Type: application/pdf; name="Technical_Specification.pdf"
+Content-Disposition: attachment; filename="Technical_Specification.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQKJcOkw7zDtsOfCjIgMCBvYmoKPDwvTGVuZ3RoIDMgMCBSL0ZpbHRlci9GbGF0ZURl
+Y29kZT4+CnN0cmVhbQp4nDPQM1Qo5ypUMFAw0DMwslAw1zXUM9AxNTBUMNYzMNEzMDY2Dggp6lFQ
+PEQ==
+endstream
+endobj
+
+--attach-boundary--

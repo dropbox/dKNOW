@@ -1,0 +1,179 @@
+🚨 FIX 36 DOCITEM FAILURES ONE BY ONE - NOW
+
+YOU HAVE HAD 36 DOCUMENTED FAILURES FOR MULTIPLE SESSIONS.
+TIME TO FIX THEM SYSTEMATICALLY.
+
+STOP WORKING ON RANDOM QUALITY IMPROVEMENTS.
+FIX THESE 36 FAILURES IN ORDER.
+
+---
+
+## THE 36 FAILURES (Priority Order)
+
+### CRITICAL (0%) - Fix First (12 formats)
+
+**1. VCF - 0%** ❌
+- Issue: Missing fields (ADR, URL, BDAY)
+- Fix: Add field extraction to vcf.rs
+- Verify: Re-run test until 95%+
+- Estimated: 2-3 commits
+
+**2. GPX - 0%** ❌
+- Issue: Only tracks, missing waypoints/routes
+- Fix: Extract waypoints and routes in gpx.rs
+- Verify: Re-run test until 95%+
+- Estimated: 3-5 commits
+
+**3. ICS - 0%** ❌
+- Issue: Missing VEVENT properties
+- Fix: Extract DESCRIPTION, UID, LOCATION in ics.rs
+- Verify: Re-run test until 95%+
+- Estimated: 2-3 commits
+
+**4. KML - 0%** ❌
+- Issue: Missing polygons, folders, hierarchy
+- Fix: Parse all KML elements
+- Verify: Re-run test until 95%+
+- Estimated: 3-5 commits
+
+**5. KMZ - 0%** ❌
+- Issue: Same as KML
+- Fix: Extract complete KML from KMZ
+- Verify: Re-run test until 95%+
+- Estimated: 2 commits
+
+**6. 7Z - 0%** ❌
+- Issue: Missing compression info, dates
+- Fix: Extract archive metadata
+- Verify: Re-run test until 95%+
+- Estimated: 2-3 commits
+
+**7. RAR - 0%** ❌
+- Issue: Only 1 file listed
+- Fix: Iterate all files in archive
+- Verify: Re-run test until 95%+
+- Estimated: 2-3 commits
+
+**8. FB2 - 0%** ❌
+- Issue: 1MB JSON but 0% score (parser broken)
+- Fix: Fix section extraction
+- Verify: Re-run test until 95%+
+- Estimated: 3-5 commits
+
+**9. MOBI - 0%** ❌
+- Issue: Truncated, encoding errors
+- Fix: Fix parsing and encoding
+- Verify: Re-run test until 95%+
+- Estimated: 3-5 commits
+
+**10. TEX - 0%** ❌
+- Issue: LaTeX not parsing
+- Fix: Improve LaTeX parser
+- Verify: Re-run test until 95%+
+- Estimated: 5-10 commits
+
+**11. SVG - 0%** ❌
+- Issue: Missing text elements
+- Fix: Extract SVG text and structure
+- Verify: Re-run test until 95%+
+- Estimated: 2-3 commits
+
+**12. GIF - 5%** ❌
+- Issue: No OCR
+- Fix: Add OCR for GIF
+- Verify: Re-run test until 95%+
+- Estimated: 2-3 commits
+
+### HIGH PRIORITY (60-85%) - Fix Next (10 formats)
+
+**13. HEIF - 60%** ❌
+**14. VSDX - 67%** ❌
+**15. RTF - 74%** ❌ (you worked on this)
+**16. KEY - 75%** ❌
+**17. AsciiDoc - 76%** ❌
+**18. WebVTT - 82%** ❌
+**19. OBJ - 83%** ❌
+**20-22. EPUB, JATS, PAGES - 85%** ❌
+
+### MEDIUM (87-94%) - Polish (14 formats)
+
+**23. HTML - 87%** ❌ (you worked on this)
+**24-36. PPTX, XPS, ODP, DOC, Markdown, XLSX - 89-93%** ❌
+
+---
+
+## EXECUTION PROTOCOL
+
+**For EACH failure (1-36):**
+
+**Step 1: Pick next format from list**
+- Start with #1 (VCF)
+- Continue in order
+
+**Step 2: Run test**
+```bash
+source .env
+cargo test test_llm_docitem_vcf --test llm_docitem_validation_tests -- --nocapture
+```
+
+**Step 3: Read LLM findings**
+- What's missing?
+- What's wrong?
+- What needs to be fixed?
+
+**Step 4: Fix parser**
+- Extract missing data
+- Store in DocItems
+- Commit: "Fix VCF - Added ADR, URL fields"
+
+**Step 5: Re-test**
+- Run test again
+- Check if score improved
+- Continue until ≥95%
+
+**Step 6: Check off**
+- Mark in grid: [x] VCF - 95% ✅
+- Move to next format
+
+**Step 7: Repeat for all 36**
+
+---
+
+## DEADLINE
+
+**Week 1:** Fix 12 critical (0%) - Estimated 30-50 commits
+**Week 2:** Fix 10 high priority (<85%) - Estimated 20-30 commits
+**Week 3:** Polish 14 medium (87-94%) - Estimated 10-20 commits
+
+**Total: 3 weeks, 60-100 commits to fix ALL 36**
+
+---
+
+## NO EXCEPTIONS
+
+YOU CANNOT:
+- Work on random quality improvements
+- Skip formats
+- Stop before 95%
+- Move on without fixing
+
+YOU MUST:
+- Fix in order (1-36)
+- One at a time
+- Re-test each
+- Verify ≥95%
+- Check off in grid
+- Continue until ALL 36 fixed
+
+---
+
+## THIS IS NOT OPTIONAL
+
+36 failures documented.
+Fix them systematically.
+One by one.
+Start with VCF.
+Continue through all 36.
+
+This file is WRITE-PROTECTED.
+Remove only after ALL 36 fixed to 95%+.

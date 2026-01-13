@@ -1,0 +1,6040 @@
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+================================================================================
+Expected Output Generation
+================================================================================
+PDFs: 452
+Workers: 1
+Dry run: False
+================================================================================
+
+[1/452] 
+[0100pages_7FKQLKX273JBHXAAW5XDRT27JGMIZMCI.pdf]
+  Category: benchmark
+  Pages: 100
+  Size: 908.9 KB
+  Extracting text per page...
+    ✓ 100 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 100 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[2/452] 
+[0106pages_IYAFRX3M262EGRMQJHT7MCODUP5ZGYRW.pdf]
+  Category: benchmark
+  Pages: 106
+  Size: 26043.4 KB
+  Extracting text per page...
+    ✓ 105 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 105 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[3/452] 
+[0109pages_NRCGAGBLTXTXEKXNLQ4L4NFA6ZQPCWE5.pdf]
+  Category: benchmark
+  Pages: 109
+  Size: 7090.6 KB
+  Extracting text per page...
+    ✓ 109 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 109 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[4/452] 
+[0124pages_HXTX4CFAYHW5LKUFDCEHIITIMEYCJ7MW.pdf]
+  Category: benchmark
+  Pages: 124
+  Size: 12268.4 KB
+  Extracting text per page...
+    ✓ 123 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 123 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[5/452] 
+[0130pages_ZJJJ6P4UAGH7LKLACPT5P437FB5F3MYF.pdf]
+  Category: benchmark
+  Pages: 130
+  Size: 959.8 KB
+  Extracting text per page...
+    ✓ 128 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 128 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[6/452] 
+[0134pages_LYZMN7YTFC6ULBL6TP4WQQRK356GB36T.pdf]
+  Category: benchmark
+  Pages: 134
+  Size: 12547.3 KB
+  Extracting text per page...
+    ✓ 104 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 104 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[7/452] 
+[0150pages_44LQBJ56XNS2C6VVWKOP2YUNKCODKTEA.pdf]
+  Category: benchmark
+  Pages: 150
+  Size: 11887.2 KB
+  Extracting text per page...
+    ✓ 150 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 150 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[8/452] 
+[0159pages_5XPIPZJEUIFPFOXGLU26NFQSU4GSJMF3.pdf]
+  Category: benchmark
+  Pages: 159
+  Size: 38430.0 KB
+  Extracting text per page...
+    ✓ 157 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 157 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[9/452] 
+[0169pages_CLEQSRWNHVWUAHLTNGPYHMYOWEC4JR6S.pdf]
+  Category: benchmark
+  Pages: 169
+  Size: 7410.0 KB
+  Extracting text per page...
+    ✓ 169 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 169 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[10/452] 
+[0171pages_USTMTDJBOQ327J2XVWE76TPUOKIBJ4S5.pdf]
+  Category: benchmark
+  Pages: 171
+  Size: 9137.3 KB
+  Extracting text per page...
+    ✓ 167 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 167 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[11/452] 
+[0172pages_DNJIAKOPLDZDQCXT2PDA6V6DGL2MQL2H.pdf]
+  Category: benchmark
+  Pages: 172
+  Size: 2172.6 KB
+  Extracting text per page...
+    ✓ 172 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 172 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[12/452] 
+[0192pages_C46Z2Q4AMEZJVTRV2XO434YLMVHCB46O.pdf]
+  Category: benchmark
+  Pages: 192
+  Size: 27292.7 KB
+  Extracting text per page...
+    ✓ 192 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 192 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[13/452] 
+[0192pages_ULFRJCOWYIDOOTY7KWUPC6NU7UTTCLSO.pdf]
+  Category: benchmark
+  Pages: 192
+  Size: 4266.1 KB
+  Extracting text per page...
+    ✓ 184 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 184 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[14/452] 
+[0193pages_CADINJMTO23ZTKPBNZ6TUOQT4BFPZC2C.pdf]
+  Category: benchmark
+  Pages: 193
+  Size: 9428.0 KB
+  Extracting text per page...
+    ✓ 192 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 192 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[15/452] 
+[0201pages_RYDFB4ZZNNBE6LLDSY4CFGWQQ7U3KSAA.pdf]
+  Category: benchmark
+  Pages: 201
+  Size: 10407.2 KB
+  Extracting text per page...
+    ✓ 200 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 200 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[16/452] 
+[0214pages_BZK65P6W74FNMD4O3A24LH3F2XLFH7V2.pdf]
+  Category: benchmark
+  Pages: 214
+  Size: 1969.0 KB
+  Extracting text per page...
+    ✓ 214 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 214 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[17/452] 
+[0215pages_UAU4SPHOQHADJRFKILFDYETBGB6HXYU2.pdf]
+  Category: benchmark
+  Pages: 215
+  Size: 4871.6 KB
+  Extracting text per page...
+    ✓ 213 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 213 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[18/452] 
+[0255pages_OKRV2XLZ2UGGRCBKHS3I5DA5TNLNVHWC.pdf]
+  Category: benchmark
+  Pages: 255
+  Size: 6893.4 KB
+  Extracting text per page...
+    ✓ 253 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 253 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[19/452] 
+[0277pages_YCOBKTA46F7XEOWT4LS3BCPGDOMQSBWF.pdf]
+  Category: benchmark
+  Pages: 277
+  Size: 6543.9 KB
+  Extracting text per page...
+    ✓ 275 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 275 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[20/452] 
+[0291pages_RGLWPWLY4JE6RPNCCHQ3LQWDFLPBGHXQ.pdf]
+  Category: benchmark
+  Pages: 291
+  Size: 56530.1 KB
+  Extracting text per page...
+    ✓ 222 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 222 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[21/452] 
+[0309pages_7LD3RVJDZGTXF53CDLCI67YPWZQ5POOA.pdf]
+  Category: benchmark
+  Pages: 309
+  Size: 10732.1 KB
+  Extracting text per page...
+    ✓ 309 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 309 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[22/452] 
+[0313pages_7DLRSEXVIADBZZUN4IJIACW5T23YBH7H.pdf]
+  Category: benchmark
+  Pages: 313
+  Size: 34227.8 KB
+  Extracting text per page...
+    ✓ 304 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 304 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[23/452] 
+[0496pages_E3474JUEVRWQ3P2J2I3XBFKMMVZLLKWZ.pdf]
+  Category: benchmark
+  Pages: 496
+  Size: 3260.7 KB
+  Extracting text per page...
+    ✓ 495 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 495 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[24/452] 
+[0569pages_QXQ2QSHOPBTSXLDGKKM4TYMR4R7QODHB.pdf]
+  Category: benchmark
+  Pages: 569
+  Size: 13192.0 KB
+  Extracting text per page...
+    ✓ 569 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 569 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[25/452] 
+[0821pages_LUNFJFH4KWZ3ZFNRO43WSMZPLM4OLB7C.pdf]
+  Category: benchmark
+  Pages: 821
+  Size: 1363.1 KB
+  Extracting text per page...
+    ✓ 821 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 821 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[26/452] 
+[1931pages_7ZNNFJGHOEFFP6I4OARCZGH3GPPDNDXC.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 10701.9 KB
+  Extracting text per page...
+    ✓ 1931 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1931 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[27/452] 
+[arxiv_001.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1014.2 KB
+  Extracting text per page...
+    ✓ 25 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 25 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[28/452] 
+[arxiv_002.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1500.4 KB
+  Extracting text per page...
+    ✓ 13 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 13 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[29/452] 
+[arxiv_003.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1778.5 KB
+  Extracting text per page...
+    ✓ 52 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 52 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[30/452] 
+[arxiv_004.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1288.2 KB
+  Extracting text per page...
+    ✓ 39 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 39 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[31/452] 
+[arxiv_005.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 443.3 KB
+  Extracting text per page...
+    ✓ 5 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 5 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[32/452] 
+[arxiv_006.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 414.8 KB
+  Extracting text per page...
+    ✓ 7 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 7 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[33/452] 
+[arxiv_007.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 105.2 KB
+  Extracting text per page...
+    ✓ 5 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 5 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[34/452] 
+[arxiv_008.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2239.5 KB
+  Extracting text per page...
+    ✓ 8 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 8 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[35/452] 
+[arxiv_009.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1046.3 KB
+  Extracting text per page...
+    ✓ 5 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 5 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[36/452] 
+[arxiv_010.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 8853.0 KB
+  Extracting text per page...
+    ✓ 18 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 18 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[37/452] 
+[arxiv_011.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 312.0 KB
+  Extracting text per page...
+    ✓ 16 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 16 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[38/452] 
+[arxiv_012.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 439.7 KB
+  Extracting text per page...
+    ✓ 9 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 9 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[39/452] 
+[arxiv_014.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1051.0 KB
+  Extracting text per page...
+    ✓ 8 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 8 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[40/452] 
+[arxiv_015.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1123.5 KB
+  Extracting text per page...
+    ✓ 6 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 6 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[41/452] 
+[arxiv_016.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 3150.8 KB
+  Extracting text per page...
+    ✓ 12 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 12 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[42/452] 
+[arxiv_017.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 116.1 KB
+  Extracting text per page...
+    ✓ 6 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 6 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[43/452] 
+[arxiv_018.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 4900.1 KB
+  Extracting text per page...
+    ✓ 31 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 31 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[44/452] 
+[arxiv_019.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1004.6 KB
+  Extracting text per page...
+    ✓ 20 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 20 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[45/452] 
+[arxiv_020.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 488.4 KB
+  Extracting text per page...
+    ✓ 44 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 44 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[46/452] 
+[arxiv_021.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 656.5 KB
+  Extracting text per page...
+    ✓ 25 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 25 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[47/452] 
+[arxiv_022.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 979.7 KB
+  Extracting text per page...
+    ✓ 13 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 13 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[48/452] 
+[arxiv_023.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2253.7 KB
+  Extracting text per page...
+    ✓ 42 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 42 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[49/452] 
+[arxiv_024.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 351.5 KB
+  Extracting text per page...
+    ✓ 27 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 27 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[50/452] 
+[arxiv_025.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 972.1 KB
+  Extracting text per page...
+    ✓ 5 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 5 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[51/452] 
+[arxiv_026.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 721.7 KB
+  Extracting text per page...
+    ✓ 14 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 14 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[52/452] 
+[arxiv_027.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2402.4 KB
+  Extracting text per page...
+    ✓ 9 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 9 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[53/452] 
+[arxiv_028.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 473.0 KB
+  Extracting text per page...
+    ✓ 36 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 36 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[54/452] 
+[arxiv_029.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 186.9 KB
+  Extracting text per page...
+    ✓ 5 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 5 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[55/452] 
+[arxiv_030.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 10006.7 KB
+  Extracting text per page...
+    ✓ 7 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 7 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[56/452] 
+[arxiv_031.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2115.6 KB
+  Extracting text per page...
+    ✓ 9 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 9 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[57/452] 
+[arxiv_032.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 328.0 KB
+  Extracting text per page...
+    ✓ 18 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 18 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[58/452] 
+[arxiv_033.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 162.1 KB
+  Extracting text per page...
+    ✓ 10 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 10 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[59/452] 
+[arxiv_034.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 550.0 KB
+  Extracting text per page...
+    ✓ 30 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 30 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[60/452] 
+[arxiv_035.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 358.4 KB
+  Extracting text per page...
+    ✓ 23 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 23 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[61/452] 
+[arxiv_036.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 364.4 KB
+  Extracting text per page...
+    ✓ 4 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 4 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[62/452] 
+[arxiv_037.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 714.2 KB
+  Extracting text per page...
+    ✓ 11 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 11 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[63/452] 
+[arxiv_038.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 9334.3 KB
+  Extracting text per page...
+    ✓ 15 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 15 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[64/452] 
+[arxiv_039.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 190.6 KB
+  Extracting text per page...
+    ✓ 4 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 4 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[65/452] 
+[arxiv_040.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 120.5 KB
+  Extracting text per page...
+    ✓ 7 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 7 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[66/452] 
+[cc_001_931p.pdf]
+  Category: benchmark
+  Pages: 931
+  Size: 100829.8 KB
+  Extracting text per page...
+    ✓ 729 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 729 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[67/452] 
+[cc_002_522p.pdf]
+  Category: benchmark
+  Pages: 522
+  Size: 61356.8 KB
+  Extracting text per page...
+    ✓ 494 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 494 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[68/452] 
+[cc_003_162p.pdf]
+  Category: benchmark
+  Pages: 162
+  Size: 58262.6 KB
+  Extracting text per page...
+    ✓ 162 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 162 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[69/452] 
+[cc_004_291p.pdf]
+  Category: benchmark
+  Pages: 291
+  Size: 56530.1 KB
+  Extracting text per page...
+    ✓ 222 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 222 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[70/452] 
+[cc_005_172p.pdf]
+  Category: benchmark
+  Pages: 172
+  Size: 48042.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[71/452] 
+[cc_006_254p.pdf]
+  Category: benchmark
+  Pages: 254
+  Size: 47733.0 KB
+  Extracting text per page...
+    ✓ 254 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 254 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[72/452] 
+[cc_007_101p.pdf]
+  Category: benchmark
+  Pages: 101
+  Size: 47024.0 KB
+  Extracting text per page...
+    ✓ 101 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 101 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[73/452] 
+[cc_008_116p.pdf]
+  Category: benchmark
+  Pages: 116
+  Size: 46213.2 KB
+  Extracting text per page...
+    ✓ 113 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 113 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[74/452] 
+[cc_009_188p.pdf]
+  Category: benchmark
+  Pages: 188
+  Size: 45844.4 KB
+  Extracting text per page...
+    ✓ 186 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 186 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[75/452] 
+[cc_010_206p.pdf]
+  Category: benchmark
+  Pages: 206
+  Size: 44566.2 KB
+  Extracting text per page...
+    ✓ 206 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 206 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[76/452] 
+[cc_011_222p.pdf]
+  Category: benchmark
+  Pages: 222
+  Size: 43905.5 KB
+  Extracting text per page...
+    ✓ 186 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 186 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[77/452] 
+[cc_012_244p.pdf]
+  Category: benchmark
+  Pages: 244
+  Size: 42560.2 KB
+  Extracting text per page...
+    ✓ 228 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 228 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[78/452] 
+[cc_013_122p.pdf]
+  Category: benchmark
+  Pages: 122
+  Size: 40926.4 KB
+  Extracting text per page...
+    ✓ 55 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 55 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[79/452] 
+[cc_014_176p.pdf]
+  Category: benchmark
+  Pages: 176
+  Size: 39081.6 KB
+  Extracting text per page...
+    ✓ 176 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 176 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[80/452] 
+[cc_015_101p.pdf]
+  Category: benchmark
+  Pages: 101
+  Size: 38919.4 KB
+  Extracting text per page...
+    ✓ 101 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 101 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[81/452] 
+[cc_016_159p.pdf]
+  Category: benchmark
+  Pages: 159
+  Size: 38430.0 KB
+  Extracting text per page...
+    ✓ 157 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 157 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[82/452] 
+[cc_017_145p.pdf]
+  Category: benchmark
+  Pages: 145
+  Size: 37843.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[83/452] 
+[cc_018_167p.pdf]
+  Category: benchmark
+  Pages: 167
+  Size: 36400.5 KB
+  Extracting text per page...
+    ✓ 162 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 162 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[84/452] 
+[cc_019_198p.pdf]
+  Category: benchmark
+  Pages: 198
+  Size: 34378.4 KB
+  Extracting text per page...
+    ✓ 198 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 198 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[85/452] 
+[cc_020_103p.pdf]
+  Category: benchmark
+  Pages: 103
+  Size: 34292.5 KB
+  Extracting text per page...
+    ✓ 100 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 100 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[86/452] 
+[edinet_2025-06-23_1701_E04341_Konoike Transport CoLtd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1002.6 KB
+  Extracting text per page...
+    ✓ 152 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 152 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[87/452] 
+[edinet_2025-06-24_0930_E03557_The Chiba Kogyo Bank Ltd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1835.7 KB
+  Extracting text per page...
+    ✓ 187 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 187 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[88/452] 
+[edinet_2025-06-24_1124_E05556_Saint Marc Holdings CoLtd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 532.1 KB
+  Extracting text per page...
+    ✓ 112 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 112 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[89/452] 
+[edinet_2025-06-24_1136_E01606_Not Registered in English.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 497.8 KB
+  Extracting text per page...
+    ✓ 85 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 85 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[90/452] 
+[edinet_2025-06-24_1316_E33834_Shinwa Co Ltd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 742.1 KB
+  Extracting text per page...
+    ✓ 133 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 133 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[91/452] 
+[edinet_2025-06-24_1318_E01920_Makita Corporation.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1220.3 KB
+  Extracting text per page...
+    ✓ 149 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 149 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[92/452] 
+[edinet_2025-06-24_1548_E01914_Not Registered in English.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2443.4 KB
+  Extracting text per page...
+    ✓ 190 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 190 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[93/452] 
+[edinet_2025-06-25_1027_E01750_DAIHEN CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 767.1 KB
+  Extracting text per page...
+    ✓ 131 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 131 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[94/452] 
+[edinet_2025-06-25_1357_E01684_SEIKO CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 521.9 KB
+  Extracting text per page...
+    ✓ 104 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 104 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[95/452] 
+[edinet_2025-06-25_1433_E01754_KAWADEN CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 757.3 KB
+  Extracting text per page...
+    ✓ 79 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 79 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[96/452] 
+[edinet_2025-06-25_1507_E01402_SUNCALL CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1210.6 KB
+  Extracting text per page...
+    ✓ 113 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 113 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[97/452] 
+[edinet_2025-06-25_1513_E01172_Not Registered in English.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 667.7 KB
+  Extracting text per page...
+    ✓ 104 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 104 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[98/452] 
+[edinet_2025-06-25_1557_E05670_HIKARI HEIGHTS-VARUS COLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 403.4 KB
+  Extracting text per page...
+    ✓ 68 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 68 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[99/452] 
+[edinet_2025-06-25_1608_E02628_KIMURATAN CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 552.7 KB
+  Extracting text per page...
+    ✓ 103 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 103 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[100/452] 
+[edinet_2025-06-25_1634_E03116_AOKI Holdings Inc.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 753.0 KB
+  Extracting text per page...
+    ✓ 101 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 101 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[101/452] 
+[edinet_2025-06-26_0909_E00982_LTT Bio-Pharma Co Ltd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2411.3 KB
+  Extracting text per page...
+    ✓ 93 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 93 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[102/452] 
+[edinet_2025-06-26_0914_E01057_SOFT99corporation.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 720.3 KB
+  Extracting text per page...
+    ✓ 125 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 125 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[103/452] 
+[edinet_2025-06-26_1029_E02363_Not Registered in English.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 999.2 KB
+  Extracting text per page...
+    ✓ 124 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 124 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[104/452] 
+[edinet_2025-06-26_1345_E01202_Yoshicon CoLtd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 536.7 KB
+  Extracting text per page...
+    ✓ 92 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 92 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[105/452] 
+[edinet_2025-06-26_1432_E35562_NexTone Inc.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 809.8 KB
+  Extracting text per page...
+    ✓ 114 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 114 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[106/452] 
+[edinet_2025-06-26_1500_E01974_NKK SWITCHESCOLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 458.5 KB
+  Extracting text per page...
+    ✓ 93 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 93 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[107/452] 
+[edinet_2025-06-26_1530_E04503_Hokuriku Electric Power Compan.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1124.1 KB
+  Extracting text per page...
+    ✓ 134 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 134 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[108/452] 
+[edinet_2025-06-26_1544_E05657_HIP CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 355.6 KB
+  Extracting text per page...
+    ✓ 64 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 64 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[109/452] 
+[edinet_2025-06-26_1610_E27506_JSS CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 439.8 KB
+  Extracting text per page...
+    ✓ 94 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 94 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[110/452] 
+[edinet_2025-06-26_1621_E00777_NIPPON CARBIDE INDUSTRIES COIN.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1090.4 KB
+  Extracting text per page...
+    ✓ 124 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 124 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[111/452] 
+[edinet_2025-06-26_1713_E00771_OSAKA SODA COLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 818.3 KB
+  Extracting text per page...
+    ✓ 129 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 129 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[112/452] 
+[edinet_2025-06-27_1005_E02554_HANWA COLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 916.1 KB
+  Extracting text per page...
+    ✓ 147 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 147 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[113/452] 
+[edinet_2025-06-27_1051_E01956_KONAMI GROUP CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 768.5 KB
+  Extracting text per page...
+    ✓ 133 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 133 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[114/452] 
+[edinet_2025-06-27_1235_E03346_PLATHOME COLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 324.8 KB
+  Extracting text per page...
+    ✓ 64 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 64 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[115/452] 
+[edinet_2025-06-27_1249_E23224_Not Registered in English.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 450.4 KB
+  Extracting text per page...
+    ✓ 98 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 98 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[116/452] 
+[edinet_2025-06-27_1330_E02927_TAKACHIHO KOHEKI COLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1143.5 KB
+  Extracting text per page...
+    ✓ 111 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 111 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[117/452] 
+[edinet_2025-06-27_1402_E02266_TOKYO KEIKI INC.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1666.2 KB
+  Extracting text per page...
+    ✓ 129 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 129 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[118/452] 
+[edinet_2025-06-27_1637_E01916_The Lead Co Inc.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 476.8 KB
+  Extracting text per page...
+    ✓ 80 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 80 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[119/452] 
+[edinet_2025-06-30_1238_E39104_Not Registered in English.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 12629.1 KB
+  Extracting text per page...
+    ✓ 594 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 594 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[120/452] 
+[edinet_2025-06-30_1401_E04502_Chubu Electric Power CompanyIn.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 465.8 KB
+  Extracting text per page...
+    ✓ 4 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 4 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[121/452] 
+[edinet_2025-07-11_1533_E04884_KYOWA ENGINEERING CONSULTANTS.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 114.1 KB
+  Extracting text per page...
+    ✓ 21 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 21 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[122/452] 
+[edinet_2025-07-14_0931_E01524_TSUDAKOMA Corp.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 124.5 KB
+  Extracting text per page...
+    ✓ 24 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 24 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[123/452] 
+[edinet_2025-07-31_1506_E05218_Not Registered in English.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 13.4 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[124/452] 
+[edinet_2025-08-04_1341_E05147_DENTSU SOKEN INC.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 111.5 KB
+  Extracting text per page...
+    ✓ 25 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 25 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[125/452] 
+[edinet_2025-08-07_0913_E02257_SHIMANO INC.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 128.5 KB
+  Extracting text per page...
+    ✓ 23 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 23 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[126/452] 
+[edinet_2025-08-08_1325_E35294_TECHNOFLEX CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 109.1 KB
+  Extracting text per page...
+    ✓ 21 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 21 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[127/452] 
+[edinet_2025-08-08_1417_E21258_YAMABIKO CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 111.2 KB
+  Extracting text per page...
+    ✓ 25 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 25 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[128/452] 
+[edinet_2025-08-08_1452_E05457_FISCO Ltd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 11.8 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[129/452] 
+[edinet_2025-08-08_1545_E02331_NAKANISHI INC.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 107.4 KB
+  Extracting text per page...
+    ✓ 24 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 24 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[130/452] 
+[edinet_2025-08-08_1548_E01205_KURAMOTO COLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 103.4 KB
+  Extracting text per page...
+    ✓ 23 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 23 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[131/452] 
+[edinet_2025-08-08_1603_E03724_J Trust CoLtd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 169.8 KB
+  Extracting text per page...
+    ✓ 40 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 40 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[132/452] 
+[edinet_2025-08-13_1607_E36174_Cacco Inc.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 82.7 KB
+  Extracting text per page...
+    ✓ 18 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 18 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[133/452] 
+[edinet_2025-08-26_1600_E26831_Sankyo TateyamaInc.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2413.8 KB
+  Extracting text per page...
+    ✓ 165 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 165 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[134/452] 
+[edinet_2025-08-28_1538_E04064_PROPERST COLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 732.6 KB
+  Extracting text per page...
+    ✓ 79 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 79 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[135/452] 
+[edinet_2025-09-11_1535_E02960_SHINTO Holdings Inc.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 133.0 KB
+  Extracting text per page...
+    ✓ 27 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 27 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[136/452] 
+[fax_ccitt.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 3774.3 KB
+  Extracting text per page...
+    ✓ 50 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 50 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[137/452] 
+[japanese_001.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 6492.4 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[138/452] 
+[japanese_002.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 3183.0 KB
+  Extracting text per page...
+    ✓ 10 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 10 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[139/452] 
+[japanese_003.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 8825.3 KB
+  Extracting text per page...
+    ✓ 30 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 30 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[140/452] 
+[japanese_004.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1539.8 KB
+  Extracting text per page...
+    ✓ 10 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 10 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[141/452] 
+[japanese_005.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1736.4 KB
+  Extracting text per page...
+    ✓ 11 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 11 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[142/452] 
+[japanese_006.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 3667.8 KB
+  Extracting text per page...
+    ✓ 9 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 9 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[143/452] 
+[japanese_007.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1354.4 KB
+  Extracting text per page...
+    ✓ 19 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 19 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[144/452] 
+[japanese_008.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 3473.5 KB
+  Extracting text per page...
+    ✓ 18 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 18 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[145/452] 
+[japanese_009.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 12046.4 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[146/452] 
+[japanese_010.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1111.1 KB
+  Extracting text per page...
+    ✓ 9 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 9 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[147/452] 
+[japanese_011.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1996.6 KB
+  Extracting text per page...
+    ✓ 13 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 13 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[148/452] 
+[japanese_012.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2190.3 KB
+  Extracting text per page...
+    ✓ 9 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 9 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[149/452] 
+[japanese_013.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 3877.9 KB
+  Extracting text per page...
+    ✓ 18 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 18 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[150/452] 
+[japanese_014.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 3817.8 KB
+  Extracting text per page...
+    ✓ 11 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 11 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[151/452] 
+[japanese_015.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 3498.8 KB
+  Extracting text per page...
+    ✓ 14 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 14 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[152/452] 
+[web_001.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 288.1 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[153/452] 
+[web_002.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 49.4 KB
+  Extracting text per page...
+    ✓ 4 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 4 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[154/452] 
+[web_003.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 4362.8 KB
+  Extracting text per page...
+    ✓ 107 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 107 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[155/452] 
+[web_004.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 937.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[156/452] 
+[web_005.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 3808.6 KB
+  Extracting text per page...
+    ✓ 84 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 84 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[157/452] 
+[web_006.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 265.0 KB
+  Extracting text per page...
+    ✓ 57 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 57 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[158/452] 
+[web_007.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 10734.7 KB
+  Extracting text per page...
+    ✓ 50 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 50 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[159/452] 
+[web_008.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 371.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[160/452] 
+[web_009.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 626.9 KB
+  Extracting text per page...
+    ✓ 6 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 6 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[161/452] 
+[web_010.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 223.6 KB
+  Extracting text per page...
+    ✓ 15 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 15 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[162/452] 
+[web_011.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 5821.4 KB
+  Extracting text per page...
+    ✓ 11 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 11 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[163/452] 
+[web_012.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 725.2 KB
+  Extracting text per page...
+    ✓ 12 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 12 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[164/452] 
+[web_013.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 163.4 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[165/452] 
+[web_014.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 256.0 KB
+  Extracting text per page...
+    ✓ 4 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 4 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[166/452] 
+[web_015.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 286.1 KB
+  Extracting text per page...
+    ✓ 17 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 17 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[167/452] 
+[web_016.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 750.5 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[168/452] 
+[web_017.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 226.5 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[169/452] 
+[web_018.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 5545.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[170/452] 
+[web_019.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 91.2 KB
+  Extracting text per page...
+    ✓ 4 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 4 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[171/452] 
+[web_020.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 10441.3 KB
+  Extracting text per page...
+    ✓ 125 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 125 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[172/452] 
+[web_021.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 83.9 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[173/452] 
+[web_022.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 105.4 KB
+  Extracting text per page...
+    ✓ 3 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 3 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[174/452] 
+[web_023.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 537.6 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[175/452] 
+[web_024.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 256.2 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[176/452] 
+[web_025.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 144.3 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[177/452] 
+[web_026.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 67.9 KB
+  Extracting text per page...
+    ✓ 6 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 6 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[178/452] 
+[web_027.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 6631.0 KB
+  Extracting text per page...
+    ✓ 10 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 10 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[179/452] 
+[web_028.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 260.2 KB
+  Extracting text per page...
+    ✓ 7 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 7 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[180/452] 
+[web_029.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 619.7 KB
+  Extracting text per page...
+    ✓ 4 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 4 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[181/452] 
+[web_030.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 436.2 KB
+  Extracting text per page...
+    ✓ 10 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 10 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[182/452] 
+[web_031.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 243.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[183/452] 
+[web_032.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 279.7 KB
+  Extracting text per page...
+    ✓ 3 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 3 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[184/452] 
+[web_033.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 330.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[185/452] 
+[web_034.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 6396.5 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[186/452] 
+[web_035.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 228.4 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[187/452] 
+[web_036.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 305.5 KB
+  Extracting text per page...
+    ✓ 6 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 6 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[188/452] 
+[web_037.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 451.1 KB
+  Extracting text per page...
+    ✓ 4 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 4 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[189/452] 
+[web_038.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 185.1 KB
+  Extracting text per page...
+    ✓ 22 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 22 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[190/452] 
+[web_039.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 59.3 KB
+  Extracting text per page...
+    ✓ 13 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 13 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[191/452] 
+[web_040.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 133.2 KB
+  Extracting text per page...
+    ✓ 8 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 8 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[192/452] 
+[web_041.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 208.4 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[193/452] 
+[web_042.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 109.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[194/452] 
+[web_043.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 4516.2 KB
+  Extracting text per page...
+    ✓ 6 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 6 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[195/452] 
+[web_044.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2421.3 KB
+  Extracting text per page...
+    ✓ 158 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 158 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[196/452] 
+[web_045.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2720.7 KB
+  Extracting text per page...
+    ✓ 91 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 91 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[197/452] 
+[344775293.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[198/452] 
+[363015187.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[199/452] 
+[about_blank.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[200/452] 
+[annot_javascript.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[201/452] 
+[annotation_fileattachment.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 3.3 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[202/452] 
+[annotation_highlight_long_content.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 37.6 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_1124998.pdf
+
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[203/452] 
+[annotation_highlight_rollover_ap.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[204/452] 
+[annotation_highlight_square_with_ap.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 13.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[205/452] 
+[annotation_ink_multiple.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 51.0 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[206/452] 
+[annotation_markup_multiline_no_ap.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[207/452] 
+[annotation_stamp_with_ap.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 99.3 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[208/452] 
+[annotiter.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[209/452] 
+[annots.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 5.6 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[210/452] 
+[annots_action_handling.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[211/452] 
+[bad_annots_entry.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[212/452] 
+[bad_dict_keys.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[213/452] 
+[bad_page_type.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[214/452] 
+[bigtable_mini.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.2 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[215/452] 
+[black.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[216/452] 
+[bookmarks.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.2 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[217/452] 
+[bookmarks_circular.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.6 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[218/452] 
+[bug_1029.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 53.4 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[219/452] 
+[bug_1055869.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 6.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[220/452] 
+[bug_1058653.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 6.9 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[221/452] 
+[bug_1124998.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.9 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_1124998.pdf
+
+
+[222/452] 
+[bug_113.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[223/452] 
+[bug_1139.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[224/452] 
+[bug_1206.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[225/452] 
+[bug_1229106.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[226/452] 
+[bug_1265.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[227/452] 
+[bug_1296920.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.6 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[228/452] 
+[bug_1301.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 5.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[229/452] Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_1324189.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_1324503.pdf
+
+
+[bug_1302355.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[230/452] 
+[bug_1302455.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[231/452] 
+[bug_1324189.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.3 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_1324189.pdf
+
+
+[232/452] 
+[bug_1324503.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.3 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_1324503.pdf
+
+
+[233/452] 
+[bug_1327884.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[234/452] 
+[bug_1328389.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[235/452] 
+[bug_1333298.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 5.3 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[236/452] 
+[bug_1388_2.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[237/452] 
+[bug_1396264.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[238/452] 
+[bug_1399.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[239/452] 
+[bug_1477093.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[240/452] 
+[bug_1506.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[241/452] 
+[bug_1549.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[242/452] 
+[bug_1558.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[243/452] 
+[bug_1574.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[244/452] 
+[bug_1591.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.3 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[245/452] 
+[bug_1646.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.6 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[246/452] 
+[bug_1658.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[247/452] 
+[bug_1768.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 4.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[248/452] 
+[bug_1769.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[249/452] 
+[bug_182.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 16.6 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[250/452] 
+[bug_1893.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[251/452] 
+[bug_1919.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 9.3 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[252/452] 
+[bug_2034.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 25.9 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[253/452] 
+[bug_213.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[254/452] 
+[bug_2132.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[255/452] 
+[bug_216.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[256/452] 
+[bug_298.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.2 KB
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_298.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_325_a.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_325_b.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_343.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_344.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_355.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_360.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_424613308.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 390, in generate_for_pdf
+    print(f"  [DRY RUN] Would generate outputs")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 213, in render_images
+    env['DYLD_LIBRARY_PATH'] = str(self.baseline_lib.parent)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 2109, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['/Users/ayates/pdfium/rust/target/release/examples/render_pages', '/Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_451265.pdf', '/var/folders/_y/cn4_wm9x7_qcwzfq416t7b9h0000gn/T/tmp9ulc3v6p', '1', '300']' timed out after 1200 seconds
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_451830.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_454695.pdf
+
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_298.pdf
+
+
+[257/452] 
+[bug_306123.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 46.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[258/452] 
+[bug_325_a.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.1 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_325_a.pdf
+
+
+[259/452] 
+[bug_325_b.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.1 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_325_b.pdf
+
+
+[260/452] 
+[bug_343.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.2 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_343.pdf
+
+
+[261/452] 
+[bug_343075986.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[262/452] 
+[bug_344.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.2 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_344.pdf
+
+
+[263/452] 
+[bug_355.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.2 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_355.pdf
+
+
+[264/452] 
+[bug_360.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.3 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_360.pdf
+
+
+[265/452] 
+[bug_378120423.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[266/452] 
+[bug_384770169.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[267/452] 
+[bug_399689604.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[268/452] 
+[bug_402562387.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 18.6 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[269/452] 
+[bug_420508260.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[270/452] 
+[bug_42270471.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.3 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[271/452] 
+[bug_42271133.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[272/452] 
+[bug_424613308.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.5 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_424613308.pdf
+
+
+[273/452] 
+[bug_425244539.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[274/452] 
+[bug_431824298.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[275/452] 
+[bug_451265.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+  ERROR: Command '['/Users/ayates/pdfium/rust/target/release/examples/render_pages', '/Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_451265.pdf', '/var/folders/_y/cn4_wm9x7_qcwzfq416t7b9h0000gn/T/tmp9ulc3v6p', '1', '300']' timed out after 1200 seconds
+
+[276/452] 
+[bug_451830.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.1 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_451830.pdf
+
+
+[277/452] 
+[bug_452455.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[278/452] 
+[bug_454695.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.2 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_454695.pdf
+
+
+[279/452] 
+[bug_455199.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[280/452] 
+[bug_459580.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[281/452] 
+[bug_481363.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[282/452] 
+[bug_487928.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.6 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[283/452] 
+[bug_507316.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.9 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[284/452] 
+[bug_544880.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.3 KB
+  Extracting text per page...
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_644.pdf
+
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[285/452] 
+[bug_547706.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[286/452] 
+[bug_551248.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[287/452] 
+[bug_551460.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[288/452] 
+[bug_552046.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[289/452] 
+[bug_555784.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 35.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[290/452] 
+[bug_57.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[291/452] 
+[bug_572871.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[292/452] 
+[bug_583.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[293/452] 
+[bug_601362.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.6 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[294/452] 
+[bug_602650.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.2 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[295/452] 
+[bug_620428.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[296/452] 
+[bug_631912.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[297/452] 
+[bug_634394.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[298/452] 
+[bug_634716.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 3.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[299/452] 
+[bug_642.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 3.2 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[300/452] 
+[bug_644.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/bug_644.pdf
+
+
+[301/452] 
+[bug_650.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 83.3 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[302/452] 
+[bug_664284.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 20.4 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[303/452] 
+[bug_674771.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[304/452] 
+[bug_679649.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[305/452] 
+[bug_680376.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.2 KB
+  Extracting text per page...
+    ✓ 4 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 4 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[306/452] 
+[bug_707673.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 33.0 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[307/452] 
+[bug_709793.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[308/452] 
+[bug_713197.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[309/452] 
+[bug_717.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 78.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[310/452] 
+[bug_750568.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[311/452] 
+[bug_757705.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.5 KB
+  Extracting text per page...
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Document has no pages
+
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[312/452] 
+[bug_765384.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.3 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[313/452] 
+[bug_773229.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[314/452] 
+[bug_779.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[315/452] 
+[bug_781804.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 15.3 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[316/452] 
+[bug_782596.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[317/452] 
+[bug_821454.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[318/452] 
+[bug_828049.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.3 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[319/452] 
+[bug_861842.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[320/452] 
+[bug_889099.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[321/452] 
+[bug_890322.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[322/452] 
+[bug_896366.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[323/452] 
+[bug_900552.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[324/452] 
+[bug_901654.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[325/452] 
+[bug_901654_2.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[326/452] 
+[bug_905142.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[327/452] 
+[bug_921.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 3.6 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[328/452] 
+[bug_925981.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[329/452] 
+[bug_972518.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[330/452] 
+[bug_xrefv4_loop.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[331/452] 
+[calculate.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[332/452] 
+[circular_viewer_ref.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.5 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Document has no pages
+
+
+[333/452] 
+[click_form.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 15.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[334/452] 
+[clip_path.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[335/452] 
+[combobox_form.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[336/452] 
+[control_characters.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[337/452] 
+[cropped_no_overlap.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[338/452] 
+[cropped_text.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.8 KB
+  Extracting text per page...
+    ✓ 4 pages extracted
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted_hello_world_r2.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted_hello_world_r2_bad_okey.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted_hello_world_r3.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted_hello_world_r3_bad_okey.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted_hello_world_r5.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted_hello_world_r6.pdf
+
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 4 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[339/452] 
+[dashed_lines.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[340/452] 
+[docmdp.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[341/452] 
+[document_aactions.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[342/452] 
+[embedded_attachments.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 10.2 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[343/452] 
+[embedded_attachments_invalid_data.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.6 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[344/452] 
+[embedded_attachments_invalid_types.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[345/452] 
+[embedded_images.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 33.5 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[346/452] 
+[empty_xref.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[347/452] 
+[encrypted.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 10.3 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted.pdf
+
+
+[348/452] 
+[encrypted_hello_world_r2.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted_hello_world_r2.pdf
+
+
+[349/452] 
+[encrypted_hello_world_r2_bad_okey.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted_hello_world_r2_bad_okey.pdf
+
+
+[350/452] 
+[encrypted_hello_world_r3.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted_hello_world_r3.pdf
+
+
+[351/452] 
+[encrypted_hello_world_r3_bad_okey.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted_hello_world_r3_bad_okey.pdf
+
+
+[352/452] 
+[encrypted_hello_world_r5.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.5 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted_hello_world_r5.pdf
+
+
+[353/452] 
+[encrypted_hello_world_r6.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.5 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/encrypted_hello_world_r6.pdf
+
+
+[354/452] 
+[feature_linearized_loading.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 11.4 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[355/452] 
+[find_text_consecutive.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.6 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[356/452] 
+[font_matrix.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[357/452] 
+[font_weight.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.4 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[358/452] 
+[form_object.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[359/452] 
+[form_object_with_image.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[360/452] 
+[form_object_with_path.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[361/452] 
+[form_object_with_text.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[362/452] 
+[freetext_annotation_without_da.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.6 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[363/452] 
+[get_page_aaction.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[364/452] 
+[goto_action.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[365/452] 
+[gotoe_action.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[366/452] 
+[hebrew_mirrored.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 5.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[367/452] 
+[hello_world.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[368/452] 
+[hello_world_2_pages.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[369/452] 
+[hello_world_2_pages_custom_object.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[370/452] 
+[hello_world_2_pages_shared_resources_dict.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[371/452] 
+[hello_world_2_pages_split_streams.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[372/452] 
+[hello_world_compressed_stream.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[373/452] 
+[hello_world_split_streams.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[374/452] 
+[ink_annot.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[375/452] 
+[jpx_lzw.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[376/452] 
+[js.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[377/452] 
+[latin_extended.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 18.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[378/452] 
+[launch_action.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[379/452] 
+[line_annot.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[380/452] 
+[linearized.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 11.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[381/452] 
+[linearized_bug_1055.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 11.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[382/452] 
+[links_highlights_annots.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.0 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[383/452] 
+[listbox_form.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[384/452] 
+[many_rectangles.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 44.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[385/452] 
+[marked_content_id.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 5.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[386/452] 
+[matte.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 3.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[387/452] 
+[multiple_form_types.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[388/452] 
+[multiple_graphics_states.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[389/452] 
+[named_dests.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.0 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[390/452] 
+[named_dests_old_style.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[391/452] 
+[no_page_count.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 6 pages extracted
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/parser_rebuildxref_error_notrailer.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Document has no pages
+
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 6 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[392/452] 
+[non_hex_file_id.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[393/452] 
+[nonesuch_action.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[394/452] 
+[page_labels.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 9.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[395/452] 
+[page_tree_empty_node.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.6 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[396/452] 
+[parser_rebuildxref_correct.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.6 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[397/452] 
+[parser_rebuildxref_error_notrailer.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.6 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/parser_rebuildxref_error_notrailer.pdf
+
+
+[398/452] 
+[polygon_annot.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[399/452] 
+[rectangles.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.6 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[400/452] 
+[rectangles_double_flipped.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.6 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[401/452] 
+[rectangles_multi_page_xfa.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[402/452] 
+[rectangles_multi_pages.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.3 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[403/452] 
+[rectangles_object_zero.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[404/452] 
+[rectangles_with_leaky_ctm.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[405/452] 
+[redact_annot.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[406/452] 
+[redirect.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[407/452] 
+[repeat_viewer_ref.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.5 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Document has no pages
+
+
+[408/452] 
+[rotated_image.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[409/452] 
+[rotated_text.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[410/452] 
+[rotated_text_90.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[411/452] 
+[signature_no_sub_filter.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[412/452] 
+[signature_reason.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[413/452] 
+[simple_thumbnail.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 4.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[414/452] 
+[simple_xfa.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 5.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[415/452] 
+[split_streams.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 3.4 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[416/452] 
+[tagged_actual_text.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[417/452] 
+[tagged_alt_text.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[418/452] 
+[tagged_marked_content.pdf]
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/trailer_as_hexstring.pdf
+
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 379, in generate_for_pdf
+    print(f"\n[{pdf_name}]")
+                    ^^^^^^^^^
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 162, in extract_text_per_page
+    )
+      
+RuntimeError: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/trailer_unterminated.pdf
+
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[419/452] 
+[tagged_mcr_multipage.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.6 KB
+  Extracting text per page...
+    ✓ 2 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 2 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[420/452] 
+[tagged_mcr_objr.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[421/452] 
+[tagged_nested.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 4.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[422/452] 
+[tagged_table.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 3.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[423/452] 
+[tagged_table_bad_elem.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.2 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[424/452] 
+[tagged_table_bad_parent.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 3.1 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[425/452] 
+[text_color.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.6 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[426/452] 
+[text_font.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 10.3 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[427/452] 
+[text_form.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[428/452] 
+[text_form_color.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[429/452] 
+[text_form_multiline.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[430/452] 
+[text_form_multiple.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.4 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[431/452] 
+[text_form_negative_fontsize.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.0 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[432/452] 
+[text_in_page_marked.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 3.5 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[433/452] 
+[text_in_page_marked_indirect.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 3.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[434/452] 
+[text_render_mode.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[435/452] 
+[thumbnail_with_empty_stream.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.5 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[436/452] 
+[thumbnail_with_no_filters.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[437/452] 
+[trailer_as_hexstring.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.5 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/trailer_as_hexstring.pdf
+
+
+[438/452] 
+[trailer_end_trailing_space.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.2 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[439/452] 
+[trailer_unterminated.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.5 KB
+  Extracting text per page...
+  ERROR: Text extraction failed: Error: Failed to load PDF: /Users/ayates/pdfium/integration_tests/pdfs/edge_cases/trailer_unterminated.pdf
+
+
+[440/452] 
+[two_signatures.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 2.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[441/452] 
+[unsupported_feature.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[442/452] 
+[uri_action.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[443/452] 
+[uri_action_nonascii.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[444/452] 
+[use_outlines.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.8 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[445/452] 
+[utf-8.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.7 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[446/452] 
+[version_in_catalog.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.4 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[447/452] 
+[vertical_text.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.6 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[448/452] 
+[viewer_pref_types.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.6 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[449/452] 
+[viewer_ref.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.2 KB
+  Extracting text per page...
+    ✓ 5 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 5 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[450/452] 
+[weblinks.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[451/452] 
+[weblinks_across_lines.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 1.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+[452/452] 
+[zero_length_stream.pdf]
+  Category: edge_cases
+  Pages: unknown
+  Size: 0.9 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+
+================================================================================
+COMPLETE
+  Success: 425
+  Failed: 27
+================================================================================

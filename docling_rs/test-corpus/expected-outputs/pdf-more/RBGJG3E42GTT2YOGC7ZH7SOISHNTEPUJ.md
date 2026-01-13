@@ -1,0 +1,811 @@
+ALASKA ECONOMIC TRENDS JULY 2025
+
+THE COST OF LIVING IN ALASKA
+
+## FROM THE COMMISSIONER
+
+## Strenghtening our role on the U.S. and global stages
+
+## By Catherine Muñoz, Commissioner
+
+Summer is a great time to showcase Alaska, hosting family and friends and enjoying long summer days and a full range of outdoor activities. Most workingage Alaskans are at the peak of a busy summer season. It is also the season to 'roll out the red carpet' for national and international guests.
+
+Last month, the Alaska Sustainable Energy Conference attracted domestic and international participants to Anchorage to learn firsthand about developments in alternative energy. Great excitement was in the air with partnership announcements by Graphite One and Lucid Motors to create a domestic supply chain of advanced graphite materials for electric vehicles as well as the significant introduction to the Glenfarne Group, which recently assumed project management of the Alaska Liquefied Natural Gas project.
+
+The Alaska Department of Labor and Workforce Development helped to host U.S. Energy Secretary Chris Wright, who met with several foreign and domestic delegations.
+
+Recently, Deputy Commissioner Nelson San Juan met with Ambassador Jose Manuel Romualdez of the Republic of the Philippines and a group of Alaska school district superintendents and representatives of the Alaska Educator Recruitment and Retention Center. The meeting highlighted the educators from the Philippines who are filling important roles across the state, bolstering Alaska's home-grown education professionals.
+
+Deputy Commissioner San Juan is leading efforts to support school districts as they navigate a complicated hiring process. The Department's Office of Citizenship Assistance, which opened last year, is also supporting foreign teachers and other legal immigrants to be successful in their work in Alaska.
+
+For me, the Alaska Sustainable Energy Conference highlighted Alaska's vital role on the global stage.
+
+<!-- image -->
+
+<!-- image -->
+
+In the photo above, from left: Kodiak Island Borough Superintendent Dr. Cyndy Mika, Alaska Educator Recruitment and Retention Center Director Jennifer Schmitz, Ambassador of the Philippines Jose Manuel Romual -dez, Labor Deputy Commissioner Nelson San Juan, Kodiak Island Borough Assistant Superintendent Kim Saunders, and Kuspuk School District Superintendent Dr. Madeline Aguillard.
+
+On the right: U.S. Secretary of Energy Chris Wright and Labor Commissioner Cathy Muñoz.
+
+<!-- image -->
+
+From energy to education, Alaska continues to capture the interest and imagination of people around the world.
+
+I hope that you are enjoying the many bounties of Alaska's summer season. Happy Independence Day!
+
+<!-- image -->
+
+Sincerely,
+
+Contact Commissioner Catherine Muñoz at (907) 465-2700 or commissioner.labor@alaska.gov.
+
+Follow the Alaska Department of Labor and Workforce Development on X and Facebook.
+
+JULY 2025
+
+Volume 45   Number 7 ISSN 0160-3345
+
+## SARA WHITNEY
+
+Editor
+
+## DAN ROBINSON
+
+Chief, Research and Analysis
+
+Design by Sara Whitney
+
+## ON THE COVER:
+
+Rainbow chard, photo by Flickr user Annette Dubois Creative Commons license
+
+## ALASKA
+
+DEPARTMENT of LABOR and WORKFORCE DEVELOPMENT
+
+Governor Mike Dunleavy
+
+Commissioner
+
+Catherine Muñoz
+
+## TRENDS ALASKA ECONOMIC
+
+## 4 THE COST OF LIVING
+
+- 4 INFLATION SLOWS AFTER THREE ERRATIC YEARS
+- 8 COMPARISONS WITHIN AND OUTSIDE ALASKA
+
+## 14 GAUGING THE ECONOMY
+
+Trends is a nonpartisan, data-driven magazine that covers a variety of economic topics in Alaska.
+
+ON THIS SPREAD: The background image for 2025 is a panorama of snowy tundra at Selawik National Wildlife Refuge. Photo by Lisa Hupp, U.S. Fish and Wildlife Service
+
+If you have questions or comments, contact the authors listed at the end of each article or the editor at sara.whitney@alaska.gov or (907) 465-6561. This material is public information, and with appropriate credit it may be reproduced without permission. To sign up for a free electronic subscription, read past issues, or purchase a print subscription, visit labor.alaska.gov/trends.
+
+## The cost of living in Alaska
+
+## Inflation slowed after 3 erratic years, remains low historically
+
+## By SAM TAPPEN
+
+I nflation moved closer to the long-term average in Alaska last year in what had so far been a volatile decade. Consumer prices rose 2.2 percent in 2024, up from 1.8 percent in 2023 but still well below the 3.3 percent yearly average since 1961.
+
+Alaska saw unusually large swings over the last few years. In 2020, at the onset of the COVID-19 pandemic, the overall price level decreased for the first time in the Urban Alaska index's history. (See the sidebar for more on the consumer price index.)
+
+As the lockdowns ended and the economy roared back, inflation jumped to levels Alaska hadn't seen in more than 40 years.
+
+<!-- image -->
+
+Many factors that pushed prices up a few years ago have eased, however, slowing inflation. These factors include pent-up demand, pandemic relief funding, low interest rates, supply chain issues, and labor shortages.
+
+Alaska has returned to relatively low inflation, although not as low as during 2015-2017, when the state weathered a recession spurred by plunging
+
+Source: U.S. Department of Labor, Bureau of Labor Statistics, CPI-U for Urban Alaska oil prices and revenues to the state.
+
+Many consumers still believe inflation is high, al -though it may be a misunderstanding of the terms. Price levels are indeed high after rising about 18 percent in Alaska since 2020, and the overall price level almost never goes down. But annual price increases , or inflation, have stabilized, meaning prices
+
+## What inflation, deflation, and disinflation mean and how they work
+
+Inflation is the increase in the general price level over time. The Bureau of Labor Statistics tracks average prices for a 'market basket' of goods and services that represent the typical living expenses for urban consumers in a specific area. The annual inflation rate is the percent change in the price of those goods and services from one year to the next.
+
+Deflation is a decrease in the general price level over time, and it's a rare occurrence. While prices for some goods and services can and do sometimes fall, the overall price level rarely goes down - if it does, it typically signals severe problems in an economy. Urban Alaska's only year of deflation in its 64-year history was during the initial COVID outbreak in 2020 when many parts of the economy were paused. The U.S. economy hasn't recorded annual deflation since 2009, on the tail of the Great Recession.
+
+Disinflation is a decrease or slowdown in the inflation rate. It doesn't mean that prices have gone down; rather, it means prices aren't rising as fast as they were before. A recent example is when Alaska's annual inflation rate declined from 8.1 percent in 2022 to 1.5 percent in 2023. Prices still increased in 2023 as they typically do, but not by nearly as much.
+
+are rising slower again.
+
+For more on inflation, deflation, and disinflation, see the sidebar on the previous page.
+
+## Price changes by category in 2024
+
+The U.S. Bureau of Labor Statistics groups prices into eight major spending categories: food and beverages, housing, apparel, transportation, medical care, recreation, education and communication, and other goods and services.
+
+The exhibit on the right shows the 2024 inflation rate for each and their notable subcategories in Alaska. Among the major categories, prices in three rose faster than the overall index and four rose slower. Prices in one category dropped.
+
+Food and beverages, housing, and apparel rose at about the same rate as prices overall: 2.2
+
+## Urban Alaska inflation by category in 2024
+
+<!-- image -->
+
+*Implicit amount homeowners would pay to rent their own house, intended to remove the investment component of homeownership
+
+Source: U.S. Department of Labor, Bureau of Labor Statistics, CPI-U for Urban Alaska
+
+## Where urban Alaska and U.S. households spent their money in 2023
+
+<!-- image -->
+
+Source: U.S. Department of Labor, Bureau of Labor Statistics, CPI-U for Urban Alaska and the U.S. city average
+
+## How Alaska households have reallocated their spending in recent years
+
+*Before 2021, the Bureau of Labor Statistics updated relative importance estimates every other year.
+
+<!-- image -->
+
+Source: U.S. Department of Labor, Bureau of Labor Statistics, CPI-U for Urban Alaska percent. Food and beverage prices in Alaska have stabilized, although restaurant prices did jump 4.1 percent in 2024.
+
+Owners' equivalent rent (see the chart notes) and rental costs increased by 3.5 percent and 5.5 percent, respectively. Later sections will show how much housing costs vary by region.
+
+Medical care and 'other' rose much faster, at 7.8 percent and 10.7 percent. Medical costs have climbed an average of 4.8 percent a year over the last five.
+
+Because the other category includes everything from cigarettes and infants' equipment to funeral expenses, it's hard to identify what is driving it up. Inflation in this catchall category has accelerated, with back-to-back years in the double digits.
+
+Transportation costs dropped, with prices falling for vehicles and motor fuels. Fuel prices are always volatile, ranging from -18 percent deflation to 41 percent inflation in the last five years. They largely follow global crude oil prices.
+
+Vehicle prices took a wild ride after the pandemic as supply chain disruptions and labor shortages temporarily brought many manufacturing plants to a halt.
+
+Electricity changed the most. Urban Alaska consumers paid 14.5 percent more for electricity last year.
+
+Chugach Electric Association and Matanuska Electric Association are the two main providers in the sample area. Chugach hiked prices by 5.2 percent in September 2023, which remained in effect until the final rate increase of 4.3 percent was approved in September 2024. After Chugach Electric bought Anchorage Municipal Light and Power in 2020, the change was required to unify electricity rates between the two service areas.
+
+Matanuska Electric Association raised rates by about 5 percent in 2024 and incrementally bumped up its Cost of Power Adjustment, which accounts for variable fuel costs, by about 12 percent.
+
+## Largest share spent on housing
+
+The bureau also details how people distribute their spending. The pie charts on the previous page show where urban Alaskans and American consumers spent their money in 2023.
+
+Alaskans spent the largest chunk by far on housing, at 45 percent, followed by transportation, medical care, and food at 18 percent, 12 percent, and 12 percent, respectively. The remaining four categories combined represented about 14 percent.
+
+## How costs for upper-income households compared by city in 2024
+
+|                                  | Total     | Groceries   | Housing   | Utilities   | Transp    | Health    | Misc   |
+|----------------------------------|-----------|-------------|-----------|-------------|-----------|-----------|--------|
+| Category's weight in total index | 100%      | 15%         | 28%       | 8%          | 9%        | 5%        | 35%    |
+| Survey average of 265 cities     | 100.0     | 100.0       | 100.0     | 100.0       | 100.0     | 100.0     | 100.0  |
+| West                             |           |             |           |             |           |           |        |
+| Honolulu HI                      | 186.9     | 130.4       | 310.0     | 198.0       | 133.3     | 121.1     | 130.5  |
+| San Jose CA                      | 180.7     | 115.0       | 321.1     | 159.0       | 140.4     | 120.4     | 118.0  |
+| San Francisco CA                 | 166.8     | 123.5       | 263.3     | 160.5       | 143.3     | 128.0     | 119.4  |
+| Orange County CA                 | 156.3     | 109.8       | 260.8     | 111.3       | 133.4     | 93.1      | 116.4  |
+| San Diego CA                     | 145.3     | 111.1       | 212.0     | 139.7       | 140.6     | 102.6     | 114.0  |
+| SeattleWA                        | 145.1     | 110.3       | 212.1     | 101.6       | 128.1     | 128.9     | 122.5  |
+| Oakland CA                       | 137.7     | 117.2       | 170.0     | 157.9       | 140.5     | 123.3     | 116.5  |
+| Juneau AK                        | 127.2     | 128.2       | 122.8     | 142.5       | 120.5     | 150.9     | 125.0  |
+| TacomaWA                         | 127.0     | 108.5       | 161.5     | 90.0        | 127.8     | 118.2     | 116.7  |
+| Lake Havasu City AZ              | 125.2     | 98.8        | 181.6     | 108.8       | 98.7      | 91.0      | 106.0  |
+| Anchorage AK                     | 122.8     | 126.4       | 133.1     | 112.6       | 113.3     | 147.5     | 114.2  |
+| Fairbanks AK                     | 121.5     | 126.8       | 98.2      | 203.4       | 109.1     | 151.5     | 117.5  |
+| BellinghamWA                     | 121.0     | 106.8       | 140.8     | 95.5        | 120.4     | 115.8     | 118.0  |
+| Portland OR                      | 116.6     | 107.2       | 145.9     | 86.7        | 127.1     | 110.8     | 102.0  |
+| Salt Lake City UT                | 109.0     | 98.0        | 128.7     | 95.5        | 111.1     | 88.8      | 103.1  |
+| Denver CO                        | 108.6     | 101.3       | 123.4     | 89.5        | 94.5      | 109.9     | 107.8  |
+| Phoenix AZ                       | 106.3     | 102.7       | 115.6     | 106.8       | 105.2     | 91.9      | 102.3  |
+| Boise ID                         | 102.0     | 103.6       | 100.9     | 77.9        | 109.6     | 98.5      | 106.7  |
+| Las Vegas NV                     | 98.5      | 103.6       | 104.5     | 114.1       | 114.7     | 85.4      | 85.2   |
+| AlbuquerqueNM                    | 95.0      | 97.4        | 89.1      | 87.5        | 85.7      | 102.3     | 101.9  |
+| Great FallsMT                    | 90.0      | 99.2        | 77.6      | 83.8        | 99.7      | 97.5      | 94.2   |
+| Northeast                        |           |             |           |             |           |           |        |
+| New York (Manhattan) NY          | 230.6     | 117.9       | 500.6     | 115.3       | 116.7     | 146.0     | 127.2  |
+| New York (Brooklyn) NY           | 161.1     | 112.9       | 276.4     | 115.4       | 114.6     | 128.5     | 115.0  |
+| BostonMA                         | 145.9     | 104.4       | 218.8     | 150.0       | 109.5     | 125.7     | 115.3  |
+| Stamford CT                      | 127.3     | 104.7       | 162.9     | 134.4       | 109.2     | 115.8     | 112.4  |
+| Bergen-Passaic NJ                | 119.0     | 106.4       | 147.8     | 102.4       | 105.9     | 106.6     | 110.1  |
+| PortlandME                       | 112.1     | 101.5       | 128.7     | 111.0       | 107.5     | 113.7     | 104.5  |
+| Philadelphia PA                  | 103.3     | 104.1       | 99.2      | 105.7       | 105.1     | 96.5      | 106.1  |
+| Buffalo NY                       | 95.7      | 97.5        | 94.9      | 95.2        | 101.6     | 88.5      | 95.1   |
+| Wayne County PA                  | 87.0      | 97.7        | 66.1      | 102.5       | 98.3      | 95.8      | 91.7   |
+| South                            |           |             |           |             |           |           |        |
+| Washington DC                    | 141.9     | 105.8       | 222.4     | 102.6       | 107.7     | 117.4     | 113.3  |
+| Arlington VA                     | 135.1     | 112.0       | 206.8     | 93.8        | 101.6     | 114.2     | 107.8  |
+| Miami-Dade County FL             | 120.8     | 110.7       | 157.3     | 105.1       | 100.4     | 98.4      | 107.4  |
+| San Juan-Bayamón-Caguas PR       | 102.0     | 110.0       | 101.3     | 158.0       | 91.5      | 70.1      | 92.3   |
+| Dallas TX                        | 101.7     | 98.8        | 95.0      | 115.9       | 91.0      | 104.8     | 107.5  |
+| BaltimoreMD                      | 100.4     | 102.7       | 86.4      | 110.8       | 104.0     | 94.5      | 108.4  |
+| Tampa FL                         | 97.6      | 105.7       | 95.7      | 100.1       | 101.9     | 93.4      | 94.5   |
+| Atlanta GA                       | 96.0      | 100.8       | 86.8      | 99.9        | 100.0     | 108.3     | 97.7   |
+| Houston TX                       | 94.2      | 99.3        | 79.2      | 92.6        | 93.8      | 97.8      | 104.2  |
+| Lake Charles LA                  | 86.3      | 95.6        | 65.3      | 68          | 102       | 98.7      | 98.1   |
+| Harlingen TX                     | 82.1      | 92.7        | 66.8      | 125.3       | 87.1      | 78.2      | 78.6   |
+| Midwest                          |           |             |           |             |           |           |        |
+| Chicago IL                       | 115.1     | 103.8       | 140.0     | 96.8        | 107.1     | 108.2     | 107.1  |
+| Detroit MI                       | 103.3     | 100.9       | 105.9     | 100.8       | 103.5     | 107.3     | 102.1  |
+| ColumbusOH                       | 95.4      | 100.6       | 96.5      | 104.4       | 87.3      | 82.5      | 93.7   |
+| MinneapolisMN                    | 93.6      | 102.6       | 82.8      | 96.8        | 96.2      | 96.3      | 96.6   |
+| Kansas City MO-KS                | 91.1      | 97.3        | 87.5      | 105.8       | 89.1      | 84.0      | 89.2   |
+| Grand ForksND                    |           |             |           |             |           |           | 93.0   |
+| Decatur IL                       | 90.1 79.1 | 91.6 95.8   | 85.5 50.9 | 80.2 106.0  | 95.6 95.7 | 99.5 82.5 | 83.7   |
+
+Notes: Based on professional households with earnings in the top U.S. quintile. Miscellaneous goods and services include entertainment, apparel, personal care, and fast food.
+
+Source: The Council for Community and Economic Research, Cost of Living Index 2024
+
+That distribution was similar to the national numbers. Alaskans spent a higher percentage on medical care and slightly more on transportation. U.S. consumers spent more of their income on food and recreation. All of the other categories' shares were nearly identical.
+
+## Spending patterns have changed amid economic instability
+
+Alaskans have significantly altered their spend -ing patterns over the last five years amid rapidly changing economic conditions. The exhibit at the top of page 6 shows the changes in the shares spent in each category from 2019 to 2023.
+
+Households tend to seek cheaper substitutes when costs increase, which is more feasible in some
+
+categories than others. For example, homeown- ers don't immediately
+
+downsize where they live when utility prices
+
+increase; rather, they spend less on things
+
+like entertainment and going out to eat.
+
+income in 2021 and 12 percent in 2023, mainly in the grocery category.
+
+Recreation spending briefly rose to 9 percent in 2021, likely as consumers began going out again when pandemic restrictions eased.
+
+## Comparing costs between areas
+
+Consumer price indexes like the CPI show how prices change over time, but they can't be used to compare the cost of living in one area to another. (For more on the two ways to measure the cost of living, see the sidebar on the next page.) They simply show how much prices in one area have increased from a base year.
+
+Other data sources show how living costs differ between different locations, and these measures typically compare each place to the survey average.
+
+Alaskans have altered their spending patterns amid the rapidly changing conditions of the last five years.
+
+People also reallocate their spending for other reasons, such as changes in their income or employment, household demographics, and availability of items and services.
+
+The business closures, supply chain disruptions, travel restrictions, and telework trends of the pandemic years affected some spending patterns. Alaskans spent around 40 percent of their income on housing in the previous four years, but that jumped to 45 percent in 2023, almost entirely be -cause of rent, which jumped 5 percentage points in 2023 alone.
+
+Transportation spending has been incredibly variable in recent years. While price shifts for gasoline, insurance, and new and used cars were major fac -tors, many households also cut their transportation expenses considerably during COVID because of remote work and travel restrictions.
+
+The share spent on medical care, which had been stable in previous years, jumped 5 percentage points in 2023.
+
+Alaskans allocated far less spending to food for a few years, however, spending 22 percent of their
+
+This enables people to rank costs in differ -ent places and see how much a particular place's costs differ from the average.
+
+The most comprehensive national source that includes several Alaska areas is the
+
+Cost of Living Index published by the Council for Community and Economic Research, or C2ER.
+
+C2ER uses volunteer-collected prices for 60 items and services to construct cost-of-living indexes for hundreds of cities across the country. Its six categories are groceries, housing, utilities, transportation, health care, and miscellaneous.
+
+C2ER assigns weights to each category (as mentioned earlier, these are the percentages of their income households spend by category) that are fixed across all cities, then creates an overall cost of living index for each. Most prices in the index exclude taxes.
+
+The survey focuses on professional and managerial households with income in the top 20 percent. This distinction helps explain why the relative amounts spent in each category vary from the weights in the consumer price index that reflect the average urban household.
+
+For example, the CPI for Urban Alaska shows average households spent a much larger share on housing (this category is similar to housing
+
+## The two main ways to measure the cost of living
+
+## 1. In one area over time (inflation)
+
+The Consumer Price Index for Urban Alaska is the state's only official measure of inflation: how prices change over time. Alaska's CPI tracks changes in the price level of a 'market basket' of goods and services for the average consumer through surveys of consumer expenditure patterns and prices collected in Anchorage and the Matanuska-Susitna Borough.
+
+The inflation rate, or price change between two periods, is calculated as the percent change in the index.
+
+While the U.S. Bureau of Labor Statistics publishes CPIs for many cities, they can't be used to compare costs between areas because each is indexed to prices at a specific time in a given place. The index values only show how much prices have risen there since a base period, which is set at 100.
+
+plus utilities in the C2ER index), transportation, and medical expenses and less on food and other goods and services.
+
+Besides these bird's-eye observations, the indexes are far too different in structure to compare them. (See the sidebar above.)
+
+## Alaska cities' costs are high nationally, except for housing
+
+The 2024 release from C2ER covered 254 cities, including Anchorage, Fairbanks, and Juneau. All three ranked among the 25 most expensive cities in the survey and had multiple components in the top five.
+
+Alaska cities claimed the highest three spots for health care costs and were surpassed by just one U.S. city for groceries.
+
+Overall, Alaska's three cities' living costs were about 24 percent higher than the U.S. survey average last year. But despite their high rankings, they didn't approach the outliers at the top of the list.
+
+New York City's most expensive boroughs, Honolulu, and California's costliest San Francisco Bay Area cities had living costs from 61 to 131 percent higher than average. Large urban and commercial hubs on the coasts dominated the top positions in the index, and their housing costs were the main reason.
+
+While Anchorage had the highest housing costs
+
+## 2. Between areas at the same time
+
+Another way to assess the cost of living is to compare costs between two or more places at a given time. When prices are indexed to a base area rather than a time, the resulting index allows comparisons across areas, although not over time.
+
+These types of indexes are often called price differen -tials, and differences between places are calculated as the percent difference between their index values.
+
+Although inflation has a single data source in Alaska, multiple other data sets are available that compare costs across areas. Many only cover some parts of the state, and each source comes with its own methods, so it is important to consider each data set's strengths and weaknesses and look for patterns across multiple sources.
+
+among the three Alaska cities, it wasn't even close to the top-ranked nationally, where housing costs were double, triple, or even five times the U.S. average.
+
+Juneau was the highest-cost city in Alaska at 27 percent above the survey average. Juneau had the second-highest grocery costs nationwide (28 percent higher), the second-highest health care costs (51 percent), and the third-highest prices for miscellaneous goods and services (25 percent).
+
+Anchorage came second in Alaska at 23 percent above average. Anchorage had the fourth-highest grocery costs nationally (26 percent higher) and the third-highest medical costs (48 percent more).
+
+Fairbanks was a close third at 22 percent above average. Fairbanks had the third highest grocery costs (27 percent higher) and the highest costs nationally for utilities, at more than double the survey average, and health care (52 percent more). Fairbanks' relatively low housing costs, which ranked 79th, somewhat offset its extreme utilities and health care prices.
+
+## How the military ranks Alaska communities' costs of living
+
+While C2ER's index is the most comprehensive source for comparisons, others cover specific costs for areas that include Alaska.
+
+The U.S. Department of Defense maintains an
+
+'overseas' cost of living index for all duty stations outside the contiguous United States, which include Alaska and Hawaii.
+
+The military uses its index to calculate an additional allowance for service members in places with costs above the contiguous U.S. average. Because service members receive a separate housing allowance, this index excludes housing costs.
+
+The military's index is based on recurring surveys that service members conduct at each station, collecting prices for 150 items and services. Respondents also specify where they typically shop for each item. Many duty stations have military commissaries and exchanges with lower prices than local retailers. In Alaska, such facilities are available near Anchorage, Fairbanks, North Pole, Ketchikan, Kodiak, and Delta Junction.
+
+Similar to previous data sets, this index estimates costs for a fixed standard of living. The military uses BLS expenditure patterns to determine the typi  cal standard of living for military households based on their income level and number of dependents.
+
+The table on this page ranks 12 Alaska communities in 2025, comparing their costs to the average for contiguous U.S. locations, setting 100 as the average. While the index covers additional communities in Alaska, they are surveyed less frequently and are ranked with a proxy community.
+
+## Alaska's average house prices and mortgage payments by area in 2024
+
+| Area                         | Avg single- family sales price   | Est monthly mortgage payment   |
+|------------------------------|----------------------------------|--------------------------------|
+| Juneau, City and Borough     | $524,312                         | $2,612                         |
+| Ketchikan Gateway Borough    | $518,220                         | $2,582                         |
+| Anchorage Municipality       | $509,261                         | $2,537                         |
+| Statewide Total              | $459,089                         | $2,287                         |
+| Kodiak Island Borough        | $457,874                         | $2,281                         |
+| Matanuska-Susitna Borough    | $447,671                         | $2,230                         |
+| Kenai Peninsula Borough      | $438,917                         | $2,187                         |
+| Bethel Census Area           | $391,200                         | $1,949                         |
+| Rest of State                | $376,009                         | $1,873                         |
+| Fairbanks North Star Borough | $362,481                         | $1,806                         |
+
+Note: Monthly payments are the estimated cost of a 30-year fixed rate mortgage (principal and interest only) on an averagepriced single-family home with the average interest rate (6.36 percent), assuming a 20 percent down payment.
+
+Source: Alaska Department of Labor and Workforce Development, Research and Analysis Section and Alaska Housing Finance Corporation
+
+## How the military ranked Alaska towns' costs * in May 2025
+
+| City                                                                                           | Index value                                                                                    |
+|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| U.S. continental average                                                                       | 100                                                                                            |
+| Cordova                                                                                        | 144                                                                                            |
+| Seward                                                                                         | 142                                                                                            |
+| Sitka-Mt. Edgecumbe                                                                            | 142                                                                                            |
+| Homer (including Anchor Point)                                                                 | 140                                                                                            |
+| Petersburg                                                                                     | 140                                                                                            |
+| Juneau                                                                                         | 138                                                                                            |
+| Eielson Air Force Base                                                                         | 134                                                                                            |
+| Fairbanks                                                                                      | 134                                                                                            |
+| Kodiak                                                                                         | 134                                                                                            |
+| Valdez                                                                                         | 134                                                                                            |
+| Anchorage (including Eagle River)                                                              | 132                                                                                            |
+| Ketchikan                                                                                      | 130                                                                                            |
+| *Excludes housing Source: U.S. Department of Defense, Overseas Cost of Living Allowance tables | *Excludes housing Source: U.S. Department of Defense, Overseas Cost of Living Allowance tables |
+
+Ketchikan was the lowest-cost 'overseas' military location on the list, with costs 30 percent higher than average. Cordova was highest at 44 percent higher. The large cities - Anchorage, Fairbanks, and Juneau - were 32, 34, and 38 percent above average, respectively.
+
+## The state tracks mortgage, rental housing costs in detail
+
+Every year, we survey mortgage lenders and landlords across Alaska in partnership with the Alaska Housing Finance Corporation and then provide housing cost estimates for select areas. This is especially useful for determining the cost of living, as housing is the single largest expense for most households.
+
+The table on the left lists average single-family home prices and estimated monthly mortgage payments by borough and census area. The monthly payment assumes a 30-year fixed-rate mortgage with the average interest rate (6.36 percent) and a 20 percent down payment on an average-priced single-family house in that area.
+
+These monthly payments do not include taxes, insurance, utilities, or other housing costs outside of the principal and interest.
+
+The 2024 survey found Juneau had the highest average sales price at $524,312 and an estimated monthly payment of $2,612. That put Juneau about
+
+14 percent above the statewide average. Anchorage was 11 percent more than average at $509,261.
+
+At the other end of the spectrum, Fairbanks homes averaged $362,481, or $1,806 a month - 21 percent below the state average.
+
+Our survey also showed that the statewide average sales price rose 5 percent from 2024. That was up from 3 percent in 2023 but well below 9 percent in both 2021 and 2022.
+
+For rental costs, the table on the right gives median adjusted rents for two-bedroom apartments by area in March 2025. To make areas comparable, we adjust rents to include all utility costs, whether part of the rent payment or paid separately. The survey excludes subsidized housing, short-term rentals, recreational cabins, and other non-market-rate rentals.
+
+Bethel's rent was highest by far at $2,075. The lowest were in the Kenai Peninsula Borough and Wrangell-Petersburg at just over $1,200. Rents in Anchorage, Fairbanks, and Juneau were all around $1,675.
+
+Unlike the sales price rankings mentioned earlier, some areas rank much higher in the rental cost survey because of their high utility costs. Fairbanks and Bethel are examples.
+
+## Factors that determine fuel costs in rural places
+
+Fuel is another major expense for most Alaska households, and it's partly captured in some of the previously mentioned sources, categorized as housing, utilities, or transportation. However, the importance and expense varies significantly around the state.
+
+While most Lower 48 households use piped utility gas, most Alaska communities don't have access to this relatively low-cost resource. The major exceptions are Southcentral communities in the Enstar service area ranging from Willow to Homer, Utqiagvik, and Nuiqsut in the North Slope Borough, and some parts of the Fairbanks North Star Borough where the Interior Gas Utility has been expanding the local distribution network for the last decade.
+
+## Two-bedroom apartment median adjusted rents by area, March 2025
+
+| Area                              | Rent plus utilities   |
+|-----------------------------------|-----------------------|
+| Bethel Census Area                | $2,075                |
+| Kodiak Island Borough             | $1,713                |
+| Anchorage, Municipality           | $1,680                |
+| Fairbanks North Star Borough      | $1,676                |
+| Juneau , City and Borough         | $1,661                |
+| Ketchikan Gateway Borough         | $1,600                |
+| Sitka, City and Borough           | $1,564                |
+| Matanuska-Susitna Borough         | $1,389                |
+| Chugach Census Area               | $1,375                |
+| Wrangell-Petersburg Combined Area | $1,235                |
+| Kenai Peninsula Borough           | $1,203                |
+
+Source: Alaska Department of Labor and Workforce Development, Research and Analysis Section and Alaska Housing Finance Corporation
+
+For hundreds of other Alaska communities, heating fuel is usually the best or only choice.
+
+According to the one-year American Community Survey from 2023, about half of the state's occu-
+
+Alaska has the lowest gas taxes in the U.S., but other factors can raise costs.
+
+pied housing units primarily use utility gas. Just over a quarter heat with oil and 14 percent use electricity, typically in moderate climates such as Southeast with access to lower- cost hydroelectric or other renewable power.
+
+Gasoline is also a critical fuel source. Even roadless rural communities throughout Alaska use gas to power ATVs, boats, and snowmachines.
+
+Alaska has the lowest gasoline taxes in the country, but other factors can drive up prices in some areas. Alaska's refining capacity is limited, and much of our fuel is imported from the West Coast or other countries - mainly Canada and Asia. From that point, delivering the product to various communities adds additional and widely varying costs.
+
+The table on the next page lists the dollar-pergallon prices of gasoline and heating fuel for select communities in January 2025 from the Alaska Department of Commerce, Community, and Economic Development's semiannual Fuel Price Survey.  The table includes the U.S. average price for both fuels for reference, from the U.S. Energy Information Administration, and select U.S. cities for further comparison.
+
+## Gasoline and heating oil prices in Alaska and select U.S. cities, January 2025
+
+| Place                    | Gas/gal     | Heat oil/gal   |
+|--------------------------|-------------|----------------|
+| Hughes                   | $11.50      | $13.00         |
+| Alatna                   | $11.50      | $8.00          |
+| Saint George             | $10.49      | $9.99          |
+| Arctic Village           | $10.00      | $15.00         |
+| New Stuyahok             | $10.00      | $9.59          |
+| Toksook Bay              | $9.68       | $9.69          |
+| Sleetmute                | $9.52       | $9.10          |
+| Kokhanok                 | $9.50       | $10.00         |
+| Scammon Bay              | $9.38       | $9.38          |
+| Kotlik                   | $9.01       | $8.62          |
+| Grayling                 | $9.00       | $8.50          |
+| Galena                   | $8.99       | $8.04          |
+| Atqasuk*                 | $8.80       | $1.50          |
+| Mountain Village         | $8.71       | $8.58          |
+| Anaktuvuk Pass*          | $8.69       | $1.50          |
+| Quinhagak                | $8.56       | $7.98          |
+| McGrath                  | $8.55       | $8.21          |
+| Emmonak                  | $8.52       | $8.35          |
+| Upper Kalskag            | $8.50       | $8.50          |
+| Kwigillingok             | $8.35       | $8.40          |
+| Noorvik                  | $8.25       | $7.95          |
+| Tanana                   | $8.23       | $5.50          |
+| Hooper Bay               | $8.13       | $9.30          |
+| Marshall                 | $8.11       | $8.11          |
+| Kotzebue                 | $7.99       | $7.73          |
+| Stebbins                 | $7.97       | $7.73          |
+| Togiak                   | $7.94       | $7.66          |
+| Ruby                     | $7.75       | $7.75          |
+| Kaltag Nuiqsut*          | $7.75 $7.74 | $7.00 $1.50    |
+|                          |             | $7.40          |
+| Tuntutuliak Point Hope*  | $7.60       | $1.74          |
+| Chenega                  | $7.60 $7.57 | $7.33          |
+|                          | $7.55       |                |
+| Pilot Station Holy Cross |             | $7.29          |
+| Russian                  | $7.50       | $8.48          |
+| Mission                  | $7.50 $7.50 | $7.50          |
+| Anvik Nulato             | $7.50       | $7.00 $6.50    |
+| Kaktovik*                | $7.50       | $2.50          |
+| Kiana                    | $7.47       | $8.24          |
+| Atmautluak               | $7.44       | $7.14          |
+| Nelson Lagoon            | $7.29       | $7.20          |
+| Nunapitchuk              | $7.28       | $7.28          |
+| Akiak                    | $7.24       | $7.06          |
+| Dillingham               | $7.18       |                |
+|                          |             | $6.75          |
+| Saint Michael Nondalton  | $7.02 $7.02 | $7.99          |
+|                          |             | $7.88          |
+| Minto                    | $7.00       | $6.85          |
+| Wainwright*              | $6.96       | $1.75          |
+| Teller                   | $6.95       | $7.47          |
+| Utqiagvik*               | $6.90       | NA $6.90       |
+| Gambell                  | $6.90       |                |
+| Wales Atka               | $6.89 $6.75 | $6.38 $7.50    |
+|                          |             | $6.78          |
+| Bethel                   | $6.71       |                |
+| Savoonga                 | $6.70       | $6.70          |
+| Clark's Point Deering    | $6.50 $6.46 | $6.50 $6.30    |
+| Seldovia                 | $6.28       | $6.37          |
+| Koyuk                    | $6.28       | $6.34          |
+| Larsen Bay               | $6.28       | $5.94          |
+| Shishmaref Goodnews Bay  | $6.25 $6.07 | $6.39 $5.04    |
+| Huslia                   | $6.00 $6.00 | $6.25          |
+| Eagle                    |             | $5.50          |
+
+| Place                                                                | Gasoline/gal   | Heat oil/gal   |
+|----------------------------------------------------------------------|----------------|----------------|
+| Golovin                                                              | $5.95          | $5.85          |
+| Brevig Mission                                                       | $5.78          | $5.48          |
+| Kake                                                                 | $5.78          | $4.97          |
+| Unalakleet                                                           | $5.74          | $5.74          |
+| Circle                                                               | $5.50          | $4.50          |
+| Angoon                                                               | $5.48          | $6.20          |
+| Old Harbor                                                           | $5.40          | $5.22          |
+| White Mountain                                                       | $5.36          | $5.89          |
+| Pelican                                                              | $5.21          | $4.77          |
+| King Cove                                                            | $5.04          | $5.04          |
+| Ouzinkie                                                             | $5.00          | $4.42          |
+| Gustavus                                                             | $4.89          | $4.50          |
+| Chitina                                                              | $4.85          | $3.64          |
+| Port Lions                                                           | $4.75          | $4.60          |
+| Akutan                                                               | $4.75          | $4.20          |
+| Edna Bay                                                             | $4.69          | $4.82          |
+| Chignik                                                              | $4.66          | $4.60          |
+| Unalaska                                                             | $4.60          | $4.52          |
+| Sand Point                                                           | $4.52          | $4.16          |
+| San Diego-Carlsbad, CA                                               | $4.48          | NA             |
+| San Francisco-Oakland-Hayward, CA                                    | $4.45          | NA             |
+| Los Angeles-Long Beach-Anaheim, CA Hoonah                            | $4.43 $4.42    | NA $4.68       |
+| Urban Hawaii                                                         | $4.41          | NA             |
+| Cordova                                                              | $4.40          | $4.09          |
+| Kodiak                                                               | $4.37          | $4.16          |
+| Riverside-San Bernardino-Ontario, CA                                 | $4.33          | NA             |
+| Seattle-Tacoma-BellevueWA                                            | $4.11          | NA             |
+| Wrangell                                                             | $4.06          | $4.58          |
+| Petersburg                                                           | $4.00          | $4.54          |
+| Valdez                                                               | $3.81          | $4.05          |
+| Glennallen                                                           | $3.80          | $3.64          |
+| Thorne Bay                                                           | $3.76          | $4.54          |
+| Craig                                                                | $3.76          | $4.49          |
+| Nenana                                                               | $3.72          | $3.83          |
+| Anderson                                                             | $3.49          | $3.90 $3.90    |
+| Delta Junction                                                       | $3.44          | $3.79          |
+| Homer                                                                | $3.40          |                |
+| Urban Alaska Chicago-Naperville-Elgin, IL-IN-WI                      | $3.34 $3.32    | NA NA          |
+| Fairbanks                                                            | $3.29          | $4.32          |
+| Juneau                                                               | $3.23          | $4.99          |
+| Baltimore-Columbia-Towson,MD                                         | $3.21          | NA             |
+| Tampa-St. Petersburg-Clearwater, FL                                  | $3.18          | NA             |
+| Washington-Arlington-Alexandria, DC-VA-MD-WV                         | $3.16          | NA             |
+| Miami-Fort Lauderdale-West Palm Beach, FL                            | $3.14          | NA             |
+| Philadelphia-Camden-Wilmington, PA-NJ-DE-MD                          | $3.13          | NA             |
+| Detroit-Warren-Dearborn, MI                                          | $3.12          | NA             |
+| Phoenix-Mesa-Scottsdale, AZ                                          | $3.12          | NA             |
+| New York-Newark-Jersey City, NY-NJ-PA                                | $3.10          | NA             |
+| U.S. average                                                         | $3.08          | $3.83          |
+| Boston-Cambridge-Newton, MA-NH                                       | $3.04          | NA             |
+| Minneapolis-St.Paul-Bloomington, MN-WI                               | $3.01          | NA             |
+| Healy                                                                | $2.97          | $3.55          |
+| Atlanta-Sandy Springs-Roswell, GA                                    | $2.95          | NA             |
+| St. Louis, MO-IL                                                     | $2.92          | NA NA          |
+| Denver-Aurora-Lakewood, CO                                           | $2.85          |                |
+| Dallas-Fort Worth-Arlington, TX Houston-The Woodlands-Sugar Land, TX | $2.76 $2.61    | NA NA          |
+
+*North Slope communities' residential heating oil costs are subsidized by the borough. Residential heating oil is not sold in Utqiagvik, where homes are heated with natural gas.
+
+Source: Alaska Department of Commerce, Community, and Economic Development; and U.S. Bureau of Labor Statistics, Consumer Price Index; and U.S. Energy Information Administration
+
+In general, communities on Alaska's limited highway system, especially those near major fuel distribution hubs, have the lowest prices. Fairbanks, Anchorage/Mat-Su, Homer, and many places between them all paid less than $3.50 per gallon for gasoline.
+
+Gas prices in coastal communities that can receive fuel barge deliveries year-round ranged from about $3.75 to $4.75 per gallon over the winter; these included Craig, Petersburg, Wrangell, Kodiak, Cordova, Sand Point, Unalaska, and Akutan.
+
+Communities on major rivers or the northern coast that can only receive barge deliveries about half the year had higher prices. These included Savoonga, Huslia, Bethel, Nunapitchuk, and Ruby.
+
+Villages in the North Slope Borough, many of which can only receive winter deliveries across ice roads, have among the highest fuel prices. However, the borough heavily subsidizes resi -dential heating fuel.
+
+Other communities with the highest fuel costs, such as Arctic Village and Anuktuvuk Pass, can only receive fuel by plane, in limited quantities. In addition to distance and delivery method, quantity is a major factor in community pricing. Places that buy smaller amounts pay more.
+
+Many towns have increased their bulk fuel storage, reducing the number of annual deliveries. Similarly, some places have developed cooperative fuel purchase agreements to consolidate deliveries for all major users in an area, such as fuel retailers, utilities, schools, and commercial/ industrial customers.
+
+Sam Tappen is an economist in Anchorage. Reach him at (907) 269-4861 or sam.tappen@alaska.gov.
+
+## Gauging The Economy
+
+## Job Growth
+
+May 2025 Over-the-year percent change
+
+<!-- image -->
+
+Alaska's May employment was 1.1 percent above last May. National employment was up by the same percentage.
+
+## Unemployment Rate
+
+<!-- image -->
+
+<!-- image -->
+
+## Wage Growth
+
+## 4th Quarter 2024
+
+Over-the-year percent change
+
+13.0%
+
+Alaska's unemployment rate has climbed nearly a percentage point since early 2023 but remains well below its 10-year average.
+
+<!-- image -->
+
+Total wages paid by Alaska employers have shown strong growth in recent quarters.
+
+Wages were up 6.9 percent from year-ago levels in the fourth quarter of 2024 and 32.6 percent above the fourth quarter of 2019, before the pandemic.
+
+## Gauging The Economy
+
+## Initial Claims
+
+Unemployment, week ending June 7, 2025*
+
+<!-- image -->
+
+Pandemic-driven high claims loads have fallen, and new claims for benefits are well below their long-term average.
+
+*Four-week moving average ending with specified week
+
+## GDP Growth
+
+4th Quarter 2024 Over-the-year percent change*
+
+<!-- image -->
+
+Gross domestic product is the value of the goods and services a state produces.  It's an important economic measure but also a volatile one for Alaska because commodity prices influence the numbers so much especially oil prices.
+
+*In current dollars
+
+## Population Growth
+
+2023 to 2024
+
+<!-- image -->
+
+After four years of decline, Alaska's population has grown slightly in each of the last four years as natural increase (births minus deaths) has slightly exceeded migration losses.
+
+## Personal Income Growth
+
+4th Quarter 2024 Over-the-year percent change
+
+<!-- image -->
+
+Personal income consists of three main parts: 1) wages and salaries; 2) dividends, interest, and rents; and 3) transfer payments (payments from governments to individuals).
+
+## Net Migration
+
+2023 to 2024
+
+<!-- image -->
+
+The state had net migration losses for the 12th consecutive year in 2024. Losses were on par with 2023 and significantly smaller than the late 2010s. Net migration is the number who moved to Alaska minus the number who left.
+
+<!-- image -->
+
+## Change in Home Prices
+
+Single-family, percent change from prior year, Q4 2024
+
+<!-- image -->
+
+Home prices shown include only those for which a commercial loan was used. This indicator tends to be volatile from quarter to quarter.
+
+## Employment Growth by Region
+
+<!-- image -->
+
+## Unemployment Rates
+
+## Seasonally adjusted
+
+## Not seasonally adjusted
+
+|               | Prelim.   | Revised   | Revised   |
+|---------------|-----------|-----------|-----------|
+|               | 5/25      | 4/25      | 5/24      |
+| United States | 4.2       | 4.2       | 4.0       |
+| Alaska        | 4.7       | 4.7       | 4.5       |
+
+|               | Prelim.   | Revised   | Revised   |
+|---------------|-----------|-----------|-----------|
+|               | 5/25      | 4/25      | 5/24      |
+| United States | 4.0       | 3.9       | 3.7       |
+| Alaska        | 4.5       | 4.7       | 4.3       |
+
+## Regional, not seasonally adjusted
+
+|                                  | Prelim.   | Revised   | Revised   |                                               | Prelim.   | Revised   | Revised                               | Prelim.   | Revised   | Revised   |
+|----------------------------------|-----------|-----------|-----------|-----------------------------------------------|-----------|-----------|---------------------------------------|-----------|-----------|-----------|
+|                                  | 5/25      | 4/25      | 5/24      |                                               | 5/25      | 4/25      | 5/24                                  | 5/25      | 4/25      | 5/24      |
+| Interior Region                  | 4.3       | 4.5       | 4.1       | Southwest Region                              | 10.3      | 8.2       | Southeast Region 9.5                  | 3.8       | 4.6       | 3.5       |
+| Denali Borough                   | 3.0       | 7.2       | 2.8       | Aleutians East Borough                        | 4.8       | 3.0       | Haines Borough 6.3                    | 7.5       | 10.4      | 6.1       |
+| Fairbanks N Star Borough         | 3.9       | 4.0       | 3.8       | Aleutians West Census Area                    | 5.7       | 2.7       | Hoonah-Angoon Census Area 6.2         | 5.2       | 7.2       | 3.8       |
+| Southeast Fairbanks Census Area  | 6.4       | 6.7       | 5.3       | Bethel Census Area                            | 12.2      | 11.1      | Juneau, City and 10.6                 | 3.2       | 3.6       | 3.1       |
+| Yukon-Koyukuk Census Area        | 10.0      | 9.2       | 8.9       | Bristol Bay Borough Dillingham Census Area    | 3.8 8.0   | 6.2 7.6   | Ketchikan Gateway Borough 4.1 7.3     | 3.7       | 4.5       | 3.2       |
+|                                  |           |           |           | Kusilvak Census Area                          | 17.3      | 15.6      | Petersburg Borough 14.8               | 5.2       | 6.5       | 4.3       |
+| Northern Region Nome Census Area | 6.8 9.1   | 6.1 8.3   | 6.3 8.2   | Lake and Peninsula Borough                    | 4.3       | 5.2       | Prince of Wales-Hyder Census Area 6.4 | 7.8       | 7.9       | 7.2       |
+| North Slope Borough              | 3.6       | 3.1       | 3.5       |                                               |           |           | Sitka, City and Borough 4.7           | 2.8       | 3.5       | 2.9       |
+| Northwest Arctic Borough         | 9.4       | 8.8       | 8.7       | Gulf Coast Region                             | 5.1       | 5.6       | Skagway, Municipality                 | 3.3       | 8.5       | 2.2       |
+| Anchorage/Mat-Su Region          | 4.0       | 4.3       | 4.0       | Kenai Peninsula Borough Kodiak Island Borough | 5.0 4.3   | 5.6 4.0   | Wrangell, City and 4.7 4.3            | 5.1       | 5.3       | 4.3       |
+| Anchorage, Municipality          | 3.7       | 3.9       | 3.7       | Chugach Census Area                           | 5.9       | 6.8       | Yakutat, City and 4.2                 | 3.8       | 4.7       | 4.9       |
+| Mat-Su Borough                   | 4.8       | 5.2       | 4.6       | Copper River Census Area                      | 9.0       | 10.1      | 6.8                                   |           |           |           |
+
+## How Alaska Ranks
+
+## Unemployment Rate 1
+
+<!-- image -->
+
+<!-- image -->
+
+## Job Growth, Government 2
+
+## Job Growth, Private 2
+
+<!-- image -->
+
+## Job Growth, Leisure and Hospitality 2
+
+<!-- image -->
+
+<!-- image -->
+
+*Tied with New York and Washington
+
+Note: Government employment includes federal, state, and local government plus public schools and universities.
+
+1 May seasonally adjusted unemployment rates
+
+2 May employment, over-the-year percent change
+
+Sources: U.S. Bureau of Labor Statistics; and Alaska Department of Labor and Workforce Development, Research and Analysis Section
+
+## Other Economic Indicators
+
+|                                                              | Current   | Current       | Year ago   | Change   |
+|--------------------------------------------------------------|-----------|---------------|------------|----------|
+| Urban Alaska Consumer Price Index (CPI-U, base: 1982-84=100) | 268.039   | 2nd half 2024 | 262.806    | +2.0%    |
+| Commodity prices                                             |           |               |            |          |
+| Crude oil, Alaska North Slope,* per barrel                   | $67.07    | May 2025      | $85.55     | -21.6%   |
+| Natural gas, Henry Hub, per thousand cubic feet (mcf)        | $3.46     | May 2025      | $2.42      | +43.1%   |
+| Gold, per oz. COMEX                                          | $3,387.60 | 6/20/25       | $2,353.80  | +43.9%   |
+| Silver, per oz. COMEX                                        | $35.98    | 6/20/25       | $30.78     | +16.9%   |
+| Copper, per lb. COMEX                                        | $4.83     | 6/20/25       | $4.62      | +4.5%    |
+| Bankruptcies                                                 | 47        | Q1 2025       | 49         | -4.1%    |
+| Business                                                     | 3         | Q1 2025       | 7          | -57.1%   |
+| Personal                                                     | 44        | Q1 2025       | 42         | +4.8%    |
+| Unemployment insurance claims                                |           |               |            |          |
+| Initial filings                                              | 2,732     | May 2025      | 2,928      | -6.7%    |
+| Continued filings                                            | 17,817    | May 2025      | 18,722     | -4.8%    |
+| Claimant count                                               | 5,081     | May 2025      | 4,984      | +2.0%    |
+
+*Department of Revenue estimate
+
+Sources for this page and the preceding three pages include Alaska Department of Labor and Workforce Development, Research and Analysis Section; U.S. Bureau of Labor Statistics; U.S. Bureau of Economic Analysis; Bloomberg; U.S. Census Bureau; Yahoo Finance: COMEX; Alaska Department of Revenue; and U.S. Courts, 9th Circuit
+
+## EMPLOYER RESOURCES
+
+## The minimum wage increases to $13 per hour on July 1
+
+2. Establishes sick leave.
+3. Prohibits employers from holding mandatory meetings for the primary purpose of sharing political or religious opinions.
+
+Source: Alaska Department of Labor and Workforce Development, Research and Analysis Section As a result of Ballot Measure 1 passing in 2024, the minimum wage increased from $11.91 to $13.00, effective July 1. Ballot Measure 1:
+
+1. Increases the minimum wage over the next three years as follows. Starting Jan. 1, 2028, it will adjust annually for inflation.
+- $13.00 on July 1, 2025
+- $14.00 on July 1, 2026
+- $15.00 on July 1, 2027
+
+## SAFETY MINUTE
+
+## Summer raises road hazards for drivers, work crews
+
+With summer comes a familiar sight: road construction. According to the Alaska Department of Transportation and Public Facilities' 2025 projections, it's shaping up to be another busy season.
+
+safety measures include high-visibility personal protective equipment, proper signage and barriers, and flaggers to manage traffic.
+
+Notes: Occupational categories are based on the federal Standard Occupational Classification Manual. Source: Alaska Department of Labor and Workforce Development, Research and Analysis Section The Kenai Peninsula anticipates work on 20 projects, the Mat-Su area on 18, Anchorage on 11, and the Fairbanks area on 11. While each project varies in scope and duration, travelers should expect traffic disruptions throughout the season.
+
+Safe summer travel is a shared responsibility. Motorists must take extra care when driving through work zones. Before hitting the road, plan for possi -ble delays and inspect your vehicle. Make sure you have a full tank of gas, water, snacks, and appropriate clothing in case of sudden weather changes. Stay alert, well-rested, and prepared to encounter pedestrians, wildlife, and construction crews.
+
+Loose items inside the vehicle should be secured, as they can become dangerous projectiles in a sudden stop or collision. Avoid aggressive driving - it only increases stress and raises accident risk. Use highway pullouts properly, to allow faster traffic to pass or to take a break and stretch your legs.
+
+Alaska's monthly job count, 2019 to 2021 Though residents may be accustomed to these seasonal changes, the influx of tourists brings an added challenge. Of the approximately 3.05 million visitors to Alaska in 2023-2024, an estimated 87 percent arrived during the summer. Many are unfamiliar with local roads, work zone protocols, and the potential driving hazards in construction areas, raising the risk for drivers and construction crews.
+
+Road construction workers face demanding conditions: long hours, unpredictable weather, heavy machinery, and the ongoing pressure to maintain traffic flow while staying safe. Employers must ensure full compliance with OSHA and federal highway safety regulations, including guidance provided in the U.S. Department of Transportation's Manual on Uniform Traffic Control Devices. Critical
+
+Finally, while Alaska's stunning landscapes may be tempting to admire, always keep your eyes on the road. Drive safely so you can enjoy The Last Frontier, today and again tomorrow.
+
+This Safety Minute was written by Colin Corsetti, a safety consultant at the Alaska Occupational Safety and Health Consultation and Training Section of the Alaska Department of Labor and Workforce Development.
+
+Regulations relating to Ballot Measure 1 have not yet been enacted, but a FAQ section is available at https://labor.alaska.gov/lss/whhome.htm.
+
+Employer Resources is written by the Employment and Training Services Division of the Alaska Department of Labor and Workforce Development.

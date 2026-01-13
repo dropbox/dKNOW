@@ -1,0 +1,39 @@
+name: shot_classification
+description: "Classify camera shot types (close-up, medium, wide, aerial, extreme close-up)"
+
+inputs:
+  - Keyframes  # Can take output of keyframe extraction plugin
+  - jpg
+  - jpeg
+  - png
+  - bmp
+  - webp
+  - ico
+  - avif
+  - arw
+  - cr2
+  - dng
+  - nef
+  - raf
+  - dpx
+outputs:
+  - ShotClassification
+
+config:
+  max_file_size_mb: 50
+  requires_gpu: false  # Rule-based V1, no GPU required
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "15s"
+  memory_per_file_mb: 100
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1730332800  # 2024-10-31 00:00:00 UTC
+
+implementation:
+  crate: "shot-classification"
+  function: "classify_shot"

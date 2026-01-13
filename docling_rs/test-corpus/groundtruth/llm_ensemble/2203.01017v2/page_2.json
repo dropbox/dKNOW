@@ -1,0 +1,151 @@
+{
+  "page_number": 2,
+  "elements": [
+    {
+      "label": "paragraph",
+      "text": "considered as a solved problem, given enough ground-truth data to train on.",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The second problem is called table-structure decom- position. The latter is a long standing problem in the com- munity of document understanding [6, 4, 14]. Contrary to the table-location problem, there are no commonly used ap- proaches that can easily be re-purposed to solve this prob- lem. Lately, a set of new model-architectures has been pro- posed by the community to address the table-structure decom- position [37, 36, 18, 20]. All these models have some weak- nesses (see Sec. 2). The common denominator here is the reliance on textual features and/or the inability to provide the bounding box of each table-cell in the original image.",
+      "bbox": {
+        "l": 0.0,
+        "t": 5.0,
+        "r": 100.0,
+        "b": 15.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In this paper, we want to address these weaknesses and present a robust table-structure decomposition algorithm. The design criteria for our model are the following. First, we want our algorithm to be language agnostic. In this way, we can obtain the structure of any table, irregardless of the language. Second, we want our algorithm to leverage as much data as possible from the original PDF document. For programmatic PDF documents, the text-cells can often be extracted much faster and with higher accuracy compared to OCR methods. Last but not least, we want to have a di- rect link between the table-cell and its bounding box in the image.",
+      "bbox": {
+        "l": 0.0,
+        "t": 15.0,
+        "r": 100.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The paper is structured as follows. In Sec. 2, we give a brief overview of the current state-of-the-art. In Sec. 3, we describe the datasets on which we train. In Sec. 4, we introduce the TableFormer model-architecture and describe its results & performance in Sec. 5. As a conclusion, we de- scribe how this new model-architecture can be re-purposed for other tasks in the computer-vision community.",
+      "bbox": {
+        "l": 0.0,
+        "t": 25.0,
+        "r": 100.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "2. Previous work and State of the Art",
+      "bbox": {
+        "l": 0.0,
+        "t": 35.0,
+        "r": 100.0,
+        "b": 40.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Identifying the structure of a table has been an outstand- ing problem in the document-parsing community, that no- tably many organised public challenges [6, 4, 14]. The difficulty of the problem can be attributed to a number of factors. First, there is a large variety in the shapes and sizes of tables. Such large variety requires a flexible method. This is especially true for complex column- and row head- ers, which can be extremely intricate and demanding. A second factor of complexity is the lack of data with regard to table-structure. Until the publication of PubTabNet [37], there were no large datasets (i.e. > 100K tables) that pro- vided structure information. This happens primarily due to the fact that tables are notoriously time-consuming to an- notate by hand. However, this has definitely changed in re- cent years with the deliverance of PubTabNet [37], FinTab- Net [36], TableBank [17] etc.",
+      "bbox": {
+        "l": 0.0,
+        "t": 40.0,
+        "r": 100.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Before the rising popularity of deep neural networks, the community relied heavily on heuristic and/or statistical methods to do table structure identification [3, 7, 11, 5, 13, 28]. Although such methods work well on constrained ta- bles [12], a more data-driven approach was expected due to the advent of convolutional neural networks (CNNs) and the availability of large datasets. To the best-of-our knowl- edge, there are currently two different types of network ar- chitecture that are being pursued for state-of-the-art table- structure identification.",
+      "bbox": {
+        "l": 0.0,
+        "t": 55.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Image-to-Text networks: In this type of network, one predicts a sequence of tokens starting from an encoded image. Such sequences of tokens can be HTML table tags [37, 17] or LaTeX symbols[10]. The choice of sym- bols is ultimately not very important, since one can be trans- formed into the other. There are however subtle variations in the Image-to-Text networks. The easiest network archi- tectures are “image-encoder → text-decoder” (IETD), simi- lar to network architectures that try to provide captions to images [32]. In these IETD networks, one expects as output the LaTeX/HTML string of the entire table, i.e. the sym- bols necessary for creating the table with the content of the table. Another approach is the “image-encoder → dual de- coder” (IEDD) networks. In these type of networks, one has two consecutive decoders with different purposes. The first decoder is the tag-decoder, i.e. it only produces the HTM- L/LaTeX tags which construct an empty table. The second content-decoder uses the encoding of the image in combi- nation with the output encoding of each cell-tag (from the tag-decoder) to generate the textual content of each table cell. The network architecture of IEDD is certainly more elaborate, but it has the advantage that one can pre-train the",
+      "bbox": {
+        "l": 0.0,
+        "t": 70.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "footnote",
+      "text": "1https://github.com/IBM/SynthTabNet",
+      "bbox": {
+        "l": 0.0,
+        "t": 95.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "2",
+      "bbox": {
+        "l": 50.0,
+        "t": 98.0,
+        "r": 50.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

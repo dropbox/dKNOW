@@ -1,0 +1,65 @@
+# Optimized for Recall@K AUC on code search
+# Key changes: larger batch, more negatives, multi-task loss
+
+data:
+  train: "data/training_data_extended.jsonl"  # 138K pairs
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-recall-optimized"
+
+training:
+  method: "lora"
+
+  # LoRA config - higher rank for more capacity
+  lora_r: 32
+  lora_alpha: 64
+  lora_dropout: 0.05
+  target_modules:
+    - "q"
+    - "v"
+    - "k"
+    - "o"
+    - "wi_0"
+    - "wi_1"
+    - "wo"
+
+  # KEY: Large batch for more in-batch negatives
+  # Recall@K benefits from seeing more negatives per step
+  batch_size: 32
+  gradient_accumulation_steps: 4  # Effective batch = 128
+
+  epochs: 3
+  learning_rate: 1e-5  # Lower LR for larger batch
+  warmup_steps: 500
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+
+  # KEY: More hard negatives for Recall@K
+  # In-batch: 127 negatives per positive (batch_size * grad_accum - 1)
+  # Additional mined hard negatives:
+  hard_negatives: 31
+
+  # KEY: Lower temperature pushes model to separate harder
+  temperature: 0.05
+
+  # Loss configuration
+  loss: "infonce_with_margin"  # Better for Recall@K than pure InfoNCE
+  margin: 0.1
+
+  max_length: 512
+
+  # Optimizations
+  gradient_checkpointing: true
+  cache_tokenized: true
+  use_amp: false  # Disabled for MPS, enable for CUDA
+  use_compile: false
+  num_workers: 0  # MPS limitation
+
+  # Evaluation during training
+  eval_every: 1000
+  eval_spec: "eval/code_queries.json"
+
+  log_every: 50
+  save_every: 2000
+  seed: 42

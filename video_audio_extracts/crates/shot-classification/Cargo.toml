@@ -1,0 +1,17 @@
+[package]
+name = "shot-classification"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+video-audio-common = { path = "../common" }
+video-extract-core = { path = "../video-extract-core" }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+tracing = "0.1"
+anyhow = "1.0"
+async-trait = "0.1"

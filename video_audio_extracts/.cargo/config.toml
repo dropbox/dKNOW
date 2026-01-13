@@ -1,0 +1,9 @@
+[env]
+PKG_CONFIG_PATH = "/opt/homebrew/opt/ffmpeg/lib/pkgconfig:/opt/homebrew/opt/dav1d/lib/pkgconfig"
+CFLAGS = "-I/opt/homebrew/opt/ffmpeg/include"
+LDFLAGS = "-L/opt/homebrew/opt/ffmpeg/lib"
+LIBRARY_PATH = "/opt/homebrew/Cellar/fftw/3.3.10_2/lib"
+
+[build]
+# Use all available CPU cores for builds
+jobs = 8

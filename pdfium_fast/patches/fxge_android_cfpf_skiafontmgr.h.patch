@@ -1,0 +1,12 @@
+--- pdfium/core/fxge/android/cfpf_skiafontmgr.h	2025-11-20 14:44:25
++++ core/fxge/android/cfpf_skiafontmgr.h	2025-12-03 16:39:54
+@@ -37,8 +37,7 @@
+   void ScanPath(const ByteString& path);
+   void ScanFile(const ByteString& file);
+   std::unique_ptr<CFPF_SkiaPathFont> ReportFace(RetainPtr<CFX_Face> face,
+-                                                const ByteString& file,
+-                                                int face_index);
++                                                const ByteString& file);
+ 
+   bool loaded_fonts_ = false;
+   ScopedFXFTLibraryRec ft_library_;

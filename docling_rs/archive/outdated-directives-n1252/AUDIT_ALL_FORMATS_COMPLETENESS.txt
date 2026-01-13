@@ -1,0 +1,148 @@
+🚨 CRITICAL AUDIT REQUIRED - ALL FORMATS
+
+PPTX BUG REVEALED SYSTEMIC ISSUE:
+"Only extracting first slide/page/sheet"
+
+THIS COULD BE IN MULTIPLE FORMATS!
+
+---
+
+## MANDATORY AUDIT
+
+FOR EVERY FORMAT, CHECK:
+
+**Multi-page formats:**
+- PDF: All pages? Or just first?
+- DOCX: All pages? Or just first?
+
+**Multi-slide formats:**
+- PPTX: All slides? ❌ ONLY FIRST! (CONFIRMED BUG)
+- Keynote: All slides? Or just first?
+
+**Multi-sheet formats:**
+- XLSX: All sheets? ❌ MISSING SOME! (CONFIRMED BUG)
+- ODS: All sheets? Or just first?
+- Numbers: All sheets? Or just first?
+
+**Multi-file formats:**
+- ZIP: All files? Or just first?
+- TAR: All files? Or just first?
+- EPUB: All chapters? Or just first?
+
+**Email formats:**
+- MBOX: All messages? Or just first?
+- Archive formats with multiple items?
+
+---
+
+## HOW TO CHECK
+
+**1. Count in original:**
+```bash
+# PPTX slides
+unzip -l test.pptx | grep "ppt/slides/slide" | wc -l
+
+# XLSX sheets
+unzip -l test.xlsx | grep "xl/worksheets/sheet" | wc -l
+
+# PDF pages
+pdfinfo test.pdf | grep Pages
+
+# EPUB chapters
+unzip -l test.epub | grep "OEBPS/.*\.xhtml" | wc -l
+```
+
+**2. Count in DocItem JSON:**
+```bash
+# Parse and export
+cargo run --bin docling test.pptx --output json > output.json
+
+# Count slides in JSON
+grep -c '"label".*"slide"' output.json
+
+# Or count DocItems
+jq '.content_blocks | length' output.json
+```
+
+**3. Compare:**
+- Original: 10 slides
+- JSON: 1 DocItem
+- **BUG: Missing 9 slides!**
+
+---
+
+## ADD UNIT TESTS FOR COMPLETENESS
+
+**For EVERY multi-item format:**
+
+```rust
+#[test]
+fn test_pptx_all_slides_extracted() {
+    let result = parse("multi_slide.pptx");
+
+    // Test has 10 slides
+    let slides = count_docitems_by_label(&result, "slide");
+    assert_eq!(slides, 10, "Must extract ALL 10 slides, not just first!");
+}
+
+#[test]
+fn test_xlsx_all_sheets_extracted() {
+    let result = parse("multi_sheet.xlsx");
+
+    // Test has 3 sheets
+    let sheets = count_sheets(&result);
+    assert_eq!(sheets, 3, "Must extract ALL 3 sheets!");
+}
+
+#[test]
+fn test_pdf_all_pages_extracted() {
+    let result = parse("multi_page.pdf");
+
+    // Test has 20 pages
+    let pages = count_pages(&result);
+    assert_eq!(pages, 20, "Must extract ALL 20 pages!");
+}
+```
+
+**CATCH THESE BUGS EARLY!**
+
+---
+
+## WORKER MUST DO NOW
+
+**Phase 1: Audit (5 commits)**
+1. Check PPTX parser - iterate all slides ❌ BROKEN
+2. Check XLSX parser - iterate all sheets ❌ BROKEN
+3. Check PDF parser - iterate all pages
+4. Check EPUB parser - iterate all chapters
+5. Check all multi-item formats
+
+**Phase 2: Add Tests (10 commits)**
+6. Add test_*_all_items_extracted for each format
+7. Use test files with 5-10 items
+8. Assert count matches expected
+9. Fail if only getting first item
+10. Prevent regressions
+
+**Phase 3: Fix Bugs (15 commits)**
+11. Fix PPTX to iterate all slides (CRITICAL)
+12. Fix XLSX to iterate all sheets (HIGH)
+13. Fix any other formats missing items
+14. Re-run DocItem tests
+15. Achieve 95%+ on all
+
+---
+
+THIS IS A CRITICAL SYSTEMIC ISSUE.
+
+EVERY FORMAT MUST EXTRACT COMPLETE DOCUMENTS:
+- ALL pages
+- ALL slides
+- ALL sheets
+- ALL chapters
+- ALL files
+- ALL items
+
+NOT JUST THE FIRST ONE!
+
+AUDIT AND FIX ALL FORMATS NOW.

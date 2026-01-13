@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0">
+  <description>
+    <title-info>
+      <genre>poetry</genre>
+      <author>
+        <first-name>Emily</first-name>
+        <last-name>Watson</last-name>
+      </author>
+      <book-title>Whispers of the Soul</book-title>
+      <annotation>
+        <p>A collection of contemplative poems exploring themes of nature, love, and the human condition.</p>
+      </annotation>
+      <keywords>poetry, nature, love, contemplation</keywords>
+      <lang>en</lang>
+    </title-info>
+    <document-info>
+      <author>
+        <nickname>ewatson-poet</nickname>
+      </author>
+      <date>2025-09-15</date>
+      <id>whispers-soul-poetry-001</id>
+      <version>1.0</version>
+    </document-info>
+  </description>
+  <body>
+    <title>
+      <p>Whispers of the Soul</p>
+      <p>A Poetry Collection</p>
+    </title>
+    <section>
+      <title>
+        <p>Part I: Nature's Voice</p>
+      </title>
+      <section>
+        <poem>
+          <title>Morning Dew</title>
+          <stanza>
+            <v>Upon the grass, the dewdrops lie,</v>
+            <v>Like diamonds scattered from the sky.</v>
+            <v>Each tiny sphere reflects the dawn,</v>
+            <v>A fleeting beauty, soon to be gone.</v>
+          </stanza>
+          <stanza>
+            <v>The sun ascends with golden ray,</v>
+            <v>And melts the jewels of the day.</v>
+            <v>Yet in that moment, brief and true,</v>
+            <v>We glimpse eternity in morning dew.</v>
+          </stanza>
+        </poem>
+      </section>
+      <section>
+        <poem>
+          <title>The Ancient Oak</title>
+          <epigraph>
+            <p>"Trees are poems that the earth writes upon the sky."</p>
+            <text-author>Kahlil Gibran</text-author>
+          </epigraph>
+          <stanza>
+            <v>Roots deep in earth's embrace,</v>
+            <v>Branches reaching heaven's grace.</v>
+            <v>Centuries whisper through your leaves,</v>
+            <v>Stories that the forest weaves.</v>
+          </stanza>
+          <stanza>
+            <v>Through storms and sun, you stand so tall,</v>
+            <v>Witnessing the rise and fall.</v>
+            <v>Your wisdom carved in rings of time,</v>
+            <v>A silent teacher, so sublime.</v>
+          </stanza>
+        </poem>
+      </section>
+      <section>
+        <poem>
+          <title>River's Song</title>
+          <stanza>
+            <v>Flow, gentle river, to the sea,</v>
+            <v>Carry dreams and memories.</v>
+            <v>Over stones and through the vale,</v>
+            <v>Tell the mountains' ancient tale.</v>
+          </stanza>
+          <stanza>
+            <v>Your current knows no rest or pause,</v>
+            <v>Following nature's timeless laws.</v>
+            <v>In your depths, reflections dance—</v>
+            <v>Clouds and sky in fleeting glance.</v>
+          </stanza>
+          <stanza>
+            <v>Teach us, river, how to flow,</v>
+            <v>To let go of all we know.</v>
+            <v>To journey onward, bend and curve,</v>
+            <v>With grace and purpose, truth to serve.</v>
+          </stanza>
+        </poem>
+      </section>
+    </section>
+    <section>
+      <title>
+        <p>Part II: Matters of the Heart</p>
+      </title>
+      <section>
+        <poem>
+          <title>Love's Whisper</title>
+          <stanza>
+            <v>In quiet moments, soft and still,</v>
+            <v>Your voice echoes against my will.</v>
+            <v>A whisper carried on the breeze,</v>
+            <v>A memory among the trees.</v>
+          </stanza>
+          <stanza>
+            <v>Though miles may stretch between our hands,</v>
+            <v>Love knows no distance, understands.</v>
+            <v>In every sunset's golden hue,</v>
+            <v>I find my way back home to you.</v>
+          </stanza>
+        </poem>
+      </section>
+      <section>
+        <poem>
+          <title>Solitude</title>
+          <stanza>
+            <v>Alone, but not in loneliness,</v>
+            <v>I walk this path in quietness.</v>
+            <v>The world recedes, and in its place,</v>
+            <v>I find myself—a sacred space.</v>
+          </stanza>
+          <stanza>
+            <v>No noise to drown the inner voice,</v>
+            <v>In silence, I can make my choice.</v>
+            <v>To know myself, both dark and light,</v>
+            <v>To hold my truth with gentle might.</v>
+          </stanza>
+          <stanza>
+            <v>For solitude is not a curse,</v>
+            <v>But time to wander the universe</v>
+            <v>Within—a journey all my own,</v>
+            <v>Where seeds of wisdom can be sown.</v>
+          </stanza>
+        </poem>
+      </section>
+    </section>
+    <section>
+      <title>
+        <p>Part III: Life's Reflections</p>
+      </title>
+      <section>
+        <poem>
+          <title>The Journey</title>
+          <stanza>
+            <v>Life is not a destination,</v>
+            <v>But a winding, turning road.</v>
+            <v>Each step a small creation,</v>
+            <v>Each choice a different load.</v>
+          </stanza>
+          <stanza>
+            <v>Sometimes the path is clear and bright,</v>
+            <v>Sometimes obscured by fog and fear.</v>
+            <v>Yet still we walk from dark to light,</v>
+            <v>Trusting dawn will soon appear.</v>
+          </stanza>
+          <stanza>
+            <v>And when at last our journey ends,</v>
+            <v>May we look back with no regret.</v>
+            <v>For life's not measured by its trends,</v>
+            <v>But by the love we won't forget.</v>
+          </stanza>
+        </poem>
+      </section>
+    </section>
+  </body>
+</FictionBook>

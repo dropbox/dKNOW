@@ -1,0 +1,22 @@
+--- pdfium/core/fxge/BUILD.gn	2025-11-20 14:44:25
++++ core/fxge/BUILD.gn	2025-12-03 16:39:54
+@@ -173,12 +173,18 @@
+   if (is_mac) {
+     sources += [
+       "apple/fx_apple_impl.cpp",
++      "apple/fx_apple_metal.h",
++      "apple/fx_apple_metal.mm",
+       "apple/fx_apple_platform.cpp",
+       "apple/fx_apple_platform.h",
+       "apple/fx_quartz_device.cpp",
+       "apple/fx_quartz_device.h",
+     ]
+-    frameworks = [ "CoreGraphics.framework" ]
++    frameworks = [
++      "CoreGraphics.framework",
++      "Metal.framework",
++      "Foundation.framework",
++    ]
+   }
+ 
+   if (is_win) {

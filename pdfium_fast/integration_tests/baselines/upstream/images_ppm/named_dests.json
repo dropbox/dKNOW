@@ -1,0 +1,9 @@
+{
+  "pdf_name": "named_dests.pdf",
+  "format": "ppm",
+  "dpi": 300,
+  "pages": {
+    "0": "1af4494fdeecb6d2cfdc7dddf187f286",
+    "1": "32c2e7a4ef14d4dbdbc345e690675591"
+  }
+}

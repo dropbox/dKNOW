@@ -1,0 +1,115 @@
+## Agency:  Commerce, Community and Economic Development
+
+Grants to Municipalities (AS 37.05.315)
+
+Grant Recipient:  Cordova
+
+TPS Report 58090v1
+
+<!-- image -->
+
+$40,000
+
+Approved
+
+Grants to Municipalities (AS 37.05.315)
+
+Federal Tax ID:
+
+926000090
+
+Grant Recipient:  Cordova
+
+Project Title:
+
+Project Type:
+
+Equipment and Materials
+
+## Cordova - Student Van
+
+State Funding Requested: $
+
+40,000
+
+House District:
+
+5 / C
+
+One-Time Need
+
+## Brief Project Description:
+
+This vehicle would be used for student travel to academic/athletic activities.
+
+## Funding Plan:
+
+Total Project Cost:
+
+$40,000
+
+Funding Already Secured:
+
+($0)
+
+FY2013 State Funding Request:
+
+($40,000)
+
+Project Deficit:
+
+$0
+
+## Detailed Project Description and Justification:
+
+To curb costs and eliminate potentially dangerous travel conditions for our students, Cordova School recently moved from one conference to another.  Less airlines travel, more ferry travel resulting in less school time missed and less cost to our student travel budget.  We still need to get from the ferry terminal to the hosting school.  This van would be used for this purpose. Our students would use this in the required academic travel as well as the numerous athletic travel needs.
+
+## Project Timeline:
+
+Once awarded, we would go out for bid immediately.
+
+## Entity Responsible for the Ongoing Operation and Maintenance of this Project:
+
+Cordova Schools
+
+## Grant Recipient Contact Information:
+
+Name:
+
+Jim Nygaard
+
+Title:
+
+Supt of Schools
+
+Address:
+
+675 2nd Street
+
+Cordova, Alaska 99574
+
+Phone Number:
+
+(907)424-3265
+
+Email:
+
+jnygaard@cordovasd.org
+
+Has this project been through a public review process at the local level and is it a community priority?
+
+- [x] Yes X No
+
+For use by Co-chair Staff Only:
+
+Page 1
+
+Contact Name:
+
+Kaci Schroeder Hotch
+
+Contact Number:
+
+465-3732
+
+3:16 PM 5/2/2012

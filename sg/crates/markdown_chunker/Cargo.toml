@@ -1,0 +1,15 @@
+[package]
+name = "markdown_chunker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+unicode-segmentation = "1.10"
+serde = { version = "1.0", features = ["derive"] }
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "chunking"
+harness = false

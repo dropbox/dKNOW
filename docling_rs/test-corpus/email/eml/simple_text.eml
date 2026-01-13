@@ -1,0 +1,20 @@
+From: John Smith <john.smith@example.com>
+To: Jane Doe <jane.doe@example.com>
+Subject: Team Meeting Notes
+Date: Mon, 15 Jan 2024 10:30:00 -0800
+Message-ID: <abc123@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Jane,
+
+Here are the key points from today's team meeting:
+
+1. Q1 objectives review
+2. Resource allocation for new projects
+3. Timeline for deliverables
+
+Please review and let me know if you have any questions.
+
+Best regards,
+John

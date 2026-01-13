@@ -1,0 +1,221 @@
+{
+  "page_number": 4,
+  "elements": [
+    {
+      "label": "list_item",
+      "text": "Accessibility: Writers no longer needed expensive publishing equipment or training in typesetting to create polished work. This accessibility paved the way for self-publishing, blogging, and even fan fiction communities.",
+      "bbox": {
+        "l": 5.0,
+        "t": 5.0,
+        "r": 95.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "Education: Word processors became a cornerstone of education, teaching students not only how to write essays but also how to use technology effectively. Features like bibliography generators and integrated research tools enhanced learning.",
+      "bbox": {
+        "l": 5.0,
+        "t": 11.0,
+        "r": 95.0,
+        "b": 16.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "Creative Writing: Writers gained powerful tools to organize their ideas. Programs like Scrivener allowed authors to manage large projects, from novels to screenplays, with features like chapter outlines and character notes.",
+      "bbox": {
+        "l": 5.0,
+        "t": 17.0,
+        "r": 95.0,
+        "b": 22.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Word Processors in a Post-Digital Era",
+      "bbox": {
+        "l": 5.0,
+        "t": 25.0,
+        "r": 95.0,
+        "b": 28.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "As we move further into the 21st century, the role of the word processor continues to evolve:",
+      "bbox": {
+        "l": 5.0,
+        "t": 29.0,
+        "r": 95.0,
+        "b": 31.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "1. Artificial Intelligence: Modern word processors are leveraging AI to suggest content improvements. Tools like Grammarly, ProWritingAid, and even native features in Word now analyze tone, conciseness, and clarity. Some AI systems can even generate entire paragraphs or rewrite sentences.",
+      "bbox": {
+        "l": 5.0,
+        "t": 32.0,
+        "r": 95.0,
+        "b": 37.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "2. Integration with Other Tools: Word processors are no longer standalone. They integrate with task managers, cloud storage, and project management platforms. For instance, Google Docs syncs with Google Drive, while Microsoft Word integrates seamlessly with OneDrive and Teams.",
+      "bbox": {
+        "l": 5.0,
+        "t": 38.0,
+        "r": 95.0,
+        "b": 43.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "3. Voice Typing: Speech-to-text capabilities have made word processing more accessible, particularly for those with disabilities. Tools like Dragon NaturallySpeaking and built-in options in Google Docs and Microsoft Word have made dictation mainstream.",
+      "bbox": {
+        "l": 5.0,
+        "t": 44.0,
+        "r": 95.0,
+        "b": 49.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "4. Multimedia Documents: Word processing has expanded beyond text. Modern tools allow users to embed images, videos, charts, and interactive elements, transforming simple documents into rich multimedia experiences.",
+      "bbox": {
+        "l": 5.0,
+        "t": 50.0,
+        "r": 95.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "5. Cross-Platform Accessibility: Thanks to cloud computing, documents can now be accessed and edited across devices. Whether you're on a desktop, tablet, or smartphone, you can continue working seamlessly.",
+      "bbox": {
+        "l": 5.0,
+        "t": 56.0,
+        "r": 95.0,
+        "b": 61.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "A Glimpse Into the Future",
+      "bbox": {
+        "l": 5.0,
+        "t": 64.0,
+        "r": 95.0,
+        "b": 67.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The word processor's future lies in adaptability and intelligence. Some exciting possibilities include:",
+      "bbox": {
+        "l": 5.0,
+        "t": 68.0,
+        "r": 95.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "• Fully AI-Assisted Writing: Imagine a word processor that understands your writing style, drafts emails, or creates entire essays based on minimal input.",
+      "bbox": {
+        "l": 5.0,
+        "t": 71.0,
+        "r": 95.0,
+        "b": 74.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "• Immersive Interfaces: As augmented reality (AR) and virtual reality (VR) technology advance, users may be able to write and edit in 3D spaces, collaborating in virtual environments.",
+      "bbox": {
+        "l": 5.0,
+        "t": 75.0,
+        "r": 95.0,
+        "b": 78.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "• Hyper-Personalization: Word processors could offer dynamic suggestions based on industry-specific needs, user habits, or even regional language variations.",
+      "bbox": {
+        "l": 5.0,
+        "t": 79.0,
+        "r": 95.0,
+        "b": 82.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

@@ -1,0 +1,16 @@
+From: Team Lead <lead@company.com>
+To: developer1@company.com, developer2@company.com
+Cc: manager@company.com, director@company.com
+Bcc: admin@company.com
+Subject: Test Email - Multiple Recipients
+Date: Fri, 11 Nov 2025 11:00:00 +0000
+Content-Type: text/plain; charset=utf-8
+
+Team,
+
+This email is sent to multiple recipients.
+
+Please review and confirm.
+
+Thanks,
+Team Lead

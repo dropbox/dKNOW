@@ -1,0 +1,101 @@
+# XTR Fine-Tuning on Full Multi-Language Dataset (127,368 pairs)
+#
+# Optimized training configuration for M1 Mac with MPS acceleration.
+# Uses all efficiency improvements: gradient checkpointing, mixed precision,
+# tokenization caching, gradient accumulation, and efficient data loading.
+#
+# Languages: Rust (96K), Python (17K), Lean (9K), Java (3K), TypeScript, C++
+#
+# Usage:
+#   python scripts/train_xtr_optimized.py --config config/train_multilang_full.yaml
+#   python scripts/train_xtr_optimized.py --config config/train_multilang_full.yaml --dry-run
+#
+# Output: checkpoints/xtr-multilang-full/ (LoRA adapters)
+# Merge:  python scripts/merge_lora.py checkpoints/xtr-multilang-full -o checkpoints/xtr-multilang-full-merged
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-multilang-full"
+
+data:
+  train: "data/training_data_full.jsonl"
+  languages:
+    - rust
+    - python
+    - lean
+    - java
+    - typescript
+    - cpp
+
+training:
+  # LoRA Configuration
+  method: "lora"
+  lora_r: 16                # LoRA rank - higher = more capacity, more memory
+  lora_alpha: 32            # LoRA alpha - typically 2x rank
+  lora_dropout: 0.1         # Dropout for regularization
+  target_modules:           # Which attention modules to adapt
+    - q
+    - v
+
+  # Training Schedule
+  epochs: 2                 # 2 epochs is usually sufficient for 127K pairs
+  batch_size: 4             # Per-device batch size (reduced for MPS stability)
+  gradient_accumulation_steps: 12 # Effective batch size = 4 * 12 = 48
+  learning_rate: 2.0e-5     # Peak learning rate
+  warmup_steps: 500         # ~5% of total steps for warmup
+  weight_decay: 0.01        # AdamW weight decay
+  max_grad_norm: 1.0        # Gradient clipping
+  max_length: 512           # Max sequence length
+
+  # Contrastive Loss
+  loss: "infonce"
+  temperature: 0.07         # Temperature for softmax (lower = sharper)
+  hard_negatives: 7         # Number of hard negatives per sample (rest are in-batch)
+
+  # Efficiency Optimizations
+  gradient_checkpointing: true   # Trade compute for memory
+  use_amp: false                 # Disabled for MPS stability (causes hangs)
+  use_compile: false             # torch.compile - can be unstable on MPS
+  cache_tokenized: true          # Cache tokenized data to disk
+  num_workers: 0                 # DataLoader workers (0 for MPS stability)
+
+  # Device (uncomment to force CPU)
+  # device: cpu             # Force CPU to avoid MPS hangs with large datasets
+
+  # Logging & Checkpointing
+  log_every: 10             # Log every N optimization steps (reduced for debugging)
+  save_every: 1000          # Save checkpoint every N steps (0 = only at end)
+  seed: 42                  # Random seed for reproducibility
+
+# =============================================================================
+# Compute Estimates (M1 Mac with MPS, 16GB RAM)
+# =============================================================================
+#
+# Memory Usage:
+#   - Base model: ~500MB
+#   - LoRA adapters: ~10MB
+#   - Activations (batch 12): ~4GB
+#   - Gradient checkpointing saves ~50% activation memory
+#   - Total: ~6-8GB peak
+#
+# Training Time:
+#   - Tokenization (first run): ~5 minutes
+#   - Per epoch: ~2-3 hours (with all optimizations)
+#   - Total (2 epochs): ~4-6 hours
+#
+# Throughput:
+#   - ~15-20 samples/second on M1 with MPS
+#   - Effective batch size 48 helps stability
+#
+# =============================================================================
+# For GPU Training (A100/H100)
+# =============================================================================
+#
+# Modify these settings for faster GPU training:
+#   batch_size: 32
+#   gradient_accumulation_steps: 2
+#   num_workers: 8
+#   use_compile: true
+#
+# Expected time: ~1-2 hours on A100
+#

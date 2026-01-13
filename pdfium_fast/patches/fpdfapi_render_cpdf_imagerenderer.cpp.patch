@@ -1,0 +1,29 @@
+--- pdfium/core/fpdfapi/render/cpdf_imagerenderer.cpp	2025-11-20 14:44:25
++++ core/fpdfapi/render/cpdf_imagerenderer.cpp	2025-12-03 16:39:54
+@@ -281,7 +281,7 @@
+     CPDF_RenderStatus mask_status(render_status_->GetContext(), &mask_device);
+     mask_status.SetDropObjects(render_status_->GetDropObjects());
+     mask_status.SetStdCS(true);
+-    mask_status.Initialize(nullptr, nullptr);
++    mask_status.Initialize(render_status_, nullptr);
+ 
+     CPDF_ImageRenderer mask_renderer(&mask_status);
+     if (mask_renderer.Start(std::move(pDIBBase), 0xffffffff, mtNewMatrix,
+@@ -344,7 +344,7 @@
+   bitmap_status.SetOptions(GetRenderOptions());
+   bitmap_status.SetDropObjects(render_status_->GetDropObjects());
+   bitmap_status.SetStdCS(true);
+-  bitmap_status.Initialize(nullptr, nullptr);
++  bitmap_status.Initialize(render_status_, nullptr);
+ 
+   CFX_Matrix pattern_matrix = obj_to_device_;
+   pattern_matrix.Translate(-rect.left, -rect.top);
+@@ -391,7 +391,7 @@
+   CPDF_RenderStatus bitmap_status(render_status_->GetContext(), &bitmap_device);
+   bitmap_status.SetDropObjects(render_status_->GetDropObjects());
+   bitmap_status.SetStdCS(true);
+-  bitmap_status.Initialize(nullptr, nullptr);
++  bitmap_status.Initialize(render_status_, nullptr);
+   CPDF_ImageRenderer bitmap_renderer(&bitmap_status);
+   if (bitmap_renderer.Start(dibbase_, 0, new_matrix, resample_options_, true)) {
+     bitmap_renderer.Continue(nullptr);

@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Example Corp//Example Task Manager//EN
+X-WR-CALNAME:Project Tasks
+
+BEGIN:VEVENT
+UID:review-001@example.com
+DTSTART:20250125T130000Z
+DTEND:20250125T140000Z
+SUMMARY:Code Review Session
+DESCRIPTION:Review pull requests from sprint week
+LOCATION:Virtual - Teams
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VTODO
+UID:task-001@example.com
+SUMMARY:Complete API documentation
+DESCRIPTION:Write comprehensive API docs for v2.0 release
+DUE:20250130T170000Z
+PRIORITY:1
+STATUS:IN-PROCESS
+PERCENT-COMPLETE:60
+END:VTODO
+
+BEGIN:VTODO
+UID:task-002@example.com
+SUMMARY:Update unit tests
+DESCRIPTION:Add unit tests for new authentication module
+DUE:20250128T170000Z
+PRIORITY:2
+STATUS:NEEDS-ACTION
+PERCENT-COMPLETE:0
+END:VTODO
+
+BEGIN:VTODO
+UID:task-003@example.com
+SUMMARY:Deploy to staging
+DESCRIPTION:Deploy latest build to staging environment for QA
+DUE:20250127T120000Z
+PRIORITY:1
+STATUS:COMPLETED
+PERCENT-COMPLETE:100
+END:VTODO
+
+END:VCALENDAR

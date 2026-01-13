@@ -1,0 +1,6 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:John Doe
+EMAIL:john.doe@example.com
+TEL:+1-555-1234
+END:VCARD

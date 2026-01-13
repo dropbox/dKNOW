@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:John Smith
+N:Smith;John;Michael;;
+EMAIL;TYPE=work:john.smith@company.com
+TEL;TYPE=work:+1-555-123-4567
+TEL;TYPE=cell:+1-555-987-6543
+ORG:Tech Corporation
+TITLE:Software Engineer
+ADR;TYPE=work:;;123 Tech Street;San Francisco;CA;94105;USA
+URL:https://linkedin.com/in/johnsmith
+NOTE:Met at Tech Conference 2025
+END:VCARD

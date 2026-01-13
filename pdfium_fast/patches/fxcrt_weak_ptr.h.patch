@@ -1,0 +1,42 @@
+--- pdfium/core/fxcrt/weak_ptr.h	2025-11-20 14:44:25
++++ core/fxcrt/weak_ptr.h	2025-12-03 16:39:54
+@@ -9,6 +9,7 @@
+ 
+ #include <stdint.h>
+ 
++#include <atomic>
+ #include <memory>
+ #include <utility>
+ 
+@@ -65,20 +66,27 @@
+     }
+     T* Get() const { return obj_.get(); }
+     T* Retain() {
+-      ++count_;
++      // CRITICAL: Use atomic increment for thread-safe reference counting
++      // Required for parallel page rendering (FPDF_RenderPagesParallelV2)
++      count_.fetch_add(1, std::memory_order_relaxed);
+       return obj_.get();
+     }
+     void Release() {
+-      if (--count_ == 0) {
++      // CRITICAL: Use atomic decrement for thread-safe reference counting
++      // fetch_sub returns the OLD value before subtraction
++      if (count_.fetch_sub(1, std::memory_order_acq_rel) == 1) {
+         delete this;
+       }
+     }
+-    bool HasOneRef() const { return count_ == 1; }
++    bool HasOneRef() const {
++      return count_.load(std::memory_order_relaxed) == 1;
++    }
+ 
+    private:
+     ~Handle() = default;
+ 
+-    intptr_t count_ = 0;
++    // CRITICAL: Atomic for thread-safe reference counting in parallel rendering
++    mutable std::atomic<intptr_t> count_{0};
+     std::unique_ptr<T, D> obj_;
+   };
+ 

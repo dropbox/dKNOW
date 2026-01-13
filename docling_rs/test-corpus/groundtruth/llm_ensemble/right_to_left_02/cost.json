@@ -1,0 +1,12 @@
+{
+  "pdf_name": "right_to_left_02.pdf",
+  "num_pages": 1,
+  "model_costs": {
+    "gpt-4o": {
+      "input_tokens": 1595,
+      "output_tokens": 871,
+      "cost_usd": 0.0126975
+    }
+  },
+  "total_cost_usd": 0.0126975
+}

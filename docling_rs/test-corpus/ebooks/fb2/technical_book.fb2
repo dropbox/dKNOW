@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+  <description>
+    <title-info>
+      <genre>comp_programming</genre>
+      <author>
+        <first-name>Robert</first-name>
+        <last-name>Johnson</last-name>
+      </author>
+      <book-title>Introduction to Rust Programming</book-title>
+      <annotation>
+        <p>A comprehensive guide to Rust programming language, covering fundamentals, memory safety, and concurrent programming.</p>
+      </annotation>
+      <keywords>rust, programming, systems programming, memory safety</keywords>
+      <lang>en</lang>
+    </title-info>
+    <document-info>
+      <author>
+        <nickname>robjohnson</nickname>
+      </author>
+      <date>2025-10-01</date>
+      <id>rust-programming-guide-001</id>
+      <version>1.0</version>
+    </document-info>
+  </description>
+  <body>
+    <title>
+      <p>Introduction to Rust Programming</p>
+    </title>
+    <section>
+      <title>
+        <p>Chapter 1: Getting Started</p>
+      </title>
+      <p>Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.</p>
+      <section>
+        <title>
+          <p>1.1 Installing Rust</p>
+        </title>
+        <p>To install Rust, you can use rustup, the Rust toolchain installer:</p>
+        <code>curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh</code>
+        <p>This will install the latest stable version of Rust on your system.</p>
+      </section>
+      <section>
+        <title>
+          <p>1.2 Hello World</p>
+        </title>
+        <p>Here's a simple "Hello, World!" program in Rust:</p>
+        <code>fn main() {
+    println!("Hello, world!");
+}</code>
+        <p>Save this code in a file named <code>main.rs</code> and compile it using:</p>
+        <code>rustc main.rs</code>
+        <p>Then run the resulting executable:</p>
+        <code>./main</code>
+      </section>
+    </section>
+    <section>
+      <title>
+        <p>Chapter 2: Variables and Data Types</p>
+      </title>
+      <p>Rust has several primitive data types and a powerful type system.</p>
+      <section>
+        <title>
+          <p>2.1 Scalar Types</p>
+        </title>
+        <p>Rust has four primary scalar types:</p>
+        <p>• Integers: i8, i16, i32, i64, i128, isize, u8, u16, u32, u64, u128, usize</p>
+        <p>• Floating-point: f32, f64</p>
+        <p>• Boolean: bool</p>
+        <p>• Character: char</p>
+        <empty-line/>
+        <p>Example:</p>
+        <code>let x: i32 = 42;
+let y: f64 = 3.14;
+let is_rust_awesome: bool = true;
+let letter: char = 'R';</code>
+      </section>
+      <section>
+        <title>
+          <p>2.2 Compound Types</p>
+        </title>
+        <p>Rust has two primitive compound types: tuples and arrays.</p>
+        <p><strong>Tuples</strong>: A tuple is a collection of values of different types.</p>
+        <code>let tup: (i32, f64, u8) = (500, 6.4, 1);</code>
+        <p><strong>Arrays</strong>: An array is a collection of values of the same type with fixed length.</p>
+        <code>let arr: [i32; 5] = [1, 2, 3, 4, 5];</code>
+      </section>
+    </section>
+    <section>
+      <title>
+        <p>Chapter 3: Ownership and Borrowing</p>
+      </title>
+      <p>Ownership is Rust's most unique feature, enabling memory safety without a garbage collector.</p>
+      <section>
+        <title>
+          <p>3.1 Ownership Rules</p>
+        </title>
+        <p>Rust's ownership system has three main rules:</p>
+        <p>1. Each value in Rust has a variable that's called its <emphasis>owner</emphasis>.</p>
+        <p>2. There can only be <emphasis>one owner</emphasis> at a time.</p>
+        <p>3. When the owner goes out of scope, the value will be <emphasis>dropped</emphasis>.</p>
+      </section>
+      <section>
+        <title>
+          <p>3.2 Borrowing</p>
+        </title>
+        <p>Instead of transferring ownership, you can <emphasis>borrow</emphasis> a reference to a value:</p>
+        <code>fn calculate_length(s: &amp;String) -> usize {
+    s.len()
+}
+
+fn main() {
+    let s1 = String::from("hello");
+    let len = calculate_length(&amp;s1);
+    println!("Length: {}", len);
+}</code>
+        <p>The <code>&amp;</code> symbol creates a reference that allows you to refer to the value without taking ownership.</p>
+      </section>
+    </section>
+  </body>
+</FictionBook>

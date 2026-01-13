@@ -1,0 +1,23 @@
+From sender1@example.com Mon Nov 07 10:00:00 2025
+From: sender1@example.com
+To: recipient1@example.com
+Subject: First Message
+Date: Mon, 7 Nov 2025 10:00:00 +0000
+
+This is the first message in the mailbox.
+
+From sender2@example.com Mon Nov 07 11:00:00 2025
+From: sender2@example.com
+To: recipient2@example.com
+Subject: Second Message
+Date: Mon, 7 Nov 2025 11:00:00 +0000
+
+This is the second message in the mailbox.
+
+From sender3@example.com Mon Nov 07 12:00:00 2025
+From: sender3@example.com
+To: recipient3@example.com
+Subject: Third Message
+Date: Mon, 7 Nov 2025 12:00:00 +0000
+
+This is the third message in the mailbox.

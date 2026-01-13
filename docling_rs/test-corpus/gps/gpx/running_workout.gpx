@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Garmin Connect" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Marina Green 5K Run</name>
+    <desc>Morning interval training run along San Francisco waterfront</desc>
+    <time>2024-08-05T05:30:00Z</time>
+  </metadata>
+  <trk>
+    <name>Morning Run</name>
+    <type>running</type>
+    <trkseg>
+      <trkpt lat="37.8044" lon="-122.4370">
+        <ele>2.1</ele>
+        <time>2024-08-05T05:30:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8048" lon="-122.4375">
+        <ele>2.3</ele>
+        <time>2024-08-05T05:31:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8052" lon="-122.4380">
+        <ele>2.5</ele>
+        <time>2024-08-05T05:32:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8056" lon="-122.4385">
+        <ele>2.8</ele>
+        <time>2024-08-05T05:33:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8060" lon="-122.4390">
+        <ele>3.0</ele>
+        <time>2024-08-05T05:34:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8064" lon="-122.4395">
+        <ele>3.2</ele>
+        <time>2024-08-05T05:35:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8068" lon="-122.4400">
+        <ele>3.5</ele>
+        <time>2024-08-05T05:36:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8072" lon="-122.4405">
+        <ele>3.8</ele>
+        <time>2024-08-05T05:37:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8076" lon="-122.4410">
+        <ele>4.0</ele>
+        <time>2024-08-05T05:38:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8080" lon="-122.4415">
+        <ele>4.2</ele>
+        <time>2024-08-05T05:39:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8084" lon="-122.4420">
+        <ele>4.5</ele>
+        <time>2024-08-05T05:40:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8088" lon="-122.4425">
+        <ele>4.8</ele>
+        <time>2024-08-05T05:41:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8092" lon="-122.4430">
+        <ele>5.0</ele>
+        <time>2024-08-05T05:42:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8096" lon="-122.4435">
+        <ele>5.2</ele>
+        <time>2024-08-05T05:43:00Z</time>
+      </trkpt>
+      <trkpt lat="37.8100" lon="-122.4440">
+        <ele>5.5</ele>
+        <time>2024-08-05T05:44:00Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

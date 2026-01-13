@@ -1,0 +1,5 @@
+module CDoclingBridge {
+    header "docling_viz_bridge.h"
+    link "docling_viz_bridge"
+    export *
+}

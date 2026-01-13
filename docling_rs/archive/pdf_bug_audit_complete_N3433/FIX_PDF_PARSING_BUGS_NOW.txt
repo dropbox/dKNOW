@@ -1,0 +1,621 @@
+# COMPREHENSIVE PDF PARSING AUDIT - FIX ALL 25 ISSUES NOW
+
+## AUDIT DATE: 2024-12-22
+## AUDITOR: WORKER0 (N=3343)
+## SCOPE: pdfium_adapter.rs, pdf_fast.rs, pdf.rs
+
+---
+
+## CRITICAL: These are ordered by impact. Fix them in order.
+
+---
+
+## CATEGORY A: MISSING PDFIUM APIs (NOT EXPOSED)
+
+### BUG #1: Annotation Extraction Missing (HIGH IMPACT) - ✅ FIXED N=3422
+**File:** pdfium_adapter.rs
+**Issue:** No annotation extraction at all - highlights, comments, notes completely ignored
+**Missing APIs:**
+- FPDFPage_GetAnnotCount
+- FPDFPage_GetAnnot
+- FPDFAnnot_GetSubtype
+- FPDFAnnot_GetRect
+- FPDFAnnot_GetStringValue
+- FPDFPage_CloseAnnot
+**Fix:** Add `PdfAnnotation` struct and extraction methods to PdfPageFast
+**Resolution:** Added `PdfAnnotationType` enum (28 annotation types), `PdfAnnotation` struct with
+contents/author/date/flags, `extract_annotations()` method on PdfPageFast, `annotation_count()` helper,
+`is_content_annotation()` helper for filtering. Full support for extracting highlights, comments, notes, etc.
+
+### BUG #2: Text Search Missing (HIGH IMPACT) - ✅ FIXED N=3423
+**File:** pdfium_adapter.rs
+**Issue:** No text search capability - users must extract all text then search in Rust
+**Missing APIs:**
+- FPDFText_FindStart
+- FPDFText_FindNext
+- FPDFText_FindPrev
+- FPDFText_GetSchResultIndex
+- FPDFText_GetSchCount
+- FPDFText_FindClose
+**Fix:** Add `PdfTextSearch` struct and search methods
+**Resolution:** Added `PdfTextSearchFlags` (CASE_INSENSITIVE, MATCH_CASE, MATCH_WHOLE_WORD, CONSECUTIVE),
+`PdfSearchResult` struct (char_index, char_count), `PdfTextSearch` handle with find_next(), find_prev(),
+current() methods. Added search_text() and find_all_text() methods on PdfPageFast. Search handle properly
+closes on Drop.
+
+### BUG #3: Page Bounding Box Missing (MEDIUM IMPACT) - ✅ FIXED N=3422
+**File:** pdfium_adapter.rs
+**Issue:** No way to get actual content bounds (different from page size)
+**Missing API:** FPDF_GetPageBoundingBox
+**Fix:** Add `get_bounding_box()` to PdfPageFast returning FS_RECTF
+**Resolution:** Added `get_bounding_box()` method on PdfPageFast returning Option<(f64,f64,f64,f64)>
+for (left, top, right, bottom) in top-left origin coordinates. Returns None if bounding box unavailable.
+
+### BUG #4: Efficient Page Size Lookup Missing (MEDIUM IMPACT) - ✅ FIXED N=3421
+**File:** pdfium_adapter.rs
+**Issue:** Must load entire page to get dimensions - wasteful for TOC generation
+**Missing API:** FPDF_GetPageSizeByIndex
+**Fix:** Add `get_page_size_by_index(index)` to PdfDocumentFast (no page load needed)
+**Resolution:** Added `get_page_size_by_index(page_index)` and `get_all_page_sizes()` methods.
+These use FPDF_GetPageSizeByIndex to get dimensions without loading full page content.
+
+### BUG #5: PDF Validity Check Missing (LOW IMPACT) - ✅ FIXED N=3422
+**File:** pdfium_adapter.rs
+**Issue:** No way to check if PDF cross-reference table is valid before processing
+**Missing API:** FPDF_DocumentHasValidCrossReferenceTable
+**Fix:** Add `has_valid_xref()` to PdfDocumentFast
+**Resolution:** Added `has_valid_xref()` method on PdfDocumentFast returning bool. Validates PDF
+cross-reference table integrity before processing. False doesn't mean unusable but indicates potential issues.
+
+### BUG #6: Coordinate Conversion Missing (MEDIUM IMPACT) - ✅ FIXED N=3423
+**File:** pdfium_adapter.rs
+**Issue:** Manual coordinate conversion everywhere instead of using pdfium's built-in
+**Missing APIs:**
+- FPDF_DeviceToPage
+- FPDF_PageToDevice
+**Fix:** Add `device_to_page()` and `page_to_device()` methods
+**Resolution:** Added `device_to_page(device_x, device_y, render_width, render_height, rotation)` and
+`page_to_device(page_x, page_y, render_width, render_height, rotation)` methods on PdfPageFast.
+Handles rotation values 0/90/180/270 degrees. Returns page coordinates in PDF points (72 DPI).
+
+### BUG #7: Character Loose Box Missing (LOW IMPACT) - ✅ FIXED N=3423
+**File:** pdfium_adapter.rs
+**Issue:** Using FPDFText_GetCharBox but not FPDFText_GetLooseCharBox (better for selection)
+**Missing API:** FPDFText_GetLooseCharBox
+**Fix:** Add `get_char_loose_box()` method
+**Resolution:** Added `get_char_loose_box(index)` method on PdfTextPageFast returning Option<(f32, f32, f32, f32)>
+for (left, top, right, bottom). The loose box is larger and better for text selection highlighting.
+
+### BUG #8: Character Origin Missing (LOW IMPACT) - ✅ FIXED N=3423
+**File:** pdfium_adapter.rs
+**Issue:** No way to get baseline position for proper text alignment
+**Missing API:** FPDFText_GetCharOrigin
+**Fix:** Add `get_char_origin()` method
+**Resolution:** Added `get_char_origin(index)` method on PdfTextPageFast returning Option<(f64, f64)>
+for (x, y) baseline origin position. Useful for text alignment and vertical positioning.
+
+### BUG #9: Character Matrix Missing (LOW IMPACT) - ✅ FIXED N=3423
+**File:** pdfium_adapter.rs
+**Issue:** No access to transformation matrix for rotated/scaled text
+**Missing API:** FPDFText_GetMatrix
+**Fix:** Add `get_char_matrix()` method
+**Resolution:** Added `get_char_matrix(index)` method on PdfTextPageFast returning Option<(f32, f32, f32, f32, f32, f32)>
+for (a, b, c, d, e, f) transformation matrix. Components: a,d=scale, b,c=rotation/shear, e,f=translation.
+
+### BUG #10: Generated/Hyphen Detection Missing (LOW IMPACT) - ✅ FIXED N=3423
+**File:** pdfium_adapter.rs
+**Issue:** Can't distinguish generated chars from original, can't detect hyphens
+**Missing APIs:**
+- FPDFText_IsGenerated
+- FPDFText_IsHyphen
+- FPDFText_HasUnicodeMapError
+**Fix:** Add helper methods for character analysis
+**Resolution:** Added three methods on PdfTextPageFast:
+- `is_char_generated(index)` - Detect PDFium-synthesized characters
+- `is_char_hyphen(index)` - Detect word-wrap hyphens
+- `has_unicode_map_error(index)` - Detect Unicode mapping failures
+
+---
+
+## CATEGORY B: CODE BUGS
+
+### BUG #11: Memory Leak in Parallel Rendering (CRITICAL) - ✅ FIXED N=3390
+**File:** pdfium_adapter.rs, line ~769
+**Issue:** `Box::into_raw(callback_data)` is NEVER freed!
+```rust
+Box::into_raw(callback_data) as *mut std::ffi::c_void,  // LEAKED!
+```
+**Fix:** Convert back with `Box::from_raw()` after callback completes
+**Resolution:** Added `Box::from_raw(callback_data_ptr)` after FFI call to reclaim memory
+
+### BUG #12: Text Page Loaded Twice Per Cell (HIGH IMPACT) - ✅ FIXED N=3393
+**File:** pdfium_adapter.rs, lines 1303 and 1532
+**Issue:** `extract_text_cells()` loads text page, then `get_text_bounded()` loads it AGAIN
+**Fix:** Pass text page handle or cache it in PdfPageFast struct
+**Resolution:** Added cached_text_page field with RefCell, get_cached_text_page() method
+
+### BUG #13: Rotation Not Applied During Rendering (MEDIUM) - ✅ FIXED N=3345
+**File:** pdfium_adapter.rs, line 897
+**Issue:** Page rotation value is extracted but NOT used during rendering
+**Code:**
+```rust
+pdfium_sys::FPDF_RenderPageBitmap(
+    bitmap,
+    self.handle,
+    0,      // start_x
+    0,      // start_y
+    width,  // size_x
+    height, // size_y
+    0,      // rotate <- ALWAYS 0, IGNORES page.rotation()!
+    0,      // flags
+);
+```
+**Fix:** Pass `self.rotation() / 90` to render parameter (0,1,2,3 for 0,90,180,270 deg)
+
+### BUG #14: partial_cmp().unwrap() Instead of total_cmp (LOW) - ✅ FIXED N=3392
+**File:** pdf_fast.rs, lines 441-445
+**Issue:** Using partial_cmp which can panic on NaN
+```rust
+row_indices.sort_by(|&a, &b| {
+    cells_f32[a].0.partial_cmp(&cells_f32[b].0).unwrap_or(...)
+});
+```
+**Fix:** Use `f32::total_cmp()` method reference directly
+**Resolution:** Changed to `total_cmp(&cells_f32[b].0)` one-liner
+
+---
+
+## CATEGORY C: INEFFICIENCIES
+
+### BUG #15: RGB Conversion Allocates Twice (MEDIUM) - ✅ FIXED N=3395
+**File:** pdfium_adapter.rs, line 739
+**Issue:** In render_pages_parallel, creates Vec then copies to output
+```rust
+let mut rgb = Vec::with_capacity((width * height * 3) as usize);
+for y in 0..height {
+    for x in 0..width {
+        rgb.push(bgra[idx + 2]); // Push one at a time - slow!
+```
+**Fix:** Use `rgb_array.as_slice_mut()` and SIMD conversion, or at least write directly
+**Resolution:** Changed to vec![0u8; size] with direct indexing rgb[dst] = bgra[src]
+
+### BUG #16: Text Cell Font Info Lookup Is Per-Cell (HIGH) - ✅ FIXED N=3397
+**File:** pdfium_adapter.rs, lines 1400-1495
+**Issue:** For EVERY text cell, calls 8 FFI functions to get font info (never used downstream)
+**Fix:** Skip font info extraction since merge_and_convert_text_cells() only uses (left, top, right, bottom, text)
+**Resolution:** Removed ~90 lines of font extraction code, saves ~8 FFI calls per text cell
+
+### BUG #17: Hyperlink Extraction Iterates All Links (LOW) - ✅ FIXED N=3424
+**File:** pdfium_adapter.rs, line 1598
+**Issue:** `extract_hyperlinks()` iterates ALL links even if early exit possible
+**Fix:** Add optional limit parameter for pagination use cases
+**Resolution:** Added `extract_hyperlinks_with_limit(page_height, limit)` method that accepts
+an optional limit parameter. Allows early exit when only first N links are needed,
+useful for pagination or preview use cases.
+
+### BUG #18: No Batch Character Extraction (HIGH) - ⬜ N/A (N=3397)
+**File:** pdfium_adapter.rs
+**Issue:** Getting unicode/box for each char individually - N FFI calls
+**Fix:** Extract all chars in one pass, store in Vec, then iterate
+**Status:** NOT APPLICABLE - Current implementation uses rectangle-based extraction
+(FPDFText_CountRects + FPDFText_GetRect + FPDFText_GetBoundedText), not per-character
+extraction. The get_unicode/get_char_box methods exist but are not used in any hot path.
+
+### BUG #19: Merge Logic Recalculates Threshold Every Pair (LOW) - ⬜ VERIFIED CORRECT N=3415
+**File:** pdf_fast.rs, line 459-461
+**Issue:** Horizontal threshold recalculated for every adjacent pair comparison
+**Analysis:** This is INTENTIONAL DESIGN, not a bug. The threshold uses the average height of
+the TWO cells being compared (prev_height + curr_height) / 2. This is correct because different
+cell pairs have different heights. Calculating "once per row" would use wrong heights for
+cells that differ significantly from row average. The per-pair calculation matches Python's logic.
+
+### BUG #20: Attachment Content Copied Twice (LOW) - ✅ FIXED N=3405
+**File:** pdfium_adapter.rs, line 559-571
+**Issue:** Buffer allocated, filled, then truncated
+```rust
+let mut data = vec![0u8; file_len as usize];
+// ... fill ...
+data.truncate(actual_len as usize);  // Unnecessary if sizes match
+```
+**Fix:** Check actual_len vs file_len and skip truncate when equal
+**Resolution:** Added conditional: only truncate if actual_len < data.len()
+
+---
+
+## CATEGORY D: MISSING FEATURES
+
+### BUG #21: No Web Link Extraction (MEDIUM) - ✅ FIXED N=3424
+**File:** pdfium_adapter.rs
+**Issue:** FPDFLink functions used but FPDFLink_GetURL not called for web URLs in text
+**Missing API:** FPDFLink_GetTextRange, FPDFText_WebLinks_* functions
+**Fix:** Add web link detection that finds URLs in text content
+**Resolution:** Added `PdfWebLink` struct (url, start_char_index, char_count, rects) and methods
+on `PdfTextPageFast`:
+- `extract_web_links()` - Extract all web links with URL, char range, and bounding rects
+- `count_web_links()` - Quick count without full extraction
+Uses FPDFLink_LoadWebLinks/CountWebLinks/GetURL/GetTextRange/CountRects/GetRect/CloseWebLinks.
+
+### BUG #22: No Form Field Detection (MEDIUM) - ✅ FIXED N=3426
+**File:** pdfium_adapter.rs
+**Issue:** Can't detect or extract form fields (checkboxes, text inputs, etc.)
+**Missing APIs:** FPDFAnnot_GetFormFieldType, FPDFAnnot_GetFormFieldValue, etc.
+**Fix:** Add form detection methods
+**Resolution:** Added `PdfFormFieldType` enum (16 types including XFA), `PdfFormField` struct,
+and methods on both `PdfPageFast` and `PdfDocumentFast`:
+- `has_form_fields()` - Quick check for form presence
+- `count_form_fields()` - Count Widget annotations
+- `extract_form_fields()` - Extract form field positions/indices
+- `get_form_field_annotations()` - Filter for Widget annotations
+Full form field details (names, values) require form fill environment initialization.
+
+### BUG #23: No Named Destination Support (LOW) - ✅ FIXED N=3427
+**File:** pdfium_adapter.rs
+**Issue:** Internal links by name not resolved
+**Missing API:** FPDF_GetNamedDest, FPDF_GetNamedDestByName
+**Fix:** Add named destination resolution
+**Resolution:** Added `PdfNamedDestination` struct (name, page_index, x/y/zoom) and methods
+on `PdfDocumentFast`:
+- `count_named_dests()` - Count named destinations
+- `get_named_dest_by_name(name)` - Resolve destination by name
+- `get_named_dest(index)` - Get destination by index
+- `get_all_named_dests()` - Get all destinations
+- `has_named_dests()` - Quick check for named destinations
+Uses `FPDF_CountNamedDests`, `FPDF_GetNamedDestByName`, `FPDF_GetNamedDest`,
+`FPDFDest_GetDestPageIndex`, and `FPDFDest_GetLocationInPage` APIs.
+
+### BUG #24: No XFA Form Support Detection (LOW) - ✅ FIXED N=3426
+**File:** pdfium_adapter.rs
+**Issue:** No detection of XFA forms (dynamic PDF forms)
+**Missing APIs:** FPDF_GetXFAPacketCount, FPDF_GetXFAPacketContent
+**Fix:** Add XFA detection and warning
+**Resolution:** Added `PdfFormType` enum (None, AcroForm, XfaFull, XfaForeground) and methods
+on `PdfDocumentFast`:
+- `get_form_type()` - Get document's form specification type
+- `has_xfa_forms()` - Quick check for XFA presence
+- `is_acro_form()` - Quick check for standard forms
+Uses `FPDF_GetFormType` API. XFA packet content extraction not implemented (limited use case).
+
+### BUG #25: No Document-Level JavaScript Detection (LOW) - ✅ FIXED N=3431
+**File:** pdfium_adapter.rs
+**Issue:** Can't detect if PDF contains JavaScript (security concern)
+**Missing API:** FPDF_GetDocJSActions, FPDFDoc_GetJavaScriptActionCount
+**Fix:** Add JavaScript detection for security scanning
+**Resolution:** Implemented in N=3431 along with BUG #86. Added fpdf_javascript.h to pdfium-sys bindings
+in ~/pdfium_fast/rust/pdfium-sys/build.rs. Added 7 methods to PdfDocumentFast:
+- javascript_action_count() - Get total JS action count
+- has_javascript() - Quick check for JS presence
+- get_javascript_action(index) - Get individual action
+- get_all_javascript_actions() - Get all actions at once
+- has_suspicious_javascript() - Security scan for malicious patterns
+Plus PdfJavaScriptAction struct with name, script, and has_suspicious_patterns() method.
+
+---
+
+## IMPLEMENTATION PRIORITY ORDER
+
+### Phase 1: Critical Bugs (Do These First)
+1. **BUG #11** - Memory leak (CRITICAL)
+2. **BUG #13** - Coordinate order (breaks text extraction)
+3. **BUG #12** - Double text page load (performance)
+
+### Phase 2: Missing High-Impact APIs
+4. **BUG #1** - Annotation extraction
+5. **BUG #2** - Text search
+6. **BUG #3** - Page bounding box
+7. **BUG #4** - Efficient page size
+
+### Phase 3: Performance Optimizations
+8. **BUG #15** - RGB conversion
+9. **BUG #16** - Font info caching
+10. **BUG #18** - Batch char extraction
+11. **BUG #14** - total_cmp
+
+### Phase 4: Complete API Coverage
+12-25. Remaining bugs in order listed
+
+---
+
+## VERIFICATION COMMANDS
+
+After fixing, verify with:
+
+```bash
+# Build
+cargo build -p docling-backend --no-default-features --features pdfium-fast
+
+# Test
+cargo test -p docling-backend --no-default-features --features pdfium-fast
+
+# Verify no memory leaks with valgrind (if available)
+valgrind --leak-check=full ./target/release/docling convert test.pdf -o /tmp/out.md
+```
+
+---
+
+## ACCEPTANCE CRITERIA
+
+- [ ] All 25 bugs addressed (fixed or documented as won't-fix with justification)
+- [ ] No memory leaks detected
+- [ ] Text extraction produces identical output
+- [ ] Build passes with all features
+- [ ] Unit tests pass
+
+---
+
+---
+
+## CATEGORY E: ADDITIONAL BUGS (26-50)
+
+### BUG #26: Mutex Poisoning Not Handled (HIGH) - ✅ FIXED N=3345
+**File:** pdfium_adapter.rs, lines 728, 749, 779, 784
+**Issue:** All `.lock().unwrap()` calls panic if mutex is poisoned
+```rust
+let mut err = data.error.lock().unwrap();  // PANICS on poisoning!
+let mut results = data.results.lock().unwrap();  // PANICS!
+```
+**Fix:** Use `.lock().unwrap_or_else(|e| e.into_inner())` or return error
+
+### BUG #27: Integer Overflow on Large Files (MEDIUM) - ✅ FIXED N=3345
+**File:** pdfium_adapter.rs, line 166
+**Issue:** `data.len() as i32` overflows for files > 2GB
+```rust
+data.len() as i32,  // OVERFLOW if data.len() > i32::MAX!
+```
+**Fix:** Check size < i32::MAX before conversion, return error for huge files
+
+### BUG #28: Buffer Size Calculation Overflow (MEDIUM) - ✅ FIXED N=3345
+**File:** pdfium_adapter.rs, line 739
+**Issue:** `(width * height * 3) as usize` can overflow for large pages at high DPI
+```rust
+let mut rgb = Vec::with_capacity((width * height * 3) as usize);
+```
+**Fix:** Use checked_mul() and return error on overflow
+
+### BUG #29: Negative Index Check Missing (LOW) - ✅ FIXED N=3405
+**File:** pdfium_adapter.rs, line 1159
+**Issue:** `(chars_written - 1).max(0) as usize` - if chars_written is 0, this is fine,
+but the subtraction happens BEFORE max(), which is confusing (works due to i32 semantics)
+**Fix:** Use `chars_written.saturating_sub(1) as usize` for clarity
+**Resolution:** Changed 3 occurrences to `(chars_written as usize).saturating_sub(1)`
+
+### BUG #30: Text Page Not Closed on Error (HIGH) - ⬜ N/A (N=3397)
+**File:** pdfium_adapter.rs, line 1089
+**Issue:** If text page load succeeds but later extraction fails, text page is leaked
+```rust
+let text_page = PdfTextPageFast::from_page(self)?;  // Loaded
+// ... if error below, text_page may not be dropped properly
+```
+**Fix:** Ensure Drop impl is called even on early return (currently OK due to Rust semantics, but risky pattern)
+**Status:** NOT A BUG - `PdfTextPageFast` implements `Drop` trait (line 1264-1269) which calls
+`FPDFText_ClosePage`. Rust's ownership semantics guarantee Drop is called on early return/error.
+
+### BUG #31: No Validation of Render Callback User Data (HIGH) - ✅ FIXED N=3390 (with #11)
+**File:** pdfium_adapter.rs, line 725
+**Issue:** `user_data as *const CallbackData` - no validation that pointer is valid
+```rust
+let data = unsafe { &*(user_data as *const CallbackData) };  // Could be dangling!
+```
+**Fix:** The Box was leaked intentionally, but we need to reclaim it after callback
+**Resolution:** Box::from_raw reclaims memory after FFI call completes
+
+### BUG #32: Page Index Bounds Not Validated (MEDIUM) - ✅ FIXED N=3345
+**File:** pdfium_adapter.rs, line 289
+**Issue:** `load_page(page_index)` doesn't validate index before FFI call
+**Fix:** Check `page_index >= 0 && page_index < page_count()` first
+
+### BUG #33: UTF-16 Buffer Could Be Odd-Sized (LOW) - ✅ FIXED N=3412
+**File:** pdfium_adapter.rs, lines 327, 454, 527, 643
+**Issue:** `(size / 2) as usize` assumes size is always even (it should be, but not verified)
+**Fix:** Assert or handle odd sizes gracefully
+**Resolution:** Created `utf16_bytes_to_units()` helper that logs warning if size is odd before
+rounding down. Applied to all 4 UTF-16 buffer allocations: metadata text, bookmark title,
+attachment name, and page label.
+
+### BUG #34: Metadata Tag Length Zero Not Handled (LOW) - ⬜ VERIFIED CORRECT N=3410
+**File:** pdfium_adapter.rs, lines 370-373
+**Issue:** `if size <= 2` catches empty, but what if size is exactly 2?
+**Fix:** Clarify edge case - size=2 means just null terminator, should return None
+**Analysis:** Code is CORRECT. In UTF-16, null terminator is 2 bytes. So:
+- size = 0: error from PDFium
+- size = 2: empty string (just null terminator)
+- size > 2: actual content
+The check `size <= 2` correctly returns None for empty/error cases.
+
+### BUG #35: Page Label Index Validation (LOW) - ✅ FIXED N=3410
+**File:** pdfium_adapter.rs, lines 689-698
+**Issue:** `get_page_label(page_index)` doesn't validate index
+**Fix:** Validate against page_count() first
+**Resolution:** Added bounds check before PDFium call. Returns None and logs warning if
+page_index is out of bounds. Prevents potential undefined behavior from invalid index.
+
+### BUG #36: Attachment File Size Truncation (MEDIUM) - ✅ FIXED N=3412
+**File:** pdfium_adapter.rs, line 539
+**Issue:** `file_len: std::ffi::c_ulong` - c_ulong is u32 on Windows, u64 on Unix
+```rust
+let mut file_len: std::ffi::c_ulong = 0;
+let mut data = vec![0u8; file_len as usize];  // Could truncate on Windows!
+```
+**Fix:** Use platform-independent size type or explicit u64
+**Resolution:** Added MAX_ATTACHMENT_SIZE (1GB) limit with validation. Logs warning and skips
+attachments exceeding limit. Documents platform limitation in comments. Prevents OOM from
+unreasonable sizes regardless of platform.
+
+### BUG #37: Stride vs Width Mismatch Ignored (HIGH) - ⬜ WON'T FIX (N=3397)
+**File:** pdfium_adapter.rs, line 904-909
+**Issue:** Stride may be > width*4 due to padding, but full stride*height is copied
+```rust
+let buffer_size = (stride * actual_height) as usize;
+// ... copies full buffer_size including padding
+```
+**Fix:** OK for pixel iteration, but wastes memory. Consider compact copy.
+**Status:** WON'T FIX - The caller (line 1368) correctly uses `y * stride_usize + x * 4` to
+account for row padding. The "waste" is 0-15 bytes per row (alignment padding) which is
+negligible. Removing it would require row-by-row copying which adds complexity with minimal
+benefit. The code is correct as-is.
+
+### BUG #38: Image Object Assumed at Index 0 (MEDIUM) - ✅ FIXED N=3412
+**File:** pdfium_adapter.rs, lines 931, 953, 988, 1019
+**Issue:** `is_single_image_page()` checks count==1, but all getters assume index 0
+```rust
+let obj = unsafe { pdfium_sys::FPDFPage_GetObject(self.handle, 0) };
+```
+**Fix:** This is correct but fragile - consider extracting to a helper
+**Resolution:** Created `get_single_image_object()` helper that combines the count check, index 0
+access, and image type verification into one function. Updated is_single_image_page(),
+extract_image_data_raw(), get_image_metadata(), and get_image_filters() to use the helper.
+Code is now centralized and less fragile.
+
+### BUG #39: Filter Name Buffer Not Null-Terminated Verified (LOW) - ✅ FIXED N=3413
+**File:** pdfium_adapter.rs, line 1046
+**Issue:** `String::from_utf8_lossy(&buffer[..actual_len])` assumes null terminator at actual_len
+**Fix:** Explicitly find null terminator position
+**Resolution:** Changed to use `.iter().position(|&b| b == 0)` to find actual null terminator
+position, consistent with BUG #40 fix for URL buffers.
+
+### BUG #40: Hyperlink URL Memory Not Trimmed (LOW) - ✅ FIXED N=3412
+**File:** pdfium_adapter.rs, line 1648-1650
+**Issue:** URL buffer contains trailing garbage after null terminator
+```rust
+let url = String::from_utf8_lossy(&uri_buffer[..uri_buffer.len().saturating_sub(1)])
+```
+**Fix:** Find actual string length, don't assume buffer.len()-1
+**Resolution:** Changed to use `.iter().position(|&b| b == 0)` to find actual null terminator.
+Falls back to buffer length if no null found. Eliminates trailing garbage from URL strings.
+
+### BUG #41: Link Action Type Magic Number (LOW) - ✅ FIXED N=3405
+**File:** pdfium_adapter.rs, line 1619
+**Issue:** `if action_type != 3` - magic number for PDFACTION_URI
+```rust
+if action_type != 3 {  // What is 3? Not documented!
+```
+**Fix:** Define constant `PDFACTION_URI = 3`
+**Resolution:** Defined `const PDFACTION_URI: u64 = 3` at module level with doc comment
+
+### BUG #42: Date Parsing Doesn't Handle All Formats (LOW) - ✅ FIXED N=3413
+**File:** pdfium_adapter.rs, line 208-269
+**Issue:** PDF date parsing is incomplete - doesn't handle:
+- Missing D: prefix with timezone
+- Single-digit month/day (non-standard but exists)
+- Timezone without quotes
+**Fix:** Be more lenient in parsing
+**Resolution:** Improved parse_pdf_date() with:
+- Lowercase 'd:' prefix handling
+- Value clamping for month (1-12), day (1-31), hour (0-23), min/sec (0-59)
+- Invalid month/day combinations fallback to last valid day
+- Lowercase 'z' for UTC, filter non-digits from timezone offset
+- Timezone hour clamped to ±14:00 maximum
+
+### BUG #43: Bookmark Title Null Terminator Off-by-One (MEDIUM) - ⬜ VERIFIED CORRECT N=3409
+**File:** pdfium_adapter.rs, line 514
+**Issue:** `let actual_len = buffer.len().saturating_sub(1);` - buffer already includes null
+```rust
+let actual_len = buffer.len().saturating_sub(1);
+String::from_utf16_lossy(&buffer[..actual_len])
+```
+**Fix:** Verify this is correct - may be cutting one char too many
+**Analysis:** Code is CORRECT. PDFium's FPDFBookmark_GetTitle returns size in bytes including
+the UTF-16 null terminator (2 bytes). Buffer is sized as `title_len / 2` code units. Subtracting
+1 from buffer.len() correctly removes the single null code unit. Same pattern used consistently
+throughout the codebase for all UTF-16 PDFium APIs.
+
+### BUG #44: Bookmark Page Index Could Be Invalid (LOW) - ✅ FIXED N=3410
+**File:** pdfium_adapter.rs, lines 521-541
+**Issue:** Returns page index without validating against page count
+**Fix:** Validate `idx < page_count()` before returning Some
+**Resolution:** Added validation `idx >= 0 && idx < page_count`. Logs warning with bookmark
+title and page counts if invalid index detected. Returns None for invalid indices.
+
+### BUG #45: Parallel Render DPI as f64 Precision Loss (LOW) - ⬜ WON'T FIX N=3416
+**File:** pdfium_adapter.rs, line 675
+**Issue:** DPI passed as f64 but stored in struct as f64 - OK, but wasteful
+**Analysis:** Not worth changing. f64 provides plenty of precision for DPI values (72-2400).
+Changing to f32 would require changing function signatures throughout the codebase for
+minimal benefit. The "precision loss" is non-existent at practical DPI values.
+
+### BUG #46: Text Extraction Tolerance Hardcoded (LOW) - ⬜ WON'T FIX N=3416
+**File:** pdfium_adapter.rs, lines 1395-1396
+**Issue:** Magic numbers 5.0, 5.0 for character lookup tolerance
+**Analysis:** The 5.0 tolerance is a reasonable default for text cell character lookup.
+Making it configurable would add complexity without clear benefit. This is a PDFium API
+internal tolerance, not user-facing. The value works well across different PDF fonts/sizes.
+
+### BUG #47: Cell Merge Threshold Hardcoded (MEDIUM) - ⬜ WON'T FIX N=3416
+**File:** pdf_fast.rs, line 379
+**Issue:** `let horizontal_threshold_factor = 1.3;` hardcoded
+**Analysis:** The 1.3 factor matches Python docling's behavior. Making it configurable would
+add complexity without benefit - users don't need to tune this parameter. If merging issues
+occur, the fix should be in the algorithm, not via configuration.
+
+### BUG #48: Reading Order Extraction Ignores Errors (MEDIUM) - ✅ FIXED N=3409
+**File:** pdf_fast.rs, lines 256-276
+**Issue:** If assembled is None, returns empty vec - silently loses reading order
+**Fix:** At least log warning when reading order unavailable
+**Resolution:** Added `log::warn!` with page number when ML assembly fails and reading order
+is unavailable. Changed `.iter()` to `.enumerate()` to track page indices.
+
+### BUG #49: Pipeline Profiling Always Enabled (LOW) - ✅ FIXED N=3400 (via BUG #52)
+**File:** pdf_fast.rs, lines 102-106
+**Issue:** `pipeline.enable_profiling()` always called - overhead in production
+**Fix:** Make conditional on debug/verbose flag
+**Resolution:** Same issue as BUG #52 (Part 2) - wrapped in `if log::log_enabled!(log::Level::Debug)`.
+
+### BUG #50: ML Pipeline Error Messages Not Specific (LOW) - ⬜ ALREADY CORRECT N=3409
+**File:** pdf_fast.rs, lines 98-100, 196-201
+**Issue:** Error messages just say "Failed to create ML pipeline" without details
+**Fix:** Include the inner error type in message
+**Analysis:** Code ALREADY includes inner error with `{e}` in format strings:
+- Line 99: `format!("Failed to create ML pipeline: {}", e)`
+- Lines 198-199: `format!("ML pipeline failed on page {}: {}", page_idx, e)`
+The error type (Pipeline error, ProcessingError, etc.) is propagated to user.
+
+---
+
+## UPDATED IMPLEMENTATION PRIORITY ORDER
+
+### Phase 1: Critical Bugs (MUST FIX FIRST)
+1. **BUG #11** - Memory leak in parallel rendering
+2. **BUG #26** - Mutex poisoning crashes
+3. **BUG #31** - Dangling pointer in callback
+
+### Phase 2: Data Corruption Risks
+4. **BUG #27** - Integer overflow > 2GB files
+5. **BUG #28** - Buffer overflow large pages
+6. **BUG #13** - Rotation not applied
+7. **BUG #32** - Page index bounds
+
+### Phase 3: Missing High-Impact APIs
+8. **BUG #1** - Annotation extraction
+9. **BUG #2** - Text search
+10. **BUG #3** - Page bounding box
+11. **BUG #4** - Efficient page size
+
+### Phase 4: Performance Optimizations
+12. **BUG #12** - Double text page load
+13. **BUG #15** - RGB conversion
+14. **BUG #16** - Font info caching
+15. **BUG #18** - Batch char extraction
+
+### Phase 5: Correctness Fixes
+16. **BUG #30** - Text page leak on error
+17. **BUG #36** - Platform-dependent size
+18. **BUG #37** - Stride memory waste
+19. **BUG #43** - Bookmark off-by-one
+
+### Phase 6: Complete API Coverage & Polish
+20-50. Remaining bugs in order listed
+
+---
+
+## FINAL STATUS (N=3433) - PART 1 COMPLETE ✅
+
+All 50 bugs in Part 1 have been addressed. Combined with Part 2:
+- **100 bugs total** audited over 43 iterations (N=3390-3433)
+- **71 bugs FIXED** (71%)
+- **29 bugs CLOSED** (29%) - Won't Fix / Verified Correct / N/A
+- **0 bugs REMAINING**
+
+See FIX_PDF_PARSING_BUGS_PART2.txt for complete audit summary.
+
+---
+
+Worker: PDF BUG AUDIT 100% COMPLETE - Proceed to integration testing and validation.

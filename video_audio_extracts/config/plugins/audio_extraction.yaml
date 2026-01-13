@@ -1,0 +1,62 @@
+name: audio_extraction
+description: "Extract audio from video/audio files with configurable sample rate and channels"
+
+inputs:
+  # Video containers
+  - mp4
+  - mov
+  - avi
+  - mkv
+  - webm
+  - flv
+  - m4v
+  - 3gp
+  - wmv
+  - ogv
+  - mts      # AVCHD camcorder
+  - m2ts     # Blu-ray AVCHD
+  - mxf      # Broadcast media exchange
+  - ts       # MPEG transport stream
+  - vob      # DVD video
+  - mpg      # MPEG-1/2
+  - mpeg     # MPEG-1/2
+  - rm       # RealMedia
+  - rmvb     # RealMedia Variable Bitrate
+  - asf      # Advanced Systems Format
+  - dv       # Digital Video
+  - gxf      # General eXchange Format (broadcast)
+  - f4v      # Flash Video MP4
+  # Audio formats
+  - mp3
+  - wav
+  - flac
+  - m4a
+  - aac
+  - ogg
+  - opus
+  - wma      # Windows Media Audio
+  - amr      # Adaptive Multi-Rate (mobile)
+  - ape      # Monkey's Audio (lossless)
+  - tta      # True Audio (lossless)
+
+outputs:
+  - Audio
+
+config:
+  max_file_size_mb: 10000
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "30s"
+  memory_per_file_mb: 256
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1727740800  # 2024-10-01 00:00:00 UTC
+
+implementation:
+  crate: "video-audio-extractor"
+  function: "extract_audio"

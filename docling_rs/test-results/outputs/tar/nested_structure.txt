@@ -1,0 +1,14 @@
+# Archive Contents: nested_structure.tar
+
+## Format Information
+
+Format: TAR, Archive size: 11.78 KB
+
+## Archive Summary
+
+1 TXT file, 11776 bytes total (10 bytes content + 11766 bytes TAR overhead)
+
+## Contents
+
+- deep/nested/structure/deep.txt (10 bytes)
+

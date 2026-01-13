@@ -1,0 +1,249 @@
+{
+  "page_number": 12,
+  "elements": [
+    {
+      "label": "caption",
+      "text": "Table 3-2 lists the nine built-in global variables.",
+      "bbox": {
+        "l": 0.0,
+        "t": 5.0,
+        "r": 100.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "table",
+      "text": "Table 3-2 Built-in global variables",
+      "bbox": {
+        "l": 0.0,
+        "t": 10.0,
+        "r": 100.0,
+        "b": 40.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "Global variable",
+            "Type",
+            "Description"
+          ],
+          [
+            "CLIENT_HOST",
+            "VARCHAR(255)",
+            "Host name of the current client as returned by the system"
+          ],
+          [
+            "CLIENT_IPADDR",
+            "VARCHAR(128)",
+            "IP address of the current client as returned by the system"
+          ],
+          [
+            "CLIENT_PORT",
+            "INTEGER",
+            "Port used by the current client to communicate with the server"
+          ],
+          [
+            "PACKAGE_NAME",
+            "VARCHAR(128)",
+            "Name of the currently running package"
+          ],
+          [
+            "PACKAGE_SCHEMA",
+            "VARCHAR(128)",
+            "Schema name of the currently running package"
+          ],
+          [
+            "PACKAGE_VERSION",
+            "VARCHAR(64)",
+            "Version identifier of the currently running package"
+          ],
+          [
+            "ROUTINE_SCHEMA",
+            "VARCHAR(128)",
+            "Schema name of the currently running routine"
+          ],
+          [
+            "ROUTINE_SPECIFIC_NAME",
+            "VARCHAR(128)",
+            "Name of the currently running routine"
+          ],
+          [
+            "ROUTINE_TYPE",
+            "CHAR(1)",
+            "Type of the currently running routine"
+          ]
+        ],
+        "num_rows": 10,
+        "num_cols": 3
+      }
+    },
+    {
+      "label": "section_header",
+      "text": "3.3 VERIFY_GROUP_FOR_USER function",
+      "bbox": {
+        "l": 0.0,
+        "t": 40.0,
+        "r": 100.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The VERIFY_GROUP_FOR_USER function was added in IBM i 7.2. Although it is primarily intended for use with RCAC permissions and masks, it can be used in other SQL statements. The first parameter must be one of these three special registers: SESSION_USER, USER, or CURRENT_USER. The second and subsequent parameters are a list of user or group profiles. Each of these values must be 1 - 10 characters in length. These values are not validated for their existence, which means that you can specify the names of user profiles that do not exist without receiving any kind of error.",
+      "bbox": {
+        "l": 0.0,
+        "t": 45.0,
+        "r": 100.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "If a special register value is in the list of user profiles or it is a member of a group profile included in the list, the function returns a long integer value of 1. Otherwise, it returns a value of 0. It never returns the null value.",
+      "bbox": {
+        "l": 0.0,
+        "t": 60.0,
+        "r": 100.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Here is an example of using the VERIFY_GROUP_FOR_USER function:",
+      "bbox": {
+        "l": 0.0,
+        "t": 65.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "1. There are user profiles for MGR, JANE, JUDY, and TONY.",
+      "bbox": {
+        "l": 0.0,
+        "t": 70.0,
+        "r": 100.0,
+        "b": 72.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "2. The user profile JANE specifies a group profile of MGR.",
+      "bbox": {
+        "l": 0.0,
+        "t": 72.0,
+        "r": 100.0,
+        "b": 74.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "3. If a user is connected to the server using user profile JANE, all of the following function invocations return a value of 1:",
+      "bbox": {
+        "l": 0.0,
+        "t": 74.0,
+        "r": 100.0,
+        "b": 76.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "code",
+      "text": "VERIFY_GROUP_FOR_USER (CURRENT_USER, 'MGR')\nVERIFY_GROUP_FOR_USER (CURRENT_USER, 'JANE', 'MGR')\nVERIFY_GROUP_FOR_USER (CURRENT_USER, 'JANE', 'MGR', 'STEVE')",
+      "bbox": {
+        "l": 0.0,
+        "t": 76.0,
+        "r": 100.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The following function invocation returns a value of 0:",
+      "bbox": {
+        "l": 0.0,
+        "t": 80.0,
+        "r": 100.0,
+        "b": 82.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "code",
+      "text": "VERIFY_GROUP_FOR_USER (CURRENT_USER, 'JUDY', 'TONY')",
+      "bbox": {
+        "l": 0.0,
+        "t": 82.0,
+        "r": 100.0,
+        "b": 84.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "20 Row and Column Access Control Support in IBM DB2 for i",
+      "bbox": {
+        "l": 0.0,
+        "t": 95.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

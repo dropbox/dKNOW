@@ -1,0 +1,247 @@
+{
+  "page_number": 4,
+  "elements": [
+    {
+      "label": "paragraph",
+      "text": "amount of such tables, and kept only those ones ranging between 1*1 and 40*10 (rows/columns).",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The availability of the bounding boxes for all table cells is essential to train our models. In order to distinguish between empty and non-empty bounding boxes, we have introduced a binary class in the annotation. Unfortunately, the original datasets either omit the bounding boxes for whole tables (e.g. TableBank) or they narrow their scope only to non-empty cells. Therefore, it was imperative to introduce a data pre-processing procedure that generates the missing bounding boxes out of the annotation information. This procedure first parses the provided table structure and calculates the dimensions of the most fine-grained grid that covers the table structure. Notice that each table cell may occupy multiple grid squares due to row or column spans. In case of PubTabNet we had to compute missing bounding boxes for 48% of the simple and 69% of the complex tables. Regarding FinTabNet, 68% of the simple and 98% of the complex tables require the generation of bounding boxes.",
+      "bbox": {
+        "l": 0.0,
+        "t": 5.0,
+        "r": 100.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "As it is illustrated in Fig. 2, the table distributions from all datasets are skewed towards simpler structures with fewer number of rows/columns. Additionally, there is very limited variance in the table styles, which in case of PubTabNet and FinTabNet means one styling format for the majority of the tables. This limits the generalization ability of the models to new table appearances. In some cases, e.g. FinTabNet is restricted to a certain domain. Ultimately, the lack of diversity in the training dataset damages the ability of the models to generalize well on unseen data.",
+      "bbox": {
+        "l": 0.0,
+        "t": 20.0,
+        "r": 100.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Motivated by those observations we aimed at generating a synthetic dataset named SynthTabNet. This approach offers control over: 1) the size of the dataset, 2) the table structure, 3) the table style and 4) the type of content. The complexity of the table structure is described by the size of the table header and the table body, as well as the percentage of the table cells covered by row spans and column spans. A set of carefully designed styling templates provides the basis to build a wide range of table appearances. Lastly, the table content is generated out of a curated collection of text corpora. By controlling the size and scope of the synthetic datasets we are able to train and evaluate our models in a variety of different conditions. For example, we can first generate a highly diverse dataset to train our models and then evaluate their performance on other synthetic datasets which are focused on a specific domain.",
+      "bbox": {
+        "l": 0.0,
+        "t": 35.0,
+        "r": 100.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In this regard, we have prepared four synthetic datasets, each one containing 150k examples. The corpora to generate the table text consists of the most frequent terms appearing in PubTabNet and FinTabNet together with randomly generated text. The first two synthetic datasets have been fine-tuned to mimic the appearance of the original datasets but encompass more complicated table structures. The third",
+      "bbox": {
+        "l": 0.0,
+        "t": 55.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "table",
+      "text": "Tags Bbox Size Format\nPubTabNet ✓ ✓ 509k PNG\nFinTabNet ✓ ✓ 112k PDF\nTableBank ✓ ✗ 145k JPEG\nCombined-Tabnet(*) ✓ ✓ 400k PNG\nCombined(**) ✓ ✓ 500k PNG\nSynthTabNet ✓ ✓ 600k PNG",
+      "bbox": {
+        "l": 0.0,
+        "t": 70.0,
+        "r": 50.0,
+        "b": 85.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "Tags",
+            "Bbox",
+            "Size",
+            "Format"
+          ],
+          [
+            "PubTabNet",
+            "✓",
+            "✓",
+            "509k",
+            "PNG"
+          ],
+          [
+            "FinTabNet",
+            "✓",
+            "✓",
+            "112k",
+            "PDF"
+          ],
+          [
+            "TableBank",
+            "✓",
+            "✗",
+            "145k",
+            "JPEG"
+          ],
+          [
+            "Combined-Tabnet(*)",
+            "✓",
+            "✓",
+            "400k",
+            "PNG"
+          ],
+          [
+            "Combined(**)",
+            "✓",
+            "✓",
+            "500k",
+            "PNG"
+          ],
+          [
+            "SynthTabNet",
+            "✓",
+            "✓",
+            "600k",
+            "PNG"
+          ]
+        ],
+        "num_rows": 7,
+        "num_cols": 4
+      }
+    },
+    {
+      "label": "caption",
+      "text": "Table 1: Both “Combined-Tabnet” and ”Combined-Tabnet” are variations of the following: (*) The Combined-Tabnet dataset is the processed combination of PubTabNet and Fintabnet. (**) The combined dataset is the processed combination of PubTabNet, Fintabnet and TableBank.",
+      "bbox": {
+        "l": 0.0,
+        "t": 85.0,
+        "r": 100.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "one adopts a colorful appearance with high contrast and the last one contains tables with sparse content. Lastly, we have combined all synthetic datasets into one big unified synthetic dataset of 600k examples.",
+      "bbox": {
+        "l": 0.0,
+        "t": 90.0,
+        "r": 100.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "4. The TableFormer",
+      "bbox": {
+        "l": 0.0,
+        "t": 95.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Given the image of a table, TableFormer is able to predict: 1) a sequence of tokens that represent the structure of a table, and 2) a bounding box coupled to a subset of those tokens. The conversion of an image into a sequence of tokens is a well-known task [35, 16]. While attention is often used as an implicit method to associate each token of the sequence with a position in the original image, an explicit association between the individual table-cells and the bounding boxes is also required.",
+      "bbox": {
+        "l": 0.0,
+        "t": 100.0,
+        "r": 100.0,
+        "b": 115.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "4.1. Model architecture.",
+      "bbox": {
+        "l": 0.0,
+        "t": 115.0,
+        "r": 100.0,
+        "b": 120.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "We now describe in detail the proposed method, which is composed of three main components, see Fig. 4. Our CNN Backbone Network encodes the input as a feature vector of predefined length. The input feature vector of the encoded image is passed to the Structure Decoder to produce a sequence of HTML tags that represent the structure of the table. With each prediction of an HTML standard data cell (‘<td>’) the hidden state of that cell is passed to the Cell BBox Decoder. As for spanning cells, such as row or column span, the tag is broken down to ‘<<’, ‘rowspan>’ or ‘colspan>’, with the number of spanning cells (attribute), and ‘>’. The hidden state attached to ‘<’ is passed to the Cell BBox Decoder. A shared feed forward network (FFN) receives the hidden states from the Structure Decoder, to provide the final detection predictions of the bounding box coordinates and their classification.",
+      "bbox": {
+        "l": 0.0,
+        "t": 120.0,
+        "r": 100.0,
+        "b": 140.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "CNN Backbone Network. A ResNet-18 CNN is the backbone that receives the table image and encodes it as a vector of predefined length. The network has been modified by removing the linear and pooling layer, as we are not per-",
+      "bbox": {
+        "l": 0.0,
+        "t": 140.0,
+        "r": 100.0,
+        "b": 155.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

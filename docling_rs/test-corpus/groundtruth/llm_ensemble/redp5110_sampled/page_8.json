@@ -1,0 +1,280 @@
+{
+  "page_number": 8,
+  "elements": [
+    {
+      "label": "section_header",
+      "text": "2.1.6 Change Function Usage CL command",
+      "bbox": {
+        "l": 0.0,
+        "t": 5.0,
+        "r": 100.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The following CL commands can be used to work with, display, or change function usage IDs:",
+      "bbox": {
+        "l": 0.0,
+        "t": 11.0,
+        "r": 100.0,
+        "b": 14.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "► Work Function Usage (WRKFCNUSG)",
+      "bbox": {
+        "l": 0.0,
+        "t": 15.0,
+        "r": 100.0,
+        "b": 17.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "► Change Function Usage (CHGFCNUSG)",
+      "bbox": {
+        "l": 0.0,
+        "t": 18.0,
+        "r": 100.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "► Display Function Usage (DSPFCNUSG)",
+      "bbox": {
+        "l": 0.0,
+        "t": 21.0,
+        "r": 100.0,
+        "b": 23.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "For example, the following CHGFCNUSG command shows granting authorization to user HBEDOYA to administer and manage RCAC rules:",
+      "bbox": {
+        "l": 0.0,
+        "t": 24.0,
+        "r": 100.0,
+        "b": 27.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "code",
+      "text": "CHGFCNUSG FCNID(QIBM_DB_SECADM) USER(HBEDOYA) USAGE(*ALLOWED)",
+      "bbox": {
+        "l": 0.0,
+        "t": 28.0,
+        "r": 100.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "2.1.7 Verifying function usage IDs for RCAC with the FUNCTION_USAGE view",
+      "bbox": {
+        "l": 0.0,
+        "t": 31.0,
+        "r": 100.0,
+        "b": 34.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The FUNCTION_USAGE view contains function usage configuration details. Table 2-1 describes the columns in the FUNCTION_USAGE view.",
+      "bbox": {
+        "l": 0.0,
+        "t": 35.0,
+        "r": 100.0,
+        "b": 38.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Table 2-1 FUNCTION_USAGE view",
+      "bbox": {
+        "l": 0.0,
+        "t": 39.0,
+        "r": 100.0,
+        "b": 41.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "table",
+      "text": "",
+      "bbox": {
+        "l": 0.0,
+        "t": 42.0,
+        "r": 100.0,
+        "b": 55.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "Column name",
+            "Data type",
+            "Description"
+          ],
+          [
+            "FUNCTION_ID",
+            "VARCHAR(30)",
+            "ID of the function."
+          ],
+          [
+            "USER_NAME",
+            "VARCHAR(10)",
+            "Name of the user profile that has a usage setting for this function."
+          ],
+          [
+            "USAGE",
+            "VARCHAR(7)",
+            "Usage setting:\n► ALLOWED: The user profile is allowed to use the function.\n► DENIED: The user profile is not allowed to use the function."
+          ],
+          [
+            "USER_TYPE",
+            "VARCHAR(5)",
+            "Type of user profile:\n► USER: The user profile is a user.\n► GROUP: The user profile is a group."
+          ]
+        ],
+        "num_rows": 5,
+        "num_cols": 3
+      }
+    },
+    {
+      "label": "paragraph",
+      "text": "To discover who has authorization to define and manage RCAC, you can use the query that is shown in Example 2-1.",
+      "bbox": {
+        "l": 0.0,
+        "t": 56.0,
+        "r": 100.0,
+        "b": 59.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Example 2-1 Query to determine who has authority to define and manage RCAC",
+      "bbox": {
+        "l": 0.0,
+        "t": 60.0,
+        "r": 100.0,
+        "b": 62.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "code",
+      "text": "SELECT function_id,\n       user_name,\n       usage,\n       user_type\n  FROM function_usage\n WHERE function_id='QIBM_DB_SECADM'\n ORDER BY user_name;",
+      "bbox": {
+        "l": 0.0,
+        "t": 63.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "2.2 Separation of duties",
+      "bbox": {
+        "l": 0.0,
+        "t": 71.0,
+        "r": 100.0,
+        "b": 74.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Separation of duties helps businesses comply with industry regulations or organizational requirements and simplifies the management of authorities. Separation of duties is commonly used to prevent fraudulent activities or errors by a single person. It provides the ability for administrative functions to be divided across individuals without overlapping responsibilities, so that one user does not possess unlimited authority, such as with the *ALLOBJ authority.",
+      "bbox": {
+        "l": 0.0,
+        "t": 75.0,
+        "r": 100.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "10 Row and Column Access Control Support in IBM DB2 for i",
+      "bbox": {
+        "l": 0.0,
+        "t": 95.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

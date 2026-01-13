@@ -1,0 +1,2904 @@
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+================================================================================
+Expected Output Generation
+================================================================================
+PDFs: 452
+Workers: 4
+Dry run: False
+================================================================================
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_004.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1288.2 KB
+  Extracting text per page...
+    ✓ 39 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 39 pages rendered (metadata saved)
+    ✓ Manifest saved
+[30/452] arxiv_004.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_005.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 443.3 KB
+  Extracting text per page...
+    ✓ 5 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 5 pages rendered (metadata saved)
+    ✓ Manifest saved
+[31/452] arxiv_005.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_006.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 414.8 KB
+  Extracting text per page...
+    ✓ 7 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 7 pages rendered (metadata saved)
+    ✓ Manifest saved
+[32/452] arxiv_006.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_007.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 105.2 KB
+  Extracting text per page...
+    ✓ 5 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 5 pages rendered (metadata saved)
+    ✓ Manifest saved
+[33/452] arxiv_007.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_008.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2239.5 KB
+  Extracting text per page...
+    ✓ 8 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 8 pages rendered (metadata saved)
+    ✓ Manifest saved
+[34/452] arxiv_008.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_009.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1046.3 KB
+  Extracting text per page...
+    ✓ 5 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 5 pages rendered (metadata saved)
+    ✓ Manifest saved
+[35/452] arxiv_009.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_010.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 8853.0 KB
+  Extracting text per page...
+    ✓ 18 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 18 pages rendered (metadata saved)
+    ✓ Manifest saved
+[36/452] arxiv_010.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_011.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 312.0 KB
+  Extracting text per page...
+    ✓ 16 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 16 pages rendered (metadata saved)
+    ✓ Manifest saved
+[37/452] arxiv_011.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_012.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 439.7 KB
+  Extracting text per page...
+    ✓ 9 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 9 pages rendered (metadata saved)
+    ✓ Manifest saved
+[38/452] arxiv_012.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_014.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1051.0 KB
+  Extracting text per page...
+    ✓ 8 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 8 pages rendered (metadata saved)
+    ✓ Manifest saved
+[39/452] arxiv_014.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_015.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1123.5 KB
+  Extracting text per page...
+    ✓ 6 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 6 pages rendered (metadata saved)
+    ✓ Manifest saved
+[40/452] arxiv_015.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_016.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 3150.8 KB
+  Extracting text per page...
+    ✓ 12 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 12 pages rendered (metadata saved)
+    ✓ Manifest saved
+[41/452] arxiv_016.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_017.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 116.1 KB
+  Extracting text per page...
+    ✓ 6 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 6 pages rendered (metadata saved)
+    ✓ Manifest saved
+[42/452] arxiv_017.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_018.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 4900.1 KB
+  Extracting text per page...
+    ✓ 31 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 31 pages rendered (metadata saved)
+    ✓ Manifest saved
+[43/452] arxiv_018.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_019.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1004.6 KB
+  Extracting text per page...
+    ✓ 20 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 20 pages rendered (metadata saved)
+    ✓ Manifest saved
+[44/452] arxiv_019.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_020.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 488.4 KB
+  Extracting text per page...
+    ✓ 44 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 44 pages rendered (metadata saved)
+    ✓ Manifest saved
+[45/452] arxiv_020.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_021.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 656.5 KB
+  Extracting text per page...
+    ✓ 25 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 25 pages rendered (metadata saved)
+    ✓ Manifest saved
+[46/452] arxiv_021.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_022.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 979.7 KB
+  Extracting text per page...
+    ✓ 13 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 13 pages rendered (metadata saved)
+    ✓ Manifest saved
+[47/452] arxiv_022.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_023.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2253.7 KB
+  Extracting text per page...
+    ✓ 42 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 42 pages rendered (metadata saved)
+    ✓ Manifest saved
+[48/452] arxiv_023.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_024.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 351.5 KB
+  Extracting text per page...
+    ✓ 27 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 27 pages rendered (metadata saved)
+    ✓ Manifest saved
+[49/452] arxiv_024.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_025.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 972.1 KB
+  Extracting text per page...
+    ✓ 5 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 5 pages rendered (metadata saved)
+    ✓ Manifest saved
+[50/452] arxiv_025.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_026.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 721.7 KB
+  Extracting text per page...
+    ✓ 14 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 14 pages rendered (metadata saved)
+    ✓ Manifest saved
+[51/452] arxiv_026.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_027.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2402.4 KB
+  Extracting text per page...
+    ✓ 9 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 9 pages rendered (metadata saved)
+    ✓ Manifest saved
+[52/452] arxiv_027.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_028.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 473.0 KB
+  Extracting text per page...
+    ✓ 36 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 36 pages rendered (metadata saved)
+    ✓ Manifest saved
+[53/452] arxiv_028.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_029.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 186.9 KB
+  Extracting text per page...
+    ✓ 5 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 5 pages rendered (metadata saved)
+    ✓ Manifest saved
+[54/452] arxiv_029.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_030.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 10006.7 KB
+  Extracting text per page...
+    ✓ 7 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 7 pages rendered (metadata saved)
+    ✓ Manifest saved
+[55/452] arxiv_030.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_031.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2115.6 KB
+  Extracting text per page...
+    ✓ 9 pages extracted
+Process SpawnPoolWorker-4:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 9 pages rendered (metadata saved)
+    ✓ Manifest saved
+[56/452] arxiv_031.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_032.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 328.0 KB
+  Extracting text per page...
+    ✓ 18 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 18 pages rendered (metadata saved)
+    ✓ Manifest saved
+[57/452] arxiv_032.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_033.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 162.1 KB
+  Extracting text per page...
+    ✓ 10 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 10 pages rendered (metadata saved)
+    ✓ Manifest saved
+[58/452] arxiv_033.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-24_1124_E05556_Saint Marc Holdings CoLtd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 532.1 KB
+  Extracting text per page...
+    ✓ 112 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 112 pages rendered (metadata saved)
+    ✓ Manifest saved
+[88/452] edinet_2025-06-24_1124_E05556_Saint Marc Holdings CoLtd.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-24_1136_E01606_Not Registered in English.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 497.8 KB
+  Extracting text per page...
+    ✓ 85 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 85 pages rendered (metadata saved)
+    ✓ Manifest saved
+[89/452] edinet_2025-06-24_1136_E01606_Not Registered in English.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-24_1316_E33834_Shinwa Co Ltd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 742.1 KB
+  Extracting text per page...
+    ✓ 133 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 133 pages rendered (metadata saved)
+    ✓ Manifest saved
+[90/452] edinet_2025-06-24_1316_E33834_Shinwa Co Ltd.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-24_1318_E01920_Makita Corporation.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1220.3 KB
+  Extracting text per page...
+    ✓ 149 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 149 pages rendered (metadata saved)
+    ✓ Manifest saved
+[91/452] edinet_2025-06-24_1318_E01920_Makita Corporation.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-24_1548_E01914_Not Registered in English.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2443.4 KB
+  Extracting text per page...
+    ✓ 190 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 190 pages rendered (metadata saved)
+    ✓ Manifest saved
+[92/452] edinet_2025-06-24_1548_E01914_Not Registered in English.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-25_1027_E01750_DAIHEN CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 767.1 KB
+  Extracting text per page...
+    ✓ 131 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 131 pages rendered (metadata saved)
+    ✓ Manifest saved
+[93/452] edinet_2025-06-25_1027_E01750_DAIHEN CORPORATION.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-25_1357_E01684_SEIKO CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 521.9 KB
+  Extracting text per page...
+    ✓ 104 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 104 pages rendered (metadata saved)
+    ✓ Manifest saved
+[94/452] edinet_2025-06-25_1357_E01684_SEIKO CORPORATION.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-25_1433_E01754_KAWADEN CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 757.3 KB
+  Extracting text per page...
+    ✓ 79 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 79 pages rendered (metadata saved)
+    ✓ Manifest saved
+[95/452] edinet_2025-06-25_1433_E01754_KAWADEN CORPORATION.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-25_1507_E01402_SUNCALL CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1210.6 KB
+  Extracting text per page...
+    ✓ 113 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 113 pages rendered (metadata saved)
+    ✓ Manifest saved
+[96/452] edinet_2025-06-25_1507_E01402_SUNCALL CORPORATION.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-25_1513_E01172_Not Registered in English.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 667.7 KB
+  Extracting text per page...
+    ✓ 104 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 104 pages rendered (metadata saved)
+    ✓ Manifest saved
+[97/452] edinet_2025-06-25_1513_E01172_Not Registered in English.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-25_1557_E05670_HIKARI HEIGHTS-VARUS COLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 403.4 KB
+  Extracting text per page...
+    ✓ 68 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 68 pages rendered (metadata saved)
+    ✓ Manifest saved
+[98/452] edinet_2025-06-25_1557_E05670_HIKARI HEIGHTS-VARUS COLTD.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-25_1608_E02628_KIMURATAN CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 552.7 KB
+  Extracting text per page...
+    ✓ 103 pages extracted
+  Generating JSONL for page 0...
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0100pages_7FKQLKX273JBHXAAW5XDRT27JGMIZMCI.pdf]
+  Category: benchmark
+  Pages: 100
+  Size: 908.9 KB
+  Extracting text per page...
+    ✓ 100 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 100 pages rendered (metadata saved)
+    ✓ Manifest saved
+[1/452] 0100pages_7FKQLKX273JBHXAAW5XDRT27JGMIZMCI.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0106pages_IYAFRX3M262EGRMQJHT7MCODUP5ZGYRW.pdf]
+  Category: benchmark
+  Pages: 106
+  Size: 26043.4 KB
+  Extracting text per page...
+    ✓ 105 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 105 pages rendered (metadata saved)
+    ✓ Manifest saved
+[2/452] 0106pages_IYAFRX3M262EGRMQJHT7MCODUP5ZGYRW.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0109pages_NRCGAGBLTXTXEKXNLQ4L4NFA6ZQPCWE5.pdf]
+  Category: benchmark
+  Pages: 109
+  Size: 7090.6 KB
+  Extracting text per page...
+    ✓ 109 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 109 pages rendered (metadata saved)
+    ✓ Manifest saved
+[3/452] 0109pages_NRCGAGBLTXTXEKXNLQ4L4NFA6ZQPCWE5.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0124pages_HXTX4CFAYHW5LKUFDCEHIITIMEYCJ7MW.pdf]
+  Category: benchmark
+  Pages: 124
+  Size: 12268.4 KB
+  Extracting text per page...
+    ✓ 123 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 123 pages rendered (metadata saved)
+    ✓ Manifest saved
+[4/452] 0124pages_HXTX4CFAYHW5LKUFDCEHIITIMEYCJ7MW.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0130pages_ZJJJ6P4UAGH7LKLACPT5P437FB5F3MYF.pdf]
+  Category: benchmark
+  Pages: 130
+  Size: 959.8 KB
+  Extracting text per page...
+    ✓ 128 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 128 pages rendered (metadata saved)
+    ✓ Manifest saved
+[5/452] 0130pages_ZJJJ6P4UAGH7LKLACPT5P437FB5F3MYF.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0134pages_LYZMN7YTFC6ULBL6TP4WQQRK356GB36T.pdf]
+  Category: benchmark
+  Pages: 134
+  Size: 12547.3 KB
+  Extracting text per page...
+    ✓ 104 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 104 pages rendered (metadata saved)
+    ✓ Manifest saved
+[6/452] 0134pages_LYZMN7YTFC6ULBL6TP4WQQRK356GB36T.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0150pages_44LQBJ56XNS2C6VVWKOP2YUNKCODKTEA.pdf]
+  Category: benchmark
+  Pages: 150
+  Size: 11887.2 KB
+  Extracting text per page...
+    ✓ 150 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 150 pages rendered (metadata saved)
+    ✓ Manifest saved
+[7/452] 0150pages_44LQBJ56XNS2C6VVWKOP2YUNKCODKTEA.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0159pages_5XPIPZJEUIFPFOXGLU26NFQSU4GSJMF3.pdf]
+  Category: benchmark
+  Pages: 159
+  Size: 38430.0 KB
+  Extracting text per page...
+    ✓ 157 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 157 pages rendered (metadata saved)
+    ✓ Manifest saved
+[8/452] 0159pages_5XPIPZJEUIFPFOXGLU26NFQSU4GSJMF3.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0169pages_CLEQSRWNHVWUAHLTNGPYHMYOWEC4JR6S.pdf]
+  Category: benchmark
+  Pages: 169
+  Size: 7410.0 KB
+  Extracting text per page...
+    ✓ 169 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 169 pages rendered (metadata saved)
+    ✓ Manifest saved
+[9/452] 0169pages_CLEQSRWNHVWUAHLTNGPYHMYOWEC4JR6S.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0171pages_USTMTDJBOQ327J2XVWE76TPUOKIBJ4S5.pdf]
+  Category: benchmark
+  Pages: 171
+  Size: 9137.3 KB
+  Extracting text per page...
+    ✓ 167 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 167 pages rendered (metadata saved)
+    ✓ Manifest saved
+[10/452] 0171pages_USTMTDJBOQ327J2XVWE76TPUOKIBJ4S5.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0172pages_DNJIAKOPLDZDQCXT2PDA6V6DGL2MQL2H.pdf]
+  Category: benchmark
+  Pages: 172
+  Size: 2172.6 KB
+  Extracting text per page...
+    ✓ 172 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 172 pages rendered (metadata saved)
+    ✓ Manifest saved
+[11/452] 0172pages_DNJIAKOPLDZDQCXT2PDA6V6DGL2MQL2H.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0192pages_C46Z2Q4AMEZJVTRV2XO434YLMVHCB46O.pdf]
+  Category: benchmark
+  Pages: 192
+  Size: 27292.7 KB
+  Extracting text per page...
+    ✓ 192 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 192 pages rendered (metadata saved)
+    ✓ Manifest saved
+[12/452] 0192pages_C46Z2Q4AMEZJVTRV2XO434YLMVHCB46O.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_034.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 550.0 KB
+  Extracting text per page...
+    ✓ 30 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 30 pages rendered (metadata saved)
+    ✓ Manifest saved
+[59/452] arxiv_034.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_035.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 358.4 KB
+  Extracting text per page...
+    ✓ 23 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 23 pages rendered (metadata saved)
+    ✓ Manifest saved
+[60/452] arxiv_035.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_036.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 364.4 KB
+  Extracting text per page...
+    ✓ 4 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 4 pages rendered (metadata saved)
+    ✓ Manifest saved
+[61/452] arxiv_036.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_037.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 714.2 KB
+  Extracting text per page...
+    ✓ 11 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 11 pages rendered (metadata saved)
+    ✓ Manifest saved
+[62/452] arxiv_037.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_038.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 9334.3 KB
+  Extracting text per page...
+    ✓ 15 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 15 pages rendered (metadata saved)
+    ✓ Manifest saved
+[63/452] arxiv_038.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_039.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 190.6 KB
+  Extracting text per page...
+    ✓ 4 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 4 pages rendered (metadata saved)
+    ✓ Manifest saved
+[64/452] arxiv_039.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_040.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 120.5 KB
+  Extracting text per page...
+    ✓ 7 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 7 pages rendered (metadata saved)
+    ✓ Manifest saved
+[65/452] arxiv_040.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_001_931p.pdf]
+  Category: benchmark
+  Pages: 931
+  Size: 100829.8 KB
+  Extracting text per page...
+    ✓ 729 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 729 pages rendered (metadata saved)
+    ✓ Manifest saved
+[66/452] cc_001_931p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_002_522p.pdf]
+  Category: benchmark
+  Pages: 522
+  Size: 61356.8 KB
+  Extracting text per page...
+    ✓ 494 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 494 pages rendered (metadata saved)
+    ✓ Manifest saved
+[67/452] cc_002_522p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_003_162p.pdf]
+  Category: benchmark
+  Pages: 162
+  Size: 58262.6 KB
+  Extracting text per page...
+    ✓ 162 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 162 pages rendered (metadata saved)
+    ✓ Manifest saved
+[68/452] cc_003_162p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_004_291p.pdf]
+  Category: benchmark
+  Pages: 291
+  Size: 56530.1 KB
+  Extracting text per page...
+    ✓ 222 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 222 pages rendered (metadata saved)
+    ✓ Manifest saved
+[69/452] cc_004_291p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_005_172p.pdf]
+  Category: benchmark
+  Pages: 172
+  Size: 48042.0 KB
+  Extracting text per page...
+    ✓ 0 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 0 pages rendered (metadata saved)
+    ✓ Manifest saved
+[70/452] cc_005_172p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_006_254p.pdf]
+  Category: benchmark
+  Pages: 254
+  Size: 47733.0 KB
+  Extracting text per page...
+    ✓ 254 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 254 pages rendered (metadata saved)
+    ✓ Manifest saved
+[71/452] cc_006_254p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 103 pages rendered (metadata saved)
+    ✓ Manifest saved
+[99/452] edinet_2025-06-25_1608_E02628_KIMURATAN CORPORATION.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-25_1634_E03116_AOKI Holdings Inc.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 753.0 KB
+  Extracting text per page...
+    ✓ 101 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 101 pages rendered (metadata saved)
+    ✓ Manifest saved
+[100/452] edinet_2025-06-25_1634_E03116_AOKI Holdings Inc.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-26_0909_E00982_LTT Bio-Pharma Co Ltd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 2411.3 KB
+  Extracting text per page...
+    ✓ 93 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 93 pages rendered (metadata saved)
+    ✓ Manifest saved
+[101/452] edinet_2025-06-26_0909_E00982_LTT Bio-Pharma Co Ltd.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-26_0914_E01057_SOFT99corporation.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 720.3 KB
+  Extracting text per page...
+    ✓ 125 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 125 pages rendered (metadata saved)
+    ✓ Manifest saved
+[102/452] edinet_2025-06-26_0914_E01057_SOFT99corporation.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-26_1029_E02363_Not Registered in English.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 999.2 KB
+  Extracting text per page...
+    ✓ 124 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 124 pages rendered (metadata saved)
+    ✓ Manifest saved
+[103/452] edinet_2025-06-26_1029_E02363_Not Registered in English.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-26_1345_E01202_Yoshicon CoLtd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 536.7 KB
+  Extracting text per page...
+    ✓ 92 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 92 pages rendered (metadata saved)
+    ✓ Manifest saved
+[104/452] edinet_2025-06-26_1345_E01202_Yoshicon CoLtd.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-26_1432_E35562_NexTone Inc.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 809.8 KB
+  Extracting text per page...
+    ✓ 114 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 114 pages rendered (metadata saved)
+    ✓ Manifest saved
+[105/452] edinet_2025-06-26_1432_E35562_NexTone Inc.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-26_1500_E01974_NKK SWITCHESCOLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 458.5 KB
+  Extracting text per page...
+    ✓ 93 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 93 pages rendered (metadata saved)
+    ✓ Manifest saved
+[106/452] edinet_2025-06-26_1500_E01974_NKK SWITCHESCOLTD.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-26_1530_E04503_Hokuriku Electric Power Compan.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1124.1 KB
+  Extracting text per page...
+    ✓ 134 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 134 pages rendered (metadata saved)
+    ✓ Manifest saved
+[107/452] edinet_2025-06-26_1530_E04503_Hokuriku Electric Power Compan.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-26_1544_E05657_HIP CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 355.6 KB
+  Extracting text per page...
+    ✓ 64 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 64 pages rendered (metadata saved)
+    ✓ Manifest saved
+[108/452] edinet_2025-06-26_1544_E05657_HIP CORPORATION.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-26_1610_E27506_JSS CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 439.8 KB
+  Extracting text per page...
+    ✓ 94 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 94 pages rendered (metadata saved)
+    ✓ Manifest saved
+[109/452] edinet_2025-06-26_1610_E27506_JSS CORPORATION.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-26_1621_E00777_NIPPON CARBIDE INDUSTRIES COIN.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1090.4 KB
+  Extracting text per page...
+    ✓ 124 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 124 pages rendered (metadata saved)
+    ✓ Manifest saved
+[110/452] edinet_2025-06-26_1621_E00777_NIPPON CARBIDE INDUSTRIES COIN.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+Process SpawnPoolWorker-2:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+[edinet_2025-06-26_1713_E00771_OSAKA SODA COLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 818.3 KB
+  Extracting text per page...
+    ✓ 129 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 129 pages rendered (metadata saved)
+    ✓ Manifest saved
+[111/452] edinet_2025-06-26_1713_E00771_OSAKA SODA COLTD.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-27_1005_E02554_HANWA COLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 916.1 KB
+  Extracting text per page...
+    ✓ 147 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 147 pages rendered (metadata saved)
+    ✓ Manifest saved
+[112/452] edinet_2025-06-27_1005_E02554_HANWA COLTD.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-27_1051_E01956_KONAMI GROUP CORPORATION.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 768.5 KB
+  Extracting text per page...
+    ✓ 133 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 133 pages rendered (metadata saved)
+    ✓ Manifest saved
+[113/452] edinet_2025-06-27_1051_E01956_KONAMI GROUP CORPORATION.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-27_1235_E03346_PLATHOME COLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 324.8 KB
+  Extracting text per page...
+    ✓ 64 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 64 pages rendered (metadata saved)
+    ✓ Manifest saved
+[114/452] edinet_2025-06-27_1235_E03346_PLATHOME COLTD.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-27_1249_E23224_Not Registered in English.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 450.4 KB
+  Extracting text per page...
+    ✓ 98 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 98 pages rendered (metadata saved)
+    ✓ Manifest saved
+[115/452] edinet_2025-06-27_1249_E23224_Not Registered in English.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-27_1330_E02927_TAKACHIHO KOHEKI COLTD.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1143.5 KB
+  Extracting text per page...
+    ✓ 111 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 111 pages rendered (metadata saved)
+    ✓ Manifest saved
+[116/452] edinet_2025-06-27_1330_E02927_TAKACHIHO KOHEKI COLTD.pdf: ✓
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_007_101p.pdf]
+  Category: benchmark
+  Pages: 101
+  Size: 47024.0 KB
+  Extracting text per page...
+    ✓ 101 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 101 pages rendered (metadata saved)
+    ✓ Manifest saved
+[72/452] cc_007_101p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_008_116p.pdf]
+  Category: benchmark
+  Pages: 116
+  Size: 46213.2 KB
+  Extracting text per page...
+    ✓ 113 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 113 pages rendered (metadata saved)
+    ✓ Manifest saved
+[73/452] cc_008_116p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_009_188p.pdf]
+  Category: benchmark
+  Pages: 188
+  Size: 45844.4 KB
+  Extracting text per page...
+    ✓ 186 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 186 pages rendered (metadata saved)
+    ✓ Manifest saved
+[74/452] cc_009_188p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_010_206p.pdf]
+  Category: benchmark
+  Pages: 206
+  Size: 44566.2 KB
+  Extracting text per page...
+    ✓ 206 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 206 pages rendered (metadata saved)
+    ✓ Manifest saved
+[75/452] cc_010_206p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_011_222p.pdf]
+  Category: benchmark
+  Pages: 222
+  Size: 43905.5 KB
+  Extracting text per page...
+    ✓ 186 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 186 pages rendered (metadata saved)
+    ✓ Manifest saved
+[76/452] cc_011_222p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_012_244p.pdf]
+  Category: benchmark
+  Pages: 244
+  Size: 42560.2 KB
+  Extracting text per page...
+    ✓ 228 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 228 pages rendered (metadata saved)
+    ✓ Manifest saved
+[77/452] cc_012_244p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_013_122p.pdf]
+  Category: benchmark
+  Pages: 122
+  Size: 40926.4 KB
+  Extracting text per page...
+    ✓ 55 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 55 pages rendered (metadata saved)
+    ✓ Manifest saved
+[78/452] cc_013_122p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_014_176p.pdf]
+  Category: benchmark
+  Pages: 176
+  Size: 39081.6 KB
+  Extracting text per page...
+    ✓ 176 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 176 pages rendered (metadata saved)
+    ✓ Manifest saved
+[79/452] cc_014_176p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_015_101p.pdf]
+  Category: benchmark
+  Pages: 101
+  Size: 38919.4 KB
+  Extracting text per page...
+    ✓ 101 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 101 pages rendered (metadata saved)
+    ✓ Manifest saved
+[80/452] cc_015_101p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_016_159p.pdf]
+  Category: benchmark
+  Pages: 159
+  Size: 38430.0 KB
+  Extracting text per page...
+    ✓ 157 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 157 pages rendered (metadata saved)
+    ✓ Manifest saved
+[81/452] cc_016_159p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_017_145p.pdf]
+  Category: benchmark
+  Pages: 145
+  Size: 37843.1 KB
+  Extracting text per page...
+    ✓ 1 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1 pages rendered (metadata saved)
+    ✓ Manifest saved
+[82/452] cc_017_145p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_018_167p.pdf]
+  Category: benchmark
+  Pages: 167
+  Size: 36400.5 KB
+  Extracting text per page...
+    ✓ 162 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 162 pages rendered (metadata saved)
+    ✓ Manifest saved
+[83/452] cc_018_167p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_019_198p.pdf]
+  Category: benchmark
+  Pages: 198
+  Size: 34378.4 KB
+  Extracting text per page...
+    ✓ 198 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 198 pages rendered (metadata saved)
+    ✓ Manifest saved
+[84/452] cc_019_198p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_020_103p.pdf]
+  Category: benchmark
+  Pages: 103
+  Size: 34292.5 KB
+Process SpawnPoolWorker-3:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+  Extracting text per page...
+    ✓ 100 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 100 pages rendered (metadata saved)
+    ✓ Manifest saved
+[85/452] cc_020_103p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-23_1701_E04341_Konoike Transport CoLtd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1002.6 KB
+  Extracting text per page...
+    ✓ 152 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 152 pages rendered (metadata saved)
+    ✓ Manifest saved
+[86/452] edinet_2025-06-23_1701_E04341_Konoike Transport CoLtd.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-24_0930_E03557_The Chiba Kogyo Bank Ltd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1835.7 KB
+  Extracting text per page...
+    ✓ 187 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 187 pages rendered (metadata saved)
+    ✓ Manifest saved
+[87/452] edinet_2025-06-24_0930_E03557_The Chiba Kogyo Bank Ltd.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0192pages_ULFRJCOWYIDOOTY7KWUPC6NU7UTTCLSO.pdf]
+  Category: benchmark
+  Pages: 192
+  Size: 4266.1 KB
+  Extracting text per page...
+    ✓ 184 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 184 pages rendered (metadata saved)
+    ✓ Manifest saved
+[13/452] 0192pages_ULFRJCOWYIDOOTY7KWUPC6NU7UTTCLSO.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0193pages_CADINJMTO23ZTKPBNZ6TUOQT4BFPZC2C.pdf]
+  Category: benchmark
+  Pages: 193
+  Size: 9428.0 KB
+  Extracting text per page...
+    ✓ 192 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 192 pages rendered (metadata saved)
+    ✓ Manifest saved
+[14/452] 0193pages_CADINJMTO23ZTKPBNZ6TUOQT4BFPZC2C.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0201pages_RYDFB4ZZNNBE6LLDSY4CFGWQQ7U3KSAA.pdf]
+  Category: benchmark
+  Pages: 201
+  Size: 10407.2 KB
+  Extracting text per page...
+    ✓ 200 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 200 pages rendered (metadata saved)
+    ✓ Manifest saved
+[15/452] 0201pages_RYDFB4ZZNNBE6LLDSY4CFGWQQ7U3KSAA.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0214pages_BZK65P6W74FNMD4O3A24LH3F2XLFH7V2.pdf]
+  Category: benchmark
+  Pages: 214
+  Size: 1969.0 KB
+  Extracting text per page...
+    ✓ 214 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 214 pages rendered (metadata saved)
+    ✓ Manifest saved
+[16/452] 0214pages_BZK65P6W74FNMD4O3A24LH3F2XLFH7V2.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0215pages_UAU4SPHOQHADJRFKILFDYETBGB6HXYU2.pdf]
+  Category: benchmark
+  Pages: 215
+  Size: 4871.6 KB
+  Extracting text per page...
+    ✓ 213 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 213 pages rendered (metadata saved)
+    ✓ Manifest saved
+[17/452] 0215pages_UAU4SPHOQHADJRFKILFDYETBGB6HXYU2.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0255pages_OKRV2XLZ2UGGRCBKHS3I5DA5TNLNVHWC.pdf]
+  Category: benchmark
+  Pages: 255
+  Size: 6893.4 KB
+  Extracting text per page...
+    ✓ 253 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 253 pages rendered (metadata saved)
+    ✓ Manifest saved
+[18/452] 0255pages_OKRV2XLZ2UGGRCBKHS3I5DA5TNLNVHWC.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0277pages_YCOBKTA46F7XEOWT4LS3BCPGDOMQSBWF.pdf]
+  Category: benchmark
+  Pages: 277
+  Size: 6543.9 KB
+  Extracting text per page...
+    ✓ 275 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 275 pages rendered (metadata saved)
+    ✓ Manifest saved
+[19/452] 0277pages_YCOBKTA46F7XEOWT4LS3BCPGDOMQSBWF.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0291pages_RGLWPWLY4JE6RPNCCHQ3LQWDFLPBGHXQ.pdf]
+  Category: benchmark
+  Pages: 291
+  Size: 56530.1 KB
+  Extracting text per page...
+    ✓ 222 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 222 pages rendered (metadata saved)
+    ✓ Manifest saved
+[20/452] 0291pages_RGLWPWLY4JE6RPNCCHQ3LQWDFLPBGHXQ.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0309pages_7LD3RVJDZGTXF53CDLCI67YPWZQ5POOA.pdf]
+  Category: benchmark
+  Pages: 309
+  Size: 10732.1 KB
+  Extracting text per page...
+    ✓ 309 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 309 pages rendered (metadata saved)
+    ✓ Manifest saved
+[21/452] 0309pages_7LD3RVJDZGTXF53CDLCI67YPWZQ5POOA.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0313pages_7DLRSEXVIADBZZUN4IJIACW5T23YBH7H.pdf]
+  Category: benchmark
+  Pages: 313
+  Size: 34227.8 KB
+  Extracting text per page...
+    ✓ 304 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 304 pages rendered (metadata saved)
+    ✓ Manifest saved
+[22/452] 0313pages_7DLRSEXVIADBZZUN4IJIACW5T23YBH7H.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0496pages_E3474JUEVRWQ3P2J2I3XBFKMMVZLLKWZ.pdf]
+  Category: benchmark
+  Pages: 496
+  Size: 3260.7 KB
+  Extracting text per page...
+    ✓ 495 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 495 pages rendered (metadata saved)
+    ✓ Manifest saved
+[23/452] 0496pages_E3474JUEVRWQ3P2J2I3XBFKMMVZLLKWZ.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0569pages_QXQ2QSHOPBTSXLDGKKM4TYMR4R7QODHB.pdf]
+  Category: benchmark
+  Pages: 569
+  Size: 13192.0 KB
+  Extracting text per page...
+    ✓ 569 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 569 pages rendered (metadata saved)
+    ✓ Manifest saved
+[24/452] 0569pages_QXQ2QSHOPBTSXLDGKKM4TYMR4R7QODHB.pdf: ✓
+Process SpawnPoolWorker-1:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0821pages_LUNFJFH4KWZ3ZFNRO43WSMZPLM4OLB7C.pdf]
+  Category: benchmark
+  Pages: 821
+  Size: 1363.1 KB
+  Extracting text per page...
+    ✓ 821 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 821 pages rendered (metadata saved)
+    ✓ Manifest saved
+[25/452] 0821pages_LUNFJFH4KWZ3ZFNRO43WSMZPLM4OLB7C.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[1931pages_7ZNNFJGHOEFFP6I4OARCZGH3GPPDNDXC.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 10701.9 KB
+  Extracting text per page...
+    ✓ 1931 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1931 pages rendered (metadata saved)
+    ✓ Manifest saved
+[26/452] 1931pages_7ZNNFJGHOEFFP6I4OARCZGH3GPPDNDXC.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_001.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1014.2 KB
+  Extracting text per page...
+    ✓ 25 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 25 pages rendered (metadata saved)
+    ✓ Manifest saved
+[27/452] arxiv_001.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_002.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1500.4 KB
+  Extracting text per page...
+    ✓ 13 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 13 pages rendered (metadata saved)
+    ✓ Manifest saved
+[28/452] arxiv_002.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_003.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1778.5 KB
+  Extracting text per page...
+    ✓ 52 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 52 pages rendered (metadata saved)
+    ✓ Manifest saved
+[29/452] arxiv_003.pdf: ✓
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ cc_017_145p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_018_167p.pdf]
+  Category: benchmark
+  Pages: 167
+  Size: 36400.5 KB
+  Extracting text per page...
+    ✓ 162 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 162 pages rendered (metadata saved)
+    ✓ Manifest saved
+[83/452] cc_018_167p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_019_198p.pdf]
+  Category: benchmark
+  Pages: 198
+  Size: 34378.4 KB
+  Extracting text per page...
+    ✓ 198 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 198 pages rendered (metadata saved)
+    ✓ Manifest saved
+[84/452] cc_019_198p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[cc_020_103p.pdf]
+  Category: benchmark
+  Pages: 103
+  Size: 34292.5 KB
+Process SpawnPoolWorker-3:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+  Extracting text per page...
+    ✓ 100 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 100 pages rendered (metadata saved)
+    ✓ Manifest saved
+[85/452] cc_020_103p.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-23_1701_E04341_Konoike Transport CoLtd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1002.6 KB
+  Extracting text per page...
+    ✓ 152 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 152 pages rendered (metadata saved)
+    ✓ Manifest saved
+[86/452] edinet_2025-06-23_1701_E04341_Konoike Transport CoLtd.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[edinet_2025-06-24_0930_E03557_The Chiba Kogyo Bank Ltd.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1835.7 KB
+  Extracting text per page...
+    ✓ 187 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 187 pages rendered (metadata saved)
+    ✓ Manifest saved
+[87/452] edinet_2025-06-24_0930_E03557_The Chiba Kogyo Bank Ltd.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0192pages_ULFRJCOWYIDOOTY7KWUPC6NU7UTTCLSO.pdf]
+  Category: benchmark
+  Pages: 192
+  Size: 4266.1 KB
+  Extracting text per page...
+    ✓ 184 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 184 pages rendered (metadata saved)
+    ✓ Manifest saved
+[13/452] 0192pages_ULFRJCOWYIDOOTY7KWUPC6NU7UTTCLSO.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0193pages_CADINJMTO23ZTKPBNZ6TUOQT4BFPZC2C.pdf]
+  Category: benchmark
+  Pages: 193
+  Size: 9428.0 KB
+  Extracting text per page...
+    ✓ 192 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 192 pages rendered (metadata saved)
+    ✓ Manifest saved
+[14/452] 0193pages_CADINJMTO23ZTKPBNZ6TUOQT4BFPZC2C.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0201pages_RYDFB4ZZNNBE6LLDSY4CFGWQQ7U3KSAA.pdf]
+  Category: benchmark
+  Pages: 201
+  Size: 10407.2 KB
+  Extracting text per page...
+    ✓ 200 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 200 pages rendered (metadata saved)
+    ✓ Manifest saved
+[15/452] 0201pages_RYDFB4ZZNNBE6LLDSY4CFGWQQ7U3KSAA.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0214pages_BZK65P6W74FNMD4O3A24LH3F2XLFH7V2.pdf]
+  Category: benchmark
+  Pages: 214
+  Size: 1969.0 KB
+  Extracting text per page...
+    ✓ 214 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 214 pages rendered (metadata saved)
+    ✓ Manifest saved
+[16/452] 0214pages_BZK65P6W74FNMD4O3A24LH3F2XLFH7V2.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0215pages_UAU4SPHOQHADJRFKILFDYETBGB6HXYU2.pdf]
+  Category: benchmark
+  Pages: 215
+  Size: 4871.6 KB
+  Extracting text per page...
+    ✓ 213 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 213 pages rendered (metadata saved)
+    ✓ Manifest saved
+[17/452] 0215pages_UAU4SPHOQHADJRFKILFDYETBGB6HXYU2.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0255pages_OKRV2XLZ2UGGRCBKHS3I5DA5TNLNVHWC.pdf]
+  Category: benchmark
+  Pages: 255
+  Size: 6893.4 KB
+  Extracting text per page...
+    ✓ 253 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 253 pages rendered (metadata saved)
+    ✓ Manifest saved
+[18/452] 0255pages_OKRV2XLZ2UGGRCBKHS3I5DA5TNLNVHWC.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0277pages_YCOBKTA46F7XEOWT4LS3BCPGDOMQSBWF.pdf]
+  Category: benchmark
+  Pages: 277
+  Size: 6543.9 KB
+  Extracting text per page...
+    ✓ 275 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 275 pages rendered (metadata saved)
+    ✓ Manifest saved
+[19/452] 0277pages_YCOBKTA46F7XEOWT4LS3BCPGDOMQSBWF.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0291pages_RGLWPWLY4JE6RPNCCHQ3LQWDFLPBGHXQ.pdf]
+  Category: benchmark
+  Pages: 291
+  Size: 56530.1 KB
+  Extracting text per page...
+    ✓ 222 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 222 pages rendered (metadata saved)
+    ✓ Manifest saved
+[20/452] 0291pages_RGLWPWLY4JE6RPNCCHQ3LQWDFLPBGHXQ.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0309pages_7LD3RVJDZGTXF53CDLCI67YPWZQ5POOA.pdf]
+  Category: benchmark
+  Pages: 309
+  Size: 10732.1 KB
+  Extracting text per page...
+    ✓ 309 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 309 pages rendered (metadata saved)
+    ✓ Manifest saved
+[21/452] 0309pages_7LD3RVJDZGTXF53CDLCI67YPWZQ5POOA.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0313pages_7DLRSEXVIADBZZUN4IJIACW5T23YBH7H.pdf]
+  Category: benchmark
+  Pages: 313
+  Size: 34227.8 KB
+  Extracting text per page...
+    ✓ 304 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 304 pages rendered (metadata saved)
+    ✓ Manifest saved
+[22/452] 0313pages_7DLRSEXVIADBZZUN4IJIACW5T23YBH7H.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0496pages_E3474JUEVRWQ3P2J2I3XBFKMMVZLLKWZ.pdf]
+  Category: benchmark
+  Pages: 496
+  Size: 3260.7 KB
+  Extracting text per page...
+    ✓ 495 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 495 pages rendered (metadata saved)
+    ✓ Manifest saved
+[23/452] 0496pages_E3474JUEVRWQ3P2J2I3XBFKMMVZLLKWZ.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0569pages_QXQ2QSHOPBTSXLDGKKM4TYMR4R7QODHB.pdf]
+  Category: benchmark
+  Pages: 569
+  Size: 13192.0 KB
+  Extracting text per page...
+    ✓ 569 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 569 pages rendered (metadata saved)
+    ✓ Manifest saved
+[24/452] 0569pages_QXQ2QSHOPBTSXLDGKKM4TYMR4R7QODHB.pdf: ✓
+Process SpawnPoolWorker-1:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0821pages_LUNFJFH4KWZ3ZFNRO43WSMZPLM4OLB7C.pdf]
+  Category: benchmark
+  Pages: 821
+  Size: 1363.1 KB
+  Extracting text per page...
+    ✓ 821 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 821 pages rendered (metadata saved)
+    ✓ Manifest saved
+[25/452] 0821pages_LUNFJFH4KWZ3ZFNRO43WSMZPLM4OLB7C.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[1931pages_7ZNNFJGHOEFFP6I4OARCZGH3GPPDNDXC.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 10701.9 KB
+  Extracting text per page...
+    ✓ 1931 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1931 pages rendered (metadata saved)
+    ✓ Manifest saved
+[26/452] 1931pages_7ZNNFJGHOEFFP6I4OARCZGH3GPPDNDXC.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_001.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1014.2 KB
+  Extracting text per page...
+    ✓ 25 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 25 pages rendered (metadata saved)
+    ✓ Manifest saved
+[27/452] arxiv_001.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_002.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1500.4 KB
+  Extracting text per page...
+    ✓ 13 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 13 pages rendered (metadata saved)
+    ✓ Manifest saved
+[28/452] arxiv_002.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_003.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1778.5 KB
+  Extracting text per page...
+    ✓ 52 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 52 pages rendered (metadata saved)
+    ✓ Manifest saved
+[29/452] arxiv_003.pdf: ✓
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+es
+
+[0192pages_ULFRJCOWYIDOOTY7KWUPC6NU7UTTCLSO.pdf]
+  Category: benchmark
+  Pages: 192
+  Size: 4266.1 KB
+  Extracting text per page...
+    ✓ 184 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 184 pages rendered (metadata saved)
+    ✓ Manifest saved
+[13/452] 0192pages_ULFRJCOWYIDOOTY7KWUPC6NU7UTTCLSO.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0193pages_CADINJMTO23ZTKPBNZ6TUOQT4BFPZC2C.pdf]
+  Category: benchmark
+  Pages: 193
+  Size: 9428.0 KB
+  Extracting text per page...
+    ✓ 192 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 192 pages rendered (metadata saved)
+    ✓ Manifest saved
+[14/452] 0193pages_CADINJMTO23ZTKPBNZ6TUOQT4BFPZC2C.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0201pages_RYDFB4ZZNNBE6LLDSY4CFGWQQ7U3KSAA.pdf]
+  Category: benchmark
+  Pages: 201
+  Size: 10407.2 KB
+  Extracting text per page...
+    ✓ 200 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 200 pages rendered (metadata saved)
+    ✓ Manifest saved
+[15/452] 0201pages_RYDFB4ZZNNBE6LLDSY4CFGWQQ7U3KSAA.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0214pages_BZK65P6W74FNMD4O3A24LH3F2XLFH7V2.pdf]
+  Category: benchmark
+  Pages: 214
+  Size: 1969.0 KB
+  Extracting text per page...
+    ✓ 214 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 214 pages rendered (metadata saved)
+    ✓ Manifest saved
+[16/452] 0214pages_BZK65P6W74FNMD4O3A24LH3F2XLFH7V2.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0215pages_UAU4SPHOQHADJRFKILFDYETBGB6HXYU2.pdf]
+  Category: benchmark
+  Pages: 215
+  Size: 4871.6 KB
+  Extracting text per page...
+    ✓ 213 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 213 pages rendered (metadata saved)
+    ✓ Manifest saved
+[17/452] 0215pages_UAU4SPHOQHADJRFKILFDYETBGB6HXYU2.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0255pages_OKRV2XLZ2UGGRCBKHS3I5DA5TNLNVHWC.pdf]
+  Category: benchmark
+  Pages: 255
+  Size: 6893.4 KB
+  Extracting text per page...
+    ✓ 253 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 253 pages rendered (metadata saved)
+    ✓ Manifest saved
+[18/452] 0255pages_OKRV2XLZ2UGGRCBKHS3I5DA5TNLNVHWC.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0277pages_YCOBKTA46F7XEOWT4LS3BCPGDOMQSBWF.pdf]
+  Category: benchmark
+  Pages: 277
+  Size: 6543.9 KB
+  Extracting text per page...
+    ✓ 275 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 275 pages rendered (metadata saved)
+    ✓ Manifest saved
+[19/452] 0277pages_YCOBKTA46F7XEOWT4LS3BCPGDOMQSBWF.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0291pages_RGLWPWLY4JE6RPNCCHQ3LQWDFLPBGHXQ.pdf]
+  Category: benchmark
+  Pages: 291
+  Size: 56530.1 KB
+  Extracting text per page...
+    ✓ 222 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 222 pages rendered (metadata saved)
+    ✓ Manifest saved
+[20/452] 0291pages_RGLWPWLY4JE6RPNCCHQ3LQWDFLPBGHXQ.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0309pages_7LD3RVJDZGTXF53CDLCI67YPWZQ5POOA.pdf]
+  Category: benchmark
+  Pages: 309
+  Size: 10732.1 KB
+  Extracting text per page...
+    ✓ 309 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 309 pages rendered (metadata saved)
+    ✓ Manifest saved
+[21/452] 0309pages_7LD3RVJDZGTXF53CDLCI67YPWZQ5POOA.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0313pages_7DLRSEXVIADBZZUN4IJIACW5T23YBH7H.pdf]
+  Category: benchmark
+  Pages: 313
+  Size: 34227.8 KB
+  Extracting text per page...
+    ✓ 304 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 304 pages rendered (metadata saved)
+    ✓ Manifest saved
+[22/452] 0313pages_7DLRSEXVIADBZZUN4IJIACW5T23YBH7H.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0496pages_E3474JUEVRWQ3P2J2I3XBFKMMVZLLKWZ.pdf]
+  Category: benchmark
+  Pages: 496
+  Size: 3260.7 KB
+  Extracting text per page...
+    ✓ 495 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 495 pages rendered (metadata saved)
+    ✓ Manifest saved
+[23/452] 0496pages_E3474JUEVRWQ3P2J2I3XBFKMMVZLLKWZ.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0569pages_QXQ2QSHOPBTSXLDGKKM4TYMR4R7QODHB.pdf]
+  Category: benchmark
+  Pages: 569
+  Size: 13192.0 KB
+  Extracting text per page...
+    ✓ 569 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 569 pages rendered (metadata saved)
+    ✓ Manifest saved
+[24/452] 0569pages_QXQ2QSHOPBTSXLDGKKM4TYMR4R7QODHB.pdf: ✓
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 378, in generate_for_pdf
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 305, in generate_manifest
+ValueError: invalid literal for int() with base 10: 'unknown'
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 378, in generate_for_pdf
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 305, in generate_manifest
+ValueError: invalid literal for int() with base 10: 'unknown'
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 378, in generate_for_pdf
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 305, in generate_manifest
+ValueError: invalid literal for int() with base 10: 'unknown'
+Traceback (most recent call last):
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 378, in generate_for_pdf
+  File "/Users/ayates/pdfium/integration_tests/lib/generate_expected_outputs.py", line 305, in generate_manifest
+ValueError: invalid literal for int() with base 10: 'unknown'
+Process SpawnPoolWorker-1:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 199, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 410, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/connection.py", line 367, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[0821pages_LUNFJFH4KWZ3ZFNRO43WSMZPLM4OLB7C.pdf]
+  Category: benchmark
+  Pages: 821
+  Size: 1363.1 KB
+  Extracting text per page...
+    ✓ 821 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 821 pages rendered (metadata saved)
+    ✓ Manifest saved
+[25/452] 0821pages_LUNFJFH4KWZ3ZFNRO43WSMZPLM4OLB7C.pdf: ✓
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[1931pages_7ZNNFJGHOEFFP6I4OARCZGH3GPPDNDXC.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 10701.9 KB
+  Extracting text per page...
+    ✓ 1931 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 1931 pages rendered (metadata saved)
+  ERROR: invalid literal for int() with base 10: 'unknown'
+[26/452] 1931pages_7ZNNFJGHOEFFP6I4OARCZGH3GPPDNDXC.pdf: ✗
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_001.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1014.2 KB
+  Extracting text per page...
+    ✓ 25 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 25 pages rendered (metadata saved)
+  ERROR: invalid literal for int() with base 10: 'unknown'
+[27/452] arxiv_001.pdf: ✗
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_002.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1500.4 KB
+  Extracting text per page...
+    ✓ 13 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 13 pages rendered (metadata saved)
+  ERROR: invalid literal for int() with base 10: 'unknown'
+[28/452] arxiv_002.pdf: ✗
+Using baseline library: /Users/ayates/pdfium/out/Optimized-Shared/libpdfium.dylib
+  MD5: 00cd20f999bf60b1f779249dbec8ceaa
+Using extract_text: /Users/ayates/pdfium/rust/target/release/examples/extract_text
+Using render_pages: /Users/ayates/pdfium/rust/target/release/examples/render_pages
+
+[arxiv_003.pdf]
+  Category: benchmark
+  Pages: unknown
+  Size: 1778.5 KB
+  Extracting text per page...
+    ✓ 52 pages extracted
+  Generating JSONL for page 0...
+    ⚠ JSONL not implemented yet
+  Rendering images (PNG + JPG)...
+    ✓ 52 pages rendered (metadata saved)
+  ERROR: invalid literal for int() with base 10: 'unknown'
+[29/452] arxiv_003.pdf: ✗
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

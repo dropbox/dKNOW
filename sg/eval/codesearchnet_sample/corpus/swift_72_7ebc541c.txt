@@ -1,0 +1,9 @@
+/// A protocol for legitimate arguments to `Mirror`'s `descendant`
+/// method.
+///
+/// Do not declare new conformances to this protocol; they will not
+/// work as expected.
+public protocol MirrorPath {
+  // FIXME(ABI)#49 (Sealed Protocols): this protocol should be "non-open" and
+  // you shouldn't be able to create conformances.
+}

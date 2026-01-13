@@ -1,0 +1,91 @@
+[workspace]
+members = [
+    "crates/docling-core",
+    "crates/docling-backend",
+    "crates/docling-parse",
+    # Commented out - require external C++ library to be built
+    # See crates/docling-parse-sys/README.md for setup instructions
+    # "crates/docling-parse-sys",
+    # "crates/docling-parse-rs",
+    "crates/docling-ocr",
+    "crates/docling-models",
+    "crates/docling-pipeline",
+    "crates/docling-pdf-ml",
+    "crates/docling-cli",
+    "crates/docling-py",
+    "crates/docling-ebook",
+    "crates/docling-email",
+    "crates/docling-archive",
+    "crates/docling-audio",
+    "crates/docling-video",
+    "crates/docling-opendocument",
+    "crates/docling-xps",
+    "crates/docling-svg",
+    "crates/docling-calendar",
+    "crates/docling-notebook",
+    "crates/docling-gps",
+    "crates/docling-medical",
+    "crates/docling-genomics",
+    "crates/docling-legacy",
+    "crates/docling-cad",
+    "crates/docling-adobe",
+    "crates/docling-microsoft-extended",
+    "crates/docling-apple",
+    "crates/docling-latex",
+    "crates/docling-quality-verifier",
+    "crates/docling-examples",
+    "crates/docling-llm-verify",
+    "crates/docling-viz-bridge",
+    "crates/docling-mcp-server",
+]
+resolver = "2"
+
+[workspace.package]
+version = "2.58.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/ayates_dbx/docling_rs"
+
+[workspace.dependencies]
+# Core
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+anyhow = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+rayon = "1.8"
+chrono = { version = "0.4", features = ["serde"] }
+
+# Document parsing
+pdfium-render = "0.8"
+docx-rs = "0.4"
+calamine = "0.24"
+csv = "1.3"
+scraper = "0.18"
+quick-xml = "0.31"
+roxmltree = "0.19"
+zip = { version = "6.0", default-features = true }
+tar = "0.4"
+flate2 = "1.0"
+bzip2 = "0.5"
+sevenz-rust = { version = "0.6.1", default-features = false, features = ["bzip2", "zstd"] }
+
+# OCR & ML
+leptess = "0.14"
+ort = "2.0.0-rc.10"
+ndarray = "0.16"
+image = { version = "0.25", features = ["avif"] }
+libheif-rs = "2.5"
+imageproc = "0.25"
+
+# CLI
+clap = { version = "4.4", features = ["derive"] }
+
+# Python bindings & bridge
+pyo3 = { version = "0.27", features = ["auto-initialize"] }
+pythonize = "0.27"
+
+# Testing
+criterion = "0.5"
+proptest = "1.4"
+

@@ -1,0 +1,38 @@
+[package]
+name = "video-audio-music-source-separation"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+# Workspace crates
+video-audio-common = { path = "../common" }
+video-extract-core = { path = "../video-extract-core" }
+video-audio-extractor = { path = "../audio-extractor" }
+
+# ONNX Runtime for source separation models
+ort = { workspace = true }
+
+# Audio processing
+rustfft = "6.2"
+ndarray = "0.16"
+hound = "3.5"
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_yaml = "0.9"
+
+# Error handling
+thiserror = { workspace = true }
+
+# Logging
+tracing = { workspace = true }
+
+# Async
+async-trait = "0.1"
+
+[dev-dependencies]
+tokio = { workspace = true }
+tempfile = "3.10"

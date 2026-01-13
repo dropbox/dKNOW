@@ -1,0 +1,68 @@
+<svg width="1000" height="500" xmlns="http://www.w3.org/2000/svg">
+  <text x="500.0" y="20" text-anchor="middle" font-size="18" font-weight="bold">Memory Usage by Category (MB)</text>
+  <line x1="100" y1="420.0" x2="960" y2="420.0" class="grid-line"/>
+  <text x="90" y="424.0" text-anchor="end" font-size="12" fill="#666">0</text>
+  <line x1="100" y1="364.10120623712857" x2="960" y2="364.10120623712857" class="grid-line"/>
+  <text x="90" y="368.10120623712857" text-anchor="end" font-size="12" fill="#666">50</text>
+  <line x1="100" y1="308.20241247425713" x2="960" y2="308.20241247425713" class="grid-line"/>
+  <text x="90" y="312.20241247425713" text-anchor="end" font-size="12" fill="#666">100</text>
+  <line x1="100" y1="252.30361871138572" x2="960" y2="252.30361871138572" class="grid-line"/>
+  <text x="90" y="256.30361871138575" text-anchor="end" font-size="12" fill="#666">150</text>
+  <line x1="100" y1="196.40482494851432" x2="960" y2="196.40482494851432" class="grid-line"/>
+  <text x="90" y="200.40482494851432" text-anchor="end" font-size="12" fill="#666">200</text>
+  <line x1="100" y1="140.50603118564288" x2="960" y2="140.50603118564288" class="grid-line"/>
+  <text x="90" y="144.50603118564288" text-anchor="end" font-size="12" fill="#666">250</text>
+  <line x1="100" y1="84.60723742277145" x2="960" y2="84.60723742277145" class="grid-line"/>
+  <text x="90" y="88.60723742277145" text-anchor="end" font-size="12" fill="#666">300</text>
+  <line x1="100" y1="28.708443659900013" x2="960" y2="28.708443659900013" class="grid-line"/>
+  <text x="90" y="32.70844365990001" text-anchor="end" font-size="12" fill="#666">350</text>
+  <rect x="121.5" y="332.0935569285084" width="100.33333333333333" height="87.9064430714916" fill="#34C759" class="bar" opacity="0.85">
+    <title>Audio: 78.63 MB (range: 14.57-309.00 MB)</title>
+  </rect>
+  <line x1="171.66666666666666" y1="403.7110914974993" x2="171.66666666666666" y2="74.54545454545462" stroke="#333" stroke-width="2"/>
+  <line x1="166.66666666666666" y1="403.7110914974993" x2="176.66666666666666" y2="403.7110914974993" stroke="#333" stroke-width="2"/>
+  <line x1="166.66666666666666" y1="74.54545454545462" x2="176.66666666666666" y2="74.54545454545462" stroke="#333" stroke-width="2"/>
+  <text x="171.66666666666666" y="440" text-anchor="middle" font-size="12" fill="#333">Audio</text>
+  <text x="171.66666666666666" y="327.0935569285084" text-anchor="middle" font-size="11" fill="#666">78.63</text>
+  <rect x="264.83333333333337" y="382.74624889673436" width="100.33333333333333" height="37.25375110326566" fill="#FF9500" class="bar" opacity="0.85">
+    <title>Vision: 33.32 MB (range: 14.56-89.50 MB)</title>
+  </rect>
+  <line x1="315.00000000000006" y1="403.7222712562518" x2="315.00000000000006" y2="319.94115916446015" stroke="#333" stroke-width="2"/>
+  <line x1="310.00000000000006" y1="403.7222712562518" x2="320.00000000000006" y2="403.7222712562518" stroke="#333" stroke-width="2"/>
+  <line x1="310.00000000000006" y1="319.94115916446015" x2="320.00000000000006" y2="319.94115916446015" stroke="#333" stroke-width="2"/>
+  <text x="315.00000000000006" y="440" text-anchor="middle" font-size="12" fill="#333">Vision</text>
+  <text x="315.00000000000006" y="377.74624889673436" text-anchor="middle" font-size="11" fill="#666">33.32</text>
+  <rect x="408.1666666666667" y="400.7484554280671" width="100.33333333333333" height="19.25154457193292" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>Intelligence: 17.22 MB (range: 14.64-24.80 MB)</title>
+  </rect>
+  <line x1="458.33333333333337" y1="403.63283318623127" x2="458.33333333333337" y2="392.27419829361577" stroke="#333" stroke-width="2"/>
+  <line x1="453.33333333333337" y1="403.63283318623127" x2="463.33333333333337" y2="403.63283318623127" stroke="#333" stroke-width="2"/>
+  <line x1="453.33333333333337" y1="392.27419829361577" x2="463.33333333333337" y2="392.27419829361577" stroke="#333" stroke-width="2"/>
+  <text x="458.33333333333337" y="440" text-anchor="middle" font-size="12" fill="#333">Intelligence</text>
+  <text x="458.33333333333337" y="395.7484554280671" text-anchor="middle" font-size="11" fill="#666">17.22</text>
+  <rect x="551.5" y="403.40923801117975" width="100.33333333333333" height="16.590761988820237" fill="#FF2D55" class="bar" opacity="0.85">
+    <title>Embeddings: 14.84 MB (range: 14.53-15.15 MB)</title>
+  </rect>
+  <line x1="601.6666666666666" y1="403.75581053250954" x2="601.6666666666666" y2="403.06266548984996" stroke="#333" stroke-width="2"/>
+  <line x1="596.6666666666666" y1="403.75581053250954" x2="606.6666666666666" y2="403.75581053250954" stroke="#333" stroke-width="2"/>
+  <line x1="596.6666666666666" y1="403.06266548984996" x2="606.6666666666666" y2="403.06266548984996" stroke="#333" stroke-width="2"/>
+  <text x="601.6666666666666" y="440" text-anchor="middle" font-size="12" fill="#333">Embeddings</text>
+  <text x="601.6666666666666" y="398.40923801117975" text-anchor="middle" font-size="11" fill="#666">14.84</text>
+  <rect x="694.8333333333334" y="403.5937040305972" width="100.33333333333333" height="16.406295969402763" fill="#5AC8FA" class="bar" opacity="0.85">
+    <title>Utility: 14.68 MB (range: 14.51-14.84 MB)</title>
+  </rect>
+  <line x1="745.0" y1="403.7781700500147" x2="745.0" y2="403.40923801117975" stroke="#333" stroke-width="2"/>
+  <line x1="740.0" y1="403.7781700500147" x2="750.0" y2="403.7781700500147" stroke="#333" stroke-width="2"/>
+  <line x1="740.0" y1="403.40923801117975" x2="750.0" y2="403.40923801117975" stroke="#333" stroke-width="2"/>
+  <text x="745.0" y="440" text-anchor="middle" font-size="12" fill="#333">Utility</text>
+  <text x="745.0" y="398.5937040305972" text-anchor="middle" font-size="11" fill="#666">14.68</text>
+  <rect x="838.1666666666667" y="403.666372462489" width="100.33333333333333" height="16.33362753751103" fill="#007AFF" class="bar" opacity="0.85">
+    <title>Core: 14.61 MB (range: 14.57-14.67 MB)</title>
+  </rect>
+  <line x1="888.3333333333334" y1="403.7110914974993" x2="888.3333333333334" y2="403.59929390997354" stroke="#333" stroke-width="2"/>
+  <line x1="883.3333333333334" y1="403.7110914974993" x2="893.3333333333334" y2="403.7110914974993" stroke="#333" stroke-width="2"/>
+  <line x1="883.3333333333334" y1="403.59929390997354" x2="893.3333333333334" y2="403.59929390997354" stroke="#333" stroke-width="2"/>
+  <text x="888.3333333333334" y="440" text-anchor="middle" font-size="12" fill="#333">Core</text>
+  <text x="888.3333333333334" y="398.666372462489" text-anchor="middle" font-size="11" fill="#666">14.61</text>
+  <text x="810" y="40" font-size="11" fill="#666">Bars show average, error bars show min/max range</text>
+</svg>

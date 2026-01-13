@@ -1,0 +1,8 @@
+baseline_data/
+
+# Debug output files (numpy arrays from test runs)
+*.npy
+debug_*.npy
+rust_*.npy
+ml_model_inputs/
+test_silu*.npy

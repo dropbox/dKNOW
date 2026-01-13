@@ -1,0 +1,101 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <text x="600.0" y="20" text-anchor="middle" font-size="18" font-weight="bold">Throughput Comparison (MB/s)</text>
+  <line x1="150.0" y1="40" x2="150.0" y2="480" class="grid-line"/>
+  <text x="150.0" y="500" text-anchor="middle" font-size="12" fill="#666">0</text>
+  <line x1="402.5" y1="40" x2="402.5" y2="480" class="grid-line"/>
+  <text x="402.5" y="500" text-anchor="middle" font-size="12" fill="#666">2</text>
+  <line x1="655.0" y1="40" x2="655.0" y2="480" class="grid-line"/>
+  <text x="655.0" y="500" text-anchor="middle" font-size="12" fill="#666">4</text>
+  <line x1="907.5" y1="40" x2="907.5" y2="480" class="grid-line"/>
+  <text x="907.5" y="500" text-anchor="middle" font-size="12" fill="#666">6</text>
+  <line x1="1160.0" y1="40" x2="1160.0" y2="480" class="grid-line"/>
+  <text x="1160.0" y="500" text-anchor="middle" font-size="12" fill="#666">8</text>
+  <rect x="150" y="44.4" width="1010.0" height="20.53333333333333" fill="#FF2D55" class="bar" opacity="0.85">
+    <title>audio_embeddings: 8.00 MB/s</title>
+  </rect>
+  <text x="140" y="58.666666666666664" text-anchor="end" font-size="12" fill="#333">audio embeddings</text>
+  <text x="1165.0" y="58.666666666666664" font-size="11" fill="#666">8.00</text>
+  <rect x="150" y="73.73333333333333" width="991.0625" height="20.53333333333333" fill="#34C759" class="bar" opacity="0.85">
+    <title>audio_classification: 7.85 MB/s</title>
+  </rect>
+  <text x="140" y="88.0" text-anchor="end" font-size="12" fill="#333">audio classification</text>
+  <text x="1146.0625" y="88.0" font-size="11" fill="#666">7.85</text>
+  <rect x="150" y="103.06666666666666" width="962.025" height="20.53333333333333" fill="#34C759" class="bar" opacity="0.85">
+    <title>voice_activity_detection: 7.62 MB/s</title>
+  </rect>
+  <text x="140" y="117.33333333333333" text-anchor="end" font-size="12" fill="#333">voice activity detection</text>
+  <text x="1117.025" y="117.33333333333333" font-size="11" fill="#666">7.62</text>
+  <rect x="150" y="132.4" width="422.9375" height="20.53333333333333" fill="#34C759" class="bar" opacity="0.85">
+    <title>audio_enhancement_metadata: 3.35 MB/s</title>
+  </rect>
+  <text x="140" y="146.66666666666669" text-anchor="end" font-size="12" fill="#333">audio enhancement metadata</text>
+  <text x="577.9375" y="146.66666666666669" font-size="11" fill="#666">3.35</text>
+  <rect x="150" y="161.73333333333332" width="353.5" height="20.53333333333333" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>scene_detection: 2.80 MB/s</title>
+  </rect>
+  <text x="140" y="176.0" text-anchor="end" font-size="12" fill="#333">scene detection</text>
+  <text x="508.5" y="176.0" font-size="11" fill="#666">2.80</text>
+  <rect x="150" y="191.06666666666666" width="339.6125" height="20.53333333333333" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>smart_thumbnail: 2.69 MB/s</title>
+  </rect>
+  <text x="140" y="205.33333333333331" text-anchor="end" font-size="12" fill="#333">smart thumbnail</text>
+  <text x="494.6125" y="205.33333333333331" font-size="11" fill="#666">2.69</text>
+  <rect x="150" y="220.4" width="329.5125" height="20.53333333333333" fill="#007AFF" class="bar" opacity="0.85">
+    <title>audio_extraction: 2.61 MB/s</title>
+  </rect>
+  <text x="140" y="234.66666666666669" text-anchor="end" font-size="12" fill="#333">audio extraction</text>
+  <text x="484.5125" y="234.66666666666669" font-size="11" fill="#666">2.61</text>
+  <rect x="150" y="249.73333333333332" width="321.9375" height="20.53333333333333" fill="#007AFF" class="bar" opacity="0.85">
+    <title>keyframes: 2.55 MB/s</title>
+  </rect>
+  <text x="140" y="264.0" text-anchor="end" font-size="12" fill="#333">keyframes</text>
+  <text x="476.9375" y="264.0" font-size="11" fill="#666">2.55</text>
+  <rect x="150" y="279.0666666666666" width="311.83750000000003" height="20.53333333333333" fill="#34C759" class="bar" opacity="0.85">
+    <title>acoustic_scene_classification: 2.47 MB/s</title>
+  </rect>
+  <text x="140" y="293.33333333333326" text-anchor="end" font-size="12" fill="#333">acoustic scene classification</text>
+  <text x="466.83750000000003" y="293.33333333333326" font-size="11" fill="#666">2.47</text>
+  <rect x="150" y="308.4" width="219.675" height="20.53333333333333" fill="#007AFF" class="bar" opacity="0.85">
+    <title>metadata_extraction: 1.74 MB/s</title>
+  </rect>
+  <text x="140" y="322.66666666666663" text-anchor="end" font-size="12" fill="#333">metadata extraction</text>
+  <text x="374.675" y="322.66666666666663" font-size="11" fill="#666">1.74</text>
+  <rect x="150" y="337.7333333333333" width="199.47500000000002" height="20.53333333333333" fill="#34C759" class="bar" opacity="0.85">
+    <title>transcription: 1.58 MB/s</title>
+  </rect>
+  <text x="140" y="351.99999999999994" text-anchor="end" font-size="12" fill="#333">transcription</text>
+  <text x="354.475" y="351.99999999999994" font-size="11" fill="#666">1.58</text>
+  <rect x="150" y="367.0666666666666" width="169.175" height="20.53333333333333" fill="#34C759" class="bar" opacity="0.85">
+    <title>diarization: 1.34 MB/s</title>
+  </rect>
+  <text x="140" y="381.33333333333326" text-anchor="end" font-size="12" fill="#333">diarization</text>
+  <text x="324.175" y="381.33333333333326" font-size="11" fill="#666">1.34</text>
+  <rect x="150" y="396.4" width="69.4375" height="20.53333333333333" fill="#5AC8FA" class="bar" opacity="0.85">
+    <title>format_conversion: 0.55 MB/s</title>
+  </rect>
+  <text x="140" y="410.66666666666663" text-anchor="end" font-size="12" fill="#333">format conversion</text>
+  <text x="224.4375" y="410.66666666666663" font-size="11" fill="#666">0.55</text>
+  <rect x="150" y="425.7333333333333" width="64.3875" height="20.53333333333333" fill="#5AC8FA" class="bar" opacity="0.85">
+    <title>duplicate_detection: 0.51 MB/s</title>
+  </rect>
+  <text x="140" y="439.99999999999994" text-anchor="end" font-size="12" fill="#333">duplicate detection</text>
+  <text x="219.3875" y="439.99999999999994" font-size="11" fill="#666">0.51</text>
+  <rect x="150" y="455.0666666666666" width="42.925000000000004" height="20.53333333333333" fill="#AF52DE" class="bar" opacity="0.85">
+    <title>subtitle_extraction: 0.34 MB/s</title>
+  </rect>
+  <text x="140" y="469.33333333333326" text-anchor="end" font-size="12" fill="#333">subtitle extraction</text>
+  <text x="197.925" y="469.33333333333326" font-size="11" fill="#666">0.34</text>
+  <text x="980" y="40" font-size="12" font-weight="bold" fill="#333">Categories:</text>
+  <rect x="980" y="50" width="12" height="12" fill="#007AFF" opacity="0.85"/>
+  <text x="998" y="60" font-size="11" fill="#333">Core</text>
+  <rect x="980" y="70" width="12" height="12" fill="#34C759" opacity="0.85"/>
+  <text x="998" y="80" font-size="11" fill="#333">Audio</text>
+  <rect x="980" y="90" width="12" height="12" fill="#FF9500" opacity="0.85"/>
+  <text x="998" y="100" font-size="11" fill="#333">Vision</text>
+  <rect x="980" y="110" width="12" height="12" fill="#AF52DE" opacity="0.85"/>
+  <text x="998" y="120" font-size="11" fill="#333">Intelligence</text>
+  <rect x="980" y="130" width="12" height="12" fill="#FF2D55" opacity="0.85"/>
+  <text x="998" y="140" font-size="11" fill="#333">Embeddings</text>
+  <rect x="980" y="150" width="12" height="12" fill="#5AC8FA" opacity="0.85"/>
+  <text x="998" y="160" font-size="11" fill="#333">Utility</text>
+</svg>

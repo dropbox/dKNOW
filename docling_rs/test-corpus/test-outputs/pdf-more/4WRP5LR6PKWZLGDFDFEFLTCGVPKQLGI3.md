@@ -1,0 +1,223 @@
+<!-- image -->
+
+Catena 23 (1994) 29-42
+
+## Spatial distribution of surface rock fragments along catenas in Semiarid Arizona and Nevada, USA
+
+J.R. Simanton, K.G. Renard, C.M. Christiansen, L.J. Lane
+
+USDA, Agricultural Research Service, Southwest Watershed Research Center, 2000 E. Allen Rd., Tucson, AZ 85719, USA
+
+## Abstract
+
+Improved techniques for estimating soil erosion by water have shown that soil surface cover is a major component in the estimate of soil loss. Erosion prediction models require the user to input slope gradient and soil profile descriptions. If equations expressing the relations between slope gradient, soil profile rock fragment content, and surface rock fragment cover were embedded in these models, then direct user input could be reduced. Field measurements of slope gradient, soil profile rock fragment content, surface rock fragment cover, and vegetation type and cover were made on 12 soil-slope complexes on catenas in southeastern Arizona, USA. were significantly (p &lt; 0.01) correlated to surface rock fragment cover. Additional analysis indicated that the combined effects of slope gradient and soil profile rock content were better fragment cover; a logarithmic relation using slope gradient as the independent variable and a hyperbolic equation using the SSF as the independent variable. These equations were used to estimate surface rock fragment cover from a soil-slope complex in southern Nevada. The SSFRc equation gave better estimates of the measured surface rock fragment cover. These relations developed for catenas in southeastern Arizona may be site specific but they do show that a relation exists for this semiarid area and suggest that similar relations may exist in areas with similar geology and climate such as parts of Africa, Asia, Australia, and South America. Development of simple relations describing important erosion processes will improve erosion estimates while simultaneously decreasing time and costs associated with using erosion prediction models.
+
+<!-- image -->
+
+## 1. Introduction
+
+## 1.1. Soil erosion prediction models for semiarid areas
+
+Improved techniques for estimating soil erosion by water have shown that soil surface cover is a major component in the estimate of soil loss. Erosion prediction models such as the Revised Universal Soil Loss Equation (RUSLE) (Renard et al., 1991) and the United States Department of Agriculture's Water Erosion Prediction Project's model (WEPP) (Lane and Nearing, 1989; Nearing et al., 1989) have options to estimate erosion from various configurations of complex slopes and soil surface
+
+Soil erosion rates from semiarid areas may seem small compared to the very high rates often observed in more humid areas. However, erosion rates from these semiarid areas are often critical and significant because of the limited soil resource associated with the ecosystems involved. Precipitation is less than potential evapotranspiration and in areas where intense thunderstorms dominate, can cause significant upland erosion (Branson et al., 1981).
+
+The C-factor, or cover-management factor in RUSLE is determined using a subfactor approach to compute soil loss ratios as a function of five subfactors: prior land use, canopy cover, ground cover, surface roughness, and within soil effects. The subfactor relation is given by:
+
+<!-- formula-not-decoded -->
+
+where PLU is a prior land use subfactor, CC is a canopy subfactor, SC is a surface cover subfactor, SR is a surface roughness subfactor, and SM is a soil moisture subfactor.
+
+In the C-factor calculation, the surface cover (SC) subfactor, which includes rock fragment cover, has the greatest effect on erosion estimates (Renard and Simanton, 1990; Simanton et al., 1984).
+
+The more process-based erosion prediction model, the WEPP model, also requires direct user input for rock fragment cover on each slope profile or for each slope segment if soil, vegetation, or management changes along the profile (Lane and Nearing, 1989).
+
+Both the RUSLE and WEPP erosion prediction models also require the user to input slope gradient and soil profile descriptions. If equations expressing the relations among slope gradient, soil profile rock content, and surface rock fragment cover were embedded in these models, then direct user input could be reduced. This would then speed-up erosion prediction calculations and minimize the need for costly and time consuming on-site field measurements.
+
+## 1.2. Surface rock fragment accumulation
+
+Where soils contain rock fragments within their profile, such fragments may become concentrated on the surface as a result of the selective removal of fine material from the surface (Cooke, 1970; Cooke and Warren, 1973, p. 126). Processes
+
+contributing to the formation of surface rock fragment covers include water and wind removal of fine materials, freeze-thaw, wetting and drying, and alternate solution and recrystallization of salts (Parsons et al., 1992). In semiarid regions where shrubby vegetation is found, water rather than wind may be the dominant agent in producing a surface rock fragment cover (Parsons et al., 1992). As the fine soil materials wash away, either by raindrop splash or overland flow, a surface rock fragment cover is formed. Runoff flow velocities, and thus transport capacities, tend to increase with increasing slope gradient. An increase in transport capacity would increase the amount and size of soil material that could be transported by runoff. This would lead to the relation of increased surface rock fragment cover with increasing slope gradient. Parsons and Abrahams (1987) reported that the mean diameter of soi surface particles on Moiave Desert debris slopes was positively correlated with slope gradient. Poesen (1987) found that rock fragments up to 10 mm in diameter could be moved by overland or sheet flow and that rill or other types of concentrated flow were responsible for downslope movement of larger diameter rock fragments.
+
+The major objectives of this study are to determine if a slope gradient-surface rock ragment cover relation exists on various catenas of semiarid Arizona and develop a quation to describe this relatio
+
+## 2. Methods, materials, and watershed characteristics
+
+## 2.1. Slope selection and measurements
+
+Interrill soil-slope complexes were selected to provide ranges of soil types, slope lope gradient variations, with soil uniformity and vegetation distribution bein, econdary considerations. Along each segment, distance from the ridge top to th bottom of the segment was recorded along with the average percent gradient of the segment. Slope gradient was determined with an Abney level and slope distances were measured at the ground surface with a tape measure. Complexes with uniform, concave, and convex slope configurations were selected
+
+Soil surface and vegetation cover transects, parallel to the slope, were established on the slope segments. Surface rock fragment cover (RFc) and vegetation type anc cover along each segment were determined from line-point (Bonham. 1989) measure. ments taken normal to the segment at 150 mm intervals along each transect. Percent (by weight) rock fragments (&gt; 2 mm) in the top 50 mm of the soil profile of each slope segment was determined from laboratory sieve analyses of two soil samples taken from the mid-point of each transect. Surface rock fragments were removed from these soil sample sites before the soil sample was taken. Sieve screen sizes were: 2.00 mm, 4.76 mm, 8.00 mm, 15.85 mm, and 26.67 mm.
+
+Fig. 1. Map of the Walnut Gulch Experimental Watershed, Arizona, USA.
+
+<!-- image -->
+
+## 2.2. Study location
+
+The study was conducted on the United States Department of Agriculture (USDA) Agricultural Research Service's (ARS) Walnut Gulch Experimental Watershed in southeastern Arizona, USA (31°43'N, 110°41'W) (Fig. 1). The watershed is representative of about 60 million hectares of brush and grass rangeland found throughout the semiarid southwest and is considered a transition zone between the Chihuahuan and Sonoran Deserts. The watershed is an alluvial basin between isolated mountain blocks (Libby et al., 1970) and is typical of Basin and Range physiography in the western U.S. The alluvium consists of Tertiary and Quaternary aged deposits of clay, silt, sand, and gravel, that is locally cemented by numerous calcrete layers.
+
+Soils are generally well drained, calcareous, gravelly loams with large percentages of rock and gravel at the soil surface (Gelderman, 1970) (Fig. 2). Soil series sampled included Bernardino (a thermic Ustollic Haplargid), Cave (thermic, shallow Typic Paleorthid), and Hathaway (thermic Aridic Calciustoll). In general, these series are medium depth and well-drained medium textured soils derived from Quaternary alluvium. The uppermost 10 cm of the soil profiles contain up to 60% gravel, and usually less than 40% gravel in the underlying parts of the profiles.
+
+Annual precipitation averages about 300 mm and is bimodally distributed. About 75% of the precipitation occurs as summer thunderstorms from July to mid-September (Osborn et al., 1979). These thunderstorms are generally of high intensity and
+
+Fig. 2. Typical surface rock fragment cover along catenas of the Walnut Gulch Experimental Watershed, Arizona, USA
+
+<!-- image -->
+
+short duration; they are of limited areal extent and produce over 99% of the annual watershed runoff
+
+Major vegetation of the soil-slope complexes includes shrub species of creosote bush (Larrea tridentata), white-thorn (Acacia constricta), tarbush (Flourensia cernua), snakeweed (Gutierrezia Sarothrae), and burroweed (Aplopappus tenuisectus); and grass species of black grama (Bouteloua eriopoda), blue grama (B. gracilis), sideoats grama (B. curtipendula), and bush muhly (Muhlenbergia Porteri).
+
+## 3. Results and discussion
+
+Rock fragment-slope gradient data were collected from 12 soil-slope complexes within the Walnut Gulch watershed (Figs. 3 and 4). Sixty-one slope segments were measured and slope gradients ranged from 2 to 61% (Table 1). There were five complexes with relatively uniform shapes, four were convex, and three were concave (Table 1, Fig. 5).
+
+## 3.1. Correlations among variables
+
+A correlation matrix of the measured variables (Table 2) shows that slope gradient
+
+Fig. 3. Looking perpendicular to a segment of the Roadrunner Ridge soil-slope complex on the Walnut Gulch Experimental Watershed, Arizona, USA.
+
+<!-- image -->
+
+Table 1 Soil-slope complex name, soil series, slope shape, number of slope segments, range in slope gradient (%), and total slope distance of 12 soil-slope complexes on the Walnut Gulch Watershed in southeastern Arizona, USA; and 1 soil-slope complex near the Nevada Test Site (NTS), Nevada, USA
+
+| Complex name          | Soil series                | Slope shape   | Number of seg- ments   | Slope gradient range (%)   |   Slope distance (m) |
+|-----------------------|----------------------------|---------------|------------------------|----------------------------|----------------------|
+| Coyote Canyon         | Hathaway/Bernardino Convex |               |                        | 14-35                      |                 79.1 |
+| Lonely Slope          | Rillito/Laveen             | Uniform       |                        | 4-20                       |                102.4 |
+| Misty Hills           | Bernardino                 | Uniform       | 4                      | 5-15                       |                 98.6 |
+| Treadwater Tank       | Hathaway                   | Uniform       | 6                      | 6-29                       |                103.7 |
+| Lost Ranch Ridge      | Bernardino/Hathaway        | Uniform       | 4                      | 2-19                       |                 98.8 |
+| Transformer Trail     | Hathaway/Nickel            | Convex        | 4                      | 7-27                       |                 55.2 |
+| Vulture Valley        | Rillito/Cave               | Convex        | 6                      | 7-56                       |                 87.5 |
+| Boulder Butte         | Rillito/Cave               | Concave       |                        | 6-39                       |                 63.7 |
+| Power Pole Point      | Rillito/Karro              | Concave       |                        | 7-61                       |                 47.3 |
+| Whitethorn Way        | Rillito/Karro              | Concave       | 8                      | 2-58                       |                 44.8 |
+| Slaphappy Flat        | Sonoita                    | Uniform       |                        | 2                          |                 32.3 |
+| Roadrunner Ridge      | Rillito/Laveen             | Convex        |                        | 5-13                       |                 54.6 |
+| Forty Mile Wash (NTS) | Unclassified               | Concave       |                        | 6-36                       |                 52.9 |
+
+Fig. 4. Looking downslope along the Roadrunner Ridge soil-slope complex on the Walnut Gulch Experimental Watershed, Arizona, USA.
+
+<!-- image -->
+
+(SL) and soil profile rock fragment content (RFp) are significantly (p &lt; 0.01) correlated to surface rock fragment cover (RFc). Spurious correlations occur among some measured variables; for example, the additive consequence of grass (GR) and shrub (SH) cover to give total canopy cover (CC). In this and other non-independent ituations, the correlation coefficient is given as "NI" in Table 2. Among the othe ndependent variables are some interesting and sionificant correlations. Neither gras. nor shrub cover are significantly correlated with any other measured variable. The sparsity of vegetation and the purported changes in vegetation type (grass to shrub) during this century (Cox et al., 1983) in the Walnut Gulch Watershed might be the causes for this lack of correlation. The lack of correlation between surface rock fragment cover (RFc) and the individual classes of soil profile rock fragment contents (RFp) less than 8 mm might indicate that particles less than 8 mm are moving off the slopes. This is in agreement with the 10 mm limit transported by overland flow on interrill areas as reported by Posen (1987). The significant correlations between adjacent particle size classes (i.e. r = 0.71 for 2-5 and 5-8 mm correlation) suggest
+
+Fig. 5. Slope shapes of 12 soil-slope complexes on catenas of the Walnut Gulch Experimental Watershed, Arizona, USA.
+
+<!-- image -->
+
+Table 2 Correlation matrix (r) of 12 variables measured along slope segments of catenas on the Walnut Gulcl Watershed in southeastern Arizona, USA
+
+|         | Rock fragment   | Rock fragment   | Canopy cover   | Canopy cover   | Canopy cover   | Canopy cover   | Soil profile rock on sieve   | Soil profile rock on sieve   | Soil profile rock on sieve   | Soil profile rock on sieve   | Soil profile rock on sieve   | Soil profile rock on sieve   | Soil profile rock on sieve   | Soil profile rock on sieve   | SL SSF   |
+|---------|-----------------|-----------------|----------------|----------------|----------------|----------------|------------------------------|------------------------------|------------------------------|------------------------------|------------------------------|------------------------------|------------------------------|------------------------------|----------|
+|         | RFC             | RFp             | GR             |                | SH             | CC             | 2                            | 5                            |                              | 8                            |                              | 16                           |                              | 27                           |          |
+| RFC REP | 1 0.68ª         | 1               |                |                |                |                |                              |                              |                              |                              |                              |                              |                              |                              |          |
+| GR      | 0.10            | 0.18            | 1              |                |                |                |                              |                              |                              |                              |                              |                              |                              |                              |          |
+| SH      | -0.06           | -0.12           | 0.47 a         |                | 1              |                |                              |                              |                              |                              |                              |                              |                              |                              |          |
+| CC      | 0.01            | 0.02            | NI             |                | NI             |                |                              |                              |                              |                              |                              |                              |                              |                              |          |
+| o uN    | 0.05            | NI              | - 0.42 a       |                | 0.27           | -0.03          |                              |                              |                              |                              |                              |                              |                              |                              |          |
+|         | 0.31            | NI              | 0.24           |                | -0.12          | -0.05          | 0.71 a                       |                              |                              |                              |                              |                              |                              |                              |          |
+|         | 0.54 a          | NI              | 0.02           |                | -0.06          | - 0.05         | 0.13                         |                              | 0.61 a                       |                              |                              |                              |                              |                              |          |
+| 16      | 0.44 a          | NI              | 0.11           | -0.09          |                | -0.02          | -0.12                        |                              | 0.11                         | 0.62ª 1                      |                              |                              |                              |                              |          |
+| 27      | 0.35 a          | NI              | 0.34 a         |                | —0.19          | 0.06           | _0.57ª -0.38ª                |                              |                              | -0.05                        |                              | 0.13 1                       |                              |                              |          |
+| SL      | 0.78 a          | 0.51 a          | - 0.05         |                | -0.01          | -0.05          | 0.31                         | 0.52 a                       |                              | 0.53 0.23                    |                              |                              | 0.111                        |                              |          |
+| SSF     | 0.76ª           | NI              | 0.00           |                | -0.06          | -0.07          | NI                           |                              | NI                           |                              | NI                           |                              | NI                           | NI NI 1                      |          |
+
+NI = not independent variables. All variables are measured as percent except where noted. RFc = soil surface rock fragment cover greater than 5 mm, GR = grass canopy cover, SH = shrub canopy cover, CC = total canopy cover, 2 = soil profile rock fragment content on 2 mm sieve, 5 = soil profile rock fragment content on 4.76 mm sieve, 8 = soil profile rock fragment content on 8.0 mm sieve, 16 = soil profile rock fragment content on 15.85 mm sieve, 27 = soil profile rock fragment content on 26.67 mm sieve, SL = slope gradient (decimal), RFp = soil profile rock fragment content &gt; 5 mm, and SSF = soil-slope factor as defined in Eq. 2.
+
+a p &lt; 0.01.
+
+that the class groupings could be broader. The significant correlation between slope radient (SL) and soll pronle rock Iragment content (KFP) may be an indication c rosion and denosition processes occurrine alone the slope. The shallower slor gradients (usually found at the hillslope toe) would have a larger proportion of finer particles in the soil profile because of sediment deposition.
+
+## 3.2. Prediction equations
+
+Slope gradient (SL) and soil profile rock content fragment (RFp) are correlated best with surface rock fragment cover (RFc). However, additional analysis indicated that the combined effects of the two are better defined by the equation:
+
+<!-- formula-not-decoded -->
+
+where SSF = soil-slope factor, RFp = % soil profile rock fragment content &gt; 5 mm, and SL = slope gradient (decimal)
+
+actions were dev loved to des abe she relation between sle radio La. 1 or all the slope segments measured. To test for possible relation differences amon; lifferent hillslope shapes. hillslopes with similar shapes were grouped and equation: developed for the SL-RFc and SSF-RFc relations (Table 3). Neither the SL-RFc relation nor the SSF-RFc relation varied significantly among the shapes.
+
+Fig. 6. Surface rock fragment cover (RFc) versus slope gradient (SL) from 61 slope segments along catenas on the Walnut Gulch Experimental Watershed, Arizona, USA
+
+<!-- image -->
+
+38 J.R. Simanton et al. / Catena 23 (1994) 29-42 Table 3
+
+Equations relating slope gradient and the soil-slope factor to surface rock fragment cover for all, uniform, convex, and concave shaped slopes on catenas of the Walnut Gulch Watershed in southeastern Arizona,
+
+| Slope shape                                       | Equation                                          |      | Std. err.   |    |
+|---------------------------------------------------|---------------------------------------------------|------|-------------|----|
+| Slope gradient vs. surface rock fragment cover    | Slope gradient vs. surface rock fragment cover    |      |             |    |
+| All                                               | RFc = 2.32 + 16.21 x (In SL)                      | 0.74 | 8.84        | 61 |
+| Uniform                                           | RFc = -2.46 + 18.54 × (In SL)                     | 0.64 | 10.55       | 20 |
+| Convex                                            | RFc = 6.78 + 15.87 x (In SL)                      | 0.72 | 6.58        | 19 |
+| Concave                                           | RFc = 0.35 + 15.88 x (In SL)                      | 0.76 | 8.31        | 22 |
+| Soil-slope factor vs. surface rock fragment cover | Soil-slope factor vs. surface rock fragment cover |      |             |    |
+| All                                               | RFc = 68.62-80.62/SSF                             | 0.79 | 7.98        | 61 |
+| Uniform                                           | RFc = 67.06-75.21/SSF                             | 0.72 | 9.41        | 20 |
+| Convex                                            | RFc = 72.12-88.97/SSF                             | 0.76 | 6.17        | 19 |
+| Concave                                           | RFc = 68.46-90.29/SSF                             | 0.78 | 7.94        | 22 |
+
+RFc = % surface rock fragment cover; SL=% segment slope gradient; SSF = soil-slope factor; Std err. = standard error of estimate.
+
+## ROCK FRAGMENT vs SOIL-SLOPE FACTOR WALNUT GULCH, AZ, USA
+
+Fig. 7. Surface rock fragment cover (RFc) versus soil-slope factor (SSF) from 61 slope segments along catenas on the Walnut Gulch Experimental Watershed, Arizona, USA.
+
+<!-- image -->
+
+## 3.3. Validation
+
+To test the utility of the Walnut Gulch derived equations, comparisons of estimated to measured surface rock fragment covers were made. Surface rock fragment covers for seven segments measured on one soil-slope complex at the Nevada Test Site (NTS) in southern Nevada were used in the validation. The Nevada soil-slope complex is in the northern Mojave Desert and has an average annual precipitation of about 150 mm. About 75% of the precipitation falls between mid-September and late-March; the remainder occurs during the summer as scattered thundershowers (Romney et al., 1973). The soil is probably a Typic Durorthid (shallow, mixed thermic) that is well drained and has moderate permeability. The major vegetation includes Mormon tea (Ephedra nevadensis), spiney hopsage (Artemesia spinescens), shadescale (Atriplex confertifolia), boxthorn (Lycium andersonii), spiney menodora (Menodora spinescens), desert Alyssum (Lepidium fremontii) and creosote bush.
+
+Both the SL-RFc (Fig. 6) and the SSF-RFc (Fig. 7) equations were used to estimate RFc for the seven segments at the Nevada complex. The SSF - RFc equation gave the better results, with the slope coefficient of the relation between measured RFc to predicted RFc being nearly 1.0 (Fig. 8). Additional data from other but the results from the Nevada complex are
+
+Fig. 8. Measured versus predicted surface rock fragment cover (RFc) for seven slope segments on a soilslope complex at the Nevada Test Site in southern Nevada, USA
+
+<!-- image -->
+
+## J.R. Simanton et al. / Catena 23 (1994) 29-42
+
+Fig. 9. RUSLE predicted soil loss for a constant rangeland condition on the Walnut Gulch Experimental Watershed using the soil-slope factor (SSF) - surface rock fragment cover (RFc) equation and the error bars for the SSF-RFc equation's standard error.
+
+<!-- image -->
+
+## 3.4. Impacts on soil erosion prediction
+
+The ability of the SL-RFc and SSF-RFc equations to estimate soil loss in the framework of the new soil erosion models is illustrated using RUSLE for rangeland conditions on the Walnut Gulch Watershed. Because the standard errors of estimate of the SL-RFc and SSF-RFc equations are similar (Table 3), only the SSF-RFc equation is used to estimate ground cover input to the C-factor of RUSLE. From Fig. 9, the error in soil loss estimate is a function of both the surface cover-erosion rate equation (Simanton et al., 1986) used in RUSLE and the standard error of the SSF-RFc equation. In RUSLE, SSF can be calculated from the user inputs of slope segment gradient and soil profile rock fragment content (needed for other portions of the prediction equation). RFc can then be calculated from the SSF RFc equation, thus reducing field measurements and user inputs to describe surface cover.
+
+## 4. Conclusions
+
+Surface rock fragment cover on catenas in a semiarid area can be estimated using equations relating surface rock fragment cover to slope gradient and slope gradient plus soil profile rock fragment content. A logarithmic equation describes the relation between SL and RFc. If the soil profile rock fragment content in the soil's top 50 mm
+
+is known, a hyperbolic equation using the SSF gives a better estimate of surface rock fragment cover. These relations for the Walnut Gulch catenas may be site specific. They do show, however, that a relation exists for the area and suggests that similar relations may exist in areas with similar geology and climate such as parts of Africa and Asia, and Australia and South America.
+
+The usefulness of erosion prediction models increase dramatically as we demanc increasingly sophisticated policies to protect the soil resource. Development of sim ple relations describing important erosion processes will improve erosion estimates while simultaneously decreasing time and costs associated with using erosion prediction models.
+
+## References
+
+- Bonham, C.D., 1989. Measurements for Terrestrial Vegetation. Wiley, New York, 338 pp.
+- Cooke. R.U.. 1970. Stone pavements in deserts. Ann. Assoc. Am. Geogr.: 560-577
+- Branson, F.A., Gifford, G.F., Renard, K.G. and Hadley, R.F., 1981. Rangeland Hydrology. Society for Range Management, Denver, CO, 340 pr
+- Cooke, R.U. and Warren, A., 1973. Geomorphology in Deserts. Batsford, London, 374 pp.
+- Celera. W. 98. Son surey Walnut Gulch experimental watershed. Ariz. Special Report, USDA-
+- Cox. J.R.. Morton, H.L., Labaume, J.T. and Renard, K.G., 1983. Reviving Arizona's rangelands. J. Soil
+- Lane S.S5 and Nearing, M.A., 1989, USDA Water Erosion Prediction Project: Hillsiope profile model
+- Osborn, H.B., Renard, K.G. and Simanton, J.R., 1979. Dense networks to measure convective rainfall in
+
+Parsons, A.J. and Abrahams, A.D., 1987. Gradient-particle size relations on quartz monzonite debris slopes in the Mojave desert. J. Geol., 95: 423-452.
+
+- Parsons, A.J., Abrahams, A.D. and Simanton, J.R., 1992. Microtopography and soil-surface materials on semi-arid piedmont hillslopes, southern Arizona. J. Arid Environ., 22: 107-115.
+- Poesen, J., 1987. Transport of rock fragments by rill flow - a field study. In: R.B. Bryan (Editor), Rill Erosion. Catena Suppl., 8: 35-54.
+- Renard, K.G. and Simanton, J.R., 1990. Application of RUSLE to rangelands. In: Proceedings of American Society of Civil Engineering, Conference on Watershed Planning and Analysis in Action. Irrigation and Drainage Division, Durango, CO, pp. 164.-73.
+- Renard, K.G., Foster, G.R., Weesies, G.A. and Porter, J.P., 1991. RUSLE: Revised universal soil loss equation. J. Soil Water Conserv., 46: 30-33.
+- Romney, E.M., Hale, V.Q., Wallace, A., Childress, J. and Ackerman, T.L.., 1973. Some characteristics of soil and perennial vegetation in northern Mojave Desert areas of the Nevada Test Site. Univ. of California, Los Angeles, Laboratory of Nuclear Medicine and Radiation Biology Report, UCLA 12916, 340 pp.
+- Simanton, J.R., Rawitz, E. and Shirley, E.D., 1984. The effects of rock fragments on erosion of semiarid rangeland soils. In: Erosion and Productivity of Soils Containing Rock Fragments. SSSA Special Pub. 13, Soil Science Society of America, Madison, WI, Chpt. 7, pp. 65-72.
+
+Simanton, J.R., Johnson, C.W., Nyhan, J.W. and Romney, E.M., 1986. Rainfall simulation on rangeland erosion plots. In: L.J. Lane (Editor), Erosion on Rangelands: Emerging Technology and Data Base: Proceedings of the Rainfall Simulator Workshop, Tucson, AZ, 1985. Society for Range Management, Denver, CO, pp. 11-17.

@@ -1,0 +1,126 @@
+   Compiling video-audio-extracts v0.1.0 (/Users/ayates/video_audio_extracts)
+    Finished `release` profile [optimized] target(s) in 15.04s
+     Running tests/pose_int8_benchmark.rs (target/release/deps/pose_int8_benchmark-7f6a210a434af947)
+
+running 1 test
+test benchmark_pose_fp32_vs_int8 ... 
+=== Pose Estimation Benchmark: FP32 vs INT8 ===
+
+Extracting test keyframe...
+[2m2025-11-01T06:26:22.550871Z[0m [32m INFO[0m === Video Extract Debug Mode ===
+[2m2025-11-01T06:26:22.550885Z[0m [32m INFO[0m Input: test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4
+[2m2025-11-01T06:26:22.550887Z[0m [32m INFO[0m Operations: keyframes
+[2m2025-11-01T06:26:22.550888Z[0m [32m INFO[0m Output directory: ./debug_output_pose_benchmark
+[2m2025-11-01T06:26:22.550897Z[0m [32m INFO[0m Validating media file with ffprobe...
+[2m2025-11-01T06:26:22.608442Z[0m [32m INFO[0m File validation passed
+[2m2025-11-01T06:26:22.608450Z[0m [32m INFO[0m Registering plugins...
+[2m2025-11-01T06:26:22.608562Z[0m [32m INFO[0m Registering plugin: audio_extraction
+[2m2025-11-01T06:26:22.608629Z[0m [32m INFO[0m Registering plugin: transcription
+[2m2025-11-01T06:26:22.608688Z[0m [32m INFO[0m Registering plugin: keyframes
+[2m2025-11-01T06:26:22.608741Z[0m [32m INFO[0m Registering plugin: object_detection
+[2m2025-11-01T06:26:22.608787Z[0m [32m INFO[0m Registering plugin: face_detection
+[2m2025-11-01T06:26:22.608833Z[0m [32m INFO[0m Registering plugin: ocr
+[2m2025-11-01T06:26:22.608882Z[0m [32m INFO[0m Registering plugin: diarization
+[2m2025-11-01T06:26:22.608930Z[0m [32m INFO[0m Registering plugin: scene_detection
+[2m2025-11-01T06:26:22.608982Z[0m [32m INFO[0m Registering plugin: vision_embeddings
+[2m2025-11-01T06:26:22.609032Z[0m [32m INFO[0m Registering plugin: text_embeddings
+[2m2025-11-01T06:26:22.609077Z[0m [32m INFO[0m Registering plugin: audio_embeddings
+[2m2025-11-01T06:26:22.609126Z[0m [32m INFO[0m Registering plugin: subtitle_extraction
+[2m2025-11-01T06:26:22.609166Z[0m [32m INFO[0m Registering plugin: audio_classification
+[2m2025-11-01T06:26:22.609202Z[0m [32m INFO[0m Registering plugin: smart_thumbnail
+[2m2025-11-01T06:26:22.609242Z[0m [32m INFO[0m Registering plugin: action_recognition
+[2m2025-11-01T06:26:22.609284Z[0m [32m INFO[0m Registering plugin: motion-tracking
+[2m2025-11-01T06:26:22.609331Z[0m [32m INFO[0m Registering plugin: pose_estimation
+[2m2025-11-01T06:26:22.609378Z[0m [32m INFO[0m Registering plugin: image_quality_assessment
+[2m2025-11-01T06:26:22.609422Z[0m [32m INFO[0m Registering plugin: emotion_detection
+[2m2025-11-01T06:26:22.609465Z[0m [32m INFO[0m Registering plugin: audio_enhancement_metadata
+[2m2025-11-01T06:26:22.609512Z[0m [32m INFO[0m Registering plugin: shot_classification
+[2m2025-11-01T06:26:22.609521Z[0m [32m INFO[0m   ✓ transcription
+[2m2025-11-01T06:26:22.609522Z[0m [32m INFO[0m   ✓ object_detection
+[2m2025-11-01T06:26:22.609523Z[0m [32m INFO[0m   ✓ diarization
+[2m2025-11-01T06:26:22.609524Z[0m [32m INFO[0m   ✓ audio_classification
+[2m2025-11-01T06:26:22.609524Z[0m [32m INFO[0m   ✓ image_quality_assessment
+[2m2025-11-01T06:26:22.609525Z[0m [32m INFO[0m   ✓ scene_detection
+[2m2025-11-01T06:26:22.609526Z[0m [32m INFO[0m   ✓ audio_enhancement_metadata
+[2m2025-11-01T06:26:22.609527Z[0m [32m INFO[0m   ✓ shot_classification
+[2m2025-11-01T06:26:22.609528Z[0m [32m INFO[0m   ✓ emotion_detection
+[2m2025-11-01T06:26:22.609528Z[0m [32m INFO[0m   ✓ text_embeddings
+[2m2025-11-01T06:26:22.609529Z[0m [32m INFO[0m   ✓ smart_thumbnail
+[2m2025-11-01T06:26:22.609530Z[0m [32m INFO[0m   ✓ vision_embeddings
+[2m2025-11-01T06:26:22.609531Z[0m [32m INFO[0m   ✓ ocr
+[2m2025-11-01T06:26:22.609532Z[0m [32m INFO[0m   ✓ keyframes
+[2m2025-11-01T06:26:22.609532Z[0m [32m INFO[0m   ✓ pose_estimation
+[2m2025-11-01T06:26:22.609533Z[0m [32m INFO[0m   ✓ audio_embeddings
+[2m2025-11-01T06:26:22.609534Z[0m [32m INFO[0m   ✓ audio_extraction
+[2m2025-11-01T06:26:22.609535Z[0m [32m INFO[0m   ✓ face_detection
+[2m2025-11-01T06:26:22.609535Z[0m [32m INFO[0m   ✓ motion-tracking
+[2m2025-11-01T06:26:22.609536Z[0m [32m INFO[0m   ✓ action_recognition
+[2m2025-11-01T06:26:22.609537Z[0m [32m INFO[0m   ✓ subtitle_extraction
+[2m2025-11-01T06:26:22.609538Z[0m [32m INFO[0m Building pipeline...
+[2m2025-11-01T06:26:22.609539Z[0m [32m INFO[0m Input format: mp4
+[2m2025-11-01T06:26:22.609541Z[0m [32m INFO[0m Looking for plugin: mp4 -> Keyframes
+[2m2025-11-01T06:26:22.609546Z[0m [32m INFO[0m Pipeline: 1 stages
+[2m2025-11-01T06:26:22.609547Z[0m [32m INFO[0m   Stage 1: keyframes (mp4 → Keyframes)
+[2m2025-11-01T06:26:22.609551Z[0m [32m INFO[0m === Debug Executor Started ===
+[2m2025-11-01T06:26:22.609552Z[0m [32m INFO[0m Pipeline: 1 stages
+[2m2025-11-01T06:26:22.609554Z[0m [32m INFO[0m --- Stage 1/1: keyframes ---
+[2m2025-11-01T06:26:22.609556Z[0m [32m INFO[0m   Input type: mp4
+[2m2025-11-01T06:26:22.609557Z[0m [32m INFO[0m   Output type: Keyframes
+[2m2025-11-01T06:26:22.609557Z[0m [32m INFO[0m   Operation: Keyframes { max_frames: Some(1), min_interval_sec: 1.0 }
+[2m2025-11-01T06:26:22.609570Z[0m [32m INFO[0m Extracting keyframes: max=Some(1), interval=1.0s
+[swscaler @ 0x13ac30000] No accelerated colorspace conversion found from yuv420p to rgb24.
+[2m2025-11-01T06:26:22.746985Z[0m [32m INFO[0m Keyframe extraction complete in 137.411208ms: 1 keyframes extracted
+[2m2025-11-01T06:26:22.747014Z[0m [32m INFO[0m   ✓ Completed in 0.14s
+[2m2025-11-01T06:26:22.747159Z[0m [32m INFO[0m   Saved intermediate: ./debug_output_pose_benchmark/stage_00_keyframes.intermediate.json
+[2m2025-11-01T06:26:22.747165Z[0m [32m INFO[0m === Debug Executor Completed ===
+[2m2025-11-01T06:26:22.747166Z[0m [32m INFO[0m Total time: 0.14s
+[2m2025-11-01T06:26:22.747167Z[0m [32m INFO[0m Stages: 1
+[2m2025-11-01T06:26:22.747172Z[0m [32m INFO[0m === Execution Complete ===
+[2m2025-11-01T06:26:22.747173Z[0m [32m INFO[0m Total time: 0.14s
+[2m2025-11-01T06:26:22.747174Z[0m [32m INFO[0m Stages executed: 1
+[2m2025-11-01T06:26:22.747174Z[0m [32m INFO[0m   Stage 1: keyframes - 0.14s
+[2m2025-11-01T06:26:22.747176Z[0m [32m INFO[0m Final output (JSON):
+[
+  {
+    "frame_number": 0,
+    "hash": 0,
+    "sharpness": 0.0,
+    "thumbnail_paths": {
+      "640x480": "/tmp/video-extract/keyframes/video_hevc_h265_modern_codec__compatibility/keyframes/video_hevc_h265_modern_codec__compatibility_00000000_640x480.jpg"
+    },
+    "timestamp": 0.0
+  }
+]
+[2m2025-11-01T06:26:22.747178Z[0m [32m INFO[0m Intermediate results saved to: ./debug_output_pose_benchmark
+Using test image: /tmp/video-extract/keyframes/video_hevc_h265_modern_codec__compatibility/keyframes/video_hevc_h265_modern_codec__compatibility_00000000_640x480.jpg
+
+Benchmarking FP32 (yolov8n-pose.onnx):
+  Loading model: yolov8n-pose.onnx (13 MB)
+  Image loaded: 640x480 pixels
+  Session loaded: 1.114s
+  Warm-up run...
+  Running 5 benchmark iterations...
+    Run 1: 0.012s (0 detections)
+    Run 2: 0.012s
+    Run 3: 0.012s
+    Run 4: 0.012s
+    Run 5: 0.012s
+  Average: 0.012s (min: 0.012s, max: 0.012s, std: 0.000s)
+
+Benchmarking INT8 (yolov8n-pose-int8.onnx):
+  Loading model: yolov8n-pose-int8.onnx (3 MB)
+  Image loaded: 640x480 pixels
+
+thread 'benchmark_pose_fp32_vs_int8' panicked at tests/pose_int8_benchmark.rs:141:18:
+INT8 benchmark failed: ModelLoadError { path: "models/pose-estimation/yolov8n-pose-int8.onnx", error: "Could not find an implementation for ConvInteger(10) node with name '/model.0/conv/Conv_quant'" }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+FAILED
+
+failures:
+
+failures:
+    benchmark_pose_fp32_vs_int8
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.49s
+
+error: test failed, to rerun pass `--test pose_int8_benchmark`

@@ -1,0 +1,12 @@
+{
+  "pdf_name": "code_and_formula.pdf",
+  "num_pages": 2,
+  "model_costs": {
+    "gpt-4o": {
+      "input_tokens": 2850,
+      "output_tokens": 2030,
+      "cost_usd": 0.027424999999999998
+    }
+  },
+  "total_cost_usd": 0.027424999999999998
+}

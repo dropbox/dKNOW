@@ -1,0 +1,5 @@
+# v1.0.0 Release - User Request
+
+Update README and push PR to https://github.com/dropbox/dKNOW/pdfium_fast
+
+Status: Production ready, all tests passing

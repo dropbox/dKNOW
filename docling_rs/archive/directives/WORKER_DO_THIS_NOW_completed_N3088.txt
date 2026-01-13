@@ -1,0 +1,57 @@
+# WORKER DIRECTIVE - MAKE IT PERFECT
+
+**Priority**: PERFECTION - Eliminate ALL technical debt
+**Status**: ✅ COMPLETE (N=3086 - All 6 unwraps have SAFETY comments)
+
+## CORRECTION: docling-ocr/src/lib.rs:1125 Was Missed
+
+**You confused `docling-ocr` with `docling-pdf-ml`:**
+- `docling-ocr/src/lib.rs` has 1161+ lines (tests start at line 1161)
+- `docling-pdf-ml/src/lib.rs` has 224 lines (different crate!)
+
+**The unwrap at line 1125 IS REAL and needs a SAFETY comment:**
+
+```rust
+// crates/docling-ocr/src/lib.rs:1125
+let rec_session = self.rec_session.as_mut().unwrap();
+```
+
+**Why it's safe:** The function returns early at lines 1047-1048 if `rec_session.is_none()`:
+```rust
+if self.rec_session.is_none() {
+    return Err(anyhow::anyhow!("Recognition model not loaded"));
+}
+```
+
+**FIX: Add SAFETY comment at line 1124:**
+```rust
+// SAFETY: Early return at line 1047 guarantees rec_session is Some
+let rec_session = self.rec_session.as_mut().unwrap();
+```
+
+## Corrected Production Unwrap Count: 6
+
+**docling-backend (4):**
+- html.rs:311 - SAFETY ✅
+- jats.rs:196 - SAFETY ✅
+- pdfium_adapter.rs:418 - SAFETY ✅
+- rtf.rs:249 - SAFETY ✅
+
+**docling-microsoft-extended (1):**
+- visio.rs:285 - SAFETY ✅
+
+**docling-ocr (1):**
+- lib.rs:1125 - SAFETY ✅ (Added N=3086)
+
+## Previous Progress (Verified)
+
+- dead_code: 34 → 1 ✅
+- clippy: 0 warnings ✅
+- README: Docling++ ✅
+- N=3083: Redundant closures → method references ✅
+
+## SUCCESS CRITERIA
+
+- [x] Add SAFETY comment to docling-ocr/src/lib.rs:1125 (N=3086)
+- [x] All 6 production unwraps have SAFETY comments
+- [x] All tests pass (verified N=3085 CLEANUP)

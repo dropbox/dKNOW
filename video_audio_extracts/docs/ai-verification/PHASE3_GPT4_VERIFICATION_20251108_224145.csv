@@ -1,0 +1,269 @@
+test_name,operation,input_file,status,confidence,findings
+"arw_face_detection","face-detection","test_files_camera_raw/sony_a55.arw","CORRECT","1.0","The image is a landscape view with no visible faces. The output of the face-detection operation is an empty list, which is correct as there are no faces present in the image."
+"arw_object_detection","object-detection","test_files_camera_raw/sony_a55.arw","CORRECT","0.95","The image contains two boats on the river. The detected bounding boxes correspond to these boats, and they are labeled correctly as 'boat'. The confidence levels are reasonable given the clarity of the objects."
+"arw_ocr","ocr","test_files_camera_raw/sony_a55.arw","CORRECT","1.0","The image is a landscape view with a river, buildings, and boats. There is no visible text in the image, so the OCR output of an empty array is correct."
+"arw_pose_estimation","pose-estimation","test_files_camera_raw/sony_a55.arw","CORRECT","1.0","The image does not contain any visible human bodies, so the empty output for pose-estimation is correct."
+"arw_emotion_detection","emotion-detection","test_files_camera_raw/sony_a55.arw","ERROR","0.0","Binary execution failed"
+"cr2_face_detection","face-detection","test_files_camera_raw/canon_eos_m.cr2","CORRECT","1.0","The image contains a cat partially covered by a blanket. The face-detection operation output is an empty list, which is correct as there are no human faces present in the image."
+"cr2_object_detection","object-detection","test_files_camera_raw/canon_eos_m.cr2","SUSPICIOUS","0.7","The object detection correctly identified a cat partially visible under a blanket. However, the detection of a 'bed' is incorrect as the image shows a couch with a blanket, not a bed."
+"cr2_ocr","ocr","test_files_camera_raw/canon_eos_m.cr2","CORRECT","1.0","The image does not contain any text, so the OCR output of an empty list is correct."
+"nef_face_detection","face-detection","test_files_camera_raw/nikon_z7.nef","CORRECT","1.0","The image contains a landscape with a building and no visible faces. The output of the face-detection operation is an empty list, which is correct as there are no faces present in the image."
+"nef_object_detection","object-detection","test_files_camera_raw/nikon_z7.nef","CORRECT","1.0","The image contains a building and a landscape with no distinct objects that typically require detection, such as animals, vehicles, or people. The output of an empty list is appropriate as there are no objects to detect."
+"nef_ocr","ocr","test_files_camera_raw/nikon_z7.nef","CORRECT","1.0","The image does not contain any text, so the OCR output of an empty list is correct."
+"raf_face_detection","face-detection","test_files_camera_raw/fuji_xa3.raf","CORRECT","1.0","The image does not contain any human faces. The output of the face-detection operation, which is an empty list, is correct."
+"raf_object_detection","object-detection","test_files_camera_raw/fuji_xa3.raf","INCORRECT","0.9","The image does not contain any boats or benches. The object detected as a 'boat' is actually a floating pyramid structure. There is no bench visible in the image."
+"dng_face_detection","face-detection","test_files_camera_raw/iphone7_plus.dng","CORRECT","1.0","The image is an aerial view of a landscape with no visible faces. The output of the face-detection operation is an empty list, which is correct as there are no faces present in the image."
+"dng_object_detection","object-detection","test_files_camera_raw/iphone7_plus.dng","CORRECT","1.0","The image is an aerial view of a landscape with clouds, fields, and buildings. There are no distinct objects like animals, vehicles, or people that would typically be detected in an object-detection operation."
+"mp4_face_detection","keyframes;face-detection","test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4","ERROR","0.0","Verification failed: Failed to convert test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4 to JPEG: ffmpeg version 8.0 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.0.13.3)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0_2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:03.00, start: 0.000000, bitrate: 429 kb/s
+  Stream #0:0[0x1](und): Video: hevc (Main) (hev1 / 0x31766568), yuv420p(tv, bt709, progressive), 3446x1996, 335 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.11.100 libx265
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 69 kb/s (default)
+    Metadata:
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+Output #0, image2, to '/var/folders/k1/26p1dszx7lgd_3k1f6gyywx80000gn/T/tmpiinyee8n.jpg':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf62.3.100
+  Stream #0:0(und): Video: mjpeg, yuv420p(pc, bt709, progressive), 3446x1996, q=2-31, 200 kb/s, 60 fps, 60 tbn (default)
+    Metadata:
+      encoder         : Lavc62.11.100 mjpeg
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 0x15960f1c0] The specified filename '/var/folders/k1/26p1dszx7lgd_3k1f6gyywx80000gn/T/tmpiinyee8n.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x15960f1c0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[image2 @ 0x15960f1c0] Cannot write more than one file with the same name. Are you missing the -update option or a sequence pattern?
+[vost#0:0/mjpeg @ 0x15960f770] Error submitting a packet to the muxer: Invalid argument
+    Last message repeated 1 times
+[out#0/image2 @ 0x600003f50300] Error muxing a packet
+[out#0/image2 @ 0x600003f50300] Task finished with error code: -22 (Invalid argument)
+[out#0/image2 @ 0x600003f50300] Terminating thread with return code -22 (Invalid argument)
+[out#0/image2 @ 0x600003f50300] video:572KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    2 fps=0.0 q=2.0 Lsize=N/A time=00:00:00.03 bitrate=N/A dup=1 drop=0 speed=0.232x elapsed=0:00:00.14    
+Conversion failed!"
+"mp4_object_detection","keyframes;object-detection","test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4","ERROR","0.0","Verification failed: Failed to convert test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4 to JPEG: ffmpeg version 8.0 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.0.13.3)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0_2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:03.00, start: 0.000000, bitrate: 429 kb/s
+  Stream #0:0[0x1](und): Video: hevc (Main) (hev1 / 0x31766568), yuv420p(tv, bt709, progressive), 3446x1996, 335 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.11.100 libx265
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 69 kb/s (default)
+    Metadata:
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+Output #0, image2, to '/var/folders/k1/26p1dszx7lgd_3k1f6gyywx80000gn/T/tmpi0yqroom.jpg':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf62.3.100
+  Stream #0:0(und): Video: mjpeg, yuv420p(pc, bt709, progressive), 3446x1996, q=2-31, 200 kb/s, 60 fps, 60 tbn (default)
+    Metadata:
+      encoder         : Lavc62.11.100 mjpeg
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 0x141f04080] The specified filename '/var/folders/k1/26p1dszx7lgd_3k1f6gyywx80000gn/T/tmpi0yqroom.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x141f04080] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[image2 @ 0x141f04080] Cannot write more than one file with the same name. Are you missing the -update option or a sequence pattern?
+[vost#0:0/mjpeg @ 0x141f04740] Error submitting a packet to the muxer: Invalid argument
+    Last message repeated 1 times
+[out#0/image2 @ 0x600000944000] Error muxing a packet
+[out#0/image2 @ 0x600000944000] Task finished with error code: -22 (Invalid argument)
+[out#0/image2 @ 0x600000944000] Terminating thread with return code -22 (Invalid argument)
+[out#0/image2 @ 0x600000944000] video:572KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    2 fps=0.0 q=2.0 Lsize=N/A time=00:00:00.03 bitrate=N/A speed=0.221x elapsed=0:00:00.15    
+Conversion failed!"
+"mp4_ocr","keyframes;ocr","test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4","ERROR","0.0","Verification failed: Failed to convert test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4 to JPEG: ffmpeg version 8.0 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.0.13.3)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0_2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:03.00, start: 0.000000, bitrate: 429 kb/s
+  Stream #0:0[0x1](und): Video: hevc (Main) (hev1 / 0x31766568), yuv420p(tv, bt709, progressive), 3446x1996, 335 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.11.100 libx265
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 69 kb/s (default)
+    Metadata:
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+Output #0, image2, to '/var/folders/k1/26p1dszx7lgd_3k1f6gyywx80000gn/T/tmp01a4bv18.jpg':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf62.3.100
+  Stream #0:0(und): Video: mjpeg, yuv420p(pc, bt709, progressive), 3446x1996, q=2-31, 200 kb/s, 60 fps, 60 tbn (default)
+    Metadata:
+      encoder         : Lavc62.11.100 mjpeg
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 0x154e0f1f0] The specified filename '/var/folders/k1/26p1dszx7lgd_3k1f6gyywx80000gn/T/tmp01a4bv18.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x154e0f1f0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[image2 @ 0x154e0f1f0] Cannot write more than one file with the same name. Are you missing the -update option or a sequence pattern?
+[vost#0:0/mjpeg @ 0x154e0f7a0] Error submitting a packet to the muxer: Invalid argument
+    Last message repeated 1 times
+[out#0/image2 @ 0x60000304c300] Error muxing a packet
+[out#0/image2 @ 0x60000304c300] Task finished with error code: -22 (Invalid argument)
+[out#0/image2 @ 0x60000304c300] Terminating thread with return code -22 (Invalid argument)
+[out#0/image2 @ 0x60000304c300] video:572KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    2 fps=0.0 q=2.0 Lsize=N/A time=00:00:00.03 bitrate=N/A dup=3 drop=0 speed=0.221x elapsed=0:00:00.15    
+Conversion failed!"
+"mp4_pose_estimation","keyframes;pose-estimation","test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4","ERROR","0.0","Verification failed: Failed to convert test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4 to JPEG: ffmpeg version 8.0 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.0.13.3)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0_2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:03.00, start: 0.000000, bitrate: 429 kb/s
+  Stream #0:0[0x1](und): Video: hevc (Main) (hev1 / 0x31766568), yuv420p(tv, bt709, progressive), 3446x1996, 335 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.11.100 libx265
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 69 kb/s (default)
+    Metadata:
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+Output #0, image2, to '/var/folders/k1/26p1dszx7lgd_3k1f6gyywx80000gn/T/tmpbfjtssk_.jpg':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf62.3.100
+  Stream #0:0(und): Video: mjpeg, yuv420p(pc, bt709, progressive), 3446x1996, q=2-31, 200 kb/s, 60 fps, 60 tbn (default)
+    Metadata:
+      encoder         : Lavc62.11.100 mjpeg
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 0x112704200] The specified filename '/var/folders/k1/26p1dszx7lgd_3k1f6gyywx80000gn/T/tmpbfjtssk_.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x112704200] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[image2 @ 0x112704200] Cannot write more than one file with the same name. Are you missing the -update option or a sequence pattern?
+[vost#0:0/mjpeg @ 0x1127047b0] Error submitting a packet to the muxer: Invalid argument
+    Last message repeated 1 times
+[out#0/image2 @ 0x600002d04000] Error muxing a packet
+[out#0/image2 @ 0x600002d04000] Task finished with error code: -22 (Invalid argument)
+[out#0/image2 @ 0x600002d04000] Terminating thread with return code -22 (Invalid argument)
+[out#0/image2 @ 0x600002d04000] video:572KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    2 fps=0.0 q=2.0 Lsize=N/A time=00:00:00.03 bitrate=N/A speed=0.232x elapsed=0:00:00.14    
+Conversion failed!"
+"mov_face_detection","keyframes;face-detection","test_edge_cases/prores_video_high_quality_old_codec.mov","ERROR","0.0","Binary execution failed"
+"mov_object_detection","keyframes;object-detection","test_edge_cases/prores_video_high_quality_old_codec.mov","ERROR","0.0","Binary execution failed"
+"mov_ocr","keyframes;ocr","test_edge_cases/prores_video_high_quality_old_codec.mov","ERROR","0.0","Binary execution failed"
+"mov_pose_estimation","keyframes;pose-estimation","test_edge_cases/prores_video_high_quality_old_codec.mov","ERROR","0.0","Binary execution failed"
+"mkv_face_detection","keyframes;face-detection","test_edge_cases/video_multitrack_audio_matroska.mkv","ERROR","0.0","Binary execution failed"
+"mkv_object_detection","keyframes;object-detection","test_edge_cases/video_multitrack_audio_matroska.mkv","ERROR","0.0","Binary execution failed"
+"mkv_ocr","keyframes;ocr","test_edge_cases/video_multitrack_audio_matroska.mkv","ERROR","0.0","Binary execution failed"
+"mkv_pose_estimation","keyframes;pose-estimation","test_edge_cases/video_multitrack_audio_matroska.mkv","ERROR","0.0","Binary execution failed"
+"webm_face_detection","keyframes;face-detection","test_edge_cases/video_webm_vp9_opus_audio.webm","ERROR","0.0","Binary execution failed"
+"webm_object_detection","keyframes;object-detection","test_edge_cases/video_webm_vp9_opus_audio.webm","ERROR","0.0","Binary execution failed"
+"webm_ocr","keyframes;ocr","test_edge_cases/video_webm_vp9_opus_audio.webm","ERROR","0.0","Binary execution failed"
+"avi_face_detection","keyframes;face-detection","test_edge_cases/video_small_avi_old_format.avi","ERROR","0.0","Binary execution failed"
+"avi_object_detection","keyframes;object-detection","test_edge_cases/video_small_avi_old_format.avi","ERROR","0.0","Binary execution failed"
+"avi_ocr","keyframes;ocr","test_edge_cases/video_small_avi_old_format.avi","ERROR","0.0","Binary execution failed"
+"flv_face_detection","keyframes;face-detection","test_edge_cases/video_old_flash_flv.flv","ERROR","0.0","Binary execution failed"
+"flv_object_detection","keyframes;object-detection","test_edge_cases/video_old_flash_flv.flv","ERROR","0.0","Binary execution failed"
+"heic_face_detection","face-detection","test_edge_cases/image_heic_iphone.heic","ERROR","0.0","Binary execution failed"
+"heic_object_detection","object-detection","test_edge_cases/image_heic_iphone.heic","ERROR","0.0","Binary execution failed"
+"heic_ocr","ocr","test_edge_cases/image_heic_iphone.heic","ERROR","0.0","Binary execution failed"
+"heic_pose_estimation","pose-estimation","test_edge_cases/image_heic_iphone.heic","ERROR","0.0","Binary execution failed"
+"heic_emotion_detection","emotion-detection","test_edge_cases/image_heic_iphone.heic","ERROR","0.0","Binary execution failed"
+"jpg_face_detection_complex","face-detection","test_files_wikimedia/jpg/face-detection/09_Alexey_Akindinov._Boy_and_Crystal._1997.jpg","CORRECT","0.95","The image is an abstract painting with no clear human faces visible. The face-detection output of an empty list is appropriate as there are no discernible faces to detect."
+"jpg_object_detection_complex","object-detection","test_files_wikimedia/jpg/object-detection/04_150229-ColourwithStorage-Scene1_output.jpg","SUSPICIOUS","0.75","The object detection output includes several objects such as bottles, chairs, and dining tables. The bottles and chairs are correctly identified, but the confidence levels are low. The dining table detection seems to overlap with the chairs, which might indicate a false positive or misclassification."
+"png_face_detection_abstract","face-detection","test_files_wikimedia/png/face-detection/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png","CORRECT","1.0","The image is an abstract painting with no discernible faces present. The face-detection output correctly returned an empty list as there are no faces to detect."
+"png_object_detection_geometric","object-detection","test_files_wikimedia/png/object-detection/05_A_setiset_with_duplicated_piece.png","CORRECT","1.0","The image contains a set of geometric shapes arranged in a pattern. The object-detection output is empty, which is appropriate as there are no specific objects like animals, vehicles, or recognizable items typically detected by object-detection algorithms."
+"webp_face_detection","face-detection","test_files_wikimedia/webp/face-detection/01_webp_lossy.webp","ERROR","0.0","Binary execution failed"
+"webp_object_detection","object-detection","test_files_wikimedia/webp/object-detection/02_webp_lossy.webp","SUSPICIOUS","0.85","The first bounding box correctly identifies a person in the image, who is partially visible and engaged in an activity involving water. The second bounding box, however, does not appear to correspond to a person or any discernible object in the image."
+"bmp_face_detection","face-detection","test_edge_cases/image_bmp_uncompressed.bmp","ERROR","0.0","Binary execution failed"
+"bmp_object_detection","object-detection","test_edge_cases/image_bmp_uncompressed.bmp","ERROR","0.0","Binary execution failed"
+"avif_face_detection","face-detection","test_edge_cases/image_avif_modern.avif","ERROR","0.0","Binary execution failed"
+"avif_object_detection","object-detection","test_edge_cases/image_avif_modern.avif","ERROR","0.0","Binary execution failed"
+"wikimedia_jpg_art","face-detection","test_files_wikimedia/jpg/face-detection/01_"Amelia"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg","CORRECT","1.0","The image does not contain any human faces. The output of the face-detection operation, which is an empty list, is correct."
+"wikimedia_jpg_dog","object-detection","test_files_wikimedia/jpg/object-detection/10_Australian_Shepherd_red_merle_portrait_Canon_EOS_700D_Pentacon_200mm_f4.jpg","ERROR","0.0","Binary execution failed"
+"wikimedia_jpg_text","ocr","test_files_wikimedia/jpg/ocr/01_"Amelia"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg","CORRECT","1.0","The image contains an abstract art piece with no visible text. The OCR output is empty, which is correct as there is no text present in the image."
+"wikimedia_png_watercolor","face-detection","test_files_wikimedia/png/face-detection/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png","CORRECT","1.0","The image is an abstract painting with no discernible human faces. The face-detection output correctly returns an empty list as there are no faces present."
+"wikimedia_png_puzzle","ocr","test_files_wikimedia/png/ocr/05_A_setiset_with_duplicated_piece.png","CORRECT","1.0","The image contains a set of geometric shapes with no text present. The OCR output is empty, which is correct as there is no text to detect."
+"wikimedia_webp_landscape","ocr","test_files_wikimedia/webp/ocr/01_webp_lossy.webp","CORRECT","1.0","The image is a landscape with no text present. The OCR output is correctly empty as there is no text to detect."
+"wikimedia_webp_water","object-detection","test_files_wikimedia/webp/object-detection/02_webp_lossy.webp","CORRECT","0.95","The primary bounding box accurately identifies a person in the image, who is engaged in an activity involving water. The second bounding box, although with lower confidence, does not seem to correspond to any visible person or object in the image."
+"wikimedia_webp_fire","object-detection","test_files_wikimedia/webp/object-detection/05_webp_lossy.webp","SUSPICIOUS","0.7","The image contains multiple people, including a fire performer and musicians. The bounding boxes do not accurately capture all visible people, and some boxes are placed in areas with no visible person."
+"wikimedia_jpg_pose","pose-estimation","test_files_wikimedia/jpg/pose-estimation/01_"Amelia"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg","CORRECT","1.0","The image does not contain any human figures, so the output of an empty list for pose-estimation is correct."
+"wikimedia_png_pose","pose-estimation","test_files_wikimedia/png/pose-estimation/05_A_setiset_with_duplicated_piece.png","CORRECT","1.0","The image contains abstract shapes and does not depict any human figures. Therefore, the output of an empty list for pose-estimation is correct as there are no human bodies or keypoints to detect."

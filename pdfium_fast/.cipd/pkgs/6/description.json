@@ -1,0 +1,4 @@
+{
+  "subdir": "pdfium/buildtools/reclient",
+  "package_name": "infra/rbe/client/mac-arm64"
+}

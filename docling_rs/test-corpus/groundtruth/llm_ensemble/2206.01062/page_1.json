@@ -1,0 +1,263 @@
+{
+  "page_number": 1,
+  "elements": [
+    {
+      "label": "title",
+      "text": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis",
+      "bbox": {
+        "l": 20.0,
+        "t": 5.0,
+        "r": 80.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Birgit Pfitzmann\nIBM Research\nRueschlikon, Switzerland\nbpf@zurich.ibm.com",
+      "bbox": {
+        "l": 10.0,
+        "t": 12.0,
+        "r": 30.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Christoph Auer\nIBM Research\nRueschlikon, Switzerland\ncau@zurich.ibm.com",
+      "bbox": {
+        "l": 35.0,
+        "t": 12.0,
+        "r": 55.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Michele Dolfi\nIBM Research\nRueschlikon, Switzerland\ndol@zurich.ibm.com",
+      "bbox": {
+        "l": 60.0,
+        "t": 12.0,
+        "r": 80.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Ahmed S. Nassar\nIBM Research\nRueschlikon, Switzerland\nahn@zurich.ibm.com",
+      "bbox": {
+        "l": 20.0,
+        "t": 22.0,
+        "r": 40.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "text",
+      "text": "Peter Staar\nIBM Research\nRueschlikon, Switzerland\ntaa@zurich.ibm.com",
+      "bbox": {
+        "l": 45.0,
+        "t": 22.0,
+        "r": 65.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "ABSTRACT",
+      "bbox": {
+        "l": 10.0,
+        "t": 32.0,
+        "r": 20.0,
+        "b": 34.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Accurate document layout analysis is a key requirement for high-quality PDF document conversion. With the recent availability of public, large ground-truth datasets such as PubLayNet and DocBank, deep-learning models have proven to be very effective at layout detection and segmentation. While these datasets are of adequate size to train such models, they severely lack in layout variability since they are sourced from scientific article repositories such as PubMed and arXiv only. Consequently, the accuracy of the layout segmentation drops significantly when these models are applied on more challenging and diverse layouts. In this paper, we present DocLayNet, a new, publicly available, document-layout annotation dataset in COCO format. It contains 80863 manually annotated pages from diverse data sources to represent a wide variability in layouts. For each PDF page, the layout annotations provide labeled bounding-boxes with a choice of 11 distinct classes. DocLayNet also provides a subset of double- and triple-annotated pages to determine the inter-annotator agreement. In multiple experiments, we provide baseline accuracy scores (in mAP) for a set of popular object detection models. We also demonstrate that these models fall approximately 10% behind the inter-annotator agreement. Furthermore, we provide evidence that DocLayNet is of sufficient size. Lastly, we compare models trained on PubLayNet, DocBank and DocLayNet, showing that layout predictions of the DocLayNet-trained models are more robust and thus the preferred choice for general-purpose document-layout analysis.",
+      "bbox": {
+        "l": 10.0,
+        "t": 35.0,
+        "r": 90.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "CCS CONCEPTS",
+      "bbox": {
+        "l": 10.0,
+        "t": 57.0,
+        "r": 25.0,
+        "b": 59.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "• Information systems → Document structure; • Applied computing → Document analysis; • Computing methodologies → Machine learning; Computer vision; Object detection;",
+      "bbox": {
+        "l": 10.0,
+        "t": 60.0,
+        "r": 90.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Images of complex page layouts",
+      "bbox": {
+        "l": 10.0,
+        "t": 67.0,
+        "r": 50.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 1: Four examples of complex page layouts across different document categories",
+      "bbox": {
+        "l": 10.0,
+        "t": 82.0,
+        "r": 90.0,
+        "b": 84.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "KEYWORDS",
+      "bbox": {
+        "l": 10.0,
+        "t": 86.0,
+        "r": 25.0,
+        "b": 88.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "PDF document conversion, layout segmentation, object-detection, data set, Machine Learning",
+      "bbox": {
+        "l": 10.0,
+        "t": 89.0,
+        "r": 90.0,
+        "b": 91.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "ACM Reference Format:",
+      "bbox": {
+        "l": 10.0,
+        "t": 93.0,
+        "r": 35.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Birgit Pfitzmann, Christoph Auer, Michele Dolfi, Ahmed S. Nassar, and Peter Staar. 2022. DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD ’22), August 14–18, 2022, Washington, DC, USA. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3534678.3534903",
+      "bbox": {
+        "l": 10.0,
+        "t": 96.0,
+        "r": 90.0,
+        "b": 99.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for third-party components of this work must be honored. For all other uses, contact the owner/author(s). KDD ’22, August 14–18, 2022, Washington, DC, USA © 2022 Copyright held by the owner/author(s). ACM ISBN 978-1-4503-9387-0/22/08. https://doi.org/10.1145/3534678.3534903",
+      "bbox": {
+        "l": 10.0,
+        "t": 101.0,
+        "r": 90.0,
+        "b": 105.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_header",
+      "text": "arXiv:2206.01062v1 [cs.CV] 2 Jun 2022",
+      "bbox": {
+        "l": 5.0,
+        "t": 5.0,
+        "r": 15.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

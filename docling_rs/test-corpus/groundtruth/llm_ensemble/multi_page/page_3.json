@@ -1,0 +1,207 @@
+{
+  "page_number": 3,
+  "elements": [
+    {
+      "label": "section_header",
+      "text": "Specialized Word Processing Tools",
+      "bbox": {
+        "l": 5.0,
+        "t": 5.0,
+        "r": 50.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In addition to general-purpose word processors, specialized tools have emerged to cater to specific industries and needs. These tools incorporate unique features tailored to their users' workflows:",
+      "bbox": {
+        "l": 5.0,
+        "t": 12.0,
+        "r": 95.0,
+        "b": 18.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "• Academic and Technical Writing: Tools like LaTeX gained popularity among academics, scientists, and engineers. Unlike traditional word processors, LaTeX focuses on precise formatting, particularly for complex mathematical equations, scientific papers, and technical documents. It relies on a markup language to produce polished documents suitable for publishing.",
+      "bbox": {
+        "l": 5.0,
+        "t": 20.0,
+        "r": 95.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "• Screenwriting Software: For screenwriters, tools like Final Draft and Celtx are specialized to handle scripts for film and television. These programs automate the formatting of dialogue, scene descriptions, and other elements unique to screenwriting.",
+      "bbox": {
+        "l": 5.0,
+        "t": 32.0,
+        "r": 95.0,
+        "b": 42.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "• Legal Document Processors: Word processors tailored for legal professionals, like WordPerfect, offered features such as redlining (early version tracking) and document comparison. Even today, many law firms rely on these tools due to their robust formatting options for contracts and legal briefs.",
+      "bbox": {
+        "l": 5.0,
+        "t": 44.0,
+        "r": 95.0,
+        "b": 54.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Key Features That Changed Word Processing",
+      "bbox": {
+        "l": 5.0,
+        "t": 56.0,
+        "r": 50.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The evolution of word processors wasn't just about hardware or software improvements—it was about the features that revolutionized how people wrote and edited. Some of these transformative features include:",
+      "bbox": {
+        "l": 5.0,
+        "t": 62.0,
+        "r": 95.0,
+        "b": 68.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "1. Undo/Redo: Introduced in the 1980s, the ability to undo mistakes and redo actions made experimentation and error correction much easier.",
+      "bbox": {
+        "l": 5.0,
+        "t": 70.0,
+        "r": 95.0,
+        "b": 74.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "2. Spell Check and Grammar Check: By the 1990s, these became standard, allowing users to spot errors automatically.",
+      "bbox": {
+        "l": 5.0,
+        "t": 76.0,
+        "r": 95.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "3. Templates: Pre-designed formats for documents, such as resumes, letters, and invoices, helped users save time.",
+      "bbox": {
+        "l": 5.0,
+        "t": 82.0,
+        "r": 95.0,
+        "b": 86.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "4. Track Changes: A game-changer for collaboration, this feature allowed multiple users to suggest edits while maintaining the original text.",
+      "bbox": {
+        "l": 5.0,
+        "t": 88.0,
+        "r": 95.0,
+        "b": 92.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "5. Real-Time Collaboration: Tools like Google Docs and Microsoft 365 enabled multiple users to edit the same document simultaneously, forever changing teamwork dynamics.",
+      "bbox": {
+        "l": 5.0,
+        "t": 94.0,
+        "r": 95.0,
+        "b": 98.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "The Cultural Impact of Word Processors",
+      "bbox": {
+        "l": 5.0,
+        "t": 100.0,
+        "r": 50.0,
+        "b": 104.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The word processor didn't just change workplaces—it changed culture. It democratized writing, enabling anyone with access to a computer to produce professional-quality documents. This shift had profound implications for education, business, and creative fields:",
+      "bbox": {
+        "l": 5.0,
+        "t": 106.0,
+        "r": 95.0,
+        "b": 112.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

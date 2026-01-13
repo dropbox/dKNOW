@@ -1,0 +1,279 @@
+{
+  "ac3": {
+    "count": 35,
+    "examples": [
+      "test_files_wikimedia/ac3/audio-enhancement-metadata/monsters_inc_2.0_192.ac3",
+      "test_files_wikimedia/ac3/audio-enhancement-metadata/04_test.ac3"
+    ]
+  },
+  "alac": {
+    "count": 35,
+    "examples": [
+      "test_files_wikimedia/alac/audio-enhancement-metadata/03_acompanyament_tema.m4a",
+      "test_files_wikimedia/alac/audio-enhancement-metadata/04_generated_sygnalow.m4a"
+    ]
+  },
+  "amr": {
+    "count": 35,
+    "examples": [
+      "test_files_wikimedia/amr/audio-enhancement-metadata/01_sample.amr",
+      "test_files_wikimedia/amr/audio-enhancement-metadata/02_sound.amr"
+    ]
+  },
+  "ape": {
+    "count": 7,
+    "examples": [
+      "test_files_wikimedia/ape/audio-enhancement-metadata/01_concret_vbAccelerator.ape",
+      "test_files_wikimedia/ape/audio-classification/01_concret_vbAccelerator.ape"
+    ]
+  },
+  "arw": {
+    "count": 65,
+    "examples": [
+      "test_files_wikimedia/arw/emotion-detection/03_sony_a9.arw",
+      "test_files_wikimedia/arw/emotion-detection/05_sony_a6000.arw"
+    ]
+  },
+  "asf": {
+    "count": 96,
+    "examples": [
+      "test_files_wikimedia/asf/emotion-detection/03_test.asf",
+      "test_files_wikimedia/asf/emotion-detection/05_test.asf"
+    ]
+  },
+  "avi": {
+    "count": 23,
+    "examples": [
+      "test_files_wikimedia/avi/emotion-detection/02_zoom_meeting.avi",
+      "test_files_wikimedia/avi/audio-classification/02_zoom_meeting.avi"
+    ]
+  },
+  "avif": {
+    "count": 17,
+    "examples": [
+      "test_files_wikimedia/avif/emotion-detection/01_touch_gavin_evans.avif",
+      "test_files_wikimedia/avif/content-moderation/01_touch_gavin_evans.avif"
+    ]
+  },
+  "bmp": {
+    "count": 16,
+    "examples": [
+      "test_files_wikimedia/bmp/emotion-detection/01_bmp_24bit.bmp",
+      "test_files_wikimedia/bmp/content-moderation/01_bmp_24bit.bmp"
+    ]
+  },
+  "cr2": {
+    "count": 65,
+    "examples": [
+      "test_files_wikimedia/cr2/emotion-detection/01_canon_5d_mark_ii.cr2",
+      "test_files_wikimedia/cr2/emotion-detection/05_canon_6d.cr2"
+    ]
+  },
+  "dng": {
+    "count": 65,
+    "examples": [
+      "test_files_wikimedia/dng/emotion-detection/03_leica_m240_compressed.dng",
+      "test_files_wikimedia/dng/emotion-detection/01_pentax_k1.dng"
+    ]
+  },
+  "dts": {
+    "count": 56,
+    "examples": [
+      "test_files_wikimedia/dts/audio-enhancement-metadata/04_sample.dts",
+      "test_files_wikimedia/dts/audio-enhancement-metadata/lotr_5.1_768.dts"
+    ]
+  },
+  "dv": {
+    "count": 71,
+    "examples": [
+      "test_files_wikimedia/dv/emotion-detection/01_shots0000.dv",
+      "test_files_wikimedia/dv/emotion-detection/05_test.dv"
+    ]
+  },
+  "flac": {
+    "count": 33,
+    "examples": [
+      "test_files_wikimedia/flac/audio-enhancement-metadata/01_01_-_Gute_Nacht_(CK_2946-2,_ES_383).flac.flac",
+      "test_files_wikimedia/flac/audio-enhancement-metadata/02_02_-_Die_Wetterfahne_(CK_2947-2,_ES_383).flac.flac"
+    ]
+  },
+  "gxf": {
+    "count": 70,
+    "examples": [
+      "test_files_wikimedia/gxf/emotion-detection/05_gxf_solid_color.gxf",
+      "test_files_wikimedia/gxf/emotion-detection/04_gxf_rgb_test.gxf"
+    ]
+  },
+  "heic": {
+    "count": 27,
+    "examples": [
+      "test_files_wikimedia/heic/emotion-detection/01_iphone_photo.heic",
+      "test_files_wikimedia/heic/content-moderation/01_iphone_photo.heic"
+    ]
+  },
+  "heif": {
+    "count": 17,
+    "examples": [
+      "test_files_wikimedia/heif/emotion-detection/01_iphone_photo.heif",
+      "test_files_wikimedia/heif/content-moderation/01_iphone_photo.heif"
+    ]
+  },
+  "hls": {
+    "count": 10,
+    "examples": [
+      "test_files_wikimedia/hls/transcription/stream_05/segment_001.ts",
+      "test_files_wikimedia/hls/transcription/stream_05/segment_000.ts"
+    ]
+  },
+  "ico": {
+    "count": 70,
+    "examples": [
+      "test_files_wikimedia/ico/emotion-detection/04_stackoverflow.ico",
+      "test_files_wikimedia/ico/emotion-detection/03_wikipedia.ico"
+    ]
+  },
+  "jpg": {
+    "count": 2613,
+    "examples": [
+      "test_files_wikimedia/jpg/emotion-detection/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg",
+      "test_files_wikimedia/jpg/emotion-detection/04_\u0414\u0435\u0440\u0435\u0432\u043e_\u0432_\u0433\u043e\u0440\u043e\u0434\u0435_\u0412\u0430\u043b\u0443\u0439\u043a\u0438.jpg"
+    ]
+  },
+  "m4a": {
+    "count": 21,
+    "examples": [
+      "test_files_wikimedia/m4a/audio-enhancement-metadata/zoom_audio_1231836878.m4a",
+      "test_files_wikimedia/m4a/audio-classification/zoom_audio_1224463176.m4a"
+    ]
+  },
+  "mkv": {
+    "count": 22,
+    "examples": [
+      "test_files_wikimedia/mkv/emotion-detection/01_h264_from_mp4.mkv",
+      "test_files_wikimedia/mkv/audio-classification/01_h264_from_mp4.mkv"
+    ]
+  },
+  "mov": {
+    "count": 28,
+    "examples": [
+      "test_files_wikimedia/mov/emotion-detection/screen_recording_may16.mov",
+      "test_files_wikimedia/mov/audio-classification/screen_recording_may16.mov"
+    ]
+  },
+  "mp3": {
+    "count": 13,
+    "examples": [
+      "test_files_wikimedia/mp3/audio-enhancement-metadata/file_example_MP3_1MG.mp3",
+      "test_files_wikimedia/mp3/audio-classification/file_example_MP3_700KB.mp3"
+    ]
+  },
+  "mp4": {
+    "count": 30,
+    "examples": [
+      "test_files_wikimedia/mp4/emotion-detection/file_example_MP4_480_1_5MG.mp4",
+      "test_files_wikimedia/mp4/audio-classification/file_example_MP4_480_1_5MG.mp4"
+    ]
+  },
+  "mxf": {
+    "count": 77,
+    "examples": [
+      "test_files_wikimedia/mxf/emotion-detection/C0023S01.mxf",
+      "test_files_wikimedia/mxf/emotion-detection/MXFa003a_cgop.mxf"
+    ]
+  },
+  "nef": {
+    "count": 65,
+    "examples": [
+      "test_files_wikimedia/nef/emotion-detection/04_nikon_d780.nef",
+      "test_files_wikimedia/nef/emotion-detection/05_nikon_d90.nef"
+    ]
+  },
+  "pdf": {
+    "count": 12,
+    "examples": [
+      "test_files_wikimedia/pdf/ocr/MANAGER_SESSION_SUMMARY_FINAL.md",
+      "test_files_wikimedia/pdf/ocr/edinet_2025-06-23_1552_E38215_GENOVAInc.pdf"
+    ]
+  },
+  "png": {
+    "count": 77,
+    "examples": [
+      "test_files_wikimedia/png/emotion-detection/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png",
+      "test_files_wikimedia/png/emotion-detection/05_A_setiset_with_duplicated_piece.png"
+    ]
+  },
+  "raf": {
+    "count": 65,
+    "examples": [
+      "test_files_wikimedia/raf/emotion-detection/03_fuji_gfx50s.raf",
+      "test_files_wikimedia/raf/emotion-detection/01_fuji_xt4.raf"
+    ]
+  },
+  "rm": {
+    "count": 70,
+    "examples": [
+      "test_files_wikimedia/rm/emotion-detection/05_sample_1280x720.rm",
+      "test_files_wikimedia/rm/emotion-detection/andretti.rm"
+    ]
+  },
+  "svg": {
+    "count": 5,
+    "examples": [
+      "test_files_wikimedia/svg/ocr/01_svg_logo.svg",
+      "test_files_wikimedia/svg/ocr/03_ghostscript_tiger.svg"
+    ]
+  },
+  "tta": {
+    "count": 35,
+    "examples": [
+      "test_files_wikimedia/tta/audio-enhancement-metadata/01_sf_44khz_stereo_16bit.tta",
+      "test_files_wikimedia/tta/audio-enhancement-metadata/04_generated_alarmowych.tta"
+    ]
+  },
+  "vob": {
+    "count": 60,
+    "examples": [
+      "test_files_wikimedia/vob/emotion-detection/03_test.vob",
+      "test_files_wikimedia/vob/emotion-detection/05_test.vob"
+    ]
+  },
+  "wav": {
+    "count": 63,
+    "examples": [
+      "test_files_wikimedia/wav/audio-enhancement-metadata/02_Ala_Canggung.wav",
+      "test_files_wikimedia/wav/audio-enhancement-metadata/03_Acompanyament_Tema_de_Lucil\u00b7la.wav"
+    ]
+  },
+  "wavpack": {
+    "count": 35,
+    "examples": [
+      "test_files_wikimedia/wavpack/audio-enhancement-metadata/01_premsa_version.wv",
+      "test_files_wikimedia/wavpack/audio-enhancement-metadata/03_acompanyament_tema.wv"
+    ]
+  },
+  "webm": {
+    "count": 228,
+    "examples": [
+      "test_files_wikimedia/webm/emotion-detection/02_AAstra_-_Draco_(Official_Video).webm",
+      "test_files_wikimedia/webm/emotion-detection/03_-Avan\u00e7amos!_Depoimento_do_ministro_da_Sa\u00fade.webm"
+    ]
+  },
+  "webp": {
+    "count": 16,
+    "examples": [
+      "test_files_wikimedia/webp/emotion-detection/01_webp_lossy.webp",
+      "test_files_wikimedia/webp/content-moderation/01_webp_lossy.webp"
+    ]
+  },
+  "wma": {
+    "count": 35,
+    "examples": [
+      "test_files_wikimedia/wma/audio-enhancement-metadata/02_merci.wma",
+      "test_files_wikimedia/wma/audio-enhancement-metadata/01_bangles.wma"
+    ]
+  },
+  "{action-recognition,caption-generation,content-moderation,depth-estimation,emotion-detection,face-detection,image-quality-assessment,logo-detection,ocr,pose-estimation,shot-classification,vision-embeddings}": {
+    "count": 0,
+    "examples": []
+  }
+}

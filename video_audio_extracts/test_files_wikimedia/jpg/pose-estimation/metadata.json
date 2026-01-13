@@ -1,0 +1,82 @@
+[
+  {
+    "path": "test_files_wikimedia/jpg/pose-estimation/01_\"devi\".jpg",
+    "size": 5757017,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/%22devi%22.jpg",
+    "title": "File:\"devi\".jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/pose-estimation/02_\"Syklus\"_by_Dans_&_Toner.jpg",
+    "size": 2067850,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/%22Syklus%22_by_Dans_%26_Toner.jpg",
+    "title": "File:\"Syklus\" by Dans & Toner.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/pose-estimation/03_(Portrait_of_Cozy_Cole,_New_York,_N.Y.(?),_ca._Sept._1946)_(LOC)_(5269515180).jpg",
+    "size": 243349,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%28Portrait_of_Cozy_Cole%2C_New_York%2C_N.Y.%28%3F%29%2C_ca._Sept._1946%29_%28LOC%29_%285269515180%29.jpg",
+    "title": "File:(Portrait of Cozy Cole, New York, N.Y.(?), ca. Sept. 1946) (LOC) (5269515180).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/pose-estimation/04_.._and_Morris_dancers_-_Festival_of_the_Winds_2010.jpg",
+    "size": 415615,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/.._and_Morris_dancers_-_Festival_of_the_Winds_2010.jpg",
+    "title": "File:.. and Morris dancers - Festival of the Winds 2010.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/pose-estimation/05_0c9a8f22541002800f3632ccdc398b495eaeab6183faa93832da5747b88cc6cc._SX600.jpg",
+    "size": 50293,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/0c9a8f22541002800f3632ccdc398b495eaeab6183faa93832da5747b88cc6cc._SX600.jpg",
+    "title": "File:0c9a8f22541002800f3632ccdc398b495eaeab6183faa93832da5747b88cc6cc. SX600.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/pose-estimation/06_11-jarige_danseres_treedt_op_in_Parijs,_Bestanddeelnr_903-0836.jpg",
+    "size": 1239595,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/11-jarige_danseres_treedt_op_in_Parijs%2C_Bestanddeelnr_903-0836.jpg",
+    "title": "File:11-jarige danseres treedt op in Parijs, Bestanddeelnr 903-0836.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/pose-estimation/07_16.Adder.0128.C.Dancestandalone_DVIDS15533.jpg",
+    "size": 251456,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/16.Adder.0128.C.Dancestandalone_DVIDS15533.jpg",
+    "title": "File:16.Adder.0128.C.Dancestandalone DVIDS15533.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/pose-estimation/08_1983-11_Wilma_Lippens_ballroom_dancing_pose.jpg",
+    "size": 11418995,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/1983-11_Wilma_Lippens_ballroom_dancing_pose.jpg",
+    "title": "File:1983-11 Wilma Lippens ballroom dancing pose.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/pose-estimation/09_1983-11_Wilma_Lippens_ballroom_dancing_quickstep.jpg",
+    "size": 2592340,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/1983-11_Wilma_Lippens_ballroom_dancing_quickstep.jpg",
+    "title": "File:1983-11 Wilma Lippens ballroom dancing quickstep.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/pose-estimation/10_1983-11_Wilma_Lippens_ballroom_dancing_tango.jpg",
+    "size": 3360028,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/1983-11_Wilma_Lippens_ballroom_dancing_tango.jpg",
+    "title": "File:1983-11 Wilma Lippens ballroom dancing tango.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  }
+]

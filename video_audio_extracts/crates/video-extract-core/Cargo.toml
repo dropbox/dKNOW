@@ -1,0 +1,49 @@
+[package]
+name = "video-extract-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Async runtime
+tokio = { version = "1.42", features = ["full"] }
+async-trait = "0.1"
+
+# Parallelism
+crossbeam-channel = "0.5"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+
+# Hashing for cache keys
+blake3 = "1.5"
+
+# Error handling
+thiserror = "2.0"
+anyhow = "1.0"
+
+# Logging
+tracing = "0.1"
+
+# System info
+num_cpus = "1.16"
+
+# ONNX Runtime (for optimized session creation)
+ort = { workspace = true }
+
+# Image I/O (optimized JPEG with mozjpeg, PNG with image crate)
+mozjpeg = "0.10"
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+
+# Array operations for zero-copy inference
+ndarray = { workspace = true }
+
+# Internal dependencies
+video-audio-common = { path = "../common" }
+video-audio-decoder = { path = "../video-decoder" }
+
+[dev-dependencies]
+tokio-test = "0.4"
+tracing-subscriber = { workspace = true }
+shellexpand = "3.1"

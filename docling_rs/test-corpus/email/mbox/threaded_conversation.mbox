@@ -1,0 +1,114 @@
+From alice@example.com Fri Jan 19 09:00:00 2024
+From: Alice Smith <alice@example.com>
+To: team@example.com
+Subject: [Project X] Initial Proposal
+Date: Fri, 19 Jan 2024 09:00:00 -0800
+Message-ID: <thread-001@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Team,
+
+I'd like to propose a new feature for Project X.
+The idea is to add real-time collaboration.
+
+What do you think?
+
+Alice
+
+From bob@example.com Fri Jan 19 09:30:00 2024
+From: Bob Johnson <bob@example.com>
+To: team@example.com
+Subject: Re: [Project X] Initial Proposal
+Date: Fri, 19 Jan 2024 09:30:00 -0800
+Message-ID: <thread-002@example.com>
+In-Reply-To: <thread-001@example.com>
+References: <thread-001@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Great idea! We should consider WebSocket implementation.
+
+Bob
+
+From carol@example.com Fri Jan 19 10:00:00 2024
+From: Carol Davis <carol@example.com>
+To: team@example.com
+Subject: Re: [Project X] Initial Proposal
+Date: Fri, 19 Jan 2024 10:00:00 -0800
+Message-ID: <thread-003@example.com>
+In-Reply-To: <thread-002@example.com>
+References: <thread-001@example.com> <thread-002@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Agreed. We also need to think about:
+1. Conflict resolution
+2. Presence indicators
+3. Performance with many concurrent users
+
+Carol
+
+From alice@example.com Fri Jan 19 11:00:00 2024
+From: Alice Smith <alice@example.com>
+To: team@example.com
+Subject: Re: [Project X] Initial Proposal
+Date: Fri, 19 Jan 2024 11:00:00 -0800
+Message-ID: <thread-004@example.com>
+In-Reply-To: <thread-003@example.com>
+References: <thread-001@example.com> <thread-002@example.com> <thread-003@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Carol - excellent points. Let's schedule a meeting to discuss
+the technical details.
+
+Alice
+
+From dave@example.com Fri Jan 19 14:00:00 2024
+From: Dave Wilson <dave@example.com>
+To: team@example.com
+Subject: Re: [Project X] Initial Proposal - Timeline
+Date: Fri, 19 Jan 2024 14:00:00 -0800
+Message-ID: <thread-005@example.com>
+In-Reply-To: <thread-004@example.com>
+References: <thread-001@example.com> <thread-002@example.com> <thread-003@example.com> <thread-004@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+What's the timeline for this? Do we have bandwidth
+in Q1 to implement this?
+
+Dave
+
+From bob@example.com Fri Jan 19 15:00:00 2024
+From: Bob Johnson <bob@example.com>
+To: team@example.com
+Subject: Re: [Project X] Initial Proposal - Timeline
+Date: Fri, 19 Jan 2024 15:00:00 -0800
+Message-ID: <thread-006@example.com>
+In-Reply-To: <thread-005@example.com>
+References: <thread-001@example.com> <thread-002@example.com> <thread-003@example.com> <thread-004@example.com> <thread-005@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+I think we can do a prototype in Q1, full implementation
+in Q2. What does everyone think?
+
+Bob
+
+From alice@example.com Fri Jan 19 16:00:00 2024
+From: Alice Smith <alice@example.com>
+To: team@example.com
+Subject: Re: [Project X] Initial Proposal - Timeline
+Date: Fri, 19 Jan 2024 16:00:00 -0800
+Message-ID: <thread-007@example.com>
+In-Reply-To: <thread-006@example.com>
+References: <thread-001@example.com> <thread-002@example.com> <thread-003@example.com> <thread-004@example.com> <thread-005@example.com> <thread-006@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+That sounds reasonable. Let's discuss in our standup
+on Monday.
+
+Alice

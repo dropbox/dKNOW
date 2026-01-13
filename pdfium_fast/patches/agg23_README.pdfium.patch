@@ -1,0 +1,10 @@
+--- pdfium/third_party/agg23/README.pdfium	2025-11-20 14:44:25
++++ third_party/agg23/README.pdfium	2025-12-03 21:15:42
+@@ -37,4 +37,5 @@
+ outline_aa::render_line().
+ 0015-include-string-h.patch: IWYU for <string.h>
+ 0016-support-negative-dash-phases.patch: Support negative dash phases in
+-calc_dash_start().
+\ No newline at end of file
++calc_dash_start().
++0017-support-odd-size-dash-arrays.patch: Support odd-sized dash arrays.

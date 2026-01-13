@@ -1,0 +1,62 @@
+# .gclient.template
+#
+# This is a template for the .gclient configuration file used by gclient (part of depot_tools).
+# The .gclient file tells gclient what to download and where to put it.
+#
+# IMPORTANT: This file should be placed in the PARENT directory of pdfium_fast/, not inside it.
+#
+# Directory structure after setup:
+#
+#   workspace/               <- .gclient goes here (parent directory)
+#     .gclient               <- This configuration file
+#     pdfium_fast/           <- This repository
+#       BUILD.gn
+#       core/
+#       examples/
+#       ...
+#     build/                 <- Downloaded by gclient sync
+#     buildtools/            <- Downloaded by gclient sync
+#     third_party/           <- Downloaded by gclient sync (~5GB)
+#     v8/                    <- Downloaded by gclient sync (optional)
+#
+# Usage:
+#   1. Copy this file to parent directory:
+#      cp .gclient.template ../.gclient
+#
+#   2. Edit ../.gclient if needed (usually not necessary)
+#
+#   3. Run gclient sync:
+#      cd .. && gclient sync
+#
+#   4. Build:
+#      cd pdfium_fast
+#      gn gen out/Release
+#      ninja -C out/Release pdfium_cli
+#
+# OR just run: ./setup.sh (which does all of the above automatically)
+#
+
+solutions = [
+  {
+    # Name of the repository directory
+    "name": "pdfium_fast",
+
+    # Git URL (used if managed=True to clone the repo)
+    "url": "https://github.com/ayates_dbx/pdfium_fast.git",
+
+    # Set to False if you already cloned the repo manually
+    # Set to True if you want gclient to clone it for you
+    "managed": False,
+
+    # Custom dependency overrides (usually empty)
+    "custom_deps": {},
+
+    # Custom variables (uncomment to use smaller checkout)
+    # "custom_vars": {
+    #   "checkout_configuration": "minimal",  # Skip V8 and Skia (smaller but limited)
+    # },
+  },
+]
+
+# Target OS (usually auto-detected, uncomment to override)
+# target_os = ["mac"]  # or "linux", "win"

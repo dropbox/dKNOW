@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>City Boundaries</name>
+    <description>Administrative boundaries of city districts</description>
+    <Placemark>
+      <name>Downtown District</name>
+      <description>Central business district with high-rise buildings</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -122.400,37.790,0
+              -122.395,37.790,0
+              -122.395,37.785,0
+              -122.400,37.785,0
+              -122.400,37.790,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Waterfront District</name>
+      <description>Coastal area with marina and beaches</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -122.410,37.795,0
+              -122.405,37.795,0
+              -122.405,37.790,0
+              -122.410,37.790,0
+              -122.410,37.795,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Park Reserve</name>
+      <description>Protected green space with hiking trails</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -122.420,37.800,50
+              -122.415,37.803,75
+              -122.410,37.800,100
+              -122.415,37.797,75
+              -122.420,37.800,50
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

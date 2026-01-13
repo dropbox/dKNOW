@@ -1,0 +1,82 @@
+[
+  {
+    "path": "test_files_wikimedia/jpg/image-quality-assessment/01_..._pottery_(44911254134).jpg",
+    "size": 6662866,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/..._pottery_%2844911254134%29.jpg",
+    "title": "File:... pottery (44911254134).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/image-quality-assessment/02_02016_0654_Gef\u00e4\u00dfe,_\"Naczynia\".jpg",
+    "size": 4664961,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/02016_0654_Gef%C3%A4%C3%9Fe%2C_%22Naczynia%22.jpg",
+    "title": "File:02016 0654 Gef\u00e4\u00dfe, \"Naczynia\".jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/image-quality-assessment/03_1970-09-23_Rhodos_-_Pottenbakken_in_Archangelos.jpg",
+    "size": 9588877,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/1970-09-23_Rhodos_-_Pottenbakken_in_Archangelos.jpg",
+    "title": "File:1970-09-23 Rhodos - Pottenbakken in Archangelos.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/image-quality-assessment/04_2023-07-30_Vogtsbauernhof_Toepfer_002.jpg",
+    "size": 8405079,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/2023-07-30_Vogtsbauernhof_Toepfer_002.jpg",
+    "title": "File:2023-07-30 Vogtsbauernhof Toepfer 002.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/image-quality-assessment/05_2023-07-30_Vogtsbauernhof_Toepfer_003.jpg",
+    "size": 8569399,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/2023-07-30_Vogtsbauernhof_Toepfer_003.jpg",
+    "title": "File:2023-07-30 Vogtsbauernhof Toepfer 003.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/image-quality-assessment/06_3_cats_in_the_National_Museum_of_Ukrainian_Pottery,_Opishnya,_Ukraine.jpg",
+    "size": 5841614,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/3_cats_in_the_National_Museum_of_Ukrainian_Pottery%2C_Opishnya%2C_Ukraine.jpg",
+    "title": "File:3 cats in the National Museum of Ukrainian Pottery, Opishnya, Ukraine.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/image-quality-assessment/07_3D_Pottery_Interclass_Shape_Variation.jpg",
+    "size": 2628779,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/3D_Pottery_Interclass_Shape_Variation.jpg",
+    "title": "File:3D Pottery Interclass Shape Variation.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/image-quality-assessment/08_5Archeologick\u00e1_podsb\u00edrka._Kachel_s_n\u00e1bo\u017eensk\u00fdm_motivem_(Panna_Marie_Assumpta),_konec_15._stolet\u00ed,_hrad_Ro\u017enov.jpg",
+    "size": 4435922,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/5Archeologick%C3%A1_podsb%C3%ADrka._Kachel_s_n%C3%A1bo%C5%BEensk%C3%BDm_motivem_%28Panna_Marie_Assumpta%29%2C_konec_15._stolet%C3%AD%2C_hrad_Ro%C5%BEnov.jpg",
+    "title": "File:5Archeologick\u00e1 podsb\u00edrka. Kachel s n\u00e1bo\u017eensk\u00fdm motivem (Panna Marie Assumpta), konec 15. stolet\u00ed, hrad Ro\u017enov.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/image-quality-assessment/09_A_Black_and_Red_Painted_Pottery_Bowl_in_Shanghai_Museum_of_TCM.jpg",
+    "size": 5097249,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/A_Black_and_Red_Painted_Pottery_Bowl_in_Shanghai_Museum_of_TCM.jpg",
+    "title": "File:A Black and Red Painted Pottery Bowl in Shanghai Museum of TCM.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/image-quality-assessment/10_A_Black_Pottery_Mirror_Case_in_Eastern_Han_Dynasty_in_Shanghai_Museum_of_TCM.jpg",
+    "size": 5710177,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/A_Black_Pottery_Mirror_Case_in_Eastern_Han_Dynasty_in_Shanghai_Museum_of_TCM.jpg",
+    "title": "File:A Black Pottery Mirror Case in Eastern Han Dynasty in Shanghai Museum of TCM.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  }
+]

@@ -1,0 +1,188 @@
+--- pdfium/core/fxge/cfx_face.cpp	2025-11-20 14:44:25
++++ core/fxge/cfx_face.cpp	2025-12-03 16:39:54
+@@ -18,7 +18,7 @@
+ #include "core/fxcrt/numerics/clamped_math.h"
+ #include "core/fxcrt/numerics/safe_conversions.h"
+ #include "core/fxcrt/numerics/safe_math.h"
+-#include "core/fxcrt/unowned_ptr.h"
++#include "core/fxcrt/span.h"
+ #include "core/fxge/cfx_font.h"
+ #include "core/fxge/cfx_fontmgr.h"
+ #include "core/fxge/cfx_gemodule.h"
+@@ -283,24 +283,7 @@
+   }
+   NOTREACHED();
+ }
+-#if defined(PDF_ENABLE_XFA)
+-unsigned long FTStreamRead(FXFT_StreamRec* stream,
+-                           unsigned long offset,
+-                           unsigned char* buffer,
+-                           unsigned long count) {
+-  if (count == 0) {
+-    return 0;
+-  }
+-  IFX_SeekableReadStream* pFile =
+-      static_cast<IFX_SeekableReadStream*>(stream->descriptor.pointer);
+-  // SAFETY: caller ensures `buffer` points to at least `count` bytes.
+-  return pFile && pFile->ReadBlockAtOffset(
+-                      UNSAFE_BUFFERS(pdfium::span(buffer, count)), offset)
+-             ? count
+-             : 0;
+-}
+-void FTStreamClose(FXFT_StreamRec* stream) {}
+-#endif
++
+ }  // namespace
+ 
+ // static
+@@ -323,9 +306,6 @@
+ RetainPtr<CFX_Face> CFX_Face::Open(FT_Library library,
+                                    const FT_Open_Args* args,
+                                    FT_Long face_index) {
+-  if (!library) {
+-    return nullptr;
+-  }
+   FXFT_FaceRec* pRec = nullptr;
+   if (FT_Open_Face(library, args, face_index, &pRec) != 0) {
+     return nullptr;
+@@ -336,66 +316,6 @@
+ }
+ #endif
+ 
+-#if BUILDFLAG(IS_ANDROID)
+-RetainPtr<CFX_Face> CFX_Face::OpenFromFilePath(FT_Library library,
+-                                               ByteStringView path,
+-                                               int32_t face_index) {
+-  if (path.IsEmpty()) {
+-    return nullptr;
+-  }
+-
+-  if (face_index < 0) {
+-    return nullptr;
+-  }
+-
+-  FT_Open_Args args;
+-  args.flags = FT_OPEN_PATHNAME;
+-  args.pathname = const_cast<FT_String*>(path.unterminated_c_str());
+-  RetainPtr<CFX_Face> face = Open(library, &args, face_index);
+-  if (!face) {
+-    return nullptr;
+-  }
+-  face->SetPixelSize(0, 64);
+-  return face;
+-}
+-#endif
+-
+-#if defined(PDF_ENABLE_XFA)
+-RetainPtr<CFX_Face> CFX_Face::OpenFromStream(
+-    FT_Library library,
+-    const RetainPtr<IFX_SeekableReadStream>& font_stream,
+-    FT_Long face_index) {
+-  if (!font_stream) {
+-    return nullptr;
+-  }
+-  auto ft_stream = std::make_unique<FXFT_StreamRec>();
+-  *ft_stream = {};  // Aggregate initialization.
+-  static_assert(
+-      std::is_aggregate_v<std::remove_pointer_t<decltype(ft_stream.get())>>);
+-  ft_stream->base = nullptr;
+-  ft_stream->descriptor.pointer = static_cast<void*>(font_stream.Get());
+-  ft_stream->pos = 0;
+-  ft_stream->size = static_cast<unsigned long>(font_stream->GetSize());
+-  ft_stream->read = FTStreamRead;
+-  ft_stream->close = FTStreamClose;
+-
+-  FT_Open_Args ft_args = {};  // Aggregate initialization.
+-  static_assert(std::is_aggregate_v<decltype(ft_args)>);
+-  ft_args.flags = FT_OPEN_STREAM;
+-  ft_args.stream = ft_stream.get();
+-
+-  RetainPtr<CFX_Face> face = Open(library, &ft_args, face_index);
+-  if (!face) {
+-    return nullptr;
+-  }
+-  face->SetPixelSize(0, 64);
+-  face->owned_font_stream_ = std::move(font_stream);
+-  face->owned_stream_rec_ = std::move(ft_stream);
+-  return face;
+-}
+-
+-#endif
+-
+ bool CFX_Face::HasGlyphNames() const {
+   return !!(GetRec()->face_flags & FT_FACE_FLAG_GLYPH_NAMES);
+ }
+@@ -515,6 +435,7 @@
+                                                        const CFX_Matrix& matrix,
+                                                        int dest_width,
+                                                        int anti_alias) {
++  std::lock_guard<std::mutex> lock(face_mutex_);
+   FT_Matrix ft_matrix;
+   ft_matrix.xx = matrix.a / 64 * 65536;
+   ft_matrix.xy = matrix.c / 64 * 65536;
+@@ -640,6 +561,7 @@
+     int dest_width,
+     bool is_vertical,
+     const CFX_SubstFont* subst_font) {
++  std::lock_guard<std::mutex> lock(face_mutex_);
+   FXFT_FaceRec* rec = GetRec();
+   FT_Set_Pixel_Sizes(rec, 0, 64);
+   FT_Matrix ft_matrix = {65536, 0, 0, 65536};
+@@ -705,6 +627,7 @@
+                             int dest_width,
+                             int weight,
+                             const CFX_SubstFont* subst_font) {
++  std::lock_guard<std::mutex> lock(face_mutex_);
+   if (subst_font && subst_font->IsBuiltInGenericFont()) {
+     AdjustVariationParams(glyph_index, dest_width, weight);
+   }
+@@ -733,14 +656,17 @@
+ }
+ 
+ int CFX_Face::GetCharIndex(uint32_t code) {
++  std::lock_guard<std::mutex> lock(face_mutex_);
+   return FT_Get_Char_Index(GetRec(), code);
+ }
+ 
+ int CFX_Face::GetNameIndex(const char* name) {
++  std::lock_guard<std::mutex> lock(face_mutex_);
+   return FT_Get_Name_Index(GetRec(), name);
+ }
+ 
+ int CFX_Face::LoadGlyph(uint32_t glyph_index, bool scale) {
++  std::lock_guard<std::mutex> lock(face_mutex_);
+   FT_Int32 args = FT_LOAD_IGNORE_GLOBAL_ADVANCE_WIDTH;
+   if (!scale) {
+     args |= FT_LOAD_NO_SCALE;
+@@ -749,6 +675,7 @@
+ }
+ 
+ FX_RECT CFX_Face::GetCharBBox(uint32_t code, int glyph_index) {
++  std::lock_guard<std::mutex> lock(face_mutex_);
+   FX_RECT rect;
+   FXFT_FaceRec* rec = GetRec();
+   if (IsTricky()) {
+@@ -874,21 +801,17 @@
+ }
+ 
+ bool CFX_Face::SelectCharMap(fxge::FontEncoding encoding) {
++  std::lock_guard<std::mutex> lock(face_mutex_);
+   FT_Error error = FT_Select_Charmap(GetRec(), ToFTEncoding(encoding));
+   return !error;
+ }
+ 
+ bool CFX_Face::SetPixelSize(uint32_t width, uint32_t height) {
++  std::lock_guard<std::mutex> lock(face_mutex_);
+   FT_Error error = FT_Set_Pixel_Sizes(GetRec(), width, height);
+   return !error;
+ }
+ 
+-#if defined(PDF_ENABLE_XFA)
+-int CFX_Face::GetNumFaces() const {
+-  return pdfium::checked_cast<int>(GetRec()->num_faces);
+-}
+-#endif
+-
+ #if BUILDFLAG(IS_WIN)
+ bool CFX_Face::CanEmbed() {
+   FT_UShort fstype = FT_Get_FSType_Flags(GetRec());

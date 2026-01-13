@@ -1,0 +1,18 @@
+--- pdfium/core/fpdfapi/parser/cpdf_parser.h	2025-11-20 14:44:25
++++ core/fpdfapi/parser/cpdf_parser.h	2025-12-03 16:39:54
+@@ -13,6 +13,7 @@
+ #include <limits>
+ #include <map>
+ #include <memory>
++#include <mutex>
+ #include <set>
+ #include <vector>
+ 
+@@ -209,6 +210,7 @@
+ 
+   // All indirect object numbers that are being parsed.
+   std::set<uint32_t> parsing_obj_nums_;
++  mutable std::mutex parsing_obj_nums_mutex_;
+ 
+   RetainPtr<CPDF_SecurityHandler> security_handler_;
+ };

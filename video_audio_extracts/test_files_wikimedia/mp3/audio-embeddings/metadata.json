@@ -1,0 +1,18 @@
+[
+  {
+    "path": "test_files_wikimedia/mp3/audio-embeddings/01_Aphex_Twin_(Interview_1995).mp3",
+    "size": 15140220,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Aphex_Twin_%28Interview_1995%29.mp3",
+    "title": "File:Aphex Twin (Interview 1995).mp3",
+    "mime": "audio/mpeg",
+    "format": "mp3"
+  },
+  {
+    "path": "test_files_wikimedia/mp3/audio-embeddings/02_Carla_Scaletti_on_natural_sounds_and_physical_modeling_(1999).mp3",
+    "size": 2766355,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Carla_Scaletti_on_natural_sounds_and_physical_modeling_%281999%29.mp3",
+    "title": "File:Carla Scaletti on natural sounds and physical modeling (1999).mp3",
+    "mime": "audio/mpeg",
+    "format": "mp3"
+  }
+]

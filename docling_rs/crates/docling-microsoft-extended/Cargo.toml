@@ -1,0 +1,22 @@
+[package]
+name = "docling-microsoft-extended"
+version.workspace = true
+edition.workspace = true
+description = "Extended Microsoft format parsers for docling (Publisher, Visio, Project, OneNote, Access)"
+keywords = ["microsoft", "publisher", "visio", "project"]
+categories = ["parsing", "parser-implementations"]
+license.workspace = true
+repository.workspace = true
+[dependencies]
+docling-core = { version = "2.58.0", path = "../docling-core" }
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tempfile = "3.8"
+quick-xml.workspace = true
+zip.workspace = true
+cfb = "0.8"  # OLE Compound Document File parser (for .mpp Project files)
+log = "0.4"
+# onenote_parser = "0.3.1"  # DEFERRED: Desktop format not supported yet (see N=265)
+
+[dev-dependencies]

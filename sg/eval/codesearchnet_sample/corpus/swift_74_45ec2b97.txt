@@ -1,0 +1,5 @@
+/// The least scalar in the vector.
+  @_alwaysEmitIntoClient
+  public func min() -> Scalar {
+    return indices.reduce(into: self[0]) { $0 = Scalar.minimum($0, self[$1]) }
+  }

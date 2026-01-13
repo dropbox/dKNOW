@@ -1,0 +1,225 @@
+{
+  "filename": "code_and_formula.pdf",
+  "pages": [
+    {
+      "page_number": 1,
+      "elements": [
+        {
+          "label": "title",
+          "text": "JavaScript Code Example",
+          "bbox": {
+            "l": 10.0,
+            "t": 10.0,
+            "r": 50.0,
+            "b": 15.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "bbox": {
+            "l": 10.0,
+            "t": 16.0,
+            "r": 90.0,
+            "b": 30.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "code",
+          "text": "function add(a, b) {\n  return a + b;\n}\nconsole.log(add(3, 5));",
+          "bbox": {
+            "l": 10.0,
+            "t": 31.0,
+            "r": 50.0,
+            "b": 40.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "caption",
+          "text": "Listing 1: Simple JavaScript Program",
+          "bbox": {
+            "l": 10.0,
+            "t": 41.0,
+            "r": 50.0,
+            "b": 43.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "bbox": {
+            "l": 10.0,
+            "t": 44.0,
+            "r": 90.0,
+            "b": 58.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,",
+          "bbox": {
+            "l": 10.0,
+            "t": 59.0,
+            "r": 90.0,
+            "b": 70.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "page_footer",
+          "text": "1",
+          "bbox": {
+            "l": 50.0,
+            "t": 95.0,
+            "r": 51.0,
+            "b": 98.0
+          },
+          "confidence": 0.94
+        }
+      ],
+      "reading_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "agreement_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sources": [
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble"
+      ]
+    },
+    {
+      "page_number": 2,
+      "elements": [
+        {
+          "label": "section_header",
+          "text": "Formula",
+          "bbox": {
+            "l": 10.0,
+            "t": 5.0,
+            "r": 20.0,
+            "b": 10.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "bbox": {
+            "l": 10.0,
+            "t": 12.0,
+            "r": 90.0,
+            "b": 30.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+          "bbox": {
+            "l": 10.0,
+            "t": 32.0,
+            "r": 90.0,
+            "b": 40.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "formula",
+          "text": "a^2 + 8 = 12",
+          "bbox": {
+            "l": 45.0,
+            "t": 42.0,
+            "r": 55.0,
+            "b": 45.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "bbox": {
+            "l": 10.0,
+            "t": 47.0,
+            "r": 90.0,
+            "b": 65.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+          "bbox": {
+            "l": 10.0,
+            "t": 67.0,
+            "r": 90.0,
+            "b": 75.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "page_footer",
+          "text": "1",
+          "bbox": {
+            "l": 50.0,
+            "t": 95.0,
+            "r": 51.0,
+            "b": 98.0
+          },
+          "confidence": 0.94
+        }
+      ],
+      "reading_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "agreement_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sources": [
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble"
+      ]
+    }
+  ],
+  "total_elements": 14,
+  "avg_confidence": 1.0
+}

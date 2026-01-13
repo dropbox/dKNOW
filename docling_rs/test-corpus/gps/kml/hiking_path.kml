@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Mountain Hiking Trail</name>
+    <description>A scenic mountain trail with elevation changes</description>
+    <Placemark>
+      <name>Summit Trail</name>
+      <description>Trail from base camp to summit, 5.2km, elevation gain 850m</description>
+      <LineString>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          -122.456789,37.712345,100
+          -122.457234,37.713456,150
+          -122.458123,37.714789,220
+          -122.459456,37.716234,310
+          -122.460789,37.718123,420
+          -122.462123,37.720456,560
+          -122.463456,37.722789,720
+          -122.464789,37.725123,880
+          -122.466123,37.727456,950
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Trailhead Parking</name>
+      <description>Parking area at trail start</description>
+      <Point>
+        <coordinates>-122.456789,37.712345,100</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Summit Peak</name>
+      <description>Mountain summit with panoramic views</description>
+      <Point>
+        <coordinates>-122.466123,37.727456,950</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

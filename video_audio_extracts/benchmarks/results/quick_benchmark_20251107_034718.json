@@ -1,0 +1,140 @@
+{
+  "benchmark_type": "quick_single_run",
+  "timestamp": "20251107_034718",
+  "hardware": {
+    "cpu": "Apple M2 Max",
+    "memory_gb": 64,
+    "os": "Darwin 24.6.0"
+  },
+  "operations": [
+    {
+      "operation": "metadata_extraction",
+      "file": "video_medium",
+      "file_size_mb": .15,
+      "duration_sec": .085923000,
+      "peak_memory_mb": 14.59,
+      "throughput_mb_per_sec": 1.74
+    },
+    {
+      "operation": "keyframes",
+      "file": "video_medium",
+      "file_size_mb": .15,
+      "duration_sec": .058731000,
+      "peak_memory_mb": 14.57,
+      "throughput_mb_per_sec": 2.55
+    },
+    {
+      "operation": "audio_extraction",
+      "file": "video_medium",
+      "file_size_mb": .15,
+      "duration_sec": .057399000,
+      "peak_memory_mb": 14.67,
+      "throughput_mb_per_sec": 2.61
+    },
+    {
+      "operation": "transcription",
+      "file": "audio_short",
+      "file_size_mb": .09,
+      "duration_sec": .056657000,
+      "peak_memory_mb": 14.84,
+      "throughput_mb_per_sec": 1.58
+    },
+    {
+      "operation": "voice_activity_detection",
+      "file": "audio_medium",
+      "file_size_mb": .45,
+      "duration_sec": .059045000,
+      "peak_memory_mb": 14.57,
+      "throughput_mb_per_sec": 7.62
+    },
+    {
+      "operation": "audio_classification",
+      "file": "audio_medium",
+      "file_size_mb": .45,
+      "duration_sec": .057260000,
+      "peak_memory_mb": 14.60,
+      "throughput_mb_per_sec": 7.85
+    },
+    {
+      "operation": "object_detection",
+      "file": "image_medium",
+      "file_size_mb": 0,
+      "duration_sec": .056138000,
+      "peak_memory_mb": 14.56,
+      "throughput_mb_per_sec": 0
+    },
+    {
+      "operation": "face_detection",
+      "file": "image_medium",
+      "file_size_mb": 0,
+      "duration_sec": .065322000,
+      "peak_memory_mb": 14.64,
+      "throughput_mb_per_sec": 0
+    },
+    {
+      "operation": "ocr",
+      "file": "image_medium",
+      "file_size_mb": 0,
+      "duration_sec": .063013000,
+      "peak_memory_mb": 14.59,
+      "throughput_mb_per_sec": 0
+    },
+    {
+      "operation": "image_quality_assessment",
+      "file": "image_medium",
+      "file_size_mb": 0,
+      "duration_sec": .055101000,
+      "peak_memory_mb": 14.64,
+      "throughput_mb_per_sec": 0
+    },
+    {
+      "operation": "smart_thumbnail",
+      "file": "video_medium",
+      "file_size_mb": .15,
+      "duration_sec": .055601000,
+      "peak_memory_mb": 14.71,
+      "throughput_mb_per_sec": 2.69
+    },
+    {
+      "operation": "scene_detection",
+      "file": "video_medium",
+      "file_size_mb": .15,
+      "duration_sec": .053411000,
+      "peak_memory_mb": 14.65,
+      "throughput_mb_per_sec": 2.80
+    },
+    {
+      "operation": "vision_embeddings",
+      "file": "image_medium",
+      "file_size_mb": 0,
+      "duration_sec": .066026000,
+      "peak_memory_mb": 14.53,
+      "throughput_mb_per_sec": 0
+    },
+    {
+      "operation": "audio_embeddings",
+      "file": "audio_medium",
+      "file_size_mb": .45,
+      "duration_sec": .056231000,
+      "peak_memory_mb": 15.15,
+      "throughput_mb_per_sec": 8.00
+    },
+    {
+      "operation": "duplicate_detection",
+      "file": "video_small",
+      "file_size_mb": .03,
+      "duration_sec": .058449000,
+      "peak_memory_mb": 14.51,
+      "throughput_mb_per_sec": .51
+    },
+    {
+      "operation": "format_conversion",
+      "file": "video_small",
+      "file_size_mb": .03,
+      "duration_sec": .054115000,
+      "peak_memory_mb": 14.84,
+      "throughput_mb_per_sec": .55
+    }
+
+  ]
+}

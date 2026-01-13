@@ -1,0 +1,6 @@
+index,pdf,status,match,total_pages,compared_pages,ssim_mean,ssim_min,ssim_max,comparison_errors,category,pages,error
+0,0100pages_7FKQLKX273JBHXAAW5XDRT27JGMIZMCI.pdf,compared,True,100,100,0.999879,0.996700,1.000000,0,benchmark,100,
+2,0109pages_NRCGAGBLTXTXEKXNLQ4L4NFA6ZQPCWE5.pdf,compared,True,109,109,1.000000,1.000000,1.000000,0,benchmark,109,
+1,0106pages_IYAFRX3M262EGRMQJHT7MCODUP5ZGYRW.pdf,compared,True,106,106,1.000000,1.000000,1.000000,0,benchmark,106,
+3,0124pages_HXTX4CFAYHW5LKUFDCEHIITIMEYCJ7MW.pdf,compared,True,124,124,1.000000,1.000000,1.000000,0,benchmark,124,
+4,0130pages_ZJJJ6P4UAGH7LKLACPT5P437FB5F3MYF.pdf,compared,True,130,130,1.000000,1.000000,1.000000,0,benchmark,130,

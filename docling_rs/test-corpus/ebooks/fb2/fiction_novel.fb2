@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0">
+  <description>
+    <title-info>
+      <genre>sf_fantasy</genre>
+      <author>
+        <first-name>Jane</first-name>
+        <middle-name>Marie</middle-name>
+        <last-name>Smith</last-name>
+      </author>
+      <book-title>The Crystal Kingdom</book-title>
+      <annotation>
+        <p>A thrilling fantasy adventure about a young hero's quest to save the crystal kingdom from darkness.</p>
+      </annotation>
+      <keywords>fantasy, adventure, magic, quest</keywords>
+      <lang>en</lang>
+      <src-lang>en</src-lang>
+      <translator>
+        <first-name>Original</first-name>
+        <last-name>Work</last-name>
+      </translator>
+    </title-info>
+    <document-info>
+      <author>
+        <nickname>jsmith-writer</nickname>
+        <email>jsmith@example.com</email>
+      </author>
+      <program-used>FB2 Editor Pro</program-used>
+      <date value="2025-01-15">January 15, 2025</date>
+      <src-url>http://example.com/crystal-kingdom</src-url>
+      <id>crystal-kingdom-uuid-12345</id>
+      <version>2.1</version>
+      <history>
+        <p>Version 1.0 - Initial release</p>
+        <p>Version 2.0 - Major edits and corrections</p>
+        <p>Version 2.1 - Typo fixes</p>
+      </history>
+    </document-info>
+    <publish-info>
+      <book-name>The Crystal Kingdom</book-name>
+      <publisher>Fantasy Books Publishing</publisher>
+      <city>New York</city>
+      <year>2025</year>
+      <isbn>978-0-123456-78-9</isbn>
+    </publish-info>
+  </description>
+  <body>
+    <title>
+      <p>The Crystal Kingdom</p>
+      <p>A Fantasy Adventure</p>
+    </title>
+    <epigraph>
+      <p>"In every crystal, there lies a story untold."</p>
+      <text-author>Ancient Proverb</text-author>
+    </epigraph>
+    <section>
+      <title>
+        <p>Part One: The Awakening</p>
+      </title>
+      <section>
+        <title>
+          <p>Chapter 1: The Prophecy</p>
+        </title>
+        <p>The morning sun cast long shadows across the crystal plains. Young Aria stood at the edge of the cliff, gazing at the shimmering kingdom below.</p>
+        <p>She had dreamed of this moment for years—the day when the prophecy would finally reveal itself.</p>
+        <p><emphasis>The chosen one must rise when darkness falls</emphasis>, the ancient texts had said. But Aria never imagined that person would be her.</p>
+        <empty-line/>
+        <p>"Are you ready?" a voice called from behind her.</p>
+        <p>Aria turned to see her mentor, Master Eldrin, approaching with his staff in hand. His weathered face showed concern, but his eyes sparkled with hope.</p>
+        <p>"I don't know if I'll ever be ready," Aria replied honestly. "But I suppose that's not the point, is it?"</p>
+      </section>
+      <section>
+        <title>
+          <p>Chapter 2: The Journey Begins</p>
+        </title>
+        <p>The path down the mountain was treacherous, but Aria had traveled it many times during her training.</p>
+        <p>Each step brought her closer to her destiny—and closer to the unknown dangers that awaited in the Shadow Realm.</p>
+        <subtitle>The First Test</subtitle>
+        <p>At the mountain's base, three paths diverged. Legend spoke of only one true path, while the others led to certain doom.</p>
+        <p>Aria closed her eyes and reached out with her mind, feeling for the crystal's guidance. A faint warmth pulled her to the right—the narrow path through the Whispering Woods.</p>
+      </section>
+    </section>
+    <section>
+      <title>
+        <p>Part Two: The Trials</p>
+      </title>
+      <section>
+        <title>
+          <p>Chapter 3: The Whispering Woods</p>
+        </title>
+        <p>The forest was alive with sounds—birds chirping, leaves rustling, and underneath it all, the faint whispers that gave the woods their name.</p>
+        <p>Some said the whispers were the voices of lost travelers. Others claimed they were the forest itself, speaking to those brave enough to listen.</p>
+        <empty-line/>
+        <p>Aria pressed forward, her hand on the crystal pendant around her neck. It glowed softly, lighting her way through the deepening shadows.</p>
+        <poem>
+          <title>The Song of the Woods</title>
+          <stanza>
+            <v>Through ancient trees where shadows play,</v>
+            <v>The chosen one must find her way.</v>
+            <v>With crystal light to guide her through,</v>
+            <v>Her destiny awaits, forever true.</v>
+          </stanza>
+        </poem>
+      </section>
+    </section>
+  </body>
+  <body name="notes">
+    <title>
+      <p>Author's Notes</p>
+    </title>
+    <section>
+      <p>This story was inspired by my travels through the mountains of Scotland, where I witnessed the most beautiful crystal formations in a remote cave.</p>
+      <p>Special thanks to my beta readers for their invaluable feedback.</p>
+    </section>
+  </body>
+</FictionBook>

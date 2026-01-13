@@ -1,0 +1,60 @@
+# Training config for CodeSearchNet 2M pairs - M2 Max (MPS) version
+# Optimized for Apple Silicon with MPS backend
+#
+# Expected results:
+#   - Training time: ~12-18 hours on M2 Max
+#   - Recall@100 AUC: 0.85+
+
+data:
+  train: "data/codesearchnet_all.jsonl"
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-codesearchnet-mps"
+
+training:
+  method: "lora"
+
+  # LoRA config
+  lora_r: 64
+  lora_alpha: 128
+  lora_dropout: 0.05
+  target_modules:
+    - "q"
+    - "v"
+    - "k"
+    - "o"
+    - "wi_0"
+    - "wi_1"
+    - "wo"
+
+  # MPS-optimized batch sizes
+  # M2 Max (32GB unified): batch_size=16 fits comfortably
+  batch_size: 16
+  gradient_accumulation_steps: 8  # Effective batch = 128
+
+  epochs: 2
+  learning_rate: 1e-5  # Slightly higher for smaller effective batch
+  warmup_steps: 1500
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+
+  # Recall@K optimization
+  temperature: 0.05
+  margin: 0.1
+  loss: "infonce_with_margin"
+  hard_negatives: 31  # Smaller due to batch size
+
+  max_length: 512
+
+  # MPS stability settings
+  gradient_checkpointing: true
+  cache_tokenized: true
+  use_amp: false       # Disabled for MPS stability
+  use_compile: false   # Not well supported on MPS
+  num_workers: 0       # MPS + multiprocessing = hangs
+
+  log_every: 50
+  save_every: 5000
+  eval_every: 2500
+  seed: 42

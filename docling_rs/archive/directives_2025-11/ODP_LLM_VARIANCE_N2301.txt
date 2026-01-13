@@ -1,0 +1,60 @@
+# ODP LLM Variance Investigation (N=2301)
+
+## Summary
+
+Attempted to improve ODP from 90% to 95% by modifying slide heading structure. Discovered that LLM scoring is highly variable and changes in structure can make scores worse, not better.
+
+## Experiments Conducted
+
+### Test 1: Original (## Slide N under # Document Metadata)
+**Score:** 90%
+- Structure: `# Document Metadata` → `## Slide 1` → content
+- LLM complaint: "slide titles not clearly indicated as headings"
+
+### Test 2: Level 1 slides (# Slide N) with metadata section
+**Score:** 90%
+- Structure: `**Title:**` → `# Slide 1` → `## Welcome to OpenDocument`
+- LLM complaint: Same as Test 1 (no improvement)
+
+### Test 3: Level 1 slides without "Slide N" label
+**Score:** 85% (WORSE)
+- Structure: `**Title:**` → `# Slide 1` → `## Welcome to OpenDocument`
+- Different output but same score as Test 2
+
+### Test 4: Use actual slide titles as H1 (no "Slide N")
+**Score:** 75% (MUCH WORSE)
+- Structure: `**Title:**` → `# Welcome to OpenDocument`
+- LLM complaint: "no clear indication of subsections", "missing content"
+
+## Key Findings
+
+1. **LLM variance is real**: Same structure can get different scores (90% vs 85%)
+2. **"Improvement" can make things worse**: Attempts to address LLM complaints made scores drop
+3. **Original structure was actually good**: 90% was close to passing threshold
+4. **Generic "Slide N" headings are better than actual titles**: Counter-intuitive but test results confirm
+
+## Decision
+
+**REVERTED all backend changes.** Keeping only the ODP parser change (use `## Slide N` instead of `--- Slide N ---`).
+
+The original 90% score is within LLM variance range (±5 points). Further attempts to "improve" based on LLM feedback made scores worse. The current structure is:
+- `# Document Metadata`
+- `## Slide 1`
+- Content paragraphs
+
+This is consistent with other document formats and provides clear hierarchy.
+
+## Lessons Learned
+
+1. **Don't chase LLM complaints blindly**: LLM explanations may not reflect what actually improves scores
+2. **Test multiple times before changing**: LLM variance means single test results are unreliable
+3. **Structure changes can hurt more than help**: Generic clear headings beat "clever" adaptations
+4. **90% might be the ceiling for this format**: Without actual slide content improvements, structure tweaks don't help
+
+## Next Steps
+
+Move on to ODT (also 90%) and apply similar conservative approach: minimal changes, test for variance rather than chasing perfect structure.
+
+---
+**Date:** 2025-11-25
+**Worker:** N=2301

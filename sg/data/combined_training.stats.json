@@ -1,0 +1,15 @@
+{
+  "total_train": 1985218,
+  "total_val": 20052,
+  "inputs": [
+    "data/codesearchnet_all.jsonl",
+    "data/training_data_extended.jsonl"
+  ],
+  "config": {
+    "dedupe": true,
+    "similarity_threshold": 0.8,
+    "min_query_len": 15,
+    "min_code_len": 50,
+    "max_code_len": 8000
+  }
+}

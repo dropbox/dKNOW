@@ -1,0 +1,9 @@
+{
+  "pdf_name": "hello_world_2_pages_custom_object.pdf",
+  "format": "ppm",
+  "dpi": 300,
+  "pages": {
+    "0": "0fd11377f31522980725456240527e6e",
+    "1": "0fd11377f31522980725456240527e6e"
+  }
+}

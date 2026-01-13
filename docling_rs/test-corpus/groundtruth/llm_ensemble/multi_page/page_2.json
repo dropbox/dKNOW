@@ -1,0 +1,137 @@
+{
+  "page_number": 2,
+  "elements": [
+    {
+      "label": "paragraph",
+      "text": "Other notable software from this era included WordPerfect, which was popular among legal professionals, and Apple’s MacWrite, which leveraged the Macintosh’s graphical capabilities.",
+      "bbox": {
+        "l": 5.0,
+        "t": 5.0,
+        "r": 95.0,
+        "b": 15.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "The Modern Era (1990s - Present)",
+      "bbox": {
+        "l": 5.0,
+        "t": 20.0,
+        "r": 95.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "By the 1990s, word processing software had become more sophisticated, with features like spell check, grammar check, templates, and collaborative tools.",
+      "bbox": {
+        "l": 5.0,
+        "t": 26.0,
+        "r": 95.0,
+        "b": 32.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "Microsoft Office Suite: Microsoft continued to dominate with its Office Suite, integrating Word with other productivity tools like Excel and PowerPoint.",
+      "bbox": {
+        "l": 5.0,
+        "t": 33.0,
+        "r": 95.0,
+        "b": 38.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "OpenOffice and LibreOffice: Open-source alternatives emerged in the early 2000s, offering free and flexible word processing options.",
+      "bbox": {
+        "l": 5.0,
+        "t": 39.0,
+        "r": 95.0,
+        "b": 44.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "Google Docs (2006): The introduction of cloud-based word processing revolutionized collaboration. Google Docs enabled real-time editing and sharing, making it a staple for teams and remote work.",
+      "bbox": {
+        "l": 5.0,
+        "t": 45.0,
+        "r": 95.0,
+        "b": 51.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Future of Word Processing",
+      "bbox": {
+        "l": 5.0,
+        "t": 55.0,
+        "r": 95.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Today, word processors are more than just tools for typing. They integrate artificial intelligence for grammar and style suggestions (e.g., Grammarly), voice-to-text features, and advanced layout options. As AI continues to advance, word processors may evolve into even more intuitive tools that predict user needs, automate repetitive tasks, and support richer multimedia integration.",
+      "bbox": {
+        "l": 5.0,
+        "t": 61.0,
+        "r": 95.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "From the clunky typewriters of the 19th century to the AI-powered cloud tools of today, the word processor has come a long way. It remains an essential tool for communication and creativity, shaping how we write and share ideas.",
+      "bbox": {
+        "l": 5.0,
+        "t": 80.0,
+        "r": 95.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

@@ -1,0 +1,1 @@
+904 skips = 2 lines × 452 files. Delete lines 177 and 343 from lib/generate_test_files.py, regenerate, done.

@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.2, pluggy-1.6.0
+rootdir: /Users/ayates/pdfium_fast/integration_tests
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.11.0, html-4.1.1, langsmith-0.4.37, timeout-2.4.0, metadata-3.1.1
+timeout: 300.0s
+timeout method: signal
+timeout func_only: False
+collected 2367 items / 2300 deselected / 67 selected
+
+tests/test_000_infrastructure.py ...                                     [  4%]
+tests/test_001_smoke.py ........................................         [ 64%]
+tests/test_001_smoke_edge_cases.py ....................                  [ 94%]
+tests/test_011_threading_regression.py ....                              [100%]
+======================================================================
+📊 Telemetry logged to: /Users/ayates/pdfium_fast/integration_tests/telemetry/runs.csv
+📊 Total runs logged: 32594
+📊 Session ID: sess_20251113_011449_bfff34a0
+======================================================================
+
+
+
+=============== 67 passed, 2300 deselected in 480.40s (0:08:00) ================

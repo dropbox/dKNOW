@@ -1,0 +1,82 @@
+[
+  {
+    "path": "test_files_wikimedia/jpg/content-moderation/01_\"Festa_e_miq\u00ebsis\u00eb\"_festival_at_\u00c7arshia,_Gjakove.jpg",
+    "size": 7348283,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%22Festa_e_miq%C3%ABsis%C3%AB%22_festival_at_%C3%87arshia%2C_Gjakove.jpg",
+    "title": "File:\"Festa e miq\u00ebsis\u00eb\" festival at \u00c7arshia, Gjakove.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/content-moderation/02_\"Takoradi_Festival.jpg\".jpg",
+    "size": 119234,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/%22Takoradi_Festival.jpg%22.jpg",
+    "title": "File:\"Takoradi Festival.jpg\".jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/content-moderation/03_-Karthikai_deepam_-Brightness_-Festivals_-Lights_-Glow_-Rituals.jpg",
+    "size": 162099,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/-Karthikai_deepam_-Brightness_-Festivals_-Lights_-Glow_-Rituals.jpg",
+    "title": "File:-Karthikai deepam -Brightness -Festivals -Lights -Glow -Rituals.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/content-moderation/04_101insects_giaf2016.jpg",
+    "size": 4853447,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/101insects_giaf2016.jpg",
+    "title": "File:101insects giaf2016.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/content-moderation/05_19.01.2025_Ephesus_camel_(deve_g\u00fcre\u015fi_festivali).jpg",
+    "size": 680111,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/19.01.2025_Ephesus_camel_%28deve_g%C3%BCre%C5%9Fi_festivali%29.jpg",
+    "title": "File:19.01.2025 Ephesus camel (deve g\u00fcre\u015fi festivali).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/content-moderation/06_1er_Festival_de_Medicina_Tradicional_y_Plantas_Medicinales_-_panoramio_(4).jpg",
+    "size": 3117030,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/1er_Festival_de_Medicina_Tradicional_y_Plantas_Medicinales_-_panoramio_%284%29.jpg",
+    "title": "File:1er Festival de Medicina Tradicional y Plantas Medicinales - panoramio (4).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/content-moderation/07_1er_Festival_de_Medicina_Tradicional_y_plantas_medicinales_-_panoramio.jpg",
+    "size": 2028239,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/1er_Festival_de_Medicina_Tradicional_y_plantas_medicinales_-_panoramio.jpg",
+    "title": "File:1er Festival de Medicina Tradicional y plantas medicinales - panoramio.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/content-moderation/08_2007_\uc11c\uc6b8\uc601\uc0c1\uad11\uace0\uc81c_\ud2b8\ub85c\ud53c.jpg",
+    "size": 2580722,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/2007_%EC%84%9C%EC%9A%B8%EC%98%81%EC%83%81%EA%B4%91%EA%B3%A0%EC%A0%9C_%ED%8A%B8%EB%A1%9C%ED%94%BC.jpg",
+    "title": "File:2007 \uc11c\uc6b8\uc601\uc0c1\uad11\uace0\uc81c \ud2b8\ub85c\ud53c.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/content-moderation/09_2016_\uadf8\ub791\ud504\ub9ac_\ud2b8\ub85c\ud53c.jpg",
+    "size": 2929722,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/2016_%EA%B7%B8%EB%9E%91%ED%94%84%EB%A6%AC_%ED%8A%B8%EB%A1%9C%ED%94%BC.jpg",
+    "title": "File:2016 \uadf8\ub791\ud504\ub9ac \ud2b8\ub85c\ud53c.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/content-moderation/10_2016-10-10-PHOTO-00007345.jpg",
+    "size": 146891,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/2016-10-10-PHOTO-00007345.jpg",
+    "title": "File:2016-10-10-PHOTO-00007345.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  }
+]

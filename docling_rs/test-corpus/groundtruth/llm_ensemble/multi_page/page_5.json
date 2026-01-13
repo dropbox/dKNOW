@@ -1,0 +1,25 @@
+{
+  "page_number": 5,
+  "elements": [
+    {
+      "label": "paragraph",
+      "text": "The journey of the word processor—from clunky typewriters to AI-powered platforms—reflects humanity’s broader technological progress. What began as a tool to simply replace handwriting has transformed into a powerful ally for creativity, communication, and collaboration. As technology continues to advance, the word processor will undoubtedly remain at the heart of how we express ideas and connect with one another.",
+      "bbox": {
+        "l": 10.0,
+        "t": 10.0,
+        "r": 90.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0
+  ],
+  "agreement_scores": [
+    1.0
+  ],
+  "sources": [
+    "ensemble"
+  ]
+}

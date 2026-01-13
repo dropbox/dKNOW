@@ -1,0 +1,12 @@
+{
+  "pdf_name": "amt_handbook_sample.pdf",
+  "num_pages": 1,
+  "model_costs": {
+    "gpt-4o": {
+      "input_tokens": 1255,
+      "output_tokens": 1851,
+      "cost_usd": 0.0216475
+    }
+  },
+  "total_cost_usd": 0.0216475
+}

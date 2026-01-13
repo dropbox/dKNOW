@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Famous Landmarks</name>
+    <description>A collection of famous landmarks around the world</description>
+    <Placemark>
+      <name>Eiffel Tower</name>
+      <description>Iconic iron lattice tower in Paris, France</description>
+      <Point>
+        <coordinates>2.294481,48.858370,324</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Statue of Liberty</name>
+      <description>Colossal neoclassical sculpture on Liberty Island, New York Harbor</description>
+      <Point>
+        <coordinates>-74.044500,40.689247,93</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sydney Opera House</name>
+      <description>Multi-venue performing arts centre in Sydney, Australia</description>
+      <Point>
+        <coordinates>151.215297,-33.856784,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

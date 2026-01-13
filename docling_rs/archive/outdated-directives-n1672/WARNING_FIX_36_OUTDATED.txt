@@ -1,0 +1,82 @@
+⚠️  FIX_36_FAILURES_ONE_BY_ONE.txt IS OUTDATED - DO NOT USE! ⚠️
+
+🔴 BUG DISCOVERED N=1638: LLM parser had bug that caused 0% false negatives
+🔴 Many formats listed as 0% in FIX_36_FAILURES_ONE_BY_ONE.txt are actually 85%+ complete
+🔴 That list needs complete re-evaluation before use
+
+## Root Cause
+
+LLM parser expected `category_scores` field but DocItem test prompts used `scores` field.
+When parser didn't find expected field, it defaulted to all 0s.
+
+**Fix applied**: Added serde alias in verifier.rs (N=1638)
+
+## Known False Positives (Verified N=1638)
+
+**VCF**: Listed 0%, actually 98% ✅
+- Claims: Missing ADR, URL, BDAY fields
+- Reality: All fields present since N=1621
+- DO NOT attempt to "fix" - already correct
+
+**GPX**: Listed 0%, actually 99% ✅
+- Claims: Only tracks, missing waypoints/routes
+- Reality: All elements present since N=1632
+- DO NOT attempt to "fix" - already correct
+
+**ICS**: Listed 0%, actually 91%
+- Real minor issues: Attendee roles, VALARM structure
+- Not 0%, but below 95% threshold
+- Lower priority than claimed
+
+## Estimated Impact
+
+**10-30 formats may be incorrectly flagged as 0%.**
+
+The entire FIX_36_FAILURES list was generated with buggy LLM parser.
+Unknown how many other "failures" are actually 90%+ complete.
+
+## ✅ COMPLETED N=1643: Re-evaluation Done!
+
+**All 53 LLM tests re-run with fixed parser.**
+
+**Results:**
+- FIX_36_FAILURES_ONE_BY_ONE.txt archived to: `archive/FIX_36_FAILURES_ONE_BY_ONE.txt.ARCHIVED_2025-11-20`
+- New accurate scores in: `LLM_QUALITY_SCORES_2025-11-20.md`
+- New priority list in: `PRIORITY_FORMATS_2025-11-20.md`
+
+**Use the new priority list, not the archived FIX_36 file!**
+
+## How to Re-Run Tests
+
+```bash
+# Source API key
+source .env
+
+# Run all LLM DocItem validation tests
+cargo test --test llm_docitem_validation_tests --package docling-core -- --exact --nocapture
+
+# Expected cost: ~$0.03 for 53 formats
+# Expected time: ~5-10 minutes
+```
+
+## What to Do Instead
+
+**Option A (Recommended)**: Re-evaluate all formats with fixed tests
+- Accurate data prevents wasted work
+- Estimated 1-2 commits to generate new list
+- Then proceed with real failures
+
+**Option B**: Use backend completeness tests only
+- Backend tests are deterministic and reliable
+- Focus on formats with < 100% backend completeness
+- LLM tests become secondary validation
+
+**DO NOT**: Follow FIX_36 list blindly
+- Will waste 60-100 commits fixing non-existent bugs
+- VCF and GPX are proof that list is unreliable
+
+---
+
+Created: N=1638 (2025-11-20)
+Purpose: Prevent AI confusion and wasted effort
+See also: reports/feature-phase-e-open-standards/LLM_TEST_INVESTIGATION_2025-11-20.md

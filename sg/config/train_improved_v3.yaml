@@ -1,0 +1,157 @@
+# Improved training config v3 - Optimized for Apple M2 + PyTorch 2.9.1
+#
+# Platform: Apple Silicon M2 (MPS backend)
+# Python 3.13 + PyTorch 2.9.1: AMP + torch.compile BOTH enabled!
+#
+# Features enabled:
+# - Quality filtered data + query augmentation
+# - Language-aware batching
+# - MRR validation + early stopping
+# - MNR Loss (better for retrieval than InfoNCE)
+# - Memory Bank (32K extra negatives)
+# - GradCache for larger effective batches
+# - Layer-wise Learning Rate Decay (LLRD)
+# - Matryoshka Representation Learning
+# - Dynamic (learnable) Temperature
+# - EMA Teacher for self-distillation
+# - Priority sampling for user code (3x weight)
+
+data:
+  train: "data/final_training_v2.jsonl"
+  validation: "data/final_training_v2.val.jsonl"
+  # languages: ["rust", "python", "lean"]  # Optional filter
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-code-v2"
+
+training:
+  method: "lora"
+
+  # LoRA config (targeting all attention + FFN)
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  target_modules:
+    - "q"
+    - "v"
+    - "k"
+    - "o"
+    - "wi_0"
+    - "wi_1"
+    - "wo"
+
+  # Training hyperparameters
+  batch_size: 16
+  gradient_accumulation_steps: 4  # Effective batch = 64
+  epochs: 3
+  learning_rate: 3.0e-5
+  warmup_steps: 500
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+
+  # Contrastive learning
+  temperature: 0.07
+  max_hard_negatives: 3
+
+  # Margin loss
+  use_margin_loss: true
+  margin: 0.2
+  margin_weight: 0.1
+
+  # Sequence length
+  max_length: 384
+
+  # Core improvements
+  language_aware_batching: true
+  gradient_checkpointing: true
+  cache_tokenized: true
+
+  # === ADVANCED IMPROVEMENTS (v2) ===
+
+  # GradCache - memory-efficient large batches
+  use_gradcache: false       # Disable - needs more testing on MPS
+  gradcache_chunk_size: 4
+
+  # LLRD - layer-wise learning rate decay
+  use_llrd: true
+  llrd_decay_rate: 0.9
+
+  # Matryoshka - multi-dimensional embeddings
+  use_matryoshka: true
+  matryoshka_dims: [64, 128, 256, 768]
+
+  # === ADVANCED IMPROVEMENTS (v3) ===
+
+  # Dynamic Temperature - learnable temperature parameter
+  use_dynamic_temperature: true
+
+  # Progressive Sequence Length - start short, grow to full
+  use_progressive_length: true
+  progressive_min_length: 128
+  progressive_warmup_steps: 2000
+
+  # Curriculum Learning - easy to hard ordering
+  use_curriculum: false      # Disabled - adds overhead, optional
+  curriculum_warmup_epochs: 0.5
+
+  # ANCE - mine hard negatives from model
+  use_ance: true
+  ance_mine_every: 1         # Mine every epoch
+
+  # === NEW RETRIEVAL IMPROVEMENTS ===
+
+  # Multiple Negatives Ranking Loss - better for retrieval
+  use_mnr_loss: true
+  mnr_scale: 20.0
+
+  # Token-Level Contrastive - for multi-vector (XTR)
+  use_token_contrastive: true
+  token_contrastive_weight: 0.3
+
+  # EMA Teacher - stable self-distillation
+  use_ema: true
+  ema_decay: 0.999
+  ema_distill_weight: 0.1
+
+  # Focal Loss - focus on hard examples
+  use_focal_loss: true
+  focal_gamma: 2.0
+  focal_alpha: 0.25
+
+  # Priority Sampling - boost user's own code
+  use_priority_sampling: true
+  priority_weight: 3.0         # 3x more likely to sample user code
+  priority_file_patterns:      # Files matching these get priority
+    - "ayates"
+    - "my_code"
+    - "sg/"
+
+  # === CRITICAL EFFICIENCY IMPROVEMENTS ===
+
+  # Mixed Precision (AMP) - Disabled due to NaN issues on MPS
+  use_amp: false               # Disabled until MPS AMP is more stable
+
+  # torch.compile - NOT supported on Python 3.14!
+  use_compile: false           # Disabled - Python 3.14 doesn't support torch.compile
+
+  # Fused optimizer - faster on MPS
+  use_fused_optimizer: true
+
+  # Float32 matmul precision - 'medium' is faster
+  matmul_precision: "medium"
+
+  # Memory Bank - 65K extra negatives for better contrastive learning
+  use_memory_bank: true
+  memory_bank_size: 32768      # Reduced for MPS memory
+
+  # DataLoader optimization
+  num_workers: 2               # MPS doesn't benefit much from more
+
+  # Validation and early stopping
+  eval_every: 300
+  early_stopping_patience: 5
+  log_every: 10
+  save_every: 1000
+
+  seed: 42

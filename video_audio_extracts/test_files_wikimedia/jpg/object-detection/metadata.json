@@ -1,0 +1,82 @@
+[
+  {
+    "path": "test_files_wikimedia/jpg/object-detection/01_\"Bra\".jpg",
+    "size": 2569200,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/%22Bra%22.jpg",
+    "title": "File:\"Bra\".jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/object-detection/02_20130610-OC-RBN-9485_Agriculture_in_the_United_States_(United_States_Department_of_Agriculture)_USDA_images.jpg",
+    "size": 11002370,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/20130610-OC-RBN-9485_Agriculture_in_the_United_States_%28United_States_Department_of_Agriculture%29_USDA_images.jpg",
+    "title": "File:20130610-OC-RBN-9485 Agriculture in the United States (United States Department of Agriculture) USDA images.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/object-detection/03_20170915-USDA-OC-PSD-0096_Agriculture_in_the_United_States.jpg",
+    "size": 7787983,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/20170915-USDA-OC-PSD-0096_Agriculture_in_the_United_States.jpg",
+    "title": "File:20170915-USDA-OC-PSD-0096 Agriculture in the United States.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/object-detection/04_A_matured_Carrot.jpg",
+    "size": 364406,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/A_matured_Carrot.jpg",
+    "title": "File:A matured Carrot.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/object-detection/05_A_smiling_market_woman_at_the_Monday_Market_in_Kakuri,_Kaduna_01.jpg",
+    "size": 6065831,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/A_smiling_market_woman_at_the_Monday_Market_in_Kakuri%2C_Kaduna_01.jpg",
+    "title": "File:A smiling market woman at the Monday Market in Kakuri, Kaduna 01.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/object-detection/06_A_Some_Vegetables_and_Fruits_on_the_vegetarian_Restaurant.jpg",
+    "size": 8373248,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/A_Some_Vegetables_and_Fruits_on_the_vegetarian_Restaurant.jpg",
+    "title": "File:A Some Vegetables and Fruits on the vegetarian Restaurant.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/object-detection/07_Adding_growing_medium_to_the_flat_(6811069240).jpg",
+    "size": 2631423,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Adding_growing_medium_to_the_flat_%286811069240%29.jpg",
+    "title": "File:Adding growing medium to the flat (6811069240).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/object-detection/08_Agri_Fair_2024_Traditional_Maltese_Food_2.jpg",
+    "size": 16532996,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Agri_Fair_2024_Traditional_Maltese_Food_2.jpg",
+    "title": "File:Agri Fair 2024 Traditional Maltese Food 2.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/object-detection/09_Agricultural_display,_Spokane_Falls,_Washington,_1890_(WASTATE_859).jpeg.jpg",
+    "size": 51028,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Agricultural_display%2C_Spokane_Falls%2C_Washington%2C_1890_%28WASTATE_859%29.jpeg",
+    "title": "File:Agricultural display, Spokane Falls, Washington, 1890 (WASTATE 859).jpeg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/object-detection/10_Alaskan_vegetables_and_preserved_fruits_exhibit,_Alaska_Bulding,_Alaska-Yukon-Pacific-Exposition,_Seattle,_Washington,_1909_(AYP_1046).jpeg.jpg",
+    "size": 57881,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Alaskan_vegetables_and_preserved_fruits_exhibit%2C_Alaska_Bulding%2C_Alaska-Yukon-Pacific-Exposition%2C_Seattle%2C_Washington%2C_1909_%28AYP_1046%29.jpeg",
+    "title": "File:Alaskan vegetables and preserved fruits exhibit, Alaska Bulding, Alaska-Yukon-Pacific-Exposition, Seattle, Washington, 1909 (AYP 1046).jpeg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  }
+]

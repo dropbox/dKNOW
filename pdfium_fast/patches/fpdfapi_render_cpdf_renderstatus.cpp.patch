@@ -1,0 +1,43 @@
+--- pdfium/core/fpdfapi/render/cpdf_renderstatus.cpp	2025-11-20 14:44:25
++++ core/fpdfapi/render/cpdf_renderstatus.cpp	2025-12-03 16:39:54
+@@ -187,6 +187,12 @@
+   print_ = device_->GetDeviceType() == DeviceType::kPrinter;
+ #endif
+   page_resource_.Reset(context_->GetPageResources());
++
++  // Automatically propagate tiling pattern cache from parent to detect circular references
++  if (pParentStatus) {
++    tiling_pattern_cache_ = pParentStatus->tiling_pattern_cache_;
++  }
++
+   if (pInitialStates && !type3_char_) {
+     initial_states_ = *pInitialStates;
+     if (pParentStatus) {
+@@ -1211,12 +1217,26 @@
+                                           CPDF_PageObject* pPageObj,
+                                           const CFX_Matrix& mtObj2Device,
+                                           bool stroke) {
++  // Protect against circular pattern references (similar to Type3 font handling)
++  if (pdfium::Contains(tiling_pattern_cache_, pattern)) {
++    return;
++  }
++
++  // Protect against infinite recursion from circular pattern references
++  AutoRestorer<int> recursion_restorer(&g_CurrentRecursionDepth);
++  if (++g_CurrentRecursionDepth > kRenderMaxRecursionDepth) {
++    return;
++  }
++
++  // Add pattern to cache before loading/rendering to prevent circular references
++  tiling_pattern_cache_.emplace_back(pattern);
++
+   const std::unique_ptr<CPDF_Form> pPatternForm = pattern->Load(pPageObj);
+   if (!pPatternForm) {
+     return;
+   }
+ 
+-  CFX_RenderDevice::StateRestorer restorer(device_);
++  CFX_RenderDevice::StateRestorer device_restorer(device_);
+   if (!ClipPattern(pPageObj, mtObj2Device, stroke)) {
+     return;
+   }

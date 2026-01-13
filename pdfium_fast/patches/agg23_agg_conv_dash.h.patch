@@ -1,0 +1,14 @@
+--- pdfium/third_party/agg23/agg_conv_dash.h	2025-11-20 14:44:25
++++ third_party/agg23/agg_conv_dash.h	2025-12-03 21:15:42
+@@ -38,9 +38,9 @@
+     {
+         base_type::generator().remove_all_dashes();
+     }
+-    void add_dash(float dash_len, float gap_len)
++    void add_dash(float dash_len)
+     {
+-        base_type::generator().add_dash(dash_len, gap_len);
++        base_type::generator().add_dash(dash_len);
+     }
+     void dash_start(float ds)
+     {

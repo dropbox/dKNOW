@@ -1,0 +1,11 @@
+--- pdfium/core/fxcrt/widestring.cpp	2025-11-20 14:44:25
++++ core/fxcrt/widestring.cpp	2025-12-03 16:39:54
+@@ -563,7 +563,7 @@
+ }
+ 
+ intptr_t WideString::ReferenceCountForTesting() const {
+-  return data_ ? data_->refs_ : 0;
++  return data_ ? data_->refs_.load(std::memory_order_relaxed) : 0;
+ }
+ 
+ ByteString WideString::ToASCII() const {

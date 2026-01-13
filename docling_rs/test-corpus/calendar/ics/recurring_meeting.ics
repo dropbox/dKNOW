@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Example Corp//Example Calendar//EN
+X-WR-CALNAME:Project Schedule
+
+BEGIN:VEVENT
+UID:recurring-001@example.com
+DTSTART:20250110T140000Z
+DTEND:20250110T150000Z
+RRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR;COUNT=12
+SUMMARY:Sprint Planning
+DESCRIPTION:Recurring sprint planning session for Q1 2025.
+LOCATION:Zoom: https://example.zoom.us/j/123456789
+ORGANIZER;CN="Project Manager":mailto:pm@example.com
+ATTENDEE;CN="Dev Team":mailto:devteam@example.com
+STATUS:CONFIRMED
+END:VEVENT
+
+END:VCALENDAR

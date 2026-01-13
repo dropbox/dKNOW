@@ -1,0 +1,25 @@
+[package]
+name = "docling-ocr"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Optical Character Recognition (OCR) support for docling-rs"
+keywords = ["ocr", "tesseract", "text-recognition", "vision"]
+categories = ["computer-vision"]
+
+[dependencies]
+ort = { workspace = true }
+image = { workspace = true }
+ndarray = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+imageproc = { workspace = true }
+serde = { workspace = true }
+
+# Optional: Tesseract fallback
+leptess = { workspace = true, optional = true }
+
+[features]
+default = []
+tesseract = ["leptess"]

@@ -1,0 +1,32 @@
+name: emotion_detection
+description: Detect emotions from facial images (7 emotions - Angry, Disgust, Fear, Happy, Sad, Surprise, Neutral)
+inputs:
+  - jpg
+  - jpeg
+  - png
+  - bmp
+  - webp
+  - heic
+  - heif
+  - ico
+  - avif
+  - arw
+  - cr2
+  - dng
+  - nef
+  - raf
+  - dpx
+  - Keyframes
+outputs: [EmotionDetection]
+config:
+  max_file_size_mb: 100
+  requires_gpu: false
+  experimental: false
+performance:
+  avg_processing_time_per_gb: "15s"
+  memory_per_file_mb: 64
+  supports_streaming: false
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 0

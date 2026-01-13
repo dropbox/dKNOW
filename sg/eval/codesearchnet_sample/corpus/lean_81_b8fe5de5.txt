@@ -1,0 +1,21 @@
+/-- Hour and minute without colon (e.g., "+0130") -/
+  | hourMinute
+  /-- Localized offset text in full form (e.g., "GMT+08:00") -/
+  | full
+  /-- Hour, minute, and second with colon (e.g., "+01:30:15") -/
+  | hourMinuteSecondColon
+  deriving Repr, Inhabited
+
+namespace OffsetZ
+
+/--
+`classify` classifies the number of pattern letters into an `OffsetZ` format.
+-/
+def classify (num : Nat) : Option OffsetZ :=
+  match num with
+  | 1 | 2 | 3 => some (.hourMinute)
+  | 4 => some (.full)
+  | 5 => some (.hourMinuteSecondColon)
+  | _ => none
+
+end OffsetZ

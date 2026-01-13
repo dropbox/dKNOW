@@ -1,0 +1,37 @@
+# MLX Quick Test Config - verify training works
+data:
+  train: "data/training_improved.jsonl"
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-mlx-test"
+
+training:
+  # LoRA config
+  lora_r: 16
+  lora_alpha: 32
+
+  # Training hyperparameters - quick test
+  batch_size: 8
+  gradient_accumulation_steps: 1
+  epochs: 1
+  learning_rate: 5.0e-5  # Higher LR for quick test
+  warmup_steps: 50
+  weight_decay: 0.01
+
+  # Contrastive learning
+  temperature: 0.07
+  margin: 0.2
+  margin_weight: 0.1
+
+  # Sequence length
+  max_length: 128  # Shorter for speed
+
+  # Logging
+  log_every: 25
+  save_every: 200
+
+  # MLX-specific
+  dtype: "float32"
+
+  seed: 42

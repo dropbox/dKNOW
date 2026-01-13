@@ -1,0 +1,27 @@
+{
+  "benchmark_type": "baseline_ffmpeg_only",
+  "timestamp": "2025-10-28T03:33:42.539694",
+  "configuration": {
+    "num_files": 100,
+    "dataset_path": "/Users/ayates/Library/CloudStorage/Dropbox-BrandcraftSolutions/a.test/Kinetics dataset (5%)/kinetics600_5per/kinetics600_5per/train",
+    "tools": [
+      "FFmpeg (audio + keyframes)"
+    ],
+    "note": "Transcription excluded - FFmpeg operations only"
+  },
+  "results": {
+    "total_files": 100,
+    "successful": 100,
+    "failed": 0,
+    "total_time_seconds": 17.94,
+    "errors": [],
+    "throughput_files_per_second": 5.57,
+    "latency_mean_seconds": 0.18,
+    "latency_median_seconds": 0.16,
+    "latency_min_seconds": 0.15,
+    "latency_max_seconds": 0.32,
+    "latency_stddev_seconds": 0.04,
+    "audio_extraction_mean_seconds": 0.08,
+    "keyframe_extraction_mean_seconds": 0.1
+  }
+}

@@ -1,0 +1,39 @@
+From user1@example.com Mon Nov 07 08:00:00 2025
+From: user1@example.com
+To: user2@example.com
+Subject: Morning Email
+Date: Mon, 7 Nov 2025 08:00:00 +0000
+
+Good morning!
+
+From user2@example.com Mon Nov 07 09:00:00 2025
+From: user2@example.com
+To: user1@example.com
+Subject: Re: Morning Email
+Date: Mon, 7 Nov 2025 09:00:00 +0000
+
+Good morning to you too!
+
+From user3@example.com Mon Nov 07 10:00:00 2025
+From: user3@example.com
+To: user1@example.com, user2@example.com
+Subject: Team Update
+Date: Mon, 7 Nov 2025 10:00:00 +0000
+
+Team, here's today's update...
+
+From user1@example.com Mon Nov 07 11:00:00 2025
+From: user1@example.com
+To: user3@example.com
+Subject: Re: Team Update
+Date: Mon, 7 Nov 2025 11:00:00 +0000
+
+Thanks for the update!
+
+From user4@example.com Mon Nov 07 12:00:00 2025
+From: user4@example.com
+To: all@example.com
+Subject: Lunch Plans
+Date: Mon, 7 Nov 2025 12:00:00 +0000
+
+Anyone interested in lunch?

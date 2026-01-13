@@ -1,0 +1,37 @@
+From alice@example.com Mon Nov  6 14:30:00 2025
+From: alice@example.com
+To: bob@example.com
+Subject: Meeting Tomorrow
+Date: Mon, 6 Nov 2025 14:30:00 -0800
+
+Hi Bob, don't forget about our meeting tomorrow at 10 AM.
+
+Thanks,
+Alice
+
+From bob@example.com Mon Nov  6 15:45:00 2025
+From: bob@example.com
+To: alice@example.com
+Subject: Re: Meeting Tomorrow
+Date: Mon, 6 Nov 2025 15:45:00 -0800
+
+Thanks for the reminder, Alice. I'll be there.
+
+Bob
+
+From charlie@example.com Tue Nov  7 09:00:00 2025
+From: charlie@example.com
+To: alice@example.com, bob@example.com
+Subject: Project Update
+Date: Tue, 7 Nov 2025 09:00:00 -0800
+
+Hi team,
+
+Here's this week's project update:
+- Feature A: 80% complete
+- Feature B: In review
+- Feature C: Blocked (waiting for API access)
+
+Let me know if you have questions.
+
+Charlie

@@ -1,0 +1,6 @@
+/--
+Create a not gate in the input AIG. This uses the builtin cache to enable automated subterm sharing.
+-/
+@[inline]
+def mkNotCached (aig : AIG α) (gate : Ref aig) : Entrypoint α :=
+  ⟨aig, gate.not⟩

@@ -1,0 +1,28 @@
+--- pdfium/core/fpdfapi/page/cpdf_colorspace.cpp	2025-11-20 14:44:25
++++ core/fpdfapi/page/cpdf_colorspace.cpp	2025-12-03 16:39:54
+@@ -451,6 +451,10 @@
+ };
+ 
+ StockColorSpaces* g_stock_colorspaces = nullptr;
++std::mutex& GetStockColorSpacesMutex() {
++  static std::mutex mutex;
++  return mutex;
++}
+ 
+ }  // namespace
+ 
+@@ -472,12 +476,14 @@
+ 
+ // static
+ void CPDF_ColorSpace::DestroyGlobals() {
++  std::lock_guard<std::mutex> lock(GetStockColorSpacesMutex());
+   delete g_stock_colorspaces;
+   g_stock_colorspaces = nullptr;
+ }
+ 
+ // static
+ RetainPtr<CPDF_ColorSpace> CPDF_ColorSpace::GetStockCS(Family family) {
++  std::lock_guard<std::mutex> lock(GetStockColorSpacesMutex());
+   return g_stock_colorspaces->GetStockCS(family);
+ }
+ 

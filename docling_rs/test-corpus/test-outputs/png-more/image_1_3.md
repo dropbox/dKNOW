@@ -1,0 +1,47 @@
+Dropbox
+
+Upload
+
+Q Search
+
+Create v
+
+© Recents
+
+Starred div#account-menu-trigger\_browse
+
+32 x 32
+
+Flex Item
+
+• Inspector
+
+Q Search HTML
+
+Console
+
+Debugger T Network &gt;
+
+IconButton-s. dig-IconButton--medium aria-label-"Help and resources" data-testid="Learning-center-button"&gt;
+
+*** X
+
++
+
+\_LearningCenterHeaderDesktop\_1qu4m\_3" data-uxa-log="gh\_help\_trigger"
+
+0&lt;/button&gt; levent
+
+&lt;div class="\_LearningCenterHeaderMobile\_1qu4m\_23"&gt; 0&lt;/div
+
+Despan style-"display: contents;"&gt;@&lt;/span&gt; (event) [contents espan style-"display: contents;"&gt; (event) (contents)
+
+trigger" data-testid="account-menu-trigger"&gt;
+
+- div id="account-menu-trigger\_browse" data-test-id="account-menu-
+
++ ‹div class="dig-Menu"&gt;
+
++ div class-"dig-ClickOutside"&gt;
+
+© 34

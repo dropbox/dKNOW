@@ -1,0 +1,180 @@
+═══════════════════════════════════════════════════════════════
+🚨 URGENT: PDF DOCITEMS FRAGMENTATION BUG 🚨
+═══════════════════════════════════════════════════════════════
+
+**Date:** 2025-11-24 23:40 PST
+**Priority:** BLOCKING - Must fix before claiming PDF is working
+
+**USER:** "Rust should equal Python"
+
+═══════════════════════════════════════════════════════════════
+
+## THE BUG
+
+**Python baseline (multi_page.pdf):**
+- **53 DocItems** (16 text, 11 section_header, 26 list_item)
+- 9,456 chars markdown
+- Example: "Pre-Digital Era (19th - Early 20th Century)" = 1 section_header DocItem
+
+**Current Rust:**
+- **80 DocItems** (27 MORE than Python!)
+- 7,400 chars markdown
+- Example: "Pre", "-", "Digital Era..." = 3 separate Text DocItems
+
+**Problem:** DocItems are OVER-FRAGMENTED
+- Rust splits what should be 1 DocItem into 3 DocItems
+- This happens throughout the document (53 → 80 = 51% more items)
+- Text is readable but structure is wrong
+
+═══════════════════════════════════════════════════════════════
+
+## ROOT CAUSE INVESTIGATION NEEDED
+
+**The fragmentation could be at:**
+
+1. **Text extraction level** (pdf.rs:extract_text_cells_simple)
+   - Pdfium returns fragments: "Pre", "-", "Digital Era"
+   - merge_horizontal_cells joins with spaces: "Pre - Digital Era"
+   - But creates separate cells, not one merged cell
+
+2. **ML Clustering level** (layout_postprocessor or stage04-08)
+   - ML detects bounding boxes
+   - Text cells get assigned to clusters
+   - Maybe creating separate clusters for "Pre", "-", "Digital"?
+
+3. **PageElement creation** (page_assembly.rs)
+   - Clusters → PageElements
+   - One PageElement per cluster
+   - If we have 80 clusters, we get 80 PageElements
+
+4. **DocItems conversion** (to_docling_document_multi)
+   - PageElements → DocItems
+   - One DocItem per PageElement
+   - If we have 80 PageElements, we get 80 DocItems
+
+**Most likely:** Text fragments are not being merged at the cluster/element level
+
+═══════════════════════════════════════════════════════════════
+
+## YOUR TASK: FIND THE EXACT LOCATION
+
+### Step 1: Add Logging to Track "Pre-Digital Era"
+
+**Add logging at each stage to see where it fragments:**
+
+```rust
+// In pdf.rs after merge_horizontal_cells
+for cell in &merged_cells {
+    if cell.text.contains("Pre") || cell.text.contains("Digital") {
+        eprintln!("AFTER MERGE: '{}'", cell.text);
+    }
+}
+
+// In ML pipeline after clustering
+for cluster in &clusters {
+    if cluster has text containing "Pre" or "Digital" {
+        eprintln!("AFTER CLUSTERING: cluster {} has {} cells", cluster.id, cell_count);
+    }
+}
+
+// In page_assembly after creating PageElements
+for element in &assembled.elements {
+    if element.text().contains("Pre") || element.text().contains("Digital") {
+        eprintln!("PAGEELEMENT: '{}'", element.text());
+    }
+}
+```
+
+### Step 2: Run Test and Read Logs
+
+```bash
+source setup_env.sh
+RUST_LOG=debug cargo test -p docling-backend --test pdf_honest_test \
+  --features pdf-ml -- --nocapture 2>&1 | grep "Pre\|Digital\|AFTER\|PAGEELEMENT"
+```
+
+### Step 3: Identify Where Splitting Happens
+
+**Track the progression:**
+- After merge: "Pre - Digital Era" (1 merged cell) → GOOD ✅
+- After clustering: 3 separate clusters → BUG FOUND 🐛
+- After PageElements: 3 separate elements → Consequence of above
+- After DocItems: 3 separate DocItems → Consequence of above
+
+**OR:**
+- After merge: "Pre", "-", "Digital Era" (3 cells) → BUG FOUND 🐛
+- Everything downstream inherits this fragmentation
+
+### Step 4: Fix the Root Cause
+
+**If bug is in merge_horizontal_cells:**
+- Need more aggressive merging
+- Lower distance threshold
+- Better horizontal alignment detection
+
+**If bug is in ML clustering:**
+- ML detects separate boxes for "Pre" and "Digital"
+- Need to merge overlapping/adjacent boxes
+- Or adjust confidence thresholds
+
+**If bug is in Python source difference:**
+- Check ~/docling_debug_pdf_parsing for how IT handles this
+- Compare merge logic between source and current
+
+═══════════════════════════════════════════════════════════════
+
+## PYTHON BASELINE ANALYSIS
+
+**Python creates smart DocItems:**
+```json
+{
+  "label": "section_header",
+  "text": "Pre-Digital Era (19th - Early 20th Century)",
+  ...ONE item for entire header
+}
+```
+
+**Rust creates fragmented DocItems:**
+```json
+{"label": "text", "text": "Pre"},
+{"label": "text", "text": "-"},
+{"label": "text", "text": "Digital Era (19th - Early 20th Century)"}
+...THREE items for same header
+```
+
+**This is structural incorrectness, not just char count difference.**
+
+═══════════════════════════════════════════════════════════════
+
+## SUCCESS CRITERIA
+
+✅ Rust produces 53 DocItems (matches Python count exactly)
+✅ DocItem types match: 16 text, 11 section_header, 26 list_item
+✅ Each DocItem is cohesive (not fragmented)
+✅ "Pre-Digital Era..." is ONE section_header, not 3 text items
+✅ Markdown output ~9,456 chars (derived from correct DocItems)
+
+**NOT:**
+- ❌ 80 DocItems (over-fragmented)
+- ❌ 7,400 chars (missing content from fragmentation)
+
+═══════════════════════════════════════════════════════════════
+
+## NEXT STEPS
+
+1. **Add logging** to track "Pre-Digital Era" through pipeline (1 hour)
+2. **Identify fragmentation point** from logs (30 min)
+3. **Fix the root cause** (2-4 hours depending on location)
+4. **Test until 53 DocItems achieved** (1 hour)
+
+**Total: 4-6 hours**
+
+**DO NOT stop until Rust produces 53 DocItems matching Python structure.**
+
+═══════════════════════════════════════════════════════════════
+
+**This is the REAL bug preventing 100% quality.**
+
+**User: "Rust should equal Python" - Currently it doesn't (53 vs 80 DocItems)**
+
+═══════════════════════════════════════════════════════════════

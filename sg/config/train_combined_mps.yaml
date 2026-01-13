@@ -1,0 +1,62 @@
+# Training config for combined dataset - M2 Max (MPS) version
+#
+# Expected:
+#   - Training time: ~24-36 hours
+#   - Recall@100 AUC: 0.92+
+
+data:
+  train: "data/combined_training.jsonl"
+  validation: "data/combined_training.val.jsonl"
+
+# Dataset: 1.99M train + 20K val pairs
+# Languages: PHP (509K), Java (469K), Python (401K), Go (342K), JS (128K), Rust (92K), Ruby (51K)
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-code-sota-mps"
+
+training:
+  method: "lora"
+
+  # LoRA config
+  lora_r: 64
+  lora_alpha: 128
+  lora_dropout: 0.05
+  target_modules:
+    - "q"
+    - "v"
+    - "k"
+    - "o"
+    - "wi_0"
+    - "wi_1"
+    - "wo"
+
+  # MPS-optimized batch sizes
+  batch_size: 16
+  gradient_accumulation_steps: 8  # Effective batch = 128
+
+  epochs: 2
+  learning_rate: 1e-5
+  warmup_steps: 2000
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+
+  # Recall@K optimization
+  temperature: 0.05
+  margin: 0.1
+  loss: "infonce_with_margin"
+  hard_negatives: 31
+
+  max_length: 512
+
+  # MPS stability
+  gradient_checkpointing: true
+  cache_tokenized: true
+  use_amp: false
+  use_compile: false
+  num_workers: 0
+
+  eval_every: 2500
+  log_every: 10  # Log more frequently for progress visibility
+  save_every: 5000
+  seed: 42

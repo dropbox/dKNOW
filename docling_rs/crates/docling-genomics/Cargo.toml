@@ -1,0 +1,16 @@
+[package]
+name = "docling-genomics"
+version.workspace = true
+edition.workspace = true
+description = "Genomics and bioinformatics format support for docling-rs (VCF, FASTQ, BAM, GFF, BED)"
+keywords = ["genomics", "vcf", "fastq", "bam", "bioinformatics"]
+categories = ["parsing", "science"]
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+docling-core = { version = "2.58.0", path = "../docling-core" }
+noodles-vcf = "0.81.0"
+noodles-core = "0.18.0"
+anyhow = "1.0"
+thiserror = { workspace = true }

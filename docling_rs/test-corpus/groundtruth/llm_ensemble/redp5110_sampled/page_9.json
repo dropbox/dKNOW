@@ -1,0 +1,235 @@
+{
+  "page_number": 9,
+  "elements": [
+    {
+      "label": "paragraph",
+      "text": "For example, assume that a business has assigned the duty to manage security on IBM i to Theresa. Before release IBM i 7.2, to grant privileges, Theresa had to have the same privileges Theresa was granting to others. Therefore, to grant *USE privileges to the PAYROLL table, Theresa had to have *OBJMGT and *USE authority (or a higher level of authority, such as *ALLOBJ). This requirement allowed Theresa to access the data in the PAYROLL table even though Theresa's job description was only to manage its security.",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In IBM i 7.2, the QIBM_DB_SECADM function usage grants authorities, revokes authorities, changes ownership, or changes the primary group without giving access to the object or, in the case of a database table, to the data that is in the table or allowing other operations on the table.",
+      "bbox": {
+        "l": 0.0,
+        "t": 10.0,
+        "r": 100.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "QIBM_DB_SECADM function usage can be granted only by a user with *SECADM special authority and can be given to a user or a group.",
+      "bbox": {
+        "l": 0.0,
+        "t": 20.0,
+        "r": 100.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "QIBM_DB_SECADM also is responsible for administering RCAC, which restricts which rows a user is allowed to access in a table and whether a user is allowed to see information in certain columns of a table.",
+      "bbox": {
+        "l": 0.0,
+        "t": 30.0,
+        "r": 100.0,
+        "b": 40.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "A preferred practice is that the RCAC administrator has the QIBM_DB_SECADM function usage ID, but absolutely no other data privileges. The result is that the RCAC administrator can deploy and maintain the RCAC constructs, but cannot grant themselves unauthorized access to data itself.",
+      "bbox": {
+        "l": 0.0,
+        "t": 40.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Table 2-2 shows a comparison of the different function usage IDs and *JOBCTL authority to the different CL commands and DB2 for i tools.",
+      "bbox": {
+        "l": 0.0,
+        "t": 50.0,
+        "r": 100.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "table",
+      "text": "Comparison of the different function usage IDs and *JOBCTL authority",
+      "bbox": {
+        "l": 0.0,
+        "t": 60.0,
+        "r": 100.0,
+        "b": 90.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "User action",
+            "*JOBCTL",
+            "QIBM_DB_SECADM",
+            "QIBM_DB_SQLADM",
+            "QIBM_DB_SYSMON",
+            "No Authority"
+          ],
+          [
+            "SET CURRENT DEGREE (SQL statement)",
+            "X",
+            "X",
+            "",
+            ""
+          ],
+          [
+            "CHGQRYA command targeting a different user's job",
+            "X",
+            "X",
+            "",
+            ""
+          ],
+          [
+            "STRDBMON or ENDDBMON commands targeting a different user's job",
+            "X",
+            "X",
+            "",
+            ""
+          ],
+          [
+            "STRDBMON or ENDDBMON commands targeting a job that matches the current user",
+            "X",
+            "X",
+            "X",
+            "X"
+          ],
+          [
+            "QUSRJOBI() API format 900 or System i Navigator's SQL Details for Job",
+            "X",
+            "X",
+            "X",
+            "X"
+          ],
+          [
+            "Visual Explain within Run SQL scripts",
+            "X",
+            "X",
+            "X",
+            "X"
+          ],
+          [
+            "Visual Explain outside of Run SQL scripts",
+            "X",
+            "X",
+            "",
+            ""
+          ],
+          [
+            "ANALYZE PLAN CACHE procedure",
+            "X",
+            "X",
+            "",
+            ""
+          ],
+          [
+            "DUMP PLAN CACHE procedure",
+            "X",
+            "X",
+            "",
+            ""
+          ],
+          [
+            "MODIFY PLAN CACHE procedure",
+            "X",
+            "X",
+            "",
+            ""
+          ],
+          [
+            "MODIFY PLAN CACHE PROPERTIES procedure (currently does not check authority)",
+            "X",
+            "X",
+            "",
+            ""
+          ],
+          [
+            "CHANGE PLAN CACHE SIZE procedure (currently does not check authority)",
+            "X",
+            "X",
+            "",
+            ""
+          ]
+        ],
+        "num_rows": 13,
+        "num_cols": 6
+      }
+    },
+    {
+      "label": "page_footer",
+      "text": "Chapter 2. Roles and separation of duties",
+      "bbox": {
+        "l": 0.0,
+        "t": 90.0,
+        "r": 50.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "11",
+      "bbox": {
+        "l": 90.0,
+        "t": 90.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

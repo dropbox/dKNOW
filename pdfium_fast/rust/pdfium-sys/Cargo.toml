@@ -1,0 +1,67 @@
+[package]
+name = "pdfium-sys"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "FFI bindings to PDFium"
+
+[lib]
+name = "pdfium_sys"
+path = "src/lib.rs"
+
+[[example]]
+name = "extract_text_to_file"
+path = "examples/extract_text_to_file.rs"
+
+[[example]]
+name = "render_to_png"
+path = "examples/render_to_png.rs"
+
+[[example]]
+name = "parallel_extract_text"
+path = "examples/parallel_extract_text.rs"
+
+[[example]]
+name = "extract_text"
+path = "examples/extract_text.rs"
+
+[[example]]
+name = "parallel_extract_text_multiproc"
+path = "examples/parallel_extract_text_multiproc.rs"
+
+[[example]]
+name = "render_pages"
+path = "examples/render_pages.rs"
+
+[[example]]
+name = "parallel_render_multiproc"
+path = "examples/parallel_render_multiproc.rs"
+
+[[example]]
+name = "render_pages_bridge"
+path = "examples/render_pages_bridge.rs"
+
+[[example]]
+name = "profile_text_extraction"
+path = "examples/profile_text_extraction.rs"
+
+[[example]]
+name = "profile_image_rendering"
+path = "examples/profile_image_rendering.rs"
+
+[dependencies]
+libc.workspace = true
+png.workspace = true
+md5.workspace = true
+jpeg-encoder.workspace = true
+webp.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+chrono.workspace = true
+
+[build-dependencies]
+bindgen = "0.70"
+
+[features]
+default = []

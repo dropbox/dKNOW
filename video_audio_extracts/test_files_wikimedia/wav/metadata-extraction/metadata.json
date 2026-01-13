@@ -1,0 +1,66 @@
+[
+  {
+    "path": "test_files_wikimedia/wav/metadata-extraction/01_(oc)_Premsa\u2500Version_de_23-08-2023.wav",
+    "size": 3855178,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/%28oc%29_Premsa%E2%94%80Version_de_23-08-2023.wav",
+    "title": "File:(oc) Premsa\u2500Version de 23-08-2023.wav",
+    "mime": "audio/wav",
+    "format": "wav"
+  },
+  {
+    "path": "test_files_wikimedia/wav/metadata-extraction/01_01a_rodzaje_sygnalow_alarmowych.wav",
+    "size": 6471624,
+    "url": null,
+    "title": "01_01a_rodzaje_sygnalow_alarmowych.wav",
+    "mime": "audio/wav",
+    "format": "wav"
+  },
+  {
+    "path": "test_files_wikimedia/wav/metadata-extraction/02_03a_rodzaje_sygnalow_alarmowych.wav",
+    "size": 6726296,
+    "url": null,
+    "title": "02_03a_rodzaje_sygnalow_alarmowych.wav",
+    "mime": "audio/wav",
+    "format": "wav"
+  },
+  {
+    "path": "test_files_wikimedia/wav/metadata-extraction/02_Ala_Canggung.wav",
+    "size": 70832206,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Ala_Canggung.wav",
+    "title": "File:Ala Canggung.wav",
+    "mime": "audio/wav",
+    "format": "wav"
+  },
+  {
+    "path": "test_files_wikimedia/wav/metadata-extraction/03_Acompanyament_Tema_de_Lucil\u00b7la.wav",
+    "size": 16449678,
+    "url": null,
+    "title": "03_Acompanyament_Tema_de_Lucil\u00b7la.wav",
+    "mime": "audio/wav",
+    "format": "wav"
+  },
+  {
+    "path": "test_files_wikimedia/wav/metadata-extraction/03_LL-Q150_(fra)-WikiLucas00-audio.wav",
+    "size": 92972,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/LL-Q150_%28fra%29-WikiLucas00-audio.wav",
+    "title": "File:LL-Q150 (fra)-WikiLucas00-audio.wav",
+    "mime": "audio/wav",
+    "format": "wav"
+  },
+  {
+    "path": "test_files_wikimedia/wav/metadata-extraction/04_Audio_Awal_Video_Big_Buck_Bunny.wav",
+    "size": 2153260,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Audio_Awal_Video_Big_Buck_Bunny.wav",
+    "title": "File:Audio Awal Video Big Buck Bunny.wav",
+    "mime": "audio/wav",
+    "format": "wav"
+  },
+  {
+    "path": "test_files_wikimedia/wav/metadata-extraction/05_Audio_Penutup_Video_Big_Buck_Bunny.wav",
+    "size": 1662414,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Audio_Penutup_Video_Big_Buck_Bunny.wav",
+    "title": "File:Audio Penutup Video Big Buck Bunny.wav",
+    "mime": "audio/wav",
+    "format": "wav"
+  }
+]

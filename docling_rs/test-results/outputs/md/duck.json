@@ -1,0 +1,758 @@
+[
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Summer activities",
+    "text": "Summer activities"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Swimming in the lake",
+    "text": "Swimming in the lake",
+    "level": 0
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Duck",
+    "text": "Duck"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/3",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Figure 1: This is a cute duckling",
+    "text": "Figure 1: This is a cute duckling"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/4",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Let’s swim!",
+    "text": "Let’s swim!",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/5",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "To get started with swimming, first lay down in a water and try not to drown:",
+    "text": "To get started with swimming, first lay down in a water and try not to drown:"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/0",
+    "children": [
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/6",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "You can relax and look around",
+    "text": "You can relax and look around",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/7",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Paddle about",
+    "text": "Paddle about",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/8",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Enjoy summer warmth",
+    "text": "Enjoy summer warmth",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/9",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Also, don’t forget:",
+    "text": "Also, don’t forget:"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/1",
+    "children": [
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/10",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Wear sunglasses",
+    "text": "Wear sunglasses",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/11",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Don’t forget to drink water",
+    "text": "Don’t forget to drink water",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/12",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Use sun cream",
+    "text": "Use sun cream",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/13",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Hmm, what else…",
+    "text": "Hmm, what else…"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/14",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Let’s eat",
+    "text": "Let’s eat",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/15",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "After we had a good day of swimming in the lake, it’s important to eat something nice",
+    "text": "After we had a good day of swimming in the lake, it’s important to eat something nice"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/16",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "I like to eat leaves",
+    "text": "I like to eat leaves"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/17",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Here are some interesting things a respectful duck could eat:",
+    "text": "Here are some interesting things a respectful duck could eat:"
+  },
+  {
+    "label": "table",
+    "self_ref": "#/tables/18",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 3.0,
+          "b": 4.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "data": {
+      "num_rows": 4,
+      "num_cols": 3,
+      "grid": [
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "Food",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "start_col_offset_idx": 1
+          },
+          {
+            "text": "Calories per portion",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "start_col_offset_idx": 2
+          }
+        ],
+        [
+          {
+            "text": "Leaves",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "Ash, Elm, Maple",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "start_col_offset_idx": 1
+          },
+          {
+            "text": "50",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "start_col_offset_idx": 2
+          }
+        ],
+        [
+          {
+            "text": "Berries",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "Blueberry, Strawberry, Cranberry",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "start_col_offset_idx": 1
+          },
+          {
+            "text": "150",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "start_col_offset_idx": 2
+          }
+        ],
+        [
+          {
+            "text": "Grain",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "Corn, Buckwheat, Barley",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "start_col_offset_idx": 1
+          },
+          {
+            "text": "200",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "start_col_offset_idx": 2
+          }
+        ]
+      ],
+      "table_cells": [
+        {
+          "text": "",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Food",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Calories per portion",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Leaves",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Ash, Elm, Maple",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "50",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Berries",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Blueberry, Strawberry, Cranberry",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "150",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Grain",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Corn, Buckwheat, Barley",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "200",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 2
+        }
+      ]
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/19",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "And let’s add another list in the end:",
+    "text": "And let’s add another list in the end:"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/2",
+    "children": [
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/20",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Leaves",
+    "text": "Leaves",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/21",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Berries",
+    "text": "Berries",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/22",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Grain",
+    "text": "Grain",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/23",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "And here my listing in code:",
+    "text": "And here my listing in code:"
+  },
+  {
+    "label": "code",
+    "self_ref": "#/texts/24",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Leaves\n\nBerries\nGrain",
+    "text": "Leaves\n\nBerries\nGrain"
+  }
+]

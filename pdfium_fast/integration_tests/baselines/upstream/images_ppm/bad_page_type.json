@@ -1,0 +1,9 @@
+{
+  "pdf_name": "bad_page_type.pdf",
+  "format": "ppm",
+  "dpi": 300,
+  "pages": {
+    "0": "9dbc42313dcff95787e7816c3dc70448",
+    "1": "0a75be529f2324731ec318e285bba8e6"
+  }
+}

@@ -1,0 +1,133 @@
+[package]
+name = "sg-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Core library for SuperGrep semantic search"
+
+[dependencies]
+# ML inference
+candle-core.workspace = true
+candle-nn.workspace = true
+candle-transformers.workspace = true
+tokenizers.workspace = true
+safetensors.workspace = true
+
+# Storage
+rusqlite.workspace = true
+
+# Serialization
+serde.workspace = true
+serde_json.workspace = true
+bincode.workspace = true
+
+# Concurrency
+crossbeam-channel.workspace = true
+rayon.workspace = true
+
+# Utilities
+anyhow.workspace = true
+tracing.workspace = true
+rand.workspace = true
+sha2.workspace = true
+once_cell.workspace = true
+indicatif.workspace = true
+hf-hub.workspace = true
+ureq = { version = "2", features = ["tls"] }
+dirs.workspace = true
+regex.workspace = true
+xxhash-rust.workspace = true
+infer.workspace = true
+bloomfilter.workspace = true
+base64.workspace = true
+chardetng.workspace = true
+encoding_rs.workspace = true
+
+# File summaries
+xattr = "1.3"
+
+# Chunking
+markdown_chunker.workspace = true
+
+# Document processing (optional)
+docling-backend = { workspace = true, optional = true }
+pdf-extract = { workspace = true, optional = true }
+docx-lite = { workspace = true, optional = true }
+calamine = { workspace = true, optional = true }
+pptx-to-md = { workspace = true, optional = true }
+epub = { workspace = true, optional = true }
+lopdf = { workspace = true, optional = true }
+# OCR for scanned documents
+docling-ocr = { workspace = true, optional = true }
+image = { workspace = true, optional = true }
+pdfium-render = { workspace = true, optional = true }
+
+# ONNX Runtime (optional)
+ort = { version = "2.0.0-rc.10", optional = true }
+ndarray = { version = "0.16", optional = true }
+
+# Audio decoding (optional) - for audio transcription
+symphonia = { version = "0.5", default-features = false, features = ["mp3", "wav", "flac", "ogg", "aac"], optional = true }
+# Sample rate conversion for Whisper (requires 16kHz input)
+rubato = { version = "0.16", optional = true }
+# ZIP archive reading for Whisper mel filters
+zip = { version = "2.2", default-features = false, features = ["deflate"], optional = true }
+
+[dev-dependencies]
+tempfile = "3"
+criterion = "0.5"
+
+[[bench]]
+name = "embedding_bench"
+harness = false
+
+[[bench]]
+name = "maxsim_bench"
+harness = false
+
+[[bench]]
+name = "search_bench"
+harness = false
+
+[[bench]]
+name = "kmeans_bench"
+harness = false
+
+[[bench]]
+name = "quantizer_bench"
+harness = false
+
+[[bench]]
+name = "memory_bench"
+harness = false
+
+[target.'cfg(target_os = "macos")'.dependencies]
+# CoreML support is macOS-only
+
+[features]
+# Enable Accelerate by default - macOS only, provides faster indexing
+default = ["accelerate"]
+# Use Apple Accelerate framework for faster CPU BLAS (macOS only)
+accelerate = ["candle-core/accelerate", "candle-nn/accelerate", "candle-transformers/accelerate"]
+# Use Apple Metal GPU acceleration (macOS only)
+metal = ["candle-core/metal", "candle-nn/metal", "candle-transformers/metal"]
+# Embed model weights into binary
+embed-assets = []
+# ONNX Runtime backend for cross-platform inference
+onnx = ["dep:ort", "dep:ndarray"]
+# CoreML backend via ONNX Runtime (macOS only)
+coreml = ["dep:ort", "dep:ndarray", "ort/coreml"]
+# CUDA backend via ONNX Runtime (Linux/Windows with NVIDIA GPU)
+cuda = ["dep:ort", "dep:ndarray", "ort/cuda"]
+# OpenVINO backend via ONNX Runtime (Intel CPU optimization)
+openvino = ["dep:ort", "dep:ndarray", "ort/openvino"]
+# TensorRT backend via ONNX Runtime (NVIDIA GPU with optimized inference)
+tensorrt = ["dep:ort", "dep:ndarray", "ort/tensorrt"]
+# Document processing for PDF, Office documents, ebooks and other formats
+document-processing = ["dep:docling-backend", "dep:pdf-extract", "dep:docx-lite", "dep:calamine", "dep:pptx-to-md", "dep:epub", "dep:lopdf", "dep:pdfium-render"]
+# OCR support for scanned documents (requires ONNX models and pdfium library)
+ocr = ["dep:docling-ocr", "dep:image", "dep:pdfium-render", "document-processing"]
+# Audio transcription using Whisper (converts audio/video to text for indexing)
+audio-transcription = ["dep:symphonia", "dep:rubato", "dep:zip"]
+# CLIP model for image embedding and cross-modal search
+clip = ["dep:image"]

@@ -1,0 +1,263 @@
+{
+  "page_number": 1,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "EDINET提出書類\nダイキョーニシカワ株式会社(E03438)\n半期報告書",
+      "bbox": {
+        "l": 80.0,
+        "t": 2.0,
+        "r": 100.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "【表紙】",
+      "bbox": {
+        "l": 5.0,
+        "t": 10.0,
+        "r": 15.0,
+        "b": 15.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【提出書類】 半期報告書",
+      "bbox": {
+        "l": 5.0,
+        "t": 16.0,
+        "r": 40.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【根拠法令】 金融商品取引法第24条の５第１項の規定に基づく",
+      "bbox": {
+        "l": 5.0,
+        "t": 21.0,
+        "r": 60.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【提出先】 関東財務局長",
+      "bbox": {
+        "l": 5.0,
+        "t": 26.0,
+        "r": 40.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【提出日】 2025年11月６日",
+      "bbox": {
+        "l": 5.0,
+        "t": 31.0,
+        "r": 40.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【中間会計期間】 第19期中(自 2025年４月１日 至 2025年９月30日)",
+      "bbox": {
+        "l": 5.0,
+        "t": 36.0,
+        "r": 60.0,
+        "b": 40.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【会社名】 ダイキョーニシカワ株式会社",
+      "bbox": {
+        "l": 5.0,
+        "t": 41.0,
+        "r": 40.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【英訳名】 DaikyoNishikawa Corporation",
+      "bbox": {
+        "l": 5.0,
+        "t": 46.0,
+        "r": 60.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【代表者の役職氏名】 代表取締役社長 杉山 拓男",
+      "bbox": {
+        "l": 5.0,
+        "t": 51.0,
+        "r": 60.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【本店の所在地】 広島県東広島市寺家産業団地５番１号",
+      "bbox": {
+        "l": 5.0,
+        "t": 56.0,
+        "r": 60.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【電話番号】 082-493-5600 (代表)",
+      "bbox": {
+        "l": 5.0,
+        "t": 61.0,
+        "r": 40.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【事務連絡者氏名】 常務執行役員 経営企画本部長 松尾 拓典",
+      "bbox": {
+        "l": 5.0,
+        "t": 66.0,
+        "r": 60.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【最寄りの連絡場所】 広島県東広島市寺家産業団地５番１号",
+      "bbox": {
+        "l": 5.0,
+        "t": 71.0,
+        "r": 60.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【電話番号】 082-493-5610",
+      "bbox": {
+        "l": 5.0,
+        "t": 76.0,
+        "r": 40.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【事務連絡者氏名】 常務執行役員 経営企画本部長 松尾 拓典",
+      "bbox": {
+        "l": 5.0,
+        "t": 81.0,
+        "r": 60.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "【縦覧に供する場所】 株式会社東京証券取引所\n（東京都中央区日本橋兜町２番１号）",
+      "bbox": {
+        "l": 5.0,
+        "t": 86.0,
+        "r": 60.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "1/21",
+      "bbox": {
+        "l": 50.0,
+        "t": 98.0,
+        "r": 55.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

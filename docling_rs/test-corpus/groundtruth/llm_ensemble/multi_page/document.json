@@ -1,0 +1,804 @@
+{
+  "filename": "multi_page.pdf",
+  "pages": [
+    {
+      "page_number": 1,
+      "elements": [
+        {
+          "label": "title",
+          "text": "The Evolution of the Word Processor",
+          "bbox": {
+            "l": 5.0,
+            "t": 5.0,
+            "r": 95.0,
+            "b": 10.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "The concept of the word processor predates modern computers and has evolved through several technological milestones.",
+          "bbox": {
+            "l": 5.0,
+            "t": 12.0,
+            "r": 95.0,
+            "b": 16.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "section_header",
+          "text": "Pre-Digital Era (19th - Early 20th Century)",
+          "bbox": {
+            "l": 5.0,
+            "t": 18.0,
+            "r": 95.0,
+            "b": 22.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "The origins of word processing can be traced back to the invention of the typewriter in the mid-19th century. Patented in 1868 by Christopher Latham Sholes, the typewriter revolutionized written communication by enabling people to produce legible, professional documents more efficiently than handwriting.",
+          "bbox": {
+            "l": 5.0,
+            "t": 24.0,
+            "r": 95.0,
+            "b": 30.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "During this period, the term \"word processing\" didn't exist, but the typewriter laid the groundwork for future developments. Over time, advancements such as carbon paper (for copies) and the electric typewriter (introduced by IBM in 1935) improved the speed and convenience of document creation.",
+          "bbox": {
+            "l": 5.0,
+            "t": 32.0,
+            "r": 95.0,
+            "b": 38.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "section_header",
+          "text": "The Birth of Word Processing (1960s - 1970s)",
+          "bbox": {
+            "l": 5.0,
+            "t": 40.0,
+            "r": 95.0,
+            "b": 44.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "The term \"word processor\" first emerged in the 1960s and referred to any system designed to streamline written communication and document production. Early word processors were not software programs but rather standalone machines.",
+          "bbox": {
+            "l": 5.0,
+            "t": 46.0,
+            "r": 95.0,
+            "b": 50.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "IBM MT/ST (Magnetic Tape/Selectric Typewriter): Introduced in 1964, this machine combined IBM's Selectric typewriter with magnetic tape storage. It allowed users to record, edit, and replay typed content—an early example of digital text storage.",
+          "bbox": {
+            "l": 5.0,
+            "t": 52.0,
+            "r": 95.0,
+            "b": 56.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "Wang Laboratories: In the 1970s, Wang introduced dedicated word processing machines. These devices, like the Wang 1200, featured small screens and floppy disks, making them revolutionary for their time.",
+          "bbox": {
+            "l": 5.0,
+            "t": 58.0,
+            "r": 95.0,
+            "b": 62.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "These machines were primarily used in offices, where secretarial pools benefited from their ability to make revisions without retyping entire documents.",
+          "bbox": {
+            "l": 5.0,
+            "t": 64.0,
+            "r": 95.0,
+            "b": 68.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "section_header",
+          "text": "The Rise of Personal Computers (1980s)",
+          "bbox": {
+            "l": 5.0,
+            "t": 70.0,
+            "r": 95.0,
+            "b": 74.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "The advent of personal computers in the late 1970s and early 1980s transformed word processing from a niche tool to an essential technology for businesses and individuals alike.",
+          "bbox": {
+            "l": 5.0,
+            "t": 76.0,
+            "r": 95.0,
+            "b": 80.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "WordStar (1978): Developed for the CP/M operating system, WordStar was one of the first widely used word processing programs. It featured early examples of modern features like cut, copy, and paste.",
+          "bbox": {
+            "l": 5.0,
+            "t": 82.0,
+            "r": 95.0,
+            "b": 86.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "Microsoft Word (1983): Microsoft launched Word for MS-DOS in 1983, introducing a graphical user interface (GUI) and mouse support. Over the years, Microsoft Word became the industry standard for word processing.",
+          "bbox": {
+            "l": 5.0,
+            "t": 88.0,
+            "r": 95.0,
+            "b": 92.0
+          },
+          "confidence": 0.94
+        }
+      ],
+      "reading_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "agreement_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sources": [
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble"
+      ]
+    },
+    {
+      "page_number": 2,
+      "elements": [
+        {
+          "label": "paragraph",
+          "text": "Other notable software from this era included WordPerfect, which was popular among legal professionals, and Apple’s MacWrite, which leveraged the Macintosh’s graphical capabilities.",
+          "bbox": {
+            "l": 5.0,
+            "t": 5.0,
+            "r": 95.0,
+            "b": 15.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "section_header",
+          "text": "The Modern Era (1990s - Present)",
+          "bbox": {
+            "l": 5.0,
+            "t": 20.0,
+            "r": 95.0,
+            "b": 25.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "By the 1990s, word processing software had become more sophisticated, with features like spell check, grammar check, templates, and collaborative tools.",
+          "bbox": {
+            "l": 5.0,
+            "t": 26.0,
+            "r": 95.0,
+            "b": 32.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "Microsoft Office Suite: Microsoft continued to dominate with its Office Suite, integrating Word with other productivity tools like Excel and PowerPoint.",
+          "bbox": {
+            "l": 5.0,
+            "t": 33.0,
+            "r": 95.0,
+            "b": 38.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "OpenOffice and LibreOffice: Open-source alternatives emerged in the early 2000s, offering free and flexible word processing options.",
+          "bbox": {
+            "l": 5.0,
+            "t": 39.0,
+            "r": 95.0,
+            "b": 44.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "Google Docs (2006): The introduction of cloud-based word processing revolutionized collaboration. Google Docs enabled real-time editing and sharing, making it a staple for teams and remote work.",
+          "bbox": {
+            "l": 5.0,
+            "t": 45.0,
+            "r": 95.0,
+            "b": 51.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "section_header",
+          "text": "Future of Word Processing",
+          "bbox": {
+            "l": 5.0,
+            "t": 55.0,
+            "r": 95.0,
+            "b": 60.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "Today, word processors are more than just tools for typing. They integrate artificial intelligence for grammar and style suggestions (e.g., Grammarly), voice-to-text features, and advanced layout options. As AI continues to advance, word processors may evolve into even more intuitive tools that predict user needs, automate repetitive tasks, and support richer multimedia integration.",
+          "bbox": {
+            "l": 5.0,
+            "t": 61.0,
+            "r": 95.0,
+            "b": 75.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "From the clunky typewriters of the 19th century to the AI-powered cloud tools of today, the word processor has come a long way. It remains an essential tool for communication and creativity, shaping how we write and share ideas.",
+          "bbox": {
+            "l": 5.0,
+            "t": 80.0,
+            "r": 95.0,
+            "b": 90.0
+          },
+          "confidence": 0.94
+        }
+      ],
+      "reading_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "agreement_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sources": [
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble"
+      ]
+    },
+    {
+      "page_number": 3,
+      "elements": [
+        {
+          "label": "section_header",
+          "text": "Specialized Word Processing Tools",
+          "bbox": {
+            "l": 5.0,
+            "t": 5.0,
+            "r": 50.0,
+            "b": 10.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "In addition to general-purpose word processors, specialized tools have emerged to cater to specific industries and needs. These tools incorporate unique features tailored to their users' workflows:",
+          "bbox": {
+            "l": 5.0,
+            "t": 12.0,
+            "r": 95.0,
+            "b": 18.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "• Academic and Technical Writing: Tools like LaTeX gained popularity among academics, scientists, and engineers. Unlike traditional word processors, LaTeX focuses on precise formatting, particularly for complex mathematical equations, scientific papers, and technical documents. It relies on a markup language to produce polished documents suitable for publishing.",
+          "bbox": {
+            "l": 5.0,
+            "t": 20.0,
+            "r": 95.0,
+            "b": 30.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "• Screenwriting Software: For screenwriters, tools like Final Draft and Celtx are specialized to handle scripts for film and television. These programs automate the formatting of dialogue, scene descriptions, and other elements unique to screenwriting.",
+          "bbox": {
+            "l": 5.0,
+            "t": 32.0,
+            "r": 95.0,
+            "b": 42.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "• Legal Document Processors: Word processors tailored for legal professionals, like WordPerfect, offered features such as redlining (early version tracking) and document comparison. Even today, many law firms rely on these tools due to their robust formatting options for contracts and legal briefs.",
+          "bbox": {
+            "l": 5.0,
+            "t": 44.0,
+            "r": 95.0,
+            "b": 54.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "section_header",
+          "text": "Key Features That Changed Word Processing",
+          "bbox": {
+            "l": 5.0,
+            "t": 56.0,
+            "r": 50.0,
+            "b": 60.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "The evolution of word processors wasn't just about hardware or software improvements—it was about the features that revolutionized how people wrote and edited. Some of these transformative features include:",
+          "bbox": {
+            "l": 5.0,
+            "t": 62.0,
+            "r": 95.0,
+            "b": 68.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "1. Undo/Redo: Introduced in the 1980s, the ability to undo mistakes and redo actions made experimentation and error correction much easier.",
+          "bbox": {
+            "l": 5.0,
+            "t": 70.0,
+            "r": 95.0,
+            "b": 74.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "2. Spell Check and Grammar Check: By the 1990s, these became standard, allowing users to spot errors automatically.",
+          "bbox": {
+            "l": 5.0,
+            "t": 76.0,
+            "r": 95.0,
+            "b": 80.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "3. Templates: Pre-designed formats for documents, such as resumes, letters, and invoices, helped users save time.",
+          "bbox": {
+            "l": 5.0,
+            "t": 82.0,
+            "r": 95.0,
+            "b": 86.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "4. Track Changes: A game-changer for collaboration, this feature allowed multiple users to suggest edits while maintaining the original text.",
+          "bbox": {
+            "l": 5.0,
+            "t": 88.0,
+            "r": 95.0,
+            "b": 92.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "5. Real-Time Collaboration: Tools like Google Docs and Microsoft 365 enabled multiple users to edit the same document simultaneously, forever changing teamwork dynamics.",
+          "bbox": {
+            "l": 5.0,
+            "t": 94.0,
+            "r": 95.0,
+            "b": 98.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "section_header",
+          "text": "The Cultural Impact of Word Processors",
+          "bbox": {
+            "l": 5.0,
+            "t": 100.0,
+            "r": 50.0,
+            "b": 104.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "The word processor didn't just change workplaces—it changed culture. It democratized writing, enabling anyone with access to a computer to produce professional-quality documents. This shift had profound implications for education, business, and creative fields:",
+          "bbox": {
+            "l": 5.0,
+            "t": 106.0,
+            "r": 95.0,
+            "b": 112.0
+          },
+          "confidence": 0.94
+        }
+      ],
+      "reading_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "agreement_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sources": [
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble"
+      ]
+    },
+    {
+      "page_number": 4,
+      "elements": [
+        {
+          "label": "list_item",
+          "text": "Accessibility: Writers no longer needed expensive publishing equipment or training in typesetting to create polished work. This accessibility paved the way for self-publishing, blogging, and even fan fiction communities.",
+          "bbox": {
+            "l": 5.0,
+            "t": 5.0,
+            "r": 95.0,
+            "b": 10.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "Education: Word processors became a cornerstone of education, teaching students not only how to write essays but also how to use technology effectively. Features like bibliography generators and integrated research tools enhanced learning.",
+          "bbox": {
+            "l": 5.0,
+            "t": 11.0,
+            "r": 95.0,
+            "b": 16.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "Creative Writing: Writers gained powerful tools to organize their ideas. Programs like Scrivener allowed authors to manage large projects, from novels to screenplays, with features like chapter outlines and character notes.",
+          "bbox": {
+            "l": 5.0,
+            "t": 17.0,
+            "r": 95.0,
+            "b": 22.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "section_header",
+          "text": "Word Processors in a Post-Digital Era",
+          "bbox": {
+            "l": 5.0,
+            "t": 25.0,
+            "r": 95.0,
+            "b": 28.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "As we move further into the 21st century, the role of the word processor continues to evolve:",
+          "bbox": {
+            "l": 5.0,
+            "t": 29.0,
+            "r": 95.0,
+            "b": 31.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "1. Artificial Intelligence: Modern word processors are leveraging AI to suggest content improvements. Tools like Grammarly, ProWritingAid, and even native features in Word now analyze tone, conciseness, and clarity. Some AI systems can even generate entire paragraphs or rewrite sentences.",
+          "bbox": {
+            "l": 5.0,
+            "t": 32.0,
+            "r": 95.0,
+            "b": 37.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "2. Integration with Other Tools: Word processors are no longer standalone. They integrate with task managers, cloud storage, and project management platforms. For instance, Google Docs syncs with Google Drive, while Microsoft Word integrates seamlessly with OneDrive and Teams.",
+          "bbox": {
+            "l": 5.0,
+            "t": 38.0,
+            "r": 95.0,
+            "b": 43.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "3. Voice Typing: Speech-to-text capabilities have made word processing more accessible, particularly for those with disabilities. Tools like Dragon NaturallySpeaking and built-in options in Google Docs and Microsoft Word have made dictation mainstream.",
+          "bbox": {
+            "l": 5.0,
+            "t": 44.0,
+            "r": 95.0,
+            "b": 49.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "4. Multimedia Documents: Word processing has expanded beyond text. Modern tools allow users to embed images, videos, charts, and interactive elements, transforming simple documents into rich multimedia experiences.",
+          "bbox": {
+            "l": 5.0,
+            "t": 50.0,
+            "r": 95.0,
+            "b": 55.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "5. Cross-Platform Accessibility: Thanks to cloud computing, documents can now be accessed and edited across devices. Whether you're on a desktop, tablet, or smartphone, you can continue working seamlessly.",
+          "bbox": {
+            "l": 5.0,
+            "t": 56.0,
+            "r": 95.0,
+            "b": 61.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "section_header",
+          "text": "A Glimpse Into the Future",
+          "bbox": {
+            "l": 5.0,
+            "t": 64.0,
+            "r": 95.0,
+            "b": 67.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "paragraph",
+          "text": "The word processor's future lies in adaptability and intelligence. Some exciting possibilities include:",
+          "bbox": {
+            "l": 5.0,
+            "t": 68.0,
+            "r": 95.0,
+            "b": 70.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "• Fully AI-Assisted Writing: Imagine a word processor that understands your writing style, drafts emails, or creates entire essays based on minimal input.",
+          "bbox": {
+            "l": 5.0,
+            "t": 71.0,
+            "r": 95.0,
+            "b": 74.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "• Immersive Interfaces: As augmented reality (AR) and virtual reality (VR) technology advance, users may be able to write and edit in 3D spaces, collaborating in virtual environments.",
+          "bbox": {
+            "l": 5.0,
+            "t": 75.0,
+            "r": 95.0,
+            "b": 78.0
+          },
+          "confidence": 0.94
+        },
+        {
+          "label": "list_item",
+          "text": "• Hyper-Personalization: Word processors could offer dynamic suggestions based on industry-specific needs, user habits, or even regional language variations.",
+          "bbox": {
+            "l": 5.0,
+            "t": 79.0,
+            "r": 95.0,
+            "b": 82.0
+          },
+          "confidence": 0.94
+        }
+      ],
+      "reading_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "agreement_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sources": [
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble",
+        "ensemble"
+      ]
+    },
+    {
+      "page_number": 5,
+      "elements": [
+        {
+          "label": "paragraph",
+          "text": "The journey of the word processor—from clunky typewriters to AI-powered platforms—reflects humanity’s broader technological progress. What began as a tool to simply replace handwriting has transformed into a powerful ally for creativity, communication, and collaboration. As technology continues to advance, the word processor will undoubtedly remain at the heart of how we express ideas and connect with one another.",
+          "bbox": {
+            "l": 10.0,
+            "t": 10.0,
+            "r": 90.0,
+            "b": 30.0
+          },
+          "confidence": 0.94
+        }
+      ],
+      "reading_order": [
+        0
+      ],
+      "agreement_scores": [
+        1.0
+      ],
+      "sources": [
+        "ensemble"
+      ]
+    }
+  ],
+  "total_elements": 53,
+  "avg_confidence": 1.0
+}

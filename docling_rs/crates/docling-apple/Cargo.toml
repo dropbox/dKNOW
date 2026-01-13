@@ -1,0 +1,19 @@
+[package]
+name = "docling-apple"
+version.workspace = true
+edition.workspace = true
+description = "Apple iWork format parsers for docling (Pages, Numbers, Keynote)"
+keywords = ["apple", "pages", "numbers", "keynote", "iwork"]
+categories = ["parsing", "parser-implementations"]
+license.workspace = true
+repository.workspace = true
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+quick-xml.workspace = true
+zip.workspace = true
+tempfile = "3.8"
+docling-core = { path = "../docling-core" }
+
+[dev-dependencies]

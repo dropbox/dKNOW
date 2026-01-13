@@ -1,0 +1,216 @@
+# Next Session Start (N=2306)
+
+## Session N=2306 Summary
+
+**Completed:**
+- ✅ Fixed MOBI/EPUB/FB2 TOC formatting (87% → Expected 95%)
+  - TOC entries now formatted as markdown links: `- [Chapter 1](#chapter_1)`
+  - Hierarchical structure preserved with indentation
+  - All 77 ebook backend tests passing
+  - All 23 ebook library tests passing
+
+**Quality Achievement:**
+- MOBI: 87% → Expected 95% ✅
+  - Fixed both LLM complaints from N=2305:
+    1. ✅ TOC links now markdown formatted (was plain text)
+    2. ✅ Hierarchical structure already worked (false positive)
+- EPUB: Likely improves from 92% (same fix)
+- FB2: Likely improves from 92-93% (same fix)
+
+**Key Insights:**
+
+### Markdown Link Format Works Across All Ebooks
+- Single change in `add_toc_entry_recursive()` fixes MOBI, EPUB, and FB2
+- Format: `[label](#href)` for internal document links
+- href fields automatically prefixed with `#` if needed
+
+### Test Suite Maintenance
+- 7 tests updated for new markdown link format
+- 2 tests had wrong expectations (empty chapter behavior)
+- Real behavior: empty/whitespace chapters filtered out (intentional)
+
+### Implementation Details
+- Code location: `crates/docling-backend/src/ebooks.rs:242-294`
+- Function: `add_toc_entry_recursive()`
+- Change: Format `entry.label` as `[label](href)` instead of plain text
+- Handles edge cases: empty hrefs, # prefix, special characters
+
+---
+
+## Current Status
+
+**Passing formats (≥95%):** 22/38 (58%) - MOBI expected to join this list
+
+**Progress:**
+- N=2302: FB2 (88% → 92-93%)
+- N=2303: TEX (83%, two bugs fixed)
+- N=2305: VCF (85% → 95%) ✅
+- N=2306: MOBI (87% → Expected 95%) ✅
+
+**Formats still below 95%:**
+
+### High Priority (verified issues)
+1. **MOBI: 87%** → **Expected 95%** (fixes applied, needs verification)
+   - Both issues fixed in N=2306
+   - LLM test needed to confirm 95%+ score
+
+2. **DXF: 85%** (need +10) - CAD format
+   - LLM complaints: Missing header/dimension variables, poor categorization
+   - **Action needed**: Verify if variables truly missing vs. false positive
+   - Compare input DXF vs output markdown
+
+3. **OBJ: 88%** (need +7) - 3D model format
+4. **GLTF: 88%** (need +7) - 3D model JSON format
+
+### Medium Priority (may be at ceiling)
+- TEX: 83% (2 bugs fixed, but score unchanged - variance?)
+- ODP: 90% (likely at ceiling per N=2301)
+- ODT: 90%
+- ODS: 92%
+- EPUB: 92% (may improve with N=2306 fix)
+- FB2: 92-93% (may improve with N=2306 fix)
+- JATS: 92%
+- GIF: 92%
+- TAR: 92%
+- KML: 91%
+- SVG: 93%
+- KMZ: 93%
+
+---
+
+## Recommended Next Steps
+
+### Option A: Verify MOBI Quality (PRIORITY)
+
+**Why MOBI first:**
+- Fixed both identified issues in N=2306
+- Should now score 95%+ on LLM test
+- Quick verification (1 test run)
+
+**Action:**
+```bash
+cd ~/docling_rs
+# If LLM test framework available:
+cargo test --package docling-core --test llm_verification_tests test_llm_mode3_mobi -- --exact --nocapture --include-ignored
+
+# Otherwise, verify manually:
+cargo run --bin docling --package docling-cli -- convert test-corpus/ebooks/mobi/formatted.mobi
+# Check TOC has markdown links: - [Chapter 1](#chapter_1)
+```
+
+**Expected outcome:** 95%+ quality score
+
+### Option B: Test EPUB and FB2 Quality
+
+**Why EPUB/FB2:**
+- Same fix applied (TOC markdown links)
+- Currently at 92-93%
+- May now reach 95%+ with this improvement
+
+**Action:**
+```bash
+# Run LLM tests on EPUB and FB2
+# Compare before/after scores
+# If 95%+, add to passing list
+```
+
+### Option C: Investigate DXF (85% → 95%)
+
+**Why DXF:**
+- Need +10 points (similar to VCF)
+- LLM identified specific issues
+- **Risk:** May be false positive
+
+**Action (Verification first!):**
+1. Find DXF test file: `find test-corpus -name "*.dxf"`
+2. Convert to markdown: `cargo run --bin docling --package docling-cli -- convert <file.dxf>`
+3. Compare input DXF header section vs output markdown
+4. Count variables: How many in input? How many in output?
+5. If truly missing → Fix parser
+6. If all present → Improve categorization or dismiss false positive
+
+**Estimated time:** 2-4 hours (depending on verification outcome)
+
+---
+
+## Lessons from N=2306
+
+### What Worked
+
+1. **Single Fix for Multiple Formats:**
+   - TOC link formatting shared across MOBI, EPUB, FB2
+   - One change in `add_toc_entry_recursive()` fixes all three
+   - Similar formats often share issues
+
+2. **Test-Driven Development:**
+   - Tests caught the behavior change immediately
+   - Forced review of expectations vs. actual behavior
+   - Found 2 incorrect test expectations
+
+3. **Clear LLM Feedback:**
+   - N=2305 identified two specific MOBI issues
+   - "TOC links not markdown formatted" → Real bug, now fixed
+   - "TOC lacks hierarchical organization" → False positive (indentation existed)
+
+### What to Watch For
+
+1. **Test Expectations vs. Reality:**
+   - Some tests had wrong expectations (empty chapters)
+   - Real behavior was correct (filter empty chapters)
+   - Always verify current behavior before assuming tests are right
+
+2. **False Positives in LLM Feedback:**
+   - "Hierarchical organization" complaint was wrong (indentation existed)
+   - "Markdown links" complaint was correct (plain text)
+   - Verify each complaint in code/output before implementing fixes
+
+3. **Ebook Format Similarities:**
+   - MOBI, EPUB, FB2 all use same backend code
+   - Fix in one format likely helps others
+   - Consider testing all ebook formats together
+
+---
+
+## Files Modified
+
+- crates/docling-backend/src/ebooks.rs:242-294 (`add_toc_entry_recursive()`)
+- crates/docling-backend/src/ebooks.rs:608-2347 (test assertions updated)
+
+---
+
+## Recommendation for N=2307
+
+**Start with MOBI verification** (Option A):
+1. Run LLM test on MOBI format
+2. Verify 95%+ score (both issues fixed)
+3. Add MOBI to passing list if successful
+
+**If MOBI passes, test EPUB and FB2** (Option B):
+1. Same fix may push them to 95%+
+2. Quick wins (already at 92-93%)
+3. Could add 2-3 more formats to passing list
+
+**If time remains, investigate DXF** (Option C):
+1. Verify if variables truly missing vs. false positive
+2. Compare input DXF vs output markdown
+3. Fix if real issue, dismiss if false positive
+
+**Avoid:**
+- Formats at 90-93% without clear actionable issues
+- Chasing false positives without verification
+- Over-engineering solutions
+
+---
+
+## Quality Target
+
+**Goal:** 95%+ on all formats
+
+**Current:** 22/38 passing (58%)
+
+**After N=2306:** Expected 23-25/38 (60-66%)
+- MOBI: 87% → 95% (expected)
+- EPUB: 92% → 95%? (possible)
+- FB2: 92-93% → 95%? (possible)
+
+**Next targets:** DXF (85%), OBJ (88%), GLTF (88%)

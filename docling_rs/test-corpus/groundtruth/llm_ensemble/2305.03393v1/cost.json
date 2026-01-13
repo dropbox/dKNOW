@@ -1,0 +1,12 @@
+{
+  "pdf_name": "2305.03393v1.pdf",
+  "num_pages": 14,
+  "model_costs": {
+    "gpt-4o": {
+      "input_tokens": 17570,
+      "output_tokens": 16502,
+      "cost_usd": 0.20894500000000002
+    }
+  },
+  "total_cost_usd": 0.20894500000000002
+}

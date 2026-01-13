@@ -1,0 +1,76 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Example Corp//Example Comprehensive Calendar//EN
+X-WR-CALNAME:Full Schedule Q1 2025
+X-WR-CALDESC:Complete schedule including meetings\, tasks\, and journal entries
+
+BEGIN:VEVENT
+UID:kickoff-001@example.com
+DTSTART:20250106T090000Z
+DTEND:20250106T103000Z
+SUMMARY:Q1 2025 Kickoff Meeting
+DESCRIPTION:Quarterly kickoff with goals and OKRs presentation.\n\nAgenda:\n- Q4 2024 Review\n- Q1 2025 Goals\n- Team Introductions\n- Budget Discussion
+LOCATION:Main Auditorium\, Building A
+ORGANIZER;CN="CEO":mailto:ceo@example.com
+ATTENDEE;CN="Engineering Team":mailto:engineering@example.com
+ATTENDEE;CN="Sales Team":mailto:sales@example.com
+ATTENDEE;CN="Marketing Team":mailto:marketing@example.com
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:training-001@example.com
+DTSTART:20250210T130000Z
+DTEND:20250210T160000Z
+RRULE:FREQ=WEEKLY;BYDAY=TU;UNTIL=20250331T160000Z
+SUMMARY:Security Training Workshop
+DESCRIPTION:Mandatory security awareness training for all employees.
+LOCATION:Training Room 3
+ORGANIZER;CN="Security Team":mailto:security@example.com
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:deadline-001@example.com
+DTSTART:20250315T170000Z
+DTEND:20250315T173000Z
+SUMMARY:Project Alpha Deadline
+DESCRIPTION:Hard deadline for Project Alpha delivery
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VTODO
+UID:milestone-001@example.com
+SUMMARY:Complete Project Alpha Phase 1
+DESCRIPTION:Deliver Phase 1 deliverables:\n- Feature implementation\n- Documentation\n- Testing suite
+DUE:20250228T170000Z
+PRIORITY:1
+STATUS:IN-PROCESS
+PERCENT-COMPLETE:75
+END:VTODO
+
+BEGIN:VTODO
+UID:milestone-002@example.com
+SUMMARY:Prepare Q1 Board Presentation
+DESCRIPTION:Create slides and data visualizations for board meeting
+DUE:20250320T120000Z
+PRIORITY:2
+STATUS:NEEDS-ACTION
+PERCENT-COMPLETE:25
+END:VTODO
+
+BEGIN:VJOURNAL
+UID:journal-001@example.com
+DTSTART:20250108T100000Z
+SUMMARY:Team Morale Check-in
+DESCRIPTION:Positive energy during kickoff week. Team is excited about Q1 goals. Engineering team raised concerns about timeline for Project Alpha - need to discuss resource allocation.
+END:VJOURNAL
+
+BEGIN:VJOURNAL
+UID:journal-002@example.com
+DTSTART:20250215T143000Z
+SUMMARY:Mid-Quarter Review Notes
+DESCRIPTION:Q1 progress tracking:\n- Project Alpha: 65% complete (on track)\n- Security training: 80% attendance (good)\n- Budget: Under by 5% (excellent)\n\nAction items:\n- Follow up with sales team on Q1 pipeline\n- Schedule additional engineering resources for Alpha
+END:VJOURNAL
+
+END:VCALENDAR

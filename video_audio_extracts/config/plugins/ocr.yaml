@@ -1,0 +1,47 @@
+name: ocr
+description: "Extract text from images using PaddleOCR ONNX models"
+
+inputs:
+  - jpg
+  - jpeg
+  - png
+  - bmp
+  - webp
+  - heic
+  - heif
+  - ico
+  - avif
+  - gif
+  - tiff
+  - tif
+  # RAW formats handled via Keyframes (pipeline auto-routes: RAW → keyframes → OCR)
+  - Keyframes
+  # RAW camera formats (explicit support for direct input, will auto-route through keyframes)
+  - arw
+  - cr2
+  - dng
+  - nef
+  - raf
+  - dpx
+
+outputs:
+  - OCR
+
+config:
+  max_file_size_mb: 50
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "90s"
+  memory_per_file_mb: 512
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1730107800  # 2024-10-28 00:00:00 UTC
+
+implementation:
+  crate: "video-audio-ocr"
+  function: "detect_text"

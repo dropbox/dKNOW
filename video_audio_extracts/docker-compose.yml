@@ -1,0 +1,88 @@
+# Docker Compose for video-audio-extracts storage backends
+#
+# Provides local instances of MinIO (S3-compatible), PostgreSQL, and Qdrant
+# for integration testing and development.
+#
+# Usage:
+#   docker-compose up -d        # Start all services
+#   docker-compose down         # Stop all services
+#   docker-compose down -v      # Stop and remove volumes (clean slate)
+#   docker-compose logs -f      # View logs
+
+version: '3.8'
+
+services:
+  # MinIO - S3-compatible object storage
+  minio:
+    image: minio/minio:latest
+    container_name: video-audio-minio
+    ports:
+      - "9000:9000"      # API endpoint
+      - "9001:9001"      # Web console
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # MinIO bucket creation (runs once to create default bucket)
+  minio-setup:
+    image: minio/mc:latest
+    container_name: video-audio-minio-setup
+    depends_on:
+      - minio
+    entrypoint: >
+      /bin/sh -c "
+      sleep 5;
+      /usr/bin/mc alias set myminio http://minio:9000 minioadmin minioadmin;
+      /usr/bin/mc mb myminio/video-audio-extracts --ignore-existing;
+      /usr/bin/mc anonymous set download myminio/video-audio-extracts;
+      exit 0;
+      "
+
+  # PostgreSQL - Relational database for metadata
+  postgres:
+    image: postgres:16-alpine
+    container_name: video-audio-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: video_audio_extracts
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Qdrant - Vector database for embeddings
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: video-audio-qdrant
+    ports:
+      - "6333:6333"      # HTTP API
+      - "6334:6334"      # gRPC API
+    volumes:
+      - qdrant_data:/qdrant/storage
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6333/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  minio_data:
+    driver: local
+  postgres_data:
+    driver: local
+  qdrant_data:
+    driver: local

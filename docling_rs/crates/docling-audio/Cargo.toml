@@ -1,0 +1,31 @@
+[package]
+name = "docling-audio"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Audio format parsers for docling-rs (MP3, WAV, FLAC, OGG, AAC)"
+keywords = ["audio", "mp3", "wav", "flac", "metadata"]
+categories = ["parsing", "multimedia"]
+[dependencies]
+# Core dependencies
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+
+# Audio format support
+hound = "3.5"           # WAV file reading
+symphonia = { version = "0.5", features = ["mp3"] }  # MP3 and other audio formats
+rubato = "0.15"         # Audio resampling to 16kHz
+
+# Speech-to-text (optional feature)
+whisper-rs = { version = "0.15.1", optional = true }
+
+[features]
+default = []
+# Enable audio transcription support (requires model download)
+transcription = ["whisper-rs"]
+
+[dev-dependencies]
+# Testing utilities

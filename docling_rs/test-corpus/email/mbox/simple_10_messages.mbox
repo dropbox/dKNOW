@@ -1,0 +1,160 @@
+From alice@example.com Mon Jan 15 10:00:00 2024
+From: alice@example.com
+To: bob@example.com
+Subject: Meeting Tomorrow
+Date: Mon, 15 Jan 2024 10:00:00 -0800
+Message-ID: <msg001@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Bob,
+
+Can we meet tomorrow at 2pm to discuss the project?
+
+Best,
+Alice
+
+From bob@example.com Mon Jan 15 11:30:00 2024
+From: bob@example.com
+To: alice@example.com
+Subject: Re: Meeting Tomorrow
+Date: Mon, 15 Jan 2024 11:30:00 -0800
+Message-ID: <msg002@example.com>
+In-Reply-To: <msg001@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Alice,
+
+Yes, 2pm works for me. Conference room A?
+
+Bob
+
+From carol@example.com Mon Jan 15 14:00:00 2024
+From: carol@example.com
+To: team@example.com
+Subject: Weekly Update
+Date: Mon, 15 Jan 2024 14:00:00 -0800
+Message-ID: <msg003@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Team,
+
+Here's our weekly update:
+- Feature A is complete
+- Bug B has been fixed
+- Testing phase starting tomorrow
+
+Carol
+
+From dave@example.com Mon Jan 15 15:30:00 2024
+From: dave@example.com
+To: support@example.com
+Subject: Technical Question
+Date: Mon, 15 Jan 2024 15:30:00 -0800
+Message-ID: <msg004@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Support,
+
+I'm having trouble with the API authentication.
+Can you help?
+
+Thanks,
+Dave
+
+From support@example.com Mon Jan 15 16:00:00 2024
+From: support@example.com
+To: dave@example.com
+Subject: Re: Technical Question
+Date: Mon, 15 Jan 2024 16:00:00 -0800
+Message-ID: <msg005@example.com>
+In-Reply-To: <msg004@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Dave,
+
+Please check your API key configuration.
+Documentation: https://docs.example.com/auth
+
+Support Team
+
+From alice@example.com Tue Jan 16 09:00:00 2024
+From: alice@example.com
+To: all@example.com
+Subject: Important Announcement
+Date: Tue, 16 Jan 2024 09:00:00 -0800
+Message-ID: <msg006@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Everyone,
+
+Please note that the system will be down for maintenance
+on Saturday from 8am to 12pm.
+
+Thank you,
+Alice
+
+From bob@example.com Tue Jan 16 10:30:00 2024
+From: bob@example.com
+To: alice@example.com
+Subject: Lunch Plans
+Date: Tue, 16 Jan 2024 10:30:00 -0800
+Message-ID: <msg007@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Want to grab lunch today?
+
+Bob
+
+From alice@example.com Tue Jan 16 11:00:00 2024
+From: alice@example.com
+To: bob@example.com
+Subject: Re: Lunch Plans
+Date: Tue, 16 Jan 2024 11:00:00 -0800
+Message-ID: <msg008@example.com>
+In-Reply-To: <msg007@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Sure! 12:30 at the cafe?
+
+Alice
+
+From carol@example.com Tue Jan 16 13:00:00 2024
+From: carol@example.com
+To: alice@example.com
+Cc: bob@example.com
+Subject: Project Status
+Date: Tue, 16 Jan 2024 13:00:00 -0800
+Message-ID: <msg009@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Alice and Bob,
+
+The project is on track. We should be ready for launch
+next week.
+
+Carol
+
+From dave@example.com Tue Jan 16 16:30:00 2024
+From: dave@example.com
+To: team@example.com
+Subject: Code Review Request
+Date: Tue, 16 Jan 2024 16:30:00 -0800
+Message-ID: <msg010@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Team,
+
+I've pushed my changes. Can someone review PR #42?
+
+Thanks,
+Dave

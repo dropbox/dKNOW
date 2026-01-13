@@ -1,0 +1,333 @@
+{
+  "page_number": 12,
+  "elements": [
+    {
+      "label": "picture",
+      "text": "Bar charts comparing table dimensions across datasets: PubTabNet, FinTabNet, Table Bank.",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 40.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 7: Distribution of the tables across different dimensions per dataset. Simple vs complex tables per dataset and split, strict vs non strict html structures per dataset and table complexity, missing bboxes per dataset and table complexity.",
+      "bbox": {
+        "l": 0.0,
+        "t": 41.0,
+        "r": 100.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "• TableFormer output does not include the table cell content.",
+      "bbox": {
+        "l": 0.0,
+        "t": 46.0,
+        "r": 100.0,
+        "b": 48.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "• There are occasional inaccuracies in the predictions of the bounding boxes.",
+      "bbox": {
+        "l": 0.0,
+        "t": 49.0,
+        "r": 100.0,
+        "b": 51.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "However, it is possible to mitigate those limitations by combining the TableFormer predictions with the information already present inside a programmatic PDF document. More specifically, PDF documents can be seen as a sequence of PDF cells where each cell is described by its content and bounding box. If we are able to associate the PDF cells with the predicted table cells, we can directly link the PDF cell content to the table cell structure and use the PDF bounding boxes to correct misalignments in the predicted table cell bounding boxes.",
+      "bbox": {
+        "l": 0.0,
+        "t": 52.0,
+        "r": 100.0,
+        "b": 58.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Here is a step-by-step description of the prediction post-processing:",
+      "bbox": {
+        "l": 0.0,
+        "t": 59.0,
+        "r": 100.0,
+        "b": 61.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "1. Get the minimal grid dimensions - number of rows and columns for the predicted table structure. This represents the most granular grid for the underlying table structure.",
+      "bbox": {
+        "l": 0.0,
+        "t": 62.0,
+        "r": 100.0,
+        "b": 64.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "2. Generate pair-wise matches between the bounding boxes of the PDF cells and the predicted cells. The Intersection Over Union (IOU) metric is used to evaluate the quality of the matches.",
+      "bbox": {
+        "l": 0.0,
+        "t": 65.0,
+        "r": 100.0,
+        "b": 67.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "3. Use a carefully selected IOU threshold to designate the matches as “good” ones and “bad” ones.",
+      "bbox": {
+        "l": 0.0,
+        "t": 68.0,
+        "r": 100.0,
+        "b": 69.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "3a. If all IOU scores in a column are below the threshold, discard all predictions (structure and bounding boxes) for that column.",
+      "bbox": {
+        "l": 0.0,
+        "t": 70.0,
+        "r": 100.0,
+        "b": 71.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "4. Find the best-fitting content alignment for the predicted cells with good IOU per each column. The alignment of the column can be identified by the following formula:",
+      "bbox": {
+        "l": 0.0,
+        "t": 72.0,
+        "r": 100.0,
+        "b": 74.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "formula",
+      "text": "alignment = arg min_c [D_c] D_c = max{x_c} - min{x_c} (4)",
+      "bbox": {
+        "l": 0.0,
+        "t": 75.0,
+        "r": 100.0,
+        "b": 77.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "where c is one of {left, centroid, right} and x_c is the x-coordinate for the corresponding point.",
+      "bbox": {
+        "l": 0.0,
+        "t": 78.0,
+        "r": 100.0,
+        "b": 79.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "5. Use the alignment computed in step 4, to compute the median x-coordinate for all table columns and the median cell size for all table cells. The usage of median during the computations, helps to eliminate outliers caused by occasional column spans which are usually wider than the normal.",
+      "bbox": {
+        "l": 0.0,
+        "t": 80.0,
+        "r": 100.0,
+        "b": 84.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "6. Snap all cells with bad IOU to their corresponding median x-coordinates and cell sizes.",
+      "bbox": {
+        "l": 0.0,
+        "t": 85.0,
+        "r": 100.0,
+        "b": 86.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "7. Generate a new set of pair-wise matches between the corrected bounding boxes and PDF cells. This time use a modified version of the IOU metric, where the area of the intersection between the predicted and PDF cells is divided by the PDF cell area. In case there are multiple matches for the same PDF cell, the prediction with the higher score is preferred. This covers the cases where the PDF cells are smaller than the area of predicted or corrected prediction cells.",
+      "bbox": {
+        "l": 0.0,
+        "t": 87.0,
+        "r": 100.0,
+        "b": 92.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "8. In some rare occasions, we have noticed that TableFormer can confuse a single column as two. When the post processing steps are applied, this results with two predicted columns pointing to the same PDF column. In such case we must de-duplicate the columns according to highest total column intersection score.",
+      "bbox": {
+        "l": 0.0,
+        "t": 93.0,
+        "r": 100.0,
+        "b": 97.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "9. Pick up the remaining orphan cells. There could be cases, when after applying all the previous post-processing steps, some PDF cells would still remain without any match to predicted cells. However, it is still possible to deduce the correct matching for an orphan PDF cell by mapping its bounding box on the geometry of the grid. This mapping decides if the content of the orphan cell will be appended to an already matched table cell, or a new table cell should be created to match with the orphan.",
+      "bbox": {
+        "l": 0.0,
+        "t": 98.0,
+        "r": 100.0,
+        "b": 104.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "9a. Compute the top and bottom boundary of the horizontal band for each grid row (min/max y coordinates per row).",
+      "bbox": {
+        "l": 0.0,
+        "t": 105.0,
+        "r": 100.0,
+        "b": 106.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "9b. Intersect the orphan’s bounding box with the row bands, and map the cell to the closest grid row.",
+      "bbox": {
+        "l": 0.0,
+        "t": 107.0,
+        "r": 100.0,
+        "b": 108.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "9c. Compute the left and right boundary of the vertical band for each grid column (min/max x coordinates per column).",
+      "bbox": {
+        "l": 0.0,
+        "t": 109.0,
+        "r": 100.0,
+        "b": 110.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "9d. Intersect the orphan’s bounding box with the column bands, and map the cell to the closest grid column.",
+      "bbox": {
+        "l": 0.0,
+        "t": 111.0,
+        "r": 100.0,
+        "b": 112.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "9e. If the table cell under the identified row and column is not empty, extend its content with the content of the or-",
+      "bbox": {
+        "l": 0.0,
+        "t": 113.0,
+        "r": 100.0,
+        "b": 114.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

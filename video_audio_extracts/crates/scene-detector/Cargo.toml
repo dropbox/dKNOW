@@ -1,0 +1,19 @@
+[package]
+name = "video-audio-scene"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+video-audio-common = { path = "../common" }
+thiserror.workspace = true
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+tracing.workspace = true
+
+# Plugin architecture
+video-extract-core = { path = "../video-extract-core" }
+async-trait = "0.1"
+serde_yaml = "0.9"
+tokio = { workspace = true }

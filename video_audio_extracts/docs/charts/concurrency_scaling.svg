@@ -1,0 +1,66 @@
+<svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+  <text x="500.0" y="25" text-anchor="middle" font-size="18" font-weight="bold">Concurrency Scaling Efficiency</text>
+  <text x="500.0" y="45" text-anchor="middle" font-size="12" fill="#666">Keyframes extraction with 8 test files</text>
+  <line x1="80" y1="520.0" x2="900" y2="520.0" class="grid-line"/>
+  <text x="70" y="524.0" text-anchor="end" font-size="12" fill="#007AFF">0x</text>
+  <line x1="80" y1="343.0769230769231" x2="900" y2="343.0769230769231" class="grid-line"/>
+  <text x="70" y="347.0769230769231" text-anchor="end" font-size="12" fill="#007AFF">1x</text>
+  <line x1="80" y1="166.1538461538462" x2="900" y2="166.1538461538462" class="grid-line"/>
+  <text x="70" y="170.1538461538462" text-anchor="end" font-size="12" fill="#007AFF">2x</text>
+  <line x1="80" y1="-10.769230769230717" x2="900" y2="-10.769230769230717" class="grid-line"/>
+  <text x="70" y="-6.769230769230717" text-anchor="end" font-size="12" fill="#007AFF">3x</text>
+  <text x="131.25" y="545" text-anchor="middle" font-size="12" fill="#333">1</text>
+  <text x="182.5" y="545" text-anchor="middle" font-size="12" fill="#333">2</text>
+  <text x="285.0" y="545" text-anchor="middle" font-size="12" fill="#333">4</text>
+  <text x="490.0" y="545" text-anchor="middle" font-size="12" fill="#333">8</text>
+  <text x="900.0" y="545" text-anchor="middle" font-size="12" fill="#333">16</text>
+  <text x="500.0" y="575" text-anchor="middle" font-size="14" fill="#333">Number of Workers</text>
+  <text x="20" y="300.0" text-anchor="middle" font-size="14" fill="#007AFF" transform="rotate(-90, 20, 300.0)">Speedup (x baseline)</text>
+  <text x="960" y="300.0" text-anchor="middle" font-size="14" fill="#34C759" transform="rotate(90, 960, 300.0)">Parallel Efficiency (%)</text>
+  <polyline points="131.25,343.0769230769231 182.5,215.69230769230774 285.0,178.5384615384616 490.0,148.4615384615385 900.0,166.1538461538462 " fill="none" stroke="#007AFF" stroke-width="3"/>
+  <circle cx="131.25" cy="343.0769230769231" r="6" fill="#007AFF">
+    <title>1 workers: 1.00x speedup</title>
+  </circle>
+  <text x="131.25" y="328.0769230769231" text-anchor="middle" font-size="11" fill="#007AFF" font-weight="bold">1.00x</text>
+  <circle cx="182.5" cy="215.69230769230774" r="6" fill="#007AFF">
+    <title>2 workers: 1.72x speedup</title>
+  </circle>
+  <text x="182.5" y="200.69230769230774" text-anchor="middle" font-size="11" fill="#007AFF" font-weight="bold">1.72x</text>
+  <circle cx="285.0" cy="178.5384615384616" r="6" fill="#007AFF">
+    <title>4 workers: 1.93x speedup</title>
+  </circle>
+  <text x="285.0" y="163.5384615384616" text-anchor="middle" font-size="11" fill="#007AFF" font-weight="bold">1.93x</text>
+  <circle cx="490.0" cy="148.4615384615385" r="6" fill="#007AFF">
+    <title>8 workers: 2.10x speedup</title>
+  </circle>
+  <text x="490.0" y="133.4615384615385" text-anchor="middle" font-size="11" fill="#007AFF" font-weight="bold">2.10x</text>
+  <circle cx="900.0" cy="166.1538461538462" r="6" fill="#007AFF">
+    <title>16 workers: 2.00x speedup</title>
+  </circle>
+  <text x="900.0" y="151.1538461538462" text-anchor="middle" font-size="11" fill="#007AFF" font-weight="bold">2.00x</text>
+  <polyline points="131.25,60.00000000000006 182.5,124.40000000000003 285.0,298.28 490.0,399.48 900.0,462.5 " fill="none" stroke="#34C759" stroke-width="3" stroke-dasharray="5,5"/>
+  <circle cx="131.25" cy="60.00000000000006" r="6" fill="#34C759">
+    <title>1 workers: 100.0% efficiency</title>
+  </circle>
+  <text x="131.25" y="80.00000000000006" text-anchor="middle" font-size="11" fill="#34C759" font-weight="bold">100.0%</text>
+  <circle cx="182.5" cy="124.40000000000003" r="6" fill="#34C759">
+    <title>2 workers: 86.0% efficiency</title>
+  </circle>
+  <text x="182.5" y="144.40000000000003" text-anchor="middle" font-size="11" fill="#34C759" font-weight="bold">86.0%</text>
+  <circle cx="285.0" cy="298.28" r="6" fill="#34C759">
+    <title>4 workers: 48.2% efficiency</title>
+  </circle>
+  <text x="285.0" y="318.28" text-anchor="middle" font-size="11" fill="#34C759" font-weight="bold">48.2%</text>
+  <circle cx="490.0" cy="399.48" r="6" fill="#34C759">
+    <title>8 workers: 26.2% efficiency</title>
+  </circle>
+  <text x="490.0" y="419.48" text-anchor="middle" font-size="11" fill="#34C759" font-weight="bold">26.2%</text>
+  <circle cx="900.0" cy="462.5" r="6" fill="#34C759">
+    <title>16 workers: 12.5% efficiency</title>
+  </circle>
+  <text x="900.0" y="482.5" text-anchor="middle" font-size="11" fill="#34C759" font-weight="bold">12.5%</text>
+  <line x1="730" y1="80" x2="760" y2="80" stroke="#007AFF" stroke-width="3"/>
+  <text x="770" y="84" font-size="12" fill="#333">Speedup (vs 1 worker)</text>
+  <line x1="730" y1="100" x2="760" y2="100" stroke="#34C759" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="770" y="104" font-size="12" fill="#333">Parallel Efficiency</text>
+</svg>

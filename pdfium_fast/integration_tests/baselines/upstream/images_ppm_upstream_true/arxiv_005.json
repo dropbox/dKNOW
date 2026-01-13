@@ -1,0 +1,13 @@
+{
+  "pdf_name": "arxiv_005.pdf",
+  "format": "ppm",
+  "dpi": 300,
+  "source": "upstream pdfium_test 7f43fd79",
+  "pages": {
+    "0": "899007c60d30506905f8d80e45ae1d50",
+    "1": "d5aed472e371a5904675a527967029fb",
+    "2": "cb1f9d3c5b9b15b0c9ee15c197616525",
+    "3": "3f9ef90e442eb0f2fe0c898e1cee9cc2",
+    "4": "1540be2fea2f65c245c334720001d07f"
+  }
+}

@@ -1,0 +1,92 @@
+# 🚨 FIX 12 CRITICAL BUGS (0% Formats) NOW
+
+**53 TESTS RUN - 12 FORMATS COMPLETELY BROKEN (0%)**
+
+These are CRITICAL failures that must be fixed:
+
+---
+
+## CRITICAL BUGS (0% DocItem Completeness)
+
+### Bug #1: 7Z - 0%
+**Issue:** Missing compression info and file dates
+**Fix:** Extract metadata from 7z archive
+
+### Bug #2: FB2 - 0%
+**Issue:** Not extracting sections/paragraphs
+**JSON:** 1MB but LLM says 0% - parser broken
+**Fix:** Fix FB2 XML parsing
+
+### Bug #3: GIF - 5%
+**Issue:** No OCR text extraction
+**Fix:** Add OCR for GIF images
+
+### Bug #4: GPX - 0%
+**Issue:** Only tracks, missing waypoints/routes
+**Fix:** Parse waypoints and routes from GPX
+
+### Bug #5: ICS - 0%
+**Issue:** Missing VEVENT properties (DESCRIPTION, UID)
+**Fix:** Extract all calendar event properties
+
+### Bug #6: KML - 0%
+**Issue:** Missing polygons, folders, hierarchy
+**Fix:** Parse all KML elements
+
+### Bug #7: KMZ - 0%
+**Issue:** Missing paths, hierarchy
+**Fix:** Extract complete KML structure from KMZ
+
+### Bug #8: MOBI - 0%
+**Issue:** Truncated, encoding errors
+**Fix:** Fix MOBI parsing, handle encoding
+
+### Bug #9: RAR - 0%
+**Issue:** Only 1 file listed (should be multiple)
+**Fix:** Iterate all files in RAR archive
+
+### Bug #10: SVG - 0%
+**Issue:** Missing text elements
+**Fix:** Parse SVG text elements and structure
+
+### Bug #11: TEX - 0%
+**Issue:** LaTeX not parsing correctly
+**Fix:** Improve LaTeX parser
+
+### Bug #12: VCF - 0%
+**Issue:** Missing fields (you're working on this at N=1363)
+**Fix:** Continue adding VCF fields
+
+---
+
+## PRIORITY ORDER
+
+**Fix in order of impact:**
+1. VCF (you started) - Continue
+2. GPX, KML, KMZ (GPS - same system)
+3. ICS (calendar - common)
+4. RAR, 7Z (archives - important)
+5. FB2, MOBI (ebooks - fix together)
+6. TEX (LaTeX - complex)
+7. SVG (graphics)
+8. GIF (add OCR)
+
+**Estimated:** 30-50 commits to fix all 12
+
+---
+
+## SUCCESS METRIC
+
+**Target:** 12 formats from 0% → 95%+
+
+**Track progress:**
+- Update DOCITEM_100_PERCENT_GRID.md after each fix
+- Show before/after scores
+- Document what was fixed
+
+---
+
+**FIX ALL 12 CRITICAL BUGS.
+THIS IS YOUR TOP PRIORITY.
+START WITH VCF (IN PROGRESS).
+CONTINUE SYSTEMATICALLY THROUGH ALL 12.**

@@ -1,0 +1,11 @@
+[package]
+name = "docling-parse"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "High-performance C++ document parsing library for docling"
+keywords = ["parsing", "c++", "native", "performance"]
+categories = ["parsing"]
+
+[dependencies]

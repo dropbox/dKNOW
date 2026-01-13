@@ -1,0 +1,20 @@
+[package]
+name = "video-audio-subtitle"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+video-audio-common = { path = "../common" }
+video-extract-core = { path = "../video-extract-core" }
+ffmpeg-next.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+async-trait = "0.1"
+tracing = "0.1"
+serde_yaml = "0.9"
+serde_json = "1.0"
+
+[dev-dependencies]
+tempfile = "3.8"

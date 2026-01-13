@@ -1,0 +1,10 @@
+README.md
+setup.py
+dash_pdf_extraction/__init__.py
+dash_pdf_extraction/core.py
+dash_pdf_extraction/version.py
+dash_pdf_extraction.egg-info/PKG-INFO
+dash_pdf_extraction.egg-info/SOURCES.txt
+dash_pdf_extraction.egg-info/dependency_links.txt
+dash_pdf_extraction.egg-info/requires.txt
+dash_pdf_extraction.egg-info/top_level.txt

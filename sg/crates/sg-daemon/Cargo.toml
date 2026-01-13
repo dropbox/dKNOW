@@ -1,0 +1,50 @@
+[package]
+name = "sg-daemon"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Background daemon for SuperGrep semantic search"
+
+[lib]
+name = "sg_daemon"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sg-daemon"
+path = "src/main.rs"
+
+[dependencies]
+sg-core.workspace = true
+
+# Async runtime
+tokio.workspace = true
+
+# File watching
+notify.workspace = true
+
+# Serialization
+serde.workspace = true
+serde_json.workspace = true
+toml.workspace = true
+
+# CLI
+clap.workspace = true
+
+# Unix process management
+libc = "0.2"
+
+# Utilities
+anyhow.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+directories.workspace = true
+dirs.workspace = true
+
+[dev-dependencies]
+tempfile = "3"
+
+[features]
+default = []
+metal = ["sg-core/metal"]
+document-processing = ["sg-core/document-processing"]
+clip = ["sg-core/clip"]

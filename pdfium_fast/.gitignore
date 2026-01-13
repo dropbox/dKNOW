@@ -1,0 +1,55 @@
+# Build artifacts
+/base
+/build
+/buildtools
+/out
+/compile_commands.json
+
+# Test corpus (large, keep locally)
+integration_tests/pdfs/benchmark/*.pdf
+integration_tests/pdfs/**/*[0-9][0-9][0-9]pages*.pdf
+integration_tests/pdfs/**/*[0-9][0-9][0-9][0-9]pages*.pdf
+integration_tests/pdfs/**/*cc_*.pdf
+
+# Telemetry data
+integration_tests/telemetry/runs.csv
+
+# Worker session logs (auto-generated debugging artifacts)
+worker_logs/
+
+# Third party (large toolchains)
+/third_party/rust-toolchain/
+/tools/skia_goldctl/
+
+# Test outputs (large JSONL)
+integration_tests/master_test_suite/expected_outputs/
+integration_tests/out/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+testing/corpus/
+testing/scripts/
+rust/target/
+integration_tests/*.tar.gz
+json_to_text.py
+HINTS_HISTORY.log
+.maintenance_log
+.health_check_*
+test_parallel_api*
+
+# Obsolete task files (archived as they're completed)
+CREATE_PR_NOW.md
+DO_ALL_OPTIMIZATIONS_NOW.md
+EXECUTE_ALL_*.md
+FINAL_*_OPTIMIZATIONS.md
+COMPILER_OPTS_GUIDANCE.md
+NO_ARGUING_EXECUTE.md
+TRY_ALL_INCLUDING_SMALL_GAINS.md
+MAKE_FASTEST_DEFAULT.md
+REMAINING_OPTIMIZATIONS.md
+
+# Docker build outputs
+binaries/

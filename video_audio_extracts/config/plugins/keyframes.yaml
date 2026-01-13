@@ -1,0 +1,60 @@
+name: keyframes
+description: "Extract keyframes (I-frames) from video files with perceptual hashing and deduplication"
+
+inputs:
+  # Video containers
+  - mp4
+  - mov
+  - avi
+  - mkv
+  - webm
+  - flv
+  - m4v
+  - 3gp
+  - wmv
+  - ogv
+  - mts      # AVCHD camcorder
+  - m2ts     # Blu-ray AVCHD
+  - mxf      # Broadcast media exchange
+  - ts       # MPEG transport stream
+  - vob      # DVD video
+  - mpg      # MPEG-1/2
+  - mpeg     # MPEG-1/2
+  - rm       # RealMedia
+  - rmvb     # RealMedia Variable Bitrate
+  - asf      # Advanced Systems Format
+  - dv       # Digital Video
+  - gxf      # General eXchange Format (broadcast)
+  - f4v      # Flash Video MP4
+  # Image formats (for HEIF/HEIC multi-frame support and RAW camera formats)
+  - heic
+  - heif
+  # RAW camera formats (require FFmpeg libraw decode)
+  - arw      # Sony Alpha RAW
+  - cr2      # Canon RAW 2
+  - dng      # Adobe Digital Negative
+  - nef      # Nikon Electronic Format
+  - raf      # Fujifilm RAW
+  - dpx      # Digital Picture Exchange (professional image/sequence)
+
+outputs:
+  - Keyframes
+
+config:
+  max_file_size_mb: 10000
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "30s"
+  memory_per_file_mb: 512
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 3
+  invalidate_before: 1727740800  # 2024-10-01 00:00:00 UTC
+
+implementation:
+  crate: "video-audio-keyframe"
+  function: "extract_keyframes"

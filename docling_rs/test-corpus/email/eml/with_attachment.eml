@@ -1,0 +1,26 @@
+From: Alice Brown <alice@company.com>
+To: Bob Wilson <bob@company.com>
+Subject: Test Email - With Attachment
+Date: Tue, 8 Nov 2025 14:30:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="boundary123"
+
+--boundary123
+Content-Type: text/plain; charset=utf-8
+
+Hi Bob,
+
+Please find the attached document.
+
+Thanks,
+Alice
+
+--boundary123
+Content-Type: application/pdf; name="report.pdf"
+Content-Disposition: attachment; filename="report.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjMKJcTl8uXrp/Og0MTGCjQgMCBvYmoKPDwgL0xlbmd0aCA1IDAgUiAvRmlsdGVyIC9G
+bGF0ZURlY29kZSA+PgpzdHJlYW0K
+
+--boundary123--

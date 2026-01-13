@@ -1,0 +1,63 @@
+**Sunny Nephrology Clinic**
+
+PATIENT NUTRITIONAL MANAGEMENT PROTOCOL
+
+**Purpose:** To provide standardized guidelines for the administration of oral nutritional supplements and vitamins to ESRD patients. This protocol outlines guidelines for oral administration of Calcium, Vitamin D, TUMS and nutritional supplements including protein bars and shakes.
+
+- Oral forms of Calcium are used to prevent decreased levels of serum Calcium. It is essential for the body to have adequate serum calcium levels for normal functioning of nerves, cells, muscles and bones. If there is not enough in the blood, the body will take calcium from the bones, therefore weakening the bones. iPTH levels will increase as the parathyroid secretion increases to compensate for low serum calcium levels. Oral forms of Calcium include Calcium tablets, capsules or TUMS.
+
+- Vitamin D is an oral inactive form of Vitamin D (D2 or D3) that helps increase low blood levels of Vitamin D. It promotes intestinal absorption of calcium and phosphorus and stimulates bones mineralization. iPTH levels will increase as the parathyroid secretion increases to compensate for low serum vitamin D levels.
+
+- Serum albumin is the most abundant blood plasma protein and regulates blood volume, transports molecules, and supports tissue repair, and aids fluid removal during dialysis. Low albumin may be due to malnutrition, inflammation, protein loss, burns, or liver disease. Nutritional shakes and protein bars help improve protein intake and raise serum albumin.
+
+**GENERAL GUIDELINES:**
+
+- Physician orders may vary based on protocol
+- Each patient should be individually assessed for oral therapy initiation.
+- Dietary education and counseling should be provided alongside supplementation.
+- Patients may take oral medications and supplements at home as prescribed by the physician. **These guidelines are provided for patients who take oral medications or supplements while at the facility and are administered by the dialysis facility staff.**
+- Calcium levels and Albumin levels are tested monthly. Vitamin D and iPTH are tested quarterly.  This may vary at physician’s discretion or be more frequently tested if the patient is started on oral Calcitriol and/or Sensipar.
+- If no improvement is noted with oral therapy after 3-6 months, IV therapy may be considered and is at the discretion of the physician.
+
+**GOAL:** To maintain the following parameters
+
+| iPTH LEVELS   | CORRECTED CALIUM   | VITAMIN D   | ALBUMIN   |
+|---------------|--------------------|-------------|-----------|
+| 150-600       | 8.4-10.2           | >30         | >3.5      |
+
+**Sunny Nephrology Clinic**
+
+PATIENT NUTRITIONAL MANAGEMENT PROTOCOL
+
+STANDING PROTOCOLS:
+
+Oral Calcium
+
+| Serum Calcium Levels   | Facility Dose                                                                 |
+|------------------------|-------------------------------------------------------------------------------|
+| <7.8 mg/dL             | TUMS 2 tabs po 3 times weekly and Calcium 600 mg po 3 times weekly            |
+| 7.9-8.4 mg/dL          | Calcium 600 mg po 3 times weekly at facility or TUMS 2 tabs po 3 times weekly |
+| 8.5-9.0 mg/dL          | TUMS 1-tab po 3 times weekly                                                  |
+| 9.1-10.2 mg/dL         | Hold                                                                          |
+| >10.2 mg/dL            | Hold                                                                          |
+
+Vitamin D
+
+| Serum Vitamin D Levels   | Facility Dose                    |
+|--------------------------|----------------------------------|
+| <20 ng/mL                | 50,000 units po weekly           |
+| 20-30 ng/mL              | 50,000 units po every other week |
+| > 30 ng/mL               | Hold                             |
+
+Nutritional Supplements
+
+| Serum Albumin Levels   | Facility Dose                         |
+|------------------------|---------------------------------------|
+| < 3.0 g/dL             | Nutritional supplement 3 times weekly |
+| 3.0-3.4 g/dL           | Nutritional supplement 2 times weekly |
+| 3.5-4.0 g/dL           | Nutritional supplement PRN            |
+| >4.0 g/dL              | Hold                                  |
+
+- Nutritional supplements may include Nutritional Shakes such as Boost, Nepro, Ensure or Nutritional Bars such as protein bars, protein cookies.
+
+- The Patient’s allergies, medical history, personal preference and physical ability to chew/drink may factor in what nutritional supplement is best suited for the patient.

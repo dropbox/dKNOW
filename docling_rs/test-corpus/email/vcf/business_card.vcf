@@ -1,0 +1,21 @@
+BEGIN:VCARD
+VERSION:4.0
+FN:Sarah Chen
+N:Chen;Sarah;Wei;;Ph.D.
+EMAIL;TYPE=work;PREF=1:sarah.chen@biotech.com
+EMAIL;TYPE=work:s.chen@research.biotech.com
+TEL;TYPE=work;VALUE=uri:tel:+1-555-890-1234
+TEL;TYPE=cell;VALUE=uri:tel:+1-555-901-2345
+TEL;TYPE=fax;VALUE=uri:tel:+1-555-012-3456
+ORG:BioTech Research Institute
+TITLE:Principal Scientist
+ADR;TYPE=work:Suite 400;Building 5;789 Innovation Drive;Boston;MA;02115;USA
+URL:https://biotech.com/researchers/sarah-chen
+URL;TYPE=linkedin:https://linkedin.com/in/sarahchen
+NOTE:Specializes in gene therapy and CRISPR technology. Published 45+ papers.
+CATEGORIES:Research,Science,Biotechnology
+BDAY:19850315
+LANG;PREF=1:en
+LANG:zh
+GENDER:F
+END:VCARD

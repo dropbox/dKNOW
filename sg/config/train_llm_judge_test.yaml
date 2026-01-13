@@ -1,0 +1,23 @@
+# Test configuration for LLM-as-judge training
+# Uses synthetic scores on small dataset to validate pipeline
+
+data:
+  train: "data/scored_test.jsonl"
+  # validation: "data/scored_test.jsonl"  # Skip for quick test
+  score_field: "llm_score"
+
+model:
+  base: "checkpoints/xtr-mlx-merged"
+  output: "checkpoints/xtr-llm-judge-test"
+
+training:
+  loss: "mse"
+  lora_r: 8
+  lora_alpha: 16
+  lora_dropout: 0.0
+  target_modules: ["q", "v"]
+  batch_size: 8
+  gradient_accumulation_steps: 1
+  epochs: 1
+  learning_rate: 1.0e-4
+  max_length: 256

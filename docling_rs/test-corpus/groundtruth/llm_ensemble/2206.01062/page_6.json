@@ -1,0 +1,272 @@
+{
+  "page_number": 6,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "KDD '22, August 14–18, 2022, Washington, DC, USA Birgit Pfitzmann, Christoph Awer, Michele Dolfi, Ahmed S. Nassar, and Peter Staar",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Table 2: Prediction performance (mAP@0.5-0.95) of object detection networks on DocLayNet test set.",
+      "bbox": {
+        "l": 0.0,
+        "t": 6.0,
+        "r": 100.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The MRCNN (Mask R-CNN) and FRCNN (Faster R-CNN) models with ResNet-50 or ResNet-101 backbone were trained based on the network architectures from the detectron2 model zoo (Mask R-CNN R50, R101-FPN 3x, Faster R-CNN R101-FPN 3x), with default configurations. The YOLO implementation utilized was YOLOv5x6 [13]. All models were initialised using pre-trained weights from the COCO 2017 dataset.",
+      "bbox": {
+        "l": 0.0,
+        "t": 11.0,
+        "r": 100.0,
+        "b": 16.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "table",
+      "text": "",
+      "bbox": {
+        "l": 0.0,
+        "t": 17.0,
+        "r": 50.0,
+        "b": 30.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "",
+            "MRCNN",
+            "FRCNN",
+            "YOLO"
+          ],
+          [
+            "",
+            "R50",
+            "R101",
+            "R101",
+            "v5x6"
+          ],
+          [
+            "Caption",
+            "84-89",
+            "68.4",
+            "71.5",
+            "70.1",
+            "77.7"
+          ],
+          [
+            "Footnote",
+            "83-91",
+            "70.9",
+            "71.8",
+            "73.7",
+            "77.2"
+          ],
+          [
+            "Formula",
+            "83-85",
+            "60.1",
+            "63.4",
+            "63.5",
+            "66.2"
+          ],
+          [
+            "List-item",
+            "87-88",
+            "81.2",
+            "80.8",
+            "81.0",
+            "86.2"
+          ],
+          [
+            "Page-footer",
+            "93-94",
+            "61.6",
+            "59.3",
+            "58.9",
+            "61.1"
+          ],
+          [
+            "Page-header",
+            "85-89",
+            "71.9",
+            "70.0",
+            "72.0",
+            "67.9"
+          ],
+          [
+            "Picture",
+            "69-71",
+            "71.7",
+            "72.7",
+            "72.0",
+            "77.1"
+          ],
+          [
+            "Section-header",
+            "83-84",
+            "67.6",
+            "69.3",
+            "68.4",
+            "74.6"
+          ],
+          [
+            "Table",
+            "77-81",
+            "82.2",
+            "82.9",
+            "82.2",
+            "86.3"
+          ],
+          [
+            "Text",
+            "84-86",
+            "84.6",
+            "85.8",
+            "85.4",
+            "88.1"
+          ],
+          [
+            "All",
+            "82-83",
+            "72.4",
+            "73.5",
+            "73.4",
+            "76.8"
+          ]
+        ],
+        "num_rows": 13,
+        "num_cols": 6
+      }
+    },
+    {
+      "label": "picture",
+      "text": "Graph showing Prediction performance (mAP@0.5-0.95) of a Mask R-CNN network with ResNet50 backbone.",
+      "bbox": {
+        "l": 51.0,
+        "t": 17.0,
+        "r": 100.0,
+        "b": 40.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 5: Prediction performance (mAP@0.5-0.95) of a Mask R-CNN network with ResNet50 backbone trained on increasing fractions of the DocLayNet dataset. The learning curve flattens around the 80% mark, indicating that increasing the size of the DocLayNet dataset with similar data will not yield significantly better predictions.",
+      "bbox": {
+        "l": 51.0,
+        "t": 41.0,
+        "r": 100.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "to avoid this at any cost in order to have clear, unbiased baseline numbers for human document-layout understanding. First, we introduced the feature of snapping boxes around the text segments to obtain a pixel-accurate annotation and avoid losing text-segments. The CCS annotation tool automatically shrinks every user-drawn box to the closest surrounding-box narrowest to the text-cells for all purely text-based segments, which excludes only Table and Picture. For the latter, we instructed annotation staff to minimise inclusion of surrounding whitespace while including all graphical lines. A downside of snapping boxes to enclosed text cells is that some wrongly parsed PDF pages cannot be corrected easily and need to be skipped. Fourth, we established a way to flag pages as rejected for cases where the manual annotation according to the label guidelines could be achieved. Example cases for this would be PDF pages that render incorrectly or contain layouts that are impossible to capture with non-overlapping rectangles. Such rejected pages are not contained in the final dataset. With all these measures in place, experienced annotation staff managed to annotate a single page in a typical timeframe of 20s to 60s, depending on its complexity.",
+      "bbox": {
+        "l": 0.0,
+        "t": 46.0,
+        "r": 100.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "5 EXPERIMENTS",
+      "bbox": {
+        "l": 0.0,
+        "t": 61.0,
+        "r": 100.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The primary goal of DocLayNet is to obtain high-quality ML models capable of accurate document-layout analysis on a wide variety of challenging layouts. As discussed in Section 2, object detection models are currently the easiest to use, due to the standardisation of ground-truth data in COCO format [16] and the availability of general frameworks such as detectron2 [17]. Furthermore, baseline numbers in PubLayNet and DocBank were obtained using standard object detection models such as Mask R-CNN and Faster R-CNN. As such, we will relate to these object detection methods in this paper and leave the detailed evaluation of more recent methods mentioned in Section 2 for future work.",
+      "bbox": {
+        "l": 0.0,
+        "t": 66.0,
+        "r": 100.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Baselines for Object Detection",
+      "bbox": {
+        "l": 0.0,
+        "t": 81.0,
+        "r": 100.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In Table 2, we present baseline experiments (given in mAP) on Mask R-CNN [21], Faster R-CNN [11], and YOLOv5 [13]. Both training and evaluation were performed on RGB images with dimensions of 1025x1025 pixels. For training, we only used one annotation in case of redundantly annotated pages. As one can observe, the variation in mAP between the models is rather low, but overall between 6 and 10% lower than the mAP computed from the pairwise human annotations on triple-annotated pages. This gives a good indication that the DocLayNet dataset poses a worthwhile challenge for the research community to close the gap between human recognition and ML approaches. It is interesting to see that Mask R-CNN and Faster R-CNN produce very comparable mAP scores, indicating that pixel-based image segmentation derived from bounding-boxes does not help to obtain better predictions. On the other hand, the more recent YOLOv5 model does very well and even out-performs humans on selected labels such as Text, Table and Picture. This is not entirely surprising, as Text, Table and Picture are abundant and the most visually distinctive in a document.",
+      "bbox": {
+        "l": 0.0,
+        "t": 86.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

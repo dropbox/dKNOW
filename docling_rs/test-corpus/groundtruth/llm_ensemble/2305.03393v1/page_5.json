@@ -1,0 +1,109 @@
+{
+  "page_number": 5,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "Optimized Table Tokenization for Table Structure Recognition",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "ulary and can be interpreted as a table structure. For example, with the HTML tokens <table>, </table>, <tr>, </tr>, <td> and </td>, one can construct simple table structures without any spanning cells. In reality though, one needs at least 28 HTML tokens to describe the most common complex tables observed in real-world documents [21,22], due to a variety of spanning cells definitions in the HTML token vocabulary.",
+      "bbox": {
+        "l": 0.0,
+        "t": 10.0,
+        "r": 100.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Fig. 2. Frequency of tokens in HTML and OTSL as they appear in PubTabNet.",
+      "bbox": {
+        "l": 0.0,
+        "t": 25.0,
+        "r": 100.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Bar chart comparing frequency of tokens in HTML and OTSL.",
+      "bbox": {
+        "l": 0.0,
+        "t": 30.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Obviously, HTML and other general-purpose markup languages were not designed for Im2Seq models. As such, they have some serious drawbacks. First, the token vocabulary needs to be artificially large in order to describe all plausible tabular structures. Since most Im2Seq models use an autoregressive approach, they generate the sequence token by token. Therefore, to reduce inference time, a shorter sequence length is critical. Every table-cell is represented by at least two tokens (<td> and </td>). Furthermore, when tokenizing the HTML structure, one needs to explicitly enumerate possible column-spans and row-spans as words. In practice, this ends up requiring 28 different HTML tokens (when including column- and row-spans up to 10 cells) just to describe every table in the PubTabNet dataset. Clearly, not every token is equally represented, as is depicted in Figure 2. This skewed distribution of tokens in combination with variable token row-length makes it challenging for models to learn the HTML structure.",
+      "bbox": {
+        "l": 0.0,
+        "t": 55.0,
+        "r": 100.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Additionally, it would be desirable if the representation would easily allow an early detection of invalid sequences on-the-go, before the prediction of the entire table structure is completed. HTML is not well-suited for this purpose as the verification of incomplete sequences is non-trivial or even impossible.",
+      "bbox": {
+        "l": 0.0,
+        "t": 80.0,
+        "r": 100.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In a valid HTML table, the token sequence must describe a 2D grid of table cells, serialised in row-major ordering, where each row and each column have the same length (while considering row- and column-spans). Furthermore, every opening tag in HTML needs to be matched by a closing tag in a correct hierarchical manner. Since the number of tokens for each table row and column can vary significantly, especially for large tables with many row- and column-spans, it is complex to verify the consistency of predicted structures during sequence",
+      "bbox": {
+        "l": 0.0,
+        "t": 90.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

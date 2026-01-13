@@ -1,0 +1,56 @@
+{
+  "corpus": "/Users/ayates/eval/gutenberg/",
+  "description": "Gutenberg classic literature corpus",
+  "queries": [
+    {
+      "query": "vampire castle Transylvania blood",
+      "relevant": ["dracula.txt"],
+      "description": "Dracula"
+    },
+    {
+      "query": "white whale captain obsession",
+      "relevant": ["moby.txt"],
+      "description": "Moby Dick - Captain Ahab hunting the whale"
+    },
+    {
+      "query": "detective Baker Street London",
+      "relevant": ["sherlock.txt"],
+      "description": "Sherlock Holmes stories"
+    },
+    {
+      "query": "monster creature scientist laboratory",
+      "relevant": ["frankenstein.txt"],
+      "description": "Frankenstein - the monster"
+    },
+    {
+      "query": "governess orphan Rochester manor",
+      "relevant": ["jane_eyre.txt"],
+      "description": "Jane Eyre"
+    },
+    {
+      "query": "tea party rabbit wonderland",
+      "relevant": ["alice.txt"],
+      "description": "Alice in Wonderland"
+    },
+    {
+      "query": "portrait painting youth beauty",
+      "relevant": ["dorian.txt"],
+      "description": "Picture of Dorian Gray"
+    },
+    {
+      "query": "wealthy party jazz Long Island",
+      "relevant": ["gatsby.txt"],
+      "description": "Great Gatsby"
+    },
+    {
+      "query": "marriage proposal Bennet estate",
+      "relevant": ["pride.txt"],
+      "description": "Pride and Prejudice - romantic plot"
+    },
+    {
+      "query": "dual personality good evil",
+      "relevant": ["jekyll.txt"],
+      "description": "Dr Jekyll and Mr Hyde"
+    }
+  ]
+}

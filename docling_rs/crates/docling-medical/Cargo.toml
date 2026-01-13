@@ -1,0 +1,13 @@
+[package]
+name = "docling-medical"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Medical and healthcare data format parsers for docling-rs (DICOM, HL7)"
+keywords = ["medical", "dicom", "hl7", "healthcare"]
+categories = ["parsing", "science"]
+[dependencies]
+dicom = "0.9.0"
+dicom-object = "0.9.0"
+dicom-dictionary-std = "0.9.0"

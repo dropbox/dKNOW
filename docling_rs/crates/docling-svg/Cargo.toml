@@ -1,0 +1,16 @@
+[package]
+name = "docling-svg"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "SVG parser for docling_rs"
+keywords = ["svg", "vector", "graphics", "xml"]
+categories = ["parsing", "graphics"]
+
+[dependencies]
+quick-xml = "0.31"
+log = "0.4"
+thiserror = "1.0"
+
+[dev-dependencies]

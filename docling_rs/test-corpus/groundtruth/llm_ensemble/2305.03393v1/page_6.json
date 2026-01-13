@@ -1,0 +1,207 @@
+{
+  "page_number": 6,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "6    M. Lysak, et al.",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "generation. Implicitly, this also means that Im2Seq models need to learn these complex syntax rules, simply to deliver valid output.",
+      "bbox": {
+        "l": 0.0,
+        "t": 10.0,
+        "r": 100.0,
+        "b": 15.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In practice, we observe two major issues with prediction quality when training Im2Seq models on HTML table structure generation from images. On the one hand, we find that on large tables, the visual attention of the model often starts to drift and is not accurately moving forward cell by cell anymore. This manifests itself in either in an increasing location drift for proposed table-cells in later rows on the same column or even complete loss of vertical alignment, as illustrated in Figure 5. Addressing this with post-processing is partially possible, but clearly undesired. On the other hand, we find many instances of predictions with structural inconsistencies or plain invalid HTML output, as shown in Figure 6, which are nearly impossible to properly correct. Both problems seriously impact the TSR model performance, since they reflect not only in the task of pure structure recognition but also in the equally crucial recognition or matching of table cell content.",
+      "bbox": {
+        "l": 0.0,
+        "t": 16.0,
+        "r": 100.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "4  Optimised Table Structure Language",
+      "bbox": {
+        "l": 0.0,
+        "t": 36.0,
+        "r": 100.0,
+        "b": 40.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "To mitigate the issues with HTML in Im2Seq-based TSR models laid out before, we propose here our Optimised Table Structure Language (OTSL). OTSL is designed to express table structure with a minimized vocabulary and a simple set of rules, which are both significantly reduced compared to HTML. At the same time, OTSL enables easy error detection and correction during sequence generation. We further demonstrate how the compact structure representation and minimized sequence length improves prediction accuracy and inference time in the TableFormer architecture.",
+      "bbox": {
+        "l": 0.0,
+        "t": 41.0,
+        "r": 100.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "4.1  Language Definition",
+      "bbox": {
+        "l": 0.0,
+        "t": 56.0,
+        "r": 100.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In Figure 3, we illustrate how the OTSL is defined. In essence, the OTSL defines only 5 tokens that directly describe a tabular structure based on an atomic 2D grid.",
+      "bbox": {
+        "l": 0.0,
+        "t": 61.0,
+        "r": 100.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The OTSL vocabulary is comprised of the following tokens:",
+      "bbox": {
+        "l": 0.0,
+        "t": 66.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "– “C” cell - a new table cell that either has or does not have cell content",
+      "bbox": {
+        "l": 0.0,
+        "t": 71.0,
+        "r": 100.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "– “L” cell - left-looking cell, merging with the left neighbor cell to create a span",
+      "bbox": {
+        "l": 0.0,
+        "t": 76.0,
+        "r": 100.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "– “U” cell - up-looking cell, merging with the upper neighbor cell to create a span",
+      "bbox": {
+        "l": 0.0,
+        "t": 81.0,
+        "r": 100.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "– “X” cell - cross cell, to merge with both left and upper neighbor cells",
+      "bbox": {
+        "l": 0.0,
+        "t": 86.0,
+        "r": 100.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "– “NL” - new-line, switch to the next row.",
+      "bbox": {
+        "l": 0.0,
+        "t": 91.0,
+        "r": 100.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "A notable attribute of OTSL is that it has the capability of achieving lossless conversion to HTML.",
+      "bbox": {
+        "l": 0.0,
+        "t": 96.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

@@ -1,0 +1,312 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Introduction",
+    "text": "Introduction",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is the first paragraph of the introduction.",
+    "text": "This is the first paragraph of the introduction."
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/2",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Background",
+    "text": "Background",
+    "level": 2
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/3",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Some background information here.",
+    "text": "Some background information here."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/4",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Example image",
+    "text": "Example image"
+  },
+  {
+    "label": "picture",
+    "self_ref": "#/pictures/5",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "captions": [
+      {
+        "$ref": "#/texts/4"
+      }
+    ],
+    "image": {
+      "uri": "example_image_01.png",
+      "alt": "Example image",
+      "title": ""
+    }
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/7",
+    "parent": {
+      "$ref": "#/groups/6"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "First item in unordered list",
+    "text": "First item in unordered list",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/8",
+    "parent": {
+      "$ref": "#/groups/6"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Second item in unordered list",
+    "text": "Second item in unordered list",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/6",
+    "children": [
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/10",
+    "parent": {
+      "$ref": "#/groups/9"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "First item in ordered list",
+    "text": "First item in ordered list",
+    "enumerated": true,
+    "marker": "1."
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/11",
+    "parent": {
+      "$ref": "#/groups/9"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Second item in ordered list",
+    "text": "Second item in ordered list",
+    "enumerated": true,
+    "marker": "2."
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/9",
+    "children": [
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      }
+    ],
+    "content_layer": "body",
+    "name": "ordered list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/13",
+    "parent": {
+      "$ref": "#/groups/12"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "First item in ordered list with start",
+    "text": "First item in ordered list with start",
+    "enumerated": true,
+    "marker": "42."
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/14",
+    "parent": {
+      "$ref": "#/groups/12"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Second item in ordered list with start",
+    "text": "Second item in ordered list with start",
+    "enumerated": true,
+    "marker": "43."
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/12",
+    "children": [
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      }
+    ],
+    "content_layer": "body",
+    "name": "ordered list start 42"
+  }
+]

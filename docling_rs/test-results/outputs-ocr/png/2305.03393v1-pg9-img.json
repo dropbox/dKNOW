@@ -1,0 +1,1864 @@
+[
+  {
+    "label": "text",
+    "self_ref": "#/texts/7",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 403.5706481933594,
+          "t": 198.16680908203125,
+          "r": 934.183349609375,
+          "b": 208.38368225097656,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Optimized'Table Tokenization for Table Structure Recognition",
+    "text": "Optimized'Table Tokenization for Table Structure Recognition"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/8",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.0247497558594,
+          "t": 251.75357055664062,
+          "r": 1004.947998046875,
+          "b": 261.88824462890625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Order to com pute the 'TF:l) score. Imterence timing results for all experiments",
+    "text": "Order to com pute the 'TF:l) score. Imterence timing results for all experiments"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/9",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.0247497558594,
+          "t": 275.5516662597656,
+          "r": 1004.947998046875,
+          "b": 285.6863098144531,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "were obtained.trom.the same m achine on.a single core wnith.A Mll) E P Y（1 7763",
+    "text": "were obtained.trom.the same m achine on.a single core wnith.A Mll) E P Y（1 7763"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/10",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 278.4314880371094,
+          "t": 299.94976806640625,
+          "r": 440.7481994628906,
+          "b": 310.8675231933594,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "（CP11(Q2 45 G Hz",
+    "text": "（CP11(Q2 45 G Hz"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/11",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.9748840332031,
+          "t": 354.8526306152344,
+          "r": 336.6149597167969,
+          "b": 366.0307922363281,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "5.1",
+    "text": "5.1"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/12",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 327.9578552246094,
+          "t": 355.7414855957031,
+          "r": 665.1476440429688,
+          "b": 366.1335144042969,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "H vner Para m eter O ntimization",
+    "text": "H vner Para m eter O ntimization"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/13",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 276.4755554199219,
+          "t": 388.5448303222656,
+          "r": 1007.4892578125,
+          "b": 400.7580871582031,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "We have chosen the PubTabNet data setto perform HPO.sinceit includes a.",
+    "text": "We have chosen the PubTabNet data setto perform HPO.sinceit includes a."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/14",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 279.01739501953125,
+          "t": 415.36492919921875,
+          "r": 1003.9513549804688,
+          "b": 425.50048828125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "highly diyerse set oftables. Also we report'l'FlDscores separately for slmple and",
+    "text": "highly diyerse set oftables. Also we report'l'FlDscores separately for slmple and"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/15",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 278.2435607910156,
+          "t": 439.1402587890625,
+          "r": 1005.7213134765625,
+          "b": 450.3128662109375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "complex ta.bles(tables with cellspans). Results are presented in Table.iilIt is",
+    "text": "complex ta.bles(tables with cellspans). Results are presented in Table.iilIt is"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/16",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.4728088378906,
+          "t": 463.904296875,
+          "r": 1003.5037841796875,
+          "b": 476.1197204589844,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "eyidentthat with QTSl.our modelachieyesthe same TE Dscoreandslightly",
+    "text": "eyidentthat with QTSl.our modelachieyesthe same TE Dscoreandslightly"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/17",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 276.2508544921875,
+          "t": 489.71173095703125,
+          "r": 1006.7178344726562,
+          "b": 500.88323974609375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "better m AP scoresin comparison to H'T'Mll. However QT'Sl yields a 2c sneed",
+    "text": "better m AP scoresin comparison to H'T'Mll. However QT'Sl yields a 2c sneed"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/18",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.3785705566406,
+          "t": 514.3734130859375,
+          "r": 650.9808349609375,
+          "b": 525.8009033203125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "upin theinference runtime over H'T Mll.",
+    "text": "upin theinference runtime over H'T Mll."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/19",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.0247497558594,
+          "t": 575.0107421875,
+          "r": 1004.947998046875,
+          "b": 585.1455078125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "\" able 1. H PO performed in. O T'Sl. and H'T`Ml, representation. on.the same",
+    "text": "\" able 1. H PO performed in. O T'Sl. and H'T`Ml, representation. on.the same"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/20",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.0250549316406,
+          "t": 598.8085327148438,
+          "r": 1002.9554443359375,
+          "b": 608.94384765625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "transformer-based 'TableFormer 9larchitecture.trained only on PubTa.bNet 22. Ff-",
+    "text": "transformer-based 'TableFormer 9larchitecture.trained only on PubTa.bNet 22. Ff-"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/21",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.0249328613281,
+          "t": 621.615234375,
+          "r": 1003.9515380859375,
+          "b": 631.7501831054688,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "fects ofreducingthe # ofIaversin encoder and decoderstages ofthe modelshow that",
+    "text": "fects ofreducingthe # ofIaversin encoder and decoderstages ofthe modelshow that"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/22",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 275.2549133300781,
+          "t": 644.3990478515625,
+          "r": 1004.7254638671875,
+          "b": 655.5708618164062,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "smaller models trained on QT'SL perform better.especiallv in recognizing complex",
+    "text": "smaller models trained on QT'SL perform better.especiallv in recognizing complex"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/23",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 276.2515563964844,
+          "t": 667.2050170898438,
+          "r": 1002.73291015625,
+          "b": 678.3778686523438,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "tablestructures.and maintain a much higher mAP scorethanthe H'I'ML counterpart.",
+    "text": "tablestructures.and maintain a much higher mAP scorethanthe H'I'ML counterpart."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/24",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 331.7392578125,
+          "t": 709.0242309570312,
+          "r": 353.5732421875,
+          "b": 730.7593994140625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "#",
+    "text": "#"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/25",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 430.3595886230469,
+          "t": 707.7596435546875,
+          "r": 452.1794738769531,
+          "b": 731.0324096679688,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "#",
+    "text": "#"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/26",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 671.4974365234375,
+          "t": 711.2857055664062,
+          "r": 730.0064086914062,
+          "b": 725.523193359375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "TEDs",
+    "text": "TEDs"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/27",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 821.2241821289062,
+          "t": 711.069091796875,
+          "r": 872.1351928710938,
+          "b": 725.73974609375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "mAP",
+    "text": "mAP"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/28",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 891.972412109375,
+          "t": 711.7939453125,
+          "r": 977.6956176757812,
+          "b": 725.0149536132812,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Inference",
+    "text": "Inference"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/29",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 492.31561279296875,
+          "t": 724.3565673828125,
+          "r": 585.4578857421875,
+          "b": 740.2167358398438,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Language",
+    "text": "Language"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/30",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 295.79510498046875,
+          "t": 740.8224487304688,
+          "r": 388.5213317871094,
+          "b": 752.5068359375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "enc-lavers",
+    "text": "enc-lavers"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/31",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 394.81494140625,
+          "t": 739.6472778320312,
+          "r": 487.72412109375,
+          "b": 752.6904907226562,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "dec-lavers",
+    "text": "dec-lavers"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/32",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 591.6676025390625,
+          "t": 739.1542358398438,
+          "r": 654.4457397460938,
+          "b": 753.1834716796875,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "simple",
+    "text": "simple"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/33",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 663.5013427734375,
+          "t": 739.1996459960938,
+          "r": 740.9908447265625,
+          "b": 754.1296997070312,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "complex",
+    "text": "complex"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/34",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 764.9041137695312,
+          "t": 735.2743530273438,
+          "r": 793.9826049804688,
+          "b": 755.0802001953125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "all",
+    "text": "all"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/35",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 818.1475219726562,
+          "t": 733.4656372070312,
+          "r": 876.2078857421875,
+          "b": 750.9393920898438,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "(0.75)",
+    "text": "(0.75)"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/36",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 884.8148803710938,
+          "t": 735.7470092773438,
+          "r": 983.85693359375,
+          "b": 748.6580810546875,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "time(secs)",
+    "text": "time(secs)"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/37",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 335.3150939941406,
+          "t": 773.748291015625,
+          "r": 349.0013122558594,
+          "b": 794.9415893554688,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "6",
+    "text": "6"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/38",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 434.0387878417969,
+          "t": 772.4298095703125,
+          "r": 447.5041809082031,
+          "b": 796.2601318359375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "6",
+    "text": "6"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/39",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 510.13031005859375,
+          "t": 766.8145751953125,
+          "r": 568.6392822265625,
+          "b": 781.052001953125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "OTSL",
+    "text": "OTSL"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/40",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 597.00390625,
+          "t": 766.6649169921875,
+          "r": 650.10546875,
+          "b": 781.2017211914062,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.965",
+    "text": "0.965"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/41",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 675.6488647460938,
+          "t": 766.6967163085938,
+          "r": 729.83935546875,
+          "b": 781.1698608398438,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.934",
+    "text": "0.934"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/42",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 753.4390869140625,
+          "t": 766.6319580078125,
+          "r": 805.4476318359375,
+          "b": 781.234619140625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.955",
+    "text": "0.955"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/43",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 823.3834228515625,
+          "t": 766.4889526367188,
+          "r": 870.9721069335938,
+          "b": 781.3776245117188,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.88",
+    "text": "0.88"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/44",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 910.666259765625,
+          "t": 765.1889038085938,
+          "r": 959.001708984375,
+          "b": 781.6860961914062,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "2.73",
+    "text": "2.73"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/45",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 507.47271728515625,
+          "t": 793.9559936523438,
+          "r": 570.30078125,
+          "b": 806.4647216796875,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "HTML.",
+    "text": "HTML."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/46",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 598.485107421875,
+          "t": 793.6842651367188,
+          "r": 649.6203002929688,
+          "b": 806.7364501953125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.969",
+    "text": "0.969"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/47",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 676.1804809570312,
+          "t": 793.6842651367188,
+          "r": 727.3156127929688,
+          "b": 806.7364501953125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.927",
+    "text": "0.927"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/48",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 753.4390869140625,
+          "t": 793.40478515625,
+          "r": 805.4476318359375,
+          "b": 808.0074462890625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.955",
+    "text": "0.955"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/49",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 821.125,
+          "t": 793.437744140625,
+          "r": 874.2265625,
+          "b": 807.9745483398438,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.857",
+    "text": "0.857"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/50",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 912.9655151367188,
+          "t": 791.783447265625,
+          "r": 956.7024536132812,
+          "b": 808.6372680664062,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "5.39",
+    "text": "5.39"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/51",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 433.34625244140625,
+          "t": 827.6799926757812,
+          "r": 450.18890380859375,
+          "b": 852.0675659179688,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "4",
+    "text": "4"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/52",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 510.1695251464844,
+          "t": 821.32373046875,
+          "r": 567.6039428710938,
+          "b": 835.617431640625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "OTSL",
+    "text": "OTSL"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/53",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 598.0484619140625,
+          "t": 821.169189453125,
+          "r": 650.0570068359375,
+          "b": 835.7719116210938,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.938",
+    "text": "0.938"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/54",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 676.7398681640625,
+          "t": 821.169189453125,
+          "r": 728.7484741210938,
+          "b": 835.7719116210938,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.904",
+    "text": "0.904"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/55",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 753.48974609375,
+          "t": 821.13525390625,
+          "r": 804.40087890625,
+          "b": 835.8058471679688,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.927",
+    "text": "0.927"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/56",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 817.9232788085938,
+          "t": 821.351806640625,
+          "r": 876.4322509765625,
+          "b": 835.5892944335938,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.853",
+    "text": "0.853"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/57",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 912.0971069335938,
+          "t": 820.9873657226562,
+          "r": 958.5669555664062,
+          "b": 835.9537963867188,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "1.97",
+    "text": "1.97"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/58",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 507.47271728515625,
+          "t": 848.4931640625,
+          "r": 570.30078125,
+          "b": 861.001953125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "HTML.",
+    "text": "HTML."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/59",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 598.0484619140625,
+          "t": 847.9420776367188,
+          "r": 650.0570068359375,
+          "b": 862.5447387695312,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.952",
+    "text": "0.952"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/60",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 677.2194213867188,
+          "t": 849.1829833984375,
+          "r": 727.2727661132812,
+          "b": 862.29541015625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.909",
+    "text": "0.909"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/61",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 750.6665649414062,
+          "t": 849.373291015625,
+          "r": 808.2201538085938,
+          "b": 862.1051025390625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.938",
+    "text": "0.938"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/62",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 821.125,
+          "t": 847.9749755859375,
+          "r": 874.2265625,
+          "b": 862.5117797851562,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.843",
+    "text": "0.843"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/63",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 913.2971801757812,
+          "t": 847.6359252929688,
+          "r": 956.370849609375,
+          "b": 862.8508911132812,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "3.77",
+    "text": "3.77"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/64",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 334.3735046386719,
+          "t": 883.6437377929688,
+          "r": 347.9507141113281,
+          "b": 906.1699829101562,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "2",
+    "text": "2"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/65",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 433.2563171386719,
+          "t": 883.6276245117188,
+          "r": 450.27880859375,
+          "b": 905.194580078125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "4",
+    "text": "4"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/66",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 510.1695251464844,
+          "t": 875.8609619140625,
+          "r": 567.6039428710938,
+          "b": 890.1546630859375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "OTSL",
+    "text": "OTSL"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/67",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 597.6397705078125,
+          "t": 875.413330078125,
+          "r": 650.4656372070312,
+          "b": 891.5938720703125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.923",
+    "text": "0.923"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/68",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 677.2194213867188,
+          "t": 876.9474487304688,
+          "r": 727.2727661132812,
+          "b": 890.059814453125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.897",
+    "text": "0.897"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/69",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 751.9779052734375,
+          "t": 875.4500122070312,
+          "r": 805.9127197265625,
+          "b": 891.5571899414062,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.915",
+    "text": "0.915"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/70",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 817.9232788085938,
+          "t": 876.8806762695312,
+          "r": 876.4322509765625,
+          "b": 891.1181640625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.859",
+    "text": "0.859"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/71",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 912.2294311523438,
+          "t": 876.4346313476562,
+          "r": 956.4424438476562,
+          "b": 891.5641479492188,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "1.91",
+    "text": "1.91"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/72",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 507.47271728515625,
+          "t": 904.0220336914062,
+          "r": 570.30078125,
+          "b": 916.5308227539062,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "HTML",
+    "text": "HTML"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/73",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 598.0484619140625,
+          "t": 903.4708862304688,
+          "r": 650.0570068359375,
+          "b": 918.0735473632812,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.945",
+    "text": "0.945"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/74",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 676.8436279296875,
+          "t": 903.4017944335938,
+          "r": 726.6524658203125,
+          "b": 918.1427001953125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.901",
+    "text": "0.901"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/75",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 750.2689819335938,
+          "t": 903.5963745117188,
+          "r": 806.6256103515625,
+          "b": 917.9480590820312,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.931",
+    "text": "0.931"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/76",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 821.125,
+          "t": 903.5038452148438,
+          "r": 874.2265625,
+          "b": 918.0406494140625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.834",
+    "text": "0.834"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/77",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 913.3726196289062,
+          "t": 903.1204833984375,
+          "r": 955.2991943359375,
+          "b": 918.4240112304688,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "3.81",
+    "text": "3.81"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/78",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 334.97393798828125,
+          "t": 939.2333984375,
+          "r": 350.3385314941406,
+          "b": 960.646484375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "4",
+    "text": "4"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/79",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 433.9828796386719,
+          "t": 939.172607421875,
+          "r": 447.5600891113281,
+          "b": 961.6988525390625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "2",
+    "text": "2"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/80",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 510.13031005859375,
+          "t": 930.4263305664062,
+          "r": 568.6392822265625,
+          "b": 944.663818359375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "OTSL",
+    "text": "OTSL"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/81",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 597.00390625,
+          "t": 930.2766723632812,
+          "r": 650.10546875,
+          "b": 944.8135375976562,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.952",
+    "text": "0.952"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/82",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 680.2112426757812,
+          "t": 929.9375610351562,
+          "r": 723.2848510742188,
+          "b": 945.1526489257812,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.92",
+    "text": "0.92"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/83",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 750.6665649414062,
+          "t": 931.6749267578125,
+          "r": 808.2201538085938,
+          "b": 944.40673828125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.942",
+    "text": "0.942"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/84",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 817.9232788085938,
+          "t": 930.4263305664062,
+          "r": 876.4322509765625,
+          "b": 944.663818359375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.857",
+    "text": "0.857"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/85",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 911.0396728515625,
+          "t": 930.1007080078125,
+          "r": 958.6282958984375,
+          "b": 944.9894409179688,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "1.22",
+    "text": "1.22"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/86",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 507.44647216796875,
+          "t": 957.5880126953125,
+          "r": 571.3230590820312,
+          "b": 970.0562133789062,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "HTML.",
+    "text": "HTML."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/87",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 598.0484619140625,
+          "t": 957.0166015625,
+          "r": 650.0570068359375,
+          "b": 971.6192626953125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.944",
+    "text": "0.944"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/88",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 675.6953125,
+          "t": 957.049560546875,
+          "r": 728.796875,
+          "b": 971.5863037109375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.903",
+    "text": "0.903"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/89",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 753.48974609375,
+          "t": 956.9825439453125,
+          "r": 804.40087890625,
+          "b": 971.6532592773438,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.931",
+    "text": "0.931"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/90",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 821.125,
+          "t": 957.049560546875,
+          "r": 874.2265625,
+          "b": 971.5863037109375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "0.824",
+    "text": "0.824"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/91",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 926.32275390625,
+          "t": 954.0301513671875,
+          "r": 943.34521484375,
+          "b": 975.5972290039062,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "2",
+    "text": "2"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/92",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 276.21539306640625,
+          "t": 1061.6988525390625,
+          "r": 553.5307006835938,
+          "b": 1072.1954345703125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "5.2 . .)uantitative R esults",
+    "text": "5.2 . .)uantitative R esults"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/93",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 278.24395751953125,
+          "t": 1095.5703125,
+          "r": 1003.728759765625,
+          "b": 1106.743408203125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "We pickedthe modelparameterconfiguiration that produced the best prediction",
+    "text": "We pickedthe modelparameterconfiguiration that produced the best prediction"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/94",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 276.4767150878906,
+          "t": 1121.326171875,
+          "r": 1002.507568359375,
+          "b": 1133.5416259765625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "qualitv(enc=6.dec=6. heads=8） with PubTabNet alone.then independently",
+    "text": "qualitv(enc=6.dec=6. heads=8） with PubTabNet alone.then independently"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/95",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.0249328613281,
+          "t": 1146.16455078125,
+          "r": 1003.9515380859375,
+          "b": 1156.2994384765625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "trained and evaluated it on three publicly available data sets: PublabNet 395k",
+    "text": "trained and evaluated it on three publicly available data sets: PublabNet 395k"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/96",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 276.25177001953125,
+          "t": 1170.9307861328125,
+          "r": 1001.7365112304688,
+          "b": 1182.1041259765625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Samples). FinTa.bNet (113k samples）and Pub'Tables-1M (about 1M sam ples).",
+    "text": "Samples). FinTa.bNet (113k samples）and Pub'Tables-1M (about 1M sam ples)."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/97",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 275.4797058105469,
+          "t": 1194.7044677734375,
+          "r": 1005.496826171875,
+          "b": 1206.918212890625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Performanceresultsarepresentedin Table.2lItisclearlyeyidentthatthe model",
+    "text": "Performanceresultsarepresentedin Table.2lItisclearlyeyidentthatthe model"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/98",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 276.2510070800781,
+          "t": 1220.5108642578125,
+          "r": 1005.7216796875,
+          "b": 1231.6826171875,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "trained on O'T'Sl outperforms HTM l acrossthe board.keeping high'T'E Dsand",
+    "text": "trained on O'T'Sl outperforms HTM l acrossthe board.keeping high'T'E Dsand"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/99",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.0247497558594,
+          "t": 1246.31494140625,
+          "r": 1004.947998046875,
+          "b": 1256.4495849609375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "m A P scores even on difh cilt hnanclal tables (Fin'IabNet） that contain sparse",
+    "text": "m A P scores even on difh cilt hnanclal tables (Fin'IabNet） that contain sparse"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/100",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 276.78070068359375,
+          "t": 1269.588623046875,
+          "r": 432.43804931640625,
+          "b": 1281.763427734375,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "and largetables.",
+    "text": "and largetables."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/101",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 308.1326599121094,
+          "t": 1294.873291015625,
+          "r": 1003.722900390625,
+          "b": 1306.05810546875,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Additionally.the results show that OT'Sl, has an adyantage over H' Ml,",
+    "text": "Additionally.the results show that OT'Sl, has an adyantage over H' Ml,"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/102",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.24786376953125,
+          "t": 1320.6602783203125,
+          "r": 1002.7326049804688,
+          "b": 1331.8336181640625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "when applied on a bigger data setlike PubTa.bles-TM and achievessignificantly",
+    "text": "when applied on a bigger data setlike PubTa.bles-TM and achievessignificantly"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/103",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.2474670410156,
+          "t": 1346.4420166015625,
+          "r": 1004.7252197265625,
+          "b": 1357.614501953125,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "improved scores.Finallv. Q'I'SL achievesfasterinference due to fewer decoding",
+    "text": "improved scores.Finallv. Q'I'SL achievesfasterinference due to fewer decoding"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/104",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 277.0563659667969,
+          "t": 1371.2237548828125,
+          "r": 845.5413818359375,
+          "b": 1381.4205322265625,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "steps which 1s a resuilt ofthe reduced seouence representation.",
+    "text": "steps which 1s a resuilt ofthe reduced seouence representation."
+  }
+]

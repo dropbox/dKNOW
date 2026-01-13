@@ -1,0 +1,82 @@
+[
+  {
+    "path": "test_files_wikimedia/jpg/emotion-detection/01_1-ORRIA_1-TIRA_2.jpg",
+    "size": 2973359,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/1-ORRIA_1-TIRA_2.jpg",
+    "title": "File:1-ORRIA 1-TIRA 2.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/emotion-detection/02_Art_Babies_by_XVALA_Los_Angles_California_street_art_2011.jpg",
+    "size": 159102,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Art_Babies_by_XVALA_Los_Angles_California_street_art_2011.jpg",
+    "title": "File:Art Babies by XVALA Los Angles California street art 2011.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/emotion-detection/03_Baby_in_Crib_A'Glow.jpg",
+    "size": 68225,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Baby_in_Crib_A%27Glow.jpg",
+    "title": "File:Baby in Crib A'Glow.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/emotion-detection/04_Baby_spiegeltest_2.jpg",
+    "size": 96085,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Baby_spiegeltest_2.jpg",
+    "title": "File:Baby spiegeltest 2.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/emotion-detection/05_Baby_wearing_a_babygrow_with_an_Eskimo_pattern_(1472393).jpg",
+    "size": 316486,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Baby_wearing_a_babygrow_with_an_Eskimo_pattern_%281472393%29.jpg",
+    "title": "File:Baby wearing a babygrow with an Eskimo pattern (1472393).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/emotion-detection/06_Baby_wearing_a_babygrow_with_an_Eskimo_pattern_(1472394).jpg",
+    "size": 270157,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Baby_wearing_a_babygrow_with_an_Eskimo_pattern_%281472394%29.jpg",
+    "title": "File:Baby wearing a babygrow with an Eskimo pattern (1472394).jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/emotion-detection/07_Babybuch_startbild.jpg",
+    "size": 11484,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Babybuch_startbild.jpg",
+    "title": "File:Babybuch startbild.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/emotion-detection/08_BB-Fliegergriff1.jpg",
+    "size": 55140,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/BB-Fliegergriff1.jpg",
+    "title": "File:BB-Fliegergriff1.jpg",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/emotion-detection/09_BB-TragenBequem.jpg",
+    "size": 47348,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/BB-TragenBequem.JPG",
+    "title": "File:BB-TragenBequem.JPG",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  },
+  {
+    "path": "test_files_wikimedia/jpg/emotion-detection/10_BB-Tragesack.jpg",
+    "size": 56448,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/BB-Tragesack.JPG",
+    "title": "File:BB-Tragesack.JPG",
+    "mime": "image/jpeg",
+    "format": "jpg"
+  }
+]

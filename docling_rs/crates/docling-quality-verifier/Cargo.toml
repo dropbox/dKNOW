@@ -1,0 +1,40 @@
+[package]
+name = "docling-quality-verifier"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "LLM-based quality verification for docling parser outputs"
+
+[dependencies]
+# Core
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+
+# Async runtime
+tokio = { workspace = true, features = ["full"] }
+
+# HTTP client for OpenAI API
+reqwest = { version = "0.12", features = ["json"] }
+
+# Base64 encoding for vision API
+base64 = "0.22"
+
+# Temp files for PDF conversion
+tempfile = "3.8"
+
+# Docling core types
+docling-core = { path = "../docling-core", version = "2.58.0" }
+
+# Markdown to HTML conversion
+pulldown-cmark = "0.12"
+
+[dev-dependencies]
+# Testing
+tokio-test = "0.4"
+serial_test = "3.0"
+
+# Check for external tools in visual tests
+which = "6.0"

@@ -1,0 +1,37 @@
+{
+  "corpus": "/Users/ayates/eval/multilingual/",
+  "description": "Japanese corporate reports (text)",
+  "include_extensions": ["txt"],
+  "queries": [
+    {
+      "query": "野村ホールディングス 証券 金融持株会社",
+      "relevant": ["nomura_holdings.txt"],
+      "description": "Nomura Holdings securities report"
+    },
+    {
+      "query": "JANOME ミシン 縫製 刺繍",
+      "relevant": ["janome_corporation.txt"],
+      "description": "JANOME sewing machine business"
+    },
+    {
+      "query": "Socionext 半導体 SoC 車載",
+      "relevant": ["socionext_semiconductor.txt"],
+      "description": "Socionext semiconductor business"
+    },
+    {
+      "query": "投資信託 年金基金 資産運用",
+      "relevant": ["nomura_holdings.txt"],
+      "description": "Asset management services"
+    },
+    {
+      "query": "産業用ロボット 電子部品 組立",
+      "relevant": ["janome_corporation.txt"],
+      "description": "Industrial robots"
+    },
+    {
+      "query": "自動運転 ADAS 画像処理",
+      "relevant": ["socionext_semiconductor.txt"],
+      "description": "Autonomous driving technology"
+    }
+  ]
+}

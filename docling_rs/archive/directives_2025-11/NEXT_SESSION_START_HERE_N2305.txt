@@ -1,0 +1,201 @@
+# Next Session Start (N=2305)
+
+## Session N=2305 Summary
+
+**Completed:**
+- ✅ Fixed VCF parser (85% → 95%, now passing!)
+  - Removed unnecessary "vCard Format: BEGIN:VCARD..." clutter line
+  - Integrated version into header: "# John Doe (vCard v3.0)"
+  - All 19 VCF unit tests pass
+
+**Quality Achievement:**
+- VCF: 85% → 90% → 95% ✅ (two iterations of improvements)
+- Score breakdown at 95%:
+  - Completeness: 100/100
+  - Accuracy: 100/100
+  - Structure: 100/100
+  - Formatting: 100/100
+  - Metadata: 80/100 (minor false positive about version missing)
+
+**Key Insights:**
+
+### LLM Verification Protocol Works
+Successfully applied protocol from N=2302-2303:
+1. Run LLM test → Get specific feedback
+2. Verify complaints in actual code/output
+3. Fix real bugs only
+4. Re-test to confirm improvement
+
+VCF had TWO real bugs that LLM correctly identified:
+1. "vCard Format: BEGIN:VCARD..." line was unnecessary clutter
+2. Version as separate line disrupted structure
+
+### Incremental Improvements
+- First fix (remove clutter): 85% → 90% (+5 points)
+- Second fix (integrate version): 90% → 95% (+5 points)
+- Total improvement: +10 points in one session
+
+---
+
+## Current Status
+
+**Passing formats (≥95%):** 22/38 (58%) - VCF added to passing list
+
+**Progress:**
+- N=2302: FB2 (88% → 92-93%)
+- N=2303: TEX (83%, two bugs fixed despite score unchanged)
+- N=2305: VCF (85% → 95%) ✅
+
+**Formats still below 95%:**
+
+### High Priority (7-12 points needed)
+1. **DXF: 85%** (need +10) - CAD format
+   - Tested in N=2305, score same as old data
+   - LLM complaints: Missing header/dimension variables (90% completeness), poor categorization (80% structure)
+   - **Possible false positive**: May be expecting different format/categorization
+   - **Action**: Verify if variables are truly missing by comparing input vs output
+
+2. **MOBI: 87%** (need +8) - eBook format
+   - Tested in N=2305
+   - LLM complaints:
+     - Date discrepancy: "Published: June 2" vs "Release date: June 1" (90% accuracy)
+     - ToC lacks hierarchical organization (85% structure)
+     - ToC links not markdown formatted (90% formatting)
+   - **False positive on dates**: One is metadata, one is Gutenberg release date (both correct!)
+   - **Action**: Fix ToC structure and link formatting
+
+3. **FB2: 92-93%** (need +2-3) - eBook format (improved in N=2302)
+   - Variance confirmed: 92% → 93% → 92% in successive runs
+   - Likely at practical ceiling given LLM variance
+
+4. **OBJ: 88%** (need +7) - 3D model format
+
+5. **GLTF: 88%** (need +7) - 3D model JSON format
+
+### Medium Priority (2-5 points, diminishing returns, variance ceiling)
+- ODP: 90% (likely at ceiling per N=2301)
+- ODT: 90%
+- ODS: 92%
+- JATS: 92%
+- EPUB: 92%
+- GIF: 92%
+- TAR: 92%
+- KML: 91%
+- SVG: 93%
+- KMZ: 93%
+
+---
+
+## Recommended Next Steps
+
+### Option A: Fix MOBI (87% → 95%)
+
+**Why MOBI:**
+- Need only +8 points
+- eBook format (similar domain to FB2, EPUB which we understand)
+- Two clear actionable items:
+  1. Fix ToC structure (make it hierarchical)
+  2. Format ToC links as markdown links
+- Date complaint is false positive (skip it)
+
+**Estimated time:** 1-2 hours
+
+**Action:**
+1. Find MOBI ToC generation code
+2. Make ToC hierarchical (use proper heading levels or nested lists)
+3. Convert ToC entries to markdown links: `[Chapter I](#chapter-i)`
+4. Re-test
+
+### Option B: Verify and Fix DXF (85% → 95%)
+
+**Why DXF:**
+- Same starting score as VCF was (85%)
+- Need +10 points (similar to VCF's +10)
+- CAD format with structured data
+
+**Risk:**
+- LLM complaint may be false positive (expects different categorization)
+- More complex format than VCF
+- Need to verify if variables are truly missing first
+
+**Action (Verification first!):**
+1. Compare input DXF header variables vs output markdown
+2. Count: How many variables in input? How many in output?
+3. If truly missing → Fix parser
+4. If all present but poorly organized → Improve categorization
+5. If LLM is just being pedantic → Dismiss and move to next format
+
+**Estimated time:** 2-4 hours (depending on verification outcome)
+
+### Option C: Batch Test Multiple Formats
+
+Run LLM tests on all formats <90% to get fresh baseline after changes:
+- DXF (85%)
+- MOBI (87%)
+- OBJ (88%)
+- GLTF (88%)
+- FB2 (verify still 92-93%)
+- TEX (verify still 83%)
+
+**Purpose:** Understand current landscape, prioritize based on actionable feedback
+
+**Estimated time:** 1-2 hours (if run in parallel)
+
+---
+
+## Lessons from N=2305
+
+### What Worked
+
+1. **Verify LLM Complaints First:**
+   - VCF: Both complaints were real bugs
+   - Saves time vs blindly trying to improve scores
+
+2. **Simple Fixes Can Have Big Impact:**
+   - Removing one clutter line: +5 points
+   - Integrating version into header: +5 points
+   - Total: +10 points in ~1 hour of work
+
+3. **Incremental Testing:**
+   - Test after each fix to see progress
+   - VCF took two iterations: 85% → 90% → 95%
+
+### What to Watch For
+
+1. **False Positives Are Common:**
+   - MOBI date complaint is false positive (both dates are correct, just different things)
+   - Don't waste time "fixing" correct behavior
+
+2. **Variance is Real:**
+   - FB2 bounces 92% → 93% → 92%
+   - DXF: 83% (old data) vs 85% (N=2305 test) - could be variance
+   - Scores ±2-3 points are normal fluctuation
+
+3. **90-93% May Be Ceiling:**
+   - Multiple formats stuck in this range
+   - Consider focusing on <90% formats for higher ROI
+
+---
+
+## Files Modified
+
+- crates/docling-backend/src/email.rs:428-437 (integrate version into header)
+- crates/docling-backend/src/email.rs:465-476 (remove format marker - deleted)
+- crates/docling-backend/src/email.rs:1895-1899 (update test expectations)
+
+---
+
+## Recommendation for N=2306
+
+**Start with MOBI** (87% → 95%):
+1. Focus on ToC structure and link formatting (skip date issue)
+2. Should be quick win (1-2 hours)
+3. eBook format similar to FB2 which we've improved
+
+If MOBI is quick, move to DXF (but verify complaints first!).
+
+**Avoid:**
+- Formats at 90-93% (likely at variance ceiling)
+- Chasing false positives without verification
+- Over-engineering solutions
+

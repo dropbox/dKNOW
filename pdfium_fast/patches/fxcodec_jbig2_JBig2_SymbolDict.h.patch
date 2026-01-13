@@ -1,0 +1,24 @@
+--- pdfium/core/fxcodec/jbig2/JBig2_SymbolDict.h	2025-11-20 14:44:25
++++ core/fxcodec/jbig2/JBig2_SymbolDict.h	2025-12-03 16:39:54
+@@ -12,9 +12,8 @@
+ #include <vector>
+ 
+ #include "core/fxcodec/jbig2/JBig2_ArithDecoder.h"
++#include "core/fxcodec/jbig2/JBig2_Image.h"
+ 
+-class CJBig2_Image;
+-
+ class CJBig2_SymbolDict {
+  public:
+   CJBig2_SymbolDict();
+@@ -22,7 +21,9 @@
+ 
+   std::unique_ptr<CJBig2_SymbolDict> DeepCopy() const;
+ 
+-  void AddImage(std::unique_ptr<CJBig2_Image> image);
++  void AddImage(std::unique_ptr<CJBig2_Image> image) {
++    sdexsyms_.push_back(std::move(image));
++  }
+ 
+   size_t NumImages() const { return sdexsyms_.size(); }
+   CJBig2_Image* GetImage(size_t index) const { return sdexsyms_[index].get(); }

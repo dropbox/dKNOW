@@ -1,0 +1,179 @@
+{
+  "page_number": 6,
+  "elements": [
+    {
+      "label": "section_header",
+      "text": "1.1 Security fundamentals",
+      "bbox": {
+        "l": 0.0,
+        "t": 5.0,
+        "r": 30.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Before reviewing database security techniques, there are two fundamental steps in securing information assets that must be described:",
+      "bbox": {
+        "l": 0.0,
+        "t": 12.0,
+        "r": 100.0,
+        "b": 16.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "▶ First, and most important, is the definition of a company’s security policy. Without a security policy, there is no definition of what are acceptable practices for using, accessing, and storing information by who, what, when, where, and how. A security policy should minimally address three things: confidentiality, integrity, and availability.",
+      "bbox": {
+        "l": 0.0,
+        "t": 17.0,
+        "r": 100.0,
+        "b": 23.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The monitoring and assessment of adherence to the security policy determines whether your security strategy is working. Often, IBM security consultants are asked to perform security assessments for companies without regard to the security policy. Although these assessments can be useful for observing how the system is defined and how data is being accessed, they cannot determine the level of security without a security policy. Without a security policy, it really is not an assessment as much as it is a baseline for monitoring the changes in the security settings that are captured.",
+      "bbox": {
+        "l": 0.0,
+        "t": 24.0,
+        "r": 100.0,
+        "b": 32.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "A security policy is what defines whether the system and its settings are secure (or not).",
+      "bbox": {
+        "l": 0.0,
+        "t": 33.0,
+        "r": 100.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "▶ The second fundamental in securing data assets is the use of resource security. If implemented properly, resource security prevents data breaches from both internal and external intrusions. Resource security controls are closely tied to the part of the security policy that defines who should have access to what information resources. A hacker might be good enough to get through your company firewalls and sift his way through to your system, but if they do not have explicit access to your database, the hacker cannot compromise your information assets.",
+      "bbox": {
+        "l": 0.0,
+        "t": 36.0,
+        "r": 100.0,
+        "b": 44.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "With your eyes now open to the importance of securing information assets, the rest of this chapter reviews the methods that are available for securing database resources on IBM i.",
+      "bbox": {
+        "l": 0.0,
+        "t": 45.0,
+        "r": 100.0,
+        "b": 49.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "1.2 Current state of IBM i security",
+      "bbox": {
+        "l": 0.0,
+        "t": 51.0,
+        "r": 50.0,
+        "b": 56.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Because of the inherently secure nature of IBM i, many clients rely on the default system settings to protect their business data that is stored in DB2 for i. In most cases, this means no data protection because the default setting for the Create default public authority (QCRTAUT) system value is *CHANGE.",
+      "bbox": {
+        "l": 0.0,
+        "t": 57.0,
+        "r": 100.0,
+        "b": 62.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Even more disturbing is that many IBM i clients remain in this state, despite the news headlines and the significant costs that are involved with databases being compromised. This default security configuration makes it quite challenging to implement basic security policies. A tighter implementation is required if you really want to protect one of your company’s most valuable assets, which is the data.",
+      "bbox": {
+        "l": 0.0,
+        "t": 63.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Traditionally, IBM i applications have employed menu-based security to counteract this default configuration that gives all users access to the data. The theory is that data is protected by the menu options controlling what database operations that the user can perform. This approach is ineffective, even if the user profile is restricted from running interactive commands. The reason is that in today’s connected world there are a multitude of interfaces into the system, from web browsers to PC clients, that bypass application menus. If there are no object-level controls, users of these newer interfaces have an open door to your data.",
+      "bbox": {
+        "l": 0.0,
+        "t": 71.0,
+        "r": 100.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "2 Row and Column Access Control Support in IBM DB2 for i",
+      "bbox": {
+        "l": 0.0,
+        "t": 95.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

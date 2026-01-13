@@ -1,0 +1,115 @@
+# Docling Configuration File Example
+#
+# Place this file at:
+# - ~/.docling.toml (user-wide defaults)
+# - ./.docling.toml (project-specific defaults)
+#
+# Precedence order (highest to lowest):
+# 1. Command-line arguments (--format, --backend, etc.)
+# 2. Project config (./.docling.toml)
+# 3. User config (~/.docling.toml)
+# 4. Built-in defaults
+#
+# All settings are optional. Uncomment and modify as needed.
+
+# ==========================================
+# Convert Command Defaults
+# ==========================================
+[convert]
+
+# Default output format: "markdown", "json", or "yaml"
+# Default: "markdown"
+# format = "json"
+
+# Default backend: "rust", "python", or "auto"
+# Default: "auto" (uses Rust if format is supported, otherwise Python)
+# backend = "rust"
+
+# Compact JSON output (no pretty-printing)
+# Default: false
+# compact = true
+
+# Enable OCR for scanned documents (PDF only, requires Python backend)
+# Default: false
+# ocr = true
+
+# ==========================================
+# Batch Command Defaults
+# ==========================================
+[batch]
+
+# Default output format: "markdown", "json", or "yaml"
+# Default: "markdown"
+# format = "markdown"
+
+# Continue processing on errors (don't stop at first error)
+# Default: false
+# continue_on_error = true
+
+# Maximum file size in bytes (skip files larger than this)
+# Default: no limit
+# max_file_size = 10485760  # 10 MB
+
+# Enable OCR for scanned documents (PDF only, requires Python backend)
+# Default: false
+# ocr = false
+
+# Compact JSON output (no pretty-printing)
+# Default: false
+# compact = false
+
+# ==========================================
+# Benchmark Command Defaults
+# ==========================================
+[benchmark]
+
+# Number of iterations to run for each file
+# Default: 3
+# iterations = 5
+
+# Warmup iterations (results discarded)
+# Default: 1
+# warmup = 2
+
+# Output format: "text", "json", "csv", or "markdown"
+# Default: "text"
+# format = "json"
+
+# Enable OCR for scanned documents (PDF only)
+# Default: false
+# ocr = false
+
+# ==========================================
+# Example Configurations
+# ==========================================
+
+# Example 1: JSON-focused project
+# [convert]
+# format = "json"
+# compact = true
+# backend = "rust"
+
+# Example 2: OCR-heavy document processing
+# [convert]
+# ocr = true
+# backend = "python"
+#
+# [batch]
+# ocr = true
+# continue_on_error = true
+# max_file_size = 52428800  # 50 MB
+
+# Example 3: Performance benchmarking setup
+# [benchmark]
+# iterations = 10
+# warmup = 3
+# format = "csv"
+
+# Example 4: Markdown documentation generation
+# [convert]
+# format = "markdown"
+# backend = "auto"
+#
+# [batch]
+# format = "markdown"
+# continue_on_error = true

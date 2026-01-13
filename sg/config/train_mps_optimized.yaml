@@ -1,0 +1,76 @@
+# MPS-optimized training config
+# Based on Worker #2 profiling: disabling gradient checkpointing gives 1.6x speedup on MPS
+# with NO increase in memory usage (actually uses ~10-15% less memory)
+#
+# Key findings from benchmark:
+# - gradient_checkpointing=OFF: 9.9-11.1 samples/s, 496-526 MB
+# - gradient_checkpointing=ON:  6.1-6.6 samples/s, 572-632 MB
+#
+# This config achieves ~1.6x speedup vs default settings.
+
+data:
+  train: "data/training_improved.jsonl"
+  validation: "data/training_improved.val.jsonl"
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-mps-optimized"
+
+training:
+  method: "lora"
+
+  # LoRA config (same as standard)
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  target_modules:
+    - "q"
+    - "v"
+    - "k"
+    - "o"
+    - "wi_0"
+    - "wi_1"
+    - "wo"
+
+  # Training hyperparameters
+  # B=8 gives best throughput (11.1 samples/s), but B=12 has same samples/s with larger effective batch
+  batch_size: 12
+  gradient_accumulation_steps: 4  # Effective batch = 48
+  epochs: 3
+  learning_rate: 2.0e-5
+  warmup_steps: 500
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+
+  # Contrastive learning
+  temperature: 0.07
+  max_hard_negatives: 3
+
+  # Margin loss
+  use_margin_loss: true
+  margin: 0.2
+  margin_weight: 0.1
+
+  # Sequence length
+  max_length: 512
+
+  # MPS OPTIMIZATION: Disable gradient checkpointing
+  # On MPS, this gives 1.56-1.68x speedup with LESS memory usage
+  # (Opposite of CUDA where checkpointing saves VRAM)
+  gradient_checkpointing: false
+
+  # Other optimizations
+  language_aware_batching: true
+  cache_tokenized: true
+  use_amp: true  # Mixed precision (FP16 on MPS)
+
+  # torch.compile disabled on Python 3.14 (not supported yet)
+  use_compile: false
+
+  # Validation and early stopping
+  eval_every: 300
+  early_stopping_patience: 5
+  log_every: 10
+  save_every: 1000
+
+  seed: 42

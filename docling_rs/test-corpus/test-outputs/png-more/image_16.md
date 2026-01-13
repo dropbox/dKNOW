@@ -1,0 +1,3 @@
+```
+export function validateContactsEndpoints() { 2 references type PrepAndSendContacts = Awaited<ReturnType< ClientI 'prepAndSend']['getAllContacts'] P>; 4 references type AccountApiContacts = Awaited<ReturnType< Client['accountApi']l'accountAllContactsGet'] > ; Type "{ foo: string; }' is missing the following properties from type 1/ 'AccountAllContactsResponse': id, name, value, type, numUsests (2344) // @ts-expect-error isCompatible<AccountApiContacts, [{ foo: string }1>( [l as AccountApiContacts, foo: 'fool J1, 1: isCompatible<AccountApiContacts, PrepAndSendContacts> ( [1 as AccountApiContacts, [I as PrepAndSendContacts,
+```

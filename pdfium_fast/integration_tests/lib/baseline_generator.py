@@ -1,0 +1,513 @@
+"""
+Baseline Generator - Generate Expected Outputs with Upstream PDFium
+
+Generates baseline outputs for all test PDFs using the upstream (unmodified) PDFium binary:
+- Text extraction (.txt)
+- JSONL structured output (.jsonl)
+- Image rendering (.png per page)
+
+All baselines are generated in baselines/upstream/ directory.
+"""
+
+import subprocess
+import tempfile
+import shutil
+import hashlib
+import json
+from pathlib import Path
+from typing import Optional, Dict, List
+import os
+
+
+class BaselineGenerator:
+    """Generates baseline outputs using upstream PDFium."""
+
+    def __init__(self, integration_tests_root: Path, upstream_binary: Optional[Path] = None):
+        self.root = Path(integration_tests_root)
+        self.pdfium_root = self.root.parent
+
+        # Find upstream binary
+        if upstream_binary:
+            self.upstream_bin = Path(upstream_binary)
+        else:
+            self.upstream_bin = self._find_upstream_binary()
+
+        if not self.upstream_bin or not self.upstream_bin.exists():
+            raise FileNotFoundError(
+                f"Upstream pdfium_test binary not found.\n"
+                f"Searched: {self.upstream_bin}\n"
+                f"Build it with: cd out/Optimized-Shared && ninja pdfium_test"
+            )
+
+        print(f"Using upstream binary: {self.upstream_bin}")
+
+        # Baseline output directories
+        self.baselines_dir = self.root / 'baselines' / 'upstream'
+        self.text_dir = self.baselines_dir / 'text'
+        self.jsonl_dir = self.baselines_dir / 'jsonl'
+        self.images_dir = self.baselines_dir / 'images'
+
+        # Create directories
+        self.text_dir.mkdir(parents=True, exist_ok=True)
+        self.jsonl_dir.mkdir(parents=True, exist_ok=True)
+        self.images_dir.mkdir(parents=True, exist_ok=True)
+
+    def _find_upstream_binary(self) -> Optional[Path]:
+        """Find upstream pdfium_test binary."""
+        candidates = [
+            self.pdfium_root / 'out' / 'Optimized-Shared' / 'pdfium_test',
+            self.pdfium_root / 'out' / 'Release' / 'pdfium_test',
+            Path.home() / 'pdfium-official' / 'out' / 'Release' / 'pdfium_test'
+        ]
+
+        for candidate in candidates:
+            if candidate.exists():
+                return candidate
+
+        return None
+
+    def compute_md5(self, filepath: Path) -> str:
+        """Compute MD5 hash of file."""
+        md5_hash = hashlib.md5()
+        with open(filepath, 'rb') as f:
+            for chunk in iter(lambda: f.read(8192), b""):
+                md5_hash.update(chunk)
+        return md5_hash.hexdigest()
+
+    def get_page_count(self, pdf_path: Path) -> int:
+        """Get page count from PDF."""
+        try:
+            result = subprocess.run(
+                [str(self.upstream_bin), str(pdf_path)],
+                capture_output=True,
+                text=True,
+                timeout=30
+            )
+
+            # Look for "Document has X pages"
+            for line in result.stdout.split('\n'):
+                if 'has' in line and 'pages' in line.lower():
+                    parts = line.split()
+                    for i, part in enumerate(parts):
+                        if 'page' in part.lower() and i > 0:
+                            try:
+                                return int(parts[i-1])
+                            except ValueError:
+                                pass
+        except Exception as e:
+            print(f"  Warning: Could not get page count: {e}")
+
+        return 0
+
+    def generate_text_baseline(self, pdf_path: Path) -> Dict:
+        """
+        Generate text baseline using upstream PDFium.
+
+        Returns dict with statistics.
+        """
+        pdf_stem = pdf_path.stem
+        output_file = self.text_dir / f'{pdf_stem}.txt'
+
+        print(f"  Generating text: {pdf_path.name}")
+
+        # Create temp directory for extraction
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir)
+
+            # Copy PDF to temp dir
+            temp_pdf = temp_path / pdf_path.name
+            shutil.copy(pdf_path, temp_pdf)
+
+            # Run pdfium_test with --txt flag
+            try:
+                result = subprocess.run(
+                    [str(self.upstream_bin), '--txt', pdf_path.name],
+                    cwd=temp_path,
+                    capture_output=True,
+                    timeout=300,
+                    check=False
+                )
+
+                if result.returncode != 0:
+                    print(f"    ⚠ pdfium_test returned {result.returncode} (may be encrypted/corrupt)")
+                    # Create empty file as marker
+                    output_file.touch()
+                    return {'success': False, 'bytes': 0, 'md5': None}
+
+                # Concatenate all page text files
+                with open(output_file, 'wb') as out_f:
+                    # Find all .txt files generated by pdfium_test
+                    txt_files = sorted(temp_path.glob(f'{pdf_path.name}.*.txt'))
+                    for txt_file in txt_files:
+                        with open(txt_file, 'rb') as in_f:
+                            out_f.write(in_f.read())
+
+                # Compute MD5
+                if output_file.stat().st_size > 0:
+                    md5 = self.compute_md5(output_file)
+                    md5_file = self.text_dir / f'{pdf_stem}.txt.md5'
+                    md5_file.write_text(md5)
+
+                    print(f"    ✓ Text: {output_file.stat().st_size} bytes")
+                    print(f"    ✓ MD5: {md5}")
+
+                    return {
+                        'success': True,
+                        'bytes': output_file.stat().st_size,
+                        'md5': md5
+                    }
+                else:
+                    print(f"    ⚠ No text extracted (0 bytes)")
+                    return {'success': False, 'bytes': 0, 'md5': None}
+
+            except subprocess.TimeoutExpired:
+                print(f"    ✗ Timeout (>300s)")
+                output_file.touch()
+                return {'success': False, 'bytes': 0, 'md5': None, 'error': 'timeout'}
+
+            except Exception as e:
+                print(f"    ✗ Error: {e}")
+                output_file.touch()
+                return {'success': False, 'bytes': 0, 'md5': None, 'error': str(e)}
+
+    def generate_image_baseline(self, pdf_path: Path) -> Dict:
+        """
+        Generate image baseline using upstream PDFium.
+
+        Creates one PNG per page in baselines/upstream/images/<pdf_stem>/
+        Also creates a JSON metadata file with page hashes.
+
+        Returns dict with statistics.
+        """
+        pdf_stem = pdf_path.stem
+        images_output_dir = self.images_dir / pdf_stem
+        images_output_dir.mkdir(parents=True, exist_ok=True)
+
+        metadata_file = self.images_dir / f'{pdf_stem}.json'
+
+        print(f"  Generating images: {pdf_path.name}")
+
+        # Get page count first
+        page_count = self.get_page_count(pdf_path)
+        if page_count == 0:
+            print(f"    ⚠ Could not determine page count")
+            metadata_file.write_text('{}')
+            return {'success': False, 'pages': 0}
+
+        print(f"    Pages: {page_count}")
+
+        # Generate images using pdfium_test
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir)
+
+            # Copy PDF to temp dir
+            temp_pdf = temp_path / pdf_path.name
+            shutil.copy(pdf_path, temp_pdf)
+
+            try:
+                # Run pdfium_test with --png flag
+                # This generates <pdf>.pdf.<page>.png files
+                result = subprocess.run(
+                    [str(self.upstream_bin), '--png', pdf_path.name],
+                    cwd=temp_path,
+                    capture_output=True,
+                    timeout=600,
+                    check=False
+                )
+
+                if result.returncode != 0:
+                    print(f"    ⚠ pdfium_test returned {result.returncode}")
+                    metadata_file.write_text('{}')
+                    return {'success': False, 'pages': 0, 'error': 'pdfium_test_failed'}
+
+                # Find all generated PNG files
+                png_files = sorted(temp_path.glob(f'{pdf_path.name}.*.png'))
+
+                if not png_files:
+                    print(f"    ⚠ No images generated")
+                    metadata_file.write_text('{}')
+                    return {'success': False, 'pages': 0, 'error': 'no_images'}
+
+                # Move and hash each page image
+                metadata = {
+                    'pdf': pdf_path.name,
+                    'total_pages': len(png_files),
+                    'pages': []
+                }
+
+                for i, png_file in enumerate(png_files):
+                    # Standardized naming: <pdf_stem>_page_<NNNN>.png
+                    output_png = images_output_dir / f'{pdf_stem}_page_{i:04d}.png'
+
+                    # Copy to output location
+                    shutil.copy(png_file, output_png)
+
+                    # Compute MD5
+                    md5 = self.compute_md5(output_png)
+                    size = output_png.stat().st_size
+
+                    metadata['pages'].append({
+                        'page': i,
+                        'filename': output_png.name,
+                        'md5': md5,
+                        'size': size
+                    })
+
+                # Write metadata JSON
+                with open(metadata_file, 'w') as f:
+                    json.dump(metadata, f, indent=2)
+
+                print(f"    ✓ Images: {len(png_files)} pages")
+                print(f"    ✓ Metadata: {metadata_file.name}")
+
+                return {
+                    'success': True,
+                    'pages': len(png_files),
+                    'total_bytes': sum(p['size'] for p in metadata['pages'])
+                }
+
+            except subprocess.TimeoutExpired:
+                print(f"    ✗ Timeout (>600s)")
+                metadata_file.write_text('{}')
+                return {'success': False, 'pages': 0, 'error': 'timeout'}
+
+            except Exception as e:
+                print(f"    ✗ Error: {e}")
+                metadata_file.write_text('{}')
+                return {'success': False, 'pages': 0, 'error': str(e)}
+
+    def generate_jsonl_baseline(self, pdf_path: Path) -> Dict:
+        """
+        Generate JSONL baseline using extract_text_jsonl tool.
+
+        Extracts page 0 only to baseline directory.
+        """
+        import subprocess
+
+        pdf_stem = pdf_path.stem
+        output_file = self.jsonl_dir / f'{pdf_stem}.jsonl'
+
+        # Use extract_text_jsonl tool (page 0 only)
+        tool_path = Path(__file__).parent.parent.parent / 'rust' / 'target' / 'release' / 'examples' / 'extract_text_jsonl'
+        lib_path = Path(__file__).parent.parent.parent / 'out' / 'Optimized-Shared'
+
+        if not tool_path.exists():
+            output_file.touch()
+            return {'success': False, 'note': 'extract_text_jsonl binary not found'}
+
+        try:
+            env = os.environ.copy()
+            env['DYLD_LIBRARY_PATH'] = str(lib_path)
+
+            # Extract page 0 only
+            subprocess.run(
+                [str(tool_path), str(pdf_path), str(output_file), '0'],
+                env=env,
+                check=True,
+                capture_output=True,
+                text=True,
+                timeout=60
+            )
+
+            return {'success': True, 'pages': 1}
+        except subprocess.CalledProcessError as e:
+            output_file.touch()
+            return {'success': False, 'error': str(e)}
+        except subprocess.TimeoutExpired:
+            output_file.touch()
+            return {'success': False, 'error': 'Timeout after 60s'}
+
+    def generate_all_baselines(self, pdf_path: Path, text: bool = True,
+                              images: bool = True, jsonl: bool = False) -> Dict:
+        """
+        Generate all requested baselines for a PDF.
+
+        Args:
+            pdf_path: Path to PDF file
+            text: Generate text baseline
+            images: Generate image baselines
+            jsonl: Generate JSONL baseline
+
+        Returns dict with statistics.
+        """
+        print(f"\n{pdf_path.name}")
+
+        stats = {
+            'pdf': pdf_path.name,
+            'text': None,
+            'images': None,
+            'jsonl': None
+        }
+
+        if text:
+            stats['text'] = self.generate_text_baseline(pdf_path)
+
+        if images:
+            stats['images'] = self.generate_image_baseline(pdf_path)
+
+        if jsonl:
+            stats['jsonl'] = self.generate_jsonl_baseline(pdf_path)
+
+        return stats
+
+    def generate_from_list(self, pdf_list: List[Path], **kwargs) -> Dict:
+        """
+        Generate baselines for a list of PDFs.
+
+        Returns aggregate statistics.
+        """
+        total_stats = {
+            'total_pdfs': len(pdf_list),
+            'processed': 0,
+            'text_success': 0,
+            'text_failed': 0,
+            'images_success': 0,
+            'images_failed': 0
+        }
+
+        for pdf_path in pdf_list:
+            if not pdf_path.exists():
+                print(f"\n✗ PDF not found: {pdf_path}")
+                continue
+
+            stats = self.generate_all_baselines(pdf_path, **kwargs)
+            total_stats['processed'] += 1
+
+            if stats.get('text') and stats['text'].get('success'):
+                total_stats['text_success'] += 1
+            elif stats.get('text'):
+                total_stats['text_failed'] += 1
+
+            if stats.get('images') and stats['images'].get('success'):
+                total_stats['images_success'] += 1
+            elif stats.get('images'):
+                total_stats['images_failed'] += 1
+
+        return total_stats
+
+
+def main():
+    """CLI for baseline generation."""
+    import sys
+
+    integration_tests_root = Path(__file__).parent.parent
+    generator = BaselineGenerator(integration_tests_root)
+
+    if len(sys.argv) < 2:
+        print("Usage:")
+        print("  python baseline_generator.py <pdf_name>           # Generate for single PDF")
+        print("  python baseline_generator.py --master-list        # Generate for all PDFs in master list")
+        print("  python baseline_generator.py --text-only          # Text baselines only for master list")
+        print("  python baseline_generator.py --images-only        # Image baselines only for master list")
+        sys.exit(1)
+
+    command = sys.argv[1]
+
+    if command == '--master-list':
+        # Load PDFs from manifest
+        manifest_file = integration_tests_root / 'master_test_suite' / 'file_manifest.csv'
+        if not manifest_file.exists():
+            print(f"Error: Manifest not found: {manifest_file}")
+            print("Generate manifest with: python lib/manifest_generator.py generate-main")
+            sys.exit(1)
+
+        import csv
+        pdf_names = []
+        with open(manifest_file, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                pdf_names.append(row['pdf_name'])
+
+        print(f"Generating baselines for {len(pdf_names)} PDFs from master list...")
+        print("This will take 1-2 hours.\n")
+
+        # Find PDF paths
+        pdf_paths = []
+        for pdf_name in pdf_names:
+            for subdir in ['benchmark', 'edge_cases']:
+                pdf_path = integration_tests_root / 'pdfs' / subdir / pdf_name
+                if pdf_path.exists():
+                    pdf_paths.append(pdf_path)
+                    break
+
+        stats = generator.generate_from_list(pdf_paths, text=True, images=True, jsonl=False)
+
+        print("\n" + "=" * 60)
+        print("BASELINE GENERATION COMPLETE")
+        print("=" * 60)
+        print(f"Total PDFs: {stats['total_pdfs']}")
+        print(f"Processed: {stats['processed']}")
+        print(f"Text baselines: {stats['text_success']} success, {stats['text_failed']} failed")
+        print(f"Image baselines: {stats['images_success']} success, {stats['images_failed']} failed")
+
+    elif command == '--text-only':
+        # Load PDFs from manifest
+        manifest_file = integration_tests_root / 'master_test_suite' / 'file_manifest.csv'
+        if not manifest_file.exists():
+            print(f"Error: Manifest not found: {manifest_file}")
+            print("Generate manifest with: python lib/manifest_generator.py generate-main")
+            sys.exit(1)
+
+        import csv
+        pdf_names = []
+        with open(manifest_file, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                pdf_names.append(row['pdf_name'])
+
+        pdf_paths = []
+        for pdf_name in pdf_names:
+            for subdir in ['benchmark', 'edge_cases']:
+                pdf_path = integration_tests_root / 'pdfs' / subdir / pdf_name
+                if pdf_path.exists():
+                    pdf_paths.append(pdf_path)
+                    break
+
+        stats = generator.generate_from_list(pdf_paths, text=True, images=False, jsonl=False)
+        print(f"\nText baselines: {stats['text_success']} success, {stats['text_failed']} failed")
+
+    elif command == '--images-only':
+        # Load PDFs from manifest
+        manifest_file = integration_tests_root / 'master_test_suite' / 'file_manifest.csv'
+        if not manifest_file.exists():
+            print(f"Error: Manifest not found: {manifest_file}")
+            print("Generate manifest with: python lib/manifest_generator.py generate-main")
+            sys.exit(1)
+
+        import csv
+        pdf_names = []
+        with open(manifest_file, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                pdf_names.append(row['pdf_name'])
+
+        pdf_paths = []
+        for pdf_name in pdf_names:
+            for subdir in ['benchmark', 'edge_cases']:
+                pdf_path = integration_tests_root / 'pdfs' / subdir / pdf_name
+                if pdf_path.exists():
+                    pdf_paths.append(pdf_path)
+                    break
+
+        stats = generator.generate_from_list(pdf_paths, text=False, images=True, jsonl=False)
+        print(f"\nImage baselines: {stats['images_success']} success, {stats['images_failed']} failed")
+
+    else:
+        # Single PDF
+        pdf_name = command
+        for subdir in ['benchmark', 'edge_cases', '']:
+            if subdir:
+                pdf_path = integration_tests_root / 'pdfs' / subdir / pdf_name
+            else:
+                pdf_path = integration_tests_root / 'pdfs' / pdf_name
+
+            if pdf_path.exists():
+                generator.generate_all_baselines(pdf_path, text=True, images=True, jsonl=False)
+                break
+        else:
+            print(f"PDF not found: {pdf_name}")
+            sys.exit(1)
+
+
+if __name__ == '__main__':
+    main()

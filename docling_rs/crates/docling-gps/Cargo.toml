@@ -1,0 +1,23 @@
+[package]
+name = "docling-gps"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "GPS and geospatial data format parsers for docling-rs (GPX, KML)"
+keywords = ["gps", "gpx", "kml", "geospatial", "location"]
+categories = ["parsing", "science"]
+[dependencies]
+# Core dependencies
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+
+# GPS/geographic format parsing
+gpx = "0.9"
+kml = "0.12"
+zip.workspace = true
+
+[dev-dependencies]
+tempfile = "3.14"

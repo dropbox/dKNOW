@@ -1,0 +1,84 @@
+# Reference tools for validating Rust implementations
+# These call the exact same PDFium APIs as the Rust tools
+
+# C++ Bridge for Rust FFI - Shared library with simple C API
+# Handles form callbacks in C++ for 100% compatibility
+shared_library("pdfium_render_bridge") {
+  sources = [
+    "pdfium_render_bridge.cpp",
+  ]
+
+  deps = [
+    "//:pdfium_public_headers",
+  ]
+
+  configs += [ "//:pdfium_strict_config" ]
+
+  deps += [ "//:pdfium" ]
+}
+
+# C++ CLI tool for production use (fulfills CLAUDE.md requirement)
+# Supports three modes: bulk (single-threaded), fast (multi-process), debug (tracing)
+executable("pdfium_cli") {
+  testonly = true
+  sources = [
+    "pdfium_cli.cpp",
+  ]
+
+  deps = [
+    "//:pdfium_public_headers",
+    "//testing/image_diff:image_diff",
+    "//third_party/libjpeg_turbo:libjpeg",
+  ]
+
+  configs += [ "//:pdfium_strict_config" ]
+
+  deps += [ "//:pdfium" ]
+}
+
+executable("reference_text_extract") {
+  sources = [
+    "reference_text_extract.cpp",
+  ]
+
+  deps = [
+    "//:pdfium_public_headers",
+  ]
+
+  configs += [ "//:pdfium_strict_config" ]
+
+  deps += [ "//:pdfium" ]
+}
+
+executable("reference_jsonl_extract") {
+  sources = [
+    "reference_jsonl_extract.cpp",
+  ]
+
+  deps = [
+    "//:pdfium_public_headers",
+  ]
+
+  configs += [ "//:pdfium_strict_config" ]
+
+  deps += [ "//:pdfium" ]
+}
+
+# Threading viability test - N=2 (v1.4 Phase 1)
+# Tests if each thread can safely call FPDF_InitLibrary()
+# Decision gate: If crashes, abort threading work
+executable("test_per_thread_instances") {
+  testonly = true
+  sources = [
+    "test_per_thread_instances.cpp",
+  ]
+
+  deps = [
+    "//:pdfium_public_headers",
+    "//testing/image_diff:image_diff",
+  ]
+
+  configs += [ "//:pdfium_strict_config" ]
+
+  deps += [ "//:pdfium" ]
+}

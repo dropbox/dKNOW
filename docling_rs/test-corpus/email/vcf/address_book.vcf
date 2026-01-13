@@ -1,0 +1,52 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Alice Johnson
+N:Johnson;Alice;Marie;;
+EMAIL;TYPE=work:alice.johnson@startup.io
+TEL;TYPE=cell:+1-555-234-5678
+ORG:Startup Inc.
+TITLE:CEO
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:Bob Williams
+N:Williams;Bob;Robert;;
+EMAIL;TYPE=work:bob.williams@consulting.com
+EMAIL;TYPE=home:bob.personal@email.com
+TEL;TYPE=work:+1-555-345-6789
+ORG:Williams Consulting
+TITLE:Senior Consultant
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:Carol Davis
+N:Davis;Carol;Ann;;Dr.
+EMAIL;TYPE=work:carol.davis@university.edu
+TEL;TYPE=work:+1-555-456-7890
+ORG:State University
+TITLE:Professor of Computer Science
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:David Brown
+N:Brown;David;Lee;;
+EMAIL;TYPE=work:david.brown@megacorp.com
+TEL;TYPE=cell:+1-555-567-8901
+ORG:MegaCorp Industries
+TITLE:Product Manager
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+FN:Eve Martinez
+N:Martinez;Eve;Sofia;;
+EMAIL;TYPE=work:eve.martinez@agency.com
+EMAIL;TYPE=home:eve.m@personal.net
+TEL;TYPE=work:+1-555-678-9012
+TEL;TYPE=cell:+1-555-789-0123
+ORG:Creative Agency LLC
+TITLE:Creative Director
+END:VCARD

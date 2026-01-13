@@ -1,0 +1,73 @@
+Sever Selenium (are test server-seen orge-repo awsvip. ak
+
+Repository:
+
+forge-repo-ro@forge-repo.awsvip.dbxnw.net:repo/server.git (branches: master, server_release/*)
+
+Average Duration (Past Week):
+
+1h 03m 42s
+
+Commits master
+
+Release Tests
+
+*$
+
+Builds
+
+Name
+
+[Cloud Docs] Finish cleaning up cloud_docs_repair_copy_detection_pifs Kiev
+
+Add /search route that redirects to /search/personal and /search/work based o...
+
+Trigger server-selective and server-selenium commit bulds on server_release/ ...
+
+Add new route /lo/sem-comouter-backuo to waro confias
+
+Details
+
+Search
+
+//atlas/atlas_examples:live_release.sqfs
+
+X V
+
+Time
+
+Tests
+
+Targets Author
+
+1/1
+
+fshen
+
+1/1
+
+mike
+
+1/1
+
+mrwright
+
+1 / 1 librarian
+
+Commit
+
+668c7 caa 2
+
+0780b5e0 ₫ e c8064242 г 0
+
+b80d7f8c @
+
+Committed
+
+9:12 am
+
+8:38 am
+
+8:33 am
+
+8:09 am

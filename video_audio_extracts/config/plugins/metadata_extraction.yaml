@@ -1,0 +1,63 @@
+name: metadata_extraction
+version: 1.0.0
+description: "Extract media file metadata including format info, stream details, EXIF, and creation date"
+
+inputs:
+  # Video containers
+  - mp4
+  - mov
+  - avi
+  - mkv
+  - webm
+  - flv
+  - m4v
+  - 3gp
+  - wmv
+  - ogv
+  - mts      # AVCHD camcorder
+  - m2ts     # Blu-ray AVCHD
+  - mxf      # Broadcast media exchange
+  - ts       # MPEG transport stream
+  - vob      # DVD video
+  - mpg      # MPEG-1/2
+  - mpeg     # MPEG-1/2
+  - rm       # RealMedia
+  - rmvb     # RealMedia Variable Bitrate
+  - asf      # Advanced Systems Format
+  - dv       # Digital Video
+  - gxf      # General eXchange Format (broadcast)
+  - f4v      # Flash Video MP4
+  # Audio formats
+  - mp3
+  - wav
+  - flac
+  - m4a
+  - aac
+  - ogg
+  - opus
+  - wma      # Windows Media Audio
+  - amr      # Adaptive Multi-Rate (mobile)
+  - ape      # Monkey's Audio (lossless)
+  - tta      # True Audio (lossless)
+
+outputs:
+  - Metadata
+
+config:
+  max_file_size_mb: 100000
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "1s"
+  memory_per_file_mb: 16
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1730419200  # 2024-11-01 00:00:00 UTC
+
+implementation:
+  crate: "video-audio-metadata"
+  function: "extract_metadata"

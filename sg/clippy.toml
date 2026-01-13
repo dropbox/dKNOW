@@ -1,0 +1,9 @@
+# Clippy configuration for sg workspace
+#
+# type_complexity: Allow complex tuple types in internal code.
+# These are used for batching operations and refactoring to named types
+# would create many small structs without improving clarity.
+type-complexity-threshold = 2000
+
+# too_many_arguments: Allow functions with many arguments in internal batch operations
+too-many-arguments-threshold = 10

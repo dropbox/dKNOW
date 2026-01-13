@@ -1,0 +1,20 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Alice Johnson
+EMAIL:alice@example.com
+TEL:+1-555-1111
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Bob Williams
+EMAIL:bob@example.com
+TEL:+1-555-2222
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Carol Davis
+EMAIL:carol@example.com
+TEL:+1-555-3333
+ORG:Tech Inc
+TITLE:Manager
+END:VCARD

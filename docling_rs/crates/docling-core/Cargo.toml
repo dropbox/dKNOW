@@ -1,0 +1,69 @@
+[package]
+name = "docling-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Core document types and serialization for docling-rs"
+repository.workspace = true
+keywords = ["document", "parsing", "converter", "pdf", "docling"]
+categories = ["parsing", "text-processing"]
+
+[dependencies]
+log = "0.4"
+once_cell = "1.19"
+regex = "1.10"
+serde.workspace = true
+serde_json.workspace = true
+serde_yaml = "0.9"
+thiserror.workspace = true
+anyhow.workspace = true
+chrono = { workspace = true, features = ["serde"] }
+# pyo3 removed - Python bridge deprecated, use pure Rust ML (pdf-ml feature)
+docling-ebook = { version = "2.58.0", path = "../docling-ebook" }
+docling-email = { version = "2.58.0", path = "../docling-email" }
+docling-archive = { version = "2.58.0", path = "../docling-archive" }
+docling-audio = { version = "2.58.0", path = "../docling-audio" }
+docling-video = { version = "2.58.0", path = "../docling-video", optional = true }
+docling-opendocument = { version = "2.58.0", path = "../docling-opendocument" }
+docling-xps = { version = "2.58.0", path = "../docling-xps" }
+docling-svg = { version = "2.58.0", path = "../docling-svg" }
+docling-calendar = { version = "2.58.0", path = "../docling-calendar" }
+docling-notebook = { version = "2.58.0", path = "../docling-notebook" }
+docling-gps = { version = "2.58.0", path = "../docling-gps" }
+docling-legacy = { version = "2.58.0", path = "../docling-legacy" }
+docling-medical = { version = "2.58.0", path = "../docling-medical" }
+docling-cad = { version = "2.58.0", path = "../docling-cad" }
+docling-adobe = { version = "2.58.0", path = "../docling-adobe" }
+# NOTE: docling-apple removed from docling-core to avoid circular dependency
+# docling-apple now uses docling-core (for DoclingDocument types)
+# docling-backend imports both and handles conversion
+# docling-apple = { version = "2.58.0", path = "../docling-apple" }
+html2text = "0.6"
+tempfile = "3.10"
+sysinfo = "0.32"
+unicode-width = "0.2"  # Issue #14: CJK/double-width character support for table column widths
+
+[features]
+default = ["video"]
+video = ["docling-video"]
+video-transcription = ["video", "docling-video/transcription"]
+transcription = ["docling-audio/transcription"]
+# pdf-ml: Marker feature for pure Rust PDF parsing via docling-pdf-ml crate
+# When enabled, tests use the ML-based PDF backend instead of fallback
+# Requires: source setup_env.sh (sets LIBTORCH_USE_PYTORCH=1)
+pdf-ml = []
+
+[dev-dependencies]
+uuid = { version = "1.11", features = ["v4"] }
+num_cpus = "1.16"
+# PDF tests require pdf feature: use docling-backend dev-dep with the feature enabled
+# Run PDF tests with: cargo test -p docling-core --test integration_tests -- --test-threads=1
+# The default pdf backend uses pdfium_fast + PyTorch ML via docling-pdf-ml crate
+docling-backend = { version = "2.58.0", path = "../docling-backend", features = ["pdf"] }
+docling-latex = { version = "2.58.0", path = "../docling-latex" }
+docling-apple = { version = "2.58.0", path = "../docling-apple" }
+docling-microsoft-extended = { version = "2.58.0", path = "../docling-microsoft-extended" }
+proptest = "1.4"
+tokio = { workspace = true, features = ["full"] }
+docling-quality-verifier = { version = "2.58.0", path = "../docling-quality-verifier" }
+zip.workspace = true

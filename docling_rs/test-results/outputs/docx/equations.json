@@ -1,0 +1,572 @@
+[
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is a word document and this is an inline equation:  $A= \\pi r^{2}$ . If instead, I want an equation by line, I can do this:",
+    "text": "This is a word document and this is an inline equation:  $A= \\pi r^{2}$ . If instead, I want an equation by line, I can do this:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "$$a^{2}+b^{2}=c^{2} \\text{ \\texttimes } 23$$",
+    "text": "$$a^{2}+b^{2}=c^{2} \\text{ \\texttimes } 23$$"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "And that is an equation by itself. Cheers!",
+    "text": "And that is an equation by itself. Cheers!"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/3",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is another equation:",
+    "text": "This is another equation:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/4",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "$$f\\left(x\\right)=a_{0}+\\sum_{n=1}^{ \\infty }\\left(a_{n}\\cos(\\frac{n \\pi x}{L})+b_{n}\\sin(\\frac{n \\pi x}{L})\\right)$$",
+    "text": "$$f\\left(x\\right)=a_{0}+\\sum_{n=1}^{ \\infty }\\left(a_{n}\\cos(\\frac{n \\pi x}{L})+b_{n}\\sin(\\frac{n \\pi x}{L})\\right)$$"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/5",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text.",
+    "text": "This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/6",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is a word document and this is an inline equation:  $A= \\pi r^{2}$ . If instead, I want an equation by line, I can do this:",
+    "text": "This is a word document and this is an inline equation:  $A= \\pi r^{2}$ . If instead, I want an equation by line, I can do this:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/7",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "$$\\left(x+a\\right)^{n}=\\sum_{k=0}^{n}\\left(\\genfrac{}{}{0pt}{}{n}{k}\\right)x^{k}a^{n-k}$$",
+    "text": "$$\\left(x+a\\right)^{n}=\\sum_{k=0}^{n}\\left(\\genfrac{}{}{0pt}{}{n}{k}\\right)x^{k}a^{n-k}$$"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/8",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "And that is an equation by itself. Cheers!",
+    "text": "And that is an equation by itself. Cheers!"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/9",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is another equation:",
+    "text": "This is another equation:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/10",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "$$\\left(1+x\\right)^{n}=1+\\frac{nx}{1!}+\\frac{n\\left(n-1\\right)x^{2}}{2!}+ \\text{ \\textellipsis }$$",
+    "text": "$$\\left(1+x\\right)^{n}=1+\\frac{nx}{1!}+\\frac{n\\left(n-1\\right)x^{2}}{2!}+ \\text{ \\textellipsis }$$"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/11",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text.",
+    "text": "This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/12",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is a word document and this is an inline equation:  $A= \\pi r^{2}$ . If instead, I want an equation by line, I can do this:",
+    "text": "This is a word document and this is an inline equation:  $A= \\pi r^{2}$ . If instead, I want an equation by line, I can do this:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/13",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "$$e^{x}=1+\\frac{x}{1!}+\\frac{x^{2}}{2!}+\\frac{x^{3}}{3!}+ \\text{ \\textellipsis } , - \\infty  < x <  \\infty$$",
+    "text": "$$e^{x}=1+\\frac{x}{1!}+\\frac{x^{2}}{2!}+\\frac{x^{3}}{3!}+ \\text{ \\textellipsis } , - \\infty  < x <  \\infty$$"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/14",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "And that is an equation by itself. Cheers!",
+    "text": "And that is an equation by itself. Cheers!"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": ""
+  }
+]

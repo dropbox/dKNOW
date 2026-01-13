@@ -1,0 +1,54 @@
+name: scene_detection
+version: 1.0.0
+description: Scene detection using FFmpeg scdet filter with keyframe-only optimization
+
+inputs:
+  # Video containers
+  - mp4
+  - mov
+  - avi
+  - mkv
+  - webm
+  - flv
+  - m4v
+  - 3gp
+  - wmv
+  - ogv
+  - mts      # AVCHD camcorder
+  - m2ts     # Blu-ray AVCHD
+  - mxf      # Broadcast media exchange
+  - ts       # MPEG transport stream
+  - vob      # DVD video
+  - mpg      # MPEG-1/2
+  - mpeg     # MPEG-1/2
+  - rm       # RealMedia
+  - rmvb     # RealMedia Variable Bitrate
+  - asf      # Advanced Systems Format
+  - dv       # Digital Video
+  - gxf      # General eXchange Format (broadcast)
+  - f4v      # Flash Video MP4
+
+outputs:
+  - SceneDetection  # JSON with boundaries and scenes
+
+config:
+  max_file_size_mb: 10000
+  requires_gpu: false
+  experimental: false
+  default_threshold: 10.0  # Scene change threshold (0.0-100.0)
+  default_min_scene_duration: 0.0  # Minimum scene duration in seconds
+  keyframes_only: true  # Use keyframe-only processing for 10-30x speedup
+
+performance:
+  avg_processing_time_per_gb: "5s"
+  memory_per_file_mb: 256
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1727740800  # 2024-10-01 00:00:00 UTC
+
+implementation:
+  crate: "video-audio-scene"
+  function: "detect_scenes"

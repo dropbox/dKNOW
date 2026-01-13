@@ -1,0 +1,29 @@
+[package]
+name = "docling-email"
+version.workspace = true
+edition.workspace = true
+rust-version = "1.75"
+license.workspace = true
+repository.workspace = true
+description = "Email format parsers for docling_rs (EML, MBOX, VCF)"
+keywords = ["email", "eml", "mbox", "vcf", "mime"]
+categories = ["parsing", "email"]
+
+[dependencies]
+# Email parsing
+mail-parser = "0.11"
+mailparse = "0.16"
+mbox-reader = "0.2"
+msg_parser = "0.1"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Utilities
+chrono = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+html2md = "0.2"
+tempfile = "3.0"
+
+[dev-dependencies]

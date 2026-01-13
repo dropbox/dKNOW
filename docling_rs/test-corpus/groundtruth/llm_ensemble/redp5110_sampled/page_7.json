@@ -1,0 +1,123 @@
+{
+  "page_number": 7,
+  "elements": [
+    {
+      "label": "paragraph",
+      "text": "Many businesses are trying to limit data access to a need-to-know basis. This security goal means that users should be given access only to the minimum set of data that is required to perform their job. Often, users with object-level access are given access to row and column values that are beyond what their business task requires because that object-level security provides an all-or-nothing solution. For example, object-level controls allow a manager to access data about all employees. Most security policies limit a manager to accessing data only for the employees that they manage.",
+      "bbox": {
+        "l": 5.0,
+        "t": 5.0,
+        "r": 95.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "1.3.1 Existing row and column control",
+      "bbox": {
+        "l": 5.0,
+        "t": 21.0,
+        "r": 95.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Some IBM i clients have tried augmenting the all-or-nothing object-level security with SQL views (or logical files) and application logic, as shown in Figure 1-2. However, application-based logic is easy to bypass with all of the different data access interfaces that are provided by the IBM i operating system, such as Open Database Connectivity (ODBC) and System i Navigator.",
+      "bbox": {
+        "l": 5.0,
+        "t": 26.0,
+        "r": 95.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Using SQL views to limit access to a subset of the data in a table also has its own set of challenges. First, there is the complexity of managing all of the SQL view objects that are used for securing data access. Second, scaling a view-based security solution can be difficult as the amount of data grows and the number of users increases.",
+      "bbox": {
+        "l": 5.0,
+        "t": 36.0,
+        "r": 95.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Even if you are willing to live with these performance and management issues, a user with *ALLOBJ access still can directly access all of the data in the underlying DB2 table and easily bypass the security controls that are built into an SQL view.",
+      "bbox": {
+        "l": 5.0,
+        "t": 46.0,
+        "r": 95.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Diagram showing user access with *ALLOBJ access, regular user, and application logic interacting with database views and table data.",
+      "bbox": {
+        "l": 5.0,
+        "t": 56.0,
+        "r": 95.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 1-2 Existing row and column controls",
+      "bbox": {
+        "l": 5.0,
+        "t": 81.0,
+        "r": 95.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "4 Row and Column Access Control Support in IBM DB2 for i",
+      "bbox": {
+        "l": 5.0,
+        "t": 95.0,
+        "r": 95.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

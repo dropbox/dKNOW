@@ -1,0 +1,94 @@
+# Dockerfile for pdfium_fast Linux builds
+#
+# Strategy: Clone upstream PDFium, then overlay our modifications
+#
+# Usage:
+#   docker build -f Dockerfile.local -t pdfium-fast-linux .
+#   docker run -v $(pwd)/binaries:/output pdfium-fast-linux
+
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install build dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    clang \
+    lld \
+    git \
+    python3 \
+    python3-pip \
+    curl \
+    wget \
+    pkg-config \
+    libglib2.0-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /build
+
+# Install depot_tools and bootstrap
+RUN git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git /depot_tools
+ENV PATH="/depot_tools:${PATH}"
+
+# Bootstrap depot_tools
+RUN cd /depot_tools && ./update_depot_tools
+
+# Skip RBE (Remote Build Execution) - not needed for local builds
+ENV DEPOT_TOOLS_UPDATE=0
+ENV GCLIENT_SUPPRESS_GIT_VERSION_WARNING=1
+
+# Create .gclient with minimal checkout config
+RUN cat > .gclient << 'EOF'
+solutions = [
+  {
+    "name": "pdfium",
+    "url": "https://pdfium.googlesource.com/pdfium.git",
+    "managed": False,
+    "custom_deps": {},
+    "custom_vars": {
+      "checkout_configuration": "minimal",
+    },
+  },
+]
+EOF
+
+# Sync PDFium dependencies (with error tolerance for missing CIPD packages)
+RUN gclient sync --shallow --no-history --nohooks || echo "gclient sync partial - continuing"
+
+# Run hooks (some may fail, that's OK for builds without RBE)
+RUN gclient runhooks || echo "Some hooks failed - continuing"
+
+WORKDIR /build/pdfium
+
+# Copy our modifications (small, only changed files)
+# NOTE: Do NOT copy testing/ - it overwrites upstream's image_diff which breaks the build
+COPY core/ core/
+COPY fpdfsdk/ fpdfsdk/
+COPY public/ public/
+COPY examples/ examples/
+COPY third_party/concurrentqueue/ third_party/concurrentqueue/
+
+# Register pdfium_cli target in main BUILD.gn (testonly because examples is testonly)
+RUN echo '' >> BUILD.gn && \
+    echo '# pdfium_fast additions' >> BUILD.gn && \
+    echo 'group("pdfium_cli") {' >> BUILD.gn && \
+    echo '  testonly = true' >> BUILD.gn && \
+    echo '  deps = [ "//examples:pdfium_cli" ]' >> BUILD.gn && \
+    echo '}' >> BUILD.gn
+
+# Add examples/ to unsafe_buffers exclusion list - our CLI has array accesses
+# that trigger -Wunsafe-buffer-usage errors in Chromium's strict clang
+RUN echo '-examples/' >> unsafe_buffers_paths.txt
+
+# Configure Release build (pdf_is_standalone=true skips unit tests that need image_diff)
+RUN gn gen out/Release --args='is_debug=false pdf_enable_v8=false pdf_enable_xfa=false pdf_is_standalone=true is_component_build=true use_clang_modules=false'
+
+# Build pdfium_cli
+RUN ninja -C out/Release pdfium_cli
+
+# Verify build
+RUN ./out/Release/pdfium_cli --help
+
+RUN mkdir -p /output
+
+CMD ["sh", "-c", "cp out/Release/pdfium_cli /output/ && cp out/Release/libpdfium.so /output/ && echo 'Binaries copied' && ls -lh /output/"]

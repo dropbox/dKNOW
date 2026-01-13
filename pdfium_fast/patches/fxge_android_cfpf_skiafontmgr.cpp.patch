@@ -1,0 +1,59 @@
+--- pdfium/core/fxge/android/cfpf_skiafontmgr.cpp	2025-11-20 14:44:25
++++ core/fxge/android/cfpf_skiafontmgr.cpp	2025-12-03 16:39:54
+@@ -345,7 +345,25 @@
+ 
+ RetainPtr<CFX_Face> CFPF_SkiaFontMgr::GetFontFace(ByteStringView path,
+                                                   int32_t face_index) {
+-  return CFX_Face::OpenFromFilePath(ft_library_.get(), path, face_index);
++  if (path.IsEmpty()) {
++    return nullptr;
++  }
++
++  if (face_index < 0) {
++    return nullptr;
++  }
++
++  FT_Open_Args args;
++  args.flags = FT_OPEN_PATHNAME;
++  args.pathname = const_cast<FT_String*>(path.unterminated_c_str());
++  RetainPtr<CFX_Face> face =
++      CFX_Face::Open(ft_library_.get(), &args, face_index);
++  if (!face) {
++    return nullptr;
++  }
++
++  face->SetPixelSize(0, 64);
++  return face;
+ }
+ 
+ void CFPF_SkiaFontMgr::ScanPath(const ByteString& path) {
+@@ -380,22 +398,21 @@
+ }
+ 
+ void CFPF_SkiaFontMgr::ScanFile(const ByteString& file) {
+-  constexpr int kFaceIndex = 0;
+-  RetainPtr<CFX_Face> face = GetFontFace(file.AsStringView(), kFaceIndex);
++  RetainPtr<CFX_Face> face = GetFontFace(file.AsStringView(), 0);
+   if (!face) {
+     return;
+   }
+-  font_faces_.push_back(ReportFace(face, file, kFaceIndex));
++
++  font_faces_.push_back(ReportFace(face, file));
+ }
+ 
+ std::unique_ptr<CFPF_SkiaPathFont> CFPF_SkiaFontMgr::ReportFace(
+     RetainPtr<CFX_Face> face,
+-    const ByteString& file,
+-    int face_index) {
++    const ByteString& file) {
+   CFX_Face::FontStyleInfo fontinfo = face->GetFontStyleInfo();
+   uint32_t charset =
+       SKIACHARSET_Default | SkiaGetFaceCharset(fontinfo.os2_codepage_mask);
+-  return std::make_unique<CFPF_SkiaPathFont>(file, face->GetFamilyName(),
+-                                             fontinfo.style, face_index,
+-                                             charset, face->GetGlyphCount());
++  return std::make_unique<CFPF_SkiaPathFont>(
++      file, face->GetFamilyName(), fontinfo.style, face->GetRec()->face_index,
++      charset, face->GetGlyphCount());
+ }

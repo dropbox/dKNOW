@@ -1,0 +1,180 @@
+//! Python bridge for calling Python docling
+//!
+//! This module provides functionality to call Python docling and get back
+//! structured `DoclingDocument` JSON that can be processed in Rust.
+
+use crate::document::DoclingDocument;
+use crate::error::DoclingError;
+use crate::serializer::MarkdownSerializer;
+use std::path::Path;
+use std::process::Command;
+
+/// Convert a document using Python docling and return `DoclingDocument`
+///
+/// # Arguments
+/// * `input_path` - Path to the document to convert
+/// * `enable_ocr` - If true, enable OCR mode (`do_ocr=True`). If false, text-only mode (`do_ocr=False`).
+pub fn convert_via_python<P: AsRef<Path>>(
+    input_path: P,
+    enable_ocr: bool,
+) -> Result<DoclingDocument, DoclingError> {
+    let input_path = input_path.as_ref();
+
+    if !input_path.exists() {
+        return Err(DoclingError::ConversionError(format!(
+            "Input file not found: {}",
+            input_path.display()
+        )));
+    }
+
+    // Find the Python script relative to the project root
+    // When running from crates/docling-core, we need to go up two levels
+    let script_path = "../../scripts/python_docling_bridge.py";
+
+    // Resolve to absolute path
+    let script_abs = std::env::current_dir()
+        .map_err(|e| DoclingError::ConversionError(format!("Failed to get current dir: {e}")))?
+        .join(script_path)
+        .canonicalize()
+        .map_err(|e| {
+            DoclingError::ConversionError(format!(
+                "Failed to find Python script at {script_path}: {e}"
+            ))
+        })?;
+
+    // Call Python script with OCR flag if needed
+    let mut cmd = Command::new("python3");
+    cmd.arg(&script_abs).arg(input_path);
+    if enable_ocr {
+        cmd.arg("--ocr");
+    }
+
+    let output = cmd.output().map_err(|e| {
+        DoclingError::ConversionError(format!("Failed to execute Python bridge: {e}"))
+    })?;
+
+    if !output.status.success() {
+        let stderr = String::from_utf8_lossy(&output.stderr);
+
+        // Extract the underlying Python exception for better error messages
+        // Python tracebacks typically end with "ExceptionType: message"
+        let error_message =
+            if let Some(last_line) = stderr.lines().filter(|l| !l.trim().is_empty()).next_back() {
+                // Check if this looks like a Python exception line
+                if last_line.contains(':') && !last_line.trim_start().starts_with("File \"") {
+                    last_line.trim().to_string()
+                } else {
+                    // Fallback to full stderr if we can't extract the exception
+                    stderr.to_string()
+                }
+            } else {
+                stderr.to_string()
+            };
+
+        return Err(DoclingError::ConversionError(format!(
+            "Python docling conversion failed: {error_message}"
+        )));
+    }
+
+    // Parse JSON output
+    let json_str = String::from_utf8(output.stdout)
+        .map_err(|e| DoclingError::ConversionError(format!("Invalid UTF-8 from Python: {e}")))?;
+
+    let doc: DoclingDocument = serde_json::from_str(&json_str).map_err(|e| {
+        // Debug: Save failing JSON to /tmp/ for inspection (no console output to reduce noise)
+        if let Some(filename) = input_path.file_name() {
+            let debug_path = format!("/tmp/failing_{}.json", filename.to_string_lossy());
+            let _ = std::fs::write(&debug_path, &json_str);
+        }
+        DoclingError::ConversionError(format!("Failed to parse DoclingDocument JSON: {e}"))
+    })?;
+
+    Ok(doc)
+}
+
+/// Convert a document to markdown using Python docling + Rust serializer
+///
+/// # Arguments
+/// * `input_path` - Path to the document to convert
+/// * `enable_ocr` - If true, enable OCR mode (`do_ocr=True`). If false, text-only mode (`do_ocr=False`).
+pub fn convert_to_markdown<P: AsRef<Path>>(
+    input_path: P,
+    enable_ocr: bool,
+) -> Result<String, DoclingError> {
+    // Get DoclingDocument from Python
+    let doc = convert_via_python(&input_path, enable_ocr)?;
+
+    // Serialize to markdown in Rust
+    let serializer = MarkdownSerializer::new();
+    let markdown = serializer.serialize(&doc);
+
+    // Debug: Save Rust output to /tmp/ for comparison (no console output to reduce noise)
+    if let Some(filename) = input_path.as_ref().file_stem() {
+        let debug_path = format!("/tmp/rust_{}.txt", filename.to_string_lossy());
+        let _ = std::fs::write(&debug_path, &markdown);
+    }
+
+    Ok(markdown)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_convert_via_python() {
+        let pdf_path = "../../test-corpus/pdf/multi_page.pdf";
+
+        if !std::path::Path::new(pdf_path).exists() {
+            eprintln!("Skipping test: {} not found", pdf_path);
+            return;
+        }
+
+        let result = convert_via_python(pdf_path, false);
+        if let Err(e) = &result {
+            eprintln!("Conversion error: {}", e);
+        }
+        assert!(result.is_ok(), "Should successfully convert PDF");
+
+        let doc = result.unwrap();
+        assert_eq!(doc.schema_name, "DoclingDocument");
+        assert_eq!(doc.name, "multi_page");
+        assert!(!doc.texts.is_empty(), "Should have text items");
+    }
+
+    #[test]
+    fn test_convert_to_markdown() {
+        let pdf_path = "../../test-corpus/pdf/multi_page.pdf";
+
+        if !std::path::Path::new(pdf_path).exists() {
+            eprintln!("Skipping test: {} not found", pdf_path);
+            return;
+        }
+
+        let result = convert_to_markdown(pdf_path, false);
+        assert!(result.is_ok(), "Should successfully convert to markdown");
+
+        let markdown = result.unwrap();
+        eprintln!("Generated markdown: {} chars", markdown.len());
+
+        // Check against expected output
+        let expected_path = "../../test-results/outputs/pdf/multi_page.txt";
+        if let Ok(expected) = std::fs::read_to_string(expected_path) {
+            eprintln!("Expected markdown: {} chars", expected.len());
+            eprintln!(
+                "Difference: {} chars",
+                (markdown.len() as i64 - expected.len() as i64).abs()
+            );
+
+            // Should match exactly
+            if markdown == expected {
+                eprintln!("EXACT MATCH!");
+            } else {
+                eprintln!("Output differs from expected");
+            }
+        }
+
+        assert!(!markdown.is_empty(), "Markdown should not be empty");
+        assert!(markdown.contains("## The Evolution of the Word Processor"));
+    }
+}

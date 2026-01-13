@@ -1,0 +1,350 @@
+{
+  "page_number": 7,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis    KDD '22, August 14–18, 2022, Washington, DC, USA",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "table",
+      "text": "",
+      "bbox": {
+        "l": 0.0,
+        "t": 5.0,
+        "r": 50.0,
+        "b": 30.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "Class-count",
+            "11",
+            "6",
+            "5",
+            "4"
+          ],
+          [
+            "Caption",
+            "68",
+            "Text",
+            "Text",
+            "Text"
+          ],
+          [
+            "Footnote",
+            "71",
+            "Text",
+            "Text",
+            "Text"
+          ],
+          [
+            "Formula",
+            "60",
+            "Text",
+            "Text",
+            "Text"
+          ],
+          [
+            "List-item",
+            "81",
+            "Text",
+            "82",
+            "Text"
+          ],
+          [
+            "Page-footer",
+            "62",
+            "62",
+            "-",
+            "-"
+          ],
+          [
+            "Page-header",
+            "72",
+            "68",
+            "-",
+            "-"
+          ],
+          [
+            "Picture",
+            "72",
+            "72",
+            "72",
+            "72"
+          ],
+          [
+            "Section-header",
+            "68",
+            "67",
+            "69",
+            "68"
+          ],
+          [
+            "Table",
+            "82",
+            "83",
+            "82",
+            "83"
+          ],
+          [
+            "Text",
+            "85",
+            "84",
+            "84",
+            "84"
+          ],
+          [
+            "Title",
+            "77",
+            "Sec.-h.",
+            "Sec.-h.",
+            "Sec.-h."
+          ],
+          [
+            "Overall",
+            "72",
+            "73",
+            "78",
+            "77"
+          ]
+        ],
+        "num_rows": 13,
+        "num_cols": 5
+      }
+    },
+    {
+      "label": "table",
+      "text": "",
+      "bbox": {
+        "l": 50.0,
+        "t": 5.0,
+        "r": 100.0,
+        "b": 30.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "Class-count",
+            "11",
+            "5"
+          ],
+          [
+            "Split",
+            "Doc Page",
+            "Doc Page"
+          ],
+          [
+            "Caption",
+            "66",
+            "83"
+          ],
+          [
+            "Footnote",
+            "71",
+            "84"
+          ],
+          [
+            "Formula",
+            "60",
+            "66"
+          ],
+          [
+            "List-item",
+            "81",
+            "88",
+            "82",
+            "88"
+          ],
+          [
+            "Page-footer",
+            "62",
+            "89"
+          ],
+          [
+            "Page-header",
+            "72",
+            "90"
+          ],
+          [
+            "Picture",
+            "72",
+            "82",
+            "72",
+            "82"
+          ],
+          [
+            "Section-header",
+            "68",
+            "83",
+            "69",
+            "83"
+          ],
+          [
+            "Table",
+            "82",
+            "89",
+            "82",
+            "90"
+          ],
+          [
+            "Text",
+            "85",
+            "91",
+            "84",
+            "90"
+          ],
+          [
+            "Title",
+            "77",
+            "81"
+          ],
+          [
+            "All",
+            "72",
+            "84",
+            "78",
+            "87"
+          ]
+        ],
+        "num_rows": 14,
+        "num_cols": 3
+      }
+    },
+    {
+      "label": "section_header",
+      "text": "Learning Curve",
+      "bbox": {
+        "l": 0.0,
+        "t": 30.0,
+        "r": 100.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "One of the fundamental questions related to any dataset is if it is “large enough”. To answer this question for DocLayNet, we performed a data ablation study in which we evaluated a Mask R-CNN model trained on increasing fractions of the DocLayNet dataset. As can be seen in Figure 5, the mAP scores rise sharply in the beginning and eventually levels out. To estimate the error-bar on the metrics, we ran the training five times on the entire data-set. This resulted in a 1% error-bar, depicted by the shaded area in Figure 5. In the inset of Figure 5, we show the exact same data-points, but with a logarithmic scale on the x-axis. As is expected, the mAP score increases linearly as a function of the data-size in the inset. The curve ultimately levels out between the 80% and 100% mark, with the 80% mark falling within the error-bars of the 100% mark. This provides a good indication that the model would not improve significantly by yet increasing the data size. Rather, it would probably benefit more from improved data consistency (as discussed in Section 3), data augmentation methods [23], or the addition of more document categories and styles.",
+      "bbox": {
+        "l": 0.0,
+        "t": 35.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Impact of Class Labels",
+      "bbox": {
+        "l": 0.0,
+        "t": 50.0,
+        "r": 100.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The choice and number of labels can have a significant effect on the overall model performance. Since PubLayNet, DocBank and DocLayNet all have different label sets, it is of particular interest to understand and quantify this influence of the label set on the model performance. We investigate this by either down-mapping labels into more common ones (e.g. Caption→Text) or excluding them from the annotations entirely. Furthermore, it must be stressed that all mappings and exclusions were performed on the data before model training. In Table 3, we present the mAP scores for a Mask R-CNN R50 network on different label sets. Where a label is down-mapped, we show its corresponding label, otherwise it was excluded. We present three different label sets, with 6, 5 and 4 different labels respectively. The set of 5 labels contains the same labels as PubLayNet. However, due to the different definition of lists in PubLayNet (grouped list-items) versus DocLayNet (separate list-items), the label set of size 4 is the closest to PubLayNet, in the assumption that the List is down-mapped to Text in PubLayNet. The results in Table 3 show that the prediction accuracy on the remaining class labels does not change significantly as the classes are merged into them. The overall macro-average improves by around 5%, in particular when Page-footer and Page-header are excluded.",
+      "bbox": {
+        "l": 0.0,
+        "t": 55.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Impact of Document Split in Train and Test Set",
+      "bbox": {
+        "l": 0.0,
+        "t": 70.0,
+        "r": 100.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Many documents in DocLayNet have a unique style. In order to avoid overfitting on a particular style, we have split the train-, test- and validation-sets of DocLayNet on document boundaries, i.e. every document contributes pages to only one set. To the best of our knowledge, this was not considered in PubLayNet or DocBank. To quantify how this affects model performance, we trained and evaluated a Mask R-CNN R50 model on a modified dataset version. Here, the train-, test- and validation-sets were obtained by a randomised draw over the individual pages. As can be seen in Table 4, the difference in model performance is surprisingly large: page-wise splitting gains 10% in mAP over the document-wise splitting. Thus, random page-wise splitting of DocLayNet can easily lead to accidental overestimation of model performance and should be avoided.",
+      "bbox": {
+        "l": 0.0,
+        "t": 75.0,
+        "r": 100.0,
+        "b": 90.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Dataset Comparison",
+      "bbox": {
+        "l": 0.0,
+        "t": 90.0,
+        "r": 100.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Throughout this paper, we claim that DocLayNet’s wider variety of document layouts leads to more robust layout detection models. In Table 5, we provide evidence for that. We trained models on each of the available datasets (PubLayNet, DocBank and DocLayNet) and evaluated them on the test sets of the other datasets. Due to the different label sets and annotation styles, a direct comparison is not possible. Hence, we focused on the common labels among the datasets. Between PubLayNet and DocLayNet, these are Picture,",
+      "bbox": {
+        "l": 0.0,
+        "t": 95.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

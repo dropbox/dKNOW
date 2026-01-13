@@ -1,0 +1,43 @@
+1
+00:00:00,500 --> 00:00:03,200
+Interviewer: Thank you for joining us today.
+Can you tell us about your background?
+
+2
+00:00:04,000 --> 00:00:08,500
+Interviewee: Of course. I have over ten years
+of experience in software engineering,
+specializing in backend systems and databases.
+
+3
+00:00:09,200 --> 00:00:12,000
+Interviewer: That's impressive.
+What motivated you to pursue this field?
+
+4
+00:00:12,800 --> 00:00:16,500
+Interviewee: I've always been fascinated by
+how systems scale and handle millions of users.
+The challenge of optimization really drives me.
+
+5
+00:00:17,300 --> 00:00:20,000
+Interviewer: What would you say is
+your greatest professional achievement?
+
+6
+00:00:20,800 --> 00:00:25,000
+Interviewee: I led a team that redesigned
+our company's core infrastructure,
+reducing latency by 70% while cutting costs in half.
+
+7
+00:00:26,000 --> 00:00:29,500
+Interviewer: That's remarkable. How did you
+approach such a complex problem?
+
+8
+00:00:30,200 --> 00:00:34,800
+Interviewee: We started by profiling the system
+to identify bottlenecks, then incrementally
+improved each component while maintaining backward compatibility.

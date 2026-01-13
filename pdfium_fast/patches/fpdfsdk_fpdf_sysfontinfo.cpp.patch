@@ -1,0 +1,21 @@
+--- pdfium/fpdfsdk/fpdf_sysfontinfo.cpp	2025-11-20 14:44:25
++++ fpdfsdk/fpdf_sysfontinfo.cpp	2025-12-03 21:15:42
+@@ -165,13 +165,14 @@
+     return;
+   }
+ 
++  // Version 2: Skip font enumeration, rely on MapFont for per-request matching.
++  if (font_infoExt->version >= 2) {
++    mapper->SetSkipFontEnumeration(true);
++  }
++
+   mapper->SetSystemFontInfo(
+       std::make_unique<CFX_ExternalFontInfo>(font_infoExt));
+ 
+-  // Version 1: Enable font enumeration via `EnumFonts()`.
+-  // Version 2: Skip font enumeration, use per-request matching via `MapFont()`.
+-  mapper->SetSkipFontEnumeration(font_infoExt->version == 2);
+-
+ #ifdef PDF_ENABLE_XFA
+   CFGAS_GEModule::Get()->GetFontMgr()->EnumFonts();
+ #endif

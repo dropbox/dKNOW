@@ -1,0 +1,1512 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "HTML Text Formatting Examples",
+    "text": "HTML Text Formatting Examples",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is a",
+    "text": "This is a"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/3",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "bold (b)",
+    "text": "bold (b)",
+    "formatting": {
+      "bold": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/4",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "example and right next to it we have a",
+    "text": "example and right next to it we have a"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/5",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "strong emphasis (strong)",
+    "text": "strong emphasis (strong)",
+    "formatting": {
+      "bold": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/6",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ".",
+    "text": "."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/1",
+    "children": [
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/7",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Notice that",
+    "text": "Notice that"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/9",
+    "parent": {
+      "$ref": "#/groups/8"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "strong + bold mixed",
+    "text": "strong + bold mixed",
+    "formatting": {
+      "bold": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/10",
+    "parent": {
+      "$ref": "#/groups/8"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "looks similar but carries additional semantic meaning.",
+    "text": "looks similar but carries additional semantic meaning."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/8",
+    "children": [
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/12",
+    "parent": {
+      "$ref": "#/groups/11"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Here is an",
+    "text": "Here is an"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/13",
+    "parent": {
+      "$ref": "#/groups/11"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "italic (i)",
+    "text": "italic (i)",
+    "formatting": {
+      "italic": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/14",
+    "parent": {
+      "$ref": "#/groups/11"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "word and an",
+    "text": "word and an"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/15",
+    "parent": {
+      "$ref": "#/groups/11"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "emphasis (em)",
+    "text": "emphasis (em)",
+    "formatting": {
+      "italic": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/16",
+    "parent": {
+      "$ref": "#/groups/11"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "example.",
+    "text": "example."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/11",
+    "children": [
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/17",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Sometimes we combine them like",
+    "text": "Sometimes we combine them like"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/19",
+    "parent": {
+      "$ref": "#/groups/18"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "italic + emphasis together",
+    "text": "italic + emphasis together",
+    "formatting": {
+      "italic": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/20",
+    "parent": {
+      "$ref": "#/groups/18"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ".",
+    "text": "."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/18",
+    "children": [
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/22",
+    "parent": {
+      "$ref": "#/groups/21"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Now let's look at text that appears crossed out:",
+    "text": "Now let's look at text that appears crossed out:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/23",
+    "parent": {
+      "$ref": "#/groups/21"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "strikethrough with s",
+    "text": "strikethrough with s",
+    "formatting": {
+      "strikethrough": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/24",
+    "parent": {
+      "$ref": "#/groups/21"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "and",
+    "text": "and"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/25",
+    "parent": {
+      "$ref": "#/groups/21"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "deleted with del",
+    "text": "deleted with del",
+    "formatting": {
+      "strikethrough": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/26",
+    "parent": {
+      "$ref": "#/groups/21"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ".",
+    "text": "."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/21",
+    "children": [
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/27",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "You can also mix them:",
+    "text": "You can also mix them:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/29",
+    "parent": {
+      "$ref": "#/groups/28"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "double strikethrough (s + del)",
+    "text": "double strikethrough (s + del)",
+    "formatting": {
+      "strikethrough": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/30",
+    "parent": {
+      "$ref": "#/groups/28"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ".",
+    "text": "."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/28",
+    "children": [
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/32",
+    "parent": {
+      "$ref": "#/groups/31"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "To highlight insertions or underlines:",
+    "text": "To highlight insertions or underlines:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/33",
+    "parent": {
+      "$ref": "#/groups/31"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "underlined with u",
+    "text": "underlined with u",
+    "formatting": {
+      "underline": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/34",
+    "parent": {
+      "$ref": "#/groups/31"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ",",
+    "text": ","
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/35",
+    "parent": {
+      "$ref": "#/groups/31"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "inserted with ins",
+    "text": "inserted with ins",
+    "formatting": {
+      "underline": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/36",
+    "parent": {
+      "$ref": "#/groups/31"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ".",
+    "text": "."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/31",
+    "children": [
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/37",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "A combination could be:",
+    "text": "A combination could be:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/39",
+    "parent": {
+      "$ref": "#/groups/38"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "underline + insertion together",
+    "text": "underline + insertion together",
+    "formatting": {
+      "underline": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/40",
+    "parent": {
+      "$ref": "#/groups/38"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ".",
+    "text": "."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/38",
+    "children": [
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/41",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Subscript and superscript examples:",
+    "text": "Subscript and superscript examples:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/42",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Water is written as H",
+    "text": "Water is written as H"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/44",
+    "parent": {
+      "$ref": "#/groups/43"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "2",
+    "text": "2",
+    "formatting": {
+      "script": "sub"
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/45",
+    "parent": {
+      "$ref": "#/groups/43"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "O using sub.",
+    "text": "O using sub."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/43",
+    "children": [
+      {
+        "$ref": "#/texts/44"
+      },
+      {
+        "$ref": "#/texts/45"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/46",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "The mathematical expression x",
+    "text": "The mathematical expression x"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/48",
+    "parent": {
+      "$ref": "#/groups/47"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "2",
+    "text": "2",
+    "formatting": {
+      "script": "super"
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/49",
+    "parent": {
+      "$ref": "#/groups/47"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "+ y",
+    "text": "+ y"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/50",
+    "parent": {
+      "$ref": "#/groups/47"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "3",
+    "text": "3",
+    "formatting": {
+      "script": "super"
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/51",
+    "parent": {
+      "$ref": "#/groups/47"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "uses sup.",
+    "text": "uses sup."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/47",
+    "children": [
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/texts/49"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/texts/51"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/52",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "They can also be combined: CO",
+    "text": "They can also be combined: CO"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/54",
+    "parent": {
+      "$ref": "#/groups/53"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "2",
+    "text": "2",
+    "formatting": {
+      "script": "sub"
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/55",
+    "parent": {
+      "$ref": "#/groups/53"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "*",
+    "text": "*",
+    "formatting": {
+      "script": "super"
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/56",
+    "parent": {
+      "$ref": "#/groups/53"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ".",
+    "text": "."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/53",
+    "children": [
+      {
+        "$ref": "#/texts/54"
+      },
+      {
+        "$ref": "#/texts/55"
+      },
+      {
+        "$ref": "#/texts/56"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/58",
+    "parent": {
+      "$ref": "#/groups/57"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Mixing several: This sentence has",
+    "text": "Mixing several: This sentence has"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/59",
+    "parent": {
+      "$ref": "#/groups/57"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "strong + emphasis",
+    "text": "strong + emphasis",
+    "formatting": {
+      "bold": true,
+      "italic": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/60",
+    "parent": {
+      "$ref": "#/groups/57"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ",",
+    "text": ","
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/57",
+    "children": [
+      {
+        "$ref": "#/texts/58"
+      },
+      {
+        "$ref": "#/texts/59"
+      },
+      {
+        "$ref": "#/texts/60"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/61",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "some",
+    "text": "some"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/63",
+    "parent": {
+      "$ref": "#/groups/62"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "bold + underline",
+    "text": "bold + underline",
+    "formatting": {
+      "bold": true,
+      "underline": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/64",
+    "parent": {
+      "$ref": "#/groups/62"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ", and a formula like a",
+    "text": ", and a formula like a"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/65",
+    "parent": {
+      "$ref": "#/groups/62"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "2",
+    "text": "2",
+    "formatting": {
+      "script": "super"
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/66",
+    "parent": {
+      "$ref": "#/groups/62"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "+ b",
+    "text": "+ b"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/67",
+    "parent": {
+      "$ref": "#/groups/62"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "3",
+    "text": "3",
+    "formatting": {
+      "script": "sub"
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/68",
+    "parent": {
+      "$ref": "#/groups/62"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ".",
+    "text": "."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/62",
+    "children": [
+      {
+        "$ref": "#/texts/63"
+      },
+      {
+        "$ref": "#/texts/64"
+      },
+      {
+        "$ref": "#/texts/65"
+      },
+      {
+        "$ref": "#/texts/66"
+      },
+      {
+        "$ref": "#/texts/67"
+      },
+      {
+        "$ref": "#/texts/68"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  }
+]

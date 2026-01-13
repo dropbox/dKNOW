@@ -1,0 +1,103 @@
+{
+  "phase": 3,
+  "description": "Expanded GPT-4 Vision verification covering 60 tests with diverse format/plugin combinations",
+  "validation_criteria": [
+    "File exists and ffprobe validates",
+    "Vision operations only (face-detection, object-detection, ocr, pose-estimation, emotion-detection)",
+    "Diverse format coverage (RAW, video formats, image formats)",
+    "Prioritize smoke test files for reliability"
+  ],
+  "total_tests": 60,
+  "test_groups": [
+    {
+      "group": "RAW_image_formats",
+      "count": 15,
+      "tests": [
+        {"name": "arw_face_detection", "format": "arw", "operation": "face-detection", "file": "test_files_camera_raw/sony_a55.arw"},
+        {"name": "arw_object_detection", "format": "arw", "operation": "object-detection", "file": "test_files_camera_raw/sony_a55.arw"},
+        {"name": "arw_ocr", "format": "arw", "operation": "ocr", "file": "test_files_camera_raw/sony_a55.arw"},
+        {"name": "arw_pose_estimation", "format": "arw", "operation": "pose-estimation", "file": "test_files_camera_raw/sony_a55.arw"},
+        {"name": "arw_emotion_detection", "format": "arw", "operation": "emotion-detection", "file": "test_files_camera_raw/sony_a55.arw"},
+        {"name": "cr2_face_detection", "format": "cr2", "operation": "face-detection", "file": "test_files_camera_raw/canon_eos_m.cr2"},
+        {"name": "cr2_object_detection", "format": "cr2", "operation": "object-detection", "file": "test_files_camera_raw/canon_eos_m.cr2"},
+        {"name": "cr2_ocr", "format": "cr2", "operation": "ocr", "file": "test_files_camera_raw/canon_eos_m.cr2"},
+        {"name": "nef_face_detection", "format": "nef", "operation": "face-detection", "file": "test_files_camera_raw/nikon_z7.nef"},
+        {"name": "nef_object_detection", "format": "nef", "operation": "object-detection", "file": "test_files_camera_raw/nikon_z7.nef"},
+        {"name": "nef_ocr", "format": "nef", "operation": "ocr", "file": "test_files_camera_raw/nikon_z7.nef"},
+        {"name": "raf_face_detection", "format": "raf", "operation": "face-detection", "file": "test_files_camera_raw/fuji_xa3.raf"},
+        {"name": "raf_object_detection", "format": "raf", "operation": "object-detection", "file": "test_files_camera_raw/fuji_xa3.raf"},
+        {"name": "dng_face_detection", "format": "dng", "operation": "face-detection", "file": "test_files_camera_raw/iphone7_plus.dng"},
+        {"name": "dng_object_detection", "format": "dng", "operation": "object-detection", "file": "test_files_camera_raw/iphone7_plus.dng"}
+      ]
+    },
+    {
+      "group": "video_keyframes_vision",
+      "count": 20,
+      "tests": [
+        {"name": "mp4_face_detection", "format": "mp4", "operation": "keyframes;face-detection", "file": "test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4"},
+        {"name": "mp4_object_detection", "format": "mp4", "operation": "keyframes;object-detection", "file": "test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4"},
+        {"name": "mp4_ocr", "format": "mp4", "operation": "keyframes;ocr", "file": "test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4"},
+        {"name": "mp4_pose_estimation", "format": "mp4", "operation": "keyframes;pose-estimation", "file": "test_edge_cases/video_hevc_h265_modern_codec__compatibility.mp4"},
+        {"name": "mov_face_detection", "format": "mov", "operation": "keyframes;face-detection", "file": "test_edge_cases/prores_video_high_quality_old_codec.mov"},
+        {"name": "mov_object_detection", "format": "mov", "operation": "keyframes;object-detection", "file": "test_edge_cases/prores_video_high_quality_old_codec.mov"},
+        {"name": "mov_ocr", "format": "mov", "operation": "keyframes;ocr", "file": "test_edge_cases/prores_video_high_quality_old_codec.mov"},
+        {"name": "mov_pose_estimation", "format": "mov", "operation": "keyframes;pose-estimation", "file": "test_edge_cases/prores_video_high_quality_old_codec.mov"},
+        {"name": "mkv_face_detection", "format": "mkv", "operation": "keyframes;face-detection", "file": "test_edge_cases/video_multitrack_audio_matroska.mkv"},
+        {"name": "mkv_object_detection", "format": "mkv", "operation": "keyframes;object-detection", "file": "test_edge_cases/video_multitrack_audio_matroska.mkv"},
+        {"name": "mkv_ocr", "format": "mkv", "operation": "keyframes;ocr", "file": "test_edge_cases/video_multitrack_audio_matroska.mkv"},
+        {"name": "mkv_pose_estimation", "format": "mkv", "operation": "keyframes;pose-estimation", "file": "test_edge_cases/video_multitrack_audio_matroska.mkv"},
+        {"name": "webm_face_detection", "format": "webm", "operation": "keyframes;face-detection", "file": "test_edge_cases/video_webm_vp9_opus_audio.webm"},
+        {"name": "webm_object_detection", "format": "webm", "operation": "keyframes;object-detection", "file": "test_edge_cases/video_webm_vp9_opus_audio.webm"},
+        {"name": "webm_ocr", "format": "webm", "operation": "keyframes;ocr", "file": "test_edge_cases/video_webm_vp9_opus_audio.webm"},
+        {"name": "avi_face_detection", "format": "avi", "operation": "keyframes;face-detection", "file": "test_edge_cases/video_small_avi_old_format.avi"},
+        {"name": "avi_object_detection", "format": "avi", "operation": "keyframes;object-detection", "file": "test_edge_cases/video_small_avi_old_format.avi"},
+        {"name": "avi_ocr", "format": "avi", "operation": "keyframes;ocr", "file": "test_edge_cases/video_small_avi_old_format.avi"},
+        {"name": "flv_face_detection", "format": "flv", "operation": "keyframes;face-detection", "file": "test_edge_cases/video_old_flash_flv.flv"},
+        {"name": "flv_object_detection", "format": "flv", "operation": "keyframes;object-detection", "file": "test_edge_cases/video_old_flash_flv.flv"}
+      ]
+    },
+    {
+      "group": "image_formats",
+      "count": 15,
+      "tests": [
+        {"name": "heic_face_detection", "format": "heic", "operation": "face-detection", "file": "test_edge_cases/image_heic_iphone.heic"},
+        {"name": "heic_object_detection", "format": "heic", "operation": "object-detection", "file": "test_edge_cases/image_heic_iphone.heic"},
+        {"name": "heic_ocr", "format": "heic", "operation": "ocr", "file": "test_edge_cases/image_heic_iphone.heic"},
+        {"name": "heic_pose_estimation", "format": "heic", "operation": "pose-estimation", "file": "test_edge_cases/image_heic_iphone.heic"},
+        {"name": "heic_emotion_detection", "format": "heic", "operation": "emotion-detection", "file": "test_edge_cases/image_heic_iphone.heic"},
+        {"name": "jpg_face_detection_complex", "format": "jpg", "operation": "face-detection", "file": "test_files_wikimedia/jpg/face-detection/09_Alexey_Akindinov._Boy_and_Crystal._1997.jpg"},
+        {"name": "jpg_object_detection_complex", "format": "jpg", "operation": "object-detection", "file": "test_files_wikimedia/jpg/object-detection/04_150229-ColourwithStorage-Scene1_output.jpg"},
+        {"name": "png_face_detection_abstract", "format": "png", "operation": "face-detection", "file": "test_files_wikimedia/png/face-detection/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"},
+        {"name": "png_object_detection_geometric", "format": "png", "operation": "object-detection", "file": "test_files_wikimedia/png/object-detection/05_A_setiset_with_duplicated_piece.png"},
+        {"name": "webp_face_detection", "format": "webp", "operation": "face-detection", "file": "test_files_wikimedia/webp/face-detection/01_webp_lossy.webp"},
+        {"name": "webp_object_detection", "format": "webp", "operation": "object-detection", "file": "test_files_wikimedia/webp/object-detection/02_webp_lossy.webp"},
+        {"name": "bmp_face_detection", "format": "bmp", "operation": "face-detection", "file": "test_edge_cases/image_bmp_uncompressed.bmp"},
+        {"name": "bmp_object_detection", "format": "bmp", "operation": "object-detection", "file": "test_edge_cases/image_bmp_uncompressed.bmp"},
+        {"name": "avif_face_detection", "format": "avif", "operation": "face-detection", "file": "test_edge_cases/image_avif_modern.avif"},
+        {"name": "avif_object_detection", "format": "avif", "operation": "object-detection", "file": "test_edge_cases/image_avif_modern.avif"}
+      ]
+    },
+    {
+      "group": "wikimedia_diverse",
+      "count": 10,
+      "tests": [
+        {"name": "wikimedia_jpg_art", "format": "jpg", "operation": "face-detection", "file": "test_files_wikimedia/jpg/face-detection/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"},
+        {"name": "wikimedia_jpg_dog", "format": "jpg", "operation": "object-detection", "file": "test_files_wikimedia/jpg/object-detection/10_Australian_Shepherd_red_merle_portrait_Canon_EOS_700D_Pentacon_200mm_f4.jpg"},
+        {"name": "wikimedia_jpg_text", "format": "jpg", "operation": "ocr", "file": "test_files_wikimedia/jpg/ocr/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"},
+        {"name": "wikimedia_png_watercolor", "format": "png", "operation": "face-detection", "file": "test_files_wikimedia/png/face-detection/01_'Aside_4.'_-_small_abstract_painting_sketch_on_paper,_made_in_2016_in_watercolor_by_Dutch_artist_Fons_Heijnsbroek.png"},
+        {"name": "wikimedia_png_puzzle", "format": "png", "operation": "ocr", "file": "test_files_wikimedia/png/ocr/05_A_setiset_with_duplicated_piece.png"},
+        {"name": "wikimedia_webp_landscape", "format": "webp", "operation": "ocr", "file": "test_files_wikimedia/webp/ocr/01_webp_lossy.webp"},
+        {"name": "wikimedia_webp_water", "format": "webp", "operation": "object-detection", "file": "test_files_wikimedia/webp/object-detection/02_webp_lossy.webp"},
+        {"name": "wikimedia_webp_fire", "format": "webp", "operation": "object-detection", "file": "test_files_wikimedia/webp/object-detection/05_webp_lossy.webp"},
+        {"name": "wikimedia_jpg_pose", "format": "jpg", "operation": "pose-estimation", "file": "test_files_wikimedia/jpg/pose-estimation/01_\"Amelia\"_(Homage_to_Amelia_Earhart)_by_Mary_Curtis_Ratcliff.jpg"},
+        {"name": "wikimedia_png_pose", "format": "png", "operation": "pose-estimation", "file": "test_files_wikimedia/png/pose-estimation/05_A_setiset_with_duplicated_piece.png"}
+      ]
+    }
+  ],
+  "notes": [
+    "Emotion-detection tests excluded for most groups due to ERROR cases in Phase 2 (requires faces)",
+    "RAW formats validated in N=93-109 structurally but not yet with GPT-4 Vision",
+    "Video tests use keyframes; to extract frames for vision operations",
+    "Phase 2 established 69.6% CORRECT rate on vision ops (16/23), Phase 3 aims for >80%"
+  ]
+}

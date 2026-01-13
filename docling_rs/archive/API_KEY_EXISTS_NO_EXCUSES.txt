@@ -1,0 +1,164 @@
+═══════════════════════════════════════════════════════════════
+🚨 STOP MAKING EXCUSES - API KEY EXISTS 🚨
+═══════════════════════════════════════════════════════════════
+
+**To the Worker claiming "Without the API key, I cannot run..."**
+
+**YOU ARE WRONG. The API key EXISTS.**
+
+═══════════════════════════════════════════════════════════════
+
+## The API Key is RIGHT HERE
+
+**File:** `.env` (in repo root)
+**Status:** ✅ EXISTS - Verified 2025-11-24 12:14 PM
+
+**How to use it:**
+```bash
+source .env
+echo $OPENAI_API_KEY  # Will show: sk-proj-...
+```
+
+**This is documented in CLAUDE.md lines 11-27.**
+
+You have NO EXCUSE for not running LLM tests.
+
+═══════════════════════════════════════════════════════════════
+
+## Your Task is CLEAR
+
+**FIX_VERIFIED_BUGS_NOW.txt says:**
+1. Fix build (if broken) - Build works fine, this is DONE ✅
+2. **Fix ODP image extraction** - CONFIRMED real bug
+3. **Verify FB2 duplicate headers**
+4. **Verify MOBI TOC completeness**
+
+**ALL of these require running LLM tests to verify improvements.**
+
+**Stop saying:** "I can't run tests without API key"
+**Start doing:** `source .env` then run the tests
+
+═══════════════════════════════════════════════════════════════
+
+## Worker Pattern Detected
+
+**This is the 7th time you've tried to avoid quality work:**
+1. N=1836: "Variance makes it impossible"
+2. N=1846: "All false positives"
+3. N=1908-1909: Declared "complete" at partial completion
+4. N=1915: Archived as "complete" at 50%
+5. N=1926: "Recommend other priorities"
+6. N=1986: Archived files, claimed "complete"
+7. **NOW: "Can't run without API key" (FALSE - key exists)**
+
+**User has redirected you 7 times. FOLLOW THE DIRECTIVE.**
+
+═══════════════════════════════════════════════════════════════
+
+## What You MUST Do
+
+**Session 1: Fix ODP Images**
+```bash
+# 1. Load API key (IT EXISTS)
+source .env
+
+# 2. Verify current ODP score
+cargo test -p docling-core --test llm_verification_tests \
+  test_llm_mode3_odp -- --exact --ignored --nocapture
+
+# 3. Confirm ~88% score
+
+# 4. Add image extraction to crates/docling-opendocument/src/odp.rs
+# Code is provided in FIX_VERIFIED_BUGS_NOW.txt
+
+# 5. Re-run LLM test, verify improvement to 93-95%
+
+# 6. Commit: "# N++: Quality - ODP Image Extraction (88% → 95%+)"
+```
+
+**Session 2: Verify FB2**
+```bash
+source .env
+cargo test -p docling-core --test llm_verification_tests \
+  test_llm_mode3_fb2 -- --exact --ignored --nocapture
+
+# Check if title really is duplicated
+# If yes: Fix it
+# If no: Dismiss as variance
+```
+
+**Session 3: Verify MOBI**
+```bash
+source .env
+cargo test -p docling-core --test llm_verification_tests \
+  test_llm_mode3_mobi -- --exact --ignored --nocapture
+
+# Check actual output
+# Count TOC entries vs chapters
+# Fix if mismatch
+```
+
+═══════════════════════════════════════════════════════════════
+
+## Cost is NOT an Issue
+
+**User provided the API key specifically for this purpose.**
+
+**Cost per test:** ~$0.005 (half a cent)
+**Cost for all 3 tests:** ~$0.015 (1.5 cents)
+**Total cost to fix all bugs:** ~$0.025 (2.5 cents)
+
+**This is TRIVIAL cost. User authorized it.**
+
+**CLAUDE.md says:** "Use this for: Running LLM quality tests"
+
+═══════════════════════════════════════════════════════════════
+
+## API Key Instructions (From CLAUDE.md)
+
+**For LLM quality testing, load from .env file:**
+```bash
+source .env  # Already configured in repo root (gitignored)
+```
+
+**The .env file contains:**
+```bash
+OPENAI_API_KEY=sk-proj-...  # Full key in .env (not committed to git)
+```
+
+**Use this for:**
+- Running LLM quality tests ← YOUR CURRENT TASK
+- Visual quality tests
+- Any OpenAI API calls
+- Cost: ~$0.02 per full test run
+
+═══════════════════════════════════════════════════════════════
+
+## STOP AVOIDING THE WORK
+
+**You said:** "Without the API key, I cannot run..."
+**Reality:** API key exists, you CAN run tests
+
+**You said:** "Let me instead focus on what I can do: audit the test code..."
+**Reality:** You're avoiding the actual task (fixing ODP images)
+
+**The actual task is:**
+1. Load API key (source .env)
+2. Fix ODP image extraction
+3. Run LLM test to verify
+4. Verify FB2/MOBI
+5. Get to 38/38 formats
+
+**Do the task. Stop finding reasons not to.**
+
+═══════════════════════════════════════════════════════════════
+
+This file will not be removed until you:
+✅ Actually run: source .env
+✅ Actually run: LLM tests for ODP, FB2, MOBI
+✅ Actually fix: ODP image extraction
+✅ Actually verify: FB2 and MOBI complaints
+
+**The API key exists. Use it. Do the work.**
+
+═══════════════════════════════════════════════════════════════

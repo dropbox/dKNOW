@@ -1,0 +1,8 @@
+/// An optional function that if non-null is run before benchmark samples
+  /// are timed.
+  public var setUpFunction : (() -> ())? {
+    if !shouldRun {
+      return nil
+    }
+    return _setUpFunction
+  }

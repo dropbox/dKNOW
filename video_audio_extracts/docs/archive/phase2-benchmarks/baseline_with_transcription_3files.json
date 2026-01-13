@@ -1,0 +1,29 @@
+{
+  "benchmark_type": "baseline_manual_workflow",
+  "timestamp": "2025-10-28T03:36:21.090429",
+  "configuration": {
+    "whisper_model": "tiny",
+    "num_files": 3,
+    "dataset_path": "/Users/ayates/Library/CloudStorage/Dropbox-BrandcraftSolutions/a.test/Kinetics dataset (5%)/kinetics600_5per/kinetics600_5per/train",
+    "tools": [
+      "FFmpeg",
+      "faster-whisper (tiny, int8)"
+    ]
+  },
+  "results": {
+    "total_files": 3,
+    "successful": 3,
+    "failed": 0,
+    "total_time_seconds": 1.57,
+    "errors": [],
+    "throughput_files_per_second": 1.91,
+    "latency_mean_seconds": 0.52,
+    "latency_median_seconds": 0.5,
+    "latency_min_seconds": 0.4,
+    "latency_max_seconds": 0.67,
+    "latency_stddev_seconds": 0.14,
+    "audio_extraction_mean_seconds": 0.08,
+    "transcription_mean_seconds": 0.28,
+    "keyframe_extraction_mean_seconds": 0.16
+  }
+}

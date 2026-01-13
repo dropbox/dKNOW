@@ -1,0 +1,73 @@
+# Training config for combined dataset (~2.5-3M pairs)
+# Sources: CodeSearchNet (2M) + The Stack (500K) + Your 138K
+#
+# Target: SOTA Recall@K AUC for agentic code search
+#
+# Expected:
+#   - Training time: ~12-16 hours on A100
+#   - Recall@100 AUC: 0.92+
+#   - P@1: 0.95+
+
+data:
+  train: "data/combined_training.jsonl"
+  validation: "data/combined_training.val.jsonl"
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-code-sota"
+
+training:
+  method: "lora"
+
+  # LoRA config - high rank for large dataset
+  lora_r: 64
+  lora_alpha: 128
+  lora_dropout: 0.05
+  target_modules:
+    - "q"
+    - "v"
+    - "k"
+    - "o"
+    - "wi_0"
+    - "wi_1"
+    - "wo"
+
+  # Large batch for maximum in-batch negatives
+  # A100 80GB: batch=96, accum=4 → effective=384
+  # A100 40GB: batch=64, accum=4 → effective=256
+  # H100: batch=128, accum=2 → effective=256
+  batch_size: 64
+  gradient_accumulation_steps: 4  # Effective batch = 256
+
+  epochs: 2
+  learning_rate: 5e-6
+  warmup_steps: 3000
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+
+  # Recall@K optimization
+  temperature: 0.05
+  margin: 0.1
+  loss: "infonce_with_margin"
+  hard_negatives: 63
+
+  max_length: 512
+
+  # GPU optimizations
+  gradient_checkpointing: true
+  cache_tokenized: true
+  use_amp: true
+  use_compile: true
+  num_workers: 8
+
+  # Evaluation during training
+  eval_every: 5000
+  eval_spec: "eval/code_queries.json"
+
+  # Logging and checkpoints
+  log_every: 100
+  save_every: 10000
+  seed: 42
+
+  # Early stopping on validation loss
+  early_stopping_patience: 3

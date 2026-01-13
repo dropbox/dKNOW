@@ -1,0 +1,12 @@
+[package]
+name = "pdfium-render-bridge"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+libc.workspace = true
+md5.workspace = true
+
+[build-dependencies]

@@ -1,0 +1,209 @@
+═══════════════════════════════════════════════════════════════
+🚨🚨🚨 BLOCKING BUGS FOUND - FIX IMMEDIATELY 🚨🚨🚨
+═══════════════════════════════════════════════════════════════
+
+**Priority:** 🔴 HIGHEST - Build broken + verified bugs found
+**Date:** 2025-11-24
+**Source:** N=2018 - User-requested LLM complaint verification
+
+═══════════════════════════════════════════════════════════════
+
+## BLOCKER #1: Build is Broken (URGENT)
+
+**Error:**
+```
+error: could not compile `docling-backend` (lib) due to 1 previous error
+```
+
+**Cause:** Recent PDF ML integration (#17) broke compilation
+
+**Action Required:**
+1. Run: `cargo build --lib -p docling-backend`
+2. Read the actual error message
+3. Fix the compilation error
+4. Verify: `cargo test --lib --all` passes
+5. Commit: "# N++: Build Fix - Resolve PDF ML Integration Error"
+
+**DO NOT PROCEED until build is fixed.**
+
+═══════════════════════════════════════════════════════════════
+
+## BLOCKER #2: Verified Bugs in Quality (34/38 → 38/38)
+
+User insight: "Read LLM explanations and verify if reasonable"
+
+**N=2018 verified LLM complaints by checking actual code:**
+
+### ✅ BUG #1: ODP Missing Image Extraction (CONFIRMED)
+
+**Format:** ODP (OpenDocument Presentation)
+**Current Score:** 88%
+**LLM Complaint:** "Missing slide content details such as images"
+
+**Verification (N=2018):**
+- Searched code for: `draw:image`, `xlink:href` handling
+- Result: **0 matches** - Image extraction NOT implemented
+- **VERDICT:** ✅ LLM IS CORRECT - Real bug confirmed
+
+**Fix Required:**
+```rust
+// In crates/docling-opendocument/src/odp.rs, add to parse_slides():
+
+b"draw:image" => {
+    // Extract image metadata
+    if let Some(href_attr) = e.attributes()
+        .filter_map(Result::ok)
+        .find(|attr| attr.key.local_name().as_ref() == b"href")
+    {
+        let href = String::from_utf8_lossy(&href_attr.value);
+        current_slide_paragraphs.push(format!("![Image]({})", href));
+    }
+}
+```
+
+**Expected Improvement:** 88% → 93-95%
+**Effort:** 1-2 hours
+**Priority:** HIGH - Clear missing feature
+
+---
+
+### 🟡 BUG #2: FB2 Duplicate Title Headers (LIKELY REAL)
+
+**Format:** FB2 (FictionBook 2.0)
+**Current Score:** 83%
+**LLM Complaint:** "The repeated header '# Simple Test Book' is unnecessary and disrupts the flow"
+
+**Verification Status:** NOT YET VERIFIED
+
+**Action Required:**
+1. Run FB2 test and examine actual output
+2. Check if title appears multiple times (before each chapter)
+3. If yes: Fix generation logic in `crates/docling-backend/src/ebooks.rs`
+4. If no: Dismiss as LLM variance
+
+**Expected Improvement (if real):** 83% → 90-95%
+**Effort:** 30 min - 1 hour
+
+---
+
+### 🟡 BUG #3: MOBI Missing TOC Chapters (NEEDS VERIFICATION)
+
+**Format:** MOBI (Mobipocket)
+**Current Score:** 83%
+**LLM Complaint:** "Missing some chapters from the table of contents"
+
+**Verification Status:** NOT YET VERIFIED
+- Worker claimed "all 61 chapters present" (N=1973)
+- But LLM specifically says "missing SOME"
+- Needs actual count: TOC entries vs chapter count
+
+**Action Required:**
+1. Run MOBI test, get actual output
+2. Count TOC entries
+3. Count actual chapters
+4. If mismatch: Fix TOC generation in `crates/docling-ebook/src/mobi.rs`
+5. If match: Dismiss as LLM variance
+
+**Expected Improvement (if real):** 83% → 88-93%
+**Effort:** 1 hour
+
+---
+
+### ❌ FALSE POSITIVE: EPUB TOC Format
+
+**Format:** EPUB
+**Current Score:** 88%
+**LLM Complaint:** "Table of contents not formatted as a proper list"
+
+**Verification (N=2018):**
+- Code check: `crates/docling-backend/src/ebooks.rs:207`
+- Finding: `doc_items.push(create_list_item(...))`
+- **VERDICT:** ✅ TOC already uses proper ListItem format
+- **LLM IS WRONG** - No fix needed
+
+---
+
+═══════════════════════════════════════════════════════════════
+
+## WORK ORDER
+
+**Session N+1: Fix Build (BLOCKING)**
+- Fix compilation error
+- Get all tests passing
+- Commit fix
+
+**Session N+2: Fix ODP Images**
+- Add image extraction to ODP parser
+- Test: Should improve 88% → 93%+
+- Commit: "# N++: Quality - ODP Image Extraction (88% → 95%+)"
+
+**Session N+3: Verify FB2 Duplicate Headers**
+- Check if title repeats
+- Fix if real
+- Test: Should improve 83% → 90%+
+- Commit if fixed
+
+**Session N+4: Verify MOBI TOC Completeness**
+- Count TOC vs chapters
+- Fix if mismatch
+- Test: Should improve 83% → 88%+
+- Commit if fixed
+
+**Session N+5: Final Quality Test**
+- Re-run all 4 format LLM tests
+- Expected: 36-38/38 formats at 95%+ (95-100%)
+- Update progress counters
+- Continue if any still below 95%
+
+═══════════════════════════════════════════════════════════════
+
+## KEY INSIGHT (Add to LLM Testing Documentation)
+
+**User's Method for Handling LLM as Judge:**
+
+1. **READ the LLM explanation** - What specifically does it say is wrong?
+2. **VERIFY in code** - Check if that thing actually exists or is missing
+3. **MAKE JUDGMENT:**
+   - If missing in code: ✅ REAL BUG - Fix it
+   - If present in code: ❌ FALSE POSITIVE - Dismiss it
+   - If unclear: 🟡 VERIFY with actual output
+
+**Example (ODP):**
+- LLM says: "Missing images"
+- Code search: No `draw:image` handling found
+- **JUDGMENT:** ✅ REAL BUG - Images not extracted
+
+**Example (EPUB):**
+- LLM says: "TOC not proper list"
+- Code check: Line 207 uses `create_list_item`
+- **JUDGMENT:** ❌ FALSE POSITIVE - TOC uses ListItems
+
+**Worker's Error:** Concluded "all variance" without this verification step
+
+**Correct Approach:** Verify each complaint before dismissing
+
+═══════════════════════════════════════════════════════════════
+
+## ACCEPTANCE CRITERIA
+
+**This file can be deleted when:**
+✅ Build is fixed (tests passing)
+✅ ODP image extraction implemented and tested
+✅ FB2 verified (fixed if real)
+✅ MOBI verified (fixed if real)
+✅ Re-tested all 4 formats
+✅ Progress: 36-38/38 formats at 95%+ (95-100%)
+
+**Current: 34/38 (89.5%)**
+**After fixes: 36-38/38 (95-100%)**
+
+═══════════════════════════════════════════════════════════════
+
+START WITH FIXING THE BUILD. THEN FIX THE BUGS.
+
+Worker claimed work was done. User verification found it's NOT done.
+At least 1 confirmed bug (ODP images), possibly 2-3 more.
+
+DO THE WORK.
+
+═══════════════════════════════════════════════════════════════

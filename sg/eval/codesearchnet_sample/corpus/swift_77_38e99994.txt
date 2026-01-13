@@ -1,0 +1,3 @@
+/// A partially type-erased key path, from a concrete root type to any
+/// resulting value type.
+public class PartialKeyPath<Root>: AnyKeyPath { }

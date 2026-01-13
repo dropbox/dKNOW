@@ -1,0 +1,15 @@
+[package]
+name = "video-audio-decoder"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+video-audio-common = { path = "../common" }
+ffmpeg-next.workspace = true
+ffmpeg-sys-next = "8.0"  # For direct C FFI bindings
+crossbeam-channel = "0.5"  # For streaming decoder API
+
+[build-dependencies]
+cc = "1.0"  # For compiling C helper functions

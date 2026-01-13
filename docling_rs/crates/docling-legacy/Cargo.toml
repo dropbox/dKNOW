@@ -1,0 +1,13 @@
+[package]
+name = "docling-legacy"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Legacy document format parsers for docling-rs (WordPerfect, Lotus, etc.)"
+keywords = ["legacy", "wordperfect", "lotus", "vintage"]
+categories = ["parsing", "parser-implementations"]
+[dependencies]
+anyhow.workspace = true
+rtf-parser = "0.4.2"
+tempfile = "3.14"

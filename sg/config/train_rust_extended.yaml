@@ -1,0 +1,60 @@
+# XTR Fine-Tuning on Extended Rust Dataset (113,849 pairs)
+#
+# Training on extended Rust corpus from 95+ repositories:
+# - Browser: servo (8.7k)
+# - Core Rust: rustc (7k), cargo, rust-analyzer
+# - WASM: wasmtime (5.5k), wasmer (1.9k)
+# - Python: RustPython (5.2k)
+# - Blockchain: substrate (5k), polkadot (2.2k), solana (2k)
+# - Data: polars (4.3k), arrow-rs (3.5k)
+# - Embedded: embassy (2.8k)
+# - Games: bevy (5k)
+# - Verification: kani, verus, prusti, creusot
+# - Internal: dashflow (5.8k), dashprove (4.1k)
+#
+# Prerequisites:
+#   Data already extracted: data/training_data_200k.jsonl (113,849 pairs, 119MB)
+#
+# Usage:
+#   python scripts/train_xtr_code.py --config config/train_rust_extended.yaml
+#
+# Output: checkpoints/xtr-rust-extended/ (LoRA adapters)
+# Then merge: python scripts/merge_lora.py checkpoints/xtr-rust-extended -o checkpoints/xtr-rust-extended-merged
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-rust-extended"
+
+data:
+  train: "data/training_data_200k.jsonl"
+  languages:
+    - rust
+
+training:
+  method: "lora"
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.1
+  target_modules:
+    - q
+    - v
+
+  epochs: 2             # Fewer epochs with more data (113K pairs)
+  batch_size: 16        # Larger batch for efficiency, may need to reduce on low memory
+  learning_rate: 8.0e-6 # Lower LR for larger dataset
+  warmup_steps: 300     # More warmup for larger dataset
+  max_length: 512
+
+  loss: "infonce"
+  temperature: 0.07
+  hard_negatives: 3
+  log_every: 100
+
+# Compute requirements (M1 Mac with MPS):
+#   Time: ~4-8 hours (estimated)
+#   Memory: ~12GB (with batch_size 16)
+#   Storage: ~2GB
+#
+# For faster training on GPU:
+#   batch_size: 32-64
+#   Time: ~2-3 hours on A100

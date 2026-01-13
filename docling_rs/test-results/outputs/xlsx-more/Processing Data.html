@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Processing Data</title>
+<meta name="generator" content="Docling HTML Serializer"/>
+<style>
+    html {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #333;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2em;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.3em;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 1em 0;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    figure {
+        margin: 1.5em 0;
+        text-align: center;
+    }
+    figcaption {
+        color: #666;
+        font-style: italic;
+        margin-top: 0.5em;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    pre {
+        background-color: #f6f8fa;
+        border-radius: 3px;
+        padding: 1em;
+        overflow: auto;
+    }
+    code {
+        font-family: monospace;
+        background-color: #f6f8fa;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+    }
+    pre code {
+        background-color: transparent;
+        padding: 0;
+    }
+    .formula {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background-color: #f9f9f9;
+    }
+    .formula-not-decoded {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background: repeating-linear-gradient(
+            45deg,
+            #f0f0f0,
+            #f0f0f0 10px,
+            #f9f9f9 10px,
+            #f9f9f9 20px
+        );
+    }
+    .page-break {
+        page-break-after: always;
+        border-top: 1px dashed #ccc;
+        margin: 2em 0;
+    }
+    .key-value-region {
+        background-color: #f9f9f9;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .key-value-region dt {
+        font-weight: bold;
+    }
+    .key-value-region dd {
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+    }
+    .form-container {
+        border: 1px solid #ddd;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .form-item {
+        margin-bottom: 0.5em;
+    }
+    .image-classification {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 0.5em;
+    }
+</style>
+</head>
+<body>
+<div class='page'>
+<table><tbody><tr><th>Date</th><th>UPR</th><th>Stage</th><th>Day</th></tr><tr><td>2025-01-04 00:00:00</td><td>3248</td><td>Baseline</td><td>Saturday</td></tr><tr><td>2025-01-06 00:00:00</td><td>3424</td><td>Baseline</td><td>Monday</td></tr><tr><td>2025-01-07 00:00:00</td><td>3207</td><td>Baseline</td><td>Tuesday</td></tr><tr><td>2025-01-08 00:00:00</td><td>3292</td><td>Baseline</td><td>Wednesday</td></tr><tr><td>2025-01-09 00:00:00</td><td>3190</td><td>Baseline</td><td>Thursday</td></tr><tr><td>2025-01-10 00:00:00</td><td>3280</td><td>Baseline</td><td>Friday</td></tr><tr><td>2025-01-11 00:00:00</td><td>3093</td><td>Baseline</td><td>Saturday</td></tr><tr><td>2025-01-13 00:00:00</td><td>3314</td><td>Baseline</td><td>Monday</td></tr><tr><td>2025-01-14 00:00:00</td><td>3364</td><td>Baseline</td><td>Tuesday</td></tr><tr><td>2025-01-15 00:00:00</td><td>3196</td><td>Baseline</td><td>Wednesday</td></tr><tr><td>2025-01-16 00:00:00</td><td>3244</td><td>Baseline</td><td>Thursday</td></tr><tr><td>2025-01-17 00:00:00</td><td>3208</td><td>Baseline</td><td>Friday</td></tr><tr><td>2025-01-18 00:00:00</td><td>3119</td><td>Baseline</td><td>Saturday</td></tr><tr><td>2025-01-21 00:00:00</td><td>3099</td><td>Baseline</td><td>Tuesday</td></tr><tr><td>2025-01-22 00:00:00</td><td>3026</td><td>Baseline</td><td>Wednesday</td></tr><tr><td>2025-01-23 00:00:00</td><td>3157</td><td>Baseline</td><td>Thursday</td></tr><tr><td>2025-01-24 00:00:00</td><td>3334</td><td>Baseline</td><td>Friday</td></tr><tr><td>2025-01-25 00:00:00</td><td>3265</td><td>Baseline</td><td>Saturday</td></tr><tr><td>2025-01-27 00:00:00</td><td>3374</td><td>Baseline</td><td>Monday</td></tr><tr><td>2025-01-28 00:00:00</td><td>3113</td><td>Baseline</td><td>Tuesday</td></tr><tr><td>2025-01-29 00:00:00</td><td>3169</td><td>Baseline</td><td>Wednesday</td></tr><tr><td>2025-01-30 00:00:00</td><td>3082</td><td>Baseline</td><td>Thursday</td></tr><tr><td>2025-01-31 00:00:00</td><td>3292</td><td>Baseline</td><td>Friday</td></tr><tr><td>2025-02-03 00:00:00</td><td>3102</td><td>Baseline</td><td>Monday</td></tr><tr><td>2025-02-04 00:00:00</td><td>3066</td><td>Baseline</td><td>Tuesday</td></tr><tr><td>2025-02-05 00:00:00</td><td>2898</td><td>Baseline</td><td>Wednesday</td></tr><tr><td>2025-02-06 00:00:00</td><td>2990</td><td>Baseline</td><td>Thursday</td></tr><tr><td>2025-02-07 00:00:00</td><td>3132</td><td>Baseline</td><td>Friday</td></tr><tr><td>2025-02-08 00:00:00</td><td>3131</td><td>Define</td><td>Saturday</td></tr><tr><td>2025-02-10 00:00:00</td><td>3186</td><td>Define</td><td>Monday</td></tr><tr><td>2025-02-11 00:00:00</td><td>2711</td><td>Define</td><td>Tuesday</td></tr><tr><td>2025-02-12 00:00:00</td><td>2981</td><td>Define</td><td>Wednesday</td></tr><tr><td>2025-02-13 00:00:00</td><td>3028</td><td>Define</td><td>Thursday</td></tr><tr><td>2025-02-15 00:00:00</td><td>3040</td><td>Measure</td><td>Saturday</td></tr><tr><td>2025-02-18 00:00:00</td><td>2884</td><td>Measure</td><td>Tuesday</td></tr><tr><td>2025-02-19 00:00:00</td><td>2859</td><td>Measure</td><td>Wednesday</td></tr><tr><td>2025-02-20 00:00:00</td><td>2888</td><td>Measure</td><td>Thursday</td></tr><tr><td>2025-02-21 00:00:00</td><td>2937</td><td>Measure</td><td>Friday</td></tr><tr><td>2025-02-22 00:00:00</td><td>2914</td><td>Aanlyze</td><td>Saturday</td></tr><tr><td>2025-02-24 00:00:00</td><td>3147</td><td>Aanlyze</td><td>Monday</td></tr><tr><td>2025-02-25 00:00:00</td><td>2883</td><td>Aanlyze</td><td>Tuesday</td></tr><tr><td>2025-02-26 00:00:00</td><td>3116</td><td>Aanlyze</td><td>Wednesday</td></tr><tr><td>2025-02-27 00:00:00</td><td>3293</td><td>Aanlyze</td><td>Thursday</td></tr><tr><td>2025-02-28 00:00:00</td><td>3342</td><td>Aanlyze</td><td>Friday</td></tr><tr><td>2025-03-01 00:00:00</td><td>3323</td><td>Aanlyze</td><td>Saturday</td></tr></tbody></table>
+<table><tbody><tr><th>Time</th><th>UPR</th></tr><tr><td>6:40pm</td><td>2180</td></tr><tr><td>4:33pm</td><td>2020</td></tr><tr><td>2:11pm</td><td>1858</td></tr><tr><td>5:03pm</td><td>2321</td></tr><tr><td>5:51am</td><td>3131</td></tr><tr><td>4:37am</td><td>2921</td></tr><tr><td>3:43am</td><td>3091</td></tr><tr><td>3:31pm</td><td>1821</td></tr><tr><td>2:35am</td><td>2753</td></tr><tr><td>5:16pm</td><td>1919</td></tr><tr><td>4:03am</td><td>2897</td></tr><tr><td>8:05am</td><td>3124</td></tr><tr><td>6:32pm</td><td>1858</td></tr><tr><td>7:35am</td><td>2992</td></tr><tr><td>3:47pm</td><td>2011</td></tr><tr><td>6:40pm</td><td>2041</td></tr><tr><td>4:33pm</td><td>1881</td></tr><tr><td>2:11pm</td><td>1719</td></tr><tr><td>5:03pm</td><td>2182</td></tr><tr><td>5:51am</td><td>2992</td></tr><tr><td>4:37am</td><td>2782</td></tr><tr><td>3:43am</td><td>2952</td></tr><tr><td>3:31pm</td><td>1682</td></tr><tr><td>2:35am</td><td>2614</td></tr><tr><td>5:16pm</td><td>1780</td></tr><tr><td>4:03am</td><td>2758</td></tr><tr><td>8:05am</td><td>2985</td></tr><tr><td>6:32pm</td><td>1719</td></tr><tr><td>7:35am</td><td>2853</td></tr><tr><td>3:47pm</td><td>1872</td></tr><tr><td>5:03pm</td><td>2499</td></tr><tr><td>8:05am</td><td>2750</td></tr><tr><td>4:00am</td><td>2650</td></tr><tr><td>6:00am</td><td>2650</td></tr><tr><td>2:00pm</td><td>2250</td></tr></tbody></table>
+</div>
+</body>
+</html>

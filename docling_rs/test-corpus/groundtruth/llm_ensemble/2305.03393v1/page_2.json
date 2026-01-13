@@ -1,0 +1,81 @@
+{
+  "page_number": 2,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "2 M. Lysak, et al.",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Fig. 1. Comparison between HTML and OTSL table structure representation: (A) table-example with complex row and column headers, including a 2D empty span, (B) minimal graphical representation of table structure using rectangular layout, (C) HTML representation, (D) OTSL representation. This example demonstrates many of the key-features of OTSL, namely its reduced vocabulary size (12 versus 5 in this case), its reduced sequence length (55 versus 30) and a enhanced internal structure (variable token sequence length per row in HTML versus a fixed length of rows in OTSL).",
+      "bbox": {
+        "l": 10.0,
+        "t": 5.0,
+        "r": 90.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Diagram comparing HTML and OTSL table structure representations with labeled sections A, B, C, D.",
+      "bbox": {
+        "l": 10.0,
+        "t": 20.0,
+        "r": 90.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "today, table detection in documents is a well understood problem, and the latest state-of-the-art (SOTA) object detection methods provide an accuracy comparable to human observers [7,8,10,14,23]. On the other hand, the problem of table structure recognition (TSR) is a lot more challenging and remains a very active area of research, in which many novel machine learning algorithms are being explored [3,4,5,9,11,12,13,14,17,18,21,22].",
+      "bbox": {
+        "l": 10.0,
+        "t": 60.0,
+        "r": 90.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Recently emerging SOTA methods for table structure recognition employ transformer-based models, in which an image of the table is provided to the network in order to predict the structure of the table as a sequence of tokens. These image-to-sequence (Im2Seq) models are extremely powerful, since they allow for a purely data-driven solution. The tokens of the sequence typically belong to a markup language such as HTML, Latex or Markdown, which allow to describe table structure as rows, columns and spanning cells in various configurations. In Figure 1, we illustrate how HTML is used to represent the table-structure of a particular example table. Public table-structure data sets such as PubTabNet [22], and FinTabNet [21], which were created in a semi-automated way from paired PDF and HTML sources (e.g. PubMed Central), popularized primarily the use of HTML as ground-truth representation format for TSR.",
+      "bbox": {
+        "l": 10.0,
+        "t": 70.0,
+        "r": 90.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

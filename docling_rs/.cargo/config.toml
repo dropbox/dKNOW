@@ -1,0 +1,14 @@
+# PDF ML Integration Configuration
+
+[profile.release]
+# Link-Time Optimization - optimizes across crate boundaries
+lto = "thin"
+# Optimize for specific CPU architecture  
+codegen-units = 1
+
+[build]
+# Runtime library path + CPU optimizations
+rustflags = [
+    "-C", "target-cpu=native",
+    "-C", "link-args=-Wl,-rpath,/opt/homebrew/lib/python3.14/site-packages/torch/lib"
+]

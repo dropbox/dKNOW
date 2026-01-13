@@ -1,0 +1,41 @@
+name: image_quality_assessment
+description: "Assess image quality (aesthetic and technical, 1-10 scale) using NIMA (Neural Image Assessment) ONNX model"
+
+inputs:
+  - jpg
+  - jpeg
+  - png
+  - bmp
+  - webp
+  - ico
+  - avif
+  - arw
+  - cr2
+  - dng
+  - nef
+  - raf
+  - dpx
+  - Keyframes
+
+outputs:
+  - ImageQualityAssessment
+
+config:
+  max_file_size_mb: 100
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "20s"
+  memory_per_file_mb: 128
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1730419200  # 2024-10-31 00:00:00 UTC
+
+# Implementation location
+implementation:
+  crate: "video-audio-image-quality"
+  function: "assess"

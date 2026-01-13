@@ -1,0 +1,9 @@
+{
+  "operation": "metadata_extraction",
+  "timestamp": "20251107_034516",
+  "hardware": {
+    "cpu": "Apple M2 Max",
+    "memory_gb": 64,
+    "os": "Darwin 24.6.0"
+  },
+  "results": [

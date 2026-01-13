@@ -1,0 +1,14 @@
+## ALEXANDRIA ARCHAEOLOGICAL COMMISSION MEETING AGENDA: June 18, 2025 IVY HILL CEMETERY, 6:30 P.M.
+
+2823 KING STREET
+
+(rain location, Lloyd House, 220 N. Washington Street)
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+1. Call to Order
+2. Walking Tour Ivy Hill Cemetery (Catherine Weinraub)
+3. Next AAC Meeting - July 16, Lloyd House, 7 p.m.
+4. Adjournment
+
+Commission member attendance at AAC meetings is mandatory as part of your appointment. For an excused absence, please call Alexandria Archaeology at 703.746.4399 or email eleanor.breen@alexandriava.gov ahead of time. For reasonable disability accommodation, contact eleanor.breen@alexandriava.gov or call 703.746.4399, Virginia Relay 711.

@@ -1,0 +1,62 @@
+name: format_conversion
+version: 1.0.0
+description: "Convert media files to different formats, codecs, and containers (H.264/H.265/VP9/AV1, AAC/MP3/Opus, MP4/MKV/WebM)"
+
+inputs:
+  # Video containers
+  - mp4
+  - mov
+  - avi
+  - mkv
+  - webm
+  - flv
+  - m4v
+  - 3gp
+  - wmv
+  - ogv
+  - mts      # AVCHD camcorder
+  - m2ts     # Blu-ray AVCHD
+  - mxf      # Broadcast media exchange
+  - ts       # MPEG transport stream
+  - vob      # DVD video
+  - mpg      # MPEG-1/2
+  - mpeg     # MPEG-1/2
+  - rm       # RealMedia
+  - rmvb     # RealMedia Variable Bitrate
+  - asf      # Advanced Systems Format
+  - dv       # Digital Video
+
+  # Audio formats
+  - wav      # Waveform Audio File Format (uncompressed PCM)
+  - mp3      # MPEG-1/2 Audio Layer 3
+  - flac     # Free Lossless Audio Codec
+  - aac      # Advanced Audio Coding
+  - m4a      # MPEG-4 Audio (AAC container)
+  - ogg      # Ogg Vorbis
+  - opus     # Opus Interactive Audio Codec
+  - wma      # Windows Media Audio
+  - amr      # Adaptive Multi-Rate
+  - ape      # Monkey's Audio
+  - tta      # True Audio
+
+outputs:
+  - FormatConversion
+
+config:
+  max_file_size_mb: 100000
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "300s"  # Transcoding is slow (depends on codec, preset, hardware)
+  memory_per_file_mb: 512
+  supports_streaming: false
+
+cache:
+  enabled: false  # Format conversion output depends on config, not cacheable
+  version: 1
+  invalidate_before: 1730419200  # 2024-11-01 00:00:00 UTC
+
+implementation:
+  crate: "format-conversion"
+  function: "convert_format"

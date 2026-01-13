@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPX Test Generator"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Mt. Tamalpais Hiking Trail</name>
+    <desc>Popular hiking trail through redwood forests to mountain summit</desc>
+    <author>
+      <name>Trail Mapper</name>
+    </author>
+    <time>2024-06-15T08:30:00Z</time>
+  </metadata>
+  <wpt lat="37.9050" lon="-122.5962">
+    <ele>150.5</ele>
+    <time>2024-06-15T08:00:00Z</time>
+    <name>Trailhead</name>
+    <desc>Starting point with parking lot and restrooms</desc>
+  </wpt>
+  <wpt lat="37.9108" lon="-122.6010">
+    <ele>550.0</ele>
+    <time>2024-06-15T10:30:00Z</time>
+    <name>Summit</name>
+    <desc>Mountain summit with 360-degree views</desc>
+  </wpt>
+  <wpt lat="37.9075" lon="-122.5985">
+    <ele>265.0</ele>
+    <time>2024-06-15T08:55:00Z</time>
+    <name>Waterfall Viewpoint</name>
+    <desc>Scenic waterfall visible from trail</desc>
+  </wpt>
+  <rte>
+    <name>Return Route</name>
+    <desc>Alternative descent route via fire road</desc>
+    <rtept lat="37.9108" lon="-122.6010">
+      <ele>550.0</ele>
+      <name>Summit</name>
+    </rtept>
+    <rtept lat="37.9100" lon="-122.6015">
+      <ele>520.0</ele>
+      <name>Intersection</name>
+    </rtept>
+    <rtept lat="37.9080" lon="-122.6020">
+      <ele>400.0</ele>
+      <name>Fire Road</name>
+    </rtept>
+    <rtept lat="37.9055" lon="-122.6000">
+      <ele>250.0</ele>
+      <name>Lower Trail</name>
+    </rtept>
+    <rtept lat="37.9050" lon="-122.5962">
+      <ele>150.5</ele>
+      <name>Trailhead</name>
+    </rtept>
+  </rte>
+  <trk>
+    <name>Summit Trail</name>
+    <desc>Main hiking route to summit via steep trail</desc>
+    <type>hiking</type>
+    <trkseg>
+      <trkpt lat="37.9050" lon="-122.5962">
+        <ele>150.5</ele>
+        <time>2024-06-15T08:30:00Z</time>
+      </trkpt>
+      <trkpt lat="37.9055" lon="-122.5968">
+        <ele>175.2</ele>
+        <time>2024-06-15T08:35:00Z</time>
+      </trkpt>
+      <trkpt lat="37.9062" lon="-122.5975">
+        <ele>205.8</ele>
+        <time>2024-06-15T08:40:00Z</time>
+      </trkpt>
+      <trkpt lat="37.9070" lon="-122.5980">
+        <ele>245.3</ele>
+        <time>2024-06-15T08:50:00Z</time>
+      </trkpt>
+      <trkpt lat="37.9078" lon="-122.5988">
+        <ele>295.7</ele>
+        <time>2024-06-15T09:00:00Z</time>
+      </trkpt>
+      <trkpt lat="37.9085" lon="-122.5995">
+        <ele>350.2</ele>
+        <time>2024-06-15T09:15:00Z</time>
+      </trkpt>
+      <trkpt lat="37.9092" lon="-122.6000">
+        <ele>410.5</ele>
+        <time>2024-06-15T09:30:00Z</time>
+      </trkpt>
+      <trkpt lat="37.9098" lon="-122.6005">
+        <ele>465.8</ele>
+        <time>2024-06-15T09:45:00Z</time>
+      </trkpt>
+      <trkpt lat="37.9103" lon="-122.6008">
+        <ele>505.3</ele>
+        <time>2024-06-15T10:00:00Z</time>
+      </trkpt>
+      <trkpt lat="37.9108" lon="-122.6010">
+        <ele>550.0</ele>
+        <time>2024-06-15T10:15:00Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

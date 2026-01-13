@@ -1,0 +1,127 @@
+# DIRECTIVE: Fix OpenCV Build and Add Visual AI Integration Tests
+
+## STATUS: Layout Bug FIXED AND VERIFIED
+
+The layout model fix (commits #4005-#4010) is verified working:
+- Labels: 4 semantic types (header, section, title, text) - was all "text"
+- Confidence: varies 0.63-0.98 - was all 1.0
+- Evidence: /tmp/verify_fix.json, /tmp/verify_fix.png
+
+## BLOCKER: OpenCV Build Failure
+
+The OpenCV Rust bindings are failing to compile:
+```
+thread 'main' panicked at clang-sys-1.8.1/src/lib.rs:1859:1:
+a `libclang` shared library is not loaded on this thread
+```
+
+This blocks:
+- Building dlviz-screenshot
+- Running any test that uses docling-pdf-ml
+- Any new opencv-dependent compilation
+
+### Fix Options (try in order):
+
+1. **Update clang-sys version**
+   ```toml
+   # In Cargo.toml dependencies
+   clang-sys = "1.9"  # or latest
+   ```
+
+2. **Set LLVM environment properly**
+   ```bash
+   export LLVM_CONFIG_PATH="/opt/homebrew/opt/llvm/bin/llvm-config"
+   export LIBCLANG_PATH="/opt/homebrew/opt/llvm/lib"
+   export DYLD_LIBRARY_PATH="/opt/homebrew/opt/llvm/lib:$DYLD_LIBRARY_PATH"
+   ```
+
+3. **Reinstall LLVM**
+   ```bash
+   brew reinstall llvm
+   ```
+
+4. **Use opencv feature flag to make it optional**
+   - Make opencv optional in docling-pdf-ml
+   - Create "opencv" feature, only enable for OCR
+
+## TASK: Create Visual AI Integration Tests
+
+After fixing the build, create tests in:
+`crates/docling-viz-bridge/tests/visual_ai_integration.rs`
+
+### Test Structure:
+
+```rust
+#[tokio::test]
+#[ignore = "Requires OPENAI_API_KEY"]
+async fn test_pdf_layout_visual_quality() {
+    // 1. Run dlviz-screenshot on test PDF
+    let output = Command::new("./target/release/dlviz-screenshot")
+        .args(["--pdf", "test-corpus/pdf/2305.03393v1.pdf", "--output", "/tmp/test"])
+        .output()?;
+
+    // 2. Load the PNG and JSON
+    let png_data = fs::read("/tmp/test.png")?;
+    let json_data = fs::read_to_string("/tmp/test.json")?;
+
+    // 3. Validate basic structure (without LLM)
+    let elements: Value = serde_json::from_str(&json_data)?;
+    assert!(elements["statistics"]["by_label"].as_object().unwrap().len() > 1,
+        "Layout should have multiple label types");
+
+    // 4. Send to LLM for visual validation (optional, costs ~$0.02)
+    if env::var("OPENAI_API_KEY").is_ok() {
+        let report = visual_tester.validate_layout_image(&png_data, &json_data).await?;
+        assert!(report.overall_score >= 0.80, "Layout quality too low");
+    }
+}
+
+#[test]
+fn test_layout_variety_validation() {
+    // Test the validate_layout_quality() function
+    let elements = vec![
+        DlvizElement { label: DlvizLabel::Title, confidence: 0.95, .. },
+        DlvizElement { label: DlvizLabel::Text, confidence: 0.87, .. },
+        DlvizElement { label: DlvizLabel::Section, confidence: 0.92, .. },
+    ];
+    assert!(validate_layout_quality(&elements).is_ok());
+
+    // Should fail if all labels are "text"
+    let bad_elements = vec![
+        DlvizElement { label: DlvizLabel::Text, confidence: 1.0, .. },
+        DlvizElement { label: DlvizLabel::Text, confidence: 1.0, .. },
+    ];
+    assert!(validate_layout_quality(&bad_elements).is_err());
+}
+```
+
+### LLM Prompt for Layout Validation:
+
+```
+Analyze this PDF layout visualization image. The colored boxes show detected elements:
+- Purple: text
+- Blue: title
+- Green: section headers
+- Orange: tables
+- Cyan: figures/pictures
+
+Evaluate on a 0-100 scale:
+1. ACCURACY: Are elements labeled correctly? (title is actually a title, etc.)
+2. COVERAGE: Are all visible elements detected?
+3. BOUNDARIES: Do boxes fit the content precisely?
+4. READING_ORDER: Are elements numbered in correct reading order?
+
+Return JSON: {"accuracy": N, "coverage": N, "boundaries": N, "reading_order": N, "issues": ["..."]}
+```
+
+## Checklist
+
+- [x] Fix OpenCV/clang-sys build issue (N=4011: Confirmed optional, tests work without opencv feature)
+- [x] Verify dlviz-screenshot builds and runs (N=4012: Builds & runs correctly, 4 label types, confidence 0.87-0.96)
+- [x] Create visual_ai_integration.rs test file (N=4011: Created at crates/docling-viz-bridge/tests/)
+- [x] Add test_layout_variety_validation (no LLM, fast) (N=4011: 5 fast tests added)
+- [x] Add test_pdf_layout_visual_quality (with LLM, ignored by default) (N=4011: 2 ignored tests added)
+- [x] Run tests and verify passing (N=4011: 7 passed, 2 ignored)
+- [x] Document in README or TESTING_STRATEGY.md (N=4011: Added to TESTING_STRATEGY.md)
+
+## DIRECTIVE COMPLETE - All checklist items verified ✓

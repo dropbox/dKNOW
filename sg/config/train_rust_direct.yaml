@@ -1,0 +1,49 @@
+# XTR Fine-Tuning Directly on Local Rust Code
+# Simplified config that skips CodeSearchNet pre-training
+#
+# For users who want to fine-tune on their own code without downloading
+# 50GB of CodeSearchNet data or requiring GPU resources.
+#
+# Prerequisites:
+#   1. Extract training data:
+#      python scripts/extract_rust_training_data.py ~/sg -o data/rust_training_data.jsonl
+#
+# Usage:
+#   python scripts/train_xtr_code.py --config config/train_rust_direct.yaml
+#
+# Output: checkpoints/xtr-rust-direct/ (LoRA adapters)
+# Then merge with: python scripts/merge_lora.py checkpoints/xtr-rust-direct -o checkpoints/xtr-rust-merged
+
+model:
+  base: "google/xtr-base-en"  # Train directly from XTR base
+  output: "checkpoints/xtr-rust-direct"
+
+data:
+  train: "data/apache_mit_training.jsonl"
+  languages:
+    - rust
+
+training:
+  method: "lora"
+  lora_r: 16          # Higher rank since no prior code training
+  lora_alpha: 32
+  lora_dropout: 0.1
+  target_modules:
+    - q
+    - v
+
+  epochs: 10          # Training on 5,133 pairs from Apache/MIT repos
+  batch_size: 8       # Smaller batch for M1 Mac memory
+  learning_rate: 2.0e-5
+  warmup_steps: 50
+  max_length: 512
+
+  loss: "infonce"
+  temperature: 0.07
+  hard_negatives: 3   # In-batch negatives from other examples
+  log_every: 20
+
+# Compute requirements (M1 Mac with MPS):
+#   Time: ~30-60 minutes
+#   Memory: ~8GB
+#   Storage: ~2GB

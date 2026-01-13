@@ -1,0 +1,105 @@
+🎯 CHANGE LLM TESTS - Validate DocItems, Not Markdown!
+
+USER: "Change the LLM tests to be on the DOCITEM serialization, NOT Markdown!"
+
+THIS IS CRITICAL ARCHITECTURAL FIX.
+
+---
+
+## OLD APPROACH (WRONG)
+
+**Current tests in llm_verification_tests.rs:**
+```
+DOCX → DocItems → Markdown → Compare markdown text
+```
+
+**Problem:** Tests markdown limitations, not parser completeness!
+
+---
+
+## NEW APPROACH (CORRECT)
+
+**New tests in llm_docitem_validation_tests.rs:**
+```
+DOCX → DocItems → JSON → Validate JSON completeness
+```
+
+**This tests:** Did parser extract everything?
+
+---
+
+## WHAT CHANGED
+
+**OLD LLM Test:**
+```rust
+// Compare markdown outputs
+let quality = llm.compare_outputs(
+    &expected_markdown,
+    &actual_markdown,
+    InputFormat::Docx
+);
+```
+
+**Tested:** Markdown similarity
+**Found:** 50-60% due to markdown limitations
+
+**NEW LLM Test:**
+```rust
+// Validate DocItem completeness
+let json = serde_json::to_string_pretty(&doc)?;
+let quality = llm.validate_docitem_completeness(
+    &original_file,  // DOCX
+    &json,           // DocItems JSON
+);
+```
+
+**Tests:** Did we extract everything to DocItems?
+**Should find:** Near 100% if parser is complete
+
+---
+
+## SEPARATION OF CONCERNS
+
+**Parser tests (DocItem completeness):**
+- Does DOCX parser extract all paragraphs?
+- Does DOCX parser extract all tables?
+- Does DOCX parser extract all images?
+- Does DOCX parser capture all metadata?
+
+**Serializer tests (output quality):**
+- Does markdown serializer format tables correctly?
+- Does HTML serializer preserve layout?
+- Does JSON serializer export everything?
+
+**Don't conflate these!**
+
+---
+
+## FILE CREATED
+
+**New test file:** crates/docling-core/tests/llm_docitem_validation_tests.rs
+
+**Has:**
+- test_llm_docitem_docx (validates JSON completeness)
+- test_llm_docitem_csv (validates table extraction)
+- Pattern for all formats
+
+**Validates:** DocItem extraction, not output formatting
+
+---
+
+## WORKER MUST
+
+1. Run new DocItem validation tests
+2. Find gaps in DocItem extraction
+3. Fix PARSER to extract missing info to DocItems
+4. Achieve 95%+ DocItem completeness
+5. THEN worry about serializer quality
+
+**Test the right layer!**
+
+---
+
+**NEW TESTS FOCUS ON DOCITEMS (JSON).
+OLD TESTS FOCUSED ON MARKDOWN (WRONG).
+THIS IS THE ARCHITECTURAL FIX USER WANTED.**

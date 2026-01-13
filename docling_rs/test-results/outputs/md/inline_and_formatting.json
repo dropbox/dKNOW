@@ -1,0 +1,1095 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Contribution guideline example",
+    "text": "Contribution guideline example",
+    "level": 0
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "This is simple.",
+    "text": "This is simple."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/0",
+    "children": [
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Foo",
+    "text": "Foo"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/3",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "emphasis",
+    "text": "emphasis",
+    "formatting": {
+      "italic": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/4",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "strong emphasis",
+    "text": "strong emphasis",
+    "formatting": {
+      "bold": true,
+      "italic": false
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/5",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "both",
+    "text": "both",
+    "formatting": {
+      "bold": true,
+      "italic": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/6",
+    "parent": {
+      "$ref": "#/groups/0"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ".",
+    "text": ".",
+    "formatting": {
+      "bold": false,
+      "italic": false
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/7",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Create your feature branch: `git checkout -b feature/AmazingFeature`.",
+    "text": "Create your feature branch: `git checkout -b feature/AmazingFeature`."
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/1",
+    "children": [
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/20"
+      }
+    ],
+    "content_layer": "body",
+    "name": "ordered list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/11",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/2"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": "",
+    "enumerated": true,
+    "marker": "1."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/2",
+    "children": [
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/8",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Pull the",
+    "text": "Pull the"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/9",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "repository",
+    "text": "repository",
+    "formatting": {
+      "bold": true
+    },
+    "hyperlink": "https://github.com/docling-project/docling"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/10",
+    "parent": {
+      "$ref": "#/groups/2"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ".",
+    "text": ".",
+    "formatting": {
+      "bold": false
+    }
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/12",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Create your feature branch (`git checkout -b feature/AmazingFeature`)",
+    "text": "Create your feature branch (`git checkout -b feature/AmazingFeature`)",
+    "enumerated": true,
+    "marker": "2."
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/13",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Commit your changes (`git commit -m 'Add some AmazingFeature'`)",
+    "text": "Commit your changes (`git commit -m 'Add some AmazingFeature'`)",
+    "enumerated": true,
+    "marker": "3."
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/14",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Push to the branch (`git push origin feature/AmazingFeature`)",
+    "text": "Push to the branch (`git push origin feature/AmazingFeature`)",
+    "enumerated": true,
+    "marker": "4."
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/15",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Open a Pull Request",
+    "text": "Open a Pull Request",
+    "enumerated": true,
+    "marker": "5."
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/16",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Whole list item has same formatting",
+    "text": "Whole list item has same formatting",
+    "enumerated": true,
+    "marker": "6.",
+    "formatting": {
+      "bold": true
+    }
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/20",
+    "parent": {
+      "$ref": "#/groups/1"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/3"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": "",
+    "enumerated": true,
+    "marker": "7."
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/3",
+    "children": [
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/17",
+    "parent": {
+      "$ref": "#/groups/3"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "List item has",
+    "text": "List item has"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/18",
+    "parent": {
+      "$ref": "#/groups/3"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "mixed or partial",
+    "text": "mixed or partial",
+    "formatting": {
+      "italic": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/19",
+    "parent": {
+      "$ref": "#/groups/3"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "formatting",
+    "text": "formatting",
+    "formatting": {
+      "italic": false
+    }
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/21",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Whole heading is italic",
+    "text": "Whole heading is italic",
+    "level": 0,
+    "formatting": {
+      "italic": true
+    }
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/4",
+    "children": [
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/27"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/24",
+    "parent": {
+      "$ref": "#/groups/4"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/5"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": "",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/5",
+    "children": [
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/22",
+    "parent": {
+      "$ref": "#/groups/5"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "First",
+    "text": "First",
+    "formatting": {
+      "bold": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/23",
+    "parent": {
+      "$ref": "#/groups/5"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ": Lorem ipsum.",
+    "text": ": Lorem ipsum.",
+    "formatting": {
+      "bold": false
+    }
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/27",
+    "parent": {
+      "$ref": "#/groups/4"
+    },
+    "children": [
+      {
+        "$ref": "#/groups/6"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "",
+    "text": "",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/6",
+    "children": [
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/25",
+    "parent": {
+      "$ref": "#/groups/6"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Second",
+    "text": "Second",
+    "formatting": {
+      "bold": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/26",
+    "parent": {
+      "$ref": "#/groups/6"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": ": Dolor `sit` amet.",
+    "text": ": Dolor `sit` amet.",
+    "formatting": {
+      "bold": false
+    }
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/7",
+    "children": [
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/28",
+    "parent": {
+      "$ref": "#/groups/7"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Some",
+    "text": "Some"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/29",
+    "parent": {
+      "$ref": "#/groups/7"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "`formatted_code`",
+    "text": "`formatted_code`",
+    "formatting": {
+      "italic": true
+    }
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/32",
+    "children": [
+      {
+        "$ref": "#/groups/8"
+      }
+    ],
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Partially formatted heading to_escape `not_to_escape`",
+    "text": "",
+    "level": 1
+  },
+  {
+    "label": "inline",
+    "self_ref": "#/groups/8",
+    "children": [
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      }
+    ],
+    "content_layer": "body",
+    "name": "inline"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/30",
+    "parent": {
+      "$ref": "#/groups/8"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Partially formatted",
+    "text": "Partially formatted",
+    "formatting": {
+      "italic": true
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/31",
+    "parent": {
+      "$ref": "#/groups/8"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "heading to_escape `not_to_escape`",
+    "text": "heading to_escape `not_to_escape`",
+    "formatting": {
+      "italic": false
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/33",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "$$E=mc^2$$",
+    "text": "$$E=mc^2$$",
+    "hyperlink": "https://en.wikipedia.org/wiki/Albert_Einstein"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/34",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Table Heading",
+    "text": "Table Heading",
+    "level": 1
+  },
+  {
+    "label": "table",
+    "self_ref": "#/tables/35",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 2.0,
+          "b": 2.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "data": {
+      "num_rows": 2,
+      "num_cols": 2,
+      "grid": [
+        [
+          {
+            "text": "Bold Heading",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "Italic Heading",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "start_col_offset_idx": 1
+          }
+        ],
+        [
+          {
+            "text": "data a",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "data b",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "start_col_offset_idx": 1
+          }
+        ]
+      ],
+      "table_cells": [
+        {
+          "text": "Bold Heading",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Italic Heading",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "data a",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "data b",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 1
+        }
+      ]
+    }
+  }
+]

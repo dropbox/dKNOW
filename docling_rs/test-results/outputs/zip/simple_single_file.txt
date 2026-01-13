@@ -1,0 +1,10 @@
+# Archive Contents: simple_single_file.zip
+
+## Archive Summary
+
+1 TXT file, 46 bytes total
+
+## Contents
+
+- document.txt (46 bytes)
+

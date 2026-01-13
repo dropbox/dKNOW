@@ -1,0 +1,55 @@
+# XTR Fine-Tuning on Large Rust Dataset (93,960 pairs)
+#
+# Training on comprehensive Rust corpus extracted from 91 repositories:
+# - Core Rust: rustc (10.4k), cargo (1.6k), rust-analyzer (1.4k)
+# - Verification: kani (1.1k), verus (631), prusti (652), creusot (207)
+# - Popular: bevy (5.3k), servo (6.7k), tokio (1.6k), polars (3k)
+# - Infrastructure: substrate (6.4k), polkadot (3.3k), solana (2.2k)
+# - ayates_dbx: dashflow (6k), dashprove (4.5k), langchain_rs (3k)
+#
+# Prerequisites:
+#   Data already extracted: data/rust_training_100k.jsonl (93,960 pairs, 90MB)
+#
+# Usage:
+#   python scripts/train_xtr_code.py --config config/train_rust_100k.yaml
+#
+# Output: checkpoints/xtr-rust-100k/ (LoRA adapters)
+# Then merge: python scripts/merge_lora.py checkpoints/xtr-rust-100k -o checkpoints/xtr-rust-100k-merged
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-rust-100k"
+
+data:
+  train: "data/rust_training_100k.jsonl"
+  languages:
+    - rust
+
+training:
+  method: "lora"
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.1
+  target_modules:
+    - q
+    - v
+
+  epochs: 3             # Fewer epochs with more data (93,960 vs 5,133 pairs)
+  batch_size: 16        # Larger batch for efficiency, may need to reduce on low memory
+  learning_rate: 1.0e-5 # Lower LR for larger dataset
+  warmup_steps: 200     # More warmup for larger dataset
+  max_length: 512
+
+  loss: "infonce"
+  temperature: 0.07
+  hard_negatives: 3
+  log_every: 100
+
+# Compute requirements (M1 Mac with MPS):
+#   Time: ~3-6 hours (estimated)
+#   Memory: ~12GB (with batch_size 16)
+#   Storage: ~2GB
+#
+# For faster training on GPU:
+#   batch_size: 32-64
+#   Time: ~1-2 hours on A100

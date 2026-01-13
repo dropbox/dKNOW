@@ -1,0 +1,22 @@
+--- pdfium/core/fpdfapi/page/cpdf_dib.h	2025-11-20 14:44:25
++++ core/fpdfapi/page/cpdf_dib.h	2025-12-03 16:39:54
+@@ -10,6 +10,7 @@
+ #include <stdint.h>
+ 
+ #include <memory>
++#include <mutex>
+ #include <vector>
+ 
+ #include "core/fpdfapi/page/cpdf_colorspace.h"
+@@ -139,6 +140,11 @@
+ 
+   // Must come after |cached_bitmap_|.
+   std::unique_ptr<fxcodec::Jbig2Context> jbig_2context_;
++
++  // Thread safety: Protects decoder_ and cached_bitmap_ access from parallel
++  // threads. The decoder (especially JPEG) is NOT thread-safe and can crash
++  // if Rewind() is called while another thread is reading scanlines.
++  mutable std::mutex decoder_mutex_;
+ };
+ 
+ #endif  // CORE_FPDFAPI_PAGE_CPDF_DIB_H_

@@ -1,0 +1,35 @@
+name: logo_detection
+version: 1.0.0
+description: "Detect brand logos in images using YOLOv8 ONNX models trained on logo datasets"
+
+inputs:
+  - jpg
+  - jpeg
+  - png
+  - bmp
+  - webp
+  - dpx
+  - Keyframes
+
+outputs:
+  - LogoDetection
+
+config:
+  max_file_size_mb: 100
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "60s"
+  memory_per_file_mb: 512
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1730419200  # 2024-11-01 00:00:00 UTC
+
+# Implementation location
+implementation:
+  crate: "video-audio-logo-detection"
+  function: "detect"

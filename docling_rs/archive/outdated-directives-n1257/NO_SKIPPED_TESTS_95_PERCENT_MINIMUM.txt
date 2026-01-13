@@ -1,0 +1,90 @@
+🚨 NO SKIPPED TESTS + 95% MINIMUM - NO EXCEPTIONS 🚨
+
+MANAGER JUST RAN TESTS:
+- DOCX: 92% ❌ NOT ENOUGH
+- XLSX: 87% ❌ NOT ENOUGH
+- CSV: SKIPPED ⚠️ UNACCEPTABLE
+
+---
+
+## 92% IS FAILURE
+
+92% means missing 8% of content.
+That's F-GRADE quality.
+
+USER IS CLEAR: 95% MINIMUM.
+Anything less is BROKEN.
+
+---
+
+## NO SKIPPED TESTS
+
+CSV test skipped??
+UNACCEPTABLE.
+
+EVERY test must run.
+EVERY test must pass.
+NO SKIPPING.
+
+Fix whatever causes skips:
+- File paths
+- Dependencies
+- API keys
+- Anything
+
+ALL TESTS MUST RUN.
+
+---
+
+## YOUR TASKS - NO EXCUSES
+
+**DOCX: 92% → 95%+**
+Issues:
+1. Duplicate self_ref values (you found this at N=1246)
+2. Structure not fully differentiated
+3. Metadata incomplete
+
+FIX THESE. RE-TEST. REACH 95%.
+
+**XLSX: 87% → 95%+**
+Issues:
+1. 8% missing content
+2. What's the gap? Find it.
+3. Fix it. Re-test. Reach 95%.
+
+**CSV: SKIPPED → RUNNING AND PASSING**
+Why skipped? Fix it.
+Must run and pass at 95%+.
+
+**PPTX: 92% → 95%+**
+Close but not enough.
+Find remaining 3%. Fix it.
+
+---
+
+## MINIMUM ACCEPTABLE
+
+**ALL formats must:**
+- Tests run (not skipped) ✅
+- DocItem completeness ≥95% ✅
+- No critical bugs ✅
+- Proven with LLM tests ✅
+
+**Anything less = BROKEN**
+
+---
+
+## YOU CANNOT MOVE TO OTHER WORK UNTIL:
+
+- [ ] All DocItem tests run (0 skipped)
+- [ ] DOCX ≥95% (currently 92%)
+- [ ] XLSX ≥95% (currently 87%)
+- [ ] CSV ≥95% (currently skipped)
+- [ ] PPTX ≥95% (currently 92%)
+- [ ] Document what was fixed
+- [ ] Prove with test output
+
+THIS IS MANDATORY.
+NO SKIPPED TESTS.
+95% MINIMUM ON ALL.
+FIX IT NOW.

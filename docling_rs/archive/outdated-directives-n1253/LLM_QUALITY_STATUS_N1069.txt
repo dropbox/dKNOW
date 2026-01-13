@@ -1,0 +1,140 @@
+LLM QUALITY TEST RESULTS - N=1069
+Date: 2025-11-16
+Branch: feature/phase-e-open-standards
+
+================================================================================
+SUMMARY: 3/4 FORMATS PASS (75% SUCCESS RATE)
+================================================================================
+
+✅ HTML: 95% (PASS)
+   - Completeness: 100/100
+   - Accuracy: 100/100
+   - Structure: 100/100
+   - Formatting: 100/100
+   - Metadata: 100/100
+   - Finding: Semantically equivalent, all content preserved
+
+✅ AsciiDoc: 98% (PASS)
+   - Completeness: 100/100
+   - Accuracy: 100/100
+   - Structure: 100/100
+   - Formatting: 95/100
+   - Metadata: 100/100
+   - Finding: One minor table formatting issue (extra space)
+
+✅ PPTX: 98% (PASS)
+   - Completeness: 100/100
+   - Accuracy: 100/100
+   - Structure: 100/100
+   - Formatting: 100/100
+   - Metadata: 100/100
+   - Finding: Semantically equivalent, no discrepancies
+
+❌ DXF: 82-88% (FAIL - LLM Evaluation Issue)
+   - Completeness: 90/100
+   - Accuracy: 95/100
+   - Structure: 85-90/100
+   - Formatting: 90-95/100
+   - Metadata: 100/100
+   - Score Variability: ±6% across runs (82%, 84%, 88% observed)
+
+================================================================================
+DXF INVESTIGATION FINDINGS
+================================================================================
+
+CLAIM: LLM says "Missing header variables: $DIMLTYPE, $DIMLTEX1, $DIMLTEX2"
+
+VERIFICATION:
+1. Backend unit test confirms all 78 dimension variables present ✅
+2. Manual inspection: All three variables present in output ✅
+3. Test: dxf::serializer::tests::test_floor_plan_serialization PASSES ✅
+4. Output shows: "Complete list of 78 dimension style variables from the HEADER section"
+5. Variables explicitly listed:
+   - **$DIMLTYPE**: (empty) ← PRESENT
+   - **$DIMLTEX1**: (empty) ← PRESENT
+   - **$DIMLTEX2**: (empty) ← PRESENT
+
+CONCLUSION: LLM is hallucinating. Variables ARE present in output.
+
+IMPROVEMENTS MADE:
+- Added: "Complete list of 78 dimension style variables from the HEADER section"
+- Added: "Breakdown of 9 entities from the ENTITIES section"
+- Added: "Layer organization from the TABLES section"
+- Result: No improvement in LLM score (still 82-88%)
+
+SCORE VARIABILITY:
+- Run 1: 82% (Completeness 90, Structure 85)
+- Run 2: 88% (Completeness 90, Structure 90)
+- Run 3: 84% (Completeness 90, Structure 85-90)
+- Variability: ±6% on identical input (indicates LLM reliability issue)
+
+ROOT CAUSE:
+- Mode 3 (standalone) evaluation compares binary DXF to markdown
+- LLM expects exact structural match (impossible - binary vs text)
+- LLM feedback contains inaccuracies (claims missing content that's present)
+- Threshold (95%) may be too strict for complex binary format conversion
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+OPTION 1: Accept Current Results (RECOMMENDED)
+- 3/4 formats pass (75% success rate)
+- DXF parser output is factually correct (verified by unit tests)
+- Issue is test methodology, not parser quality
+- Move forward with other priorities
+
+OPTION 2: Adjust DXF Threshold
+- Lower DXF Mode 3 threshold to 80% (matches current score)
+- Acknowledge LLM evaluation limitations for binary formats
+- Document that 80-85% is acceptable for DXF standalone validation
+
+OPTION 3: Change DXF Test Methodology
+- Switch from Mode 3 (standalone) to Mode 1 (comparison with baseline)
+- Requires creating expected DXF markdown output
+- More reliable but requires manual baseline creation
+
+OPTION 4: Request User Guidance
+- Ask if 75% pass rate is acceptable
+- Get direction on DXF threshold
+- Clarify expectations for binary format evaluation
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+Current blockers:
+1. Visual tests - blocked on OPENAI_API_KEY (see VISUAL_TESTS_MUST_RUN.txt)
+2. DXF LLM test - 82-88% due to LLM evaluation issues
+
+Suggested action:
+- Document DXF findings (THIS FILE)
+- Update user on status (3/4 pass, DXF has LLM issues)
+- Await user guidance on how to proceed
+- Consider moving to other work if DXF is acceptable at 82-88%
+
+================================================================================
+TECHNICAL NOTES
+================================================================================
+
+DXF Markdown Output Quality:
+- All header variables present (78 dimension variables)
+- All entities cataloged (Lines, Polylines, Text, Blocks)
+- Layer information complete
+- Bounding box and dimensions accurate
+- Text content extracted
+- File metadata complete
+
+Backend Test Status:
+- Total: 2812/2812 pass (100%)
+- DXF serialization tests: ALL PASS
+- Clippy warnings: 0
+- Build time: ~134s
+
+LLM Test Configuration:
+- Model: gpt-4o-mini
+- Threshold: 95%
+- Mode: Mode 3 (standalone validation)
+- Cost: ~$0.05 per test run
+
+================================================================================

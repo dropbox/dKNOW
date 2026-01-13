@@ -1,0 +1,21 @@
+[package]
+name = "pdfium-render-fast"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Fast, thread-safe PDF rendering and text extraction using optimized PDFium"
+keywords = ["pdf", "pdfium", "rendering", "text-extraction"]
+categories = ["parsing", "rendering"]
+
+[dependencies]
+pdfium-sys = { path = "../pdfium-sys" }
+libc.workspace = true
+png.workspace = true
+jpeg-encoder.workspace = true
+thiserror.workspace = true
+rayon.workspace = true
+
+[dev-dependencies]
+tempfile = "3.14"
+serial_test = "3.1"

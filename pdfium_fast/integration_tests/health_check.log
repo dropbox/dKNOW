@@ -1,0 +1,15 @@
+[2025-12-24T22:39:38Z] N=398: smoke=99/99 PASS, load=6.19, disk=3%, sess=sess_20251224_223725_fe5164ab
+2025-12-24T22:42:24Z | N=399 | smoke: 99/99 PASS | load: 3.36 | disk: 3% | sess_20251224_224012_7bf80845
+2025-12-24T22:43:14Z | N=400 | CLEANUP | smoke: 99/99 PASS | load: 4.44 | disk: 3% | sess_20251224_224314_240540b9
+2025-12-24T22:48:43Z | N=401 | smoke: 99/99 PASS | load: 1.90 | disk: 3% | hung: 0 | sess_20251224_224635_14c42316
+2025-12-24T22:51:30Z | N=402 | PASS 99/99 | sess_20251224_224921_eb0a3913 | load=6.49 disk=3% | maintenance
+[2025-12-24T22:57:04Z] N=403 BENCHMARK: smoke=99/99, perf=7/7, scaling=6/6, corpus=27PDFs (4.56x@K8 large, 0.75x small)
+2025-12-24T23:02:36Z | N=404 | smoke: 99/99 PASS | sess_20251224_230031_27a430f3 | load: 2.66
+2025-12-24T23:05:39Z N=405 CLEANUP: 99/99 smoke tests PASS, load=3.08, disk=3%, sess=sess_20251224_230310_e3a84f64
+[2025-12-24T15:08:27-08:00] N=406: Smoke 99/99 PASS, Load 3.05, Disk 51%, Hung 0, Temp 0 - sess_20251224_230621_edcc12f6
+2025-12-24T15:11:11-08:00 N=407 smoke=99/99 load=2.60 disk=3% git=clean sess=sess_20251224_230902_59abd76c
+[2025-12-24T23:13:54Z] N=408: 99/99 smoke PASS, load=2.40, disk=3%
+N=412: 2025-12-24 15:54 | smoke: 99/99 | sess_20251224_235223_f12ad892 | load: 4.61 | regular iteration
+N=413: 2025-12-24 15:55 | tests in progress (full suite ~10min) | load: 4.87 | disk: 3% | regular iteration
+N=414: 2025-12-24 15:57 | full suite: 2271/2339 (97%) in progress | 0 failures | sess_20251224_233200_4e698300 | load: 5.05 | regular iteration
+N=414: 2025-12-25T00:03:46Z | FULL SUITE: 2209 passed, 130 skipped, 0 failed (2339 total) | sess_20251224_233200_4e698300 | 100% PASS

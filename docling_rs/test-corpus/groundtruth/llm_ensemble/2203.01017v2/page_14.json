@@ -1,0 +1,81 @@
+{
+  "page_number": 14,
+  "elements": [
+    {
+      "label": "picture",
+      "text": "Figure 11: Simple table with different style and empty cells.",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 50.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Figure 12: Simple table predictions and post processing.",
+      "bbox": {
+        "l": 0.0,
+        "t": 50.0,
+        "r": 50.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Figure 13: Table predictions example on colorful table.",
+      "bbox": {
+        "l": 50.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Figure 14: Example with multi-line text.",
+      "bbox": {
+        "l": 50.0,
+        "t": 50.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "14",
+      "bbox": {
+        "l": 50.0,
+        "t": 95.0,
+        "r": 50.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

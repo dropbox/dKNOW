@@ -1,0 +1,350 @@
+test_name,operation,status,quality_score,findings
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction;transcription,audio-extraction;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_audio,audio,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_audio-extraction;acoustic-scene-classification,audio-extraction;acoustic-scene-classification,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_audio-extraction;audio-classification,audio-extraction;audio-classification,SUSPICIOUS,3,Unexpected audio classification structure
+smoke_format_audio-extraction;audio-embeddings,audio-extraction;audio-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_format_audio-extraction;audio-enhancement-metadata,audio-extraction;audio-enhancement-metadata,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_audio-extraction;diarization,audio-extraction;diarization,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_transcription,transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_voice-activity-detection,voice-activity-detection,CORRECT,8,Valid voice-activity-detection output structure
+smoke_format_audio-extraction;acoustic-scene-classification,audio-extraction;acoustic-scene-classification,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_audio-extraction;audio-classification,audio-extraction;audio-classification,SUSPICIOUS,3,Unexpected audio classification structure
+smoke_format_audio-extraction;audio-embeddings,audio-extraction;audio-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_format_audio-extraction;audio-enhancement-metadata,audio-extraction;audio-enhancement-metadata,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_audio-extraction;diarization,audio-extraction;diarization,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_transcription,transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_voice-activity-detection,voice-activity-detection,CORRECT,8,Valid voice-activity-detection output structure
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction;transcription,audio-extraction;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_face-detection,face-detection,SUSPICIOUS,3,Unexpected face detection structure
+smoke_format_image-quality-assessment,image-quality-assessment,CORRECT,8,Valid image-quality-assessment output structure
+smoke_format_object-detection,object-detection,SUSPICIOUS,3,Unexpected object detection structure
+smoke_format_ocr,ocr,CORRECT,8,Valid ocr output structure
+smoke_format_pose-estimation,pose-estimation,CORRECT,8,Valid pose-estimation output structure
+smoke_format_shot-classification,shot-classification,CORRECT,8,Valid shot-classification output structure
+smoke_format_vision-embeddings,vision-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_face-detection,face-detection,SUSPICIOUS,3,Unexpected face detection structure
+smoke_format_image-quality-assessment,image-quality-assessment,CORRECT,8,Valid image-quality-assessment output structure
+smoke_format_object-detection,object-detection,SUSPICIOUS,3,Unexpected object detection structure
+smoke_format_ocr,ocr,CORRECT,8,Valid ocr output structure
+smoke_format_pose-estimation,pose-estimation,CORRECT,8,Valid pose-estimation output structure
+smoke_format_shot-classification,shot-classification,CORRECT,8,Valid shot-classification output structure
+smoke_format_vision-embeddings,vision-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_format_audio,audio,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction;transcription,audio-extraction;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_face-detection,face-detection,SUSPICIOUS,3,Unexpected face detection structure
+smoke_format_image-quality-assessment,image-quality-assessment,CORRECT,8,Valid image-quality-assessment output structure
+smoke_format_object-detection,object-detection,SUSPICIOUS,3,Unexpected object detection structure
+smoke_format_ocr,ocr,CORRECT,8,Valid ocr output structure
+smoke_format_pose-estimation,pose-estimation,CORRECT,8,Valid pose-estimation output structure
+smoke_format_shot-classification,shot-classification,CORRECT,8,Valid shot-classification output structure
+smoke_format_vision-embeddings,vision-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_face-detection,face-detection,SUSPICIOUS,3,Unexpected face detection structure
+smoke_format_image-quality-assessment,image-quality-assessment,CORRECT,8,Valid image-quality-assessment output structure
+smoke_format_object-detection,object-detection,SUSPICIOUS,3,Unexpected object detection structure
+smoke_format_ocr,ocr,CORRECT,8,Valid ocr output structure
+smoke_format_pose-estimation,pose-estimation,CORRECT,8,Valid pose-estimation output structure
+smoke_format_shot-classification,shot-classification,CORRECT,8,Valid shot-classification output structure
+smoke_format_vision-embeddings,vision-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction;transcription,audio-extraction;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_audio,audio,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction;transcription,audio-extraction;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction;transcription,audio-extraction;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_audio,audio,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction;transcription,audio-extraction;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction;transcription,audio-extraction;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_audio-extraction;transcription,audio-extraction;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_audio,audio,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_audio,audio,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_face-detection,face-detection,SUSPICIOUS,3,Unexpected face detection structure
+smoke_format_image-quality-assessment,image-quality-assessment,CORRECT,8,Valid image-quality-assessment output structure
+smoke_format_object-detection,object-detection,SUSPICIOUS,3,Unexpected object detection structure
+smoke_format_ocr,ocr,CORRECT,8,Valid ocr output structure
+smoke_format_pose-estimation,pose-estimation,CORRECT,8,Valid pose-estimation output structure
+smoke_format_shot-classification,shot-classification,CORRECT,8,Valid shot-classification output structure
+smoke_format_vision-embeddings,vision-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction;transcription,audio-extraction;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction;acoustic-scene-classification,audio-extraction;acoustic-scene-classification,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_audio-extraction;audio-classification,audio-extraction;audio-classification,SUSPICIOUS,3,Unexpected audio classification structure
+smoke_format_audio-extraction;audio-embeddings,audio-extraction;audio-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_format_audio-extraction;audio-enhancement-metadata,audio-extraction;audio-enhancement-metadata,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_audio-extraction;diarization,audio-extraction;diarization,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_transcription,transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_voice-activity-detection,voice-activity-detection,CORRECT,8,Valid voice-activity-detection output structure
+smoke_format_audio,audio,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction;transcription,audio-extraction;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_format_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_format_face-detection,face-detection,SUSPICIOUS,3,Unexpected face detection structure
+smoke_format_image-quality-assessment,image-quality-assessment,CORRECT,8,Valid image-quality-assessment output structure
+smoke_format_object-detection,object-detection,SUSPICIOUS,3,Unexpected object detection structure
+smoke_format_ocr,ocr,CORRECT,8,Valid ocr output structure
+smoke_format_pose-estimation,pose-estimation,CORRECT,8,Valid pose-estimation output structure
+smoke_format_shot-classification,shot-classification,CORRECT,8,Valid shot-classification output structure
+smoke_format_vision-embeddings,vision-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_format_audio-extraction;acoustic-scene-classification,audio-extraction;acoustic-scene-classification,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_audio-extraction;audio-classification,audio-extraction;audio-classification,SUSPICIOUS,3,Unexpected audio classification structure
+smoke_format_audio-extraction;audio-embeddings,audio-extraction;audio-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_format_audio-extraction;audio-enhancement-metadata,audio-extraction;audio-enhancement-metadata,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_audio-extraction;diarization,audio-extraction;diarization,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_transcription,transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_voice-activity-detection,voice-activity-detection,CORRECT,8,Valid voice-activity-detection output structure
+smoke_format_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction,audio-extraction,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_format_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_format_metadata-extraction,metadata-extraction,SUSPICIOUS,5,Unexpected metadata structure
+smoke_format_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_format_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_format_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_format_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_format_audio-extraction;transcription,audio-extraction;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_format_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_plugin_audio;acoustic-scene-classification,audio;acoustic-scene-classification,CORRECT,8,Valid audio;acoustic-scene-classification output structure
+smoke_plugin_keyframes;action-recognition,keyframes;action-recognition,CORRECT,9,Keyframe metadata present
+smoke_plugin_audio;audio-classification,audio;audio-classification,SUSPICIOUS,3,Unexpected audio classification structure
+smoke_plugin_audio;audio-embeddings,audio;audio-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_plugin_audio;audio-enhancement-metadata,audio;audio-enhancement-metadata,SUSPICIOUS,5,Unexpected metadata structure
+smoke_plugin_audio,audio,SUSPICIOUS,5,Unexpected audio extraction structure
+smoke_plugin_audio;diarization,audio;diarization,CORRECT,8,Valid audio;diarization output structure
+smoke_plugin_duplicate-detection,duplicate-detection,CORRECT,8,Valid duplicate-detection output structure
+smoke_plugin_keyframes;emotion-detection,keyframes;emotion-detection,CORRECT,9,Keyframe metadata present
+smoke_plugin_keyframes;face-detection,keyframes;face-detection,CORRECT,9,Keyframe metadata present
+smoke_plugin_keyframes;image-quality-assessment,keyframes;image-quality-assessment,CORRECT,9,Keyframe metadata present
+smoke_plugin_keyframes,keyframes,CORRECT,9,Keyframe metadata present
+smoke_plugin_metadata,metadata,SUSPICIOUS,5,Unexpected metadata structure
+smoke_plugin_keyframes;object-detection,keyframes;object-detection,CORRECT,9,Keyframe metadata present
+smoke_plugin_keyframes;ocr,keyframes;ocr,CORRECT,9,Keyframe metadata present
+smoke_plugin_keyframes;pose-estimation,keyframes;pose-estimation,CORRECT,9,Keyframe metadata present
+smoke_plugin_scene-detection,scene-detection,CORRECT,10,Scene detection: 0 scenes (consistent)
+smoke_plugin_keyframes;shot-classification,keyframes;shot-classification,CORRECT,9,Keyframe metadata present
+smoke_plugin_keyframes;smart-thumbnail,keyframes;smart-thumbnail,CORRECT,9,Keyframe metadata present
+smoke_plugin_subtitle-extraction,subtitle-extraction,CORRECT,8,Valid subtitle-extraction output structure
+smoke_plugin_audio;transcription;text-embeddings,audio;transcription;text-embeddings,SUSPICIOUS,4,Unexpected transcription structure
+smoke_plugin_audio;transcription,audio;transcription,SUSPICIOUS,4,Unexpected transcription structure
+smoke_plugin_keyframes;vision-embeddings,keyframes;vision-embeddings,CORRECT,9,Keyframe metadata present
+smoke_plugin_audio;voice-activity-detection,audio;voice-activity-detection,CORRECT,8,Valid audio;voice-activity-detection output structure
+smoke_plugin_face-detection,face-detection,SUSPICIOUS,3,Unexpected face detection structure
+smoke_plugin_object-detection,object-detection,SUSPICIOUS,3,Unexpected object detection structure
+smoke_plugin_ocr,ocr,CORRECT,8,Valid ocr output structure
+smoke_plugin_vision-embeddings,vision-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_plugin_audio-embeddings,audio-embeddings,SUSPICIOUS,3,Unexpected embedding structure
+smoke_plugin_transcription,transcription,SUSPICIOUS,4,Unexpected transcription structure

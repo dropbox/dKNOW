@@ -1,0 +1,26 @@
+[
+  {
+    "path": "test_files_wikimedia/flac/audio-extraction/01_01_-_Gute_Nacht_(CK_2946-2,_ES_383).flac.flac",
+    "size": 24745153,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/01_-_Gute_Nacht_%28CK_2946-2%2C_ES_383%29.flac",
+    "title": "File:01 - Gute Nacht (CK 2946-2, ES 383).flac",
+    "mime": "audio/x-flac",
+    "format": "flac"
+  },
+  {
+    "path": "test_files_wikimedia/flac/audio-extraction/02_02_-_Die_Wetterfahne_(CK_2947-2,_ES_383).flac.flac",
+    "size": 14519864,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/02_-_Die_Wetterfahne_%28CK_2947-2%2C_ES_383%29.flac",
+    "title": "File:02 - Die Wetterfahne (CK 2947-2, ES 383).flac",
+    "mime": "audio/x-flac",
+    "format": "flac"
+  },
+  {
+    "path": "test_files_wikimedia/flac/audio-extraction/03_03_-_Gefrorene_Tr\u00e4nen_(CK_2948-1,_ER_270).flac.flac",
+    "size": 14015418,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/03_-_Gefrorene_Tr%C3%A4nen_%28CK_2948-1%2C_ER_270%29.flac",
+    "title": "File:03 - Gefrorene Tr\u00e4nen (CK 2948-1, ER 270).flac",
+    "mime": "audio/x-flac",
+    "format": "flac"
+  }
+]

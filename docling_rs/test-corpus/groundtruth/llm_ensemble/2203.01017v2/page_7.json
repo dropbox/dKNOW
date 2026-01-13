@@ -1,0 +1,375 @@
+{
+  "page_number": 7,
+  "elements": [
+    {
+      "label": "section_header",
+      "text": "5.3. Datasets and Metrics",
+      "bbox": {
+        "l": 0.0,
+        "t": 5.0,
+        "r": 30.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The Tree-Edit-Distance-Based Similarity (TEDS) metric was introduced in [37]. It represents the prediction, and ground-truth as a tree structure of HTML tags. This similarity is calculated as:",
+      "bbox": {
+        "l": 0.0,
+        "t": 10.0,
+        "r": 100.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "formula",
+      "text": "TEDS (Ta, Tb) = 1 − EditDist (Ta, Tb) / max (|Ta| , |Tb|) (3)",
+      "bbox": {
+        "l": 0.0,
+        "t": 20.0,
+        "r": 100.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "where Ta and Tb represent tables in tree structure HTML format. EditDist denotes the tree-edit distance, and |T| represents the number of nodes in T.",
+      "bbox": {
+        "l": 0.0,
+        "t": 25.0,
+        "r": 100.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "5.4. Quantitative Analysis",
+      "bbox": {
+        "l": 0.0,
+        "t": 30.0,
+        "r": 40.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Structure. As shown in Tab. 2, TableFormer outperforms all SOTA methods across different datasets by a large margin for predicting the table structure from an image. All the more, our model outperforms pre-trained methods. During the evaluation we do not apply any table filtering. We also provide our baseline results on the SynthTabNet dataset. It has been observed that large tables (e.g., tables that occupy half of the page or more) yield poor predictions. We attribute this issue to the image resizing during the pre-processing step, that produces downsampled images with indistinguishable features. This problem can be addressed by treating such tables with a separate model which accepts a large input image size.",
+      "bbox": {
+        "l": 0.0,
+        "t": 35.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "table",
+      "text": "",
+      "bbox": {
+        "l": 0.0,
+        "t": 50.0,
+        "r": 100.0,
+        "b": 65.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "Model",
+            "Dataset",
+            "Simple",
+            "Complex",
+            "All"
+          ],
+          [
+            "EDD",
+            "PTN",
+            "91.1",
+            "88.7",
+            "89.9"
+          ],
+          [
+            "GTE",
+            "PTN",
+            "-",
+            "-",
+            "93.01"
+          ],
+          [
+            "TableFormer",
+            "PTN",
+            "98.5",
+            "95.0",
+            "96.75"
+          ],
+          [
+            "EDD",
+            "FTN",
+            "88.4",
+            "92.08",
+            "90.76"
+          ],
+          [
+            "GTE",
+            "FTN",
+            "-",
+            "-",
+            "87.14"
+          ],
+          [
+            "TableFormer",
+            "FTN",
+            "97.5",
+            "96.0",
+            "96.8"
+          ],
+          [
+            "EDD",
+            "TB",
+            "86.0",
+            "-",
+            "86.0"
+          ],
+          [
+            "TableFormer",
+            "TB",
+            "89.6",
+            "-",
+            "89.6"
+          ],
+          [
+            "TableFormer",
+            "STN",
+            "96.9",
+            "95.7",
+            "96.7"
+          ]
+        ],
+        "num_rows": 10,
+        "num_cols": 5
+      }
+    },
+    {
+      "label": "caption",
+      "text": "Table 2: Structure results on PubTabNet (PTN), FinTabNet (FTN), TableBank (TB) and SynthTabNet (STN). FT: Model was trained on PubTabNet then finetuned.",
+      "bbox": {
+        "l": 0.0,
+        "t": 65.0,
+        "r": 100.0,
+        "b": 70.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Cell Detection. Like any object detector, our Cell BBox Detector provides bounding boxes that can be improved with post-processing during inference. We make use of the grid-like structure of tables to refine the predictions. A detailed explanation on the post-processing is available in the supplementary material. As shown in Tab. 3, we evaluate our Cell BBox Decoder accuracy for cells with a class label of ‘content’ only using the PASCAL VOC mAP metric for pre-processing and post-processing. Note that we do not have post-processing results for SynthTabNet as images are only provided. To compare the performance of our proposed approach, we’ve integrated TableFormer’s Cell BBox Decoder into EDD architecture. As mentioned previously, the Structure Decoder provides the Cell BBox Decoder with the features needed to predict the bounding box predictions. Therefore, the accuracy of the Structure Decoder directly influences the accuracy of the Cell BBox Decoder. If the Structure Decoder predicts an extra column, this will result in an extra column of predicted bounding boxes.",
+      "bbox": {
+        "l": 0.0,
+        "t": 70.0,
+        "r": 100.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "table",
+      "text": "",
+      "bbox": {
+        "l": 0.0,
+        "t": 85.0,
+        "r": 100.0,
+        "b": 95.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "Model",
+            "Dataset",
+            "mAP",
+            "mAP (PP)"
+          ],
+          [
+            "EDD+BBox",
+            "PubTabNet",
+            "79.2",
+            "82.7"
+          ],
+          [
+            "TableFormer",
+            "PubTabNet",
+            "82.1",
+            "86.8"
+          ],
+          [
+            "TableFormer",
+            "SynthTabNet",
+            "87.7",
+            "-"
+          ]
+        ],
+        "num_rows": 4,
+        "num_cols": 4
+      }
+    },
+    {
+      "label": "caption",
+      "text": "Table 3: Cell Bounding Box detection results on PubTabNet, and FinTabNet. PP: Post-processing.",
+      "bbox": {
+        "l": 0.0,
+        "t": 95.0,
+        "r": 100.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Cell Content.",
+      "bbox": {
+        "l": 0.0,
+        "t": 100.0,
+        "r": 20.0,
+        "b": 105.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "In this section, we evaluate the entire pipeline of recovering a table with content. We enhance our approach to test by capitalizing on extracting content from the PDF cells rather than decoding from images. Tab. 4 shows the TEDS score of HTML code representing the structure of the table along with the content inserted in the data cell and compared with the ground-truth. Our method achieved a 5.3% increase over the state-of-the-art, and commercial solutions. We believe our scores would be higher if the HTML ground-truth matched the extracted PDF cell content. Unfortunately, there are small discrepancies such as spacings around words or special characters with various unicode representations.",
+      "bbox": {
+        "l": 0.0,
+        "t": 105.0,
+        "r": 100.0,
+        "b": 120.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "table",
+      "text": "",
+      "bbox": {
+        "l": 0.0,
+        "t": 120.0,
+        "r": 100.0,
+        "b": 130.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "Model",
+            "Simple",
+            "Complex",
+            "All"
+          ],
+          [
+            "Tabula",
+            "78.0",
+            "57.8",
+            "67.9"
+          ],
+          [
+            "Traprange",
+            "60.8",
+            "49.9",
+            "55.4"
+          ],
+          [
+            "Camelot",
+            "80.0",
+            "66.0",
+            "73.0"
+          ],
+          [
+            "Acrobat Pro",
+            "68.9",
+            "61.8",
+            "65.3"
+          ],
+          [
+            "EDD",
+            "91.2",
+            "85.4",
+            "88.3"
+          ],
+          [
+            "TableFormer",
+            "95.4",
+            "90.1",
+            "93.6"
+          ]
+        ],
+        "num_rows": 7,
+        "num_cols": 4
+      }
+    },
+    {
+      "label": "caption",
+      "text": "Table 4: Results of structure with content retrieved using cell detection on PubTabNet. In all cases the input is PDF documents with cropped tables.",
+      "bbox": {
+        "l": 0.0,
+        "t": 130.0,
+        "r": 100.0,
+        "b": 135.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

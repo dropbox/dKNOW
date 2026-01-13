@@ -1,0 +1,35 @@
+name: content_moderation
+version: 1.0.0
+description: "Detect NSFW (Not Safe For Work) and inappropriate content using OpenNSFW2-style ONNX model"
+
+inputs:
+  - jpg
+  - jpeg
+  - png
+  - bmp
+  - webp
+  - dpx
+  - Keyframes
+
+outputs:
+  - ContentModeration
+
+config:
+  max_file_size_mb: 100
+  requires_gpu: false
+  experimental: false
+
+performance:
+  avg_processing_time_per_gb: "30s"
+  memory_per_file_mb: 128
+  supports_streaming: false
+
+cache:
+  enabled: true
+  version: 1
+  invalidate_before: 1730419200  # 2024-10-31 00:00:00 UTC
+
+# Implementation location
+implementation:
+  crate: "video-audio-content-moderation"
+  function: "classify"

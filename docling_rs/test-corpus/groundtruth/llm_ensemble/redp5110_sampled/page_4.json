@@ -1,0 +1,165 @@
+{
+  "page_number": 4,
+  "elements": [
+    {
+      "label": "title",
+      "text": "Preface",
+      "bbox": {
+        "l": 5.0,
+        "t": 5.0,
+        "r": 20.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "This IBM® Redpaper™ publication provides information about the IBM i 7.2 feature of IBM DB2® for i Row and Column Access Control (RCAC). It offers a broad description of the function and advantages of controlling access to data in a comprehensive and transparent way. This publication helps you understand the capabilities of RCAC and provides examples of defining, creating, and implementing the row permissions and column masks in a relational database environment.",
+      "bbox": {
+        "l": 5.0,
+        "t": 12.0,
+        "r": 95.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "This paper is intended for database engineers, data-centric application developers, and security officers who want to design and implement RCAC as a part of their data control and governance policy. A solid background in IBM i object level security, DB2 for i relational database concepts, and SQL is assumed.",
+      "bbox": {
+        "l": 5.0,
+        "t": 22.0,
+        "r": 95.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Authors",
+      "bbox": {
+        "l": 5.0,
+        "t": 32.0,
+        "r": 20.0,
+        "b": 36.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "This paper was produced by the IBM DB2 for i Center of Excellence team in partnership with the International Technical Support Organization (ITSO), Rochester, Minnesota US.",
+      "bbox": {
+        "l": 5.0,
+        "t": 38.0,
+        "r": 95.0,
+        "b": 42.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Image of Jim Bainbridge",
+      "bbox": {
+        "l": 5.0,
+        "t": 44.0,
+        "r": 20.0,
+        "b": 54.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Jim Bainbridge is a senior DB2 consultant on the DB2 for i Center of Excellence team in the IBM Lab Services and Training organization. His primary role is training and implementation services for IBM DB2 Web Query for i and business analytics. Jim began his career with IBM 30 years ago in the IBM Rochester Development Lab, where he developed cooperative processing products that paired IBM PCs with IBM S/36 and AS/400 systems. In the years since, Jim has held numerous technical roles, including independent software vendors technical support on a broad range of IBM technologies and products, and supporting customers in the IBM Executive Briefing Center and IBM Project Office.",
+      "bbox": {
+        "l": 22.0,
+        "t": 44.0,
+        "r": 95.0,
+        "b": 60.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Image of Hernando Bedoya",
+      "bbox": {
+        "l": 5.0,
+        "t": 62.0,
+        "r": 20.0,
+        "b": 72.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Hernando Bedoya is a Senior IT Specialist at STG Lab Services and Training in Rochester, Minnesota. He writes extensively and teaches IBM classes worldwide in all areas of DB2 for i. Before joining STG Lab Services, he worked in the ITSO for nine years writing multiple IBM Redbooks® publications. He also worked for IBM Colombia as an IBM AS/400® IT Specialist doing presales support for the Andean countries. He has 28 years of experience in the computing field and has taught database classes in Colombian universities. He holds a Master's degree in Computer Science from EAFIT, Colombia. His areas of expertise are database technology, performance, and data warehousing. Hernando can be contacted at hbedoya@us.ibm.com.",
+      "bbox": {
+        "l": 22.0,
+        "t": 62.0,
+        "r": 95.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "© Copyright IBM Corp. 2014. All rights reserved.",
+      "bbox": {
+        "l": 5.0,
+        "t": 95.0,
+        "r": 50.0,
+        "b": 98.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "xi",
+      "bbox": {
+        "l": 95.0,
+        "t": 95.0,
+        "r": 98.0,
+        "b": 98.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

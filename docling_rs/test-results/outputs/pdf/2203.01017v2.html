@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>2203.01017v2</title>
+<meta name="generator" content="Docling HTML Serializer"/>
+<style>
+    html {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #333;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2em;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.3em;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 1em 0;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    figure {
+        margin: 1.5em 0;
+        text-align: center;
+    }
+    figcaption {
+        color: #666;
+        font-style: italic;
+        margin-top: 0.5em;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    pre {
+        background-color: #f6f8fa;
+        border-radius: 3px;
+        padding: 1em;
+        overflow: auto;
+    }
+    code {
+        font-family: monospace;
+        background-color: #f6f8fa;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+    }
+    pre code {
+        background-color: transparent;
+        padding: 0;
+    }
+    .formula {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background-color: #f9f9f9;
+    }
+    .formula-not-decoded {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background: repeating-linear-gradient(
+            45deg,
+            #f0f0f0,
+            #f0f0f0 10px,
+            #f9f9f9 10px,
+            #f9f9f9 20px
+        );
+    }
+    .page-break {
+        page-break-after: always;
+        border-top: 1px dashed #ccc;
+        margin: 2em 0;
+    }
+    .key-value-region {
+        background-color: #f9f9f9;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .key-value-region dt {
+        font-weight: bold;
+    }
+    .key-value-region dd {
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+    }
+    .form-container {
+        border: 1px solid #ddd;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .form-item {
+        margin-bottom: 0.5em;
+    }
+    .image-classification {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 0.5em;
+    }
+</style>
+</head>
+<body>
+<div class='page'>
+<p>blue preactions by Iavierormer</p>
+<p>2</p>
+<p>O Ohsrier 1</p>
+<p>amalignal benign malignant</p>
+<p>13</p>
+<p>2</p>
+<p>10</p>
+<p>11</p>
+<p>14</p>
+<p>18</p>
+<p>a. Picture or a table:</p>
+<p>3</p>
+<p>4</p>
+<p>benign</p>
+<p>9</p>
+<p>malignant</p>
+<p>13</p>
+<p>417-</p>
+<p>Total observer 1</p>
+<p>13</p>
+<p>62</p>
+<p>64</p>
+<p>Tatal</p>
+<p>7</p>
+<p>observer 2</p>
+<p>15</p>
+<p>12</p>
+<p>62</p>
+<p>77</p>
+<p>15</p>
+<p>19</p>
+<p>16</p>
+<p>20</p>
+<h2>TableFormer: Table Structure Understanding with Transformers.</h2>
+<p>Ahmed Nassar, Nikolaos Livathinos, Maksym Lysak, Peter Staar IBM Research</p>
+<p>{ ahn,nli,mly,taa } @zurich.ibm.com</p>
+<h2>Abstract</h2>
+<p>Tables organize valuable content in a concise and compact representation. This content is extremely valuable for systems such as search engines, Knowledge Graph's, etc, since they enhance their predictive capabilities. Unfortunately, tables come in a large variety of shapes and sizes. Furthermore, they can have complex column/row-header configurations, multiline rows, different variety of separation lines, missing entries, etc. As such, the correct identification of the table-structure from an image is a nontrivial task. In this paper, we present a new table-structure identification model. The latter improves the latest end-toend deep learning model (i.e. encoder-dual-decoder from PubTabNet) in two significant ways. First, we introduce a new object detection decoder for table-cells. In this way, we can obtain the content of the table-cells from programmatic PDF's directly from the PDF source and avoid the training of the custom OCR decoders. This architectural change leads to more accurate table-content extraction and allows us to tackle non-english tables. Second, we replace the LSTM decoders with transformer based decoders. This upgrade improves significantly the previous state-of-the-art tree-editing-distance-score (TEDS) from 91% to 98.5% on simple tables and from 88.7% to 95% on complex tables.</p>
+<h2>1. Introduction</h2>
+<p>The occurrence of tables in documents is ubiquitous. They often summarise quantitative or factual data, which is cumbersome to describe in verbose text but nevertheless extremely valuable. Unfortunately, this compact representation is often not easy to parse by machines. There are many implicit conventions used to obtain a compact table representation. For example, tables often have complex columnand row-headers in order to reduce duplicated cell content. Lines of different shapes and sizes are leveraged to separate content or indicate a tree structure. Additionally, tables can also have empty/missing table-entries or multi-row textual table-entries. Fig. 1 shows a table which presents all these issues.</p>
+<h2>a. Picture of a table:</h2>
+<table><tbody><tr><th>1</th></tr></tbody></table>
+<p>7</p>
+<table><tbody><tr><td>0</td><td colspan="3">1 2 1</td></tr><tr><td>3 4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>9 13</td><td>10</td><td>11</td><td>12</td></tr><tr><td>8 2</td><td>14</td><td>15</td><td>16</td></tr><tr><td>17</td><td>18</td><td>19</td><td>20</td></tr></tbody></table>
+<figure><figcaption><div class="caption">Figure 1: Picture of a table with subtle, complex features such as (1) multi-column headers, (2) cell with multi-row text and (3) cells with no content. Image from PubTabNet evaluation set, filename: &#x27;PMC2944238 004 02&#x27;.</div></figcaption></figure>
+<p>Recently, significant progress has been made with vision based approaches to extract tables in documents. For the sake of completeness, the issue of table extraction from documents is typically decomposed into two separate challenges, i.e. (1) finding the location of the table(s) on a document-page and (2) finding the structure of a given table in the document.</p>
+<p>The first problem is called table-location and has been previously addressed [30, 38, 19, 21, 23, 26, 8] with stateof-the-art object-detection networks (e.g. YOLO and later on Mask-RCNN [9]). For all practical purposes, it can be</p>
+<p>Observer 2</p>
+<p>8.</p>
+<p>considered as a solved problem, given enough ground-truth data to train on.</p>
+<p>The second problem is called table-structure decomposition. The latter is a long standing problem in the community of document understanding [6, 4, 14]. Contrary to the table-location problem, there are no commonly used approaches that can easily be re-purposed to solve this problem. Lately, a set of new model-architectures has been proposed by the community to address table-structure decomposition [37, 36, 18, 20]. All these models have some weaknesses (see Sec. 2). The common denominator here is the reliance on textual features and/or the inability to provide the bounding box of each table-cell in the original image.</p>
+<p>In this paper, we want to address these weaknesses and present a robust table-structure decomposition algorithm. The design criteria for our model are the following. First, we want our algorithm to be language agnostic. In this way, we can obtain the structure of any table, irregardless of the language. Second, we want our algorithm to leverage as much data as possible from the original PDF document. For programmatic PDF documents, the text-cells can often be extracted much faster and with higher accuracy compared to OCR methods. Last but not least, we want to have a direct link between the table-cell and its bounding box in the image.</p>
+<p>To meet the design criteria listed above, we developed a new model called TableFormer and a synthetically generated table structure dataset called SynthTabNet 1 . In particular, our contributions in this work can be summarised as follows:</p>
+<ul>
+<li style="list-style-type: '· ';">We propose TableFormer , a transformer based model that predicts tables structure and bounding boxes for the table content simultaneously in an end-to-end approach.</li>
+<li style="list-style-type: '· ';">Across all benchmark datasets TableFormer significantly outperforms existing state-of-the-art metrics, while being much more efficient in training and inference to existing works.</li>
+<li style="list-style-type: '· ';">We present SynthTabNet a synthetically generated dataset, with various appearance styles and complexity.</li>
+<li style="list-style-type: '· ';">An augmented dataset based on PubTabNet [37], FinTabNet [36], and TableBank [17] with generated ground-truth for reproducibility.</li>
+</ul>
+<p>The paper is structured as follows. In Sec. 2, we give a brief overview of the current state-of-the-art. In Sec. 3, we describe the datasets on which we train. In Sec. 4, we introduce the TableFormer model-architecture and describe</p>
+<p>1 https://github.com/IBM/SynthTabNet</p>
+<p>its results &amp; performance in Sec. 5. As a conclusion, we describe how this new model-architecture can be re-purposed for other tasks in the computer-vision community.</p>
+<h2>2. Previous work and State of the Art</h2>
+<p>Identifying the structure of a table has been an outstanding problem in the document-parsing community, that motivates many organised public challenges [6, 4, 14]. The difficulty of the problem can be attributed to a number of factors. First, there is a large variety in the shapes and sizes of tables. Such large variety requires a flexible method. This is especially true for complex column- and row headers, which can be extremely intricate and demanding. A second factor of complexity is the lack of data with regard to table-structure. Until the publication of PubTabNet [37], there were no large datasets (i.e. &gt; 100 K tables) that provided structure information. This happens primarily due to the fact that tables are notoriously time-consuming to annotate by hand. However, this has definitely changed in recent years with the deliverance of PubTabNet [37], FinTabNet [36], TableBank [17] etc.</p>
+<p>Before the rising popularity of deep neural networks, the community relied heavily on heuristic and/or statistical methods to do table structure identification [3, 7, 11, 5, 13, 28]. Although such methods work well on constrained tables [12], a more data-driven approach can be applied due to the advent of convolutional neural networks (CNNs) and the availability of large datasets. To the best-of-our knowledge, there are currently two different types of network architecture that are being pursued for state-of-the-art tablestructure identification.</p>
+<p>Image-to-Text networks : In this type of network, one predicts a sequence of tokens starting from an encoded image. Such sequences of tokens can be HTML table tags [37, 17] or LaTeX symbols[10]. The choice of symbols is ultimately not very important, since one can be transformed into the other. There are however subtle variations in the Image-to-Text networks. The easiest network architectures are 'image-encoder → text-decoder' (IETD), similar to network architectures that try to provide captions to images [32]. In these IETD networks, one expects as output the LaTeX/HTML string of the entire table, i.e. the symbols necessary for creating the table with the content of the table. Another approach is the 'image-encoder → dual decoder' (IEDD) networks. In these type of networks, one has two consecutive decoders with different purposes. The first decoder is the tag-decoder , i.e. it only produces the HTML/LaTeX tags which construct an empty table. The second content-decoder uses the encoding of the image in combination with the output encoding of each cell-tag (from the tag-decoder ) to generate the textual content of each table cell. The network architecture of IEDD is certainly more elaborate, but it has the advantage that one can pre-train the</p>
+<p>40</p>
+<p>!0.</p>
+<p>.0</p>
+<p>Pub labNet + Fin labNet</p>
+<p>10K</p>
+<p>8K</p>
+<p>tag-decoder which is constrained to the table-tags.</p>
+<p>In practice, both network architectures (IETD and IEDD) require an implicit, custom trained object-characterrecognition (OCR) to obtain the content of the table-cells. In the case of IETD, this OCR engine is implicit in the decoder similar to [24]. For the IEDD, the OCR is solely embedded in the content-decoder. This reliance on a custom, implicit OCR decoder is of course problematic. OCR is a well known and extremely tough problem, that often needs custom training for each individual language. However, the limited availability for non-english content in the current datasets, makes it impractical to apply the IETD and IEDD methods on tables with other languages. Additionally, OCR can be completely omitted if the tables originate from programmatic PDF documents with known positions of each cell. The latter was the inspiration for the work of this paper.</p>
+<p>Graph Neural networks : Graph Neural networks (GNN's) take a radically different approach to tablestructure extraction. Note that one table cell can constitute out of multiple text-cells. To obtain the table-structure, one creates an initial graph, where each of the text-cells becomes a node in the graph similar to [33, 34, 2]. Each node is then associated with en embedding vector coming from the encoded image, its coordinates and the encoded text. Furthermore, nodes that represent adjacent text-cells are linked. Graph Convolutional Networks (GCN's) based methods take the image as an input, but also the position of the text-cells and their content [18]. The purpose of a GCN is to transform the input graph into a new graph, which replaces the old links with new ones. The new links then represent the table-structure. With this approach, one can avoid the need to build custom OCR decoders. However, the quality of the reconstructed structure is not comparable to the current state-of-the-art [18].</p>
+<p>Hybrid Deep Learning-Rule-Based approach : Apopular current model for table-structure identification is the use of a hybrid Deep Learning-Rule-Based approach similar to [27, 29]. In this approach, one first detects the position of the table-cells with object detection (e.g. YoloVx or MaskRCNN), then classifies the table into different types (from its images) and finally uses different rule-sets to obtain its table-structure. Currently, this approach achieves stateof-the-art results, but is not an end-to-end deep-learning method. As such, new rules need to be written if different types of tables are encountered.</p>
+<h2>3. Datasets</h2>
+<p>We rely on large-scale datasets such as PubTabNet [37], FinTabNet [36], and TableBank [17] datasets to train and evaluate our models. These datasets span over various appearance styles and content. We also introduce our own synthetically generated SynthTabNet dataset to fix an im-</p>
+<figure><figcaption><div class="caption">Figure 2: Distribution of the tables across different table dimensions in PubTabNet + FinTabNet datasets</div></figcaption></figure>
+<p>balance in the previous datasets.</p>
+<p>The PubTabNet dataset contains 509k tables delivered as annotated PNG images. The annotations consist of the table structure represented in HTML format, the tokenized text and its bounding boxes per table cell. Fig. 1 shows the appearance style of PubTabNet. Depending on its complexity, a table is characterized as 'simple' when it does not contain row spans or column spans, otherwise it is 'complex'. The dataset is divided into Train and Val splits (roughly 98% and 2%). The Train split consists of 54% simple and 46% complex tables and the Val split of 51% and 49% respectively. The FinTabNet dataset contains 112k tables delivered as single-page PDF documents with mixed table structures and text content. Similarly to the PubTabNet, the annotations of FinTabNet include the table structure in HTML, the tokenized text and the bounding boxes on a table cell basis. The dataset is divided into Train, Test and Val splits (81%, 9.5%, 9.5%), and each one is almost equally divided into simple and complex tables (Train: 48% simple, 52% complex, Test: 48% simple, 52% complex, Test: 53% simple, 47% complex). Finally the TableBank dataset consists of 145k tables provided as JPEG images. The latter has annotations for the table structure, but only few with bounding boxes of the table cells. The entire dataset consists of simple tables and it is divided into 90% Train, 3% Test and 7% Val splits.</p>
+<p>Due to the heterogeneity across the dataset formats, it was necessary to combine all available data into one homogenized dataset before we could train our models for practical purposes. Given the size of PubTabNet, we adopted its annotation format and we extracted and converted all tables as PNG images with a resolution of 72 dpi. Additionally, we have filtered out tables with extreme sizes due to small</p>
+<p>amount of such tables, and kept only those ones ranging between 1*1 and 20*10 (rows/columns).</p>
+<p>The availability of the bounding boxes for all table cells is essential to train our models. In order to distinguish between empty and non-empty bounding boxes, we have introduced a binary class in the annotation. Unfortunately, the original datasets either omit the bounding boxes for whole tables (e.g. TableBank) or they narrow their scope only to non-empty cells. Therefore, it was imperative to introduce a data pre-processing procedure that generates the missing bounding boxes out of the annotation information. This procedure first parses the provided table structure and calculates the dimensions of the most fine-grained grid that covers the table structure. Notice that each table cell may occupy multiple grid squares due to row or column spans. In case of PubTabNet we had to compute missing bounding boxes for 48% of the simple and 69% of the complex tables. Regarding FinTabNet, 68% of the simple and 98% of the complex tables require the generation of bounding boxes.</p>
+<p>As it is illustrated in Fig. 2, the table distributions from all datasets are skewed towards simpler structures with fewer number of rows/columns. Additionally, there is very limited variance in the table styles, which in case of PubTabNet and FinTabNet means one styling format for the majority of the tables. Similar limitations appear also in the type of table content, which in some cases (e.g. FinTabNet) is restricted to a certain domain. Ultimately, the lack of diversity in the training dataset damages the ability of the models to generalize well on unseen data.</p>
+<p>Motivated by those observations we aimed at generating a synthetic table dataset named SynthTabNet . This approach offers control over: 1) the size of the dataset, 2) the table structure, 3) the table style and 4) the type of content. The complexity of the table structure is described by the size of the table header and the table body, as well as the percentage of the table cells covered by row spans and column spans. A set of carefully designed styling templates provides the basis to build a wide range of table appearances. Lastly, the table content is generated out of a curated collection of text corpora. By controlling the size and scope of the synthetic datasets we are able to train and evaluate our models in a variety of different conditions. For example, we can first generate a highly diverse dataset to train our models and then evaluate their performance on other synthetic datasets which are focused on a specific domain.</p>
+<p>In this regard, we have prepared four synthetic datasets, each one containing 150k examples. The corpora to generate the table text consists of the most frequent terms appearing in PubTabNet and FinTabNet together with randomly generated text. The first two synthetic datasets have been fine-tuned to mimic the appearance of the original datasets but encompass more complicated table structures. The third</p>
+<table><caption><div class="caption">Table 1: Both &#x27;Combined-Tabnet&#x27; and &#x27;CombinedTabnet&#x27; are variations of the following: (*) The CombinedTabnet dataset is the processed combination of PubTabNet and Fintabnet. (**) The combined dataset is the processed combination of PubTabNet, Fintabnet and TableBank.</div></caption><tbody><tr><td></td><th>Tags</th><th>Bbox</th><th>Size</th><th>Format</th></tr><tr><th>PubTabNet</th><td>3</td><td>3</td><td>509k</td><td>PNG</td></tr><tr><th>FinTabNet</th><td>3</td><td>3</td><td>112k</td><td>PDF</td></tr><tr><th>TableBank</th><td>3</td><td>7</td><td>145k</td><td>JPEG</td></tr><tr><th>Combined-Tabnet(*)</th><td>3</td><td>3</td><td>400k</td><td>PNG</td></tr><tr><th>Combined(**)</th><td>3</td><td>3</td><td>500k</td><td>PNG</td></tr><tr><th>SynthTabNet</th><td>3</td><td>3</td><td>600k</td><td>PNG</td></tr></tbody></table>
+<p>one adopts a colorful appearance with high contrast and the last one contains tables with sparse content. Lastly, we have combined all synthetic datasets into one big unified synthetic dataset of 600k examples.</p>
+<p>Tab. 1 summarizes the various attributes of the datasets.</p>
+<h2>4. The TableFormer model</h2>
+<p>Given the image of a table, TableFormer is able to predict: 1) a sequence of tokens that represent the structure of a table, and 2) a bounding box coupled to a subset of those tokens. The conversion of an image into a sequence of tokens is a well-known task [35, 16]. While attention is often used as an implicit method to associate each token of the sequence with a position in the original image, an explicit association between the individual table-cells and the image bounding boxes is also required.</p>
+<h2>4.1. Model architecture.</h2>
+<p>We now describe in detail the proposed method, which is composed of three main components, see Fig. 4. Our CNN Backbone Network encodes the input as a feature vector of predefined length. The input feature vector of the encoded image is passed to the Structure Decoder to produce a sequence of HTML tags that represent the structure of the table. With each prediction of an HTML standard data cell (' &lt; td &gt; ') the hidden state of that cell is passed to the Cell BBox Decoder. As for spanning cells, such as row or column span, the tag is broken down to ' &lt; ', 'rowspan=' or 'colspan=', with the number of spanning cells (attribute), and ' &gt; '. The hidden state attached to ' &lt; ' is passed to the Cell BBox Decoder. A shared feed forward network (FFN) receives the hidden states from the Structure Decoder, to provide the final detection predictions of the bounding box coordinates and their classification.</p>
+<p>CNN Backbone Network. A ResNet-18 CNN is the backbone that receives the table image and encodes it as a vector of predefined length. The network has been modified by removing the linear and pooling layer, as we are not per-</p>
+<figure><figcaption><div class="caption">Figure 3: TableFormer takes in an image of the PDF and creates bounding box and HTML structure predictions that are synchronized. The bounding boxes grabs the content from the PDF and inserts it in the structure.</div></figcaption></figure>
+<figure><figcaption><div class="caption">Figure 4: Given an input image of a table, the Encoder produces fixed-length features that represent the input image. The features are then passed to both the Structure Decoder and Cell BBox Decoder . During training, the Structure Decoder receives &#x27;tokenized tags&#x27; of the HTML code that represent the table structure. Afterwards, a transformer encoder and decoder architecture is employed to produce features that are received by a linear layer, and the Cell BBox Decoder. The linear layer is applied to the features to predict the tags. Simultaneously, the Cell BBox Decoder selects features referring to the data cells (&#x27; &lt; td &gt; &#x27;, &#x27; &lt; &#x27;) and passes them through an attention network, an MLP, and a linear layer to predict the bounding boxes.</div></figcaption></figure>
+<p>forming classification, and adding an adaptive pooling layer of size 28*28. ResNet by default downsamples the image resolution by 32 and then the encoded image is provided to both the Structure Decoder , and Cell BBox Decoder .</p>
+<p>Structure Decoder. The transformer architecture of this component is based on the work proposed in [31]. After extensive experimentation, the Structure Decoder is modeled as a transformer encoder with two encoder layers and a transformer decoder made from a stack of 4 decoder layers that comprise mainly of multi-head attention and feed forward layers. This configuration uses fewer layers and heads in comparison to networks applied to other problems (e.g. 'Scene Understanding', 'Image Captioning'), something which we relate to the simplicity of table images.</p>
+<p>The transformer encoder receives an encoded image from the CNN Backbone Network and refines it through a multi-head dot-product attention layer, followed by a Feed Forward Network. During training, the transformer decoder receives as input the output feature produced by the transformer encoder, and the tokenized input of the HTML ground-truth tags. Using a stack of multi-head attention layers, different aspects of the tag sequence could be inferred. This is achieved by each attention head on a layer operating in a different subspace, and then combining altogether their attention score.</p>
+<p>Cell BBox Decoder. Our architecture allows to simultaneously predict HTML tags and bounding boxes for each table cell without the need of a separate object detector end to end. This approach is inspired by DETR [1] which employs a Transformer Encoder, and Decoder that looks for a specific number of object queries (potential object detections). As our model utilizes a transformer architecture, the hidden state of the &lt; td &gt; ' and ' &lt; ' HTML structure tags become the object query.</p>
+<p>The encoding generated by the CNN Backbone Network along with the features acquired for every data cell from the Transformer Decoder are then passed to the attention network. The attention network takes both inputs and learns to provide an attention weighted encoding. This weighted at-</p>
+<p>tention encoding is then multiplied to the encoded image to produce a feature for each table cell. Notice that this is different than the typical object detection problem where imbalances between the number of detections and the amount of objects may exist. In our case, we know up front that the produced detections always match with the table cells in number and correspondence.</p>
+<p>The output features for each table cell are then fed into the feed-forward network (FFN). The FFN consists of a Multi-Layer Perceptron (3 layers with ReLU activation function) that predicts the normalized coordinates for the bounding box of each table cell. Finally, the predicted bounding boxes are classified based on whether they are empty or not using a linear layer.</p>
+<p>Loss Functions. We formulate a multi-task loss Eq. 2 to train our network. The Cross-Entropy loss (denoted as l s ) is used to train the Structure Decoder which predicts the structure tokens. As for the Cell BBox Decoder it is trained with a combination of losses denoted as l box . l box consists of the generally used l 1 loss for object detection and the IoU loss ( l iou ) to be scale invariant as explained in [25]. In comparison to DETR, we do not use the Hungarian algorithm [15] to match the predicted bounding boxes with the ground-truth boxes, as we have already achieved a one-toone match through two steps: 1) Our token input sequence is naturally ordered, therefore the hidden states of the table data cells are also in order when they are provided as input to the Cell BBox Decoder , and 2) Our bounding boxes generation mechanism (see Sec. 3) ensures a one-to-one mapping between the cell content and its bounding box for all post-processed datasets.</p>
+<p>The loss used to train the TableFormer can be defined as following:</p>
+<div class="formula-not-decoded">Formula not decoded</div>
+<p>where λ ∈ [0, 1], and λ iou , λ l 1 ∈ R are hyper-parameters.</p>
+<h2>5. Experimental Results</h2>
+<h2>5.1. Implementation Details</h2>
+<p>TableFormer uses ResNet-18 as the CNN Backbone Network . The input images are resized to 448*448 pixels and the feature map has a dimension of 28*28. Additionally, we enforce the following input constraints:</p>
+<div class="formula-not-decoded">Formula not decoded</div>
+<p>Although input constraints are used also by other methods, such as EDD, ours are less restrictive due to the improved runtime performance and lower memory footprint of TableFormer. This allows to utilize input samples with longer sequences and images with larger dimensions.</p>
+<p>The Transformer Encoder consists of two 'Transformer Encoder Layers', with an input feature size of 512, feed forward network of 1024, and 4 attention heads. As for the Transformer Decoder it is composed of four 'Transformer Decoder Layers' with similar input and output dimensions as the 'Transformer Encoder Layers'. Even though our model uses fewer layers and heads than the default implementation parameters, our extensive experimentation has proved this setup to be more suitable for table images. We attribute this finding to the inherent design of table images, which contain mostly lines and text, unlike the more elaborate content present in other scopes (e.g. the COCO dataset). Moreover, we have added ResNet blocks to the inputs of the Structure Decoder and Cell BBox Decoder. This prevents a decoder having a stronger influence over the learned weights which would damage the other prediction task (structure vs bounding boxes), but learn task specific weights instead. Lastly our dropout layers are set to 0.5.</p>
+<p>For training, TableFormer is trained with 3 Adam optimizers, each one for the CNN Backbone Network , Structure Decoder , and Cell BBox Decoder . Taking the PubTabNet as an example for our parameter set up, the initializing learning rate is 0.001 for 12 epochs with a batch size of 24, and λ set to 0.5. Afterwards, we reduce the learning rate to 0.0001, the batch size to 18 and train for 12 more epochs or convergence.</p>
+<p>TableFormer is implemented with PyTorch and Torchvision libraries [22]. To speed up the inference, the image undergoes a single forward pass through the CNN Backbone Network and transformer encoder. This eliminates the overhead of generating the same features for each decoding step. Similarly, we employ a 'caching' technique to preform faster autoregressive decoding. This is achieved by storing the features of decoded tokens so we can reuse them for each time step. Therefore, we only compute the attention for each new tag.</p>
+<h2>5.2. Generalization</h2>
+<p>TableFormer is evaluated on three major publicly available datasets of different nature to prove the generalization and effectiveness of our model. The datasets used for evaluation are the PubTabNet, FinTabNet and TableBank which stem from the scientific, financial and general domains respectively.</p>
+<p>We also share our baseline results on the challenging SynthTabNet dataset. Throughout our experiments, the same parameters stated in Sec. 5.1 are utilized.</p>
+<h2>5.3. Datasets and Metrics</h2>
+<p>The Tree-Edit-Distance-Based Similarity (TEDS) metric was introduced in [37]. It represents the prediction, and ground-truth as a tree structure of HTML tags. This similarity is calculated as:</p>
+<div class="formula-not-decoded">Formula not decoded</div>
+<p>where T a and T b represent tables in tree structure HTML format. EditDist denotes the tree-edit distance, and | T | represents the number of nodes in T .</p>
+<h2>5.4. Quantitative Analysis</h2>
+<p>Structure. As shown in Tab. 2, TableFormer outperforms all SOTA methods across different datasets by a large margin for predicting the table structure from an image. All the more, our model outperforms pre-trained methods. During the evaluation we do not apply any table filtering. We also provide our baseline results on the SynthTabNet dataset. It has been observed that large tables (e.g. tables that occupy half of the page or more) yield poor predictions. We attribute this issue to the image resizing during the preprocessing step, that produces downsampled images with indistinguishable features. This problem can be addressed by treating such big tables with a separate model which accepts a large input image size.</p>
+<table><tbody><tr><th>Model</th><th>Dataset</th><th>Simple</th><th>TEDS Complex</th><th>All</th></tr><tr><th>EDD</th><td>PTN</td><td>91.1</td><td>88.7</td><td>89.9</td></tr><tr><th>GTE</th><td>PTN</td><td>-</td><td>-</td><td>93.01</td></tr><tr><th>TableFormer</th><td>PTN</td><td>98.5</td><td>95.0</td><td>96.75</td></tr><tr><th>EDD</th><td>FTN</td><td>88.4</td><td>92.08</td><td>90.6</td></tr><tr><th>GTE</th><td>FTN</td><td>-</td><td>-</td><td>87.14</td></tr><tr><th>GTE (FT)</th><td>FTN</td><td>-</td><td>-</td><td>91.02</td></tr><tr><th>TableFormer</th><td>FTN</td><td>97.5</td><td>96.0</td><td>96.8</td></tr><tr><th>EDD</th><td>TB</td><td>86.0</td><td>-</td><td>86.0</td></tr><tr><th>TableFormer</th><td>TB</td><td>89.6</td><td>-</td><td>89.6</td></tr><tr><th>TableFormer</th><td>STN</td><td>96.9</td><td>95.7</td><td>96.7</td></tr></tbody></table>
+<p>Table 2: Structure results on PubTabNet (PTN), FinTabNet (FTN), TableBank (TB) and SynthTabNet (STN).</p>
+<p>FT: Model was trained on PubTabNet then finetuned.</p>
+<p>Cell Detection. Like any object detector, our Cell BBox Detector provides bounding boxes that can be improved with post-processing during inference. We make use of the grid-like structure of tables to refine the predictions. A detailed explanation on the post-processing is available in the supplementary material. As shown in Tab. 3, we evaluate our Cell BBox Decoder accuracy for cells with a class label of 'content' only using the PASCAL VOC mAP metric for pre-processing and post-processing. Note that we do not have post-processing results for SynthTabNet as images are only provided. To compare the performance of our proposed approach, we've integrated TableFormer's Cell BBox Decoder into EDD architecture. As mentioned previously, the Structure Decoder provides the Cell BBox Decoder with the features needed to predict the bounding box predictions. Therefore, the accuracy of the Structure Decoder directly influences the accuracy of the Cell BBox Decoder . If the Structure Decoder predicts an extra column, this will result in an extra column of predicted bounding boxes.</p>
+<table><caption><div class="caption">Table 3: Cell Bounding Box detection results on PubTabNet, and FinTabNet. PP: Post-processing.</div></caption><tbody><tr><th>Model</th><th>Dataset</th><th>mAP</th><th>mAP (PP)</th></tr><tr><th>EDD+BBox</th><td>PubTabNet</td><td>79.2</td><td>82.7</td></tr><tr><th>TableFormer</th><td>PubTabNet</td><td>82.1</td><td>86.8</td></tr><tr><th>TableFormer</th><td>SynthTabNet</td><td>87.7</td><td>-</td></tr></tbody></table>
+<p>Cell Content. In this section, we evaluate the entire pipeline of recovering a table with content. Here we put our approach to test by capitalizing on extracting content from the PDF cells rather than decoding from images. Tab. 4 shows the TEDs score of HTML code representing the structure of the table along with the content inserted in the data cell and compared with the ground-truth. Our method achieved a 5.3% increase over the state-of-the-art, and commercial solutions. We believe our scores would be higher if the HTML ground-truth matched the extracted PDF cell content. Unfortunately, there are small discrepancies such as spacings around words or special characters with various unicode representations.</p>
+<table><caption><div class="caption">Table 4: Results of structure with content retrieved using cell detection on PubTabNet. In all cases the input is PDF documents with cropped tables.</div></caption><tbody><tr><th>Model</th><th>Simple</th><th>TEDS Complex</th><th>All</th></tr><tr><th>Tabula</th><td>78.0</td><td>57.8</td><td>67.9</td></tr><tr><th>Traprange</th><td>60.8</td><td>49.9</td><td>55.4</td></tr><tr><th>Camelot</th><td>80.0</td><td>66.0</td><td>73.0</td></tr><tr><th>Acrobat Pro</th><td>68.9</td><td>61.8</td><td>65.3</td></tr><tr><th>EDD</th><td>91.2</td><td>85.4</td><td>88.3</td></tr><tr><th>TableFormer</th><td>95.4</td><td>90.1</td><td>93.6</td></tr></tbody></table>
+<p>Japanese language (previously unseen by TableFormer):</p>
+<p>Ground Truth</p>
+<p>Juarte</p>
+<p>December interes sente</p>
+<p>In millions High</p>
+<p>Total</p>
+<p>First ssociation tor</p>
+<p>thousands revenues Quarter</p>
+<p>millions</p>
+<p>Year Ended December 31, omputational Linguistics(COLING2002)</p>
+<p>Shareh</p>
+<p>ĐXEE7Z 200319.332</p>
+<p>1800% Change Quarte</p>
+<p>Faded</p>
+<p>19545 6 2003</p>
+<p>Shares</p>
+<p>Posed us.</p>
+<p>(2003</p>
+<p>December BX</p>
+<p>Thereafter S</p>
+<p>146-155 E</p>
+<p>Red - PDF cells, Green - predicted bounding boxes</p>
+<p>Nonvested on January 1</p>
+<p>Granted</p>
+<p>Vested</p>
+<p>Canceled or forfeited</p>
+<p>Weighted Average</p>
+<p>Grant Date Fair Value</p>
+<p>RSUS</p>
+<p>PSUS</p>
+<p>90.10</p>
+<p>117.44</p>
+<p>187.087</p>
+<p>102.01</p>
+<p>91.19</p>
+<p>81.14</p>
+<p>92.18</p>
+<ol>
+<li style="list-style-type: 'a. ';">Red - PDF cells, Green - predicted bounding boxes, Blue - post-processed predictions matched to PDF cells</li>
+</ol>
+<p>Text is aligned to match original for ease of viewing</p>
+<figure><figcaption><div class="caption">Figure 5: One of the benefits of TableFormer is that it is language agnostic, as an example, the left part of the illustration demonstrates TableFormer predictions on previously unseen language (Japanese). Additionally, we see that TableFormer is robust to variability in style and content, right side of the illustration shows the example of the TableFormer prediction from the FinTabNet dataset.</div></figcaption></figure>
+<p>Figure 6: An example of TableFormer predictions (bounding boxes and structure) from generated SynthTabNet table.</p>
+<h2>5.5. Qualitative Analysis</h2>
+<p>We showcase several visualizations for the different components of our network on various 'complex' tables within datasets presented in this work in Fig. 5 and Fig. 6 As it is shown, our model is able to predict bounding boxes for all table cells, even for the empty ones. Additionally, our post-processing techniques can extract the cell content by matching the predicted bounding boxes to the PDF cells based on their overlap and spatial proximity. The left part of Fig. 5 demonstrates also the adaptability of our method to any language, as it can successfully extract Japanese text, although the training set contains only English content. We provide more visualizations including the intermediate steps in the supplementary material. Overall these illustrations justify the versatility of our method across a diverse range of table appearances and content type.</p>
+<h2>6. Future Work &amp; Conclusion</h2>
+<p>In this paper, we presented TableFormer an end-to-end transformer based approach to predict table structures and bounding boxes of cells from an image. This approach enables us to recreate the table structure, and extract the cell content from PDF or OCR by using bounding boxes. Additionally, it provides the versatility required in real-world scenarios when dealing with various types of PDF documents, and languages. Furthermore, our method outperforms all state-of-the-arts with a wide margin. Finally, we introduce 'SynthTabNet' a challenging synthetically generated dataset that reinforces missing characteristics from other datasets.</p>
+<h2>References</h2>
+<ol>
+<li style="list-style-type: '[1] ';">Nicolas Carion, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov, and Sergey Zagoruyko. End-to-</li>
+</ol>
+<p>lebe</p>
+<p>"yabl</p>
+<p>Example table from FinTabNet:</p>
+<p>Shares in millions</p>
+<p>RSUs</p>
+<p>PSUS</p>
+<p>end object detection with transformers. In Andrea Vedaldi, Horst Bischof, Thomas Brox, and Jan-Michael Frahm, editors, Computer Vision - ECCV 2020 , pages 213-229, Cham, 2020. Springer International Publishing. 5</p>
+<ol>
+<li style="list-style-type: '[2] ';">Zewen Chi, Heyan Huang, Heng-Da Xu, Houjin Yu, Wanxuan Yin, and Xian-Ling Mao. Complicated table structure recognition. arXiv preprint arXiv:1908.04729 , 2019. 3</li>
+<li style="list-style-type: '[3] ';">Bertrand Couasnon and Aurelie Lemaitre. Recognition of Tables and Forms , pages 647-677. Springer London, London, 2014. 2</li>
+<li style="list-style-type: '[4] ';">Herv´ e D´ ejean, Jean-Luc Meunier, Liangcai Gao, Yilun Huang, Yu Fang, Florian Kleber, and Eva-Maria Lang. ICDAR 2019 Competition on Table Detection and Recognition (cTDaR), Apr. 2019. http://sac.founderit.com/. 2</li>
+<li style="list-style-type: '[5] ';">Basilios Gatos, Dimitrios Danatsas, Ioannis Pratikakis, and Stavros J Perantonis. Automatic table detection in document images. In International Conference on Pattern Recognition and Image Analysis , pages 609-618. Springer, 2005. 2</li>
+<li style="list-style-type: '[6] ';">MaxG¨ obel, Tamir Hassan, Ermelinda Oro, and Giorgio Orsi. Icdar 2013 table competition. In 2013 12th International Conference on Document Analysis and Recognition , pages 1449-1453, 2013. 2</li>
+<li style="list-style-type: '[7] ';">EA Green and M Krishnamoorthy. Recognition of tables using table grammars. procs. In Symposium on Document Analysis and Recognition (SDAIR'95) , pages 261-277. 2</li>
+<li style="list-style-type: '[8] ';">Khurram Azeem Hashmi, Alain Pagani, Marcus Liwicki, Didier Stricker, and Muhammad Zeshan Afzal. Castabdetectors: Cascade network for table detection in document images with recursive feature pyramid and switchable atrous convolution. Journal of Imaging , 7(10), 2021. 1</li>
+<li style="list-style-type: '[9] ';">Kaiming He, Georgia Gkioxari, Piotr Dollar, and Ross Girshick. Mask r-cnn. In Proceedings of the IEEE International Conference on Computer Vision (ICCV) , Oct 2017. 1</li>
+<li style="list-style-type: '[10] ';">Yelin He, X. Qi, Jiaquan Ye, Peng Gao, Yihao Chen, Bingcong Li, Xin Tang, and Rong Xiao. Pingan-vcgroup's solution for icdar 2021 competition on scientific table image recognition to latex. ArXiv , abs/2105.01846, 2021. 2</li>
+<li style="list-style-type: '[11] ';">Jianying Hu, Ramanujan S Kashi, Daniel P Lopresti, and Gordon Wilfong. Medium-independent table detection. In Document Recognition and Retrieval VII , volume 3967, pages 291-302. International Society for Optics and Photonics, 1999. 2</li>
+<li style="list-style-type: '[12] ';">Matthew Hurst. A constraint-based approach to table structure derivation. In Proceedings of the Seventh International Conference on Document Analysis and Recognition - Volume 2 , ICDAR '03, page 911, USA, 2003. IEEE Computer Society. 2</li>
+<li style="list-style-type: '[13] ';">Thotreingam Kasar, Philippine Barlas, Sebastien Adam, Cl´ ement Chatelain, and Thierry Paquet. Learning to detect tables in scanned document images using line information. In 2013 12th International Conference on Document Analysis and Recognition , pages 1185-1189. IEEE, 2013. 2</li>
+<li style="list-style-type: '[14] ';">Pratik Kayal, Mrinal Anand, Harsh Desai, and Mayank Singh. Icdar 2021 competition on scientific table image recognition to latex, 2021. 2</li>
+<li style="list-style-type: '[15] ';">Harold W Kuhn. The hungarian method for the assignment problem. Naval research logistics quarterly , 2(1-2):83-97, 1955. 6</li>
+<li style="list-style-type: '[16] ';">Girish Kulkarni, Visruth Premraj, Vicente Ordonez, Sagnik Dhar, Siming Li, Yejin Choi, Alexander C. Berg, and Tamara L. Berg. Babytalk: Understanding and generating simple image descriptions. IEEE Transactions on Pattern Analysis and Machine Intelligence , 35(12):2891-2903, 2013. 4</li>
+<li style="list-style-type: '[17] ';">Minghao Li, Lei Cui, Shaohan Huang, Furu Wei, Ming Zhou, and Zhoujun Li. Tablebank: A benchmark dataset for table detection and recognition, 2019. 2, 3</li>
+<li style="list-style-type: '[18] ';">Yiren Li, Zheng Huang, Junchi Yan, Yi Zhou, Fan Ye, and Xianhui Liu. Gfte: Graph-based financial table extraction. In Alberto Del Bimbo, Rita Cucchiara, Stan Sclaroff, Giovanni Maria Farinella, Tao Mei, Marco Bertini, Hugo Jair Escalante, and Roberto Vezzani, editors, Pattern Recognition. ICPR International Workshops and Challenges , pages 644-658, Cham, 2021. Springer International Publishing. 2, 3</li>
+<li style="list-style-type: '[19] ';">Nikolaos Livathinos, Cesar Berrospi, Maksym Lysak, Viktor Kuropiatnyk, Ahmed Nassar, Andre Carvalho, Michele Dolfi, Christoph Auer, Kasper Dinkla, and Peter Staar. Robust pdf document conversion using recurrent neural networks. Proceedings of the AAAI Conference on Artificial Intelligence , 35(17):15137-15145, May 2021. 1</li>
+<li style="list-style-type: '[20] ';">Rujiao Long, Wen Wang, Nan Xue, Feiyu Gao, Zhibo Yang, Yongpan Wang, and Gui-Song Xia. Parsing table structures in the wild. In Proceedings of the IEEE/CVF International Conference on Computer Vision , pages 944-952, 2021. 2</li>
+<li style="list-style-type: '[21] ';">Shubham Singh Paliwal, D Vishwanath, Rohit Rahul, Monika Sharma, and Lovekesh Vig. Tablenet: Deep learning model for end-to-end table detection and tabular data extraction from scanned document images. In 2019 International Conference on Document Analysis and Recognition (ICDAR) , pages 128-133. IEEE, 2019. 1</li>
+<li style="list-style-type: '[22] ';">Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban Desmaison, Andreas Kopf, Edward Yang, Zachary DeVito, Martin Raison, Alykhan Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu Fang, Junjie Bai, and Soumith Chintala. Pytorch: An imperative style, high-performance deep learning library. In H. Wallach, H. Larochelle, A. Beygelzimer, F. d'Alch´ e-Buc, E. Fox, and R. Garnett, editors, Advances in Neural Information Processing Systems 32 , pages 8024-8035. Curran Associates, Inc., 2019. 6</li>
+<li style="list-style-type: '[23] ';">Devashish Prasad, Ayan Gadpal, Kshitij Kapadni, Manish Visave, and Kavita Sultanpure. Cascadetabnet: An approach for end to end table detection and structure recognition from image-based documents. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops , pages 572-573, 2020. 1</li>
+<li style="list-style-type: '[24] ';">Shah Rukh Qasim, Hassan Mahmood, and Faisal Shafait. Rethinking table recognition using graph neural networks. In 2019 International Conference on Document Analysis and Recognition (ICDAR) , pages 142-147. IEEE, 2019. 3</li>
+<li style="list-style-type: '[25] ';">Hamid Rezatofighi, Nathan Tsoi, JunYoung Gwak, Amir Sadeghian, Ian Reid, and Silvio Savarese. Generalized intersection over union: A metric and a loss for bounding box regression. In Proceedings of the IEEE/CVF Conference on</li>
+</ol>
+<ul>
+<li>Computer Vision and Pattern Recognition , pages 658-666, 2019. 6</li>
+<li style="list-style-type: '[26] ';">Sebastian Schreiber, Stefan Agne, Ivo Wolf, Andreas Dengel, and Sheraz Ahmed. Deepdesrt: Deep learning for detection and structure recognition of tables in document images. In 2017 14th IAPR International Conference on Document Analysis and Recognition (ICDAR) , volume 01, pages 11621167, 2017. 1</li>
+<li style="list-style-type: '[27] ';">Sebastian Schreiber, Stefan Agne, Ivo Wolf, Andreas Dengel, and Sheraz Ahmed. Deepdesrt: Deep learning for detection and structure recognition of tables in document images. In 2017 14th IAPR international conference on document analysis and recognition (ICDAR) , volume 1, pages 1162-1167. IEEE, 2017. 3</li>
+<li style="list-style-type: '[28] ';">Faisal Shafait and Ray Smith. Table detection in heterogeneous documents. In Proceedings of the 9th IAPR International Workshop on Document Analysis Systems , pages 6572, 2010. 2</li>
+<li style="list-style-type: '[29] ';">Shoaib Ahmed Siddiqui, Imran Ali Fateh, Syed Tahseen Raza Rizvi, Andreas Dengel, and Sheraz Ahmed. Deeptabstr: Deep learning based table structure recognition. In 2019 International Conference on Document Analysis and Recognition (ICDAR) , pages 1403-1409. IEEE, 2019. 3</li>
+<li style="list-style-type: '[30] ';">Peter W J Staar, Michele Dolfi, Christoph Auer, and Costas Bekas. Corpus conversion service: A machine learning platform to ingest documents at scale. In Proceedings of the 24th ACM SIGKDD , KDD '18, pages 774-782, New York, NY, USA, 2018. ACM. 1</li>
+<li style="list-style-type: '[31] ';">Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Ł ukasz Kaiser, and Illia Polosukhin. Attention is all you need. In I. Guyon, U. V. Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, and R. Garnett, editors, Advances in Neural Information Processing Systems 30 , pages 5998-6008. Curran Associates, Inc., 2017. 5</li>
+<li style="list-style-type: '[32] ';">Oriol Vinyals, Alexander Toshev, Samy Bengio, and Dumitru Erhan. Show and tell: A neural image caption generator. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) , June 2015. 2</li>
+<li style="list-style-type: '[33] ';">Wenyuan Xue, Qingyong Li, and Dacheng Tao. Res2tim: reconstruct syntactic structures from table images. In 2019 International Conference on Document Analysis and Recognition (ICDAR) , pages 749-755. IEEE, 2019. 3</li>
+<li style="list-style-type: '[34] ';">Wenyuan Xue, Baosheng Yu, Wen Wang, Dacheng Tao, and Qingyong Li. Tgrnet: A table graph reconstruction network for table structure recognition. arXiv preprint arXiv:2106.10598 , 2021. 3</li>
+<li style="list-style-type: '[35] ';">Quanzeng You, Hailin Jin, Zhaowen Wang, Chen Fang, and Jiebo Luo. Image captioning with semantic attention. In Proceedings of the IEEE conference on computer vision and pattern recognition , pages 4651-4659, 2016. 4</li>
+<li style="list-style-type: '[36] ';">Xinyi Zheng, Doug Burdick, Lucian Popa, Peter Zhong, and Nancy Xin Ru Wang. Global table extractor (gte): A framework for joint table identification and cell structure recognition using visual context. Winter Conference for Applications in Computer Vision (WACV) , 2021. 2, 3</li>
+<li style="list-style-type: '[37] ';">Xu Zhong, Elaheh ShafieiBavani, and Antonio Jimeno Yepes. Image-based table recognition: Data, model,</li>
+<li>and evaluation. In Andrea Vedaldi, Horst Bischof, Thomas Brox, and Jan-Michael Frahm, editors, Computer Vision ECCV 2020 , pages 564-580, Cham, 2020. Springer International Publishing. 2, 3, 7</li>
+<li style="list-style-type: '[38] ';">Xu Zhong, Jianbin Tang, and Antonio Jimeno Yepes. Publaynet: Largest dataset ever for document layout analysis. In 2019 International Conference on Document Analysis and Recognition (ICDAR) , pages 1015-1022, 2019. 1</li>
+</ul>
+<h2>TableFormer: Table Structure Understanding with Transformers</h2>
+<h2>Supplementary Material</h2>
+<h2>1. Details on the datasets</h2>
+<h2>1.1. Data preparation</h2>
+<p>As a first step of our data preparation process, we have calculated statistics over the datasets across the following dimensions: (1) table size measured in the number of rows and columns, (2) complexity of the table, (3) strictness of the provided HTML structure and (4) completeness (i.e. no omitted bounding boxes). A table is considered to be simple if it does not contain row spans or column spans. Additionally, a table has a strict HTML structure if every row has the same number of columns after taking into account any row or column spans. Therefore a strict HTML structure looks always rectangular. However, HTML is a lenient encoding format, i.e. tables with rows of different sizes might still be regarded as correct due to implicit display rules. These implicit rules leave room for ambiguity, which we want to avoid. As such, we prefer to have 'strict' tables, i.e. tables where every row has exactly the same length.</p>
+<p>We have developed a technique that tries to derive a missing bounding box out of its neighbors. As a first step, we use the annotation data to generate the most fine-grained grid that covers the table structure. In case of strict HTML tables, all grid squares are associated with some table cell and in the presence of table spans a cell extends across multiple grid squares. When enough bounding boxes are known for a rectangular table, it is possible to compute the geometrical border lines between the grid rows and columns. Eventually this information is used to generate the missing bounding boxes. Additionally, the existence of unused grid squares indicates that the table rows have unequal number of columns and the overall structure is non-strict. The generation of missing bounding boxes for non-strict HTML tables is ambiguous and therefore quite challenging. Thus, we have decided to simply discard those tables. In case of PubTabNet we have computed missing bounding boxes for 48% of the simple and 69% of the complex tables. Regarding FinTabNet, 68% of the simple and 98% of the complex tables require the generation of bounding boxes.</p>
+<p>Figure 7 illustrates the distribution of the tables across different dimensions per dataset.</p>
+<h2>1.2. Synthetic datasets</h2>
+<p>Aiming to train and evaluate our models in a broader spectrum of table data we have synthesized four types of datasets. Each one contains tables with different appear- ances in regard to their size, structure, style and content. Every synthetic dataset contains 150k examples, summing up to 600k synthetic examples. All datasets are divided into Train, Test and Val splits (80%, 10%, 10%).</p>
+<p>The process of generating a synthetic dataset can be decomposed into the following steps:</p>
+<ol>
+<li style="list-style-type: '1. ';">Prepare styling and content templates: The styling templates have been manually designed and organized into groups of scope specific appearances (e.g. financial data, marketing data, etc.) Additionally, we have prepared curated collections of content templates by extracting the most frequently used terms out of non-synthetic datasets (e.g. PubTabNet, FinTabNet, etc.).</li>
+<li style="list-style-type: '2. ';">Generate table structures: The structure of each synthetic dataset assumes a horizontal table header which potentially spans over multiple rows and a table body that may contain a combination of row spans and column spans. However, spans are not allowed to cross the header - body boundary. The table structure is described by the parameters: Total number of table rows and columns, number of header rows, type of spans (header only spans, row only spans, column only spans, both row and column spans), maximum span size and the ratio of the table area covered by spans.</li>
+<li style="list-style-type: '3. ';">Generate content: Based on the dataset theme , a set of suitable content templates is chosen first. Then, this content can be combined with purely random text to produce the synthetic content.</li>
+<li style="list-style-type: '4. ';">Apply styling templates: Depending on the domain of the synthetic dataset, a set of styling templates is first manually selected. Then, a style is randomly selected to format the appearance of the synthesized table.</li>
+<li style="list-style-type: '5. ';">Render the complete tables: The synthetic table is finally rendered by a web browser engine to generate the bounding boxes for each table cell. A batching technique is utilized to optimize the runtime overhead of the rendering process.</li>
+</ol>
+<h2>2. Prediction post-processing for PDF documents</h2>
+<p>Although TableFormer can predict the table structure and the bounding boxes for tables recognized inside PDF documents, this is not enough when a full reconstruction of the original table is required. This happens mainly due the following reasons:</p>
+<figure><figcaption><div class="caption">Figure 7: Distribution of the tables across different dimensions per dataset. Simple vs complex tables per dataset and split, strict vs non strict html structures per dataset and table complexity, missing bboxes per dataset and table complexity.</div></figcaption></figure>
+<ul>
+<li style="list-style-type: '· ';">TableFormer output does not include the table cell content.</li>
+<li style="list-style-type: '· ';">There are occasional inaccuracies in the predictions of the bounding boxes.</li>
+</ul>
+<p>However, it is possible to mitigate those limitations by combining the TableFormer predictions with the information already present inside a programmatic PDF document. More specifically, PDF documents can be seen as a sequence of PDF cells where each cell is described by its content and bounding box. If we are able to associate the PDF cells with the predicted table cells, we can directly link the PDF cell content to the table cell structure and use the PDF bounding boxes to correct misalignments in the predicted table cell bounding boxes.</p>
+<p>Here is a step-by-step description of the prediction postprocessing:</p>
+<ol>
+<li style="list-style-type: '1. ';">Get the minimal grid dimensions - number of rows and columns for the predicted table structure. This represents the most granular grid for the underlying table structure.</li>
+<li style="list-style-type: '2. ';">Generate pair-wise matches between the bounding boxes of the PDF cells and the predicted cells. The Intersection Over Union (IOU) metric is used to evaluate the quality of the matches.</li>
+<li style="list-style-type: '3. ';">Use a carefully selected IOU threshold to designate the matches as 'good' ones and 'bad' ones.</li>
+<li>3.a. If all IOU scores in a column are below the threshold, discard all predictions (structure and bounding boxes) for that column.</li>
+<li style="list-style-type: '4. ';">Find the best-fitting content alignment for the predicted cells with good IOU per each column. The alignment of the column can be identified by the following formula:</li>
+</ol>
+<div class="formula-not-decoded">Formula not decoded</div>
+<p>where c is one of { left, centroid, right } and x c is the xcoordinate for the corresponding point.</p>
+<ol>
+<li style="list-style-type: '5. ';">Use the alignment computed in step 4, to compute the median x -coordinate for all table columns and the me-</li>
+<li>dian cell size for all table cells. The usage of median during the computations, helps to eliminate outliers caused by occasional column spans which are usually wider than the normal.</li>
+<li style="list-style-type: '6. ';">Snap all cells with bad IOU to their corresponding median x -coordinates and cell sizes.</li>
+<li style="list-style-type: '7. ';">Generate a new set of pair-wise matches between the corrected bounding boxes and PDF cells. This time use a modified version of the IOU metric, where the area of the intersection between the predicted and PDF cells is divided by the PDF cell area. In case there are multiple matches for the same PDF cell, the prediction with the higher score is preferred. This covers the cases where the PDF cells are smaller than the area of predicted or corrected prediction cells.</li>
+<li style="list-style-type: '8. ';">In some rare occasions, we have noticed that TableFormer can confuse a single column as two. When the postprocessing steps are applied, this results with two predicted columns pointing to the same PDF column. In such case we must de-duplicate the columns according to highest total column intersection score.</li>
+<li style="list-style-type: '9. ';">Pick up the remaining orphan cells. There could be cases, when after applying all the previous post-processing steps, some PDF cells could still remain without any match to predicted cells. However, it is still possible to deduce the correct matching for an orphan PDF cell by mapping its bounding box on the geometry of the grid. This mapping decides if the content of the orphan cell will be appended to an already matched table cell, or a new table cell should be created to match with the orphan.</li>
+<li>9a. Compute the top and bottom boundary of the horizontal band for each grid row (min/max y coordinates per row).</li>
+<li>9b. Intersect the orphan's bounding box with the row bands, and map the cell to the closest grid row.</li>
+<li>9c. Compute the left and right boundary of the vertical band for each grid column (min/max x coordinates per column).</li>
+<li>9d. Intersect the orphan's bounding box with the column bands, and map the cell to the closest grid column.</li>
+</ol>
+<p>9e. If the table cell under the identified row and column is not empty, extend its content with the content of the or-</p>
+<p>PDF Cells</p>
+<p>PDF Cells</p>
+<p>PDF Cells</p>
+<p>Name</p>
+<p>Variable</p>
+<p>KRAS«R</p>
+<p>PNA clamp probe</p>
+<p>Sum Sq</p>
+<p>8745.2</p>
+<p>kond</p>
+<p>Major vascular complications</p>
+<p>2191.39</p>
+<p>Renal failure required CRRT]</p>
+<p>1826 kend</p>
+<p>2648.33</p>
+<p>Residuals</p>
+<p>Severe bleeding</p>
+<p>3.91]</p>
+<p>2</p>
+<p>18.98</p>
+<p>236.91</p>
+<p>Name</p>
+<p>KRAS-F</p>
+<p>KRAS-R</p>
+<p>PNA clamp probe</p>
+<p>Variable cong</p>
+<p>Pix conc</p>
+<p>Name</p>
+<p>Residuals</p>
+<p>KRASSE</p>
+<p>KRANER</p>
+<p>TableFormer predicted bounding boxes</p>
+<p>15.86</p>
+<p>phan cell.</p>
+<p>p value</p>
+<p>95%</p>
+<p>Odds ratio</p>
+<p>ANOVA</p>
+<p>Sequences</p>
+<p>Đf</p>
+<p>S-TGTGTGACATGTTCTAATATAGTCACATTT-3</p>
+<p>confidence interval</p>
+<p>E Value</p>
+<p>Pr (F)</p>
+<p>5-ATCGTCAAGGCACTCTTGCCTAC-3'</p>
+<p>р-TACGCCACCAGCTCC-3)</p>
+<p>266.75</p>
+<p>4964 m 1051</p>
+<p>54).87</p>
+<p>(D.67-9.14</p>
+<p>0.013</p>
+<p>2276 20 10223</p>
+<p>61.48</p>
+<p>(32.1-19.41</p>
+<p>0007 • 06394</p>
+<p>361-69.63</p>
+<p>(238-34.80</p>
+<p>40.001</p>
+<p>440.001</p>
+<p>Sequences</p>
+<p>(220.001</p>
+<p>9f. Otherwise create a new structural cell and match it wit the orphan cell. p value Pr (F)</p>
+<p>Aditional images with examples of TableFormer predictions and post-processing can be found below.</p>
+<p>[Renal failure required CRRI</p>
+<p>severe bleeding</p>
+<p>ENA clamp probe</p>
+<p>(10.98</p>
+<p>13.86</p>
+<p>Post-processed bounding boxes</p>
+<p>[eurologic complications</p>
+<p>Sum 5g</p>
+<p>Post-processed bounding boxes</p>
+<p>TableFormer predicted structure</p>
+<p>0 1p. c)</p>
+<p>Name</p>
+<p>E74522</p>
+<p>Mariable nond</p>
+<p>KRAS-F</p>
+<p>Sequences</p>
+<p>Amazong</p>
+<p>5'-TGTGTGACATGTTCTAATATAGTCACATTT-3'</p>
+<p>L648K3</p>
+<p>4 pp, 21|</p>
+<p>KRAS-R</p>
+<p>5'-ATCGTCAAGGCACTCTTGCCTAC-3'</p>
+<p>Residuals</p>
+<p>036.90</p>
+<p>610,3</p>
+<p>PNA clamp probe 5'-TACGCCACCAGCTCC-3'</p>
+<p>Major vascular complication:</p>
+<p>[te nal failure required CRRU</p>
+<p>avere bleeding</p>
+<p>TableFormer predicted structure</p>
+<p>0* 10, o1|</p>
+<p>eurologic complication:</p>
+<p>ANOVA</p>
+<p>3° 10, 11</p>
+<p>Sum Sq</p>
+<p>1810. 21|</p>
+<p>911. 21</p>
+<p>TableFormer predicted structure</p>
+<p>5745.2</p>
+<p>13 (p. 31</p>
+<p>0 (0. 01|</p>
+<p>14 (1. 31</p>
+<p>conc</p>
+<p>Variable</p>
+<p>Pxconc</p>
+<p>23 (0. 51</p>
+<p>Odds ratio</p>
+<p>2191.39</p>
+<p>18 10. 41</p>
+<p>19 (1. 41)|</p>
+<p>2648.33</p>
+<p>24 [1, S</p>
+<p>4 [0, 1)</p>
+<p>Major vascular</p>
+<p>3.91</p>
+<p>Residuals complications</p>
+<p>236.91</p>
+<p>8 10, 21</p>
+<p>Renal failure</p>
+<p>10.98</p>
+<p>required CRRT</p>
+<p>12 (0, 31)</p>
+<p>1 15.86</p>
+<p>Severe bleeding</p>
+<p>16 (0, 4)</p>
+<p>Neurologic complications</p>
+<p>13.68</p>
+<p>P-AICG ICAAGGCACICH IGCCTAC-3)</p>
+<p>(602 1-19.41</p>
+<p>(3461-69.63]</p>
+<p>110.001</p>
+<p>(19.001)</p>
+<p>E-TACGCCACCAGCTCC-3]</p>
+<figure><figcaption><div class="caption">Figure 8: Example of a table with multi-line header.</div></figcaption></figure>
+<p>4 [1, 91</p>
+<figure><figcaption><div class="caption">Figure 9: Example of a table with big empty distance between cells.</div></figcaption></figure>
+<figure><figcaption><div class="caption">Figure 10: Example of a complex table with empty cells.</div></figcaption></figure>
+<p>PDF Cells</p>
+<p>PDF Cells</p>
+<p>Treatment</p>
+<p>Control</p>
+<p>PDF Cells</p>
+<p>36 control</p>
+<p>Be vildagliptin treated</p>
+<p>Control</p>
+<p>Variable</p>
+<p>SKA *bontrol</p>
+<p>Medium</p>
+<p>4KA *Hildagliptin treated</p>
+<p>Total Bilirubin</p>
+<p>Medium</p>
+<p>High lank number</p>
+<p>3 mM</p>
+<p>FCO, (patm)</p>
+<p>16.7 mM</p>
+<p>(ng/ml/islet)</p>
+<p>397 495</p>
+<p>pH</p>
+<p>Fold-increase</p>
+<p>(high GLC/</p>
+<p>(ng/ml/islet)</p>
+<p>Bol7 110207</p>
+<p>891 6 210.006</p>
+<p>low GLC)</p>
+<p>3396 14027</p>
+<p>0318 200306</p>
+<p>384 258.8</p>
+<p>8718 350.006</p>
+<p>814 $a76.6</p>
+<p>6163)</p>
+<p>834208225 9932</p>
+<p>034 320704</p>
+<p>1.06 18070737 371339</p>
+<p>080343:07|</p>
+<p>Sensitivity (%)</p>
+<p>8.00 |$60.009</p>
+<p>461 179801 99121</p>
+<p>608 $576.5</p>
+<p>60</p>
+<p>8:00 720.009</p>
+<p>976 $74.6</p>
+<p>7186 $50.006</p>
+<p>TableFormer predicted bounding boxes</p>
+<p>Direct Bilirubin</p>
+<p>High</p>
+<p>201</p>
+<p>889 1084.4</p>
+<p>@ Reactive Protein]</p>
+<p>3 тМ</p>
+<p>TableFormer predicted bounding boxes</p>
+<p>16.7 mM</p>
+<p>(ng/ml/islet)</p>
+<p>TableFormer predicted bounding boxes</p>
+<p>(ng/ml/islet)</p>
+<p>Treatment</p>
+<p>(Bo contro!!</p>
+<p>Tank number</p>
+<p>B6 vildagliptin treated</p>
+<p>Variable]</p>
+<p>[Control</p>
+<p>(Total Bilirubin)</p>
+<p>Control</p>
+<p>AKA vildagliptin treated</p>
+<p>Medium</p>
+<p>•Direct Bilirubin</p>
+<p>Post-processed bounding boxes</p>
+<p>Medium</p>
+<p>F'C- Reactive Protein</p>
+<p>High</p>
+<p>High</p>
+<p>Post-processed bounding boxes</p>
+<p>He cintrol</p>
+<p>Post-processed bounding boxes se vidagupun treated</p>
+<p>Variable</p>
+<p>RIK AMbontrol</p>
+<p>AKASeidasliptin treated</p>
+<p>Total Bilirubin</p>
+<p>Lank number</p>
+<p>Treatment</p>
+<p>Control</p>
+<p>Direct Balrubin</p>
+<p>Sontrol tedium</p>
+<p>Reaclive Protein</p>
+<p>TableFormer predicted structure</p>
+<p>Medium</p>
+<p>TableFormer predicted structure</p>
+<p>0 0. 01</p>
+<p>Variable</p>
+<p>Sensitivity (%)</p>
+<p>4 (0. 41)|</p>
+<p>TableFormer predicted structure</p>
+<p>Total Bilirubin</p>
+<p>60</p>
+<p>Treatment</p>
+<p>8 10. 21|</p>
+<p>B6control</p>
+<p>Direct Bilirubin</p>
+<p>60</p>
+<p>B6vildagliptin treated</p>
+<p>C- Reactive</p>
+<p>Control</p>
+<p>47</p>
+<p>Protein</p>
+<p>KKAycontrol</p>
+<p>14 p. 2|</p>
+<p>Control</p>
+<p>Medium</p>
+<p>0217 + 0.02</p>
+<p>PCO, (uatm)</p>
+<p>D.96 1: 0.27</p>
+<p>(0718 ÷0,06</p>
+<p>0R645E 0,040</p>
+<p>60</p>
+<p>7997 108:006</p>
+<p>Fold-increasel</p>
+<p>47</p>
+<p>(high GLe/</p>
+<p>Lew GLC, ph</p>
+<p>10:631</p>
+<p>1834 ÷ 0,323</p>
+<p>[Sensitivity (%)</p>
+<p>0206 = 0.079</p>
+<p>93139</p>
+<p>p3139</p>
+<p>816 ÷ 0.006</p>
+<p>total alkalinity</p>
+<p>(othol kg 3412</p>
+<p>2145 1027</p>
+<p>2145 30F.7</p>
+<p>2095 128.1</p>
+<p>2095 235.1</p>
+<p>2079 129.3</p>
+<p>2079 185:3</p>
+<p>Total alkalinity</p>
+<p>(umol kg ")</p>
+<p>2145 ÷ 4.2</p>
+<p>Salinity (ppt)</p>
+<p>35.6 20.07</p>
+<p>35.6 10.07</p>
+<p>Specificity (%)</p>
+<p>35.9 #2.07</p>
+<p>35.9 760.07</p>
+<p>95</p>
+<p>36.0 350.03</p>
+<p>36:0 118:03</p>
+<p>95</p>
+<p>85</p>
+<p>Salinity (ppt)</p>
+<p>Temperature (°C)</p>
+<p>28.6/340.05</p>
+<p>28.4 $00.04</p>
+<p>28.7 $0.05</p>
+<p>28.6 $15.05</p>
+<p>28.7 979.03</p>
+<p>28:7 118.04</p>
+<p>• Temperature (*C)</p>
+<p>Specificity (%)</p>
+<p>[35.6 ÷ 0.07</p>
+<p>28.6 ÷ 0.05</p>
+<p>Cut off</p>
+<p>1,3 mg/đ1]|</p>
+<p>0,85</p>
+<p>98</p>
+<p>(Cut off</p>
+<figure><figcaption><div class="caption">Figure 11: Simple table with different style and empty cells.</div></figcaption></figure>
+<p>PDF Cells</p>
+<p>Molecular</p>
+<p>Furkinje</p>
+<p>Uniformly thick and</p>
+<p>Well populated with pyramidal neurons</p>
+<p>histologically intact</p>
+<p>Granute</p>
+<p>Gniformly thick and densely cellular</p>
+<p>TableFormer predicted bounding boxes</p>
+<p>Cortical Layer</p>
+<p>Grade 4</p>
+<p>Molecular</p>
+<p>Purkinje</p>
+<p>• Uniformly thick and]</p>
+<p>cellular</p>
+<p>Well populated with pyramidal neurons</p>
+<p>Misto ogically intact.</p>
+<p>Granule]</p>
+<p>Unitormly thick and densely cellular</p>
+<p>Post-processed bounding boxes</p>
+<p>Sortical Layey</p>
+<p>Brader?</p>
+<p>SCOTCHUTE</p>
+<p>Fanxing</p>
+<p>Smforty thick anch sellular</p>
+<p>Mett poputatet with histologically intact</p>
+<p>informly thick and lensely cellula</p>
+<p>TableFormer predicted structure</p>
+<p>Cortical Layer</p>
+<p>Grade 4</p>
+<p>1510.41</p>
+<p>Molecular</p>
+<p>Purkinje</p>
+<p>Granule</p>
+<p>Uniformly thick and cellular</p>
+<p>10 p. 71</p>
+<p>Well populated with histologically intact</p>
+<p>pyramidal neurons</p>
+<p>Uniformly thick and densely</p>
+<p>Grade 3</p>
+<p>Nanable thinning, normal ledlated neuronal loss or</p>
+<p>ts no one downerdson</p>
+<p>(necrosis)</p>
+<p>Emegular thinning but)</p>
+<p>dansely cellular</p>
+<p>Grade 3</p>
+<p>Variable thinning, normal</p>
+<p>Grade 2</p>
+<p>Vanable thinning and pisoderate gaps and</p>
+<p>nattered loss of neurons aregular thinning with</p>
+<p>density modest reductions in cell</p>
+<p>Grade 2</p>
+<p>Variable thinning and</p>
+<figure><figcaption><div class="caption">Figure 13: Table predictions example on colorful table.</div></figcaption></figure>
+<figure><figcaption><div class="caption">Figure 12: Simple table predictions and post processing.</div></figcaption></figure>
+<p>reduced cellulanty cellularity</p>
+<p>1397 ÷ 6.5</p>
+<p>21 р. ж</p>
+<p>KKAyvildagliptin treated</p>
+<p>28 p. 4|</p>
+<p>Medium</p>
+<p>High</p>
+<p>High</p>
+<p>42 p. el|</p>
+<p>15 m. 31</p>
+<p>Grade 1</p>
+<p>(tiniformly thir barge gaps and</p>
+<p>euronal necrosis conspicuously increased</p>
+<p>faregular thinning and all density</p>
+<p>censpicuous reductions in</p>
+<p>Grade 1</p>
+<p>(Uniformly thin</p>
+<p>Figure 14: Example with multi-line text.</p>
+<p>43 mo</p>
+<p>54p0. 4</p>
+<p>787 po.</p>
+<p>PDF Cells</p>
+<p>PDF Cells</p>
+<p>Size</p>
+<p>Grade</p>
+<p>Parameter</p>
+<p>(Revalue)</p>
+<p>lymph node</p>
+<p>Gain</p>
+<p>(Bevalue)</p>
+<p>(asvalue)</p>
+<p>Aze (m59/&gt;50 years)</p>
+<p>6R36</p>
+<p>32195</p>
+<p>3058</p>
+<p>sure (x(ia/21-50/&gt;50 mm]</p>
+<p>azade (I/III)</p>
+<p>Low Cut-Off Frequency wolved lymph</p>
+<p>node (071-37&gt;3)</p>
+<p>High Cut-Off Frequency input-Referred Noise</p>
+<p>satus (PR-/PR+)</p>
+<p>[1e6-2 status</p>
+<p>208K-2 -/HtK-L+</p>
+<p>@MRR</p>
+<p>Fio67 proliferative activity</p>
+<p>(198w Ki-67/High Ki-67)</p>
+<p>Number of Analog Channels</p>
+<p>Gis (Absent/Present)</p>
+<p>NED (tertiles 1, 2, 3)</p>
+<p>Power Consumption</p>
+<p>32a 0-regional treatmeng</p>
+<p>[lumpectomy + radiotherapy/</p>
+<p>Precision</p>
+<p>1z2stectomy + radiotherapy)</p>
+<p>TableFormer predicted bounding boxes</p>
+<p>TableFormer predicted bounding boxes age (5507&gt;50 years)|</p>
+<p>Sze (520/21-50/&gt;50 mm)</p>
+<p>Grade (VIVI)</p>
+<p>Low Cut-Off Frequency involved lymph</p>
+<p>High Cut-Off Frequency</p>
+<p>Plogesterone - receptor</p>
+<p>Input-Referred Noise status (PR-/PR+).</p>
+<p>WER-2 status</p>
+<p>CHER-2 -/HER-2+</p>
+<p>k$-67 profferative activity</p>
+<p>(Low Ki-67/Hight Ki 67)</p>
+<p>Number of Analog Channels</p>
+<p>1100l</p>
+<p>EM (Absent/Present)</p>
+<p>NWD (tertileß*4, 2, 3)</p>
+<p>Power Consumption</p>
+<p>Loco-regital treatment.</p>
+<p>(impectomy + radiotheraps/</p>
+<p>mastectomy + radiotherapy)</p>
+<p>Post-processed bounding boxes</p>
+<p>Post-processed bounding boxes faze (34587&gt;50 years)</p>
+<p>Low Cut-Oft Frequency made (U/I1/1)</p>
+<p>avolved lympi</p>
+<p>High Cut-Off Frequency sode (0/1-3/531</p>
+<p>ogesterong Fax ep</p>
+<p>Input-Referred Noise status (PR-/PR+)</p>
+<p>28R-2 statusi</p>
+<p>HaR-2 -/HER-2+1</p>
+<p>b/ proliferative activit</p>
+<p>Number of Analog Channels tw Ki-67/Righ Kr67</p>
+<p>5517 Absent Present)</p>
+<p>Power Consumption</p>
+<p>EID (tertiles 1, 2,3)</p>
+<p>paro regional treatment</p>
+<p>Lumpectomy + radiotherapy!</p>
+<p>izzastectomy + radiotherapy)</p>
+<p>TableFormer predicted structure</p>
+<p>Size</p>
+<p>11° (R. 1</p>
+<p>(P-value)</p>
+<p>Age (550/&gt;50 years) 0.058</p>
+<p>Size (520/21-50/&gt;50</p>
+<p>mm)</p>
+<p>Grade (VIVIII)|</p>
+<p>35 m</p>
+<p>Involved lymphnode</p>
+<p>(0/1-3/&gt;3)</p>
+<p>Progesterone- receptoretatus (PR.</p>
+<p>PR+)</p>
+<p>HER-2 status(HER-2 -</p>
+<p>HER. 241</p>
+<p>Ki-67 proliferative</p>
+<p>Ki-67)</p>
+<p>activity(Low Ki-67/High</p>
+<p>LVI (Absent/Present)</p>
+<p>MVD (terties 1, 2, 3)</p>
+<p>1211р. 153</p>
+<p>Loco-regional matmentiLumoec.omv</p>
+<p>+ radiotherapy/</p>
+<p>Gain</p>
+<p>MER-2</p>
+<p>Ki-67</p>
+<p>MVD</p>
+<p>status</p>
+<p>Value status</p>
+<p>(Bevalue)</p>
+<p>3.054</p>
+<p>2851 V/V (69.09 dB)</p>
+<p>(Revalue)</p>
+<p>(Revalue)</p>
+<p>(Rovalue)</p>
+<p>35641</p>
+<p>3013</p>
+<p>3238</p>
+<p>(Ravalue)</p>
+<p>3261</p>
+<p>18626</p>
+<p>(BĐ41)</p>
+<p>40.001</p>
+<p>0568</p>
+<p>&lt;0.001</p>
+<p>€0.001</p>
+<p>0.002</p>
+<p>285 Hz</p>
+<p>€0.001</p>
+<p>#0.001</p>
+<p>3072</p>
+<p>0035</p>
+<p>6580 Hz</p>
+<p>€0.001</p>
+<p>9.607</p>
+<p>35340</p>
+<p>2.1 pV (rms)</p>
+<p>0692</p>
+<p>3997</p>
+<p>30220</p>
+<p>210 dB (@, 1 KHz</p>
+<p>BoT9</p>
+<p>BT6R27</p>
+<p>p5г08</p>
+<p>0:001</p>
+<p>1312.56</p>
+<p>31363</p>
+<p>3049</p>
+<p>BLOM T</p>
+<p>13.598</p>
+<p>3:631</p>
+<p>1 MA @, 3.0 V (3 mW)</p>
+<p>Selectable, 12 or 8 bits</p>
+<p>Systemic reatmen</p>
+<p>(Revalue)</p>
+<p>«0.001</p>
+<p>0013</p>
+<p>01503</p>
+<p>31655</p>
+<p>33602</p>
+<p>35357</p>
+<figure><figcaption><div class="caption">Figure 15: Example with triangular table.</div></figcaption></figure>
+<p>CMRR</p>
+<p>BR</p>
+<p>status</p>
+<p>(Ravalue)</p>
+<p>3297</p>
+<p>495/9</p>
+<p>39/53</p>
+<p>(93 57</p>
+<p>Ta</p>
+<p>Figure 16: Example of how post-processing helps to restore mis-aligned bounding boxes prediction artifact.</p>
+<p>PDF Cells</p>
+<p>Rem</p>
+<p>Age (96)</p>
+<p>sex (9)</p>
+<p>Location (%)</p>
+<p>Relationshig</p>
+<p>Szetus (96)</p>
+<p>Gwork status (90)</p>
+<p>Level off|</p>
+<p>eucation (96)</p>
+<p>Household income</p>
+<p>(6)</p>
+<p>Socio-economic</p>
+<p>113-29 yrS</p>
+<p>30-49 yrs|</p>
+<p>nemale zejor metropolitan |</p>
+<p>Remainder of State</p>
+<p>Married il-time</p>
+<p>Aart-time</p>
+<p>Not in paid work siplomal</p>
+<p>Wear 11|</p>
+<p>Bear Tal</p>
+<p>Year 9 or below</p>
+<p>&lt;$30,000</p>
+<p>$30.000, 719,999</p>
+<p>730.000+</p>
+<p>Satisfaction</p>
+<p>Ewerall (M, SD)</p>
+<p>[omain (M, SD)</p>
+<p>sommunity</p>
+<p>Helationships</p>
+<p>Standard of living</p>
+<p>Hature securityl</p>
+<p>Achieving in life</p>
+<p>Religion/spirituality</p>
+<p>Farmers</p>
+<p>13.20</p>
+<p>47.80</p>
+<p>14.00</p>
+<p>12.80</p>
+<p>120.20</p>
+<p>24</p>
+<p>220.00</p>
+<p>55.80</p>
+<p>24.20</p>
+<p>30.60</p>
+<p>179.40</p>
+<p>as</p>
+<p>$4.20</p>
+<p>158.80</p>
+<p>196.601</p>
+<p>137:20</p>
+<p>19220</p>
+<p>1$7,40</p>
+<p>50.20</p>
+<p>35.40</p>
+<p>74.55397 83)</p>
+<p>13879683 64]</p>
+<p>93.1791663)</p>
+<p>33.6152965 54]</p>
+<p>1054629Y0791)</p>
+<p>1623171434)</p>
+<p>1598021026.67)</p>
+<p>12436 (12534)</p>
+<p>1501n 24)</p>
+<p>General community</p>
+<p>182.53.</p>
+<p>38.41</p>
+<p>44.05</p>
+<p>25.35</p>
+<p>148.65</p>
+<p>56.19</p>
+<p>48.81</p>
+<p>38.65</p>
+<p>31.75</p>
+<p>133.83</p>
+<p>180,311</p>
+<p>(5373</p>
+<p>04.03</p>
+<p>93.81</p>
+<p>16.16</p>
+<p>77.25 (46.64)</p>
+<p>50.57 (13 92)</p>
+<p>30.49 (32.79)</p>
+<p>10294 (28134)</p>
+<p>17966119665)</p>
+<p>11539</p>
+<p>12133</p>
+<p>7809137854)</p>
+<p>8332219a521</p>
+<p>TableFormer predicted bounding boxes</p>
+<p>Item</p>
+<p>Farmers</p>
+<p>Socio, economic</p>
+<p>Age (96,</p>
+<p>Eocation (9%</p>
+<p>Belationship status (96)</p>
+<p>Work status (96)</p>
+<p>Eevel of education (96)</p>
+<p>Fibusehold income</p>
+<p>Satisfaction</p>
+<p>Overall (M SD)</p>
+<p>main (M. SD) |</p>
+<p>Community connectedness</p>
+<p>matationshios</p>
+<p>BSfety</p>
+<p>Scandard of living</p>
+<p>Future security</p>
+<p>[Fiealth</p>
+<p>Achieving in life</p>
+<p>Religion/ spirituali</p>
+<p>18-29 yrs</p>
+<p>1 49</p>
+<p>Male</p>
+<p>Single itan</p>
+<p>tate</p>
+<p>100.00</p>
+<p>19.40</p>
+<p>(39.60</p>
+<p>17.20</p>
+<p>73,20</p>
+<p>179.40</p>
+<p>«General community</p>
+<p>12.55</p>
+<p>58.35</p>
+<p>41.65|</p>
+<p>38.19</p>
+<p>43.</p>
+<p>42.23</p>
+<p>19.12</p>
+<p>37.75</p>
+<p>$9.83</p>
+<p>277.03</p>
+<p>42.81</p>
+<p>32.40</p>
+<p>36.16</p>
+<p>{455* (1783) 77.25 (16.64)</p>
+<p>19987(1864</p>
+<p>69.539 (19.92)</p>
+<p>83.17ª (17.63)</p>
+<p>8361ª (1654)</p>
+<p>74446" (1691}</p>
+<p>20589° (21:34)</p>
+<p>17080 (17.62)</p>
+<p>1726(1824</p>
+<p>83 349 (26.24)</p>
+<p>75749 (22.79)</p>
+<p>78194 (17.84)</p>
+<p>77.66* (16'65)</p>
+<p>79839 (20.12)</p>
+<p>74.33 (19.22)</p>
+<p>2330 (2621</p>
+<p>{4.09* (1854)</p>
+<p>Post-processed bounding boxes</p>
+<p>Rem</p>
+<p>Socio-economic</p>
+<p>Major metropolitar remainder of State</p>
+<p>pork stalus (90</p>
+<p>navel oil elucation (9</p>
+<p>ouseholdlincome</p>
+<p>730,000÷|</p>
+<p>Satistaction fiverall (M, SD)</p>
+<p>Gomain (M, S0)</p>
+<p>Mendate a thine thieving in life</p>
+<p>fatigion/spirituality</p>
+<p>Harmers</p>
+<p>0120</p>
+<p>14.00</p>
+<p>120220</p>
+<p>0B 80</p>
+<p>(58.2g</p>
+<p>1UZ40</p>
+<p>114.20</p>
+<p>14080</p>
+<p>9220</p>
+<p>1W 40</p>
+<p>5ü.20</p>
+<p>35.40</p>
+<p>57 559(6783</p>
+<p>1987852864)</p>
+<p>93.179{367.63)</p>
+<p>33.61|491654</p>
+<p>78646"(500.91</p>
+<p>16780 12628167</p>
+<p>12836 (118334</p>
+<p>35934372624]</p>
+<p>[general ]</p>
+<p>community</p>
+<p>10.09</p>
+<p>1a8.63</p>
+<p>86X63</p>
+<p>65.83</p>
+<p>73E</p>
+<p>12357</p>
+<p>[78.16</p>
+<p>(7.25|(10.64)</p>
+<p>(50.57 115,92)</p>
+<p>16294 (101984)</p>
+<p>70866-1028165</p>
+<p>FLAB: 9 (EE00 21</p>
+<p>TableFormer predicted structure</p>
+<p>Age (%)</p>
+<p>18-29 yrs</p>
+<p>30-49 yrs</p>
+<p>10° р. 3 |</p>
+<p>14° р. 4)|</p>
+<p>18 р. н</p>
+<p>50+ yrs</p>
+<p>Sex (%)</p>
+<p>22 pel</p>
+<p>Location (%)</p>
+<p>Farmers</p>
+<p>8.20</p>
+<p>11 p.н</p>
+<p>47.80</p>
+<p>44.00</p>
+<p>72.80</p>
+<p>241.6</p>
+<p>Male</p>
+<p>FemaleMajor metropolitan 27.20</p>
+<p>Remainder of State</p>
+<p>30 p. 4)</p>
+<p>Relationshipstatus Married</p>
+<p>(%)</p>
+<p>Single</p>
+<p>Work status (%)</p>
+<p>42 р. н2)</p>
+<p>talleline</p>
+<p>Part-time</p>
+<p>50* m ul</p>
+<p>Not in paid work</p>
+<p>54 г 101</p>
+<p>Level ofeducation Degree</p>
+<p>58° R 15)</p>
+<p>Diploma</p>
+<p>Year 11</p>
+<p>Year 10</p>
+<p>66° R. 17</p>
+<p>70* p w|l</p>
+<p>Year 9 or below</p>
+<p>&lt; $30.000</p>
+<p>78 1. 201</p>
+<p>(%)|</p>
+<p>Household income (%)</p>
+<p>Satisfaction</p>
+<p>$30.000-$79.999</p>
+<p>83 в 21</p>
+<p>Overall (M. SD)</p>
+<p>Domain (M, SD)</p>
+<p>74.556(17,83)</p>
+<p>Communityconnectedness 73.87a(18.64)</p>
+<p>Generalcommunity</p>
+<p>12.55</p>
+<p>12 р. н</p>
+<p>38.41</p>
+<p>16 p. g</p>
+<p>49.05</p>
+<p>20 p.M</p>
+<p>24° p. 0</p>
+<p>50.0458.35</p>
+<p>41.65</p>
+<p>36 p. m</p>
+<p>56.19</p>
+<p>43.81</p>
+<p>42.23</p>
+<p>44 2 m</p>
+<p>48 р. 177</p>
+<p>19.12|</p>
+<p>52 р, 1н</p>
+<p>38.65</p>
+<p>58 p. 10l</p>
+<p>31.75</p>
+<p>60 g. 1</p>
+<p>133.83</p>
+<p>64 р. 19</p>
+<p>16.38</p>
+<p>68 g. 12</p>
+<p>11.31</p>
+<p>72 р. 10</p>
+<p>6.73</p>
+<p>78 р. тн</p>
+<p>21.03</p>
+<p>80 р. 70</p>
+<p>50.20</p>
+<p>13 р. н</p>
+<p>25 me</p>
+<p>29 р. н</p>
+<p>33 р к</p>
+<p>37 p.m.</p>
+<p>41 р. но</p>
+<p>45 г. 10</p>
+<p>40 p. v)</p>
+<p>57 р. к</p>
+<p>61 p. w</p>
+<p>65 р. м</p>
+<p>60 р. 17</p>
+<p>73 р. и</p>
+<p>77 р. ти</p>
+<p>119 р. 20</p>
+<p>89e an</p>
+<p>85 р. 701</p>
+<p>77.25(16,64)</p>
+<p>86 р. 22</p>
+<p>90 р. 77</p>
+<p>93 р. 301</p>
+<p>69.57(19.92)</p>
+<p>Relationships</p>
+<p>(83.17a(17.63)</p>
+<p>26 г. 21</p>
+<p>97 р н</p>
+<p>79.49(22,79)</p>
+<p>28 p. 7</p>
+<p>(83,61a(16.54)</p>
+<p>1178 04147 94Y</p>
+<p>74.46b(16.91)66.8977.66a(16.65)</p>
+<p>104 р. 27</p>
+<p>105 р 171</p>
+<p>106 р 27</p>
+<p>b(21.34)76.80</p>
+<p>408 ma la(17.67)</p>
+<p>112 гн</p>
+<p>72.36(18.34)</p>
+<p>65.34b(26.24)</p>
+<p>Safety</p>
+<p>Standard of living</p>
+<p>163" p. 27</p>
+<p>Future security</p>
+<p>107* р 311</p>
+<p>Health</p>
+<p>Achieving in life</p>
+<p>115° р 301</p>
+<p>Religion/spirituality</p>
+<p>71.39(20.12)</p>
+<p>194 1</p>
+<p>74.33(19.22)</p>
+<p>114 0 г</p>
+<p>74.09a(18.54)</p>
+<p>68.23b(26.21)</p>
+<figure><figcaption><div class="caption">Figure 17: Example of long table. End-to-end example from initial PDF cells to prediction of bounding boxes, post processing and prediction of structure.</div></figcaption></figure>
+<p>117 р. 30</p>
+<p>118 p</p>
+<p>31 р. н</p>
+<p>10100.00</p>
+<p>35 г. н</p>
+<p>75.80</p>
+<p>10 m se</p>
+<p>7t est</p>
+<p>19.20</p>
+<p>75 г. н</p>
+<p>17.40</p>
+<p>70 гг.</p>
+<p>116k</p>
+<p>24.20</p>
+<p>80.60</p>
+<p>47 FLU</p>
+<p>19.40</p>
+<p>51г. 0)</p>
+<p>50 FL VH</p>
+<p>138,80</p>
+<p>120.60</p>
+<p>67 г. н</p>
+<p>117.20</p>
+</div>
+</body>
+</html>

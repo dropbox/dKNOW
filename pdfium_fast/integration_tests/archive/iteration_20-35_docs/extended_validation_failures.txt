@@ -1,0 +1,14 @@
+tests/test_004_edge_cases.py::test_edge_case_image_no_crash[bug_451265] FAILED [ 61%]
+tests/test_004_edge_cases.py::test_edge_case_image_no_crash[bug_451830] PASSED [ 61%]
+tests/test_004_edge_cases.py::test_edge_case_image_no_crash[bug_452455] PASSED [ 61%]
+tests/test_004_edge_cases.py::test_edge_case_image_no_crash[bug_454695] PASSED [ 61%]
+tests/test_004_edge_cases.py::test_edge_case_image_no_crash[bug_455199] PASSED [ 61%]
+tests/test_004_edge_cases.py::test_edge_case_image_no_crash[bug_459580] PASSED [ 61%]
+tests/test_004_edge_cases.py::test_edge_case_image_no_crash[bug_481363] PASSED [ 61%]
+tests/test_004_edge_cases.py::test_edge_case_image_no_crash[bug_487928] PASSED [ 62%]
+tests/test_004_edge_cases.py::test_edge_case_image_no_crash[bug_507316] PASSED [ 62%]
+tests/test_004_edge_cases.py::test_edge_case_image_no_crash[bug_544880] PASSED [ 62%]
+tests/test_004_edge_cases.py::test_edge_case_image_no_crash[bug_547706] PASSED [ 62%]
+--
+FAILED tests/test_004_edge_cases.py::test_edge_case_image_no_crash[bug_451265]
+=== 1 failed, 707 passed, 256 skipped, 1819 deselected in 474.57s (0:07:54) ====

@@ -1,0 +1,25 @@
+# Stem names for music source separation model
+# One stem name per line, in the order matching model output
+#
+# Demucs 4-stem example:
+drums
+bass
+other
+vocals
+
+# Spleeter 2-stem example:
+# vocals
+# accompaniment
+
+# Spleeter 4-stem example:
+# vocals
+# drums
+# bass
+# other
+
+# Spleeter 5-stem example:
+# vocals
+# drums
+# bass
+# piano
+# other

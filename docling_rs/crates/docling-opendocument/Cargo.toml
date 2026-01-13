@@ -1,0 +1,29 @@
+[package]
+name = "docling-opendocument"
+version.workspace = true
+edition.workspace = true
+authors = ["Docling Team"]
+description = "OpenDocument Format (ODF) parsers for docling (ODT, ODS, ODP)"
+keywords = ["odf", "odt", "ods", "odp", "opendocument"]
+categories = ["parsing", "parser-implementations"]
+license.workspace = true
+repository.workspace = true
+[dependencies]
+# Core dependencies
+anyhow = "1.0"
+thiserror = { workspace = true }
+
+# ZIP handling
+zip.workspace = true
+
+# XML parsing
+quick-xml = "0.31"
+
+# Spreadsheet support (ODS via calamine)
+calamine = "0.31"
+
+# Logging
+log = "0.4"
+
+[dev-dependencies]
+env_logger = "0.11"

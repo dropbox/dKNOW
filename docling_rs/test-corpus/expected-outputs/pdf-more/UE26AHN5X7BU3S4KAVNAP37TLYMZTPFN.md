@@ -1,0 +1,305 @@
+## Acworth Alcohol Manager Permit Application
+
+## Return Application &amp; Fees to City Clerk's Office
+
+Application Fee $36.50 Fingerprinting $25.00 (for new applications only) Background Ck $20.00 (for new &amp; renewal)
+
+Date of Application
+
+New or Renewal Application?
+
+Business Name
+
+Business Address
+
+Business Phone No.
+
+Applicant Phone No.
+
+Name of Applicant
+
+Maiden Name
+
+Any/All nicknames or aliases
+
+Home Address
+
+City, State, Zip Code
+
+Date of Birth
+
+Social Security Number
+
+Place of Birth (Country)
+
+State
+
+Race
+
+Sex
+
+Height
+
+Weight
+
+Eye Color
+
+Hair Color
+
+Driver's License State
+
+Driver's License Number
+
+\_\_\_\_\_\_
+
+Your position/title at the business
+
+Date employed by establishment
+
+****Any person who has been convicted of a violation of any law or ordinance governing the sale of alcoholic beverages or sale or possession of illegal drugs in the past 12 months shall be ineligible to receive a manager's permit ***
+
+Have you ever been fingerprinted?
+
+If yes, list when, where, and why \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Have you ever been arrested or convicted of a FELONY? If yes, list dates, charges, police agencies, and disposition of charges \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Have you ever been arrested or convicted of a MISDEMEANOR? If yes, list dates, charges, police agencies, and disposition of charges \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+I swear that the information contained within this application to be the truth and that it contains no falsifications or misrepresentations of the facts. I hereby authorize Acworth Police Department and/or any duly authorized agent to obtain and review copies of any criminal and/or driver's histories in my name or any alias used by me in the past or at the present. I understand that this information may be used against me during the course of this investigation.
+
+Signature
+
+Date
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+<!-- image -->
+
+## Acworth Police Department Consent Form
+
+<!-- image -->
+
+I hereby authorize the Acworth Police Department to receive any criminal history record information pertaining to me, which may be in the files of any national state or local criminal justice agency. I hereby authorize the Acworth Police Department to release all criminal history record information received to:
+
+Full Name (print)
+
+Maiden Name / Previous Name / Alias
+
+Street Address
+
+City
+
+Date of Birth
+
+Race:
+
+State
+
+Zip Code
+
+Social Security Number
+
+Sex:
+
+A - Asian, Asian Indians, &amp; Other Non-
+
+1- American Indian or Alaskan Native
+
+B - Black
+
+W - White (Includes Mexicans &amp; Latins)
+
+U - Unknown / Other
+
+Male
+
+Female
+
+Signature
+
+Signed and sealed on the
+
+Date
+
+day of
+
+Seal
+
+Notary
+
+Official Use Only
+
+Special employment provisions (check if applicable):
+
+GCIC Operator Signature
+
+Date
+
+Record Attached
+
+• FBI Number Checked
+
+• State ID Number Checked
+
+No Record
+
+<!-- image -->
+
+## Affidavit Verifying Status for City Public Benefit Application
+
+By executing this affidavit under oath, as an applicant for a City of Acworth, Georgia, Business License or Occupation Tax Certificate, Alcohol License, Taxi Permit or other public benefit as referenced in O.C.G.A. § 50-36-1, I am stating the following with respect to my application for a City of Acworth, (check one of the following):
+
+Business License or
+
+Georgia Occupational Tax Certificate
+
+Alcohol Beverage License
+
+Taxicab License
+
+Insurance Company License
+
+Employee Benefits (Retirement, Health, Disability)
+
+Contracts (Please specify type)
+
+\_ Other public benefit (indicate, if not listed above)
+
+Miscellaneous Licenses (check one below):
+
+Auctioneers
+
+Pawn Brokers
+
+Massage Therapists
+
+Billiard Rooms Operations
+
+Precious Metals and Gems Dealers
+
+Flea Markets
+
+Name of Business
+
+Check only one:
+
+- 1) I am a United States citizen.
+
+- 2) I am a legal permanent resident of the United States.
+
+3) I am a qualified alien or non-immigrant under the Federal Immigration and Nationality Act with an alien number issued by the Department of Homeland
+
+Security or other federal immigration agency.
+
+My alien number issued by the Department of Homeland Security or other federal immigration agency is:
+
+The undersigned applicant also hereby verifies that he or she is 18 years of age or older and has provided at least one secure and verifiable document, as required by O.C.G.A. § 50-36-1(e)(1), with this affidavit.
+
+The secure and verifiable document provided with this affidavit can best be classified as:
+
+In making the above representation under oath, I understand that any person who knowingly and willfully makes a false, fictitious, or fraudulent statement or representation in an affidavit shall be guilty of a violation of O.C.G.A. 16-10-20, and face criminal penalties as allowed by such criminal statute.
+
+Executed this \_day of , 20\_ \_in \_(city), \_(state).
+
+SUBSCRIBED AND SWORN BEFORE ME ON THIS THE
+
+\_ DAY OF \_, 20\_ -
+
+Signature of Applicant
+
+Notary Public
+
+-
+
+Printed Name of Applicant
+
+My Commission Expires:
+
+*Note: O.C.G.A. § 50-36-1(e)(2) requires that aliens under the federal immigration and Nationality Act, Title 8 U.S.C.,
+
+## NON-CRIMINAL JUSTICE APPLICANT'S PRIVACY RIGHTS
+
+As an applicant that is the subject of a Georgia only or a Georgia and Federal Bureau of Investigation FBI) national fingerprint/biometric-based criminal history record check for a non-criminal justic urpose (such as an application for a job or license, immigration or naturalization, security clearance or adoption), you have certain rights which are discussed below.
+
+- You must be provided written notification that your fingerprints/biometrics will be used to check the criminal history records maintained by the Georgia Crime Information Center (GCIC) and the FBI, when a federal record check is so authorized.
+- If your fingerprints/biometrics are used to conduct a FBI national criminal history check, you are provided a copy of the Privacy Act Statement that would normally appear on the FBI fingerprint card.
+- If you have a criminal history record, the agency making a determination of your suitability for the job, license, or other benefit must provide you the opportunity to complete or challenge the accuracy of the information in the record.
+- The agency must advise you of the procedures for changing, correcting, or updating your criminal history record as set forth in Title 28, Code of Federal Regulations (CFR), Section 16.34.
+- If you have a Georgia or FBI criminal history record, you should be afforded a reasonable amount of time to correct or complete the record (or decline to do so) before the agency denies you the job, license or other benefit based on information in the criminal history record
+- In the event an adverse employment or licensing decision is made, you must be informed of all information pertinent to that decision to include the contents of the record and the effect the record had upon the decision. Failure to provide all such information to the person subject to the adverse decision shall be a misdemeanor [O.C.G.A. § 35-3-34(b) and §35-3-35 (b)].
+
+You have the right to expect the agency receiving the results of the criminal history record check will use it only for authorized purposes and will not retain or disseminate it in violation of state and/or federal statute, regulation or executive order, or rule, procedure or standard established by the National Crime Prevention and Privacy Compact Council.
+
+If the employment/licensing agency policy permits, the agency may provide you with a copy of your Georgia or FBI criminal history record for review and possible challenge. If agency policy does not vermit it to provide you a copy of the record, information regarding how to obtain a copy of your Georgia, FBI or other state criminal history may be obtained at the GBI website
+
+(http://nLgeorgia.goviobtanung-criminal-history-record-information)
+
+If you decide to challenge the accuracy or completeness of your Georgia or FBI criminal history record, you should send your challenge to the agency that contributed the questioned information. Alternatively, you may send your challenge directly to GCIC provided the disputed arrest occurred in Georgia. Instructions to dispute the accuracy of your criminal history can be obtained at the GBI website (http://gbi.georgia.gov/obtaining-criminal-history-record-information)
+
+## PRIVACY ACT STATEMENT
+
+Authority: The FBI's acquisition, preservation, and exchange of fingerprints and associated information is generally authorized under 28 U.S.C. 534. Depending on the nature of your application, supplemental authorities include Federal statutes, State statutes pursuant to Pub. L. 92544, Presidential Executive Orders, and federal regulations. Providing your fingerprints and associated information is voluntary; however, failure to do so may affect completion or approval of your application.
+
+Principal Purpose: Certain determinations, such as employment, licensing, and security clearances, may be predicated on fingerprint-based background checks. Your fingerprints and associated information/biometrics may be provided to the employing, investigating, or otherwise responsible agency, and/or the FBI for the purpose of comparing your fingerprints to other fingerprints in the FBI's Next Generation Identification (NGI) system or its successor systems (including civil, criminal, and latent fingerprint repositories) or other available records of the employing, investigating, or otherwise responsible agency. The FBI may retain your fingerprints and associated information/biometrics in NGI after the completion of this application and, while retained, your fingerprints may continue to be compared against other fingerprints submitted to or retained by NGI.
+
+Routine Uses: During the processing of this application and for as long thereafter as your fingerprints and associated information/biometrics are retained in NGI, your information may be disclosed pursuant to your consent, and may be disclosed without your consent as permitted by the Privacy Act of 1974 and all applicable Routine Uses as may be published at any time in the Federal Register, including the Routine Uses for the NGI system and the FBI's Blanket Routine Uses. Routine uses include, but are not limited to, disclosures to: employing, governmental or authorized nongovernmental agencies responsible for employment, contracting, licensing, security clearances, and other suitability determinations; local, state, tribal, or federal law enforcement agencies; criminal justice agencies; and agencies responsible for national security or public safety.
+
+APPLICANT SIGNATURE
+
+DATE
+
+NOTARY SIGNATURE
+
+DATE
+
+Sec. 6-26. - Manager's permit.
+
+- (a) Every person licensed under this chapter for the retail sale of spirituous liquor, malt beverages or wine for consumption on the premises shall employ one or more persons as manager for the licensed establishment. At least one manager shall be at the licensee's premises during all times that alcoholic beverages are being consumed on such licensed establishment, and such manager shall be in charge of the premises and responsible for the actions of the employees and customers of the licensed establishment. In lieu of being present on the premises, the manager shall be authorized to certify that the manager shall have the ability to be, and will be, present on the premises within 45 minutes of being notified of the need for his presence on the premises. Each such manager shall obtain a manager's permit as provided in this section, and such permit shall be valid for a period of 12 months from the date of issuance of such permit.
+- (b) Every person wishing to obtain a manager's permit under this section shall make application on forms provided by the city clerk's office within three days of the date of employment. Upon receiving the completed application, the police department shall arrange to have a complete and exhaustive search made relative to any police record of the person fingerprinted and photographed and such records shall be placed on file in the city clerk's office. The city clerk shall be authorized to issue a manager's permit as provided in subsection (e) of this section after verifying the facts in the application and criminal record, if applicable.
+- (1) In the event there is a criminal record discovered that would exclude the issuance of a manager's permit, the city clerk shall issue a letter to the applicant and the employer, stating that the person is ineligible for a permit and/or employment.
+- (2) Any employee excluded from receiving or holding a manager's permit under the terms of this section shall have the right to appeal such exclusion to the governing body, which may in its discretion approve the issuance of a manager's permit.
+- (3) The failure of an employee to obtain a manager's permit will not prohibit the employee from applying for and receiving one if all other conditions of this section are otherwise met.
+- (c) Licensees and managers under this section shall keep a copy of the manager's permit on file, at all times, in the licensed establishment, and shall make such permits available for inspection during operating hours.
+- (d) Any person who has been convicted of a violation of any law or ordinance governing the sale of alcoholic beverages or sale or possession of illegal drugs in the past 12 months shall be ineligible to receive a manager's permit under this section.
+- (e) If any manager of a licensee under this chapter shall cease to be an employee of the licensee, or shall cease to be a resident of the United States, or in any manner ceases to meet the requirements of this section, the licensee shall notify the city manager, or designee, and shall
+
+name a new manager within three days thereafter. Such new manager shall meet all of the requirements of this section.
+
+- (f) The fee for a manager's permit, including a change of the licensee's manager, shall be fixed by the mayor and board of aldermen as set forth in the schedule of fees and charges on file with the office of the city clerk, provided, further, that if the licensee fails to notify the city of an employed manager and/or name a new manager within the three-day period set forth in this subsection, then the city shall charge a fee, as fixed by the mayor and board of aldermen, and as set forth in the schedule of fees and charges on file with the office of the city clerk, for a newly employed manager and/or change of the licensee's manager, and/or revoke the licensee's license.
+
+(Ord. No. 2000-3, 3-2-2000; Ord. No. 2005-22, 5-5-2005; Ord. No. 2008-26, § 1, 11-6-08; Ord. No. 2022-16, $ 1, 6-16-2022)

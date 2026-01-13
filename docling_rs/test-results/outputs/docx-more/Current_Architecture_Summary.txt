@@ -1,0 +1,8 @@
+- When the user send request to the website, firewall intercepts and run security checks.
+- Then the request is forwarded to DNS Server which translates the request to web server ip address.
+- Then the request is forwarded to the load balancer which forwards it to the web server.
+- Static files are hosted at the web server.
+- Web server forwards the request to App Server
+- User Profiles and activity data is hosted in Redis.
+- App Server gathers the user information from Redis and rest of the data from SQL Server
+- And then the request is sent back to the front.

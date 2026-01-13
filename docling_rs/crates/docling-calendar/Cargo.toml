@@ -1,0 +1,21 @@
+[package]
+name = "docling-calendar"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Calendar format parsers for docling-rs (iCal, vCard)"
+keywords = ["calendar", "ical", "vcard", "ics", "vcf"]
+categories = ["parsing", "date-and-time"]
+[dependencies]
+# Core dependencies
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+
+# Calendar parsing
+ical = "0.11"
+
+[dev-dependencies]
+tempfile = "3.14"

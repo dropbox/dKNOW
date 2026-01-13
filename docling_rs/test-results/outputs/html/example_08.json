@@ -1,0 +1,762 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Pivot table with with 1 row header",
+    "text": "Pivot table with with 1 row header",
+    "level": 2
+  },
+  {
+    "label": "table",
+    "self_ref": "#/tables/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "data": {
+      "num_rows": 6,
+      "num_cols": 4,
+      "grid": [
+        [
+          {
+            "text": "Year"
+          },
+          {
+            "text": "Month"
+          },
+          {
+            "text": "Revenue"
+          },
+          {
+            "text": "Cost"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "January"
+          },
+          {
+            "text": "$134"
+          },
+          {
+            "text": "$162"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "February"
+          },
+          {
+            "text": "$150"
+          },
+          {
+            "text": "$155"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "March"
+          },
+          {
+            "text": "$160"
+          },
+          {
+            "text": "$143"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "April"
+          },
+          {
+            "text": "$210"
+          },
+          {
+            "text": "$150"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "May"
+          },
+          {
+            "text": "$280"
+          },
+          {
+            "text": "$120"
+          }
+        ]
+      ],
+      "table_cells": [
+        {
+          "text": "Year",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Month",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Revenue",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Cost",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "2025",
+          "row_span": 5,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "January",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "$134",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$162",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "February",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "$150",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$155",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "March",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "$160",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$143",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "April",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "$210",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$150",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "May",
+          "start_row_offset_idx": 5,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "$280",
+          "start_row_offset_idx": 5,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$120",
+          "start_row_offset_idx": 5,
+          "start_col_offset_idx": 3
+        }
+      ]
+    }
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/2",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Pivot table with 2 row headers",
+    "text": "Pivot table with 2 row headers",
+    "level": 2
+  },
+  {
+    "label": "table",
+    "self_ref": "#/tables/3",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "data": {
+      "num_rows": 6,
+      "num_cols": 5,
+      "grid": [
+        [
+          {
+            "text": "Year"
+          },
+          {
+            "text": "Quarter"
+          },
+          {
+            "text": "Month"
+          },
+          {
+            "text": "Revenue"
+          },
+          {
+            "text": "Cost"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "Q1"
+          },
+          {
+            "text": "January"
+          },
+          {
+            "text": "$134"
+          },
+          {
+            "text": "$162"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "Q1"
+          },
+          {
+            "text": "February"
+          },
+          {
+            "text": "$150"
+          },
+          {
+            "text": "$155"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "Q1"
+          },
+          {
+            "text": "March"
+          },
+          {
+            "text": "$160"
+          },
+          {
+            "text": "$143"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "Q2"
+          },
+          {
+            "text": "April"
+          },
+          {
+            "text": "$210"
+          },
+          {
+            "text": "$150"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "Q2"
+          },
+          {
+            "text": "May"
+          },
+          {
+            "text": "$280"
+          },
+          {
+            "text": "$120"
+          }
+        ]
+      ],
+      "table_cells": [
+        {
+          "text": "Year",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Quarter",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Month",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Revenue",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "Cost",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 4
+        },
+        {
+          "text": "2025",
+          "row_span": 6,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Q1",
+          "row_span": 3,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "January",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$134",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "$162",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 4
+        },
+        {
+          "text": "February",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$150",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "$155",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 4
+        },
+        {
+          "text": "March",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$160",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "$143",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 4
+        },
+        {
+          "text": "Q2",
+          "row_span": 2,
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "April",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$210",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "$150",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 4
+        },
+        {
+          "text": "May",
+          "start_row_offset_idx": 5,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$280",
+          "start_row_offset_idx": 5,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "$120",
+          "start_row_offset_idx": 5,
+          "start_col_offset_idx": 4
+        }
+      ]
+    }
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/4",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Equivalent pivot table",
+    "text": "Equivalent pivot table",
+    "level": 2
+  },
+  {
+    "label": "table",
+    "self_ref": "#/tables/5",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "data": {
+      "num_rows": 6,
+      "num_cols": 5,
+      "grid": [
+        [
+          {
+            "text": "Year"
+          },
+          {
+            "text": "Quarter"
+          },
+          {
+            "text": "Month"
+          },
+          {
+            "text": "Revenue"
+          },
+          {
+            "text": "Cost"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "Q1"
+          },
+          {
+            "text": "January"
+          },
+          {
+            "text": "$134"
+          },
+          {
+            "text": "$162"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "Q1"
+          },
+          {
+            "text": "February"
+          },
+          {
+            "text": "$150"
+          },
+          {
+            "text": "$155"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "Q1"
+          },
+          {
+            "text": "March"
+          },
+          {
+            "text": "$160"
+          },
+          {
+            "text": "$143"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "Q2"
+          },
+          {
+            "text": "April"
+          },
+          {
+            "text": "$210"
+          },
+          {
+            "text": "$150"
+          }
+        ],
+        [
+          {
+            "text": "2025"
+          },
+          {
+            "text": "Q2"
+          },
+          {
+            "text": "May"
+          },
+          {
+            "text": "$280"
+          },
+          {
+            "text": "$120"
+          }
+        ]
+      ],
+      "table_cells": [
+        {
+          "text": "Year",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Quarter",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Month",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Revenue",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "Cost",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 4
+        },
+        {
+          "text": "2025",
+          "row_span": 7,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Q1",
+          "row_span": 3,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "January",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$134",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "$162",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 4
+        },
+        {
+          "text": "February",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$150",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "$155",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 4
+        },
+        {
+          "text": "March",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$160",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "$143",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 4
+        },
+        {
+          "text": "Q2",
+          "row_span": 2,
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "April",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$210",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "$150",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 4
+        },
+        {
+          "text": "May",
+          "start_row_offset_idx": 5,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "$280",
+          "start_row_offset_idx": 5,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "$120",
+          "start_row_offset_idx": 5,
+          "start_col_offset_idx": 4
+        }
+      ]
+    }
+  }
+]

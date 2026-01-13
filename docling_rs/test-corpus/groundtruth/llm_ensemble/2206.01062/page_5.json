@@ -1,0 +1,249 @@
+{
+  "page_number": 5,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis KDD '22, August 14–18, 2022, Washington, DC, USA",
+      "bbox": {
+        "l": 0.0,
+        "t": 0.0,
+        "r": 100.0,
+        "b": 5.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "the textual content of an element, which goes beyond visual layout recognition, in particular outside the Scientific Articles category.",
+      "bbox": {
+        "l": 0.0,
+        "t": 6.0,
+        "r": 100.0,
+        "b": 8.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "At first sight, the task of visual document-layout interpretation appears intuitive enough to obtain plausible annotations in most cases. However, during early trial-runs in the core team, we observed many cases in which annotators use different annotation styles, especially for documents with challenging layouts. For example, if a figure is presented with subfigures, one annotator might draw a single figure bounding-box, while another might annotate each subfigure separately. The same applies for lists, where one might annotate all list items in one block or each list item separately. In essence, we observed that challenging layouts would be annotated in different but plausible ways. To illustrate this, we show in Figure 4 multiple examples of plausible but inconsistent annotations on the same pages.",
+      "bbox": {
+        "l": 0.0,
+        "t": 9.0,
+        "r": 100.0,
+        "b": 20.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Obviously, this inconsistency in annotations is not desirable for datasets which are intended to be used for model training. To minimise these inconsistencies, we created a detailed annotation guideline. While perfect consistency across 40 annotation staff members is clearly not possible to achieve, we saw a huge improvement in annotation consistency after the introduction of our annotation guideline. A few selected, non-trivial highlights of the guideline are:",
+      "bbox": {
+        "l": 0.0,
+        "t": 21.0,
+        "r": 100.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "(1) Every list-item is an individual object instance with class label List-item. This is different from PubLayNet and DocBank, where all list-items are grouped together into one List object.",
+      "bbox": {
+        "l": 0.0,
+        "t": 31.0,
+        "r": 100.0,
+        "b": 34.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "(2) A List-item is a paragraph with hanging indentation. Single-line elements can qualify as List-item if the neighbour elements expose hanging indentation. Bullet or enumeration symbols are not a requirement.",
+      "bbox": {
+        "l": 0.0,
+        "t": 35.0,
+        "r": 100.0,
+        "b": 38.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "(3) For every Caption, there must be exactly one corresponding Picture or Table.",
+      "bbox": {
+        "l": 0.0,
+        "t": 39.0,
+        "r": 100.0,
+        "b": 41.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "(4) Connected sub-pictures are grouped together in one Picture object.",
+      "bbox": {
+        "l": 0.0,
+        "t": 42.0,
+        "r": 100.0,
+        "b": 44.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "(5) Formula numbers are included in a Formula object.",
+      "bbox": {
+        "l": 0.0,
+        "t": 45.0,
+        "r": 100.0,
+        "b": 46.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "(6) Emphasised text (e.g. in italic or bold) at the beginning of a paragraph is not considered a Section-header, unless it appears exclusively on its own line.",
+      "bbox": {
+        "l": 0.0,
+        "t": 47.0,
+        "r": 100.0,
+        "b": 50.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The complete annotation guideline is over 100 pages long and a detailed description is obviously out of scope for this paper. Nevertheless, it will be made publicly available alongside with DocLayNet for future reference.",
+      "bbox": {
+        "l": 0.0,
+        "t": 51.0,
+        "r": 100.0,
+        "b": 54.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Phase 3: Training.",
+      "bbox": {
+        "l": 0.0,
+        "t": 55.0,
+        "r": 100.0,
+        "b": 56.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "After a first trial with a small group of people, we realised that providing the annotation guideline and a set of random practice pages did not yield the desired quality level for layout annotation. Therefore we prepared a subset of pages with two different complexity levels, each with a practice and an exam part. 974 pages were reference-annotated by one proficient core team member. Annotation staff were then given the task to annotate the same subsets (blinded from the reference). By comparing the annotations of each staff member with the reference annotations, we could quantify how closely their annotations matched the reference. Only after passing these two exam levels with high annotation quality, staff were admitted into the production phase. Practice iterations",
+      "bbox": {
+        "l": 0.0,
+        "t": 57.0,
+        "r": 100.0,
+        "b": 66.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Phase 4: Production annotation.",
+      "bbox": {
+        "l": 0.0,
+        "t": 67.0,
+        "r": 100.0,
+        "b": 68.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "The previously selected 80K pages were annotated with the defined 11 class labels by 32 annotators. This production phase took around three months to complete. All annotations were created online through CCS, which visualises the programmatic PDF text-cells as an overlay on the page. The page annotation are obtained by drawing rectangular bounding-boxes, as shown in Figure 3. With regard to the annotation practices, we implemented a few constraints and capabilities on the tooling level. First, we only allow non-overlapping, vertically oriented, rectangular boxes. For the large majority of documents, this constraint was sufficient and it speeds up the annotation considerably in comparison with arbitrary segmentation shapes. Second, annotator staff were not able to see each other’s annotations. This was enforced by design to avoid any bias in the annotation, which could skew the numbers of the inter-annotator agreement (see Table 1). We wanted",
+      "bbox": {
+        "l": 0.0,
+        "t": 69.0,
+        "r": 100.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Compliant with guidelines and Plausible but invalid alternative diagrams showing annotation examples.",
+      "bbox": {
+        "l": 60.0,
+        "t": 10.0,
+        "r": 100.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 4: Examples of plausible annotation alternatives for the same page. Criteria in our annotation guideline can resolve cases A to C, while the case D remains ambiguous.",
+      "bbox": {
+        "l": 0.0,
+        "t": 81.0,
+        "r": 100.0,
+        "b": 85.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

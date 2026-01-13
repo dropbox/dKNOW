@@ -1,0 +1,12 @@
+{
+  "pdf_name": "edinet_sample.pdf",
+  "num_pages": 21,
+  "model_costs": {
+    "gpt-4o": {
+      "input_tokens": 33495,
+      "output_tokens": 30322,
+      "cost_usd": 0.3869575
+    }
+  },
+  "total_cost_usd": 0.3869575
+}

@@ -1,0 +1,225 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Archive Contents: multi_content.7z",
+    "text": "Archive Contents: multi_content.7z",
+    "level": 1
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Format Information",
+    "text": "Format Information",
+    "level": 2
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/2",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Format: 7Z, Archive size: 351 bytes",
+    "text": "Format: 7Z, Archive size: 351 bytes"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/3",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Archive Summary",
+    "text": "Archive Summary",
+    "level": 2
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/4",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "5 files (2 DAT files, 1 HTML file, 1 MD file, 1 TXT file), 139 bytes total [Compression ratio: 0.4x]",
+    "text": "5 files (2 DAT files, 1 HTML file, 1 MD file, 1 TXT file), 139 bytes total [Compression ratio: 0.4x]"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/5",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Contents",
+    "text": "Contents",
+    "level": 2
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/6",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "data/file1.dat (12 bytes)",
+    "text": "data/file1.dat (12 bytes)",
+    "enumerated": false,
+    "marker": "- "
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/7",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "data/file2.dat (12 bytes)",
+    "text": "data/file2.dat (12 bytes)",
+    "enumerated": false,
+    "marker": "- "
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/8",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "notes.md (42 bytes)",
+    "text": "notes.md (42 bytes)",
+    "enumerated": false,
+    "marker": "- "
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/9",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "page.html (45 bytes)",
+    "text": "page.html (45 bytes)",
+    "enumerated": false,
+    "marker": "- "
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/10",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "test.txt (28 bytes)",
+    "text": "test.txt (28 bytes)",
+    "enumerated": false,
+    "marker": "- "
+  }
+]

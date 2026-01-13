@@ -1,0 +1,26 @@
+[package]
+name = "docling-ebook"
+version.workspace = true
+edition.workspace = true
+authors = ["Docling RS Contributors"]
+description = "E-book format parsers for docling-rs (EPUB, MOBI, AZW3, FB2)"
+keywords = ["ebook", "epub", "mobi", "azw3", "fb2"]
+categories = ["parsing", "parser-implementations"]
+license.workspace = true
+repository.workspace = true
+[dependencies]
+epub = "2.0"
+mobi = "0.8"
+zip.workspace = true
+quick-xml = { version = "0.31", features = ["serialize"] }
+scraper = "0.17"
+html2text = "0.6"
+html2md = "0.2"
+base64 = "0.22"
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0"
+regex = "1.10"
+log = "0.4"
+
+[dev-dependencies]
+tempfile = "3.8"

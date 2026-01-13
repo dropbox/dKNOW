@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0">
+<description>
+<title-info>
+<genre>sci_fi</genre>
+<author><first-name>John</first-name><last-name>Doe</last-name></author>
+<book-title>Advanced Formatting Test</book-title>
+<lang>en</lang>
+</title-info>
+<document-info>
+<author><nickname>Test Generator</nickname></author>
+<date>2025-11-07</date>
+</document-info>
+</description>
+<body>
+<section>
+<title><p>Part One</p></title>
+<section>
+<title><p>Chapter 1: Introduction</p></title>
+<p>This paragraph contains <strong>bold text</strong> and <emphasis>italic text</emphasis>.</p>
+<p>FB2 also supports <code>code elements</code> and <strikethrough>strikethrough</strikethrough>.</p>
+<empty-line/>
+<p>Empty lines create visual separation between paragraphs.</p>
+</section>
+<section>
+<title><p>Chapter 2: Lists</p></title>
+<p>Here is some content with formatted elements:</p>
+<ul>
+<li>First item</li>
+<li>Second item with <strong>bold</strong></li>
+<li>Third item</li>
+</ul>
+</section>
+</section>
+</body>
+</FictionBook>

@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-11-02T16:55:43.764985",
+  "duration_seconds": 388.071461,
+  "total_pdfs": 452,
+  "tested_pdfs": 3,
+  "total_pages": 315,
+  "ssim_threshold": 0.99,
+  "continue_from": 0,
+  "workers": 2,
+  "upstream_tool": "/Users/ayates/pdfium/out/Optimized-Shared/pdfium_test",
+  "rust_tool": "/Users/ayates/pdfium/rust/target/release/examples/render_pages",
+  "results": [
+    {
+      "pdf": "0100pages_7FKQLKX273JBHXAAW5XDRT27JGMIZMCI.pdf",
+      "status": "compared",
+      "match": true,
+      "total_pages": 100,
+      "compared_pages": 100,
+      "ssim_mean": 0.999878919138866,
+      "ssim_min": 0.9966998962372454,
+      "ssim_max": 1.0,
+      "comparison_errors": 0,
+      "category": "benchmark",
+      "pages": 100,
+      "pages_data": [
+        {
+          "page": 1,
+          "status": "ssim_compared",
+          "match": 

@@ -1,0 +1,139 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/headers/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Data Table with Rowspan and Colspan",
+    "text": "Data Table with Rowspan and Colspan",
+    "level": 1
+  },
+  {
+    "label": "table",
+    "self_ref": "#/tables/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "data": {
+      "num_rows": 4,
+      "num_cols": 3,
+      "grid": [
+        [
+          {
+            "text": "Header 1"
+          },
+          {
+            "text": "Header 2 & 3 (colspan)"
+          },
+          {
+            "text": "Header 2 & 3 (colspan)"
+          }
+        ],
+        [
+          {
+            "text": "Row 1 & 2, Col 1 (rowspan)"
+          },
+          {
+            "text": "Row 1, Col 2"
+          },
+          {
+            "text": "Row 1, Col 3"
+          }
+        ],
+        [
+          {
+            "text": "Row 1 & 2, Col 1 (rowspan)"
+          },
+          {
+            "text": "Row 2, Col 2 & 3 (colspan)"
+          },
+          {
+            "text": "Row 2, Col 2 & 3 (colspan)"
+          }
+        ],
+        [
+          {
+            "text": "Row 3, Col 1"
+          },
+          {
+            "text": "Row 3, Col 2"
+          },
+          {
+            "text": "Row 3, Col 3"
+          }
+        ]
+      ],
+      "table_cells": [
+        {
+          "text": "Header 1",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Header 2 & 3 (colspan)",
+          "col_span": 2,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Row 1 & 2, Col 1 (rowspan)",
+          "row_span": 2,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Row 1, Col 2",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Row 1, Col 3",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Row 2, Col 2 & 3 (colspan)",
+          "col_span": 2,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Row 3, Col 1",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Row 3, Col 2",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Row 3, Col 3",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 2
+        }
+      ]
+    }
+  }
+]

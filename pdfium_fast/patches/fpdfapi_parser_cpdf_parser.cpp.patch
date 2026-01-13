@@ -1,0 +1,74 @@
+--- pdfium/core/fpdfapi/parser/cpdf_parser.cpp	2025-11-20 14:44:25
++++ core/fpdfapi/parser/cpdf_parser.cpp	2025-12-03 16:39:54
+@@ -1071,12 +1071,26 @@
+     return nullptr;
+   }
+ 
+-  // Prevent circular parsing the same object.
+-  if (pdfium::Contains(parsing_obj_nums_, objnum)) {
+-    return nullptr;
++  // Prevent circular parsing the same object (thread-safe check and insert).
++  {
++    std::lock_guard<std::mutex> lock(parsing_obj_nums_mutex_);
++    if (pdfium::Contains(parsing_obj_nums_, objnum)) {
++      return nullptr;
++    }
++    // Insert with mutex held to prevent race between check and insert
++    auto insert_result = parsing_obj_nums_.insert(objnum);
++    if (!insert_result.second) {
++      return nullptr;  // Another thread inserted it between check and insert
++    }
+   }
+ 
+-  ScopedSetInsertion local_insert(&parsing_obj_nums_, objnum);
++  // Ensure removal on all exit paths
++  auto cleanup = [this, objnum](void*) {
++    std::lock_guard<std::mutex> lock(parsing_obj_nums_mutex_);
++    parsing_obj_nums_.erase(objnum);
++  };
++  std::unique_ptr<void, decltype(cleanup)> cleanup_guard(reinterpret_cast<void*>(1), cleanup);
++
+   const auto* info = cross_ref_table_->GetObjectInfo(objnum);
+   if (!info) {
+     return nullptr;
+@@ -1104,9 +1118,12 @@
+ }
+ 
+ const CPDF_ObjectStream* CPDF_Parser::GetObjectStream(uint32_t object_number) {
+-  // Prevent circular parsing the same object.
+-  if (pdfium::Contains(parsing_obj_nums_, object_number)) {
+-    return nullptr;
++  // Prevent circular parsing the same object (thread-safe check and insert).
++  {
++    std::lock_guard<std::mutex> lock(parsing_obj_nums_mutex_);
++    if (pdfium::Contains(parsing_obj_nums_, object_number)) {
++      return nullptr;
++    }
+   }
+ 
+   auto it = object_stream_map_.find(object_number);
+@@ -1124,9 +1141,22 @@
+     return nullptr;
+   }
+ 
+-  // Keep track of `object_number` before doing more parsing.
+-  ScopedSetInsertion local_insert(&parsing_obj_nums_, object_number);
++  // Keep track of `object_number` before doing more parsing (thread-safe).
++  {
++    std::lock_guard<std::mutex> lock(parsing_obj_nums_mutex_);
++    auto insert_result = parsing_obj_nums_.insert(object_number);
++    if (!insert_result.second) {
++      return nullptr;  // Another thread inserted it
++    }
++  }
+ 
++  // Ensure removal on all exit paths
++  auto cleanup = [this, object_number](void*) {
++    std::lock_guard<std::mutex> lock(parsing_obj_nums_mutex_);
++    parsing_obj_nums_.erase(object_number);
++  };
++  std::unique_ptr<void, decltype(cleanup)> cleanup_guard(reinterpret_cast<void*>(1), cleanup);
++
+   RetainPtr<CPDF_Object> object =
+       ParseIndirectObjectAt(object_pos, object_number);
+   if (!object) {

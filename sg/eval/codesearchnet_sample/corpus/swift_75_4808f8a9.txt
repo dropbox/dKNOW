@@ -1,0 +1,4 @@
+/// Disable an extension (makes storage APIs non-functional)
+        func disableExtension(_ extensionId: ExtensionID) async {
+            await activeManager.deactivate(extensionId)
+        }

@@ -1,0 +1,4 @@
+{
+  "subdir": "pdfium/third_party/siso/cipd",
+  "package_name": "build/siso/mac-arm64"
+}

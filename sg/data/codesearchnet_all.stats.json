@@ -1,0 +1,29 @@
+{
+  "total": 1976238,
+  "by_language": {
+    "python": {
+      "written": 384431,
+      "skipped": 4793
+    },
+    "java": {
+      "written": 489425,
+      "skipped": 6528
+    },
+    "go": {
+      "written": 344630,
+      "skipped": 1260
+    },
+    "javascript": {
+      "written": 132766,
+      "skipped": 5389
+    },
+    "php": {
+      "written": 572735,
+      "skipped": 4455
+    },
+    "ruby": {
+      "written": 52251,
+      "skipped": 977
+    }
+  }
+}

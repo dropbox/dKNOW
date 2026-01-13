@@ -1,0 +1,249 @@
+{
+  "page_number": 15,
+  "elements": [
+    {
+      "label": "section_header",
+      "text": "PDF Cells",
+      "bbox": {
+        "l": 50.0,
+        "t": 5.0,
+        "r": 70.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "table",
+      "text": "",
+      "bbox": {
+        "l": 5.0,
+        "t": 10.0,
+        "r": 45.0,
+        "b": 40.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "PDF Cells",
+            "Gain",
+            "Low Cut-Off Frequency",
+            "High Cut-Off Frequency",
+            "Input-Referred Noise",
+            "CMRR",
+            "Number of Analog Channels",
+            "Power Consumption",
+            "Precision"
+          ],
+          [
+            "",
+            "2851 V/V (69.09 dB)",
+            "285 Hz",
+            "5580 Hz",
+            "2.1 μV (rms)",
+            "110 dB @ 1 KHz",
+            "2",
+            "1 mA (3.0 V @ 3 mW)",
+            "Selectable, 12 or 8 bits"
+          ]
+        ],
+        "num_rows": 2,
+        "num_cols": 9
+      }
+    },
+    {
+      "label": "section_header",
+      "text": "TableFormer predicted bounding boxes",
+      "bbox": {
+        "l": 5.0,
+        "t": 42.0,
+        "r": 45.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "table",
+      "text": "",
+      "bbox": {
+        "l": 5.0,
+        "t": 45.0,
+        "r": 45.0,
+        "b": 70.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "Parameter",
+            "Value"
+          ],
+          [
+            "Gain",
+            "2851 V/V (69.09 dB)"
+          ],
+          [
+            "Low Cut-Off Frequency",
+            "285 Hz"
+          ],
+          [
+            "High Cut-Off Frequency",
+            "5580 Hz"
+          ],
+          [
+            "Input-Referred Noise",
+            "2.1 μV (rms)"
+          ],
+          [
+            "CMRR",
+            "110 dB @ 1 KHz"
+          ],
+          [
+            "Number of Analog Channels",
+            "2"
+          ],
+          [
+            "Power Consumption",
+            "1 mA (3.0 V @ 3 mW)"
+          ],
+          [
+            "Precision",
+            "Selectable, 12 or 8 bits"
+          ]
+        ],
+        "num_rows": 9,
+        "num_cols": 2
+      }
+    },
+    {
+      "label": "section_header",
+      "text": "Post-processed bounding boxes",
+      "bbox": {
+        "l": 50.0,
+        "t": 42.0,
+        "r": 95.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "table",
+      "text": "",
+      "bbox": {
+        "l": 50.0,
+        "t": 45.0,
+        "r": 95.0,
+        "b": 70.0
+      },
+      "confidence": 0.94,
+      "table_data": {
+        "rows": [
+          [
+            "Parameter",
+            "Value"
+          ],
+          [
+            "Gain",
+            "2851 V/V (69.09 dB)"
+          ],
+          [
+            "Low Cut-Off Frequency",
+            "285 Hz"
+          ],
+          [
+            "High Cut-Off Frequency",
+            "5580 Hz"
+          ],
+          [
+            "Input-Referred Noise",
+            "2.1 μV (rms)"
+          ],
+          [
+            "CMRR",
+            "110 dB @ 1 KHz"
+          ],
+          [
+            "Number of Analog Channels",
+            "2"
+          ],
+          [
+            "Power Consumption",
+            "1 mA (3.0 V @ 3 mW)"
+          ],
+          [
+            "Precision",
+            "Selectable, 12 or 8 bits"
+          ]
+        ],
+        "num_rows": 9,
+        "num_cols": 2
+      }
+    },
+    {
+      "label": "caption",
+      "text": "Figure 15: Example with triangular table.",
+      "bbox": {
+        "l": 5.0,
+        "t": 72.0,
+        "r": 45.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "caption",
+      "text": "Figure 16: Example of how post-processing helps to restore mis-aligned bounding boxes prediction artifact.",
+      "bbox": {
+        "l": 50.0,
+        "t": 72.0,
+        "r": 95.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_footer",
+      "text": "15",
+      "bbox": {
+        "l": 50.0,
+        "t": 95.0,
+        "r": 52.0,
+        "b": 98.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

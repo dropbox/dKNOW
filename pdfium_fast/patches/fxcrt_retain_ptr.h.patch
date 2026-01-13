@@ -1,0 +1,52 @@
+--- pdfium/core/fxcrt/retain_ptr.h	2025-11-20 14:44:25
++++ core/fxcrt/retain_ptr.h	2025-12-03 16:39:54
+@@ -7,6 +7,7 @@
+ 
+ #include <stdint.h>
+ 
++#include <atomic>
+ #include <cstddef>
+ #include <functional>
+ #include <memory>
+@@ -154,7 +155,9 @@
+  public:
+   Retainable() = default;
+ 
+-  bool HasOneRef() const { return ref_count_ == 1; }
++  bool HasOneRef() const {
++    return ref_count_.load(std::memory_order_relaxed) == 1;
++  }
+ 
+  protected:
+   virtual ~Retainable() = default;
+@@ -173,18 +176,24 @@
+   // RetainPtr<const T> can be used for an object that is otherwise const
+   // apart from the internal ref-counting.
+   void Retain() const {
+-    ++ref_count_;
+-    CHECK(ref_count_ > 0);
++    // CRITICAL: Use atomic increment for thread-safe reference counting
++    // Required for parallel page rendering (FPDF_RenderPagesParallelV2)
++    uintptr_t old_count = ref_count_.fetch_add(1, std::memory_order_relaxed);
++    CHECK(old_count < UINTPTR_MAX);  // Overflow check
+   }
+   void Release() const {
+-    CHECK(ref_count_ > 0);
+-    if (--ref_count_ == 0) {
++    // CRITICAL: Use atomic decrement for thread-safe reference counting
++    // fetch_sub returns the OLD value before subtraction
++    uintptr_t old_count = ref_count_.fetch_sub(1, std::memory_order_acq_rel);
++    CHECK(old_count > 0);
++    if (old_count == 1) {
+       delete this;
+     }
+   }
+ 
+-  mutable uintptr_t ref_count_ = 0;
+-  static_assert(std::is_unsigned<decltype(ref_count_)>::value,
++  // CRITICAL: Atomic for thread-safe reference counting in parallel rendering
++  mutable std::atomic<uintptr_t> ref_count_{0};
++  static_assert(std::is_unsigned<uintptr_t>::value,
+                 "ref_count_ must be an unsigned type for overflow check"
+                 "to work properly in Retain()");
+ };

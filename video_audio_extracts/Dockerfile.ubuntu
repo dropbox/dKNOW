@@ -1,0 +1,56 @@
+# Dockerfile for Ubuntu Linux Testing
+# Purpose: Validate video-audio-extracts builds and runs on Ubuntu 24.04
+# Target: ≥95% test pass rate (647 smoke tests)
+
+FROM ubuntu:24.04
+
+# Prevent interactive prompts during package installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    # FFmpeg development libraries
+    libavcodec-dev \
+    libavformat-dev \
+    libavutil-dev \
+    libavfilter-dev \
+    libavdevice-dev \
+    libswscale-dev \
+    libswresample-dev \
+    # Build essentials
+    build-essential \
+    pkg-config \
+    clang \
+    # Rust installation dependencies
+    curl \
+    # RAW image support
+    dcraw \
+    # Tesseract OCR (required for OCR plugin)
+    tesseract-ocr \
+    libtesseract-dev \
+    leptonica-progs \
+    libleptonica-dev \
+    # Additional utilities
+    ca-certificates \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Rust toolchain
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+ENV PATH="/root/.cargo/bin:$PATH"
+
+# Set working directory
+WORKDIR /workspace
+
+# Copy entire project (models, source, tests)
+COPY . .
+
+# Build release binary
+RUN cargo build --release
+
+# Set environment variable for test thread limiting
+ENV VIDEO_EXTRACT_THREADS=4
+
+# Run comprehensive smoke tests (647 tests, sequential execution required)
+# Target: ≥95% pass rate (616+/647 tests passing)
+CMD ["cargo", "test", "--release", "--test", "smoke_test_comprehensive", "--", "--ignored", "--test-threads=1"]

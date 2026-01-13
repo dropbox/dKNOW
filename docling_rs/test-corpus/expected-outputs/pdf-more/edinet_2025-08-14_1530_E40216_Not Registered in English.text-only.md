@@ -1,0 +1,771 @@
+## 【h}GLYPH&lt;c=25,font=/MS-Gothic&gt;】
+
+| 【cÐQúfø^】                                                                | SJgGLYPH<c=31,font=/MS-Mincho>X1TJfø                                   |
+|----------------------------------------------------------------|------------------------------------------------------------------------|
+| 【h9bàgae】                                                                | ÑUFTÁSÖ̲GLYPH<c=21,font=/MS-Mincho>lÕ{,24gaの５{,１GLYPH<c=5,font=/MS-Mincho>の栰n{,１S÷                                                                        |
+| 【cÐQúQH】                                                     | ¢gq¡RÙ\@w                                                                        |
+| 【cÐQúeå】                                                     | 2025^t８gGLYPH<c=8,font=/MS-Mincho>14eå                                |
+| 【N-OGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>】                                                                | {,８gGLYPH<c=31,font=/MS-Mincho>N-(ê 2025^t１gGLYPH<c=8,font=/MS-Mincho>１eå ó                                                                        |
+| 【OGLYPH<c=26,font=/MS-Mincho>y>TGLYPH<c=13,font=/MS-Mincho>】 | h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>Synspective |
+| 【ñ3TGLYPH<c=13,font=/MS-Mincho>】                                                                | Synspective Inc.                                                       |
+| 【NãhGLYPH<c=5,font=/MS-Mincho>の̲ywlGLYPH<c=15,font=/MS-Mincho>TGLYPH<c=13,font=/MS-Mincho>】                                                                | NãhSÖ}à̲yCEO e°N QCL                                                                        |
+| 【g,^のb@W(のX4b@】                                                                | gq京ýl̲gqS:NGLYPH<c=9,font=/MS-Mincho>Y}NGLYPH<c=9,font=/MS-Mincho>NGLYPH<c=1,font=/MS-Mincho>vî10uj３S÷                                                                        |
+| 【ûqujS÷】                                                                | 03ÿGLYPH<c=13,font=/MS-Mincho>6811ÿGLYPH<c=13,font=/MS-Mincho>1355(Nãh)                                                                        |
+| 【NRÙ#}憀GLYPH<c=5,font=/MS-Mincho>lGLYPH<c=15,font=/MS-Mincho>TGLYPH<c=13,font=/MS-Mincho>】                                                                | SÖ}à̲y {¡tGLYPH<c=6,font=/MS-Mincho>èゼネラルマネ0üジャ0ü ̲× ä                                                                        |
+| 【g[Äりの#}慘4b@】                                                                | gq京ýl̲gqS:NGLYPH<c=9,font=/MS-Mincho>Y}NGLYPH<c=9,font=/MS-Mincho>NGLYPH<c=1,font=/MS-Mincho>vî10uj３S÷                                                                        |
+| 【ûqujS÷】                                                                | 03ÿGLYPH<c=13,font=/MS-Mincho>6811ÿGLYPH<c=13,font=/MS-Mincho>1355(Nãh)                                                                        |
+| 【NRÙ#}憀GLYPH<c=5,font=/MS-Mincho>lGLYPH<c=15,font=/MS-Mincho>TGLYPH<c=13,font=/MS-Mincho>】                                                                | SÖ}à̲y {¡tGLYPH<c=6,font=/MS-Mincho>èゼネラルマネ0üジャ0ü ̲× ä                                                                        |
+| 【~&§にOするX4b@】                                                                | h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>gq京<R8SÖ̲GLYPH<c=21,font=/MS-Mincho>b@                                                                        |
+| (gq京ýN-Y.S:eåg,jKQ屵:２uj１S÷)                                                                | (gq京ýN-Y.S:eåg,jKQ屵:２uj１S÷)                                                                        |
+
+## {,NGLYPH&lt;c=0,font=/MS-Gothic&gt;è 【OGLYPH&lt;c=1,font=/MS-Gothic&gt;imˋÅX1】
+
+## {,１ 【OGLYPH&lt;c=1,font=/MS-Gothic&gt;imのilÁ】
+
+## １ 【N;な}LU¶cGLYPH&lt;c=7,font=/MS-Mincho&gt;jGLYPH&lt;c=25,font=/MS-Mincho&gt;{Iのc¨yû】
+
+| VÞk!                                   | VÞk!                          | {,７gGLYPH<c=31,font=/MS-Mincho> N-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>                              | {,８gGLYPH<c=31,font=/MS-Mincho> N-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>                              | {,７gGLYPH<c=31,font=/MS-Mincho>   |
+|----------------------------------------|-------------------------------|------------------------------|------------------------------|------------------------------------|
+| OGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>                                        | OGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>                               | ê 2024^t１gGLYPH<c=8,font=/MS-Mincho>１eå ó 2024^t６gGLYPH<c=8,font=/MS-Mincho>30eå                              | ê 2025^t１gGLYPH<c=8,font=/MS-Mincho>１eå ó 2025^t６gGLYPH<c=8,font=/MS-Mincho>30eå                              | ê 2024^t１gGLYPH<c=8,font=/MS-Mincho>１eå ó 2024^t12gGLYPH<c=8,font=/MS-Mincho>31eå                                    |
+| XòNGLYPH<c=10,font=/MS-Mincho>Ø                                        | (SCQ)                               | 1,037,072                    | 1,327,484                    | 2,316,649                          |
+| }L^8dGLYPH<c=13,font=/MS-Mincho>Y1(%³) | (SCQ)                               | %³1,262,273                  | %³2,491,059                  | %³3,594,948                        |
+| ªOGLYPH<c=26,font=/MS-Mincho>y>h*N;に^ぜ^する N-(̲SgGLYPH<c=31,font=/MS-Mincho>)}GLYPH<c=20,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>Y1(%³)                                        | (SCQ)                               | %³1,266,795                  | %³2,483,889                  | %³3,592,954                        |
+| N-SGLYPH<c=5,font=/MS-Mincho>bìR)vÊSÈはSGLYPH<c=5,font=/MS-Mincho>bìR)vÊ                                        | (SCQ)                               | %³1,267,882                  | %³2,483,694                  | %³3,593,768                        |
+| }GLYPH<c=20,font=/MS-Mincho>Çu#額                                        | (SCQ)                               | 12,366,402                   | 19,189,769                   | 19,872,941                         |
+| }ÏÇu#額                                        | (SCQ)                               | 17,133,907                   | 27,058,973                   | 28,195,336                         |
+| １h*̲SたりN-(̲SgGLYPH<c=31,font=/MS-Mincho>)}GLYPH<c=20,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>Y1 (%³)                                        | (Q)                               | %³16.16                      | %³22.38                      | %³42.78                            |
+| o\W(h*̲GLYPH<c=15,font=/MS-Mincho>¿et̲１h*̲Sたり N-(̲SgGLYPH<c=31,font=/MS-Mincho>)}GLYPH<c=20,font=/MS-Mincho>R)vÊ                                        | (Q)                               | ÿGLYPH<c=13,font=/MS-Mincho> | ÿGLYPH<c=13,font=/MS-Mincho> | ÿGLYPH<c=13,font=/MS-Mincho>       |
+| ê]ñÇg,kÔs                                        | (ÿGLYPH<c=5,font=/MS-Mincho>) | 71.8                         | 67.9                         | 68.9                               |
+| U¶imm;RÕによる キャッシュ0ûフロ0ü      | (SCQ)                               | %³1,039,726                  | 353,305                      | %³1,798,097                        |
+| b閌Çm;RÕによる キャッシュ0ûフロ0ü      | (SCQ)                               | %³2,954,355                  | %³4,395,864                  | %³7,464,995                        |
+| ¡RÙm;RÕによる キャッシュ0ûフロ0ü                                        | (SCQ)                               | 6,906,779                    | 935,340                      | 19,032,705                         |
+| sþÑSÊびsþÑTGLYPH<c=12,font=/MS-Mincho>{Iriの N-gGLYPH<c=31,font=/MS-Mincho>g+(gGLYPH<c=31,font=/MS-Mincho>g+)k讚Ø                                        | (SCQ)                               | 7,383,596                    | 11,131,683                   | 14,239,861                         |
+
+- (lè)１ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;̲Sy&gt;はN-#}P¡RÙø栰O\bGLYPH&lt;c=16,font=/MS-Mincho&gt;しておりますので、cÐQúOGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;のN;な}LU¶cGLYPH&lt;c=7,font=/MS-Mincho&gt;jGLYPH&lt;c=25,font=/MS-Mincho&gt;{Iのc¨yûについてはGLYPH&lt;c=24,font=/MS-Mincho&gt; おりません。
+- ２ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;{,７gGLYPH&lt;c=31,font=/MS-Mincho&gt;N-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;のo\W(h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;¿et̲１h*̲SたりN-}GLYPH&lt;c=20,font=/MS-Mincho&gt;R)vÊについては、o\W(h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;は[XW(するも ̲Sy&gt;h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;は^NGLYPH&lt;c=10,font=/MS-Mincho&gt;X4であり、gGLYPH&lt;c=31,font=/MS-Mincho&gt;N-^sWGh*O¡がbcáできないため、また、１h*̲SたりN-}GLYPH&lt;c=20,font=/MS-Mincho&gt;dGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1であるためGLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;し ておりません。
+- ３ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;{,７gGLYPH&lt;c=31,font=/MS-Mincho&gt;SÊび{,８gGLYPH&lt;c=31,font=/MS-Mincho&gt;N-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;のo\W(h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;¿et̲１h*̲SたりN-(̲SgGLYPH&lt;c=31,font=/MS-Mincho&gt;)}GLYPH&lt;c=20,font=/MS-Mincho&gt;R)vÊについては、o\W( [XW(するものの、１h*̲SたりN-(̲SgGLYPH&lt;c=31,font=/MS-Mincho&gt;)}GLYPH&lt;c=20,font=/MS-Mincho&gt;dGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1であるためGLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;しておりません。
+- ４ÿGLYPH&lt;c=14,font=/MS-Mincho&gt; 2024^t６gGLYPH&lt;c=8,font=/MS-Mincho&gt;24eåNØでfnGLYPH&lt;c=26,font=/MS-Mincho&gt;h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;１h*につき150h*のRrTGLYPH&lt;c=8,font=/MS-Mincho&gt;でh*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;RGLYPH&lt;c=6,font=/MS-Mincho&gt;RrをLっております。{,７gGLYPH&lt;c=31,font=/MS-Mincho&gt;のgGLYPH&lt;c=31,font=/MS-Mincho&gt;に̲Srh*̲GLYPH&lt;c=15,font=/MS-Mincho&gt; RGLYPH&lt;c=6,font=/MS-Mincho&gt;RrがLわれたとNî[し、１h*̲SたりN-(̲SgGLYPH&lt;c=31,font=/MS-Mincho&gt;)}GLYPH&lt;c=20,font=/MS-Mincho&gt;dGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1を{[しております。
+
+## ２ 【NimのQ[¹】
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;において、̲Sy&gt;グル0üプ(̲Sy&gt;SÊび̲Sy&gt;の¢OÂOGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;)においてU¶まれているNimのQ[¹につい て、ÍなYGLYPH&lt;c=9,font=/MS-Mincho&gt;fôはありません。また、|sVýbàp¹の-zËのため[POGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;が２y&gt;XR しております。
+
+この}Pg、2025^t６gGLYPH&lt;c=8,font=/MS-Mincho&gt;30eåsþW(で、̲Sy&gt;グル0üプは̲Sy&gt;SÊび#}P[POGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;４y&gt;によりiËbGLYPH&lt;c=16,font=/MS-Mincho&gt;されることとなりまし た。
+
+## {,２ 【Nimのr¶lÁ】
+
+## １ 【Nim{Iのリスク】
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;において、̲SSJgGLYPH&lt;c=31,font=/MS-Mincho&gt;X1TJføにGLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;したNimのr¶lÁ、}LtGLYPH&lt;c=6,font=/MS-Mincho&gt;のr¶lÁ{Iに¢するNGLYPH&lt;c=5,font=/MS-Mincho&gt;のうち が#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;の¡e?r¶aK、}LU¶bGLYPH&lt;c=16,font=/MS-Mincho&gt;~&gt;SÊびキャッシュ0ûフロ0üのr¶lÁにÍな̲qＰNGLYPH&lt;c=14,font=/MS-Mincho&gt;えるSïýˋ'があるとXして るN;なリスクのvzuGLYPH&lt;c=31,font=/MS-Mincho&gt;SÈはRM#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;^t^¦のgGLYPH&lt;c=9,font=/MS-Mincho&gt;O¡&lt;R8X1TJføにGLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;した「Nim{Iのリスク」についてのÍなY はありません。
+
+## }}OGLYPH&lt;c=1,font=/MS-Mincho&gt;imのRMcÐに¢するÍNa{Iについて
+
+̲Sy&gt;グル0üプは、RM#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;^t^¦まで７gGLYPH&lt;c=31,font=/MS-Mincho&gt;#}でU¶imdGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1をGLYPH&lt;c=8,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;しており、}}OGLYPH&lt;c=1,font=/MS-Mincho&gt;imのRMcÐにÍなu させるNaSÈはr¶lÁが[XW(しているものとXしております。
+
+このN;たるVàは、[fGLYPH&lt;c=31,font=/MS-Mincho&gt;のý SÊびbSNGLYPH&lt;c=10,font=/MS-Mincho&gt;げにO4うY'j!なQHLb閌Çが̲Åであり、b閌ÇVÞSÎまでにgGLYPH&lt;c=31,font=/MS-Mincho&gt;をする ためであります。
+
+このようなNaSÈはr¶lÁをãmすべく、̲Sy&gt;グル0üプのN;Nimである[fGLYPH&lt;c=31,font=/MS-Mincho&gt;デ0üタNimのSÎvÊXR のドライバ0ü となる[fGLYPH&lt;c=31,font=/MS-Mincho&gt;j̲epをeégGLYPH&lt;c=31,font=/MS-Mincho&gt;にXR させ、b♵eのvôしとNimのbáY'をc¨し2め、シェアbáY'によるXòNGLYPH&lt;c=10,font=/MS-Mincho&gt;ØのO8wをVóる とともに、̲Sy&gt;グル0üプの[[したSÎvÊRのxºOÝとOGLYPH&lt;c=1,font=/MS-Mincho&gt;imO¡P$TGLYPH&lt;c=17,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;にRªめてまいるe¹Ýであります。
+
+また、̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;g+において、 11,131,683SCQのsþÑSÊびGLYPH&lt;c=16,font=/MS-Mincho&gt;ÑをOÝgGLYPH&lt;c=9,font=/MS-Mincho&gt;しており、̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;g+ からÌ12ヶgGLYPH&lt;c=8,font=/MS-Mincho&gt;のÇÑ~pりをGLYPH&lt;c=3,font=/MS-Mincho&gt;anした}Pg、̲SbのNimÇÑをxºOÝしていることからÇÑ~pりにÍなaø̲õ ません。
+
+NåNGLYPH&lt;c=10,font=/MS-Mincho&gt;により、}}OGLYPH&lt;c=1,font=/MS-Mincho&gt;imのRMcÐにÍなNGLYPH&lt;c=13,font=/MS-Mincho&gt;xº[齠'はめられないとR⑥­しております。
+
+## ２ 【}LU¶GLYPH&lt;c=5,font=/MS-Mincho&gt;による¡e?r¶aK、}LU¶bGLYPH&lt;c=16,font=/MS-Mincho&gt;~&gt;SÊびキャッシュ0ûフロ0üのr¶lÁのRGLYPH&lt;c=6,font=/MS-Mincho&gt;g】
+
+eN-の\GLYPH&lt;c=6,font=/MS-Mincho&gt;geに¢するNGLYPH&lt;c=5,font=/MS-Mincho&gt;は、̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;のg⭥åsþW(において̲Sy&gt;グル0üプがR⑥­したものであります。
+
+## (1)¡e?r¶aKのr¶lÁ
+
+## (Çu#)
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;g+における}ÏÇu#は、RM#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;^t^¦g+にkÔべて 1,136,362SCQnGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt; し、27,058,973SCQ とな りました。そのN;なVàは、\GLYPH&lt;c=15,font=/MS-Mincho&gt;WSAR[fGLYPH&lt;c=31,font=/MS-Mincho&gt;èTÁのüQe0û\GLYPH&lt;c=15,font=/MS-Mincho&gt;WSAR[fGLYPH&lt;c=31,font=/MS-Mincho&gt;bSNGLYPH&lt;c=10,font=/MS-Mincho&gt;げ»u(のRMbUい{Iにより sþÑSÊびGLYPH&lt;c=16,font=/MS-Mincho&gt;Ñが 3,108,178SCQ nGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt;し、^ú-NîRØ[が 3,926,489SCQ虘R したNe¹、XòcÑSÊびYQ}GLYPH&lt;c=4,font=/MS-Mincho&gt;Çu#が 1,192,372SCQnGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt;したこ とによるものであります。
+
+## ( Pµ)
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;g+における PµTGLYPH&lt;c=8,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;は、RM#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;^t^¦g+にkÔべて 453,191SCQnGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt; し、7,869,204SCQ とな りました。そのN;なVàは、PGLYPH&lt;c=31,font=/MS-Mincho&gt;QeÑのPGLYPH&lt;c=31,font=/MS-Mincho&gt;Qe0ûÔnGLYPH&lt;c=8,font=/MS-Mincho&gt;により wgGLYPH&lt;c=31,font=/MS-Mincho&gt;PGLYPH&lt;c=31,font=/MS-Mincho&gt;QeÑが 170,000SCQ、１^tQÔnGLYPH&lt;c=8,font=/MS-Mincho&gt;N[のwgGLYPH&lt;c=31,font=/MS-Mincho&gt;PGLYPH&lt;c=31,font=/MS-Mincho&gt;QeÑが 265,000SCQ虘R したNe¹、wígGLYPH&lt;c=31,font=/MS-Mincho&gt;PGLYPH&lt;c=31,font=/MS-Mincho&gt;QeÑが 650,000SCQnGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt;したことによるものであります。
+
+## (}GLYPH&lt;c=20,font=/MS-Mincho&gt;Çu#)
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;g+における}GLYPH&lt;c=20,font=/MS-Mincho&gt;Çu#のk讚Øは、RM#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;^t^¦g+にkÔべて 683,171SCQnGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt; し、19,189,769SCQ となりました。そのN;なVàは、2025^t１gGLYPH&lt;c=8,font=/MS-Mincho&gt;におけるオ0üバ0üアロットメントによるXòQúしに¢#した{,NGLYPH&lt;c=9,font=/MS-Mincho&gt;GLYPH&lt;c=5,font=/MS-Mincho&gt;Rr̲S XÇによるe°h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;のvzLやe°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のLOによりÇg,ÑSÊびÇg,RpOYÑがそれぞれ 715,950SCQ虘R したNe¹、ª OGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;h*N;に^ぜ^するN-}GLYPH&lt;c=20,font=/MS-Mincho&gt;dGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1 2,483,889SCQ をGLYPH&lt;c=8,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;したことによるものであります。
+
+## (2)}LU¶bGLYPH&lt;c=16,font=/MS-Mincho&gt;~&gt;のr¶lÁ
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;におけるbGLYPH&lt;c=17,font=/MS-Mincho&gt;がVýの}LnGLYPH&lt;c=8,font=/MS-Mincho&gt;は、̲GLYPH&lt;c=21,font=/MS-Mincho&gt;き}き}ÊëするN-gq0ûヨ0üロッパˋÅRâや|sVýe°e?^のe?{VR のNGLYPH&lt;c=13,font=/MS-Mincho&gt;GLYPH&lt;c=15,font=/MS-Mincho&gt;fGLYPH&lt;c=14,font=/MS-Mincho&gt;さによるfolGLYPH&lt;c=23,font=/MS-Mincho&gt;のNGLYPH&lt;c=11,font=/MS-Mincho&gt;c/れリスクはあるものの、Çu(0ûb@̲t°Xのe9UやインバウンドGLYPH&lt;c=0,font=/MS-Mincho&gt;のXR {Iにより}é やかなVÞ̲©Wú¿が}くものと¼まれています。[[imuLにおいては、10^琰g１QFQというwgGLYPH&lt;c=31,font=/MS-Mincho&gt;かつY'j!なe/cô となる「[[b♵eWúÑ」がVýzËxGLYPH&lt;c=20,font=/MS-Mincho&gt;zvvzlÕNº[[*zzxGLYPH&lt;c=20,font=/MS-Mincho&gt;zvvzj̲iË（JAXA）に-nされ、2024^t^¦からスタ0üトし た{,１gGLYPH&lt;c=31,font=/MS-Mincho&gt;のN¤NØlz[がGLYPH&lt;c=6,font=/MS-Mincho&gt;k!なされたほか、}く{,２gGLYPH&lt;c=31,font=/MS-Mincho&gt;のiがvz栰Uれております。R えて、㊈[wGLYPH&lt;c=1,font=/MS-Mincho&gt;の[fGLYPH&lt;c=31,font=/MS-Mincho&gt;コンス テレ0üションiË{Éプログラムにおいて、2025^t３gGLYPH&lt;c=8,font=/MS-Mincho&gt;にVýOGLYPH&lt;c=26,font=/MS-Mincho&gt;でのN{のSïlzをS×けて2,832QGLYPH&lt;c=4,font=/MS-Mincho&gt;Qの[fGLYPH&lt;c=31,font=/MS-Mincho&gt;コンステレ0ü ションからのu;PÏSÖ̲N{がxº[する{I、[[u#imをeåg,}LnGLYPH&lt;c=8,font=/MS-Mincho&gt;におけるbGLYPH&lt;c=16,font=/MS-Mincho&gt;wu#imとするためのe?^の}}vなe/cô がR GLYPH&lt;c=31,font=/MS-Mincho&gt;しているr¶lÁです。
+
+半期報告書
+
+## 半期報告書
+
+このようなr¶lÁのNGLYPH&lt;c=11,font=/MS-Mincho&gt;、̲Sy&gt;グル0üプは、「k!NGLYPH&lt;c=22,font=/MS-Mincho&gt;NãのNº々がWぴGLYPH&lt;c=3,font=/MS-Mincho&gt;をtGLYPH&lt;c=6,font=/MS-Mincho&gt;ãし、レジリエントなg*geを[sþするための e°たなインフラをつくる」ことをvîcGLYPH&lt;c=7,font=/MS-Mincho&gt;して、WぴGLYPH&lt;c=3,font=/MS-Mincho&gt;をˋR^8vにOïw°するêy&gt;SAR[fGLYPH&lt;c=31,font=/MS-Mincho&gt;「StriX」と¢#システムの vz0ûý 0ûbSNGLYPH&lt;c=10,font=/MS-Mincho&gt;をGLYPH&lt;c=26,font=/MS-Mincho&gt;じた[fGLYPH&lt;c=31,font=/MS-Mincho&gt;コンステレ0üションのKu(と、そのSÖ̲デ0üタの}}vな©Xòおよび、y&gt;OGLYPH&lt;c=26,font=/MS-Mincho&gt;v¢̲Ã^ もØいêq6p}[³0û[QhOÝ0ût°Xリスクをøにソリュ0üションのラインナップのbáY'にTGLYPH&lt;c=17,font=/MS-Mincho&gt;けて、e°[fGLYPH&lt;c=31,font=/MS-Mincho&gt;デ0üタ^GLYPH&lt;c=2,font=/MS-Mincho&gt; X4のbÓにSÖり}Dんでいます。
+
+## }LU¶{¡tGLYPH&lt;c=6,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;のÍなcGLYPH&lt;c=7,font=/MS-Mincho&gt;jGLYPH&lt;c=25,font=/MS-Mincho&gt;のr¶lÁ
+
+̲Sy&gt;グル0üプは、NåNGLYPH&lt;c=11,font=/MS-Mincho&gt;を}LU¶{¡tGLYPH&lt;c=6,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;のÍなcGLYPH&lt;c=7,font=/MS-Mincho&gt;jGLYPH&lt;c=25,font=/MS-Mincho&gt;として[めています。
+
+- 0û}ÏSÎQ旿GLYPH&lt;c=8,font=/MS-Mincho&gt;XòNGLYPH&lt;c=10,font=/MS-Mincho&gt;ØÿGLYPH&lt;c=11,font=/MS-Mincho&gt;ÜR©ÑSÎQ旿GLYPH&lt;c=9,font=/MS-Mincho&gt;、S×lèk讚Ø
+
+}ÏSÎQeは1,367,885SCQ（RM^tTGLYPH&lt;c=12,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;kÔ31.9ÿGLYPH&lt;c=5,font=/MS-Mincho&gt;X）となりました。そのN;なVàは、Q£^[[vzb&amp;uec¨2NRÙ がc¨2する「\GLYPH&lt;c=15,font=/MS-Mincho&gt;WSAR[fGLYPH&lt;c=31,font=/MS-Mincho&gt;コンステレ0üションのR)u(báY'にTGLYPH&lt;c=17,font=/MS-Mincho&gt;けた[&lt;」のNäT６^t^¦RGLYPH&lt;c=6,font=/MS-Mincho&gt;の}GLYPH&lt;c=13,font=/MS-Mincho&gt;Qe[NSÊびNäT７^t RGLYPH&lt;c=6,font=/MS-Mincho&gt;のNGLYPH&lt;c=0,font=/MS-Mincho&gt;èをXòNGLYPH&lt;c=10,font=/MS-Mincho&gt;にGLYPH&lt;c=8,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;したことにR えて、2[wGLYPH&lt;c=1,font=/MS-Mincho&gt;がc¨2する[QhOÝu(GLYPH&lt;c=20,font=/MS-Mincho&gt;にiした\GLYPH&lt;c=15,font=/MS-Mincho&gt;WTGLYPH&lt;c=8,font=/MS-Mincho&gt;bGLYPH&lt;c=16,font=/MS-Mincho&gt;Sãレ0üダ の[[[&lt;の}GLYPH&lt;c=13,font=/MS-Mincho&gt;Qe[Nにより、XòNGLYPH&lt;c=10,font=/MS-Mincho&gt;ØにGLYPH&lt;c=8,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;したことによるものです。R えて、}LnGLYPH&lt;c=8,font=/MS-Mincho&gt;u#imwGLYPH&lt;c=1,font=/MS-Mincho&gt;の[e½する「N-\ イノベ0üションRuQúc¨2Nim」（NåNGLYPH&lt;c=11,font=/MS-Mincho&gt;、}Lu#wGLYPH&lt;c=1,font=/MS-Mincho&gt;SBIR）SÊびVýWGLYPH&lt;c=31,font=/MS-Mincho&gt;N¤GLYPH&lt;c=26,font=/MS-Mincho&gt;wGLYPH&lt;c=1,font=/MS-Mincho&gt;の「N-\GLYPH&lt;c=15,font=/MS-Mincho&gt;OGLYPH&lt;c=1,font=/MS-Mincho&gt;imイノベ0üションRuQúc¨2Nim （VýN¤wGLYPH&lt;c=1,font=/MS-Mincho&gt;SBIR）によるÜR©ÑSÎQeをGLYPH&lt;c=8,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;したことによるものです。ソリュ0üションNimについては、eâ[Xサ0üビス のcÐO魎&amp;びにg[¢とのQqTGLYPH&lt;c=12,font=/MS-Mincho&gt;ソリュ0üションvzプロジェクトは̲GLYPH&lt;c=21,font=/MS-Mincho&gt;き}きGLYPH&lt;c=6,font=/MS-Mincho&gt;¿に2cWしております。
+
+S×lèkØは21,772,252SCQとなりました。そのN;なVàは、RM#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;^t^¦から}}する}Lu#wGLYPH&lt;c=1,font=/MS-Mincho&gt;SBIR（N¤N 額4,100,000SCQ）にR え、̲SN-gGLYPH&lt;c=31,font=/MS-Mincho&gt;にN¤NØlz[SÊび=g-した[[b&amp;ueWúÑ「UFim[fGLYPH&lt;c=31,font=/MS-Mincho&gt;コンステレ0üションiË{ÉR  SGLYPH&lt;c=22,font=/MS-Mincho&gt;」（̲SRGLYPH&lt;c=29,font=/MS-Mincho&gt;ÜR©NimgGLYPH&lt;c=31,font=/MS-Mincho&gt;のN¤NØlz[額16,464,008SCQ）、Q£^[[vzb&amp;uec¨2NRÙ\@「NäT７^t^¦\ コンステレ0üションのR)u(báY'にTGLYPH&lt;c=17,font=/MS-Mincho&gt;けた[&lt;」（=g-Ñ額1,067,166SCQ）{Iによるものです。なお、̲SrcGLYPH&lt;c=7,font=/MS-Mincho&gt;jGLYPH&lt;c=25,font=/MS-Mincho&gt;にお いては、ÜR©ÑSÎQeをT+めてS×lèk讚Øを{Qúしております。
+
+## 0û[fGLYPH&lt;c=31,font=/MS-Mincho&gt;Ku(j̲ep
+
+2028^tNåMに30j̲NåNGLYPH&lt;c=10,font=/MS-Mincho&gt;のKu(にTGLYPH&lt;c=17,font=/MS-Mincho&gt;けて、-zËNåge「StriX」を６j̲bSちNGLYPH&lt;c=10,font=/MS-Mincho&gt;げてまいりましたが、eâにgGLYPH&lt;c=0,font=/MS-Mincho&gt;RGLYPH&lt;c=29,font=/MS-Mincho&gt;の[&lt;j̲ ２j̲はUFu(Ku(が}BNし、̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;g+sþW(はÌSNGLYPH&lt;c=10,font=/MS-Mincho&gt;で４j̲のKu(をLっております。
+
+[fGLYPH&lt;c=31,font=/MS-Mincho&gt;のbSNGLYPH&lt;c=10,font=/MS-Mincho&gt;げにつきましては、SpaceXy&gt;（g,y&gt;：アメリカTGLYPH&lt;c=8,font=/MS-Mincho&gt;FVý）と３j̲の[fGLYPH&lt;c=31,font=/MS-Mincho&gt;のライドシェアロ0üンチYQ}GLYPH&lt;c=4,font=/MS-Mincho&gt;を }à}Pし、sþW(14j̲RGLYPH&lt;c=6,font=/MS-Mincho&gt;の\GLYPH&lt;c=6,font=/MS-Mincho&gt;gebSNGLYPH&lt;c=10,font=/MS-Mincho&gt;げのYQ}GLYPH&lt;c=4,font=/MS-Mincho&gt;をxºOÝしております。なお、̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;にExolaunchy&gt;（g,y&gt; イツ）とe°たに10j̲のSAR[fGLYPH&lt;c=31,font=/MS-Mincho&gt;のbSNGLYPH&lt;c=10,font=/MS-Mincho&gt;げのマルチロ0üンチアグリ0üメントを}à}Pしており、bSNGLYPH&lt;c=10,font=/MS-Mincho&gt;げYQ}GLYPH&lt;c=4,font=/MS-Mincho&gt;のNãtGLYPH&lt;c=6,font=/MS-Mincho&gt;^j̲ý をbÅうTGLYPH&lt;c=12,font=/MS-Mincho&gt;y&gt;を}Lu1して、QHðのSpaceXy&gt;の３j̲のうち１j̲のYQ}а鉸ºOÝしています。
+
+## XòNGLYPH&lt;c=10,font=/MS-Mincho&gt;SO¡0û©Xò»SÊびNGLYPH&lt;c=0,font=/MS-Mincho&gt;,{¡tGLYPH&lt;c=6,font=/MS-Mincho&gt;»のr¶lÁ
+
+XòNGLYPH&lt;c=10,font=/MS-Mincho&gt;SO¡は 1,436,479SCQ（RM^tTGLYPH&lt;c=12,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;kÔ 84.6ÿGLYPH&lt;c=5,font=/MS-Mincho&gt;X）となりました。そのN;なVàは、４ÿ^６S÷j̲のnGLYPH&lt;c=27,font=/MS-Mincho&gt;O¡QGLYPH&lt;c=31,font=/MS-Mincho&gt;St»のX R や、Q£^[&lt;およびSAR[fGLYPH&lt;c=31,font=/MS-Mincho&gt;の[[[&lt;のvôc¥SO¡などによるものです。
+
+©Xò»SÊびNGLYPH&lt;c=0,font=/MS-Mincho&gt;,{¡tGLYPH&lt;c=6,font=/MS-Mincho&gt;»は 2,000,616SCQ（RM^tTGLYPH&lt;c=12,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;kÔ 40.4ÿGLYPH&lt;c=5,font=/MS-Mincho&gt;X）となりました。そのN;なVàは、h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;X1l»u(の XR やNºTáXR によるNºNö»のXR 、©XòOSR6báY❻IによるimRÙYÔGLYPH&lt;c=23,font=/MS-Mincho&gt;»のXR などによるものです。
+
+## ¡RÙbのr¶lÁ
+
+¡RÙbにおいては、̲Sy&gt;fnGLYPH&lt;c=26,font=/MS-Mincho&gt;h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;のgq京&lt;R8SÖ̲GLYPH&lt;c=21,font=/MS-Mincho&gt;b@グロ0üスへのNGLYPH&lt;c=10,font=/MS-Mincho&gt;X4にO4うQlRßによるRßÆh*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;vzLに¢#し て、2025^t１gGLYPH&lt;c=8,font=/MS-Mincho&gt;17eåをbU¼gGLYPH&lt;c=31,font=/MS-Mincho&gt;eåとする{,NGLYPH&lt;c=9,font=/MS-Mincho&gt;GLYPH&lt;c=5,font=/MS-Mincho&gt;Rr̲SXÇ（オ0üバ0üアロットメントに¢#した{,NGLYPH&lt;c=9,font=/MS-Mincho&gt;GLYPH&lt;c=5,font=/MS-Mincho&gt;Rr̲SXÇ）を[ e½し、1,418,846SCQをÇÑ¿Tしました。また、みずほLをアレンジャ0ü、Y\¡Lをコ0ûアレンジャ0üとする シンジケ0üトロ0üン（コミットメントgGLYPH&lt;c=31,font=/MS-Mincho&gt;NØタ0üムロ0üン、8,100,000SCQ）をe°たに}à}Pしました。なお、「{,４ }LtGLYPH&lt;c=6,font=/MS-Mincho&gt;のr¶lÁ １ N-#}P¡RÙøh lèGLYPH&lt;c=24,font=/MS-Mincho&gt;NGLYPH&lt;c=5,font=/MS-Mincho&gt; (Íな̲vzNa)」にGLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;のとおり、2025^t７gGLYPH&lt;c=8,font=/MS-Mincho&gt;28eå OGLYPH&lt;c=26,font=/MS-Mincho&gt;において、{,NGLYPH&lt;c=9,font=/MS-Mincho&gt;GLYPH&lt;c=5,font=/MS-Mincho&gt;Rr̲Sによる{,５VÞe°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のvzLlzpをLっております。
+
+## そのNÖのr¶lÁ
+
+2025^t３gGLYPH&lt;c=8,font=/MS-Mincho&gt;には、NGLYPH&lt;c=22,font=/MS-Mincho&gt;uLgGLYPH&lt;c=0,font=/MS-Mincho&gt;Y'の[[¢#^GLYPH&lt;c=2,font=/MS-Mincho&gt;X4であるSGLYPH&lt;c=23,font=/MS-Mincho&gt;|s0ûN-SW|sW0WßでのNimのbàp¹として、|sVý[POGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;を-zË ました。これにより̲geのeåg,0ûアジアW0WßでのNim\UにR えて、SGLYPH&lt;c=23,font=/MS-Mincho&gt;|s0ûN-SW|sW0WßにおいてもsþW0ニ0üズに̲Ü じたÅGLYPH&lt;c=31,font=/MS-Mincho&gt;なNimm;RÕを\Uすることで、̲Sy&gt;グル0üプのbGLYPH&lt;c=16,font=/MS-Mincho&gt;wをよりR GLYPH&lt;c=31,font=/MS-Mincho&gt;してまいります。
+
+この}Pg、̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;における XòNGLYPH&lt;c=10,font=/MS-Mincho&gt;Øは、1,327,484SCQ （RM^tTGLYPH&lt;c=12,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;kÔ 28.0ÿGLYPH&lt;c=5,font=/MS-Mincho&gt;X）、 U¶imdGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1は 2,109,611SCQ （RM^tTGLYPH&lt;c=12,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;は 1,166,661SCQのU¶imdGLYPH&lt;c=13,font=/MS-Mincho&gt;YㇿGLYPH&lt;c=9,font=/MS-Mincho&gt;、 }L^8dGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1は2,491,059SCQ （RM^tTGLYPH&lt;c=12,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;は 1,262,273SCQの
+
+半期報告書
+
+}L^8dGLYPH&lt;c=13,font=/MS-Mincho&gt;YㇿGLYPH&lt;c=9,font=/MS-Mincho&gt;、 ªOGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;h*N;に^ぜ^するN-}GLYPH&lt;c=20,font=/MS-Mincho&gt;dGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1は2,483,889SCQ （RM^tTGLYPH&lt;c=12,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;は 1,266,795SCQのªOGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;h*N;に^ぜ^す るN-}GLYPH&lt;c=20,font=/MS-Mincho&gt;dGLYPH&lt;c=13,font=/MS-Mincho&gt;YㇿGLYPH&lt;c=9,font=/MS-Mincho&gt;となっております。
+
+なお、̲Sy&gt;グル0üプは[fGLYPH&lt;c=31,font=/MS-Mincho&gt;デ0üタNimのSXN0»グメントであるため、セグメントR┰nim~&gt;GLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;をwGLYPH&lt;c=1,font=/MS-Mincho&gt;ueしておりま す。
+
+## (3）キャッシュ0ûフロ0üのr¶lÁ
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;g+におけるsþÑSÊびsþÑTGLYPH&lt;c=12,font=/MS-Mincho&gt;{Iri（NåNGLYPH&lt;c=11,font=/MS-Mincho&gt;「ÇÑ」という。）は、RM#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;^t^¦g+にkÔべ 3,108,178SCQnGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt;し、 11,131,683SCQとなりました。
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;におけるTа­ャッシュ0ûフロ0üのr¶lÁとそれらのVàはk!のとおりであります。
+
+## （U¶imm;RÕによるキャッシュ0ûフロ0ü）
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;においてU¶imm;RÕに̲られたÇÑは 1,039,726SCQ）となりました。これはN;に、zGLYPH&lt;c=14,font=/MS-Mincho&gt;Ñ{I¿etRMN-}GLYPH&lt;c=20,font=/MS-Mincho&gt;dGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1 2,480,642SCQ、nGLYPH&lt;c=27,font=/MS-Mincho&gt;O¡QGLYPH&lt;c=31,font=/MS-Mincho&gt;St» ̲GLYPH&lt;c=15,font=/MS-Mincho&gt;X㆑l»u( 368,631SCQ、XòNGLYPH&lt;c=10,font=/MS-Mincho&gt;Pµj)SÊびYQ}GLYPH&lt;c=4,font=/MS-Mincho&gt;Çu#のnGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt;額 1,191,127SCQ{Iによるものです。
+
+## （b閌Çm;RÕによるキャッシュ0ûフロ0ü）
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;においてb閌Çm;RÕにOu(したÇÑは 4,395,864SCQ（RMN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;にOu(したÇÑは 2,954,355SCQ）となりました。これはN;に、[fGLYPH&lt;c=31,font=/MS-Mincho&gt;ý èTÁ{IüQe によるgGLYPH&lt;c=9,font=/MS-Mincho&gt;̲bV者Çu#のSÖ̲によるe/Qú 4,085,987 SCQ{Iによるものです。
+
+## （¡RÙm;RÕによるキャッシュ0ûフロ0ü）
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;において¡RÙm;RÕから̲られたÇÑは 935,340SCQ（RMN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;に̲られたÇÑは 6,906,779SCQ）となりました。これはN;に、オ0üバ0üアロットメント によるXòQúしに¢#した{,NGLYPH&lt;c=9,font=/MS-Mincho&gt;GLYPH&lt;c=5,font=/MS-Mincho&gt;Rr̲SXÇによ るe°h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;のvzLによるSÎQe 1,418,846SCQ{Iによるものです。
+
+## (4）OGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;のzMりSÊび̲SrzMりにu(いたNî[
+
+RM#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;^t^¦のgGLYPH&lt;c=9,font=/MS-Mincho&gt;O¡&lt;R8X1TJføにGLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;した「}LU¶GLYPH&lt;c=5,font=/MS-Mincho&gt;による¡e?r¶aK、}LU¶bGLYPH&lt;c=16,font=/MS-Mincho&gt;~&gt;SÊびキャッシュ0ûフロ0ü のRGLYPH&lt;c=6,font=/MS-Mincho&gt;g」N-のOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;のzMりSÊび̲SrzMりにu(いたNî[のGLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;についてÍなYGLYPH&lt;c=9,font=/MS-Mincho&gt;fôはありません。
+
+## (5)}LU¶e¹Ý0û}LU¶b♵e{I
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;において、̲Sy&gt;グル0üプが[めている}LU¶e¹Ý0û}LU¶b♵e{IについてÍなYGLYPH&lt;c=9,font=/MS-Mincho&gt;fôはありま ん。
+
+## (6)Q*QHvに[þQæすべきNimNGLYPH&lt;c=10,font=/MS-Mincho&gt;SÊび¡RÙNGLYPH&lt;c=10,font=/MS-Mincho&gt;の²L
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;において、̲Sy&gt;グル0üプがQ*QHvに[þQæすべきNimNGLYPH&lt;c=10,font=/MS-Mincho&gt;SÊび¡RÙNGLYPH&lt;c=10,font=/MS-Mincho&gt;の²LについてÍなY はありません。
+
+## (7)xGLYPH&lt;c=20,font=/MS-Mincho&gt;zvvzm;RÕ
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;における̲Sy&gt;グル0üプQhOSのxGLYPH&lt;c=20,font=/MS-Mincho&gt;zvvz»の}Ï額は、 596,428SCQ であります。
+
+なお、̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;において、̲Sy&gt;グル0üプのxGLYPH&lt;c=20,font=/MS-Mincho&gt;zvvzm;RÕのr¶lÁにÍなYGLYPH&lt;c=9,font=/MS-Mincho&gt;fôはありません。
+
+## (8）̲imTáep
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;において、̲Sy&gt;の̲imTáepにWしいXR SÈはnGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt;はありません。
+
+## (9）uGLYPH&lt;c=31,font=/MS-Mincho&gt;u#、S×lèSÊび©Xòの[~&gt;
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;において、 ̲Sy&gt;のuGLYPH&lt;c=31,font=/MS-Mincho&gt;u#、S×lèSÊび©Xòの[~&gt;にWしいYGLYPH&lt;c=9,font=/MS-Mincho&gt;RÕはありません。
+
+## (10）N;な-P
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;において、N;な-PにWしいYGLYPH&lt;c=9,font=/MS-Mincho&gt;RÕはありません。
+
+## (11）}LU¶bGLYPH&lt;c=16,font=/MS-Mincho&gt;~&gt;にÍな̲qＰNGLYPH&lt;c=14,font=/MS-Mincho&gt;えるVà
+
+353,305SCQ（RMN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;にOu(したÇÑは 958,307SCQ、h*
+
+半期報告書
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;において、}LU¶bGLYPH&lt;c=16,font=/MS-Mincho&gt;~&gt;にÍな̲qＰNGLYPH&lt;c=14,font=/MS-Mincho&gt;えるVàにÍなYGLYPH&lt;c=9,font=/MS-Mincho&gt;fôはありません。
+
+## (12）Çg,の¡nSÊびÇÑのmARÕˋ'についてのRGLYPH&lt;c=6,font=/MS-Mincho&gt;g
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;において、Çg,の¡nSÊびÇÑのmARÕˋ'についてのRGLYPH&lt;c=6,font=/MS-Mincho&gt;gにÍなYGLYPH&lt;c=9,font=/MS-Mincho&gt;fôはありません。
+
+## ３ 【}LU¶NGLYPH&lt;c=10,font=/MS-Mincho&gt;のÍなYQ}GLYPH&lt;c=4,font=/MS-Mincho&gt;{I】
+
+## (1)N;な©Xò0ûimRÙcÐd:{Iに¢するYQ}GLYPH&lt;c=4,font=/MS-Mincho&gt;
+
+| YQ}яGLYPH<c=26,font=/MS-Mincho>y>TGLYPH<c=13,font=/MS-Mincho>           | vKQH のTGLYPH<c=13,font=/MS-Mincho>yð   | vKQHの b@W(W0   | YQ}єÁvî                                                                          | YQ}GLYPH<c=4,font=/MS-Mincho> }à}Peå     | YQ}GLYPH<c=4,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>                                                                                         | YQ}GLYPH<c=4,font=/MS-Mincho>Q [¹   |
+|-------------------------------------------------------------------------|------------------------------------------|------------------|----------------------------------------------------------------------------------|------------------------------------------|-----------------------------------------------------------------------------------------|-------------------------------------|
+| h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y> Synspective | Space Exploration Technologies Corp.     | |sVý             | ライドシェアbSNGLYPH<c=10,font=/MS-Mincho> サ0üビスYQ}GLYPH<c=4,font=/MS-Mincho> | 2025^t ３gGLYPH<c=8,font=/MS-Mincho>５eå | 2025^t３gGLYPH<c=8,font=/MS-Mincho>５eåから bSNGLYPH<c=10,font=/MS-Mincho>[Nまで                                                                                         | StriX[fGLYPH<c=31,font=/MS-Mincho>のライドシェア bSNGLYPH<c=10,font=/MS-Mincho>サ0üビスYQ}GLYPH<c=4,font=/MS-Mincho>                                     |
+| h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y> Synspective | Q £^Y'ã[顢?OGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho> bÅ̲SSÂN[                                          | eåg,             | NäT７^t^¦ \GLYPH<c=15,font=/MS-Mincho>WSAR [fGLYPH<c=31,font=/MS-Mincho>コンステレ0ü ションのR)u(báY'に TGLYPH<c=17,font=/MS-Mincho>けた[<（その２ ÿGLYPH<c=13,font=/MS-Mincho>１）                                                                                  | 2025^t ３gGLYPH<c=8,font=/MS-Mincho>27eå | 2025^t３gGLYPH<c=8,font=/MS-Mincho>27eåから 2026^t３gGLYPH<c=8,font=/MS-Mincho>31eåまで | Q £^からのS×lèhHNö                                     |
+| h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y> Synspective | Q £^Y'ã[顢?OGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho> bÅ̲SSÂN[                                          | eåg,             | NäT７^t^¦ \GLYPH<c=15,font=/MS-Mincho>WSAR [fGLYPH<c=31,font=/MS-Mincho>コンステレ0ü ションのR)u(báY'に TGLYPH<c=17,font=/MS-Mincho>けた[<（その２ ÿGLYPH<c=13,font=/MS-Mincho>２）                                                                                  | 2025^t ４gGLYPH<c=8,font=/MS-Mincho>１eå | 2025^t４gGLYPH<c=8,font=/MS-Mincho>１eåから 2026^t３gGLYPH<c=8,font=/MS-Mincho>31eåまで | Q £^からのS×lèhHNö                                     |
+| h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y> Synspective | VýzËY'[晬ÕNº gq京yÑ[fY'[f                | eåg,             | [fScGLYPH<c=7,font=/MS-Mincho>\GLYPH<c=14,font=/MS-Mincho>YQ}GLYPH<c=4,font=/MS-Mincho>                                                                                  | 2025^t ５gGLYPH<c=8,font=/MS-Mincho>７eå | 2025^t５gGLYPH<c=8,font=/MS-Mincho>１eåから 2026^t３gGLYPH<c=8,font=/MS-Mincho>31eåまで | ンテナのˋ'ýe9USÊび-GLYPH<c=8,font=/MS-Mincho> bKlÕ0ûØj̲ýSGLYPH<c=22,font=/MS-Mincho>に¢するxGLYPH<c=20,font=/MS-Mincho> zv                                     |
+
+## (2)コミットメントgGLYPH&lt;c=31,font=/MS-Mincho&gt;NØタ0üムロ0üン
+
+̲Sy&gt;は、2025^t２gGLYPH&lt;c=8,font=/MS-Mincho&gt;19eåP¬のSÖ}à̲yOGLYPH&lt;c=26,font=/MS-Mincho&gt;において、シンジケ0üトロ0üンe¹̲GLYPH&lt;c=15,font=/MS-Mincho&gt;によるコミットメントgGLYPH&lt;c=31,font=/MS-Mincho&gt;NØタ0üム ロ0üンの}à}Pについてlzpし、2025^t２gGLYPH&lt;c=8,font=/MS-Mincho&gt;20eåNØでYQ}аDたしました。
+
+| ÇÑOGLYPH<c=20,font=/MS-Mincho>                                     | NimÇÑ（[fGLYPH<c=31,font=/MS-Mincho>ý 0ûbSNGLYPH<c=10,font=/MS-Mincho>»u(）                                                                                  |
+|-------------------------------------|----------------------------------------------------------------------------------|
+| アレンジャ0ü                        | h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>みずほL                                                                                  |
+| SÂR Ñj̲¢                                     | h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>みずほL、h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>UF]å}DTGLYPH<c=8,font=/MS-Mincho>N-Y.Ñ^«、h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>りそなL、 h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>あおぞらL、h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>Y\¡L、NGLYPH<c=9,font=/MS-Mincho>NOOSËOáGLYPH<c=23,font=/MS-Mincho>Lh*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>、 h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>}GLYPH<c=0,font=/MS-Mincho>}L、h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>nËÀL、h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>eåg,シティL、 h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>^\öL、h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>\qh¨N-Y.L                                                                                  |
+| YQ}џbaK                             | }}vÑ­m»¸PGLYPH<c=31,font=/MS-Mincho>YQ}GLYPH<c=4,font=/MS-Mincho>                                                                                  |
+| YQ}GLYPH<c=4,font=/MS-Mincho>Ñ額                                     | 8,100,000SCQ                                                                                  |
+| ÑR)                                     | WúnÑR)（TIBOR）ÿGLYPH<c=11,font=/MS-Mincho>６ÿGLYPH<c=5,font=/MS-Mincho>                                                                                  |
+| YQ}GLYPH<c=4,font=/MS-Mincho>}à}Peå | 2025^t２gGLYPH<c=8,font=/MS-Mincho>20eå                                          |
+| コミットメントgGLYPH<c=31,font=/MS-Mincho>                                     | 2025^t２gGLYPH<c=8,font=/MS-Mincho>28eåÿ^2027^t10gGLYPH<c=8,font=/MS-Mincho>29eå |
+| ÔnGLYPH<c=8,font=/MS-Mincho>e¹lÕ                                     | 2028^t１gGLYPH<c=8,font=/MS-Mincho>31eåを{,１VÞとし、NåM３かgGLYPH<c=8,font=/MS-Mincho>kÎgGLYPH<c=8,font=/MS-Mincho>g⭥åにコミットメントgGLYPH<c=31,font=/MS-Mincho>Pにおける }Ï¸NØk讚Øの12RGLYPH<c=6,font=/MS-Mincho>の１ずつ̲GLYPH<c=1,font=/MS-Mincho>nGLYPH<c=8,font=/MS-Mincho>（12VÞ）                                                                                  |
+| ¡RÙR6PgaGLYPH<c=5,font=/MS-Mincho>                                     | ①2024^t12gGLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>lz{NåM、Tўt^¦のlz{gGLYPH<c=31,font=/MS-Mincho>のg⭥åにおける#}Pの¸PGLYPH<c=31,font=/MS-Mincho>[þqghNGLYPH<c=10,font=/MS-Mincho>の}GLYPH<c=20,font=/MS-Mincho> Çu#のèのÑ額を１QNåNGLYPH<c=10,font=/MS-Mincho>に}­cGLYPH<c=1,font=/MS-Mincho>すること。 ②2024^t12gGLYPH<c=8,font=/MS-Mincho>をRGLYPH<c=29,font=/MS-Mincho>VÞとする、TіÛSJgGLYPH<c=31,font=/MS-Mincho>のg⭥åをWúneåとする#}Pのf{hSÈはX1TJ fø{Iにおいて、sþGLYPH<c=16,font=/MS-Mincho>Ñと\GLYPH<c=6,font=/MS-Mincho>geN[SÎQe額のTGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>から、gGLYPH<c=9,font=/MS-Mincho>R)[P を０Qg*nとしない。（OFし、̲S牏\bGLYPH<c=16,font=/MS-Mincho>Wúneåにおいて、QGLYPH<c=31,font=/MS-Mincho>StRM}L^8R)vÊが０QNå NGLYPH<c=10,font=/MS-Mincho>のX4TGLYPH<c=8,font=/MS-Mincho>、g,R$[はLわない。） ÿGLYPH<c=28,font=/MS-Mincho>QGLYPH<c=31,font=/MS-Mincho>StRM}L^8R)vÊÿGLYPH<c=30,font=/MS-Mincho> }L^8R)vÊÿGLYPH<c=11,font=/MS-Mincho>nGLYPH<c=27,font=/MS-Mincho>O¡QGLYPH<c=31,font=/MS-Mincho>St» ÿGLYPH<c=28,font=/MS-Mincho>\GLYPH<c=6,font=/MS-Mincho>geN[SÎQe額ÿGLYPH<c=30,font=/MS-Mincho> 2030^t10gGLYPH<c=8,font=/MS-Mincho>g⭥åまでにQeÑN[となる「e?^|ûj̲¢からのS×lè」、「YGLYPH<c=22,font=/MS-Mincho>èh<NØBBBNå NGLYPH<c=10,font=/MS-Mincho>のQHからのS×lè」および「ÜR©Ñ」にOÂるリストのうち、 QeÑされることがRGLYPH<c=6,font=/MS-Mincho>か るÇe（YQ}GLYPH<c=4,font=/MS-Mincho>føSÊびN¤NØlz[GLYPH<c=26,font=/MS-Mincho>wåføをT+むが、これらにP[されない。）がcÐQúさ れたhHNöのTGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>Ñ額。 ÿGLYPH<c=28,font=/MS-Mincho>gGLYPH<c=9,font=/MS-Mincho>R)[P PµÿGLYPH<c=30,font=/MS-Mincho> ¸PGLYPH<c=31,font=/MS-Mincho>[þqg栰kおける「wígGLYPH<c=31,font=/MS-Mincho>PGLYPH<c=31,font=/MS-Mincho>QeÑ」、「wgGLYPH<c=31,font=/MS-Mincho>PGLYPH<c=31,font=/MS-Mincho>QeÑ」、「１^tNåQ QeÑ」、「y>Pµ」、「1^tNåQ QGLYPH<c=31,font=/MS-Mincho>N[e°h*N}GLYPH<c=4,font=/MS-Mincho>j)NØy>Pµ」、「コマ0üシャルペ0üパ0ü」SÊび「Rr̲GLYPH<c=21,font=/MS-Mincho>bK̲b」（OF し、Çg,ˋ'PGLYPH<c=31,font=/MS-Mincho>QeÑおよび[コンPGLYPH<c=31,font=/MS-Mincho>Qeはdく。）                                                                                  |
+| bÅOÝcÐOÇu#SÊびOÝ<のgGLYPH<c=9,font=/MS-Mincho>q!                                     | bÅOÝ：[[b&ueWúÑよりbÅOÝ-[Sïとのe¹Ýlz[がなされることをP\kbgaNöとし て、g,Nö[fGLYPH<c=31,font=/MS-Mincho>ý ̲、GLYPH<c=31,font=/MS-Mincho>やかに̲Sr[fGLYPH<c=31,font=/MS-Mincho>を[þariNöとするbSNGLYPH<c=10,font=/MS-Mincho>RMOÝzおよびbSNGLYPH<c=10,font=/MS-Mincho>OÝ zにR Qeし、̲S牏ÝzËlBj)に[þし、{,NGLYPH<c=0,font=/MS-Mincho>GLYPH<c=6,font=/MS-Mincho>OMかつTGLYPH<c=12,font=/MS-Mincho>GLYPH<c=6,font=/MS-Mincho>OMにてêj)を-[。 OÝ<：q!OÝ<                                                                                  |
+
+\GLYPH&lt;c=15,font=/MS-Mincho&gt;WTGLYPH&lt;c=8,font=/MS-Mincho&gt;bGLYPH&lt;c=16,font=/MS-Mincho&gt;Sãレ0üダd-GLYPH&lt;c=9,font=/MS-Mincho&gt;ア
+
+## {,３ 【cÐQúOGLYPH&lt;c=26,font=/MS-Gothic&gt;y&gt;のr¶lÁ】
+
+## １ 【h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;{Iのr¶lÁ】
+
+- (1) 【h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;の}Ïep{I】
+2. ① 【h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;の}Ïep】
+
+| z.^   | vzLSïýh*̲GLYPH<c=15,font=/MS-Mincho>}Ïep(h*)             |
+|---|-------------|
+| fnGLYPH<c=26,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho>   | 168,000,000 |
+| GLYPH<c=8,font=/MS-Mincho>   | 168,000,000 |
+
+## ② 【vzLnGLYPH&lt;c=8,font=/MS-Mincho&gt;h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;】
+
+| z.^   | N-OGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>g+ sþW(vzLep(h*) (2025^t６gGLYPH<c=8,font=/MS-Mincho>30eå )             | cÐQúeåsþW( vzLep(h*) (2025^t８gGLYPH<c=8,font=/MS-Mincho>14eå)             | NGLYPH<c=10,font=/MS-Mincho>X4ÑUFTÁSÖ̲GLYPH<c=21,font=/MS-Mincho>b@ TGLYPH<c=13,font=/MS-Mincho>SÈはv{㊊SïÑ UFTÁSÖ̲GLYPH<c=21,font=/MS-Mincho>imSTOGLYPH<c=26,font=/MS-Mincho>TGLYPH<c=13,font=/MS-Mincho>                              | Q [¹                         |
+|---|-------------|-------------|------------------------------|------------------------------|
+| fnGLYPH<c=26,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho>   | 111,542,100 | 111,580,350 | gq京<R8SÖ̲GLYPH<c=21,font=/MS-Mincho>b@ グロ0üス^GLYPH<c=2,font=/MS-Mincho>X4                              | [Qhplzj)h*̲GLYPH<c=15,font=/MS-Mincho>であり、j)R)Q にOUらP[のない̲Sy>におけるjGLYPH<c=25,font=/MS-Mincho> nとなるh*̲GLYPH<c=15,font=/MS-Mincho>であります。なお、 SXQCh*̲GLYPH<c=15,font=/MS-Mincho>epは100h*であります。                              |
+| GLYPH<c=8,font=/MS-Mincho>   | 111,542,100 | 111,580,350 | ÿGLYPH<c=13,font=/MS-Mincho> | ÿGLYPH<c=13,font=/MS-Mincho> |
+
+（lè）「cÐQúeåsþW(vzLep」kаkは、2025^t８gGLYPH&lt;c=8,font=/MS-Mincho&gt;１eåからこのSJgGLYPH&lt;c=31,font=/MS-Mincho&gt;X1TJføcÐQúeåまでのe°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のLOによりvz Lされたh*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;epはT+まれておりません。
+
+## (2) 【e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j){Iのr¶lÁ】
+
+## ① 【ストックオプションR6^¦のQ[¹】
+
+- r̲SNGLYPH&lt;c=5,font=/MS-Mincho&gt;はありません。
+
+## ② 【そのNÖのe°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j){Iのr¶lÁ】
+
+- r̲SNGLYPH&lt;c=5,font=/MS-Mincho&gt;はありません。
+- (3) 【LOO¡額OîkcgaGLYPH&lt;c=5,font=/MS-Mincho&gt;NØe°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)NØy&gt;PµR8{IのLOr¶lÁ{I】 r̲SNGLYPH&lt;c=5,font=/MS-Mincho&gt;はありません。
+
+## (4) 【vzLnGLYPH&lt;c=8,font=/MS-Mincho&gt;h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;}Ïep、Çg,Ñ{Iのc¨yû】
+
+（lè）１ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;gGLYPH&lt;c=9,font=/MS-Mincho&gt;QGLYPH&lt;c=31,font=/MS-Mincho&gt;{,NGLYPH&lt;c=9,font=/MS-Mincho&gt;GLYPH&lt;c=5,font=/MS-Mincho&gt;Rr̲SXÇ（オ0üバ0üアロットメントによるXòQúしに¢#した{,NGLYPH&lt;c=9,font=/MS-Mincho&gt;GLYPH&lt;c=5,font=/MS-Mincho&gt;Rr̲SXÇ）
+
+| ^瑧GLYPH<c=8,font=/MS-Mincho>eå                                                             | vzLnGLYPH<c=8,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho> }ÏepXnGLYPH<c=27,font=/MS-Mincho>ep (h*)   | vzLnGLYPH<c=8,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho> }Ïepk讚Ø (h*)   | Çg,Ñ XnGLYPH<c=27,font=/MS-Mincho> (SCQ)         | Çg,Ñ k讚Ø (SCQ)           | Çg,nPÑ XnGLYPH<c=27,font=/MS-Mincho>額 (SCQ)         | Çg,nPÑ k讚Ø (SCQ)            |
+|---------------------------------------------------------------------------------------------|---|---|---------|-----------|---------|------------|
+| 2025^t１gGLYPH<c=8,font=/MS-Mincho>17eå （lè）１                                            | fnGLYPH<c=26,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho> 3,195,600   | fnGLYPH<c=26,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho> 111,444,750   | 709,423 | 8,389,075 | 709,423 | 10,691,976 |
+| 2025^t１gGLYPH<c=8,font=/MS-Mincho>１ eåÿ^ 2025^t６gGLYPH<c=8,font=/MS-Mincho>30eå （lè）２ | fnGLYPH<c=26,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho> 97,350   | fnGLYPH<c=26,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho> 111,542,100   | 6,527   | 8,395,602 | 6,527   | 10,698,503 |
+
+Rr̲SO¡h&lt;  444Q
+
+Çg,}DQe額 222Q
+
+Rr̲SQH   ÎgQIR8h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;OGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;
+
+- ２ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のLOによるXR です。
+- ３ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;̲SN-OGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;のg⭥åからcÐQúeåのRMgGLYPH&lt;c=8,font=/MS-Mincho&gt;g+sþW(（2025^t７gGLYPH&lt;c=8,font=/MS-Mincho&gt;31eå）までのに、e°h*のvzL（e°h*N} j)のLO翿GLYPH&lt;c=9,font=/MS-Mincho&gt;により、vzLnGLYPH&lt;c=8,font=/MS-Mincho&gt;h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;}Ïepが38,250h*、Çg,Ñが2,565SCQSÊびÇg,nPÑが2,565SCQ虘R して おります。
+
+## (5) 【Y'h*N;のr¶lÁ】
+
+| lGLYPH<c=15,font=/MS-Mincho>TGLYPH<c=13,font=/MS-Mincho>SÈはTGLYPH<c=13,font=/MS-Mincho>yð   | OOb@                         | b@gGLYPH<c=9,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho>ep (h*)   |       vzLnGLYPH<c=8,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho> (ê]ñh*̲GLYPH<c=15,font=/MS-Mincho>を dく。)の }Ïepに[þする b@gGLYPH<c=9,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho>ep のRrTGLYPH<c=8,font=/MS-Mincho>(ÿGLYPH<c=5,font=/MS-Mincho>) |
+|----------------------------------------------------------------------------------------------|------------------------------|---------------------------------------------------------------------|-------|
+| NGLYPH<c=9,font=/MS-Mincho>ñûj̲h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>                                                                                              | gq京ýSCNãuこ:N8のQ ２NGLYPH<c=1,font=/MS-Mincho>vî７uj３S÷                              | 12,500,000                                                          | 11.21 |
+| ヒュ0üリックh*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>                      | gq京ýN-Y.S:eåg,jKY'OGLYPH<c=29,font=/MS-Mincho>¬u:７uj３S÷                              | 11,089,800                                                          |  9.94 |
+| e°N QCL                                                                                              | gq京ýe京S:                              | 9,015,000                                                           |  8.08 |
+| スペ0üス0ûエ0üスタ0üト１S÷bÇNimgGLYPH<c=9,font=/MS-Mincho>P ¬Nû}DTGLYPH<c=8,font=/MS-Mincho>                                                                                              | gq京ýn/S:NGLYPH<c=9,font=/MS-Mincho>u0３NGLYPH<c=1,font=/MS-Mincho>vî５uj２７S÷                              | 8,611,200                                                           |  7.72 |
+| nGLYPH<c=5,font=/MS-Mincho>l4^ú-h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>                                                                                              | gq京ýN-Y.S:京jK２NGLYPH<c=1,font=/MS-Mincho>vî１６uj１S÷                              | 6,944,400                                                           |  6.23 |
+| ＳＰエ0üスタ0üト１S÷bÇNimgGLYPH<c=9,font=/MS-Mincho>P¬Nû}D TGLYPH<c=8,font=/MS-Mincho>                                                                                              | gq京ýn/S:NGLYPH<c=9,font=/MS-Mincho>u0３NGLYPH<c=1,font=/MS-Mincho>vî５uj２７S÷                              | 6,469,050                                                           |  5.8  |
+| v}WB bGLYPH<c=16,font=/MS-Mincho>R                                                                                              | gq京ýNGLYPH<c=22,font=/MS-Mincho>uれ7S:                              | 4,500,000                                                           |  4.03 |
+| eåg,グロ0üスキャピタルb閌ÇlÕNº                                                               | gq京ýSCNãuこ:Y'bKu:２NGLYPH<c=1,font=/MS-Mincho>vî２uj２S÷                              | 3,216,250                                                           |  2.88 |
+| hîトラストh*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>                        | gq京ýn/S:丰Î４NGLYPH<c=1,font=/MS-Mincho>vî１uj１S÷                              | 2,399,700                                                           |  2.15 |
+| r祛ÑYGLYPH<c=22,font=/MS-Mincho>OáGLYPH<c=23,font=/MS-Mincho>S×GLYPH<c=23,font=/MS-Mincho>GLYPH<c=5,font=/MS-Mincho> GLYPH<c=23,font=/MS-Mincho>L                                                                                              | h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>ＳＭＢＣOá gq京ýSCNãuこ:N8のQ １NGLYPH<c=1,font=/MS-Mincho>vî３uj２S÷                              | 2,021,400                                                           |  1.81 |
+| GLYPH<c=8,font=/MS-Mincho>                                                                                              | ÿGLYPH<c=13,font=/MS-Mincho> | 66,766,800                                                          | 59.86 |
+
+（lè）１ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;̲Sy&gt;は、ê]ñh*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;はOÝgGLYPH&lt;c=9,font=/MS-Mincho&gt;しておりません。
+
+2025^t６gGLYPH&lt;c=8,font=/MS-Mincho&gt;30eå sþW(
+
+## (6) 【plzj)のr¶lÁ】
+
+## ① 【vzLnGLYPH&lt;c=8,font=/MS-Mincho&gt;h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;】
+
+| S:RGLYPH<c=6,font=/MS-Mincho>   | h*̲GLYPH<c=15,font=/MS-Mincho>ep(h*)   | plzj)のep(PGLYPH<c=11,font=/MS-Mincho>)                              | Q [¹                         |
+|---------------------------------|---------------------------------------|------------------------------|------------------------------|
+| q!plzj)h*̲GLYPH<c=15,font=/MS-Mincho>                                 | ÿGLYPH<c=13,font=/MS-Mincho>          | ÿGLYPH<c=13,font=/MS-Mincho> | ÿGLYPH<c=13,font=/MS-Mincho> |
+| plzj)R6Ph*̲GLYPH<c=15,font=/MS-Mincho>(ê]ñh*̲GLYPH<c=15,font=/MS-Mincho>{I)                                 | ÿGLYPH<c=13,font=/MS-Mincho>          | ÿGLYPH<c=13,font=/MS-Mincho> | ÿGLYPH<c=13,font=/MS-Mincho> |
+| plzj)R6Ph*̲GLYPH<c=15,font=/MS-Mincho>(そのNÖ)                                 | ÿGLYPH<c=13,font=/MS-Mincho>          | ÿGLYPH<c=13,font=/MS-Mincho> | ÿGLYPH<c=13,font=/MS-Mincho> |
+| [Qhplzj)h*̲GLYPH<c=15,font=/MS-Mincho>(ê]ñh*̲GLYPH<c=15,font=/MS-Mincho>{I)                                 | ÿGLYPH<c=13,font=/MS-Mincho>          | ÿGLYPH<c=13,font=/MS-Mincho> | ÿGLYPH<c=13,font=/MS-Mincho> |
+| [Qhplzj)h*̲GLYPH<c=15,font=/MS-Mincho>(そのNÖ）                                 | fnGLYPH<c=26,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho> 111,527,700                                       | fnGLYPH<c=26,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho> 1,115,277                              | [Qhplzj)h*̲GLYPH<c=15,font=/MS-Mincho>であり、j)R)Q OUらP[のq!い̲Sy>におけるjGLYPH<c=25,font=/MS-Mincho>nと なるh*̲GLYPH<c=15,font=/MS-Mincho>であります。SXQCh*̲GLYPH<c=15,font=/MS-Mincho>epは 100h*であります。                              |
+| SXQCg*nh*̲GLYPH<c=15,font=/MS-Mincho>                                 | fnGLYPH<c=26,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho> 14,400                                       | ÿGLYPH<c=13,font=/MS-Mincho> | ÿGLYPH<c=13,font=/MS-Mincho> |
+| vzLnGLYPH<c=8,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho>}Ïep                                 | 111,542,100                           | ÿGLYPH<c=13,font=/MS-Mincho> | ÿGLYPH<c=13,font=/MS-Mincho> |
+| }Ïh*N;のplzj)                                 | ÿGLYPH<c=13,font=/MS-Mincho>          | 1,115,277                    | ÿGLYPH<c=13,font=/MS-Mincho> |
+
+## ② 【ê]ñh*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;{I】
+
+r̲SNGLYPH&lt;c=5,font=/MS-Mincho&gt;はありません。
+
+## ２ 【̲yTáのr¶lÁ】
+
+## (1) e°Nû̲yTá
+
+| ̲ywTGLYPH<c=13,font=/MS-Mincho>       | lGLYPH<c=15,font=/MS-Mincho>TGLYPH<c=13,font=/MS-Mincho>   | uGLYPH<c=31,font=/MS-Mincho>^瑧GLYPH<c=8,font=/MS-Mincho>eå   | uekt   | NûgGLYPH<c=31,font=/MS-Mincho>   |   b@gGLYPH<c=9,font=/MS-Mincho> h*̲GLYPH<c=15,font=/MS-Mincho>ep (h*) | \1Nû^瑧GLYPH<c=8,font=/MS-Mincho>eå      |
+|-------|------------------------------------------------------------|---------------------------------------------------------------|--------|----------------------------------|----------------------------------------------------------------------|------------------------------------------|
+| SÖ}à̲y | ig, N®                                                            | 1963^t ６gGLYPH<c=8,font=/MS-Mincho>４eå                      | 1989^t７gGLYPH<c=8,font=/MS-Mincho> vãgûlÕNºト0üマツQeb@ 1996^t８gGLYPH<c=8,font=/MS-Mincho> gGLYPH<c=29,font=/MS-Mincho>eåvãgûlÕNº(sþ PwCコンサルティングTGLYPH<c=8,font=/MS-Mincho>TGLYPH<c=12,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>)Qeb@ 2009^t４gGLYPH<c=8,font=/MS-Mincho> eåg,アイ0ûビ0ü0ûエムh*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>Qey> 2013^t５gGLYPH<c=8,font=/MS-Mincho> h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>セ0üルスフォ0üス0ûドットコム (sþ h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>セ0üルスフォ0üス0ûジャパン)Qey> W÷L̲yTá 2015^t５gGLYPH<c=8,font=/MS-Mincho> eåg,ûlGLYPH<c=23,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>Qey> W÷L̲yTá 2020^t４gGLYPH<c=8,font=/MS-Mincho> NEC VALWAYh*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>Qey> y>YGLYPH<c=22,font=/MS-Mincho>SÖ}à̲y 2022^t６gGLYPH<c=8,font=/MS-Mincho> EY Japanh*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>Qey> チ0üフ0ûブランディング0ûオフィサ0ü 2025^t４gGLYPH<c=8,font=/MS-Mincho> ̲Sy>SÖ}à̲y（sþNû）        | (lè)２                           |                                                                  500 | 2025^t ４gGLYPH<c=8,font=/MS-Mincho>１eå |
+
+- (lè)１ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;SÖ}à̲y ig, N®は、y&gt;YGLYPH&lt;c=22,font=/MS-Mincho&gt;SÖ}à̲yであります。
+- ２ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;SÖ}à̲yのNûgGLYPH&lt;c=31,font=/MS-Mincho&gt;は2026^t12gGLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;にOÂる[fBh*N;}ÏOGLYPH&lt;c=26,font=/MS-Mincho&gt;}B}PのfBまでであります。
+- ３ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;TGLYPH&lt;c=12,font=/MS-Mincho&gt;lGLYPH&lt;c=15,font=/MS-Mincho&gt;は̲Sy&gt;のh*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;を500h*OÝgGLYPH&lt;c=9,font=/MS-Mincho&gt;しておりますが、それNåYGLYPH&lt;c=22,font=/MS-Mincho&gt;に ̲Sy&gt;とのにNºv¢OÂ、Çg,v¢OÂ、SÈはSÖ̲GLYPH&lt;c=21,font=/MS-Mincho&gt; ¢OÂそのNÖのR)[³¢OÂはありません。 そのため、ØいrìzËˋ'をgGLYPH&lt;c=9,font=/MS-Mincho&gt;するとGLYPH&lt;c=3,font=/MS-Mincho&gt;えgq京&lt;R8SÖ̲GLYPH&lt;c=21,font=/MS-Mincho&gt;b@にrìzË̲yTáとし て\JけQúております。
+
+## (2) Nû̲yTá
+
+r̲SNGLYPH&lt;c=5,font=/MS-Mincho&gt;はありません。
+
+(3) upRÕ̲の̲yTáのu7YsR%NºepSÊびY獠'のkÔs u7ˋ'7TGLYPH&lt;c=13,font=/MS-Mincho&gt; Y獠' 2TGLYPH&lt;c=13,font=/MS-Mincho&gt;(̲yTáのうちY獠'のkÔs 22.2ÿGLYPH&lt;c=5,font=/MS-Mincho&gt;)
+
+## 2025^t６gGLYPH&lt;c=8,font=/MS-Mincho&gt;30eå sþW(
+
+## {,４ 【}LtGLYPH&lt;c=6,font=/MS-Gothic&gt;のr¶lÁ】
+
+## １  N-#}P¡RÙø栰nO\bGLYPH&lt;c=16,font=/MS-Mincho&gt;e¹lÕについて
+
+̲Sy&gt;のN-#}P¡RÙøhは、「#}P¡RÙøhのu(、iØ̲GLYPH&lt;c=15,font=/MS-Mincho&gt;SÊびO\bGLYPH&lt;c=16,font=/MS-Mincho&gt;e¹lÕに¢するRG」(1976^tY'5wGLYPH&lt;c=1,font=/MS-Mincho&gt;N WúづいてO\bGLYPH&lt;c=16,font=/MS-Mincho&gt;しております。
+
+また、̲Sy&gt;は、ÑUFTÁSÖ̲GLYPH&lt;c=21,font=/MS-Mincho&gt;lÕ{,24gaの５{,１GLYPH&lt;c=5,font=/MS-Mincho&gt;のhの{,１S÷のNGLYPH&lt;c=10,font=/MS-Mincho&gt;kGLYPH&lt;c=4,font=/MS-Mincho&gt;にc²げるOGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;にr̲Sし、#}P¡RÙøh １}èSÊび{,３}èの[により{,１z.N-#}P¡RÙø栰O\bGLYPH&lt;c=16,font=/MS-Mincho&gt;しております。
+
+## ２  vãgû&lt;fGLYPH&lt;c=14,font=/MS-Mincho&gt;について
+
+̲Sy&gt;は、ÑUFTÁSÖ̲GLYPH&lt;c=21,font=/MS-Mincho&gt;lÕ{,193gaの２{,１GLYPH&lt;c=5,font=/MS-Mincho&gt;の[にWúづき、̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;(2025^t１gGLYPH&lt;c=8,font=/MS-Mincho&gt;１eåから2025^t 30eåまで)にOÂるN-#}P¡RÙø栰kついて、gGLYPH&lt;c=9,font=/MS-Mincho&gt;P¬Nû あずさvãgûlÕNºによるgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üをS×けております。
+
+## １ 【N-#}P¡RÙø栰GLYPH&lt;c=17,font=/MS-Mincho&gt;
+
+## (1) 【N-#}P¸PGLYPH&lt;c=31,font=/MS-Mincho&gt;[þqg栰GLYPH&lt;c=17,font=/MS-Mincho&gt;
+
+|                                          | RM#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>^t^¦ (2024^t12gGLYPH<c=8,font=/MS-Mincho>31eå)            | (SXOM：SCQ) ̲SN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> (2025^t６gGLYPH<c=8,font=/MS-Mincho>30eå)                              |
+|------------------------------------------|------------|------------------------------|
+| Çu#のè                                          |            |                              |
+| mARÕÇu#                                          |            |                              |
+| sþÑSÊびGLYPH<c=16,font=/MS-Mincho>Ñ                                          | 14,239,861 | 11,131,683                   |
+| XòcÑSÊびYQ}GLYPH<c=4,font=/MS-Mincho>Çu#                                          | 1,378,874  | 186,501                      |
+| NÕcTÁ                                          | 113,036    | 30,638                       |
+| ¯ 5TÁ                                          | 313        | 9,726                        |
+| そのNÖ                                   | 521,142    | 373,658                      |
+| mARÕÇu#TGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                          | 16,253,228 | 11,732,208                   |
+| V者Çu#                                          |            |                              |
+| gGLYPH<c=9,font=/MS-Mincho>̲bV者Çu#                                          |            |                              |
+| ³n,[fGLYPH<c=31,font=/MS-Mincho>（}GLYPH<c=20,font=/MS-Mincho>額）                                          | 5,280,542  | 4,417,754                    |
+| ^ú-NîRØ[                                          | 5,708,124  | 9,634,614                    |
+| そのNÖ（}GLYPH<c=20,font=/MS-Mincho>額） | 743,384    | 756,272                      |
+| gGLYPH<c=9,font=/MS-Mincho>̲bV者Çu#TGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                          | 11,732,051 | 14,808,642                   |
+| q!̲bV者Çu#                                          | 35,436     | 339,810                      |
+| b閌ÇそのNÖのÇu#                                          |            |                              |
+| wgGLYPH<c=31,font=/MS-Mincho>g*SÎQeÑ                                          | 350,866    | ÿGLYPH<c=13,font=/MS-Mincho> |
+| そのNÖ                                   | 174,620    | 178,312                      |
+| ¸PGLYPH<c=18,font=/MS-Mincho>̲GLYPH<c=21,font=/MS-Mincho>̲SÑ                                          | %³350,866  | ÿGLYPH<c=13,font=/MS-Mincho> |
+| b閌ÇそのNÖのÇu#TGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                          | 174,620    | 178,312                      |
+| V者Çu#TGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                          | 11,942,108 | 15,326,765                   |
+| Çu#TGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                          | 28,195,336 | 27,058,973                   |
+
+## (SXOM：SCQ)
+
+|                                        | RM#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>^t^¦ (2024^t12gGLYPH<c=8,font=/MS-Mincho>31eå)             | ̲SN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> (2025^t６gGLYPH<c=8,font=/MS-Mincho>30eå)                              |
+|----------------------------------------|-------------|------------------------------|
+|  Pµのè                                        |             |                              |
+| mARÕ Pµ                                        |             |                              |
+| wígGLYPH<c=31,font=/MS-Mincho>PGLYPH<c=31,font=/MS-Mincho>QeÑ                                        | ; 1,000,000 | ; 350,000                    |
+| １^tQ ÔnGLYPH<c=8,font=/MS-Mincho>N[のwgGLYPH<c=31,font=/MS-Mincho>PGLYPH<c=31,font=/MS-Mincho>QeÑ                                        | ; 195,000   | ; 460,000                    |
+| g*bUlÕNºzGLYPH<c=14,font=/MS-Mincho>{I | 126,115     | 67,440                       |
+| YQ}GLYPH<c=4,font=/MS-Mincho> Pµ                                        | 16,456      | 4,088                        |
+| YQ}GLYPH<c=4,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>Y1̲GLYPH<c=21,font=/MS-Mincho>̲SÑ                                        | 16,076      | ÿGLYPH<c=13,font=/MS-Mincho> |
+| そのNÖ                                 | 875,747     | 724,675                      |
+| mARÕ PµTGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                        | 2,229,395   | 1,606,204                    |
+| V者 Pµ                                        |             |                              |
+| wgGLYPH<c=31,font=/MS-Mincho>PGLYPH<c=31,font=/MS-Mincho>QeÑ                                        | ; 6,093,000 | ; 6,263,000                  |
+| V者 PµTGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                        | 6,093,000   | 6,263,000                    |
+|  PµTGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                        | 8,322,395   | 7,869,204                    |
+| }GLYPH<c=20,font=/MS-Mincho>Çu#のè                                        |             |                              |
+| h*N;Çg,                                        |             |                              |
+| Çg,Ñ                                        | 7,679,652   | 8,395,602                    |
+| Çg,RpOYÑ                                        | 15,343,219  | 16,059,169                   |
+| R)vÊRpOYÑ                                        | %³3,582,273 | %³6,066,162                  |
+| h*N;Çg,TGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                        | 19,440,598  | 18,388,609                   |
+| そのNÖのSGLYPH<c=5,font=/MS-Mincho>bìR)vÊ}/GLYPH<c=8,font=/MS-Mincho>額                                        |             |                              |
+| pºf｣Û{¿etRØ[                                        | %³5,838     | %³5,643                      |
+| そのNÖのSGLYPH<c=5,font=/MS-Mincho>bìR)vÊ}/GLYPH<c=8,font=/MS-Mincho>額TGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                        | %³5,838     | %³5,643                      |
+| e°h*N}GLYPH<c=4,font=/MS-Mincho>j)                                        | 438,180     | 806,802                      |
+| }GLYPH<c=20,font=/MS-Mincho>Çu#TGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                        | 19,872,941  | 19,189,769                   |
+|  Pµ}GLYPH<c=20,font=/MS-Mincho>Çu#TGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                        | 28,195,336  | 27,058,973                   |
+
+半期報告書
+
+## (2) 【N-#}PdGLYPH&lt;c=13,font=/MS-Mincho&gt;vÊGLYPH&lt;c=8,font=/MS-Mincho&gt;{føSÊびN-#}PSGLYPH&lt;c=5,font=/MS-Mincho&gt;bìR)vÊGLYPH&lt;c=8,font=/MS-Mincho&gt;{fø】 【N-#}PdGLYPH&lt;c=13,font=/MS-Mincho&gt;vÊGLYPH&lt;c=8,font=/MS-Mincho&gt;{fø】
+
+|                                                                                                                                       |                              | (SXOM：SCQ)                              |
+|---------------------------------------------------------------------------------------------------------------------------------------|------------------------------|------------------------------|
+|                                                                                                                                       | RMN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> (ê 2024^t１gGLYPH<c=8,font=/MS-Mincho>１eå ó 2024^t６gGLYPH<c=8,font=/MS-Mincho>30eå)                              | ̲SN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> (ê 2025^t１gGLYPH<c=8,font=/MS-Mincho>１eå ó 2025^t６gGLYPH<c=8,font=/MS-Mincho>30eå)                              |
+| XòNGLYPH<c=10,font=/MS-Mincho>Ø                                                                                                                                       | 1,037,072                    | 1,327,484                    |
+| XòNGLYPH<c=10,font=/MS-Mincho>SO¡                                                                                                                                       | 778,357                      | 1,436,479                    |
+| XòNGLYPH<c=10,font=/MS-Mincho>}ÏR)vÊSÈはXòNGLYPH<c=10,font=/MS-Mincho>}ÏdGLYPH<c=13,font=/MS-Mincho>YㇿGLYPH<c=8,font=/MS-Mincho>%³） | 258,715                      | %³108,995                    |
+| ©Xò»SÊびNGLYPH<c=0,font=/MS-Mincho>,{¡tGLYPH<c=6,font=/MS-Mincho>»                                                                                                                                       | ; 1,425,377                  | ; 2,000,616                  |
+| U¶imdGLYPH<c=13,font=/MS-Mincho>YㇿGLYPH<c=8,font=/MS-Mincho>%³）                                                                     | %³1,166,661                  | %³2,109,611                  |
+| U¶imYGLYPH<c=22,font=/MS-Mincho>SÎvÊ                                                                                                  |                              |                              |
+| S×SÖR)ˋo                                                                                                                              | 24                           | 4,835                        |
+| ÜR©ÑSÎQe                                                                                                                                       | ÿGLYPH<c=13,font=/MS-Mincho> | 40,401                       |
+| pºfÿ]îvÊ                                                                                                                              | 10,823                       | ÿGLYPH<c=13,font=/MS-Mincho> |
+| そのNÖ                                                                                                                                | 873                          | 2,665                        |
+| U¶imYGLYPH<c=22,font=/MS-Mincho>SÎvÊTGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                                                                                                                       | 11,721                       | 47,902                       |
+| U¶imYGLYPH<c=22,font=/MS-Mincho>»u(                                                                                                                                       |                              |                              |
+| e/bUR)ˋo                                                                                                                              | 83,872                       | 201,233                      |
+| h*̲GLYPH<c=15,font=/MS-Mincho>N¤NØ»                                                                                                                                       | 20,070                       | 6,551                        |
+| e/bUbKepe                                                                                                                                       | 3,389                        | 204,491                      |
+| そのNÖ                                                                                                                                | ÿGLYPH<c=13,font=/MS-Mincho> | 17,073                       |
+| U¶imYGLYPH<c=22,font=/MS-Mincho>»u(TGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                                                                                                                       | 107,332                      | 429,350                      |
+| }L^8dGLYPH<c=13,font=/MS-Mincho>YㇿGLYPH<c=8,font=/MS-Mincho>%³）                                                                     | %³1,262,273                  | %³2,491,059                  |
+| ryR%R)vÊ                                                                                                                              |                              |                              |
+| YQ}GLYPH<c=4,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>Y1̲GLYPH<c=21,font=/MS-Mincho>̲SÑb;QevÊ                                                                                                                                       | ÿGLYPH<c=13,font=/MS-Mincho> | 16,076                       |
+| e°h*N}GLYPH<c=4,font=/MS-Mincho>j)b;QevÊ                                                                                                                                       | 36                           | 0                            |
+| ryR%R)vÊTGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                                                                                                                       | 36                           | 16,076                       |
+| ryR%dGLYPH<c=13,font=/MS-Mincho>Y1                                                                                                    |                              |                              |
+| V者Çu#XòStdGLYPH<c=13,font=/MS-Mincho>                                                                                                                                       | ÿGLYPH<c=13,font=/MS-Mincho> | 1,058                        |
+| V者Çu#dStdGLYPH<c=13,font=/MS-Mincho>                                                                                                                                       | 32                           | 4,601                        |
+| ryR%dGLYPH<c=13,font=/MS-Mincho>Y1TGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                                                                                                                       | 32                           | 5,659                        |
+| zGLYPH<c=14,font=/MS-Mincho>Ñ{I¿etRMN-}GLYPH<c=20,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>YㇿGLYPH<c=8,font=/MS-Mincho>%³）                                                                                                                                       | %³1,262,270                  | %³2,480,642                  |
+| lÕNºzGLYPH<c=14,font=/MS-Mincho>、OOlGLYPH<c=17,font=/MS-Mincho>zGLYPH<c=14,font=/MS-Mincho>SÊびNimzGLYPH<c=14,font=/MS-Mincho>                                                                                                                                       | 4,525                        | 3,246                        |
+| lÕNºzGLYPH<c=14,font=/MS-Mincho>{ITGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                                                                                                                       | 4,525                        | 3,246                        |
+| N-}GLYPH<c=20,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>YㇿGLYPH<c=8,font=/MS-Mincho>%³）                                                                                                                                       | %³1,266,795                  | %³2,483,889                  |
+| ªOGLYPH<c=26,font=/MS-Mincho>y>h*N;に^ぜ^するN-}GLYPH<c=20,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>YㇿGLYPH<c=8,font=/MS-Mincho>%³）                                                                                                                                       | %³1,266,795                  | %³2,483,889                  |
+
+## 【N-#}PSGLYPH&lt;c=5,font=/MS-Mincho&gt;bìR)vÊGLYPH&lt;c=8,font=/MS-Mincho&gt;{fø】
+
+|                                           |             | (SXOM：SCQ)             |
+|-------------------------------------------|-------------|-------------|
+|                                           | RMN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> (ê 2024^t１gGLYPH<c=8,font=/MS-Mincho>１eå             | ̲SN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> (ê 2025^t１gGLYPH<c=8,font=/MS-Mincho>１eå             |
+| N-}GLYPH<c=20,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>YㇿGLYPH<c=8,font=/MS-Mincho>%³）                                           | %³1,266,795 | %³2,483,889 |
+| そのNÖのSGLYPH<c=5,font=/MS-Mincho>bìR)vÊ |             |             |
+| pºf｣Û{¿etRØ[                                           | %³1,086     | 195         |
+| そのNÖのSGLYPH<c=5,font=/MS-Mincho>bìR)vÊTGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                           | %³1,086     | 195         |
+| N-SGLYPH<c=5,font=/MS-Mincho>bìR)vÊ                                           | %³1,267,882 | %³2,483,694 |
+| （Q 3）                                           |             |             |
+| ªOGLYPH<c=26,font=/MS-Mincho>y>h*N;にOÂるN-SGLYPH<c=5,font=/MS-Mincho>bìR)vÊ                                           | %³1,267,882 | %³2,483,694 |
+
+## (3) 【N-#}Pキャッシュ0ûフロ0üGLYPH&lt;c=8,font=/MS-Mincho&gt;{fø】
+
+|                                                |    |                                                           | (SXOM：SCQ)   | (SXOM：SCQ)                              |
+|------------------------------------------------|----|-----------------------------------------------------------|---|------------------------------|
+|                                                | (ê ó    | RMN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> 2024^t１gGLYPH<c=8,font=/MS-Mincho>１eå 2024^t６gGLYPH<c=8,font=/MS-Mincho>30eå)                                                           | (ê ó   | ̲SN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> 2025^t１gGLYPH<c=8,font=/MS-Mincho>１eå 2025^t６gGLYPH<c=8,font=/MS-Mincho>30eå)                              |
+| U¶imm;RÕによるキャッシュ0ûフロ0ü               |    |                                                           |   |                              |
+| zGLYPH<c=14,font=/MS-Mincho>Ñ{I¿etRMN-}GLYPH<c=20,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>YㇿGLYPH<c=8,font=/MS-Mincho>%³）                                                |    | %³1,262,270                                               |   | %³2,480,642                  |
+| nGLYPH<c=27,font=/MS-Mincho>O¡QGLYPH<c=31,font=/MS-Mincho>St»                                                |    | 122,598                                                   |   | 958,307                      |
+| h*̲GLYPH<c=15,font=/MS-Mincho>X㆑l»u(                                                |    | 63,443                                                    |   | 368,631                      |
+| S×SÖR)ˋo                                       |    | %³24                                                      |   | %³4,835                      |
+| ÜR©ÑSÎQe                                                |    | ÿGLYPH<c=13,font=/MS-Mincho>                              |   | %³40,401                     |
+| pºfÿ]îdGLYPH<c=13,font=/MS-Mincho>vÊ（%³はvÊ） |    | %³6,769                                                   |   | 2,242                        |
+| e/bUR)ˋo                                       |    | 83,872                                                    |   | 201,233                      |
+| h*̲GLYPH<c=15,font=/MS-Mincho>N¤NØ»                                                |    | 20,070                                                    |   | 6,551                        |
+| e/bUbKepe                                                |    | 3,389                                                     |   | 204,491                      |
+| V者Çu#XòStdGLYPH<c=13,font=/MS-Mincho>vÊ（%³はvÊ）                                                |    | ÿGLYPH<c=13,font=/MS-Mincho>                              |   | 1,058                        |
+| YQ}GLYPH<c=4,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>Y1̲GLYPH<c=21,font=/MS-Mincho>̲SÑb;QevÊ                                                |    | ÿGLYPH<c=13,font=/MS-Mincho>                              |   | %³16,076                     |
+| e°h*N}GLYPH<c=4,font=/MS-Mincho>j)b;QevÊ                                                |    | %³36                                                      |   | %³0                          |
+| V者Çu#dStdGLYPH<c=13,font=/MS-Mincho>                                                |    | 32                                                        |   | 4,601                        |
+| XòNGLYPH<c=10,font=/MS-Mincho>Pµj)SÊびYQ}GLYPH<c=4,font=/MS-Mincho>Çu#のXnGLYPH<c=27,font=/MS-Mincho>額（%³はXR                                                | ） | %³551,217                                                 |   | 1,191,127                    |
+| hÚSxÇu#のXnGLYPH<c=27,font=/MS-Mincho>額（%³はXR ）                                                |    | 174,677                                                   |   | 72,984                       |
+| YQ}GLYPH<c=4,font=/MS-Mincho> PµのXnGLYPH<c=27,font=/MS-Mincho>額（%³はnGLYPH<c=27,font=/MS-Mincho>\GLYPH<c=17,font=/MS-Mincho>）                                                |    | 13,022                                                    |   | %³12,368                     |
+| そのNÖ                                         |    | 394,911                                                   |   | 42,964                       |
+| \GLYPH<c=15,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>                                                |    | %³944,300                                                 |   | 499,870                      |
+| R)ˋoのS×SÖ額                                   |    | 24                                                        |   | 4,835                        |
+| R)ˋoのe/bU額                                   |    | %³80,000                                                  |   | %³193,316                    |
+| lÕNºzGLYPH<c=14,font=/MS-Mincho>{Iのe/bU額SÈはNØ額（%³はe/bU）                                                |    | %³15,449                                                  |   | %³1,151                      |
+| ÜR©ÑのS×SÖ額 そのNÖ                                                |    | ÿGLYPH<c=13,font=/MS-Mincho> ÿGLYPH<c=13,font=/MS-Mincho> |   | 40,401 2,665                 |
+|                                                |    |                                                           |   | 353,305                      |
+| U¶imm;RÕによるキャッシュ0ûフロ0ü               |    | %³1,039,726                                               |   |                              |
+| b閌Çm;RÕによるキャッシュ0ûフロ0ü               |    |                                                           |   |                              |
+| gGLYPH<c=9,font=/MS-Mincho>̲bV者Çu#のSÖ̲によるe/Qú                                                |    | %³2,826,024                                               |   | %³4,085,987                  |
+| q!̲bV者Çu#のSÖ̲によるe/Qú                                                |    | %³19,344                                                  |   | %³309,930                    |
+| V者Çu#のXòS琰kよるSÎQe                                                |    | ÿGLYPH<c=13,font=/MS-Mincho>                              |   | 53                           |
+| ewÑSÊびOÝ<Ñの]îQeによるe/Qú                                                |    | %³108,986                                                 |   | ÿGLYPH<c=13,font=/MS-Mincho> |
+| b閌Çm;RÕによるキャッシュ0ûフロ0ü               |    | %³2,954,355                                               |   | %³4,395,864                  |
+| ¡RÙm;RÕによるキャッシュ0ûフロ0ü                                                |    |                                                           |   |                              |
+| wígGLYPH<c=31,font=/MS-Mincho>PGLYPH<c=31,font=/MS-Mincho>QeÑの}GLYPH<c=20,font=/MS-Mincho>XnGLYPH<c=27,font=/MS-Mincho>額（%³はnGLYPH<c=27,font=/MS-Mincho>\GLYPH<c=17,font=/MS-Mincho>）                                                |    | ÿGLYPH<c=13,font=/MS-Mincho>                              |   | %³650,000                    |
+| wgGLYPH<c=31,font=/MS-Mincho>PGLYPH<c=31,font=/MS-Mincho>QeれによるSÎQe                                                |    | 1,230,000                                                 |   | 500,000                      |
+| wgGLYPH<c=31,font=/MS-Mincho>PGLYPH<c=31,font=/MS-Mincho>QeÑのÔnGLYPH<c=8,font=/MS-Mincho>によるe/Qú                                                |    | ÿGLYPH<c=13,font=/MS-Mincho>                              |   | %³65,000                     |
+| e°h*N}GLYPH<c=4,font=/MS-Mincho>j)のLOによるh*̲GLYPH<c=15,font=/MS-Mincho>のvzLによるSÎQe                                                |    | ÿGLYPH<c=13,font=/MS-Mincho>                              |   | 13,044                       |
+| h*̲GLYPH<c=15,font=/MS-Mincho>のvzLによるSÎQe                                                |    | 5,700,240                                                 |   | 1,418,846                    |
+| h*̲GLYPH<c=15,font=/MS-Mincho>のvzLによるe/Qú                                                |    | %³20,070                                                  |   | %³6,551                      |
+| PGLYPH<c=31,font=/MS-Mincho>QebKepeのe/bU額                                                |    | %³3,389                                                   |   | %³205,691                    |
+| NGLYPH<c=10,font=/MS-Mincho>X4¢#»u(のe/Qú                                                |    | ÿGLYPH<c=13,font=/MS-Mincho>                              |   | %³69,308                     |
+| ¡RÙm;RÕによるキャッシュ0ûフロ0ü                                                |    | 6,906,779                                                 |   | 935,340                      |
+| sþÑSÊびsþÑTGLYPH<c=12,font=/MS-Mincho>{IriにOÂるcÛ{]î額                                                |    | 2,374                                                     |   | %³959                        |
+| sþÑSÊびsþÑTGLYPH<c=12,font=/MS-Mincho>{IriのXnGLYPH<c=27,font=/MS-Mincho>額（%³はnGLYPH<c=27,font=/MS-Mincho>\GLYPH<c=17,font=/MS-Mincho>）                                                |    | 2,915,072                                                 |   | %³3,108,178                  |
+| sþÑSÊびsþÑTGLYPH<c=12,font=/MS-Mincho>{IriのgGLYPH<c=31,font=/MS-Mincho>k讚Ø                                                |    | 4,468,524                                                 |   | 14,239,861                   |
+| sþÑSÊびsþÑTGLYPH<c=12,font=/MS-Mincho>{IriのN-gGLYPH<c=31,font=/MS-Mincho>g+k讚Ø                                                |    | ; 7,383,596                                               |   | ; 11,131,683                 |
+
+半期報告書
+
+## 【lèGLYPH&lt;c=24,font=/MS-Mincho&gt;NGLYPH&lt;c=5,font=/MS-Mincho&gt;】
+
+## (#}Pの{ÄVòSÈはcGLYPH&lt;c=1,font=/MS-Mincho&gt;RGLYPH&lt;c=6,font=/MS-Mincho&gt;lÕiu(の{ÄVòのYGLYPH&lt;c=9,font=/MS-Mincho&gt;fô)
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;において、|sVýbàp¹としてSynspective USA HD, Inc.SÊびTGLYPH&lt;c=12,font=/MS-Mincho&gt;y&gt;の100ÿGLYPH&lt;c=5,font=/MS-Mincho&gt;[POGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;である Synspective USA, Inc.をe° -zËしたことにより、e°たに２y&gt;を#}Pの{ÄVòにT+めております。
+
+## (OGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;e¹ÝのYGLYPH&lt;c=9,font=/MS-Mincho&gt;fô{I)
+
+（「lÕNºzGLYPH&lt;c=14,font=/MS-Mincho&gt;、OOlGLYPH&lt;c=17,font=/MS-Mincho&gt;zGLYPH&lt;c=14,font=/MS-Mincho&gt;SÊびNimzGLYPH&lt;c=14,font=/MS-Mincho&gt;{Iに¢するOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;Wún」{Iのiu(）
+
+「lÕNºzGLYPH&lt;c=14,font=/MS-Mincho&gt;、OOlGLYPH&lt;c=17,font=/MS-Mincho&gt;zGLYPH&lt;c=14,font=/MS-Mincho&gt;SÊびNimzGLYPH&lt;c=14,font=/MS-Mincho&gt;{Iに¢するOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;Wún」（OGLYPH&lt;c=1,font=/MS-Mincho&gt;imOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;Wún{,27S÷ 2022^t10gGLYPH&lt;c=8,font=/MS-Mincho&gt;28eå。NåNGLYPH&lt;c=11,font=/MS-Mincho&gt;「2022^te9k OGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;Wún」という。）{Iを ̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;のgGLYPH&lt;c=31,font=/MS-Mincho&gt; からiu(しております。
+
+lÕNºzGLYPH&lt;c=14,font=/MS-Mincho&gt;{IのGLYPH&lt;c=8,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;S:RGLYPH&lt;c=6,font=/MS-Mincho&gt;（そのNÖのSGLYPH&lt;c=5,font=/MS-Mincho&gt;bìR)vÊに[þする²zGLYPH&lt;c=14,font=/MS-Mincho&gt;）に¢するe9kcについては、2022^te9kcOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;Wún{,20-３GLYPH&lt;c=5,font=/MS-Mincho&gt; ただしføきに[める}LNvなSÖbqいSÊび「zGLYPH&lt;c=14,font=/MS-Mincho&gt;R¹g鱏GLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;にOÂるOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;Wúnのiu(cGLYPH&lt;c=7,font=/MS-Mincho&gt;Ý」（OGLYPH&lt;c=1,font=/MS-Mincho&gt;imOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;Wúniu(cGLYPH&lt;c=7,font=/MS-Mincho&gt; 2022^t10gGLYPH&lt;c=8,font=/MS-Mincho&gt;28eå。NåNGLYPH&lt;c=11,font=/MS-Mincho&gt;「2022^te9kciu(cGLYPH&lt;c=7,font=/MS-Mincho&gt;Ý」という。）{,65-２GLYPH&lt;c=5,font=/MS-Mincho&gt;(2)ただしføきに[める}LNvなSÖbqいに̲っ ております。このYGLYPH&lt;c=9,font=/MS-Mincho&gt;fôによる N-#}P¡RÙøh にNGLYPH&lt;c=14,font=/MS-Mincho&gt;える̲qＰoありません。
+
+また、#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;における[POGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;{IのXòS琰kO4いuGLYPH&lt;c=31,font=/MS-Mincho&gt;じたXòStdGLYPH&lt;c=13,font=/MS-Mincho&gt;vÊをzGLYPH&lt;c=14,font=/MS-Mincho&gt;RÙNGLYPH&lt;c=10,font=/MS-Mincho&gt;~pり^öべるX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;の#}P¡RÙø栰 おけるSÖbqいのvôしに¢#するe9kcについては、2022^te9kciu(cGLYPH&lt;c=7,font=/MS-Mincho&gt;Ýを ̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;のgGLYPH&lt;c=31,font=/MS-Mincho&gt; からiu(して おります。̲S牏GLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;e¹ÝのYGLYPH&lt;c=9,font=/MS-Mincho&gt;fôは、aSÊiu(され、 RMN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt; SÊびRM#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;^t^¦についてはaSÊiu(̲ のN-#}P¡RÙøh SÊび#}P¡RÙø栰栰jっております。このYGLYPH&lt;c=9,font=/MS-Mincho&gt;fôによる RMN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;のN-#}P¡RÙøh SÊびRM#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;^t^¦の#}P¡RÙø栰kNGLYPH&lt;c=14,font=/MS-Mincho&gt;える̲qＰoありません。
+
+## (N-#}P¸PGLYPH&lt;c=31,font=/MS-Mincho&gt;[þqgh¢OÂ)
+
+;̲Sy&gt;においては、KâÇÑのR¹svな¿TをLうためGLYPH&lt;c=7,font=/MS-Mincho&gt;epのSÖ̲GLYPH&lt;c=21,font=/MS-Mincho&gt;Lと̲S^§¸YQ}ѓÊび¸Qúコミットメ びにタ0üムロ0üンYQ}GLYPH&lt;c=4,font=/MS-Mincho&gt; を}à}Pしております。 なお、このYQ}аkWúづくPGLYPH&lt;c=31,font=/MS-Mincho&gt;Qeg*[Lk讚ØはNåNGLYPH&lt;c=11,font=/MS-Mincho&gt;のとおりであります。
+
+|                                 | RM#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>^t^¦ (2024^t12gGLYPH<c=8,font=/MS-Mincho>31eå )           |                             | ̲SN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> (2025^t６gGLYPH<c=8,font=/MS-Mincho>30eå )            |                             |
+|---------------------------------|-----------|-----------------------------|------------|-----------------------------|
+| ̲S^§¸iu^¦額SÊび ¸Qúコミットメントの}Ï額                                 | 2,000,000 | SCQ                             | 2,500,000  | SCQ                             |
+| タ0üムロ0üンの}Ï額              | 6,300,000 | 0GLYPH<c=3,font=/MS-Mincho> | 14,400,000 | 0GLYPH<c=3,font=/MS-Mincho> |
+| PGLYPH<c=31,font=/MS-Mincho>Qe[Lk讚Ø                                 | 7,288,000 | 0GLYPH<c=3,font=/MS-Mincho> | 7,073,000  | 0GLYPH<c=3,font=/MS-Mincho> |
+| ]î̲GLYPH<c=21,font=/MS-Mincho>額 | 1,012,000 | SCQ                             | 9,827,000  | SCQ                             |
+
+NGLYPH&lt;c=10,font=/MS-Mincho&gt;GLYPH&lt;c=24,font=/MS-Mincho&gt;̲S^§¸YQ}ѓÊび¸QúコミットメントN&amp;びにタ0üムロ0üンYQ}аkは、Tюim^t^¦の}GLYPH&lt;c=20,font=/MS-Mincho&gt;Çu#額SÊびTіÛSJgGLYPH&lt;c=31,font=/MS-Mincho&gt;の sþGLYPH&lt;c=16,font=/MS-Mincho&gt;ÑSÊび\GLYPH&lt;c=6,font=/MS-Mincho&gt;geN[SÎQe額のTGLYPH&lt;c=8,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;からgGLYPH&lt;c=9,font=/MS-Mincho&gt;R)[P PµのÑ額を]îし̲GLYPH&lt;c=21,font=/MS-Mincho&gt;いたP$がN[Ñ額NåNGLYPH&lt;c=10,font=/MS-Mincho&gt; であることを}аYる¡RÙR6 PgaGLYPH&lt;c=5,font=/MS-Mincho&gt;がNØされております。̲SrgaGLYPH&lt;c=5,font=/MS-Mincho&gt;に[めるu[©RÙにbµæしたX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;、TGLYPH&lt;c=4,font=/MS-Mincho&gt;LからのËlBによりgGLYPH&lt;c=31,font=/MS-Mincho&gt;PのR)v い、vôちにこれをe/bUう©RÙを っております。
+
+## (N-#}PdGLYPH&lt;c=13,font=/MS-Mincho&gt;vÊGLYPH&lt;c=8,font=/MS-Mincho&gt;{fø¢OÂ)
+
+;©Xò»SÊびNGLYPH&lt;c=0,font=/MS-Mincho&gt;,{¡tGLYPH&lt;c=6,font=/MS-Mincho&gt;»のうちN;な»vîSÊびÑ額は、k!のとおりであります。
+
+|    | RMN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>   | RMN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>                                           | ̲SN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>                             | ̲SN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>                                           |                             |
+|----|---|-------------------------------------------|-----------------------------|-------------------------------------------|-----------------------------|
+|    | (ê   | 2024^t１gGLYPH<c=8,font=/MS-Mincho>１eå   | (ê                             | 2025^t１gGLYPH<c=8,font=/MS-Mincho>１eå   |                             |
+|    | ó   | 2024^t６gGLYPH<c=8,font=/MS-Mincho>30eå ) | ó                             | 2025^t６gGLYPH<c=8,font=/MS-Mincho>30eå ) |                             |
+| }feSÊびbK̲S    |   | 307,172                                   | SCQ                             | 431,018                                   | SCQ                             |
+| xGLYPH<c=20,font=/MS-Mincho>zvvz»    |   | 662,262                                   | 0GLYPH<c=3,font=/MS-Mincho> | 596,073                                   | 0GLYPH<c=3,font=/MS-Mincho> |
+
+(N-#}Pキャッシュ0ûフロ0üGLYPH&lt;c=8,font=/MS-Mincho&gt;{fø¢OÂ)
+
+;sþÑSÊびsþÑTGLYPH&lt;c=12,font=/MS-Mincho&gt;{IriのN-gGLYPH&lt;c=31,font=/MS-Mincho&gt;g+k讚ØとN-#}P¸PGLYPH&lt;c=31,font=/MS-Mincho&gt;[þqg栰kc²GLYPH&lt;c=24,font=/MS-Mincho&gt;されているyÑvîのÑ額との¢OÂは、k!のとお であります。
+
+|    | RMN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>   | RMN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>                                           | ̲SN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>            | ̲SN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho>   |
+|----|---|-------------------------------------------|------------|---|
+|    | (ê   | 2024^t１gGLYPH<c=8,font=/MS-Mincho>１eå   | (ê 2025^t１gGLYPH<c=8,font=/MS-Mincho>１eå            |   |
+|    | ó   | 2024^t６gGLYPH<c=8,font=/MS-Mincho>30eå ) | ó 2025^t６gGLYPH<c=8,font=/MS-Mincho>30eå )            |   |
+| sþÑSÊびGLYPH<c=16,font=/MS-Mincho>Ñ    |   | 7,383,596 SCQ                                           | 11,131,683 | SCQ   |
+| sþÑSÊびsþÑTGLYPH<c=12,font=/MS-Mincho>{Iri    |   | 7,383,596 SCQ                                           | 11,131,683 | SCQ   |
+
+(h*N;Çg,{I¢OÂ)
+
+RMN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;(ê 2024^t１gGLYPH&lt;c=8,font=/MS-Mincho&gt;１eå ó  2024^t６gGLYPH&lt;c=8,font=/MS-Mincho&gt;30eå )
+
+- １ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;M̲SÑe/bU額
+
+r̲SNGLYPH&lt;c=5,font=/MS-Mincho&gt;はありません。
+
+- ２ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;Wúneåが̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;に\^するM̲Sのうち、M̲SのR¹R魶zuGLYPH&lt;c=31,font=/MS-Mincho&gt;eåが̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;のg⭥å̲ の
+
+r̲SNGLYPH&lt;c=5,font=/MS-Mincho&gt;はありません。
+
+## ３ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;h*N;Çg,のWしいYGLYPH&lt;c=9,font=/MS-Mincho&gt;RÕ
+
+̲Sy&gt;は、2024^t３gGLYPH&lt;c=8,font=/MS-Mincho&gt;28eåP¬の[fBh*N;}ÏOGLYPH&lt;c=26,font=/MS-Mincho&gt;lzpにより、OGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;lÕ{,448ga{,１GLYPH&lt;c=5,font=/MS-Mincho&gt;の[にWúづき、Çg,nPÑを 1,559,650SCQnGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt;させ、TGLYPH&lt;c=12,font=/MS-Mincho&gt;額をそのNÖÇg,RpOYÑにc/りfＰHております。また、OGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;lÕ{,452gaの[にWúづき、 そのNÖÇg,RpOYÑを1,559,650SCQnGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt;させ、TGLYPH&lt;c=12,font=/MS-Mincho&gt;額を~pR)vÊRpOYÑにc/りfＰH、k dGLYPH&lt;c=13,font=/MS-Mincho&gt;XkÜをLっております。
+
+また、2024^t４gGLYPH&lt;c=8,font=/MS-Mincho&gt;12eå、2024^t４gGLYPH&lt;c=8,font=/MS-Mincho&gt;25eåSÊび2024^t６gGLYPH&lt;c=8,font=/MS-Mincho&gt;10eåをbU¼gGLYPH&lt;c=31,font=/MS-Mincho&gt;eåとする{,NGLYPH&lt;c=9,font=/MS-Mincho&gt;GLYPH&lt;c=5,font=/MS-Mincho&gt;Rr̲SXÇにより、Çg,ÑSÊ びÇg,RpOYÑがそれぞれTGLYPH&lt;c=8,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;2,850,120SCQ虘R しております。
+
+この}Pg、 ̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;g+において、Çg,Ñが2,950,120SCQ、Çg,RpOYÑが10,613,686SCQとなっており ます。
+
+̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;(ê 2025^t１gGLYPH&lt;c=8,font=/MS-Mincho&gt;１eå ó  2025^t６gGLYPH&lt;c=8,font=/MS-Mincho&gt;30eå )
+
+- １ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;M̲SÑe/bU額
+
+r̲SNGLYPH&lt;c=5,font=/MS-Mincho&gt;はありません。
+
+- ２ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;Wúneåが̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;に\^するM̲Sのうち、M̲SのR¹R魶zuGLYPH&lt;c=31,font=/MS-Mincho&gt;eåが̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;のg⭥å̲ の
+
+r̲SNGLYPH&lt;c=5,font=/MS-Mincho&gt;はありません。
+
+## ３ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;h*N;Çg,のWしいYGLYPH&lt;c=9,font=/MS-Mincho&gt;RÕ
+
+̲Sy&gt;は、2024^t12gGLYPH&lt;c=8,font=/MS-Mincho&gt;19eåNØでgq京&lt;R8SÖ̲GLYPH&lt;c=21,font=/MS-Mincho&gt;b@グロ0üス^GLYPH&lt;c=2,font=/MS-Mincho&gt;X4にNGLYPH&lt;c=10,font=/MS-Mincho&gt;X4いたしました。このNGLYPH&lt;c=10,font=/MS-Mincho&gt;X4にあたり、2025^t１gGLYPH&lt;c=8,font=/MS-Mincho&gt; 17eåをbU¼gGLYPH&lt;c=31,font=/MS-Mincho&gt;eåとするQlRß（オ0üバ0üアロットメントe¹̲GLYPH&lt;c=15,font=/MS-Mincho&gt;によるRßÆ）によるe°h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;3,195,600h*のvzLにより、Ç g,ÑSÊびÇg,RpOYÑがそれぞれ709,423SCQ虘R しております。
+
+また、e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のLOにO4うe°h*のvzLにより、̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;においてÇg,ÑSÊびÇg,RpOYÑがそ れ6,527SCQ虘R しております。
+
+この}Pg、̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;g+において、Çg,Ñが 8,395,602SCQ、Çg,RpOYÑが 16,059,169SCQとなっており ます。
+
+半期報告書
+
+## (セグメントˋÅX1{I)
+
+## 【セグメントˋÅX1】
+
+̲Sy&gt;グル0üプは、[fGLYPH&lt;c=31,font=/MS-Mincho&gt;デ0üタNimのSXN0»グメントであるため、GLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;をwGLYPH&lt;c=1,font=/MS-Mincho&gt;ueしております。
+
+## (SÎvÊX¢OÂ)
+
+## g[¢とのYQ}аKらuGLYPH&lt;c=31,font=/MS-Mincho&gt;じるSÎvÊをRGLYPH&lt;c=6,font=/MS-Mincho&gt;ãしたˋÅX1
+
+̲Sy&gt;グル0üプは、[fGLYPH&lt;c=31,font=/MS-Mincho&gt;デ0üタNimのみをU¶むSXN0»グメントであり、g[¢とのYQ}аKらuGLYPH&lt;c=31,font=/MS-Mincho&gt;じるSÎvÊをRGLYPH&lt;c=6,font=/MS-Mincho&gt;ãしたˋÅ X1は、NåNGLYPH&lt;c=11,font=/MS-Mincho&gt;のとおりであります。
+
+(SXOM：SCQ)
+
+|                | RMN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> (ê 2024^t１gGLYPH<c=8,font=/MS-Mincho>１eå ó 2024^t６gGLYPH<c=8,font=/MS-Mincho>30eå )                              | ̲SN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> (ê 2025^t１gGLYPH<c=8,font=/MS-Mincho>１eå ó 2025^t６gGLYPH<c=8,font=/MS-Mincho>30eå )                              |
+|----------------|------------------------------|------------------------------|
+| u;PÏデ0üタ©Xò                | 375,225                      | 531,568                      |
+| ソリュ0üション | 475,018                      | 402,143                      |
+| そのNÖ         | 186,828                      | 393,772                      |
+| g[¢とのYQ}аKらuGLYPH<c=31,font=/MS-Mincho>じるSÎvÊ                | 1,037,072                    | 1,327,484                    |
+| そのNÖのSÎvÊ   | ÿGLYPH<c=13,font=/MS-Mincho> | ÿGLYPH<c=13,font=/MS-Mincho> |
+| YGLYPH<c=22,font=/MS-Mincho>èg[¢へのXòNGLYPH<c=10,font=/MS-Mincho>Ø                | 1,037,072                    | 1,327,484                    |
+
+## (１h*̲SたりˋÅX1)
+
+１h*̲SたりN-}GLYPH&lt;c=20,font=/MS-Mincho&gt;dGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1SÊび{[NGLYPH&lt;c=10,font=/MS-Mincho&gt;のWúyGLYPH&lt;c=14,font=/MS-Mincho&gt;は、NåNGLYPH&lt;c=11,font=/MS-Mincho&gt;のとおりであります。
+
+| GLYPH<c=5,font=/MS-Mincho>vî   | RMN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> (ê 2024^t１gGLYPH<c=8,font=/MS-Mincho>１eå ó 2024^t６gGLYPH<c=8,font=/MS-Mincho>30eå )                              | ̲SN-#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>gGLYPH<c=31,font=/MS-Mincho> (ê 2025^t１gGLYPH<c=8,font=/MS-Mincho>１eå ó 2025^t６gGLYPH<c=8,font=/MS-Mincho>30eå )                              |
+|---|------------------------------|------------------------------|
+| １h*̲SたりN-}GLYPH<c=20,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>YㇿGLYPH<c=8,font=/MS-Mincho>%³）   | %³16Q16­                              | %³22Q38­                              |
+| ({[NGLYPH<c=10,font=/MS-Mincho>のWúyGLYPH<c=14,font=/MS-Mincho>)   |                              |                              |
+| ªOGLYPH<c=26,font=/MS-Mincho>y>h*N;に^ぜ^するN-}GLYPH<c=20,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>YㇿGLYPH<c=8,font=/MS-Mincho>%³）(SCQ)   | %³1,266,795                  | %³2,483,889                  |
+| fnGLYPH<c=26,font=/MS-Mincho>h*N;に^ぜ^しないÑ額(SCQ)   | ÿGLYPH<c=13,font=/MS-Mincho> | ÿGLYPH<c=13,font=/MS-Mincho> |
+| fnGLYPH<c=26,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho>にOÂるªOGLYPH<c=26,font=/MS-Mincho>y>h*N;に^ぜ^する N-}GLYPH<c=20,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>YㇿGLYPH<c=8,font=/MS-Mincho>%³）(SCQ)   | %³1,266,795                  | %³2,483,889                  |
+| fnGLYPH<c=26,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho>のgGLYPH<c=31,font=/MS-Mincho>N-^sWGh*̲GLYPH<c=15,font=/MS-Mincho>ep(h*)   | 78,396,621                   | 111,002,142                  |
+| ^GLYPH<c=12,font=/MS-Mincho> SGLYPH<c=22,font=/MS-Mincho>R¹gをgGLYPH<c=9,font=/MS-Mincho>しないため、o\W(h*̲GLYPH<c=15,font=/MS-Mincho>¿et̲１h* ̲SたりN-}GLYPH<c=20,font=/MS-Mincho>dGLYPH<c=13,font=/MS-Mincho>Y1の{[にT+めなかったo\W(h*̲GLYPH<c=15,font=/MS-Mincho> で、RM#}POGLYPH<c=26,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>^t^¦g+からÍなYGLYPH<c=9,font=/MS-Mincho>RÕがあったも ののi   | {,４VÞe°h*N}GLYPH<c=4,font=/MS-Mincho>j) （e°h*N}GLYPH<c=4,font=/MS-Mincho>j)のvîvとなる h*̲GLYPH<c=15,font=/MS-Mincho>のep 6,723,900h*）                              | ÿGLYPH<c=13,font=/MS-Mincho> |
+
+- (lè)１ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;RMN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;のo\W(h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;¿et̲１h*̲SたりN-}GLYPH&lt;c=20,font=/MS-Mincho&gt;R)vÊについては、o\W(h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;は[XW(するものの y&gt;h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;は^NGLYPH&lt;c=10,font=/MS-Mincho&gt;X4であり、gGLYPH&lt;c=31,font=/MS-Mincho&gt;N-^sWGh*O¡がbcáできないため、また、１h*̲SたりN-}GLYPH&lt;c=20,font=/MS-Mincho&gt;dGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1であるためGLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;し ておりません。
+- ２ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;̲SN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;のo\W(h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;¿et̲１h*̲SたりN-}GLYPH&lt;c=20,font=/MS-Mincho&gt;R)vÊについては、o\W(h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;は[XW(するものの h*̲SたりN-}GLYPH&lt;c=20,font=/MS-Mincho&gt;dGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1であるためGLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;しておりません。
+- ３ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;2024^t６gGLYPH&lt;c=8,font=/MS-Mincho&gt;24eåNØでfnGLYPH&lt;c=26,font=/MS-Mincho&gt;h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;１h*につき150h*のRrTGLYPH&lt;c=8,font=/MS-Mincho&gt;でh*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;RGLYPH&lt;c=6,font=/MS-Mincho&gt;RrをLっております。RMN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt; gGLYPH&lt;c=31,font=/MS-Mincho&gt;に̲Srh*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;RGLYPH&lt;c=6,font=/MS-Mincho&gt;RrがLわれたとNî[し、１h*̲SたりN-}GLYPH&lt;c=20,font=/MS-Mincho&gt;dGLYPH&lt;c=13,font=/MS-Mincho&gt;Y1を{[しております。
+
+(Íな̲豶zNa)
+
+（{,NGLYPH&lt;c=9,font=/MS-Mincho&gt;GLYPH&lt;c=5,font=/MS-Mincho&gt;Rr̲Sによるe°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のvzL）
+
+̲Sy&gt;は、2025^t７gGLYPH&lt;c=8,font=/MS-Mincho&gt;28eå（NåNGLYPH&lt;c=11,font=/MS-Mincho&gt;「vzLlzpeå」という。）P¬のSÖ}à̲yOGLYPH&lt;c=26,font=/MS-Mincho&gt;において、{,NGLYPH&lt;c=9,font=/MS-Mincho&gt;GLYPH&lt;c=5,font=/MS-Mincho&gt;Rr̲Sによる{,５VÞe° h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)（NåNGLYPH&lt;c=11,font=/MS-Mincho&gt;「g,e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)」という。）のvzLをlzpいたしました。
+
+## １ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;RßÆのi
+
+g,e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)（{,NGLYPH&lt;c=9,font=/MS-Mincho&gt;GLYPH&lt;c=5,font=/MS-Mincho&gt;Rr̲S）のiはNåNGLYPH&lt;c=11,font=/MS-Mincho&gt;のとおりであります。
+
+| (1)Rr̲Seå   | 2025^t８gGLYPH<c=8,font=/MS-Mincho>13eå                                            |
+|------------|------------------------------------------------------------------------------------|
+| (2)e°h*N}GLYPH<c=4,font=/MS-Mincho>j)の}Ïep            | 195,230PGLYPH<c=11,font=/MS-Mincho>                                                |
+| (3)vzLO¡額            | e°h*N}GLYPH<c=4,font=/MS-Mincho>j)１PGLYPH<c=11,font=/MS-Mincho>につきÑ530Q（}Ï額 103,471,900Q）                                                                                    |
+| (4)̲SrvzLによるo\W(h*̲GLYPH<c=15,font=/MS-Mincho>ep            | o\W(h*̲GLYPH<c=15,font=/MS-Mincho>ep：19,523,000h*（e°h*N}GLYPH<c=4,font=/MS-Mincho>j)１PGLYPH<c=11,font=/MS-Mincho>につき100h*） NGLYPH<c=10,font=/MS-Mincho>PLOO¡額はありません。 NGLYPH<c=11,font=/MS-Mincho>PLOO¡額は736Qですが、NGLYPH<c=11,font=/MS-Mincho>PLOO¡額においても、o\W(h*̲GLYPH<c=15,font=/MS-Mincho>epは 19,523,000h*であります。                                                                                    |
+| (5)ÇÑ¿Tの額（]î̲GLYPH<c=21,font=/MS-Mincho>bKSÖi{額）24,028,669,900Q            | （lè）                                                                             |
+| (6)LOO¡額およびLOO¡額のOîkcgaNö            | ̲SRGLYPH<c=29,font=/MS-Mincho>LOO¡額 1,226Q LOO¡額は、2025^t８gGLYPH<c=8,font=/MS-Mincho>15eåNåM、g,e°h*N}GLYPH<c=4,font=/MS-Mincho>j)のTGLYPH<c=4,font=/MS-Mincho>LOËlBのGLYPH<c=26,font=/MS-Mincho>wåが LわれたeåのvôRMSÖ̲GLYPH<c=21,font=/MS-Mincho>eåのh*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>gq京<R8SÖ̲GLYPH<c=21,font=/MS-Mincho>b@（NåNGLYPH<c=11,font=/MS-Mincho>「gq<」とい う。）における̲Sy>fnGLYPH<c=26,font=/MS-Mincho>h*̲GLYPH<c=15,font=/MS-Mincho>のfnGLYPH<c=26,font=/MS-Mincho>SÖ̲GLYPH<c=21,font=/MS-Mincho>の}BP$（TGLYPH<c=12,font=/MS-Mincho>eåに}BP$がないX4TGLYPH<c=8,font=/MS-Mincho> には、そのvôRMの}BP$とし、NåNGLYPH<c=11,font=/MS-Mincho>「gq<}BP$」という。）の92ÿGLYPH<c=5,font=/MS-Mincho>にvø̲S するÑ額の１Qg*nのzïepをRGLYPH<c=7,font=/MS-Mincho>りNGLYPH<c=10,font=/MS-Mincho>げたÑ額にOîkcされます。ただし、 かかる{Qúの}Pg、Oîkc̲のO¡額がNGLYPH<c=11,font=/MS-Mincho>PLOO¡額をNGLYPH<c=11,font=/MS-Mincho>VÞることとなるX4 TGLYPH<c=8,font=/MS-Mincho>には、NGLYPH<c=11,font=/MS-Mincho>PLOO¡額をOîkc̲のLOO¡額とします。                                                                                    |
+|            | (7)RßÆまたはRr̲Se¹lÕ（Rr̲SN[QH）ÎgQIR8h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>に[þする{,NGLYPH<c=9,font=/MS-Mincho>GLYPH<c=5,font=/MS-Mincho>Rr̲Se¹̲GLYPH<c=15,font=/MS-Mincho>                                                                                    |
+| (8)LO⺱ïýgGLYPH<c=31,font=/MS-Mincho>            | 2025^t８gGLYPH<c=8,font=/MS-Mincho>15eåから2028^t８gGLYPH<c=8,font=/MS-Mincho>10eå |
+| (9)そのNÖ  | ̲Sy>は、Rr̲SN[QHであるÎgQIR8h*̲GLYPH<c=15,font=/MS-Mincho>OGLYPH<c=26,font=/MS-Mincho>y>（NåNGLYPH<c=11,font=/MS-Mincho>「Rr̲SN[QH」とい う。）に[þして、Rr̲SN[QHがg,e°h*N}GLYPH<c=4,font=/MS-Mincho>j)のQhèSÈはNGLYPH<c=0,font=/MS-Mincho>èにつき、L OすることができないgGLYPH<c=31,font=/MS-Mincho>をcGLYPH<c=7,font=/MS-Mincho>[することができること、Rr̲SN[QH は、N[のX4TGLYPH<c=8,font=/MS-Mincho>に、̲Sy>に[þしてGLYPH<c=26,font=/MS-Mincho>wåすることにより、g,e°h*N}GLYPH<c=4,font=/MS-Mincho>j)の SÖ̲をËlBすることができ、かかるËlBがなされたX4TGLYPH<c=8,font=/MS-Mincho>、̲Sy>は、g,e° h*N}GLYPH<c=4,font=/MS-Mincho>j)のvzLGLYPH<c=5,font=/MS-Mincho>に̲い、g,e°h*N}GLYPH<c=4,font=/MS-Mincho>j)をSÖ̲すること、Rr̲SN[QH は、̲Sy>SÖ}à̲yOGLYPH<c=26,font=/MS-Mincho>のlzpによる̲Sy>のbを̲ることなくg,e°h*N}GLYPH<c=4,font=/MS-Mincho>j) を牮!しないこと{Iについて、ÑUFTÁSÖ̲GLYPH<c=21,font=/MS-Mincho>lÕにWúづくg,e°h*N}GLYPH<c=4,font=/MS-Mincho>j)の RßÆにOÂる\JQúのR¹R魶zuGLYPH<c=31,font=/MS-Mincho>̲、̲Sy>とRr̲SN[QHとので}à}PN[の· SÖYQ}аkおいてTGLYPH<c=8,font=/MS-Mincho>aGLYPH<c=15,font=/MS-Mincho>するN[であります。                                                                                    |
+
+- （lè）ÇÑ¿Tの額は、g,e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のvzLO¡額の}Ï額にg,e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のLOにしてQúÇされる¡u#のO¡額のTGLYPH&lt;c=8,font=/MS-Mincho&gt; をTGLYPH&lt;c=8,font=/MS-Mincho&gt;{したÑ額から、g,e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)にOÂるvzLø»u(のi{額を]îし̲GLYPH&lt;c=21,font=/MS-Mincho&gt;いたÑ額であります。なお、g,e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt; のLOにしてQúÇされる¡u#のO¡額のTGLYPH&lt;c=8,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;額は、̲SRGLYPH&lt;c=29,font=/MS-Mincho&gt;LOO¡額（vzLlzpeåのvôRMSÖ̲GLYPH&lt;c=21,font=/MS-Mincho&gt;eåのgq&lt;}BP$）でQ栰fの g,e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)がLOされたとNî[したX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;のÑ額でありますが、[のÇÑ¿Tの額はLOO¡額のl4nによりX SÈはnGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt;します。また、g,e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のLOgGLYPH&lt;c=31,font=/MS-Mincho&gt;QにQhèSÈはNGLYPH&lt;c=0,font=/MS-Mincho&gt;èのLOがLわれないX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;SÊび̲Sy&gt;がSÖ̲し e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)をmS琰WたX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;にはÇÑ¿Tの額はnGLYPH&lt;c=27,font=/MS-Mincho&gt;\GLYPH&lt;c=17,font=/MS-Mincho&gt;します。
+
+## ２ÿGLYPH&lt;c=14,font=/MS-Mincho&gt; ÇÑのOGLYPH&lt;c=20,font=/MS-Mincho&gt;
+
+| QwOSvなOGLYPH<c=20,font=/MS-Mincho>   | Ñ額 （SCQ）            | e/QúN[fBgGLYPH<c=31,font=/MS-Mincho>                                                                          |
+|---|------------|--------------------------------------------------------------------------|
+| \GLYPH<c=15,font=/MS-Mincho>WSAR[fGLYPH<c=31,font=/MS-Mincho>のý 0ûbSNGLYPH<c=10,font=/MS-Mincho>げSÊび¢#する-Pb閌ÇÇÑ   | 16,248,000 | 2025^t８gGLYPH<c=8,font=/MS-Mincho>ÿ^2028^t８gGLYPH<c=8,font=/MS-Mincho> |
+| \GLYPH<c=15,font=/MS-Mincho>WSAR[fGLYPH<c=31,font=/MS-Mincho>SÊびソリュ0üションにOÂるKâÇÑ（NºNö »、xGLYPH<c=20,font=/MS-Mincho>Oîc¡u(»、xGLYPH<c=20,font=/MS-Mincho>zvvz»、imRÙYÔGLYPH<c=23,font=/MS-Mincho>»SÊびNimvz\U にO4うシステムR)u(e）   | 7,780,669  | 2025^t８gGLYPH<c=8,font=/MS-Mincho>ÿ^2028^t８gGLYPH<c=8,font=/MS-Mincho> |
+| TGLYPH<c=8,font=/MS-Mincho>GLYPH<c=8,font=/MS-Mincho>   | 24,028,669 | ÿGLYPH<c=13,font=/MS-Mincho>                                             |
+
+- （lè）１ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;g,e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のLOr¶lÁSÈはLOgGLYPH&lt;c=31,font=/MS-Mincho&gt;におけるh*O¡c¨yûにより、[の¿TÑ額がNGLYPH&lt;c=10,font=/MS-Mincho&gt;GLYPH&lt;c=24,font=/MS-Mincho&gt;e/QúN[ ないX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;には、ê]ñÇÑSÈはPGLYPH&lt;c=31,font=/MS-Mincho&gt;Qe{Iもm;u(して、SïýなPりNGLYPH&lt;c=10,font=/MS-Mincho&gt;GLYPH&lt;c=24,font=/MS-Mincho&gt;のe¹Ýにl¿ったNimm;RÕを\UするN[で ります。なお、g,e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のLOgGLYPH&lt;c=31,font=/MS-Mincho&gt;におけるh*O¡c¨yûによりNGLYPH&lt;c=10,font=/MS-Mincho&gt;GLYPH&lt;c=24,font=/MS-Mincho&gt;のOGLYPH&lt;c=20,font=/MS-Mincho&gt;にQE̲Sするe/QúN[Ñ額をNGLYPH&lt;c=10,font=/MS-Mincho&gt;VÞ てÇÑ¿TができたX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;には、NGLYPH&lt;c=10,font=/MS-Mincho&gt;GLYPH&lt;c=24,font=/MS-Mincho&gt;のe¹Ýにl¿ってNimを\UするNGLYPH&lt;c=10,font=/MS-Mincho&gt;でiRGLYPH&lt;c=7,font=/MS-Mincho&gt;なMRGLYPH&lt;c=6,font=/MS-Mincho&gt;{IをRØhHしそれぞれの にQE̲SしていくN[であります。
+- ２ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;̲Sy&gt;は、g,e°h*N}GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のbU¼みSÊびLOにより¿TしたÇÑをGLYPH&lt;c=31,font=/MS-Mincho&gt;やかにe/QúするGLYPH&lt;c=8,font=/MS-Mincho&gt;u;でありますが、e/Q者 LまでにfBをするX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;にはLGLYPH&lt;c=16,font=/MS-Mincho&gt;Ñ{Iにて[[vなÇÑ{¡tGLYPH&lt;c=6,font=/MS-Mincho&gt;をVóるN[であります。
+- ３ÿGLYPH&lt;c=14,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;GLYPH&lt;c=24,font=/MS-Mincho&gt;QwOSvなOGLYPH&lt;c=20,font=/MS-Mincho&gt;につき、Q*QHGLYPH&lt;c=6,font=/MS-Mincho&gt;OMはございません。e/QúfBgGLYPH&lt;c=31,font=/MS-Mincho&gt;のeéいものよりQE̲SするN[であります。 な お、ÇÑOGLYPH&lt;c=20,font=/MS-Mincho&gt;のYGLYPH&lt;c=9,font=/MS-Mincho&gt;fôがあったX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;にはGLYPH&lt;c=31,font=/MS-Mincho&gt;やかにy:するN[であります。
+
+## ２ 【そのNÖ】
+
+r̲SNGLYPH&lt;c=5,font=/MS-Mincho&gt;はありません。
+
+EDINET提出書類 株式会社Ｓｙｎｓｐｅｃｔｉｖｅ(E40216) 半期報告書
+
+## {,Nè 【cÐQúOGLYPH&lt;c=26,font=/MS-Gothic&gt;y&gt;のOÝ&lt;OGLYPH&lt;c=26,font=/MS-Gothic&gt;y&gt;{IのˋÅX1】
+
+r̲SNGLYPH&lt;c=5,font=/MS-Mincho&gt;はありません。
+
+株式会社Ｓｙｎｓｐｅｃｔｉｖｅ(E40216)
+
+半期報告書
+
+## rìzËvãgûNºのN-#}P¡RÙø栰k[þするgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üX1TJfø
+
+2025^t８gGLYPH&lt;c=8,font=/MS-Mincho&gt;８eå
+
+h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;OGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;Synspective SÖ}à̲yOGLYPH&lt;c=26,font=/MS-Mincho&gt; ̲¡N-
+
+## vãgûNºの}PÖ
+
+̲SvãgûlÕNºは、ÑUFTÁSÖ̲GLYPH&lt;c=21,font=/MS-Mincho&gt;lÕ{,193gaの２{,１GLYPH&lt;c=5,font=/MS-Mincho&gt;の[にWúづき、「}LtGLYPH&lt;c=6,font=/MS-Mincho&gt;のr¶lÁ」にc²げられているh*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;OGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt; Synspectiveの2025^t１gGLYPH&lt;c=8,font=/MS-Mincho&gt;１eåから2025^t12gGLYPH&lt;c=8,font=/MS-Mincho&gt;31eåまでの#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;^t^¦のN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;（2025^t１gGLYPH&lt;c=8,font=/MS-Mincho&gt;１eåから202 ６gGLYPH&lt;c=8,font=/MS-Mincho&gt;30eåまで）にOÂるN-#}P¡RÙøh、すなわち、N-#}P¸PGLYPH&lt;c=31,font=/MS-Mincho&gt;[þqgh、N-#}PdGLYPH&lt;c=13,font=/MS-Mincho&gt;vÊGLYPH&lt;c=8,font=/MS-Mincho&gt;{fø、N- {fø、N-#}Pキャッシュ0ûフロ0üGLYPH&lt;c=8,font=/MS-Mincho&gt;{føSÊびlèGLYPH&lt;c=24,font=/MS-Mincho&gt;についてgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üをLった。
+
+̲SvãgûlÕNºが[e½したgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üにおいて、NGLYPH&lt;c=10,font=/MS-Mincho&gt;GLYPH&lt;c=24,font=/MS-Mincho&gt;のN-#}P¡RÙøhが、bGLYPH&lt;c=17,font=/MS-Mincho&gt;がVýにおいてNGLYPH&lt;c=0,font=/MS-Mincho&gt;,にQlkcY¥̲Sと れるOGLYPH&lt;c=1,font=/MS-Mincho&gt;imOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;のWúnにnbàして、h*̲GLYPH&lt;c=15,font=/MS-Mincho&gt;OGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;SynspectiveSÊび#}P[POGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;の2025^t６gGLYPH&lt;c=8,font=/MS-Mincho&gt;30eåsþW(の¡e?r¶aKN&amp;びにTGLYPH&lt;c=12,font=/MS-Mincho&gt;eåを もって}BNするN-#}POGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;gGLYPH&lt;c=31,font=/MS-Mincho&gt;の}LU¶bGLYPH&lt;c=16,font=/MS-Mincho&gt;~&gt;SÊびキャッシュ0ûフロ0üのr¶lÁをikcにhy:していないとOáじさせるN がQ栰fのÍなp¹においてめられなかった。
+
+## vãgûNºの}PÖのh9bà
+
+̲SvãgûlÕNºは、bGLYPH&lt;c=17,font=/MS-Mincho&gt;がVýにおいてNGLYPH&lt;c=0,font=/MS-Mincho&gt;,にQlkcY¥̲SとめられるgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üのWúnにnbàしてgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üをLった。 gGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üのWúnにおける̲SvãgûlÕNºの¬Nûは、「N-#}P¡RÙøhのgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üにおけるvãgûNºの¬Nû」に されている。̲SvãgûlÕNºは、bGLYPH&lt;c=17,font=/MS-Mincho&gt;がVýにおけるwimP+tGLYPH&lt;c=6,font=/MS-Mincho&gt;に¢する[（y&gt;OGLYPH&lt;c=26,font=/MS-Mincho&gt;v̲qÿ^¦のØいNimOSの¡RÙøhvãgûに される[をT+む。）に̲って、OGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;SÊび#}P[POGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;からrìzËしており、また、vãgûNºとしてのそのNÖのP+tGLYPH&lt;c=6,font=/MS-Mincho&gt;NGLYPH&lt;c=10,font=/MS-Mincho&gt;の¬Nû をgたしている。̲SvãgûlÕNºは、}PÖのhfGLYPH&lt;c=14,font=/MS-Mincho&gt;のWúyGLYPH&lt;c=14,font=/MS-Mincho&gt;となる&lt;bàをQebKしたとR⑥­している。
+
+## ̲7¿NGLYPH&lt;c=5,font=/MS-Mincho&gt;
+
+Íな̲vzNaにGLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;されているとおり、OGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;は2025^t７gGLYPH&lt;c=8,font=/MS-Mincho&gt;28eåP¬のSÖ}à̲yOGLYPH&lt;c=26,font=/MS-Mincho&gt;において、{,NGLYPH&lt;c=9,font=/MS-Mincho&gt;GLYPH&lt;c=5,font=/MS-Mincho&gt;Rr̲Sによるe }GLYPH&lt;c=4,font=/MS-Mincho&gt;j)のvzLについてlzpしている。
+
+̲SrNGLYPH&lt;c=5,font=/MS-Mincho&gt;は、̲SvãgûlÕNºの}PÖに̲qＰSÊぼすものではない。
+
+## N-#}P¡RÙø栰k[þする}LU¶GLYPH&lt;c=5,font=/MS-Mincho&gt;N&amp;びにvãgû̲ySÊびvãgû̲yOGLYPH&lt;c=26,font=/MS-Mincho&gt;の¬Nû
+
+}LU¶GLYPH&lt;c=5,font=/MS-Mincho&gt;の¬Nûは、bGLYPH&lt;c=17,font=/MS-Mincho&gt;がVýにおいてNGLYPH&lt;c=0,font=/MS-Mincho&gt;,にQlkcY¥̲SとめられるOGLYPH&lt;c=1,font=/MS-Mincho&gt;imOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;のWúnにnbàしてN-#}P¡RÙø ikcにhy:することにある。これには、NGLYPH&lt;c=13,font=/MS-Mincho&gt;kcSÈは¤,によるÍなZP}hy:のないN-#}P¡RÙøhをO\bGLYPH&lt;c=16,font=/MS-Mincho&gt;し y:するために}LU¶GLYPH&lt;c=5,font=/MS-Mincho&gt;が̲ÅとR⑥­したQè}qR6をetPSÊびKu(することがT+まれる。
+
+N-#}P¡RÙøhをO\bGLYPH&lt;c=16,font=/MS-Mincho&gt;するに̲Sたり、}LU¶GLYPH&lt;c=5,font=/MS-Mincho&gt;は、}}OGLYPH&lt;c=1,font=/MS-Mincho&gt;imのRMcÐにWúづきN-#}P¡RÙøhをO\bGLYPH&lt;c=16,font=/MS-Mincho&gt; であるかどうかをUO¡し、bGLYPH&lt;c=17,font=/MS-Mincho&gt;がVýにおいてNGLYPH&lt;c=0,font=/MS-Mincho&gt;,にQlkcY¥̲SとめられるOGLYPH&lt;c=1,font=/MS-Mincho&gt;imOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;のWúnにWúづいて}}OGLYPH&lt;c=1,font=/MS-Mincho&gt;imに¢する GLYPH&lt;c=5,font=/MS-Mincho&gt;をy:する̲ÅがあるX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;には̲SrNGLYPH&lt;c=5,font=/MS-Mincho&gt;をy:する¬Nûがある。
+
+vãgû̲ySÊびvãgû̲yOGLYPH&lt;c=26,font=/MS-Mincho&gt;の¬Nûは、¡RÙX1TJプロセスのetPSÊびKu(におけるSÖ}à̲yのwRÙのW÷Lをvãすることにあ る。
+
+gGLYPH&lt;c=9,font=/MS-Mincho&gt;P¬Nû あずさvãgûlÕNº
+
+gq京NRÙb@
+
+cGLYPH&lt;c=7,font=/MS-Mincho&gt;[gGLYPH&lt;c=9,font=/MS-Mincho&gt;P¬Nûy&gt;Tá imRÙW÷Ly&gt;Tá
+
+QlOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;Xë WBN wåP+
+
+cGLYPH&lt;c=7,font=/MS-Mincho&gt;[gGLYPH&lt;c=9,font=/MS-Mincho&gt;P¬Nûy&gt;Tá imRÙW÷Ly&gt;Tá
+
+QlOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;Xë \qNGLYPH&lt;c=11,font=/MS-Mincho&gt;  
+
+株式会社Ｓｙｎｓｐｅｃｔｉｖｅ(E40216)
+
+半期報告書
+
+N-#}P¡RÙø栰ngGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üにおけるvãgûNºの¬Nû
+
+vãgûNºの¬Nûは、vãgûNºが[e½したgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üにWúづいて、gGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üX1TJføにおいてrìzËのzËX4からN-#}P ¡RÙø栰k[þする}PÖをhfGLYPH&lt;c=14,font=/MS-Mincho&gt;することにある。
+
+vãgûNºは、bGLYPH&lt;c=17,font=/MS-Mincho&gt;がVýにおいてNGLYPH&lt;c=0,font=/MS-Mincho&gt;,にQlkcY¥̲SとめられるgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üのWúnに̲って、gGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üのNzGLYPH&lt;c=11,font=/MS-Mincho&gt;をGLYPH&lt;c=26,font=/MS-Mincho&gt;じ て、wimv\GLYPH&lt;c=2,font=/MS-Mincho&gt;[¶としてのR⑥­をLい、wimvaÐu̲ÃをOÝcGLYPH&lt;c=1,font=/MS-Mincho&gt;してNåNGLYPH&lt;c=11,font=/MS-Mincho&gt;を[e½する。
+
+0ûN;として}LU¶GLYPH&lt;c=5,font=/MS-Mincho&gt;、¡RÙSÊびOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;に¢するNGLYPH&lt;c=5,font=/MS-Mincho&gt;に¬NûをgGLYPH&lt;c=9,font=/MS-Mincho&gt;するGLYPH&lt;c=5,font=/MS-Mincho&gt;{Iに[þするêUO、RGLYPH&lt;c=6,font=/MS-Mincho&gt;gvbK}そのNÖのgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レ }を[e½する。gGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0übK}は、bGLYPH&lt;c=17,font=/MS-Mincho&gt;がVýにおいてNGLYPH&lt;c=0,font=/MS-Mincho&gt;,にQlkcY¥̲SとめられるvãgûのWúnにnbàして[e½される^t ^¦の¡RÙø栰nvãgûにkÔべてP[されたbK}である。
+
+0û}}OGLYPH&lt;c=1,font=/MS-Mincho&gt;imのRMcÐに¢するNGLYPH&lt;c=5,font=/MS-Mincho&gt;について、Íなu©をuGLYPH&lt;c=31,font=/MS-Mincho&gt;じさせるようなNaSÈはr¶lÁに¢してÍなNGLYPH&lt;c=13,font=/MS-Mincho&gt;xº[ られるとR$e­したX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;には、QebKした&lt;bàにWúづき、N-#}P¡RÙøhにおいて、bGLYPH&lt;c=17,font=/MS-Mincho&gt;がVýにおいてNGLYPH&lt;c=0,font=/MS-Mincho&gt;,にQlkcY¥̲Sと められるOGLYPH&lt;c=1,font=/MS-Mincho&gt;imOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;のWúnにnbàして、ikcにhy:されていないとOáじさせるNGLYPH&lt;c=5,font=/MS-Mincho&gt;がめられないかどうか}PÖNØける。
+
+また、}}OGLYPH&lt;c=1,font=/MS-Mincho&gt;imのRMcÐに¢するÍなNGLYPH&lt;c=13,font=/MS-Mincho&gt;xº[ˋ'がめられるX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;は、gGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üX1TJføにおいてN-#}P¡RÙ lèGLYPH&lt;c=24,font=/MS-Mincho&gt;NGLYPH&lt;c=5,font=/MS-Mincho&gt;にlèaGLYPH&lt;c=15,font=/MS-Mincho&gt;をUwすること、SÈはÍなNGLYPH&lt;c=13,font=/MS-Mincho&gt;xº[ˋ'に¢するN-#}P¡RÙøhのlèGLYPH&lt;c=24,font=/MS-Mincho&gt;NGLYPH&lt;c=5,font=/MS-Mincho&gt;がiRGLYPH&lt;c=7,font=/MS-Mincho&gt;でな #}P¡RÙøhに[þしてP[NØ}PÖSÈはT&amp;[v}PÖをhfGLYPH&lt;c=14,font=/MS-Mincho&gt;することがlBめられている。vãgûNºの}PÖは、gGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビ TJføeåまでにQebKした&lt;bàにWúづいているが、\GLYPH&lt;c=6,font=/MS-Mincho&gt;geのNaやr¶lÁにより、OGLYPH&lt;c=1,font=/MS-Mincho&gt;imは}}OGLYPH&lt;c=1,font=/MS-Mincho&gt;imとして[X}できなくなるSïý ˋ'がある。
+
+0ûN-#}P¡RÙøhのhy:SÊびlèGLYPH&lt;c=24,font=/MS-Mincho&gt;NGLYPH&lt;c=5,font=/MS-Mincho&gt;が、bGLYPH&lt;c=17,font=/MS-Mincho&gt;がVýにおいてNGLYPH&lt;c=0,font=/MS-Mincho&gt;,にQlkcY¥̲SとめられるOGLYPH&lt;c=1,font=/MS-Mincho&gt;imOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;のWúnにn ないとOáじさせるNGLYPH&lt;c=5,font=/MS-Mincho&gt;がめられないかどうかとともに、¢#するlèGLYPH&lt;c=24,font=/MS-Mincho&gt;NGLYPH&lt;c=5,font=/MS-Mincho&gt;をT+めたN-#}P¡RÙøhのhy:、i びQ[¹、N&amp;びにN-#}P¡RÙøhがWúyGLYPH&lt;c=14,font=/MS-Mincho&gt;となるSÖ̲GLYPH&lt;c=21,font=/MS-Mincho&gt;やOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;Naをikcにhy:していないとOáじさせるNGLYPH&lt;c=5,font=/MS-Mincho&gt;が いかどうかをUO¡する。
+
+0ûN-#}P¡RÙøhに[þする}PÖhfGLYPH&lt;c=14,font=/MS-Mincho&gt;のWúyGLYPH&lt;c=14,font=/MS-Mincho&gt;となる、OGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;SÊび#}P[POGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;の¡RÙˋÅX1に¢する&lt;bàをQebKする。vã は、N-#}P¡RÙøhのgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üに¢するcGLYPH&lt;c=7,font=/MS-Mincho&gt;cî、vãwcSÊびgû²に¢して¬Nûがある。vãgûNºは、SXrìでvãgûNºの Öに[þして¬Nûを う。
+
+vãgûNºは、vãgû̲ySÊびvãgû̲yOGLYPH&lt;c=26,font=/MS-Mincho&gt;に[þして、GLYPH&lt;c=8,font=/MS-Mincho&gt;u;したgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üの{ÄVòとその[e½fBgGLYPH&lt;c=31,font=/MS-Mincho&gt;、gGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üNGLYPH&lt;c=10,font=/MS-Mincho&gt;のÍなvz NGLYPH&lt;c=5,font=/MS-Mincho&gt;についてX1TJをLう。
+
+vãgûNºは、vãgû̲ySÊびvãgû̲yOGLYPH&lt;c=26,font=/MS-Mincho&gt;に[þして、rìzËˋ'についてのbGLYPH&lt;c=17,font=/MS-Mincho&gt;がVýにおけるwimP+tGLYPH&lt;c=6,font=/MS-Mincho&gt;に¢する[をu[したこと、 N&amp;びにvãgûNºのrìzËˋ'に̲qÿをNGLYPH&lt;c=14,font=/MS-Mincho&gt;えるとTGLYPH&lt;c=8,font=/MS-Mincho&gt;tGLYPH&lt;c=6,font=/MS-Mincho&gt;vにGLYPH&lt;c=3,font=/MS-Mincho&gt;えられるNGLYPH&lt;c=5,font=/MS-Mincho&gt;、SÊび;[³VàをdS»するための[þ̲Ü{VをGLYPH&lt;c=27,font=/MS-Mincho&gt;じてい X4TGLYPH&lt;c=8,font=/MS-Mincho&gt;SÈは;[³Vàを1[¹Sïýなl4nにまでýnGLYPH&lt;c=27,font=/MS-Mincho&gt;するためのセ0üフガ0üドをiu(しているX4TGLYPH&lt;c=8,font=/MS-Mincho&gt;はそのQ[¹についてX1TJを Lう。
+
+## R)[³¢OÂ
+
+OGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;SÊび#}P[POGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;と̲SvãgûlÕNºSÈはimRÙW÷Ly&gt;Táとのには、QlOGLYPH&lt;c=26,font=/MS-Mincho&gt;GLYPH&lt;c=8,font=/MS-Mincho&gt;XëlÕの[によりGLYPH&lt;c=24,font=/MS-Mincho&gt;GLYPH&lt;c=9,font=/MS-Mincho&gt;すべきR)[³¢ い。
+
+Nå NGLYPH&lt;c=10,font=/MS-Mincho&gt;
+
+(lè) １ÿGLYPH&lt;c=14,font=/MS-Mincho&gt; NGLYPH&lt;c=10,font=/MS-Mincho&gt;GLYPH&lt;c=24,font=/MS-Mincho&gt;のgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üX1TJføのS齧,は̲Sy&gt;(SJgGLYPH&lt;c=31,font=/MS-Mincho&gt;X1TJføcÐQúOGLYPH&lt;c=26,font=/MS-Mincho&gt;y&gt;)がR%GLYPH&lt;c=20,font=/MS-Mincho&gt;OÝ{¡しております。
+
+２ÿGLYPH&lt;c=14,font=/MS-Mincho&gt; XBRLデ0üタはgGLYPH&lt;c=31,font=/MS-Mincho&gt;N-レビュ0üの[þaにはT+まれていません。
+
+半期報告書

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0">
+  <description>
+    <title-info>
+      <genre>fiction</genre>
+      <author>
+        <first-name>John</first-name>
+        <last-name>Doe</last-name>
+      </author>
+      <book-title>Simple Test Book</book-title>
+      <lang>en</lang>
+    </title-info>
+    <document-info>
+      <author>
+        <nickname>test-creator</nickname>
+      </author>
+      <date>2025-11-07</date>
+      <id>simple-test-book-001</id>
+      <version>1.0</version>
+    </document-info>
+  </description>
+  <body>
+    <title>
+      <p>Simple Test Book</p>
+    </title>
+    <section>
+      <title>
+        <p>Chapter 1</p>
+      </title>
+      <p>This is a simple test book with basic text content.</p>
+      <p>It contains multiple paragraphs to test parsing.</p>
+      <p>Each paragraph should be extracted correctly.</p>
+    </section>
+    <section>
+      <title>
+        <p>Chapter 2</p>
+      </title>
+      <p>This is the second chapter of the book.</p>
+      <p>It also contains plain text for testing purposes.</p>
+    </section>
+  </body>
+</FictionBook>

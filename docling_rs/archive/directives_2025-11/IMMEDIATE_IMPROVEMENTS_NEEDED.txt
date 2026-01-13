@@ -1,0 +1,100 @@
+═══════════════════════════════════════════════════════════════
+🔧 IMMEDIATE IMPROVEMENTS - Start Here
+═══════════════════════════════════════════════════════════════
+
+**Last Updated:** 2025-11-24 16:10 PM
+**Philosophy:** World's Best Parser - Fix everything
+
+Based on N=2158 test results, here are the WORST formats that need immediate attention:
+
+═══════════════════════════════════════════════════════════════
+
+## WORST FORMATS (Below 85% - Fix These First)
+
+### 1. DXF (82%) - CAD Format
+**File:** `crates/docling-cad/src/dxf/serializer.rs`
+**LLM Says:** N=2160 investigated - some issues identified
+**Action:** Run LLM test, read specific complaints, fix real ones
+
+### 2. GLTF (83%) - 3D Format
+**File:** `crates/docling-cad/src/gltf/serializer.rs`
+**LLM Says:** N=2160 says "missing accessor details"
+**Action:** Verify if accessor data is missing, add if so
+
+### 3. ODT (84%) - OpenDocument Text
+**File:** `crates/docling-opendocument/src/odt.rs`
+**LLM Says:** Formatting/structure issues
+**Action:** Run LLM test, see specific complaints
+
+### 4. EPUB (83% in suite, 87% individual)
+**File:** `crates/docling-ebook/src/epub.rs`
+**Status:** Shows variance (83-87%)
+**Action:** Run test 2-3 times, if consistent issues found, fix them
+
+═══════════════════════════════════════════════════════════════
+
+## ALMOST PERFECT (90-94% - Quick Wins)
+
+11 formats close to perfect - small improvements needed:
+- GLB (94%), OBJ (93%), IPYNB (93%), ICS (93%), GPX (93%)
+- AsciiDoc (93%), VCF (92%), KML (92%), JATS (92%)
+- TAR (90%), ODS (90%)
+
+**Process:**
+1. Pick GLB (94% - closest)
+2. Run: `source .env && cargo test -p docling-core --test llm_verification_tests test_llm_mode3_glb -- --exact --ignored --nocapture`
+3. Read "Findings" section
+4. Fix any real issues
+5. Move to next
+
+═══════════════════════════════════════════════════════════════
+
+## MEDIUM PRIORITY (85-89% - Need Work)
+
+11 formats in this range - need improvements:
+- MOBI (88%), GIF (88%), BMP (88%), AVIF (88%)
+- HEIF (87%), ZIP (86%)
+- SVG (85%), STL (85%), RAR (85%), ODP (85%), FB2 (85%), 7Z (85%)
+
+═══════════════════════════════════════════════════════════════
+
+## WORK ORDER FOR NEXT SESSION
+
+**Session 1: Fix DXF (82%)**
+- Lowest scoring format
+- Run LLM test
+- Read what's missing
+- Add missing features
+- Commit: "Improved DXF extraction"
+
+**Session 2: Fix GLTF (83%)**
+- N=2160 says missing accessor details
+- Check if true
+- Add accessor extraction if needed
+- Commit: "Improved GLTF accessor extraction"
+
+**Session 3: Fix ODT (84%)**
+- OpenDocument text issues
+- Run LLM test
+- Fix identified issues
+- Commit: "Improved ODT extraction"
+
+**Session 4: Improve EPUB (83-87%)**
+- Test multiple times
+- Fix consistent issues
+- Commit: "Improved EPUB extraction"
+
+**Then continue through all 27 formats below "perfect".**
+
+═══════════════════════════════════════════════════════════════
+
+## No Metrics - Just Excellence
+
+Don't track percentages.
+Just make each format better.
+Fix issues when found.
+Never stop.
+
+World's best means EVERY format extracts EVERYTHING perfectly.
+
+═══════════════════════════════════════════════════════════════

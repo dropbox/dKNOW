@@ -1,0 +1,413 @@
+[
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Title",
+    "text": "Title",
+    "level": 0
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/1",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Some text",
+    "text": "Some text"
+  },
+  {
+    "label": "section_header",
+    "self_ref": "#/texts/2",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Famous ducks",
+    "text": "Famous ducks",
+    "level": 1
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/3",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Here is a table:",
+    "text": "Here is a table:"
+  },
+  {
+    "label": "table",
+    "self_ref": "#/tables/4",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "data": {
+      "num_rows": 5,
+      "num_cols": 4,
+      "grid": [
+        [
+          {
+            "text": "Character"
+          },
+          {
+            "text": "Name in German"
+          },
+          {
+            "text": "Name in French"
+          },
+          {
+            "text": "Name in Italian"
+          }
+        ],
+        [
+          {
+            "text": "Scrooge McDuck"
+          },
+          {
+            "text": "Dagobert Duck"
+          },
+          {
+            "text": "Balthazar Picsou"
+          },
+          {
+            "text": "Paperone"
+          }
+        ],
+        [
+          {
+            "text": "Huey"
+          },
+          {
+            "text": "Tick"
+          },
+          {
+            "text": "Riri"
+          },
+          {
+            "text": "Qui"
+          }
+        ],
+        [
+          {
+            "text": "Dewey"
+          },
+          {
+            "text": "Trick"
+          },
+          {
+            "text": "Fifi"
+          },
+          {
+            "text": "Quo"
+          }
+        ],
+        [
+          {
+            "text": "Louie"
+          },
+          {
+            "text": "Track"
+          },
+          {
+            "text": "Loulou"
+          },
+          {
+            "text": "Qua"
+          }
+        ]
+      ],
+      "table_cells": [
+        {
+          "text": "Character",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Name in German",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Name in French",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Name in Italian",
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "Scrooge McDuck",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Dagobert Duck",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Balthazar Picsou",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Paperone",
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "Huey",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Tick",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Riri",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Qui",
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "Dewey",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Trick",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Fifi",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Quo",
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "Louie",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Track",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Loulou",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Qua",
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 3
+        }
+      ]
+    }
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/5",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "And here is more HTML:",
+    "text": "And here is more HTML:"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/6",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Some paragraph.",
+    "text": "Some paragraph."
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/7",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "Now a div - almost there...",
+    "text": "Now a div - almost there..."
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/8",
+    "parent": {
+      "$ref": "#/groups/10"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "foo",
+    "text": "foo",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list_item",
+    "self_ref": "#/texts/9",
+    "parent": {
+      "$ref": "#/groups/10"
+    },
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "bar",
+    "text": "bar",
+    "enumerated": false,
+    "marker": "-"
+  },
+  {
+    "label": "list",
+    "self_ref": "#/groups/10",
+    "children": [
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      }
+    ],
+    "content_layer": "body",
+    "name": "list"
+  },
+  {
+    "label": "text",
+    "self_ref": "#/texts/11",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 1.0,
+          "b": 1.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "orig": "The end!",
+    "text": "The end!"
+  }
+]

@@ -1,0 +1,317 @@
+[
+  {
+    "label": "table",
+    "self_ref": "#/tables/0",
+    "content_layer": "body",
+    "prov": [
+      {
+        "page_no": 1,
+        "bbox": {
+          "l": 0.0,
+          "t": 0.0,
+          "r": 4.0,
+          "b": 5.0,
+          "coord_origin": "TOPLEFT"
+        }
+      }
+    ],
+    "data": {
+      "num_rows": 5,
+      "num_cols": 4,
+      "grid": [
+        [
+          {
+            "text": "Character",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "Name in German",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "start_col_offset_idx": 1
+          },
+          {
+            "text": "Name in French",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "start_col_offset_idx": 2
+          },
+          {
+            "text": "Name in Italian",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "start_col_offset_idx": 3
+          }
+        ],
+        [
+          {
+            "text": "Scrooge McDuck",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "Dagobert Duck",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "start_col_offset_idx": 1
+          },
+          {
+            "text": "Balthazar Picsou",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "start_col_offset_idx": 2
+          },
+          {
+            "text": "Paperone",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "start_col_offset_idx": 3
+          }
+        ],
+        [
+          {
+            "text": "Huey",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "Tick",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "start_col_offset_idx": 1
+          },
+          {
+            "text": "Riri",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "start_col_offset_idx": 2
+          },
+          {
+            "text": "Qui",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "start_col_offset_idx": 3
+          }
+        ],
+        [
+          {
+            "text": "Dewey",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "Trick",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "start_col_offset_idx": 1
+          },
+          {
+            "text": "Fifi",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "start_col_offset_idx": 2
+          },
+          {
+            "text": "Quo",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "start_col_offset_idx": 3
+          }
+        ],
+        [
+          {
+            "text": "Louie",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "start_col_offset_idx": 0
+          },
+          {
+            "text": "Track",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "start_col_offset_idx": 1
+          },
+          {
+            "text": "Loulou",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "start_col_offset_idx": 2
+          },
+          {
+            "text": "Qua",
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "start_col_offset_idx": 3
+          }
+        ]
+      ],
+      "table_cells": [
+        {
+          "text": "Character",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Name in German",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Name in French",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Name in Italian",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 0,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "Scrooge McDuck",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Dagobert Duck",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Balthazar Picsou",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Paperone",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 1,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "Huey",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Tick",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Riri",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Qui",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 2,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "Dewey",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Trick",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Fifi",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Quo",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 3,
+          "start_col_offset_idx": 3
+        },
+        {
+          "text": "Louie",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 0
+        },
+        {
+          "text": "Track",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 1
+        },
+        {
+          "text": "Loulou",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 2
+        },
+        {
+          "text": "Qua",
+          "row_span": 1,
+          "col_span": 1,
+          "start_row_offset_idx": 4,
+          "start_col_offset_idx": 3
+        }
+      ]
+    }
+  }
+]

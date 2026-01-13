@@ -1,0 +1,193 @@
+{
+  "page_number": 3,
+  "elements": [
+    {
+      "label": "page_header",
+      "text": "IBM Systems Lab Services and Training\nSolution Brief",
+      "bbox": {
+        "l": 5.0,
+        "t": 5.0,
+        "r": 30.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "page_header",
+      "text": "Power Services",
+      "bbox": {
+        "l": 85.0,
+        "t": 5.0,
+        "r": 95.0,
+        "b": 10.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "IBM logo",
+      "bbox": {
+        "l": 5.0,
+        "t": 15.0,
+        "r": 20.0,
+        "b": 25.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "DB2 for i\nCenter of Excellence",
+      "bbox": {
+        "l": 55.0,
+        "t": 20.0,
+        "r": 95.0,
+        "b": 30.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Expert help to achieve your business requirements",
+      "bbox": {
+        "l": 55.0,
+        "t": 30.0,
+        "r": 95.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "We build confident, satisfied clients",
+      "bbox": {
+        "l": 55.0,
+        "t": 40.0,
+        "r": 95.0,
+        "b": 45.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "No one else has the vast consulting experiences, skills sharing and\nrenown service offerings to do what we can do for you.\n\nBecause no one else is IBM.\n\nWith combined experiences and direct access to development groups,\nwe’re the experts in IBM DB2® for i. The DB2 for i Center of\nExcellence (CoE) can help you achieve—perhaps reexamine and\nexceed—your business requirements and gain more confidence and\nsatisfaction in IBM product data management products and solutions.",
+      "bbox": {
+        "l": 55.0,
+        "t": 45.0,
+        "r": 95.0,
+        "b": 65.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "section_header",
+      "text": "Who we are, some of what we do",
+      "bbox": {
+        "l": 55.0,
+        "t": 70.0,
+        "r": 95.0,
+        "b": 75.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Global CoE engagements cover topics including:",
+      "bbox": {
+        "l": 55.0,
+        "t": 75.0,
+        "r": 95.0,
+        "b": 80.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "• Database performance and scalability\n• Advanced SQL knowledge and skills transfer\n• Business intelligence and analytics\n• DB2 Web Query\n• Query/400 modernization for better reporting and analysis capabilities\n• Database modernization and re-engineering\n• Data-centric architecture and design\n• Extremely large database and overcoming limits to growth\n• ISV education and enablement",
+      "bbox": {
+        "l": 55.0,
+        "t": 80.0,
+        "r": 95.0,
+        "b": 95.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "paragraph",
+      "text": "Highlights",
+      "bbox": {
+        "l": 5.0,
+        "t": 30.0,
+        "r": 20.0,
+        "b": 35.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "list_item",
+      "text": "• Enhance the performance of your\ndatabase operations\n• Earn greater return on IT projects\nthrough modernization of database and\napplications\n• Rely on IBM expert consulting, skills\nsharing and renown services\n• Take advantage of access to a\nworldwide source of expertise",
+      "bbox": {
+        "l": 5.0,
+        "t": 35.0,
+        "r": 30.0,
+        "b": 55.0
+      },
+      "confidence": 0.94
+    },
+    {
+      "label": "picture",
+      "text": "Large IBM logo",
+      "bbox": {
+        "l": 5.0,
+        "t": 85.0,
+        "r": 30.0,
+        "b": 100.0
+      },
+      "confidence": 0.94
+    }
+  ],
+  "reading_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "agreement_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sources": [
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble",
+    "ensemble"
+  ]
+}

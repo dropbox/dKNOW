@@ -1,0 +1,14 @@
+[package]
+name = "video-audio-fusion"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+video-audio-diarization = { path = "../diarization" }
+video-audio-face-detection = { path = "../face-detection" }
+video-audio-ocr = { path = "../ocr" }
+video-audio-scene = { path = "../scene-detector" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+tracing = "0.1"

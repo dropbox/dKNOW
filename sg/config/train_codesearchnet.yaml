@@ -1,0 +1,48 @@
+# XTR Fine-Tuning on CodeSearchNet
+# Phase 1: Train on public code data to establish code understanding
+#
+# Prerequisites:
+#   wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/python.zip
+#   unzip python.zip -d data/codesearchnet/
+#
+# Usage:
+#   python scripts/train_xtr_code.py --config config/train_codesearchnet.yaml
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-code-base"
+
+data:
+  train: "data/codesearchnet_train.jsonl"
+  valid: "data/codesearchnet_valid.jsonl"
+  languages:
+    - python
+    - javascript
+    - go
+    - java
+    - ruby
+    - php
+
+training:
+  method: "lora"
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.1
+  target_modules:
+    - q
+    - v
+
+  epochs: 3
+  batch_size: 32
+  learning_rate: 2.0e-5
+  warmup_steps: 1000
+  max_length: 512
+
+  loss: "infonce"
+  temperature: 0.07
+  hard_negatives: 7
+
+# Compute requirements:
+#   GPU: 1x A100 (40GB) or 4x V100
+#   Time: ~8-12 hours
+#   Storage: ~50GB

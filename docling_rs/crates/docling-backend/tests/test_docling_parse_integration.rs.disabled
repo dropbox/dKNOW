@@ -1,0 +1,49 @@
+//! Integration test for docling-parse backend
+//!
+//! This test verifies that the docling-parse feature works correctly.
+
+#[cfg(feature = "docling-parse")]
+#[test]
+fn test_pdf_backend_with_docling_parse() {
+    use docling_backend::pdf::PdfBackend;
+    use docling_backend::traits::{BackendOptions, DocumentBackend};
+    use std::path::PathBuf;
+
+    // Debug: Print current directory
+    println!("CWD: {:?}", std::env::current_dir().unwrap());
+    println!(
+        "docling_parse exists: {}",
+        PathBuf::from("./docling_parse/pdf_resources").exists()
+    );
+
+    // Create backend
+    let backend = PdfBackend::new().expect("Failed to create backend");
+
+    // Test file
+    let test_file = PathBuf::from("../../test-corpus/pdf/code_and_formula.pdf");
+    if !test_file.exists() {
+        eprintln!("Test file not found: {:?}", test_file);
+        eprintln!("Skipping test");
+        return;
+    }
+
+    // Parse with docling-parse
+    let options = BackendOptions::default();
+    let document = backend
+        .parse_file(&test_file, &options)
+        .expect("Failed to parse PDF");
+
+    // Verify output
+    println!("Document format: {:?}", document.format);
+    println!("Markdown length: {} chars", document.markdown.len());
+    println!("Pages: {:?}", document.metadata.num_pages);
+    println!("Characters: {}", document.metadata.num_characters);
+    println!(
+        "First 200 chars: {}",
+        document.markdown.chars().take(200).collect::<String>()
+    );
+
+    assert!(!document.markdown.is_empty());
+    assert!(document.markdown.len() > 100);
+    assert_eq!(document.metadata.num_pages, Some(2));
+}

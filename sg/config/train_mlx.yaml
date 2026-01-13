@@ -1,0 +1,39 @@
+# MLX Training Config
+# ~2x faster than PyTorch MPS on Apple Silicon
+
+data:
+  train: "data/training_improved.jsonl"
+
+model:
+  base: "google/xtr-base-en"
+  output: "checkpoints/xtr-mlx"
+
+training:
+  # LoRA config
+  lora_r: 16
+  lora_alpha: 32
+
+  # Training hyperparameters
+  batch_size: 12
+  gradient_accumulation_steps: 4  # Effective batch = 48
+  epochs: 3
+  learning_rate: 2.0e-5
+  warmup_steps: 500
+  weight_decay: 0.01
+
+  # Contrastive learning
+  temperature: 0.07
+  margin: 0.2
+  margin_weight: 0.1
+
+  # Sequence length
+  max_length: 512
+
+  # Logging
+  log_every: 50
+  save_every: 1000
+
+  # MLX-specific
+  dtype: "float32"  # or "bfloat16" for faster training
+
+  seed: 42

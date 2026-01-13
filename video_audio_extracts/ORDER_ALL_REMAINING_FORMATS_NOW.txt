@@ -1,0 +1,38 @@
+========================================
+🔴🔴🔴 URGENT ORDER: GET ALL REMAINING FORMATS
+========================================
+
+USER: "Order the Worker to get 5 real examples of all of these formats immediately"
+
+YOU MUST GET THESE NOW:
+
+REMAINING FORMATS (22):
+
+VIDEO (8):
+- ProRes, DNxHD, R3D, GXF, DPX, F4V, RMVB, HLS/DASH
+
+AUDIO (4):
+- AAX, AU, VOC, Musepack  
+
+IMAGE (10):
+- WEBP, BMP, ORF, PEF, RW2, X3F, DCR, PSD, XCF, ICO
+
+5 FILES PER FORMAT = 110 FILES TOTAL
+
+========================================
+IMMEDIATE ACTIONS (N=361-365):
+========================================
+
+N=361: WEBP, BMP (verify in test_edge_cases, expand to 5)
+N=362: AU, VOC (legacy audio)
+N=363: ORF, PEF (Camera RAW - Olympus, Pentax)
+N=364: ProRes, DNxHD (check existing files)
+N=365: Additional Camera RAW (RW2, X3F, DCR)
+
+USE FFmpeg samples: https://samples.ffmpeg.org/
+USE raw.pixls.us for Camera RAW
+USE W3C for graphics
+
+EXECUTE NOW. DO NOT DELAY.
+
+========================================

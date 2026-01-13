@@ -1,0 +1,53 @@
+[package]
+name = "docling-examples"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Example usage patterns and integration examples for docling-rs"
+publish = false
+
+[dependencies]
+docling-core = { version = "2.58.0", path = "../docling-core" }
+docling-backend = { version = "2.58.0", path = "../docling-backend", default-features = false }
+rayon.workspace = true
+anyhow.workspace = true
+
+[[example]]
+name = "basic_conversion"
+path = "../../examples/basic_conversion.rs"
+
+[[example]]
+name = "ocr_processing"
+path = "../../examples/ocr_processing.rs"
+
+[[example]]
+name = "batch_processing"
+path = "../../examples/batch_processing.rs"
+
+[[example]]
+name = "error_handling"
+path = "../../examples/error_handling.rs"
+
+[[example]]
+name = "metadata_extraction"
+path = "../../examples/metadata_extraction.rs"
+
+[[example]]
+name = "custom_serialization"
+path = "../../examples/custom_serialization.rs"
+
+[[example]]
+name = "format_detection"
+path = "../../examples/format_detection.rs"
+
+[[example]]
+name = "streaming_api"
+path = "../../examples/streaming_api.rs"
+
+[[example]]
+name = "performance_bench"
+path = "../../examples/performance_bench.rs"
+
+[[example]]
+name = "cli_tool"
+path = "../../examples/cli_tool.rs"
