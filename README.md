@@ -1,10 +1,13 @@
 # dKNOW - Document Processing
 
+![Status](https://img.shields.io/badge/status-preview-orange)
+![License](https://img.shields.io/badge/license-Apache%202.0-blue)
+
 Document parsing and knowledge extraction tools from Dropbox.
 
 ## Thesis
 
-Knowledge is trapped in documents. These tools extract structured data from PDFs, Word docs, and media files—turning unstructured content into searchable, analyzable knowledge graphs.
+**Knowledge is trapped in documents.** PDFs, Word docs, slides, videos—billions of hours of human effort locked in formats machines can't reason about. These tools crack open that vault: parsing complex layouts, extracting structured data, chunking for retrieval, turning the world's unstructured knowledge into something AI can actually use. The bottleneck isn't intelligence; it's ingestion.
 
 ## Projects
 
