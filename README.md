@@ -3,7 +3,7 @@
 ![Status](https://img.shields.io/badge/status-preview-orange)
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue)
 
-Document parsing and knowledge extraction tools from Dropbox.
+Document parsing and knowledge extraction tools.
 
 ## Thesis
 
@@ -13,12 +13,12 @@ Document parsing and knowledge extraction tools from Dropbox.
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| **docling_rs** | Docling in Rust. Parse PDF, Word, HTML, complex layouts. | Planned |
-| **sg** | SuperGrep with Warp. Semantic code search across repos. | Planned |
-| **chunker** | State-of-art text chunking for RAG. Semantic splitting. | Planned |
-| **video_audio_extracts** | Extract knowledge from video/audio. Uses ML models. | Planned |
+| **docling_rs** | Docling in Rust. Parse PDF, Word, HTML, complex layouts. | Preview |
+| **sg** | SuperGrep with Warp. Semantic code search across repos. | Preview |
+| **chunker** | State-of-art text chunking for RAG. Semantic splitting. | Preview |
+| **video_audio_extracts** | Extract knowledge from video/audio. Uses ML models. | Preview |
+| **pdfium_fast** | Multi-process PDFium. Fast PDF text extraction. | Preview |
 | **dashextract** | Orchestration layer for all extraction. Powers Dash2. | Planned |
-| **pdfium_fast** | Multi-process PDFium. Fast PDF text extraction. | Planned |
 
 ## License
 
