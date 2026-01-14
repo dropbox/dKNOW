@@ -5,6 +5,8 @@
 
 Document parsing and knowledge extraction tools.
 
+*All d* projects are entirely AI generated.*
+
 ## Thesis
 
 **Extract structured data from unstructured documents.** Parse PDFs, Word docs, HTML, video, and audio into formats AI can use. Layout analysis, text extraction, semantic chunking for RAG.
